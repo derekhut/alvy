@@ -118,13 +118,13 @@ export default function Doctor() {
   const color = (status: Check["status"]) => {
     switch (status) {
       case "pass":
-        return "green";
+        return "#5FD7FF";
       case "fail":
-        return "red";
+        return "#FF5F87";
       case "warn":
-        return "yellow";
+        return "#FFAF00";
       case "pending":
-        return "gray";
+        return "#6C6C6C";
     }
   };
 
@@ -147,12 +147,12 @@ export default function Doctor() {
       {done && (
         <Box marginTop={1}>
           {failCount === 0 ? (
-            <Text color="green" bold>
-              All checks passed ({passCount}/{checks.length}). Ready to learn!
+            <Text color="#5FD7FF" bold>
+              全部检查通过 ({passCount}/{checks.length})，可以开始学习！
             </Text>
           ) : (
-            <Text color="red" bold>
-              {failCount} check(s) failed. Fix the issues above before continuing.
+            <Text color="#FF5F87" bold>
+              {failCount} 项检查未通过，请先解决上面的问题。
             </Text>
           )}
         </Box>

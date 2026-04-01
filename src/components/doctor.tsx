@@ -132,7 +132,7 @@ export default function Doctor() {
   const failCount = checks.filter((c) => c.status === "fail").length;
 
   return (
-    <Box flexDirection="column" padding={1}>
+    <Box flexDirection="column" paddingLeft={2} paddingY={1}>
       <Text bold color="#AF5FFF">toefl-roots 环境检查</Text>
       <Text dimColor>正在检查你的环境…</Text>
       <Box flexDirection="column" marginTop={1}>

@@ -32,10 +32,10 @@ export default function SessionSummary({
             ⭐ 获得经验: <Text bold color="#FFAF00">+{xpEarned}</Text> XP
           </Text>
           <Text>
-            📚 学习词根: <Text bold>{rootsStudied}</Text> 个
+            📚 学习词根: <Text bold color="#FFAF00">{rootsStudied}</Text> 个
           </Text>
           <Text>
-            📚 学习单词: <Text bold>{wordsLearned}</Text> 个
+            📚 学习单词: <Text bold color="#FFAF00">{wordsLearned}</Text> 个
           </Text>
           <Text>
             🔥 连续学习: <Text bold color="#FFAF00">{streak}</Text> 天

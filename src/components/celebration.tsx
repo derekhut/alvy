@@ -27,7 +27,7 @@ export default function Celebration({ data, totalRoots }: CelebrationProps) {
 
         <Box marginTop={1}>
           <Text>
-            你已经学习了所有 <Text bold>{totalRoots}</Text> 个词根！
+            你已经学习了所有 <Text bold color="#FFAF00">{totalRoots}</Text> 个词根！
           </Text>
         </Box>
 
@@ -36,10 +36,10 @@ export default function Celebration({ data, totalRoots }: CelebrationProps) {
             ⭐ 总经验值: <Text bold color="#FFAF00">{data.xp.total}</Text> XP
           </Text>
           <Text>
-            🔥 最长连续: <Text bold>{data.streak.longest}</Text> 天
+            🔥 最长连续: <Text bold color="#FFAF00">{data.streak.longest}</Text> 天
           </Text>
           <Text>
-            📚 已学单词: <Text bold>{totalWords}</Text> 个
+            📚 已学单词: <Text bold color="#FFAF00">{totalWords}</Text> 个
           </Text>
         </Box>
 

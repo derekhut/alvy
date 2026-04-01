@@ -20,7 +20,7 @@ export default function StreakHeader({ data, totalRoots }: StreakHeaderProps) {
         ⭐ <Text bold color="#FFAF00">{data.xp.total}</Text> XP
       </Text>
       <Text>
-        📚 <Text bold>{mastered}/{totalRoots}</Text>
+        📚 <Text bold color="#FFAF00">{mastered}/{totalRoots}</Text>
       </Text>
     </Box>
   );

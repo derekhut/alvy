@@ -43,7 +43,7 @@ export default function Dashboard({ data, totalRoots }: DashboardProps) {
 
         <Box marginTop={1} flexDirection="column">
           <Text>
-            进度: <Text bold>{mastered}/{totalRoots}</Text> 已掌握（{seen} 已学习）
+            进度: <Text bold color="#FFAF00">{mastered}/{totalRoots}</Text> 已掌握（{seen} 已学习）
           </Text>
           <Box>
             <Text color="#AF5FFF">{bar}</Text>

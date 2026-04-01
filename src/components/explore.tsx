@@ -3,20 +3,20 @@ import { Box, Text } from "ink";
 
 export default function Explore() {
   return (
-    <Box flexDirection="column" padding={1}>
+    <Box flexDirection="column" paddingLeft={2} paddingY={1}>
       <Box
         borderStyle="round"
-        borderColor="gray"
+        borderColor="#4E4E4E"
         paddingX={2}
         paddingY={1}
       >
         <Text dimColor>
-          🔮 Explore mode — Coming in V2
+          探索模式 — 即将在 V2 推出
         </Text>
       </Box>
       <Box marginTop={1}>
         <Text dimColor>
-          AI-powered root exploration will be available in a future update.
+          AI 驱动的词根探索功能将在未来更新中推出。
         </Text>
       </Box>
     </Box>

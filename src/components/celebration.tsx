@@ -22,7 +22,7 @@ export default function Celebration({ data, totalRoots }: CelebrationProps) {
         paddingY={1}
       >
         <Text bold color="#FFAF00">
-          🌱 恭喜你！全部词根学习完成！ 🌱
+          🌱 恭喜你！全部词根学习完成！
         </Text>
 
         <Box marginTop={1}>

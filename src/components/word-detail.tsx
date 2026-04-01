@@ -51,8 +51,7 @@ export default function WordDetail({
         {/* Derivation chain — the core learning */}
         <Box marginTop={1} flexDirection="column">
           <Text dimColor>词根拆解:</Text>
-          <Text>  {word.breakdown}</Text>
-          <Text color="#AF5FFF">  → {word.derivation}</Text>
+          <Text color="#AF5FFF">  {word.derivation}</Text>
         </Box>
 
         {/* Chinese meaning */}

@@ -1,0 +1,24 @@
+{
+  "name": "toefl-roots",
+  "version": "1.0.0",
+  "description": "Terminal-based TOEFL vocabulary tool — learn English word roots with Chinese translations",
+  "type": "module",
+  "bin": {
+    "toefl-roots": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "doctor": "node dist/index.js doctor"
+  },
+  "dependencies": {
+    "ink": "^5.1.0",
+    "react": "^18.3.1",
+    "meow": "^13.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.7.0"
+  }
+}

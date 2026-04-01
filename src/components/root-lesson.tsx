@@ -65,7 +65,7 @@ export default function RootLesson({
         <Text dimColor>包含这个词根的单词:</Text>
         <Box marginTop={0} gap={2} flexWrap="wrap">
           {entry.words.map((w) => (
-            <Text key={w.word} color="#AF5FFF">
+            <Text key={w.word} bold>
               {w.word}
             </Text>
           ))}

@@ -27,8 +27,9 @@ export default function Dashboard({ data, totalRoots }: DashboardProps) {
         paddingX={2}
         paddingY={1}
       >
-        <Text bold color="#AF5FFF">
-          toefl-roots 词根学习
+        <Text>
+          <Text bold color="#AF5FFF">toefl-roots</Text>
+          <Text color="#AF5FFF"> 词根学习</Text>
         </Text>
         <Text dimColor>解锁英语的底层逻辑</Text>
 

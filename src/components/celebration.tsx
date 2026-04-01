@@ -39,7 +39,7 @@ export default function Celebration({ data, totalRoots }: CelebrationProps) {
             🔥 最长连续: <Text bold>{data.streak.longest}</Text> 天
           </Text>
           <Text>
-            📝 已学单词: <Text bold>{totalWords}</Text> 个
+            📚 已学单词: <Text bold>{totalWords}</Text> 个
           </Text>
         </Box>
 

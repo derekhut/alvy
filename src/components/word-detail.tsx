@@ -58,7 +58,7 @@ export default function WordDetail({
         {/* Chinese meaning */}
         <Box marginTop={1}>
           <Text>
-            释义: <Text bold>{word.meaning_zh}</Text>
+            释义: {word.meaning_zh}
           </Text>
         </Box>
         <Box>

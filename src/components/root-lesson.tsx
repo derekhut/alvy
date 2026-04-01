@@ -42,7 +42,7 @@ export default function RootLesson({
         </Box>
         <Box marginTop={1}>
           <Text>
-            表示 "<Text bold color="#AF5FFF">{entry.meaning_zh}</Text>"（{entry.meaning_en}）
+            表示 "<Text dimColor>{entry.meaning_zh}</Text>"（{entry.meaning_en}）
           </Text>
         </Box>
 

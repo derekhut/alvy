@@ -13,10 +13,10 @@ interface Check {
 
 export default function Doctor() {
   const [checks, setChecks] = useState<Check[]>([
-    { label: "Node.js version", status: "pending", detail: "" },
-    { label: "npm access", status: "pending", detail: "" },
-    { label: "CJK font rendering", status: "pending", detail: "" },
-    { label: "Data directory", status: "pending", detail: "" },
+    { label: "Node.js 版本", status: "pending", detail: "" },
+    { label: "npm 访问", status: "pending", detail: "" },
+    { label: "中文字体渲染", status: "pending", detail: "" },
+    { label: "数据目录", status: "pending", detail: "" },
   ]);
   const [done, setDone] = useState(false);
 
@@ -28,15 +28,15 @@ export default function Doctor() {
     const major = parseInt(nodeVersion.slice(1).split(".")[0]!, 10);
     if (major >= 18) {
       results.push({
-        label: "Node.js version",
+        label: "Node.js 版本",
         status: "pass",
-        detail: `${nodeVersion} (>= 18 required)`,
+        detail: `${nodeVersion}（需要 >= 18）`,
       });
     } else {
       results.push({
-        label: "Node.js version",
+        label: "Node.js 版本",
         status: "fail",
-        detail: `${nodeVersion} — Node.js 18+ required. Visit https://nodejs.org`,
+        detail: `${nodeVersion} — 需要 Node.js 18+，请访问 https://nodejs.org`,
       });
     }
 
@@ -44,15 +44,15 @@ export default function Doctor() {
     try {
       const npmVersion = execSync("npm --version", { encoding: "utf-8" }).trim();
       results.push({
-        label: "npm access",
+        label: "npm 访问",
         status: "pass",
         detail: `npm ${npmVersion}`,
       });
     } catch {
       results.push({
-        label: "npm access",
+        label: "npm 访问",
         status: "fail",
-        detail: "npm not found in PATH. Is Node.js installed correctly?",
+        detail: "未找到 npm，请确认 Node.js 安装正确",
       });
     }
 
@@ -63,15 +63,15 @@ export default function Doctor() {
     const hasUtf8 = lang.toLowerCase().includes("utf") || process.platform === "darwin";
     if (hasUtf8) {
       results.push({
-        label: "CJK font rendering",
+        label: "中文字体渲染",
         status: "pass",
-        detail: `UTF-8 locale detected (${lang || "macOS default"}). Test: 善良 仁慈 好的`,
+        detail: `检测到 UTF-8（${lang || "macOS 默认"}）测试: 善良 仁慈 好的`,
       });
     } else {
       results.push({
-        label: "CJK font rendering",
+        label: "中文字体渲染",
         status: "warn",
-        detail: `Locale: "${lang}". Set LANG=en_US.UTF-8 for CJK support. Test: 善良 仁慈 好的`,
+        detail: `当前: "${lang}"，请设置 LANG=en_US.UTF-8 以支持中文。测试: 善良 仁慈 好的`,
       });
     }
 
@@ -86,15 +86,15 @@ export default function Doctor() {
       fs.writeFileSync(testFile, "ok");
       fs.unlinkSync(testFile);
       results.push({
-        label: "Data directory",
+        label: "数据目录",
         status: "pass",
-        detail: `${dataDir} (writable)`,
+        detail: `${dataDir}（可写）`,
       });
     } catch (err) {
       results.push({
-        label: "Data directory",
+        label: "数据目录",
         status: "fail",
-        detail: `Cannot write to ${dataDir}: ${err instanceof Error ? err.message : String(err)}`,
+        detail: `无法写入 ${dataDir}: ${err instanceof Error ? err.message : String(err)}`,
       });
     }
 
@@ -133,8 +133,8 @@ export default function Doctor() {
 
   return (
     <Box flexDirection="column" padding={1}>
-      <Text bold>toefl-roots doctor</Text>
-      <Text dimColor>Checking your environment…</Text>
+      <Text bold color="#AF5FFF">toefl-roots 环境检查</Text>
+      <Text dimColor>正在检查你的环境…</Text>
       <Box flexDirection="column" marginTop={1}>
         {checks.map((check) => (
           <Box key={check.label} gap={1}>

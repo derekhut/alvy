@@ -1,0 +1,23 @@
+import React, { useEffect } from "react";
+import { Box, Text, useApp } from "ink";
+import { loadData } from "../lib/store.js";
+import { getRootCount } from "../lib/roots-db.js";
+import { generateStatsSummary } from "../lib/progress.js";
+
+export default function Stats() {
+  const { exit } = useApp();
+  const data = loadData();
+  const totalRoots = getRootCount();
+  const summary = generateStatsSummary(data, totalRoots);
+
+  useEffect(() => {
+    console.log(summary);
+    exit();
+  }, []);
+
+  return (
+    <Box>
+      <Text dimColor>统计数据已输出（可通过 &gt; stats.md 保存到文件）</Text>
+    </Box>
+  );
+}

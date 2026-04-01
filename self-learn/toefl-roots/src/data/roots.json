@@ -1,0 +1,1802 @@
+[
+  {
+    "root": "bene-",
+    "type": "root",
+    "meaning_en": "good, well",
+    "meaning_zh": "好的，善良的",
+    "origin": "Latin",
+    "related": ["mal-"],
+    "words": [
+      {
+        "word": "benefit",
+        "breakdown": "bene-(好的) + fit-(做)",
+        "meaning_en": "an advantage or profit gained from something",
+        "meaning_zh": "益处，好处",
+        "derivation": "bene(好的) + fit(做) → 做好事 → 益处",
+        "example": "Exercise has many health benefits.",
+        "example_zh": "运动有很多健康方面的益处。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "beneficial",
+        "breakdown": "bene-(好的) + fic-(做) + -ial(形容词后缀)",
+        "meaning_en": "favorable or advantageous; resulting in good",
+        "meaning_zh": "有益的，有利的",
+        "derivation": "bene(好的) + fic(做) + ial(…的) → 做好事的 → 有益的",
+        "example": "A good diet is beneficial to health.",
+        "example_zh": "良好的饮食对健康有益。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "benevolent",
+        "breakdown": "bene-(好的) + vol-(意愿) + -ent(形容词后缀)",
+        "meaning_en": "well-meaning and kindly",
+        "meaning_zh": "仁慈的，慈善的",
+        "derivation": "bene(好的) + vol(意愿) + ent(…的) → 有好意愿的 → 仁慈的",
+        "example": "The benevolent organization provided food for the homeless.",
+        "example_zh": "这个慈善组织为无家可归者提供食物。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "benefactor",
+        "breakdown": "bene-(好的) + fact-(做) + -or(人)",
+        "meaning_en": "a person who gives money or other help to a person or cause",
+        "meaning_zh": "恩人，捐助者",
+        "derivation": "bene(好的) + fact(做) + or(人) → 做好事的人 → 恩人",
+        "example": "The museum was built thanks to a generous benefactor.",
+        "example_zh": "这座博物馆的建成多亏了一位慷慨的捐助者。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "benediction",
+        "breakdown": "bene-(好的) + dict-(说) + -ion(名词后缀)",
+        "meaning_en": "the utterance or bestowing of a blessing",
+        "meaning_zh": "祝福，祈祷",
+        "derivation": "bene(好的) + dict(说) + ion(行为) → 说好话 → 祝福",
+        "example": "The priest offered a benediction at the end of the ceremony.",
+        "example_zh": "牧师在仪式结束时献上了祝福。",
+        "toefl_frequency": "low"
+      }
+    ]
+  },
+  {
+    "root": "mal-",
+    "type": "root",
+    "meaning_en": "bad, evil",
+    "meaning_zh": "坏的，恶的",
+    "origin": "Latin",
+    "related": ["bene-"],
+    "words": [
+      {
+        "word": "malfunction",
+        "breakdown": "mal-(坏的) + function(功能)",
+        "meaning_en": "a failure to function in a normal or satisfactory manner",
+        "meaning_zh": "故障，失灵",
+        "derivation": "mal(坏的) + function(功能) → 功能变坏 → 故障",
+        "example": "A malfunction in the engine caused the plane to land early.",
+        "example_zh": "发动机故障导致飞机提前降落。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "malicious",
+        "breakdown": "mal-(坏的) + -icious(充满…的)",
+        "meaning_en": "intending or intended to do harm",
+        "meaning_zh": "恶意的，恶毒的",
+        "derivation": "mal(坏的) + icious(充满…的) → 充满坏心的 → 恶意的",
+        "example": "The malicious software damaged thousands of computers.",
+        "example_zh": "这个恶意软件损坏了数千台电脑。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "malnutrition",
+        "breakdown": "mal-(坏的) + nutrition(营养)",
+        "meaning_en": "lack of proper nutrition",
+        "meaning_zh": "营养不良",
+        "derivation": "mal(坏的) + nutrition(营养) → 营养状况不好 → 营养不良",
+        "example": "Malnutrition is a serious problem in developing countries.",
+        "example_zh": "营养不良是发展中国家的一个严重问题。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "malignant",
+        "breakdown": "mal-(坏的) + -ignant(具有…性质的)",
+        "meaning_en": "very virulent or infectious; tending to produce death",
+        "meaning_zh": "恶性的，有害的",
+        "derivation": "mal(坏的) + ignant(具有…性质的) → 具有恶性的 → 恶性的",
+        "example": "The doctor discovered a malignant tumor in the patient.",
+        "example_zh": "医生在患者体内发现了一个恶性肿瘤。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "malpractice",
+        "breakdown": "mal-(坏的) + practice(实践)",
+        "meaning_en": "improper, illegal, or negligent professional activity",
+        "meaning_zh": "渎职，玩忽职守",
+        "derivation": "mal(坏的) + practice(实践) → 不良的执业行为 → 渎职",
+        "example": "The doctor was sued for medical malpractice.",
+        "example_zh": "这位医生因医疗事故被起诉。",
+        "toefl_frequency": "low"
+      }
+    ]
+  },
+  {
+    "root": "dict-",
+    "type": "root",
+    "meaning_en": "say, speak",
+    "meaning_zh": "说，言",
+    "origin": "Latin",
+    "related": ["voc-/vok-", "log-/logy"],
+    "words": [
+      {
+        "word": "predict",
+        "breakdown": "pre-(在…之前) + dict-(说)",
+        "meaning_en": "to say or estimate that something will happen in the future",
+        "meaning_zh": "预测，预言",
+        "derivation": "pre(提前) + dict(说) → 提前说出 → 预测",
+        "example": "Scientists predict that sea levels will continue to rise.",
+        "example_zh": "科学家预测海平面将继续上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "contradict",
+        "breakdown": "contra-(相反) + dict-(说)",
+        "meaning_en": "to deny the truth of a statement by asserting the opposite",
+        "meaning_zh": "反驳，与…矛盾",
+        "derivation": "contra(相反) + dict(说) → 反着说 → 反驳",
+        "example": "The new evidence contradicts the previous theory.",
+        "example_zh": "新证据与之前的理论相矛盾。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "dictate",
+        "breakdown": "dict-(说) + -ate(动词后缀)",
+        "meaning_en": "to state or order authoritatively; to control or influence",
+        "meaning_zh": "口述；命令；支配",
+        "derivation": "dict(说) + ate(做) → 说了就要做 → 命令",
+        "example": "The teacher dictated the notes to the students.",
+        "example_zh": "老师向学生口述了笔记。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "indication",
+        "breakdown": "in-(朝向) + dict-(说) + -ation(名词后缀)",
+        "meaning_en": "a sign or piece of information that indicates something",
+        "meaning_zh": "指示，迹象",
+        "derivation": "in(朝向) + dict(说) + ation(行为) → 朝着你说的东西 → 指示",
+        "example": "There is no indication that the economy will improve soon.",
+        "example_zh": "没有迹象表明经济将很快好转。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "verdict",
+        "breakdown": "ver-(真实) + dict-(说)",
+        "meaning_en": "a decision on a disputed issue in a civil or criminal case",
+        "meaning_zh": "裁决，判决",
+        "derivation": "ver(真实) + dict(说) → 说出真相 → 裁决",
+        "example": "The jury reached a verdict of not guilty.",
+        "example_zh": "陪审团做出了无罪裁决。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "scrib-/script-",
+    "type": "root",
+    "meaning_en": "write",
+    "meaning_zh": "写",
+    "origin": "Latin",
+    "related": ["graph-/gram-"],
+    "words": [
+      {
+        "word": "describe",
+        "breakdown": "de-(向下，完全) + scrib-(写) + -e",
+        "meaning_en": "to give an account in words of someone or something",
+        "meaning_zh": "描述，形容",
+        "derivation": "de(完全) + scrib(写) → 完全写下来 → 描述",
+        "example": "Can you describe the painting you saw at the museum?",
+        "example_zh": "你能描述一下你在博物馆看到的那幅画吗？",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "prescribe",
+        "breakdown": "pre-(在…之前) + scrib-(写) + -e",
+        "meaning_en": "to advise and authorize the use of a medicine or treatment",
+        "meaning_zh": "开处方；规定",
+        "derivation": "pre(提前) + scrib(写) → 提前写好 → 开处方",
+        "example": "The doctor prescribed antibiotics for the infection.",
+        "example_zh": "医生为感染开了抗生素处方。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "subscribe",
+        "breakdown": "sub-(在…之下) + scrib-(写) + -e",
+        "meaning_en": "to arrange to receive something regularly; to express agreement",
+        "meaning_zh": "订阅；赞同",
+        "derivation": "sub(在下方) + scrib(写) → 在下方签名 → 订阅",
+        "example": "Many students subscribe to academic journals online.",
+        "example_zh": "许多学生在线订阅学术期刊。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "manuscript",
+        "breakdown": "manu-(手) + script-(写)",
+        "meaning_en": "a book, document, or piece of music written by hand",
+        "meaning_zh": "手稿，原稿",
+        "derivation": "manu(手) + script(写) → 用手写的 → 手稿",
+        "example": "The ancient manuscript was discovered in a cave.",
+        "example_zh": "这份古代手稿是在一个洞穴中发现的。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inscription",
+        "breakdown": "in-(在…上) + script-(写) + -ion(名词后缀)",
+        "meaning_en": "words inscribed, as on a monument or in a book",
+        "meaning_zh": "铭文，题词",
+        "derivation": "in(在…上) + script(写) + ion(行为) → 刻写在上面 → 铭文",
+        "example": "The inscription on the tomb dates back to 300 BC.",
+        "example_zh": "墓碑上的铭文可以追溯到公元前300年。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "port-",
+    "type": "root",
+    "meaning_en": "carry",
+    "meaning_zh": "携带，运送",
+    "origin": "Latin",
+    "related": ["mit-/mis-", "duct-/duc-"],
+    "words": [
+      {
+        "word": "transport",
+        "breakdown": "trans-(跨越) + port-(运送)",
+        "meaning_en": "to carry or convey from one place to another",
+        "meaning_zh": "运输，运送",
+        "derivation": "trans(跨越) + port(搬运) → 跨越搬运 → 运输",
+        "example": "Trucks transport goods across the country.",
+        "example_zh": "卡车在全国各地运输货物。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "export",
+        "breakdown": "ex-(向外) + port-(运送)",
+        "meaning_en": "to send goods or services to another country for sale",
+        "meaning_zh": "出口，输出",
+        "derivation": "ex(向外) + port(运送) → 向外运送 → 出口",
+        "example": "The country exports large quantities of oil.",
+        "example_zh": "该国出口大量石油。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "import",
+        "breakdown": "im-(向内) + port-(运送)",
+        "meaning_en": "to bring goods or services into a country from abroad",
+        "meaning_zh": "进口，输入",
+        "derivation": "im(向内) + port(运送) → 向内运送 → 进口",
+        "example": "Many countries import raw materials for manufacturing.",
+        "example_zh": "许多国家进口原材料用于制造业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "portable",
+        "breakdown": "port-(携带) + -able(能够…的)",
+        "meaning_en": "able to be easily carried or moved",
+        "meaning_zh": "便携式的，手提的",
+        "derivation": "port(携带) + able(能…的) → 能携带的 → 便携式的",
+        "example": "She bought a portable computer for traveling.",
+        "example_zh": "她买了一台便携式电脑用于旅行。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "report",
+        "breakdown": "re-(回) + port-(携带)",
+        "meaning_en": "to give a spoken or written account of something",
+        "meaning_zh": "报告，汇报",
+        "derivation": "re(回) + port(携带) → 带回消息 → 报告",
+        "example": "The journalist will report on the latest developments.",
+        "example_zh": "记者将报道最新进展。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "duct-/duc-",
+    "type": "root",
+    "meaning_en": "lead",
+    "meaning_zh": "引导，带领",
+    "origin": "Latin",
+    "related": ["port-"],
+    "words": [
+      {
+        "word": "conduct",
+        "breakdown": "con-(共同) + duct-(引导)",
+        "meaning_en": "to organize and carry out; to lead or guide",
+        "meaning_zh": "实施，进行；指挥",
+        "derivation": "con(共同) + duct(引导) → 一起引导 → 实施",
+        "example": "The professor will conduct a series of experiments.",
+        "example_zh": "教授将进行一系列实验。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "introduce",
+        "breakdown": "intro-(向内) + duc-(引导) + -e",
+        "meaning_en": "to bring something into use or operation for the first time",
+        "meaning_zh": "介绍；引进",
+        "derivation": "intro(向内) + duc(引导) → 引导进来 → 介绍",
+        "example": "The company introduced a new product line last year.",
+        "example_zh": "该公司去年推出了新的产品线。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "produce",
+        "breakdown": "pro-(向前) + duc-(引导) + -e",
+        "meaning_en": "to make or manufacture from components or raw materials",
+        "meaning_zh": "生产，制造；产生",
+        "derivation": "pro(向前) + duc(引导) → 向前引出 → 生产",
+        "example": "This factory produces electronic components.",
+        "example_zh": "这家工厂生产电子元件。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "reduce",
+        "breakdown": "re-(回) + duc-(引导) + -e",
+        "meaning_en": "to make smaller or less in amount, degree, or size",
+        "meaning_zh": "减少，缩小",
+        "derivation": "re(回) + duc(引导) → 引导回去 → 减少",
+        "example": "We need to reduce our carbon emissions.",
+        "example_zh": "我们需要减少碳排放。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "induce",
+        "breakdown": "in-(向内) + duc-(引导) + -e",
+        "meaning_en": "to succeed in persuading or influencing someone to do something",
+        "meaning_zh": "引起，导致；诱导",
+        "derivation": "in(向内) + duc(引导) → 引导进入某种状态 → 诱导",
+        "example": "Stress can induce a variety of health problems.",
+        "example_zh": "压力可以引发各种健康问题。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "spec-/spect-",
+    "type": "root",
+    "meaning_en": "look, see",
+    "meaning_zh": "看，观察",
+    "origin": "Latin",
+    "related": [],
+    "words": [
+      {
+        "word": "inspect",
+        "breakdown": "in-(向内) + spect-(看)",
+        "meaning_en": "to look at something closely in order to assess its condition",
+        "meaning_zh": "检查，视察",
+        "derivation": "in(向内) + spect(看) → 往里面看 → 检查",
+        "example": "Officials will inspect the building for safety violations.",
+        "example_zh": "官员将检查建筑物是否存在安全违规。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "perspective",
+        "breakdown": "per-(通过) + spect-(看) + -ive(名词/形容词后缀)",
+        "meaning_en": "a particular attitude toward or way of regarding something",
+        "meaning_zh": "观点，视角",
+        "derivation": "per(通过) + spect(看) + ive(…的) → 通过某种方式去看 → 视角",
+        "example": "Try to see the issue from a different perspective.",
+        "example_zh": "试着从不同的角度来看待这个问题。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "spectrum",
+        "breakdown": "spect-(看) + -rum(名词后缀)",
+        "meaning_en": "a band of colors or a range of related values or qualities",
+        "meaning_zh": "光谱；范围",
+        "derivation": "spect(看) + rum(名词后缀) → 所看到的色带 → 光谱",
+        "example": "The political spectrum ranges from left to right.",
+        "example_zh": "政治光谱从左到右分布。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "specimen",
+        "breakdown": "spec-(看) + -imen(名词后缀)",
+        "meaning_en": "an individual animal, plant, or piece of a mineral used as an example",
+        "meaning_zh": "样本，标本",
+        "derivation": "spec(看) + imen(名词后缀) → 拿来看的东西 → 标本",
+        "example": "The biologist collected a rare specimen in the forest.",
+        "example_zh": "生物学家在森林里采集了一个稀有标本。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "spectator",
+        "breakdown": "spect-(看) + -ator(做…的人)",
+        "meaning_en": "a person who watches an event, especially a sports event",
+        "meaning_zh": "观众，旁观者",
+        "derivation": "spect(看) + ator(…的人) → 看的人 → 观众",
+        "example": "Thousands of spectators gathered to watch the game.",
+        "example_zh": "数千名观众聚集在一起观看比赛。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "vert-/vers-",
+    "type": "root",
+    "meaning_en": "turn",
+    "meaning_zh": "转，转向",
+    "origin": "Latin",
+    "related": [],
+    "words": [
+      {
+        "word": "convert",
+        "breakdown": "con-(共同，完全) + vert-(转)",
+        "meaning_en": "to change the form, character, or function of something",
+        "meaning_zh": "转变，转换",
+        "derivation": "con(完全) + vert(转) → 完全转变 → 转换",
+        "example": "The factory was converted into a museum.",
+        "example_zh": "这家工厂被改建成了博物馆。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "diverse",
+        "breakdown": "di-(分开) + vers-(转) + -e",
+        "meaning_en": "showing a great deal of variety; very different",
+        "meaning_zh": "多样的，不同的",
+        "derivation": "di(分开) + vers(转) → 向不同方向转 → 多样的",
+        "example": "New York City has a diverse population.",
+        "example_zh": "纽约市拥有多元化的人口。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "reverse",
+        "breakdown": "re-(回) + vers-(转) + -e",
+        "meaning_en": "to move backward; to change to the opposite direction",
+        "meaning_zh": "反转，颠倒",
+        "derivation": "re(回) + vers(转) → 转回去 → 反转",
+        "example": "The court decided to reverse the previous ruling.",
+        "example_zh": "法院决定推翻先前的裁决。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "controversial",
+        "breakdown": "contra-(相反) + vers-(转) + -ial(形容词后缀)",
+        "meaning_en": "giving rise or likely to give rise to public disagreement",
+        "meaning_zh": "有争议的",
+        "derivation": "contra(相反) + vers(转) + ial(…的) → 转向相反方向的 → 有争议的",
+        "example": "The new policy is highly controversial among citizens.",
+        "example_zh": "新政策在市民中极具争议。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "versatile",
+        "breakdown": "vers-(转) + -atile(能够…的)",
+        "meaning_en": "able to adapt or be adapted to many different functions",
+        "meaning_zh": "多才多艺的；多功能的",
+        "derivation": "vers(转) + atile(能…的) → 能灵活转变的 → 多才多艺的",
+        "example": "She is a versatile musician who plays several instruments.",
+        "example_zh": "她是一位多才多艺的音乐家，会演奏多种乐器。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "gen-",
+    "type": "root",
+    "meaning_en": "birth, origin, produce",
+    "meaning_zh": "出生，起源，产生",
+    "origin": "Greek/Latin",
+    "related": ["bio-"],
+    "words": [
+      {
+        "word": "generate",
+        "breakdown": "gen-(产生) + -er- + -ate(动词后缀)",
+        "meaning_en": "to cause something to arise or come about",
+        "meaning_zh": "产生，生成",
+        "derivation": "gen(产生) + er + ate(使) → 使之产生 → 生成",
+        "example": "Wind turbines generate electricity from wind.",
+        "example_zh": "风力涡轮机利用风力发电。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "generation",
+        "breakdown": "gen-(出生) + -er- + -ation(名词后缀)",
+        "meaning_en": "all of the people born and living at about the same time",
+        "meaning_zh": "一代人；产生",
+        "derivation": "gen(出生) + er + ation(行为) → 一起出生的 → 一代人",
+        "example": "The younger generation is more comfortable with technology.",
+        "example_zh": "年轻一代对科技更加适应。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "gene",
+        "breakdown": "gen-(起源，产生)",
+        "meaning_en": "a unit of heredity transferred from a parent to offspring",
+        "meaning_zh": "基因",
+        "derivation": "gen(产生) → 产生生命特征的单位 → 基因",
+        "example": "Scientists have identified the gene responsible for this disease.",
+        "example_zh": "科学家已经确定了导致这种疾病的基因。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "genetic",
+        "breakdown": "gen-(起源) + -etic(形容词后缀)",
+        "meaning_en": "relating to genes or heredity",
+        "meaning_zh": "遗传的，基因的",
+        "derivation": "gen(起源) + etic(…的) → 与起源相关的 → 遗传的",
+        "example": "Genetic research has advanced significantly in recent years.",
+        "example_zh": "近年来基因研究取得了重大进展。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "indigenous",
+        "breakdown": "indi-(在…之内) + gen-(出生) + -ous(形容词后缀)",
+        "meaning_en": "originating or occurring naturally in a particular place; native",
+        "meaning_zh": "本土的，土著的",
+        "derivation": "indi(在…之内) + gen(出生) + ous(…的) → 在当地出生的 → 本土的",
+        "example": "These plants are indigenous to South America.",
+        "example_zh": "这些植物原产于南美洲。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "path-",
+    "type": "root",
+    "meaning_en": "feeling, suffering",
+    "meaning_zh": "感情，痛苦",
+    "origin": "Greek",
+    "related": [],
+    "words": [
+      {
+        "word": "sympathy",
+        "breakdown": "sym-(共同) + path-(感情) + -y(名词后缀)",
+        "meaning_en": "feelings of pity and sorrow for someone else's misfortune",
+        "meaning_zh": "同情，同情心",
+        "derivation": "sym(共同) + path(感情) + y(名词后缀) → 共同的感情 → 同情",
+        "example": "She expressed sympathy for the victims of the disaster.",
+        "example_zh": "她对灾难受害者表示了同情。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "empathy",
+        "breakdown": "em-(在…之中) + path-(感情) + -y(名词后缀)",
+        "meaning_en": "the ability to understand and share the feelings of another",
+        "meaning_zh": "共情，同理心",
+        "derivation": "em(进入) + path(感情) + y(名词后缀) → 进入他人的感情 → 共情",
+        "example": "A good leader must have empathy for their team members.",
+        "example_zh": "一个好的领导者必须对团队成员有同理心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "apathy",
+        "breakdown": "a-(没有) + path-(感情) + -y(名词后缀)",
+        "meaning_en": "lack of interest, enthusiasm, or concern",
+        "meaning_zh": "冷漠，无动于衷",
+        "derivation": "a(没有) + path(感情) + y(名词后缀) → 没有感情 → 冷漠",
+        "example": "Voter apathy is a growing concern in many democracies.",
+        "example_zh": "选民的冷漠是许多民主国家日益关注的问题。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "pathology",
+        "breakdown": "path-(痛苦，疾病) + -logy(学科)",
+        "meaning_en": "the science of the causes and effects of diseases",
+        "meaning_zh": "病理学",
+        "derivation": "path(疾病) + logy(学科) → 研究疾病的学科 → 病理学",
+        "example": "She studied pathology in medical school.",
+        "example_zh": "她在医学院学习了病理学。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "pathetic",
+        "breakdown": "path-(感情) + -etic(形容词后缀)",
+        "meaning_en": "arousing pity, especially through vulnerability or sadness",
+        "meaning_zh": "可怜的，令人同情的",
+        "derivation": "path(感情) + etic(…的) → 引发感情的 → 令人同情的",
+        "example": "The stray dog presented a pathetic sight in the rain.",
+        "example_zh": "流浪狗在雨中的样子令人心生怜悯。",
+        "toefl_frequency": "low"
+      }
+    ]
+  },
+  {
+    "root": "phon-",
+    "type": "root",
+    "meaning_en": "sound, voice",
+    "meaning_zh": "声音",
+    "origin": "Greek",
+    "related": ["voc-/vok-"],
+    "words": [
+      {
+        "word": "telephone",
+        "breakdown": "tele-(远) + phon-(声音) + -e",
+        "meaning_en": "a system for transmitting voices over a distance using wire or radio",
+        "meaning_zh": "电话",
+        "derivation": "tele(远) + phon(声音) → 传到远处的声音 → 电话",
+        "example": "Alexander Graham Bell invented the telephone.",
+        "example_zh": "亚历山大·格雷厄姆·贝尔发明了电话。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "microphone",
+        "breakdown": "micro-(小) + phon-(声音) + -e",
+        "meaning_en": "an instrument for converting sound waves into electrical signals",
+        "meaning_zh": "麦克风，话筒",
+        "derivation": "micro(微小) + phon(声音) → 捕捉微小声音的装置 → 麦克风",
+        "example": "The speaker adjusted the microphone before the presentation.",
+        "example_zh": "演讲者在演讲前调整了麦克风。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "phonetic",
+        "breakdown": "phon-(声音) + -etic(形容词后缀)",
+        "meaning_en": "relating to the sounds of speech",
+        "meaning_zh": "语音的，语音学的",
+        "derivation": "phon(声音) + etic(…的) → 与声音有关的 → 语音的",
+        "example": "The dictionary includes phonetic transcriptions of each word.",
+        "example_zh": "这本词典包含每个单词的音标。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "symphony",
+        "breakdown": "sym-(共同) + phon-(声音) + -y(名词后缀)",
+        "meaning_en": "an elaborate musical composition for a full orchestra",
+        "meaning_zh": "交响乐",
+        "derivation": "sym(共同) + phon(声音) + y(名词后缀) → 声音和谐共鸣 → 交响乐",
+        "example": "Beethoven composed nine symphonies during his lifetime.",
+        "example_zh": "贝多芬一生创作了九部交响乐。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "euphony",
+        "breakdown": "eu-(好) + phon-(声音) + -y(名词后缀)",
+        "meaning_en": "the quality of being pleasing to the ear",
+        "meaning_zh": "悦耳，和谐的声音",
+        "derivation": "eu(好) + phon(声音) + y(名词后缀) → 好听的声音 → 悦耳",
+        "example": "The poet chose words for their euphony as well as their meaning.",
+        "example_zh": "诗人选词既注重含义也注重声音的悦耳。",
+        "toefl_frequency": "low"
+      }
+    ]
+  },
+  {
+    "root": "graph-/gram-",
+    "type": "root",
+    "meaning_en": "write, record",
+    "meaning_zh": "写，记录",
+    "origin": "Greek",
+    "related": ["scrib-/script-"],
+    "words": [
+      {
+        "word": "photograph",
+        "breakdown": "photo-(光) + graph-(记录)",
+        "meaning_en": "a picture made using a camera",
+        "meaning_zh": "照片",
+        "derivation": "photo(光) + graph(记录) → 用光记录 → 照片",
+        "example": "The photograph captured a beautiful sunset over the ocean.",
+        "example_zh": "这张照片捕捉到了海面上美丽的日落。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "biography",
+        "breakdown": "bio-(生命) + graph-(写) + -y(名词后缀)",
+        "meaning_en": "an account of someone's life written by someone else",
+        "meaning_zh": "传记",
+        "derivation": "bio(生命) + graph(写) + y(名词后缀) → 写下一生 → 传记",
+        "example": "She wrote a biography of the famous scientist.",
+        "example_zh": "她写了一部关于这位著名科学家的传记。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "geography",
+        "breakdown": "geo-(地球) + graph-(写，描述) + -y(名词后缀)",
+        "meaning_en": "the study of the physical features of the earth and its atmosphere",
+        "meaning_zh": "地理学",
+        "derivation": "geo(地球) + graph(描述) + y(名词后缀) → 描述地球的学科 → 地理学",
+        "example": "The geography of the region includes mountains and rivers.",
+        "example_zh": "该地区的地理特征包括山脉和河流。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "diagram",
+        "breakdown": "dia-(通过) + gram-(写，画)",
+        "meaning_en": "a simplified drawing showing the structure of something",
+        "meaning_zh": "图表，示意图",
+        "derivation": "dia(通过) + gram(画) → 通过画来表达 → 图表",
+        "example": "The professor drew a diagram to explain the process.",
+        "example_zh": "教授画了一张图表来解释这个过程。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "telegraph",
+        "breakdown": "tele-(远) + graph-(写，记录)",
+        "meaning_en": "a system for transmitting messages along a wire",
+        "meaning_zh": "电报",
+        "derivation": "tele(远) + graph(写) → 写到远方 → 电报",
+        "example": "The telegraph revolutionized long-distance communication.",
+        "example_zh": "电报彻底改变了远距离通信方式。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "log-/logy",
+    "type": "root",
+    "meaning_en": "word, study, reason",
+    "meaning_zh": "语言，学科，理性",
+    "origin": "Greek",
+    "related": ["dict-"],
+    "words": [
+      {
+        "word": "biology",
+        "breakdown": "bio-(生命) + logy(学科)",
+        "meaning_en": "the scientific study of living organisms",
+        "meaning_zh": "生物学",
+        "derivation": "bio(生命) + logy(学科) → 研究生命的学科 → 生物学",
+        "example": "She is majoring in biology at the university.",
+        "example_zh": "她在大学主修生物学。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "ecology",
+        "breakdown": "eco-(家，环境) + logy(学科)",
+        "meaning_en": "the branch of biology dealing with organisms and their environment",
+        "meaning_zh": "生态学",
+        "derivation": "eco(环境) + logy(学科) → 研究环境的学科 → 生态学",
+        "example": "The professor teaches a course on marine ecology.",
+        "example_zh": "这位教授教授一门关于海洋生态学的课程。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "technology",
+        "breakdown": "techno-(技术) + logy(学科)",
+        "meaning_en": "the application of scientific knowledge for practical purposes",
+        "meaning_zh": "技术，科技",
+        "derivation": "techno(技术) + logy(学科) → 关于技术的学科 → 科技",
+        "example": "Technology has transformed the way we communicate.",
+        "example_zh": "科技改变了我们的交流方式。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "analogy",
+        "breakdown": "ana-(按照) + logy(理性，推理)",
+        "meaning_en": "a comparison between things that have similar features",
+        "meaning_zh": "类比，类似",
+        "derivation": "ana(按照) + logy(推理) → 按照推理进行比较 → 类比",
+        "example": "The teacher used an analogy to explain the complex concept.",
+        "example_zh": "老师用了一个类比来解释这个复杂的概念。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "dialogue",
+        "breakdown": "dia-(通过，之间) + log-(语言) + -ue",
+        "meaning_en": "a conversation between two or more people",
+        "meaning_zh": "对话，交流",
+        "derivation": "dia(之间) + log(语言) → 人与人之间的语言交流 → 对话",
+        "example": "The novel contains realistic dialogue between its characters.",
+        "example_zh": "这部小说包含角色之间逼真的对话。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "bio-",
+    "type": "root",
+    "meaning_en": "life",
+    "meaning_zh": "生命，生物",
+    "origin": "Greek",
+    "related": ["gen-"],
+    "words": [
+      {
+        "word": "biodiversity",
+        "breakdown": "bio-(生物) + diversity(多样性)",
+        "meaning_en": "the variety of plant and animal life in the world or in a particular habitat",
+        "meaning_zh": "生物多样性",
+        "derivation": "bio(生物) + diversity(多样性) → 生物的多样性 → 生物多样性",
+        "example": "The rainforest is known for its incredible biodiversity.",
+        "example_zh": "热带雨林以其惊人的生物多样性而闻名。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "biography",
+        "breakdown": "bio-(生命) + graph-(写) + -y(名词后缀)",
+        "meaning_en": "an account of someone's life written by someone else",
+        "meaning_zh": "传记",
+        "derivation": "bio(生命) + graph(写) + y(名词后缀) → 写下一个人的一生 → 传记",
+        "example": "He published a biography of Abraham Lincoln.",
+        "example_zh": "他出版了一部亚伯拉罕·林肯的传记。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "biology",
+        "breakdown": "bio-(生命) + logy(学科)",
+        "meaning_en": "the scientific study of living organisms",
+        "meaning_zh": "生物学",
+        "derivation": "bio(生命) + logy(学科) → 研究生命的学科 → 生物学",
+        "example": "Marine biology focuses on ocean life.",
+        "example_zh": "海洋生物学专注于海洋生命。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "biochemistry",
+        "breakdown": "bio-(生命) + chemistry(化学)",
+        "meaning_en": "the branch of science concerned with chemical processes in living organisms",
+        "meaning_zh": "生物化学",
+        "derivation": "bio(生命) + chemistry(化学) → 生命体中的化学 → 生物化学",
+        "example": "She earned her degree in biochemistry.",
+        "example_zh": "她获得了生物化学学位。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "antibiotic",
+        "breakdown": "anti-(反对) + bio-(生命) + -tic(形容词后缀)",
+        "meaning_en": "a medicine that inhibits the growth of or destroys microorganisms",
+        "meaning_zh": "抗生素",
+        "derivation": "anti(反对) + bio(生命) + tic(…的) → 反对微生物生命的 → 抗生素",
+        "example": "The doctor prescribed an antibiotic for the bacterial infection.",
+        "example_zh": "医生为细菌感染开了抗生素。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "chron-",
+    "type": "root",
+    "meaning_en": "time",
+    "meaning_zh": "时间",
+    "origin": "Greek",
+    "related": [],
+    "words": [
+      {
+        "word": "chronic",
+        "breakdown": "chron-(时间) + -ic(形容词后缀)",
+        "meaning_en": "persisting for a long time or constantly recurring",
+        "meaning_zh": "慢性的，长期的",
+        "derivation": "chron(时间) + ic(…的) → 持续很长时间的 → 慢性的",
+        "example": "He suffers from chronic back pain.",
+        "example_zh": "他患有慢性背痛。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "chronicle",
+        "breakdown": "chron-(时间) + -icle(名词后缀)",
+        "meaning_en": "a factual written account of important events in the order of their occurrence",
+        "meaning_zh": "编年史，年代记",
+        "derivation": "chron(时间) + icle(名词后缀) → 按时间记录的文献 → 编年史",
+        "example": "The book is a chronicle of the nation's history.",
+        "example_zh": "这本书是一部国家历史的编年史。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "chronological",
+        "breakdown": "chron-(时间) + -o- + log-(学科) + -ical(形容词后缀)",
+        "meaning_en": "arranged in the order of time",
+        "meaning_zh": "按时间顺序排列的",
+        "derivation": "chron(时间) + o + log(学科) + ical(…的) → 按时间逻辑排列的 → 按时间顺序的",
+        "example": "Please list the events in chronological order.",
+        "example_zh": "请按时间顺序列出这些事件。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "synchronize",
+        "breakdown": "syn-(共同) + chron-(时间) + -ize(动词后缀)",
+        "meaning_en": "to cause to occur or operate at the same time or rate",
+        "meaning_zh": "使同步",
+        "derivation": "syn(共同) + chron(时间) + ize(使) → 使时间一致 → 使同步",
+        "example": "The dancers synchronized their movements perfectly.",
+        "example_zh": "舞者们完美地同步了他们的动作。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "anachronism",
+        "breakdown": "ana-(向后) + chron-(时间) + -ism(名词后缀)",
+        "meaning_en": "a thing belonging to a period other than that in which it exists",
+        "meaning_zh": "时代错误",
+        "derivation": "ana(向后) + chron(时间) + ism(现象) → 时间倒错的现象 → 时代错误",
+        "example": "Using a typewriter in the digital age seems like an anachronism.",
+        "example_zh": "在数字时代使用打字机似乎是一种时代错误。",
+        "toefl_frequency": "low"
+      }
+    ]
+  },
+  {
+    "root": "rupt-",
+    "type": "root",
+    "meaning_en": "break",
+    "meaning_zh": "断，破",
+    "origin": "Latin",
+    "related": [],
+    "words": [
+      {
+        "word": "disrupt",
+        "breakdown": "dis-(分开) + rupt-(断)",
+        "meaning_en": "to interrupt the normal course or unity of something",
+        "meaning_zh": "扰乱，中断",
+        "derivation": "dis(分开) + rupt(断) → 打断使分开 → 扰乱",
+        "example": "The protest disrupted traffic in the city center.",
+        "example_zh": "抗议活动扰乱了市中心的交通。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "erupt",
+        "breakdown": "e-(向外) + rupt-(破)",
+        "meaning_en": "to burst out suddenly and violently",
+        "meaning_zh": "爆发，喷发",
+        "derivation": "e(向外) + rupt(破) → 向外破裂 → 喷发",
+        "example": "The volcano erupted without warning.",
+        "example_zh": "火山毫无预警地喷发了。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "interrupt",
+        "breakdown": "inter-(在…之间) + rupt-(断)",
+        "meaning_en": "to stop the continuous progress of an activity or process",
+        "meaning_zh": "打断，中断",
+        "derivation": "inter(在…之间) + rupt(断) → 在中间打断 → 中断",
+        "example": "Please don't interrupt the speaker during the presentation.",
+        "example_zh": "请不要在演讲期间打断演讲者。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "corrupt",
+        "breakdown": "cor-(完全) + rupt-(破)",
+        "meaning_en": "having or showing a willingness to act dishonestly for personal gain",
+        "meaning_zh": "腐败的，贪污的",
+        "derivation": "cor(完全) + rupt(破) → 完全破坏(道德) → 腐败的",
+        "example": "The corrupt officials were eventually brought to justice.",
+        "example_zh": "腐败官员最终被绳之以法。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "abrupt",
+        "breakdown": "ab-(离开) + rupt-(断)",
+        "meaning_en": "sudden and unexpected",
+        "meaning_zh": "突然的，意外的",
+        "derivation": "ab(离开) + rupt(断) → 突然断开 → 突然的",
+        "example": "The meeting came to an abrupt end.",
+        "example_zh": "会议突然结束了。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "cred-",
+    "type": "root",
+    "meaning_en": "believe, trust",
+    "meaning_zh": "相信，信任",
+    "origin": "Latin",
+    "related": [],
+    "words": [
+      {
+        "word": "credible",
+        "breakdown": "cred-(相信) + -ible(能够…的)",
+        "meaning_en": "able to be believed; convincing",
+        "meaning_zh": "可信的，可靠的",
+        "derivation": "cred(相信) + ible(能…的) → 能被相信的 → 可信的",
+        "example": "The witness provided a credible account of the events.",
+        "example_zh": "证人对事件提供了可信的描述。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "incredible",
+        "breakdown": "in-(不) + cred-(相信) + -ible(能够…的)",
+        "meaning_en": "impossible to believe; extraordinary",
+        "meaning_zh": "难以置信的，惊人的",
+        "derivation": "in(不) + cred(相信) + ible(能…的) → 不能相信的 → 难以置信的",
+        "example": "The speed of technological change is incredible.",
+        "example_zh": "技术变革的速度令人难以置信。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "credential",
+        "breakdown": "cred-(信任) + -ential(名词后缀)",
+        "meaning_en": "a qualification or achievement that proves capability",
+        "meaning_zh": "证书，资格证明",
+        "derivation": "cred(信任) + ential(名词后缀) → 让人信任的凭证 → 资格证明",
+        "example": "She presented her credentials to the hiring committee.",
+        "example_zh": "她向招聘委员会出示了自己的资格证明。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "credit",
+        "breakdown": "cred-(相信) + -it",
+        "meaning_en": "the ability to obtain goods before payment based on trust; recognition",
+        "meaning_zh": "信用；学分；功劳",
+        "derivation": "cred(相信) + it → 基于相信给予的 → 信用",
+        "example": "Students need 120 credits to graduate.",
+        "example_zh": "学生需要修满120个学分才能毕业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "discredit",
+        "breakdown": "dis-(否定) + cred-(相信) + -it",
+        "meaning_en": "to harm the good reputation of someone",
+        "meaning_zh": "使不可信，使丢脸",
+        "derivation": "dis(否定) + cred(相信) + it → 使人不再相信 → 使不可信",
+        "example": "New evidence discredited the old theory.",
+        "example_zh": "新证据推翻了旧理论的可信度。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "voc-/vok-",
+    "type": "root",
+    "meaning_en": "call, voice",
+    "meaning_zh": "叫，声音",
+    "origin": "Latin",
+    "related": ["dict-", "phon-"],
+    "words": [
+      {
+        "word": "vocabulary",
+        "breakdown": "voc-(叫，语言) + -abul- + -ary(名词后缀)",
+        "meaning_en": "the body of words used in a particular language",
+        "meaning_zh": "词汇，词汇量",
+        "derivation": "voc(语言) + abul + ary(名词后缀) → 语言中可以叫出的词 → 词汇",
+        "example": "Reading widely helps expand your vocabulary.",
+        "example_zh": "广泛阅读有助于扩大词汇量。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "advocate",
+        "breakdown": "ad-(朝向) + voc-(叫) + -ate(动词/名词后缀)",
+        "meaning_en": "to publicly recommend or support; a person who supports a cause",
+        "meaning_zh": "提倡，拥护；倡导者",
+        "derivation": "ad(朝向) + voc(叫) + ate(做) → 朝着某方向呼喊 → 提倡",
+        "example": "She advocates for environmental protection.",
+        "example_zh": "她倡导环境保护。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "provoke",
+        "breakdown": "pro-(向前) + vok-(叫)",
+        "meaning_en": "to stimulate or give rise to a reaction or emotion",
+        "meaning_zh": "激怒，挑衅；引起",
+        "derivation": "pro(向前) + vok(叫) → 向前叫喊挑衅 → 激怒",
+        "example": "The controversial speech provoked widespread debate.",
+        "example_zh": "这篇有争议的演讲引发了广泛的辩论。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "evoke",
+        "breakdown": "e-(向外) + vok-(叫)",
+        "meaning_en": "to bring or recall to the conscious mind",
+        "meaning_zh": "唤起，引起",
+        "derivation": "e(向外) + vok(叫) → 把记忆叫出来 → 唤起",
+        "example": "The music evoked memories of her childhood.",
+        "example_zh": "这首音乐唤起了她童年的回忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "vocal",
+        "breakdown": "voc-(声音) + -al(形容词后缀)",
+        "meaning_en": "relating to the human voice; expressing opinions freely",
+        "meaning_zh": "声音的；直言不讳的",
+        "derivation": "voc(声音) + al(…的) → 与声音有关的 → 直言不讳的",
+        "example": "She has been vocal about the need for educational reform.",
+        "example_zh": "她一直在公开呼吁教育改革的必要性。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "mit-/mis-",
+    "type": "root",
+    "meaning_en": "send",
+    "meaning_zh": "发送，派遣",
+    "origin": "Latin",
+    "related": ["port-"],
+    "words": [
+      {
+        "word": "transmit",
+        "breakdown": "trans-(跨越) + mit-(发送)",
+        "meaning_en": "to cause something to pass on from one place or person to another",
+        "meaning_zh": "传输，传送；传播",
+        "derivation": "trans(跨越) + mit(发送) → 跨越距离发送 → 传输",
+        "example": "Radio waves transmit signals across long distances.",
+        "example_zh": "无线电波跨越远距离传输信号。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "submit",
+        "breakdown": "sub-(在…之下) + mit-(送)",
+        "meaning_en": "to present for consideration; to yield to authority",
+        "meaning_zh": "提交；屈服",
+        "derivation": "sub(在下方) + mit(送) → 从下方送上去 → 提交",
+        "example": "Please submit your essay by Friday.",
+        "example_zh": "请在周五之前提交你的论文。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "emission",
+        "breakdown": "e-(向外) + mis-(送) + -sion(名词后缀)",
+        "meaning_en": "the production and discharge of something, especially gas or radiation",
+        "meaning_zh": "排放，散发",
+        "derivation": "e(向外) + mis(送) + sion(行为) → 向外送出 → 排放",
+        "example": "Carbon emissions contribute to global warming.",
+        "example_zh": "碳排放导致全球变暖。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "permit",
+        "breakdown": "per-(通过) + mit-(送)",
+        "meaning_en": "to give authorization or consent to; an official document granting authorization",
+        "meaning_zh": "允许；许可证",
+        "derivation": "per(通过) + mit(送) → 让通过放行 → 允许",
+        "example": "The city does not permit construction in this area.",
+        "example_zh": "该市不允许在这个区域进行施工。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "missile",
+        "breakdown": "mis-(发送) + -sile(能够…的)",
+        "meaning_en": "an object forcibly propelled at a target",
+        "meaning_zh": "导弹，发射物",
+        "derivation": "mis(发送) + sile(能…的) → 能被发射出去的 → 导弹",
+        "example": "The military tested a new missile defense system.",
+        "example_zh": "军方测试了一种新型导弹防御系统。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "fac-/fact-",
+    "type": "root",
+    "meaning_en": "make, do",
+    "meaning_zh": "做，制造",
+    "origin": "Latin",
+    "related": [],
+    "words": [
+      {
+        "word": "factor",
+        "breakdown": "fact-(做) + -or(名词后缀)",
+        "meaning_en": "a circumstance, fact, or influence that contributes to a result",
+        "meaning_zh": "因素，要素",
+        "derivation": "fact(做) + or(…者) → 起作用的东西 → 因素",
+        "example": "Cost is a major factor in the decision.",
+        "example_zh": "成本是决策中的一个重要因素。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "manufacture",
+        "breakdown": "manu-(手) + fact-(制造) + -ure(名词/动词后缀)",
+        "meaning_en": "to make something on a large scale using machinery",
+        "meaning_zh": "制造，生产",
+        "derivation": "manu(手) + fact(制造) + ure(行为) → 用手制造 → 生产",
+        "example": "The company manufactures electronic devices.",
+        "example_zh": "这家公司制造电子设备。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "facility",
+        "breakdown": "fac-(做) + -ility(名词后缀)",
+        "meaning_en": "a place provided for a particular purpose; ease of doing something",
+        "meaning_zh": "设施；便利",
+        "derivation": "fac(做) + ility(名词后缀) → 方便做事的地方 → 设施",
+        "example": "The university has excellent research facilities.",
+        "example_zh": "这所大学拥有出色的研究设施。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "artifact",
+        "breakdown": "arti-(技术，技艺) + fact-(制造)",
+        "meaning_en": "an object made by a human being, typically of historical interest",
+        "meaning_zh": "人工制品，文物",
+        "derivation": "arti(技艺) + fact(制造) → 用技艺制造的东西 → 人工制品",
+        "example": "The museum displays artifacts from ancient Egypt.",
+        "example_zh": "博物馆展出了来自古埃及的文物。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "faculty",
+        "breakdown": "fac-(做) + -ulty(名词后缀)",
+        "meaning_en": "an inherent mental or physical power; the teaching staff of a university",
+        "meaning_zh": "能力；全体教员",
+        "derivation": "fac(做) + ulty(名词后缀) → 有做事能力的人 → 全体教员",
+        "example": "The faculty voted to change the curriculum.",
+        "example_zh": "全体教员投票决定修改课程。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "un-",
+    "type": "prefix",
+    "meaning_en": "not, opposite of",
+    "meaning_zh": "不，相反",
+    "origin": "Old English",
+    "related": ["dis-"],
+    "words": [
+      {
+        "word": "unprecedented",
+        "breakdown": "un-(不) + precedent-(先例) + -ed(形容词后缀)",
+        "meaning_en": "never done or known before",
+        "meaning_zh": "史无前例的，空前的",
+        "derivation": "un(不) + precedent(先例) + ed(…的) → 没有先例的 → 史无前例的",
+        "example": "The country experienced unprecedented economic growth.",
+        "example_zh": "这个国家经历了史无前例的经济增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "underestimate",
+        "breakdown": "under-(低于) + estimate(估计)",
+        "meaning_en": "to estimate something to be smaller or less important than it actually is",
+        "meaning_zh": "低估",
+        "derivation": "under(低于) + estimate(估计) → 估计得过低 → 低估",
+        "example": "Do not underestimate the difficulty of the exam.",
+        "example_zh": "不要低估这次考试的难度。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "universal",
+        "breakdown": "uni-(一) + vers-(转) + -al(形容词后缀)",
+        "meaning_en": "relating to or affecting all people in the world",
+        "meaning_zh": "普遍的，全球的",
+        "derivation": "uni(一) + vers(转) + al(…的) → 合为一体旋转的 → 普遍的",
+        "example": "Access to clean water is a universal need.",
+        "example_zh": "获得清洁水源是全人类的普遍需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "unlikely",
+        "breakdown": "un-(不) + likely(可能的)",
+        "meaning_en": "not likely to happen, be done, or be true",
+        "meaning_zh": "不太可能的",
+        "derivation": "un(不) + likely(可能的) → 不可能的 → 不太可能的",
+        "example": "It is unlikely that the project will finish on time.",
+        "example_zh": "这个项目不太可能按时完成。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "uncover",
+        "breakdown": "un-(去除) + cover(覆盖)",
+        "meaning_en": "to remove a cover from; to discover something hidden",
+        "meaning_zh": "揭露，发现",
+        "derivation": "un(去除) + cover(覆盖) → 去除覆盖 → 揭露",
+        "example": "Archaeologists uncovered the remains of an ancient city.",
+        "example_zh": "考古学家发现了一座古城的遗迹。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "re-",
+    "type": "prefix",
+    "meaning_en": "again, back",
+    "meaning_zh": "再，回",
+    "origin": "Latin",
+    "related": [],
+    "words": [
+      {
+        "word": "restore",
+        "breakdown": "re-(回) + store(存放，建立)",
+        "meaning_en": "to bring back to a former condition or position",
+        "meaning_zh": "恢复，修复",
+        "derivation": "re(回) + store(存放) → 放回原来的状态 → 恢复",
+        "example": "The team worked to restore the damaged painting.",
+        "example_zh": "团队努力修复受损的画作。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "reveal",
+        "breakdown": "re-(回) + veal(面纱，遮盖)",
+        "meaning_en": "to make previously unknown information known to others",
+        "meaning_zh": "揭示，透露",
+        "derivation": "re(回) + veal(面纱) → 揭开面纱 → 揭示",
+        "example": "The study revealed a link between diet and disease.",
+        "example_zh": "这项研究揭示了饮食与疾病之间的关联。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "revise",
+        "breakdown": "re-(再) + vis-(看) + -e",
+        "meaning_en": "to reexamine and make alterations to written or printed matter",
+        "meaning_zh": "修订，修改",
+        "derivation": "re(再) + vis(看) → 再看一遍 → 修订",
+        "example": "The author revised the manuscript several times.",
+        "example_zh": "作者多次修改了手稿。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "renewable",
+        "breakdown": "re-(再) + new(新的) + -able(能够…的)",
+        "meaning_en": "capable of being renewed; not depleted when used",
+        "meaning_zh": "可再生的，可更新的",
+        "derivation": "re(再) + new(新的) + able(能…的) → 能再次变新的 → 可再生的",
+        "example": "Solar power is a renewable energy source.",
+        "example_zh": "太阳能是一种可再生能源。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "reconstruct",
+        "breakdown": "re-(再) + construct(建造)",
+        "meaning_en": "to build or form something again after it has been damaged or destroyed",
+        "meaning_zh": "重建，重构",
+        "derivation": "re(再) + construct(建造) → 再次建造 → 重建",
+        "example": "Scientists are trying to reconstruct the ancient climate.",
+        "example_zh": "科学家正试图重建古代气候模型。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "pre-",
+    "type": "prefix",
+    "meaning_en": "before",
+    "meaning_zh": "在…之前",
+    "origin": "Latin",
+    "related": [],
+    "words": [
+      {
+        "word": "predominant",
+        "breakdown": "pre-(在…之前) + dominant(占优势的)",
+        "meaning_en": "present as the strongest or main element",
+        "meaning_zh": "占主导地位的，显著的",
+        "derivation": "pre(在前) + dominant(支配的) → 在前面支配的 → 占主导地位的",
+        "example": "English is the predominant language in international business.",
+        "example_zh": "英语是国际商务中的主导语言。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "preserve",
+        "breakdown": "pre-(在…之前) + serve(保持)",
+        "meaning_en": "to maintain something in its original or existing state",
+        "meaning_zh": "保存，保护",
+        "derivation": "pre(提前) + serve(保持) → 提前保持好 → 保存",
+        "example": "We must preserve the natural environment for future generations.",
+        "example_zh": "我们必须为后代保护自然环境。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "preliminary",
+        "breakdown": "pre-(在…之前) + limin-(门槛) + -ary(形容词后缀)",
+        "meaning_en": "denoting an action or event preceding or done in preparation for something",
+        "meaning_zh": "初步的，预备的",
+        "derivation": "pre(在…之前) + limin(门槛) + ary(…的) → 在门槛之前的 → 初步的",
+        "example": "Preliminary results suggest the treatment is effective.",
+        "example_zh": "初步结果表明这种治疗方法是有效的。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "previous",
+        "breakdown": "pre-(在…之前) + vi-(路) + -ous(形容词后缀)",
+        "meaning_en": "existing or occurring before in time or order",
+        "meaning_zh": "先前的，以往的",
+        "derivation": "pre(在…之前) + vi(路) + ous(…的) → 走在前面的 → 先前的",
+        "example": "She had no previous experience in this field.",
+        "example_zh": "她在这个领域没有以往的经验。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "precede",
+        "breakdown": "pre-(在…之前) + ced-(走)",
+        "meaning_en": "to come before something in time, order, or position",
+        "meaning_zh": "在…之前，先于",
+        "derivation": "pre(在…之前) + ced(走) → 走在前面 → 先于",
+        "example": "A brief introduction will precede the main lecture.",
+        "example_zh": "正式讲座之前会有一个简短的介绍。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "dis-",
+    "type": "prefix",
+    "meaning_en": "apart, away, not",
+    "meaning_zh": "分开，离开，不",
+    "origin": "Latin",
+    "related": ["un-"],
+    "words": [
+      {
+        "word": "distinguish",
+        "breakdown": "dis-(分开) + stingu-(刺，标记) + -ish(动词后缀)",
+        "meaning_en": "to recognize or treat someone or something as different",
+        "meaning_zh": "区分，辨别",
+        "derivation": "dis(分开) + stingu(标记) + ish(做) → 用标记分开 → 区分",
+        "example": "It is important to distinguish between fact and opinion.",
+        "example_zh": "区分事实和观点是很重要的。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "distribute",
+        "breakdown": "dis-(分开) + tribut-(给予) + -e",
+        "meaning_en": "to give shares of something; to spread over an area",
+        "meaning_zh": "分配，分发；分布",
+        "derivation": "dis(分开) + tribut(给予) → 分开给予 → 分配",
+        "example": "The organization distributes food to those in need.",
+        "example_zh": "该组织向有需要的人分发食物。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "dispose",
+        "breakdown": "dis-(分开) + pos-(放置) + -e",
+        "meaning_en": "to get rid of; to arrange in a particular position",
+        "meaning_zh": "处理，处置",
+        "derivation": "dis(离开) + pos(放置) + e → 放到一边去 → 处置",
+        "example": "You should dispose of hazardous waste properly.",
+        "example_zh": "你应该妥善处理危险废物。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "display",
+        "breakdown": "dis-(展开) + play-(折叠)",
+        "meaning_en": "to make visible by putting in a noticeable position",
+        "meaning_zh": "展示，陈列",
+        "derivation": "dis(展开) + play(折叠) → 展开折叠的东西 → 展示",
+        "example": "The museum displays artifacts from the colonial period.",
+        "example_zh": "博物馆展出了殖民时期的文物。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "diminish",
+        "breakdown": "di-(分开) + min-(小) + -ish(动词后缀)",
+        "meaning_en": "to make or become less",
+        "meaning_zh": "减少，缩小",
+        "derivation": "di(分开) + min(小) + ish(使) → 使变得更小 → 减少",
+        "example": "The supply of fresh water is diminishing rapidly.",
+        "example_zh": "淡水供应正在迅速减少。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "trans-",
+    "type": "prefix",
+    "meaning_en": "across, beyond, through",
+    "meaning_zh": "跨越，超越，通过",
+    "origin": "Latin",
+    "related": ["port-", "mit-/mis-"],
+    "words": [
+      {
+        "word": "transform",
+        "breakdown": "trans-(跨越) + form(形式)",
+        "meaning_en": "to make a thorough or dramatic change in form or appearance",
+        "meaning_zh": "转变，改造",
+        "derivation": "trans(跨越) + form(形式) → 跨越原有形式 → 转变",
+        "example": "Technology has transformed modern education.",
+        "example_zh": "科技改变了现代教育。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "transition",
+        "breakdown": "trans-(跨越) + it-(走) + -ion(名词后缀)",
+        "meaning_en": "the process of changing from one state or condition to another",
+        "meaning_zh": "过渡，转变",
+        "derivation": "trans(跨越) + it(走) + ion(行为) → 走过去到另一边 → 过渡",
+        "example": "The transition from high school to college can be challenging.",
+        "example_zh": "从高中到大学的过渡可能充满挑战。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "transparent",
+        "breakdown": "trans-(通过) + par-(出现) + -ent(形容词后缀)",
+        "meaning_en": "allowing light to pass through; easy to perceive or detect",
+        "meaning_zh": "透明的；显而易见的",
+        "derivation": "trans(通过) + par(出现) + ent(…的) → 能透过去看到的 → 透明的",
+        "example": "The government should be transparent about its spending.",
+        "example_zh": "政府应该对其支出保持透明。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "transplant",
+        "breakdown": "trans-(跨越) + plant(种植)",
+        "meaning_en": "to move or transfer something to another place or situation",
+        "meaning_zh": "移植，迁移",
+        "derivation": "trans(跨越) + plant(种植) → 跨越位置重新种植 → 移植",
+        "example": "The surgeon performed a heart transplant.",
+        "example_zh": "外科医生进行了心脏移植手术。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "transcend",
+        "breakdown": "trans-(超越) + scend-(攀登)",
+        "meaning_en": "to go beyond the range or limits of something",
+        "meaning_zh": "超越，超出",
+        "derivation": "trans(超越) + scend(攀登) → 攀登并超越 → 超越",
+        "example": "Great art can transcend cultural boundaries.",
+        "example_zh": "伟大的艺术可以超越文化的界限。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "-tion/-sion",
+    "type": "suffix",
+    "meaning_en": "noun: act, state, or result of",
+    "meaning_zh": "名词后缀：表示行为、状态或结果",
+    "origin": "Latin",
+    "related": ["-ment"],
+    "words": [
+      {
+        "word": "civilization",
+        "breakdown": "civil-(公民) + -ize(使成为) + -ation(名词后缀：行为/状态)",
+        "meaning_en": "the stage of human social and cultural development considered most advanced",
+        "meaning_zh": "文明",
+        "derivation": "civil(公民) + ize(使成为) + ation(状态) → 使成为公民社会的状态 → 文明",
+        "example": "Ancient Greek civilization made lasting contributions to philosophy.",
+        "example_zh": "古希腊文明对哲学做出了持久的贡献。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "conservation",
+        "breakdown": "con-(共同) + serv-(保持) + -ation(名词后缀：行为/状态)",
+        "meaning_en": "the action of conserving something, especially the natural environment",
+        "meaning_zh": "保护，保存",
+        "derivation": "con(共同) + serv(保持) + ation(行为) → 共同保持的行为 → 保护",
+        "example": "Conservation of natural resources is essential for sustainability.",
+        "example_zh": "自然资源的保护对于可持续发展至关重要。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "migration",
+        "breakdown": "migr-(迁移) + -ation(名词后缀：行为/状态)",
+        "meaning_en": "the movement from one region or habitat to another",
+        "meaning_zh": "迁移，移居",
+        "derivation": "migr(迁移) + ation(行为) → 迁移的行为 → 迁移",
+        "example": "Bird migration patterns are affected by climate change.",
+        "example_zh": "鸟类的迁徙模式受到气候变化的影响。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expansion",
+        "breakdown": "ex-(向外) + pans-(展开) + -ion(名词后缀：行为/状态)",
+        "meaning_en": "the action of becoming larger or more extensive",
+        "meaning_zh": "扩张，膨胀",
+        "derivation": "ex(向外) + pans(展开) + ion(行为) → 向外展开 → 扩张",
+        "example": "The rapid expansion of the city caused environmental concerns.",
+        "example_zh": "城市的快速扩张引发了环境问题。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "erosion",
+        "breakdown": "e-(向外) + ros-(啃，侵蚀) + -ion(名词后缀：行为/状态)",
+        "meaning_en": "the gradual destruction or diminution of something",
+        "meaning_zh": "侵蚀，腐蚀",
+        "derivation": "e(向外) + ros(侵蚀) + ion(行为) → 向外啃蚀 → 侵蚀",
+        "example": "Soil erosion is a major problem in deforested areas.",
+        "example_zh": "土壤侵蚀是森林被砍伐地区的一个主要问题。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "-ous/-ious",
+    "type": "suffix",
+    "meaning_en": "adjective: full of, having the quality of",
+    "meaning_zh": "形容词后缀：充满…的，具有…性质的",
+    "origin": "Latin",
+    "related": ["-able/-ible"],
+    "words": [
+      {
+        "word": "indigenous",
+        "breakdown": "indi-(在…之内) + gen-(出生) + -ous(形容词后缀：具有…的)",
+        "meaning_en": "originating or occurring naturally in a particular place",
+        "meaning_zh": "本土的，土著的",
+        "derivation": "indi(在…之内) + gen(出生) + ous(…的) → 在当地出生的 → 本土的",
+        "example": "The indigenous population has lived here for thousands of years.",
+        "example_zh": "原住民在这里生活了数千年。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "enormous",
+        "breakdown": "e-(超出) + norm-(标准) + -ous(形容词后缀：充满…的)",
+        "meaning_en": "very large in size, quantity, or extent",
+        "meaning_zh": "巨大的，庞大的",
+        "derivation": "e(超出) + norm(标准) + ous(…的) → 超出正常标准的 → 巨大的",
+        "example": "The project requires an enormous amount of funding.",
+        "example_zh": "这个项目需要巨额资金。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "hazardous",
+        "breakdown": "hazard(危险) + -ous(形容词后缀：充满…的)",
+        "meaning_en": "risky; dangerous",
+        "meaning_zh": "有危险的，有害的",
+        "derivation": "hazard(危险) + ous(充满…的) → 充满危险的 → 有危险的",
+        "example": "Hazardous chemicals must be stored carefully.",
+        "example_zh": "危险化学品必须小心存放。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "prosperous",
+        "breakdown": "prosper(繁荣) + -ous(形容词后缀：充满…的)",
+        "meaning_en": "successful in material terms; flourishing financially",
+        "meaning_zh": "繁荣的，兴旺的",
+        "derivation": "prosper(繁荣) + ous(充满…的) → 充满繁荣的 → 繁荣的",
+        "example": "The region became prosperous through trade.",
+        "example_zh": "该地区通过贸易变得繁荣昌盛。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "ambiguous",
+        "breakdown": "ambi-(两边) + gu-(驱动) + -ous(形容词后缀：具有…的)",
+        "meaning_en": "open to more than one interpretation; unclear",
+        "meaning_zh": "模糊的，含糊不清的",
+        "derivation": "ambi(两边) + gu(驱动) + ous(…的) → 被驱向两边的 → 模糊的",
+        "example": "The instructions were ambiguous and confused the students.",
+        "example_zh": "说明含糊不清，让学生们感到困惑。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "-able/-ible",
+    "type": "suffix",
+    "meaning_en": "adjective: capable of, worthy of",
+    "meaning_zh": "形容词后缀：能够…的，值得…的",
+    "origin": "Latin",
+    "related": ["-ous/-ious"],
+    "words": [
+      {
+        "word": "sustainable",
+        "breakdown": "sustain(维持) + -able(能够…的)",
+        "meaning_en": "able to be maintained at a certain rate or level",
+        "meaning_zh": "可持续的",
+        "derivation": "sustain(维持) + able(能…的) → 能够持续维持的 → 可持续的",
+        "example": "We need to find sustainable sources of energy.",
+        "example_zh": "我们需要找到可持续的能源。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "accessible",
+        "breakdown": "access(接近) + -ible(能够…的)",
+        "meaning_en": "able to be reached or entered; easy to understand",
+        "meaning_zh": "可接近的，可获得的",
+        "derivation": "access(接近) + ible(能…的) → 能够接近的 → 可接近的",
+        "example": "The building is accessible to people with disabilities.",
+        "example_zh": "这座建筑对残障人士是无障碍的。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "considerable",
+        "breakdown": "consider(考虑) + -able(值得…的)",
+        "meaning_en": "notably large in size, amount, or extent",
+        "meaning_zh": "相当大的，重要的",
+        "derivation": "consider(考虑) + able(值得…的) → 值得考虑的(规模) → 相当大的",
+        "example": "The research required a considerable amount of time.",
+        "example_zh": "这项研究需要相当多的时间。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inevitable",
+        "breakdown": "in-(不) + evit-(避免) + -able(能够…的)",
+        "meaning_en": "certain to happen; unavoidable",
+        "meaning_zh": "不可避免的，必然的",
+        "derivation": "in(不) + evit(避免) + able(能…的) → 不能避免的 → 不可避免的",
+        "example": "Change is inevitable in any growing organization.",
+        "example_zh": "在任何成长中的组织里，变化是不可避免的。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "compatible",
+        "breakdown": "com-(共同) + pat-(感受) + -ible(能够…的)",
+        "meaning_en": "able to exist or occur together without conflict",
+        "meaning_zh": "兼容的，相容的",
+        "derivation": "com(共同) + pat(感受) + ible(能…的) → 能共同感受的 → 兼容的",
+        "example": "The software is compatible with most operating systems.",
+        "example_zh": "这款软件与大多数操作系统兼容。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "-ment",
+    "type": "suffix",
+    "meaning_en": "noun: result, action, or process",
+    "meaning_zh": "名词后缀：表示结果、行为或过程",
+    "origin": "Latin",
+    "related": ["-tion/-sion"],
+    "words": [
+      {
+        "word": "environment",
+        "breakdown": "environ(围绕) + -ment(名词后缀：状态/结果)",
+        "meaning_en": "the surroundings or conditions in which a person, animal, or plant lives",
+        "meaning_zh": "环境",
+        "derivation": "environ(围绕) + ment(状态) → 围绕在周围的状态 → 环境",
+        "example": "Pollution is causing serious damage to the environment.",
+        "example_zh": "污染正在对环境造成严重损害。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "achievement",
+        "breakdown": "achieve(实现) + -ment(名词后缀：结果)",
+        "meaning_en": "a thing done successfully with effort, skill, or courage",
+        "meaning_zh": "成就，成绩",
+        "derivation": "achieve(实现) + ment(结果) → 实现的结果 → 成就",
+        "example": "Landing on the moon was a remarkable achievement.",
+        "example_zh": "登上月球是一项非凡的成就。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "development",
+        "breakdown": "develop(发展) + -ment(名词后缀：过程/结果)",
+        "meaning_en": "the process of developing or being developed",
+        "meaning_zh": "发展，开发",
+        "derivation": "develop(发展) + ment(过程) → 发展的过程 → 发展",
+        "example": "Economic development has improved living standards.",
+        "example_zh": "经济发展提高了生活水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "establishment",
+        "breakdown": "establish(建立) + -ment(名词后缀：结果/行为)",
+        "meaning_en": "the action of establishing something; a business or organization",
+        "meaning_zh": "建立；机构",
+        "derivation": "establish(建立) + ment(结果) → 建立的结果 → 机构",
+        "example": "The establishment of the university dates back to 1850.",
+        "example_zh": "这所大学的建立可以追溯到1850年。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "assessment",
+        "breakdown": "assess(评估) + -ment(名词后缀：行为/结果)",
+        "meaning_en": "the evaluation or estimation of the nature, quality, or ability of something",
+        "meaning_zh": "评估，评价",
+        "derivation": "assess(评估) + ment(行为) → 评估的行为 → 评估",
+        "example": "The teacher conducted a formal assessment of student progress.",
+        "example_zh": "老师对学生的进步进行了正式评估。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "-ize/-ise",
+    "type": "suffix",
+    "meaning_en": "verb: to make, to become, to treat as",
+    "meaning_zh": "动词后缀：使成为，使…化",
+    "origin": "Greek",
+    "related": [],
+    "words": [
+      {
+        "word": "colonize",
+        "breakdown": "colon-(殖民地) + -ize(使成为)",
+        "meaning_en": "to send a group of settlers to establish political control over a place",
+        "meaning_zh": "殖民，开拓",
+        "derivation": "colon(殖民地) + ize(使成为) → 使成为殖民地 → 殖民",
+        "example": "European powers colonized many parts of the world.",
+        "example_zh": "欧洲列强殖民了世界许多地方。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "specialize",
+        "breakdown": "special(特别的) + -ize(使成为)",
+        "meaning_en": "to concentrate on and become expert in a particular area",
+        "meaning_zh": "专门从事，专攻",
+        "derivation": "special(特别的) + ize(使成为) → 使自己变得特别 → 专攻",
+        "example": "She decided to specialize in environmental law.",
+        "example_zh": "她决定专攻环境法。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "minimize",
+        "breakdown": "minim-(最小) + -ize(使成为)",
+        "meaning_en": "to reduce something to the smallest possible amount or degree",
+        "meaning_zh": "使最小化，最小化",
+        "derivation": "minim(最小) + ize(使成为) → 使成为最小 → 最小化",
+        "example": "We should minimize waste to protect the environment.",
+        "example_zh": "我们应该减少浪费来保护环境。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "emphasize",
+        "breakdown": "em-(在…中) + phas-(显示) + -ize(使成为)",
+        "meaning_en": "to give special importance or prominence to something",
+        "meaning_zh": "强调，着重",
+        "derivation": "em(在…中) + phas(显示) + ize(使) → 使之显现出来 → 强调",
+        "example": "The professor emphasized the importance of critical thinking.",
+        "example_zh": "教授强调了批判性思维的重要性。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "characterize",
+        "breakdown": "character(特征) + -ize(使成为)",
+        "meaning_en": "to describe the distinctive nature or features of something",
+        "meaning_zh": "以…为特征；描述…的特征",
+        "derivation": "character(特征) + ize(使成为) → 使具有特征 → 以…为特征",
+        "example": "Dry summers and mild winters characterize the Mediterranean climate.",
+        "example_zh": "干燥的夏季和温和的冬季是地中海气候的特征。",
+        "toefl_frequency": "high"
+      }
+    ]
+  }
+]

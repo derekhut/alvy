@@ -66,3 +66,4 @@ All UI text in Chinese. English only for vocabulary content itself.
 | 2026-04-01 | No quiz/multiple choice | Learning is the derivation, not guessing from options. |
 | 2026-04-01 | Chinese UI text | Product is for Chinese students. |
 | 2026-04-01 | Dusty rose for errors | "Not quite." reframes wrong answers as teaching moments. |
+| 2026-04-01 | Amber border on celebration card | Exception to slate border rule. Double border + amber = trophy moment. Only celebration screen uses this. |

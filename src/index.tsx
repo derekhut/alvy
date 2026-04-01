@@ -7,15 +7,15 @@ import type { Command } from "./lib/types.js";
 
 const cli = meow(
   `
-  Usage
-    $ toefl-roots           Daily session (3 roots + drills)
-    $ toefl-roots review    Practice weak morphemes
-    $ toefl-roots stats     Export progress summary
-    $ toefl-roots doctor    Check environment
+  用法
+    $ toefl-roots           每日学习（3 个词根，每个 5 个单词）
+    $ toefl-roots review    复习已学词根
+    $ toefl-roots stats     导出学习进度
+    $ toefl-roots doctor    检查运行环境
 
-  Options
-    --help    Show this help
-    --version Show version
+  选项
+    --help    显示帮助信息
+    --version 显示版本号
 `,
   {
     importMeta: import.meta,

@@ -1,20 +1,21 @@
-# TOEFL Word Root CLI - Implementation Handoff
+# TOEFL Word Root CLI — Implementation Handoff
 
 Last updated: 2026-04-01
 Branch: master
-Status: Reviews CLEARED, ready to implement
+Status: V1 SHIPPED
 
 ## What This Is
 
-A terminal-based vocabulary tool for Chinese TOEFL students. Students learn English word roots with Chinese translations, drill words built from those roots, and track progress with streaks/XP. Built with Ink (React for CLI) + TypeScript + local JSON persistence.
+A terminal-based vocabulary tool for Chinese TOEFL students. Students learn English word roots through 新东方-style derivation chains — each word is broken down into morphemes with Chinese translations, and a step-by-step derivation shows how the parts create the meaning. No quiz, no multiple choice. Built with Ink (React for CLI) + TypeScript + local JSON persistence.
 
-The core insight: word roots are the English equivalent of Chinese radicals. "benevolent" isn't arbitrary, it's "bene-(good) + vol-(willing) + -ent". Chinese translations in every explanation bridge the two languages.
+The core insight: word roots are the English equivalent of Chinese radicals. "benevolent" isn't arbitrary, it's `bene(好的) + vol(意愿) + ent(…的) → 有好意愿的 → 仁慈的`. Chinese translations in every explanation bridge the two languages.
 
 ## Source Documents
 
 - **Design doc (APPROVED):** `~/.gstack/projects/self-learn/derekhu-master-design-20260401-121754.md`
 - **CEO plan (6 expansions accepted):** `~/.gstack/projects/self-learn/ceo-plans/2026-04-01-toefl-word-root-cli.md`
-- **Test plan:** `~/.gstack/projects/self-learn/derekhu-master-eng-review-test-plan-20260401-132500.md`
+- **Design system:** `toefl-roots/DESIGN.md`
+- **Architecture:** `toefl-roots/ARCHITECTURE.md`
 - **TODOS (V2/V3):** `TODOS.md` in repo root
 
 ## Architecture
@@ -22,61 +23,63 @@ The core insight: word roots are the English equivalent of Chinese radicals. "be
 ```
 toefl-roots/
   src/
-    index.tsx              # Entry point, Ink render, CLI command routing
-    app.tsx                # Main app, routing between screens
+    index.tsx              # Entry point, Ink render, CLI command routing (meow)
+    app.tsx                # Main app, routes command to screen component
     components/
-      root-lesson.tsx      # Root + breakdown + Chinese meaning + 5 words
-      word-drill.tsx       # Multiple choice quiz (1 correct + 3 distractors)
-      result.tsx           # Correct/wrong + Chinese explanation
-      session-summary.tsx  # XP earned, streak, accuracy, weakest root
-      dashboard.tsx        # X/30 mastered + progress bar (shown on launch)
+      daily-session.tsx    # State machine: dashboard → root-intro → word-detail → summary
+      review-session.tsx   # Review weak roots (same flow, filtered selection)
+      dashboard.tsx        # X/30 mastered + progress bar + streak (shown on launch)
+      root-lesson.tsx      # Root intro card: meaning, origin, related roots
+      word-detail.tsx      # Single word: breakdown, derivation chain, example, Chinese
+      session-summary.tsx  # XP earned, streak, words studied this session
       celebration.tsx      # Graduation screen when all 30 mastered
       streak-header.tsx    # Streak counter + daily progress bar
+      stats.tsx            # Export markdown progress summary
+      doctor.tsx           # Environment health checks
       explore.tsx          # V2 stub ("Coming in V2")
     lib/
-      roots-db.ts          # Query functions for roots.json
-      store.ts             # Local JSON read/write (~/.toefl-roots/)
-      progress.ts          # Business logic: streak, XP, accuracy, mastery, selection
+      roots-db.ts          # Query functions over roots.json (in-memory)
+      store.ts             # Local JSON read/write (~/.toefl-roots/data.json)
+      progress.ts          # Business logic: streak, XP, mastery, morpheme selection
       ai.ts                # V2 stub (OpenAI client)
       types.ts             # TypeScript interfaces
     data/
       roots.json           # 20 roots + 10 affixes, 5 words each = 150 words
   package.json
   tsconfig.json
+  DESIGN.md              # Design system (colors, typography, spacing, CJK rules)
+  ARCHITECTURE.md        # Detailed architecture doc for developers
 ```
 
 ## 4 CLI Commands
 
 | Command | What it does |
 |---------|-------------|
-| `toefl-roots` | Daily session: 3 roots, lesson then 5-question drill each |
-| `toefl-roots review` | Targeted practice on weak morphemes (accuracy < 80%) |
+| `toefl-roots` | Daily session: 3 roots, each with intro + 5 word walkthroughs |
+| `toefl-roots review` | Practice weak roots (fewest words studied, already seen) |
 | `toefl-roots stats` | Export markdown progress summary |
-| `toefl-roots doctor` | Check Node.js version, npm access, CJK font, disk permissions |
+| `toefl-roots doctor` | Check Node.js version, npm access, UTF-8 locale, disk permissions |
 
 ## Key Decisions from Reviews
 
-### Mastery: 80% accuracy threshold
-A morpheme is "mastered" when `seen === true && drillAccuracy >= 0.8`. Exported as `MASTERY_THRESHOLD = 0.8` in progress.ts.
+### Mastery: 5 words studied
+A root is "mastered" when `wordsStudied >= 5` (all 5 of its words have been studied). Checked by `masteredCount()` in progress.ts.
+
+### No quiz system
+The design review explicitly decided against quizzes. Learning IS the derivation chain — students read how morphemes combine to create meaning. There are no questions, no right/wrong answers, no accuracy metrics.
 
 ### File naming: roots.json stays
-Keep `roots.json` (not morphemes.json). Add a `"type": "root" | "prefix" | "suffix"` field to each entry. The file name is user-facing (students see it in error messages), and "roots" is the concept they understand.
+Keep `roots.json` (not morphemes.json). Each entry has a `"type": "root" | "prefix" | "suffix"` field. The file name is user-facing in error messages, and "roots" is the concept students understand.
 
 ### Store split: I/O vs business logic
 - `store.ts` — read/write JSON to `~/.toefl-roots/data.json`, handle first-run initialization, corrupted file backup
-- `progress.ts` — all business logic: `updateStreak()`, `calculateXP()`, `updateDrillAccuracy()`, `isMastered()`, `selectNextMorphemes()`, `selectReviewMorphemes()`
-
-### Review drills update accuracy
-Review drills use the same `updateDrillAccuracy()` formula as daily drills. Students see progress from reviewing weak morphemes.
+- `progress.ts` — all business logic: `updateStreak()`, `addXP()`, `markRootSeen()`, `markWordStudied()`, `masteredCount()`, `selectNextMorphemes()`
 
 ### Batch writes only
-Write `data.json` at session end + quit signal (SIGINT handler). Not after every answer. Prevents filesystem thrashing.
+Write `data.json` at session end + quit signal (SIGINT handler). Not after every word. Prevents filesystem thrashing. Uses atomic write (write to `.tmp`, then `rename()`).
 
-### Distractor selection
-Draw from other learned roots. If < 4 roots learned, draw from unlearned roots in roots.json. Never show distractors from the same root as the correct answer.
-
-### CJK rendering: prototype first
-Build root-lesson.tsx FIRST before anything else. Render a root with Chinese characters in a bordered box. Verify alignment in Terminal.app and iTerm2. If yoga-layout breaks CJK double-width, fix it before building anything else.
+### CJK rendering
+Chinese text is always dimmed, never bold (preserves stroke clarity). All UI text is in Chinese. English only for vocabulary content. Left-aligned, never centered for mixed CJK/English.
 
 ## Data Models
 
@@ -86,16 +89,18 @@ Build root-lesson.tsx FIRST before anything else. Render a root with Chinese cha
   "root": "bene-",
   "type": "root",
   "meaning_en": "good, well",
-  "meaning_zh": "good",
+  "meaning_zh": "好的，善良的",
   "origin": "Latin",
   "related": ["mal-"],
   "words": [
     {
       "word": "benefit",
-      "breakdown": "bene-(good) + fit-(do)",
-      "meaning_en": "an advantage or profit",
-      "meaning_zh": "benefit",
+      "breakdown": "bene-(好的) + fit-(做)",
+      "derivation": "bene(好的) + fit(做) → 做好事 → 益处",
+      "meaning_en": "an advantage or profit gained from something",
+      "meaning_zh": "益处，好处",
       "example": "Exercise has many health benefits.",
+      "example_zh": "运动有很多健康方面的益处。",
       "toefl_frequency": "high"
     }
   ]
@@ -109,40 +114,80 @@ Build root-lesson.tsx FIRST before anything else. Render a root with Chinese cha
   "xp": { "total": 0, "today": 0 },
   "dailyGoal": 3,
   "rootProgress": {
-    "bene-": { "seen": true, "drillAccuracy": 0.8, "lastDrilled": "2026-04-01" }
+    "bene-": { "seen": true, "wordsStudied": 5, "lastStudied": "2026-04-01" }
   },
-  "wordHistory": {
-    "benevolent": { "attempts": 3, "correct": 2, "lastSeen": "2026-04-01" }
-  },
-  "mnemonicCache": {}
+  "wordsStudied": ["benefit", "benevolent", "benediction", "benefactor", "benign"]
+}
+```
+
+### TypeScript interfaces
+```typescript
+interface UserData {
+  streak: { current: number; longest: number; lastDate: string | null };
+  xp: { total: number; today: number };
+  dailyGoal: number;
+  rootProgress: Record<string, RootProgress>;
+  wordsStudied: string[];
+}
+
+interface RootProgress {
+  seen: boolean;
+  wordsStudied: number;    // 0-5, mastered when >= 5
+  lastStudied: string | null;
 }
 ```
 
 ## Morpheme Selection Algorithm
 
-1. **Daily session:** Unseen morphemes first (sequential order from roots.json). Once all 30 seen, pick lowest drillAccuracy. Tie-breaker: oldest lastDrilled.
-2. **Review mode:** All morphemes where `seen === true && drillAccuracy < 0.8`. If none, show "All mastered!" message.
+1. **Daily session (`selectNextMorphemes`):** Unseen roots first, in `roots.json` order. Once all 30 seen, pick roots with the fewest `wordsStudied`. Tie-breaker: oldest `lastStudied`.
+2. **Review mode:** Same algorithm but filtered to roots where `seen === true`. Picks the 3 weakest seen roots for repeat practice.
 
-## Implementation Order
+## Session Flow
 
-1. **`toefl-roots doctor`** — verify student environments this week
-2. **CJK prototype** — root-lesson.tsx with Chinese in bordered box, test alignment
-3. **Data layer** — roots.json (with type field), store.ts, progress.ts, roots-db.ts
-4. **Components** — dashboard, word-drill, session-summary, celebration, stats
-5. **Commands** — daily, review, stats, doctor
-6. **Tests** — Vitest + ink-testing-library, 3 tiers (see test plan)
-7. **Build + distribution** — package.json bin field, tsc, shebang, `npx toefl-roots`
+```
+Launch → Dashboard (X/30 mastered, streak, XP)
+  → Root Intro (root meaning, origin, related roots)
+    → Word Detail (breakdown + derivation chain + Chinese + example)
+    → Word Detail ... (×5 per root, Enter to advance)
+  → Next Root Intro ... (×3 roots per session)
+  → Session Summary (words studied, XP earned, streak)
+  → If all 30 mastered → Celebration screen
+```
 
-## V1 Scope (all accepted from CEO review)
+State machine phases: `dashboard → root-intro → word-detail → summary | celebration`
 
-- 20 roots + 10 prefixes/suffixes = 30 entries x 5 words = 150 words
-- Root family connections (cross-references between related roots during lessons)
+## XP and Streak Rules
+
+- **XP:** +10 per word studied. Unconditional — every word earns XP. No penalty, no bonus.
+- **Streak:** Increments when a session is completed. Consecutive calendar days. Missing a day resets to 0 (but `longest` is preserved).
+- **Daily XP reset:** `xp.today` resets to 0 when `lastDate` changes.
+
+## Quit Behavior
+
+Both `q` and Ctrl+C trigger graceful exit:
+1. Save current UserData to `data.json` (atomic write)
+2. Incomplete roots (lesson shown but not all words studied) retain partial `wordsStudied` count
+3. Streak only updates at session completion (`updateStreak` called after all roots done)
+
+## Implementation Status
+
+V1 is complete and shipped. The implementation order was:
+1. CJK prototype — root-lesson.tsx with Chinese in bordered box
+2. Data layer — roots.json, store.ts, progress.ts, roots-db.ts, types.ts
+3. Components — dashboard, word-detail, session-summary, celebration, streak-header, stats, doctor
+4. Commands — daily, review, stats, doctor
+5. Design polish — 15 commits of visual refinement per DESIGN.md
+
+## V1 Scope (shipped)
+
+- 20 roots + 10 prefixes/suffixes = 30 entries × 5 words = 150 words
+- Root family connections (cross-references between related roots)
 - Progress dashboard on launch (X/30 mastered + progress bar)
 - Completion celebration when all 30 mastered
-- Review mode for weak morphemes
+- Review mode for weak roots
 - Stats export as markdown
 - Doctor command for environment verification
-- Streaks, XP (+10/correct), daily goal (3 entries/session)
+- Streaks, XP (+10/word studied), daily goal (3 roots/session)
 - Zero API calls in V1. ai.ts and explore.tsx are stubs.
 
 ## NOT in V1
@@ -154,44 +199,12 @@ Build root-lesson.tsx FIRST before anything else. Render a root with Chinese cha
 - Weekly digest report (V2)
 - Terminal achievements/badges (V3)
 - 200+ roots (V1 has 30)
-
-## Test Stack
-
-- **Vitest** for unit + integration tests
-- **ink-testing-library** for component rendering tests
-- **3 tiers:** Pure logic (progress.ts, store.ts, roots-db.ts), component rendering, integration flows
-- Full test plan at `~/.gstack/projects/self-learn/derekhu-master-eng-review-test-plan-20260401-132500.md`
+- Test suite (no Vitest, no ink-testing-library yet)
 
 ## Known Risks
 
-1. **CJK double-width alignment** — Ink's yoga-layout may break column alignment with Chinese characters. Prototype first.
-2. **Root database accuracy** — Hand-verify every etymology against Wiktionary. Wrong roots destroy trust.
-3. **Chinese translation quality** — Use standard TOEFL translations, not AI-generated.
-4. **npx cold start** — First `npx toefl-roots` takes 10-30 seconds. Document it. Recommend `npm i -g toefl-roots` for repeat use.
-5. **Student environment** — Run `toefl-roots doctor` on test students' machines before Monday. Have USB fallback if npm is blocked by school firewall.
-
-## XP and Streak Rules
-
-- **XP:** +10 per correct answer. No penalty for wrong. No streak bonus in V1.
-- **Streak:** Increments when >= 1 root drill completed before midnight local time. Skipping a calendar day resets to 0. Partial sessions count.
-- **drillAccuracy:** `correct / total attempts` for words in that root, updated as weighted average after each drill session.
-
-## Session Flow
-
-```
-Launch → Dashboard (X/30 mastered, streak, XP)
-  → Root Lesson (root + 5 words with breakdowns + Chinese)
-    → Show family connections if related roots exist
-  → Drill (5 questions, multiple choice A/B/C/D)
-    → Green correct / Red wrong + Chinese explanation
-  → Repeat x3 (or fewer if near end)
-  → Session Summary (XP earned, streak, accuracy, weakest morpheme)
-  → If all 30 mastered → Celebration screen
-```
-
-## Quit Behavior
-
-Both `q` and Ctrl+C trigger graceful exit:
-1. Flush current XP, rootProgress, wordHistory to data.json
-2. Incomplete roots (lesson shown but not drilled) are NOT marked as seen
-3. Last completed drill determines streak status
+1. **CJK double-width alignment** — Ink's yoga-layout may break column alignment with Chinese characters. Verified working in Terminal.app and iTerm2.
+2. **Root database accuracy** — Every etymology hand-verified against Wiktionary. Wrong roots destroy trust.
+3. **Chinese translation quality** — Uses standard TOEFL translations, not AI-generated.
+4. **npx cold start** — First `npx toefl-roots` takes 10-30 seconds. Recommend `npm i -g toefl-roots` for repeat use.
+5. **Student environment** — Run `toefl-roots doctor` on test students' machines before use. Have USB fallback if npm is blocked by school firewall.

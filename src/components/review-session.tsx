@@ -128,18 +128,26 @@ export default function ReviewSession() {
     case "intro":
       return (
         <Box flexDirection="column" paddingLeft={2} paddingY={1}>
-          <Text bold color="#AF5FFF">
-            复习模式
-          </Text>
-          <Text>
-            今天复习 {reviewMorphemes.length} 个词根:
-          </Text>
-          <Box marginTop={1} flexDirection="column">
-            {reviewMorphemes.map((r) => (
-              <Text key={r.root}>
-                · {r.root} ({r.meaning_zh})
-              </Text>
-            ))}
+          <Box
+            flexDirection="column"
+            borderStyle="round"
+            borderColor="#4E4E4E"
+            paddingX={2}
+            paddingY={1}
+          >
+            <Text bold color="#AF5FFF">
+              复习模式
+            </Text>
+            <Text>
+              今天复习 {reviewMorphemes.length} 个词根:
+            </Text>
+            <Box marginTop={1} flexDirection="column">
+              {reviewMorphemes.map((r) => (
+                <Text key={r.root}>
+                  · {r.root} (<Text dimColor>{r.meaning_zh}</Text>)
+                </Text>
+              ))}
+            </Box>
           </Box>
           <Box marginTop={1}>
             <Text dimColor>按回车开始 →</Text>

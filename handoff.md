@@ -12,6 +12,53 @@ Student feedback on V1: (1) installation is hard, (2) Windows build issues, (3) 
 
 V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 
+## What's Been Implemented (V2 so far)
+
+### Step 0: Test suite (progress.test.ts)
+- 29 test cases covering all 8 business logic functions in `progress.ts`
+- Written BEFORE any V2 code changes (safety net for refactoring)
+- File: `src/lib/__tests__/progress.test.ts`
+
+### Step 1: V2 data model + migration
+- **types.ts**: Added `version`, `streak.freezeAvailable/freezeUsedDate`, `RootProgress.quizAccuracy`, `settings`, `RootWord.phonetic/mnemonic`. Cleaned `wordsStudied` from `Set<string> | string[]` to `string[]` only.
+- **store.ts**: V1→V2 field-level backfill in `loadData()`. Backs up `data.json` before first V2 migration write. Updated `defaultData()`, `PersistedData`, `saveData()`.
+- **progress.ts**: Removed dead `Set<string>` branches from `markWordStudied()` and `generateStatsSummary()`.
+- **store.test.ts**: Added 2 new migration tests (V1 backfill round-trip, V2 no re-migration). Total: 6 store tests.
+
+### Step 2: useSessionFlow() hook extraction
+- Extracted shared state machine from `daily-session.tsx` and `review-session.tsx` into `src/hooks/useSessionFlow.ts`
+- Hook owns: data state, phase transitions, morphemeIdx/wordIdx, XP tracking, SIGINT save, quit with save
+- Both session components are now thin wrappers (~100 lines each vs ~180 before)
+- **daily-session**: `markSeen: true, checkCelebration: true`, starts at `"dashboard"` phase
+- **review-session**: `markSeen: false, checkCelebration: false`, starts at `"intro"` or `"empty"`
+
+### Step 3: Readability fix
+- Chinese definitions, translations, examples, section labels → regular white text (not dimmed)
+- Dim reserved ONLY for navigation hints ("按回车继续 →") and progress indicators ("词根 1/3")
+- Updated DESIGN.md text hierarchy and CJK considerations to match
+
+### Step 4: q-key exit
+- Already handled via `useSessionFlow` hook — `quit()` fires `saveData()` + `exit()` in all phases
+- No additional code needed (was implicit from step 2)
+
+### Step 5: Quiz system
+- **New flow**: `word-detail(x5) → quiz-intro → quiz(x5) → next root or summary`
+- **quiz-intro.tsx**: Transition screen — "词根测验 — [root]", "你刚学了5个词，来测试一下！"
+- **quiz.tsx**: Shows **English word** as question, **two Chinese meanings** as [1]/[2] choices
+- Single keypress to answer (no Enter needed). 1 or 2 only, other keys ignored during quiz.
+- Correct: cyan `#5FD7FF` + "正确! +15 XP" + 500ms auto-advance
+- Wrong: dusty rose `#FF5F87` + "正确答案: ..." + 1000ms auto-advance
+- Auto-advance uses `useEffect` timer in session components, NOT in the hook
+- Distractors drawn from other roots' `meaning_zh` (fallback: same root, extreme fallback: "未知")
+- +15 XP per correct answer (added via `addXP` in hook)
+- **Quiz accuracy tracking NOT yet implemented** (step 6) — XP works but `quizAccuracy` field not written
+
+### Gotchas / bugs caught during implementation
+
+1. **React state batching on phase transitions**: After the last quiz question, `advanceAfterFeedback()` originally set `quizQuestion = null` then called `finishRoot()`. React could render with `phase="quiz"` but `quizQuestion=null`, causing "Cannot read properties of null". Fix: don't null out `quizQuestion` — let it stay until phase changes away from quiz phases.
+
+2. **Quiz direction was initially wrong**: Original design doc said "Chinese meaning prominently, English choices". User corrected: English word is the question (you see the word, recall the meaning), Chinese meanings are the choices. This is standard vocabulary testing.
+
 ## V2 Plan Overview
 
 **Source of truth:** `~/.gstack/projects/derekhut-alvy/ceo-plans/2026-04-02-alvy-v2-full-overhaul.md`
@@ -23,16 +70,16 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 
 ## V2 Data Model
 
-### UserData (V2)
+### UserData (V2) — IMPLEMENTED
 ```typescript
 UserData {
-  version: 2                        // NEW: triggers upgrade welcome if missing or < 2
+  version: 2                        // triggers upgrade welcome if missing or < 2
   streak: {
     current: number
     longest: number
     lastDate: string | null
-    freezeAvailable: boolean        // NEW: default true
-    freezeUsedDate?: string         // NEW: last date freeze was used
+    freezeAvailable: boolean        // default true
+    freezeUsedDate?: string         // last date freeze was used
   }
   xp: { total: number, today: number }
   dailyGoal: number                 // DEPRECATED: V2 reads settings.dailyGoal, falls back here
@@ -40,27 +87,27 @@ UserData {
     seen: boolean
     wordsStudied: number
     lastStudied: string
-    quizAccuracy?: {                // NEW: quiz performance per root
+    quizAccuracy?: {                // quiz performance per root (NOT YET WRITTEN — step 6)
       correct: number
       total: number
     }
   }>
-  wordsStudied: string[]            // DECISION: clean to string[] only, remove dead Set<string> branch
-  settings?: {                      // NEW: user preferences
+  wordsStudied: string[]            // cleaned to string[] only
+  settings?: {                      // user preferences
     sound: boolean                  // default: false
     dailyGoal: number               // persisted custom goal
   }
 }
 ```
 
-### RootWord (V2)
+### RootWord (V2) — IMPLEMENTED (types only, UI not using phonetic/mnemonic yet)
 ```typescript
 RootWord {
   word: string
-  phonetic?: string                 // NEW: IPA notation, optional
+  phonetic?: string                 // IPA notation, optional (Phase 2)
   breakdown: string
   derivation: string
-  mnemonic?: string                 // NEW: 联想记忆, optional
+  mnemonic?: string                 // 联想记忆, optional (Phase 2)
   meaning_en: string
   meaning_zh: string
   example: string
@@ -69,109 +116,55 @@ RootWord {
 }
 ```
 
-### V1 → V2 Migration
-**DECISION (eng review #2):** Field-level backfill inside `loadData()` in store.ts. After JSON parse, check for missing V2 fields, add defaults, atomic write. No separate migration step.
-- Backup original data.json before V2 schema changes (`copyFileSync` one-liner)
-- `version` defaults to `2`
-- `streak.freezeAvailable` defaults to `true`
-- `streak.freezeUsedDate` defaults to `undefined`
-- `rootProgress[*].quizAccuracy` defaults to `undefined`
-- `settings` defaults to `{ sound: false, dailyGoal: data.dailyGoal || 3 }`
+### V1 → V2 Migration — IMPLEMENTED
+Field-level backfill inside `loadData()` in store.ts. Backs up data.json before first V2 write. No separate migration step.
 
-## V2 State Machine
+## V2 State Machine — IMPLEMENTED
 
 ```
 V1:  dashboard → root-intro → word-detail(x5) → summary
 
 V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) → summary
                                                                             │
-                                                              [Enter] continue (bonus XP)
-                                                              [q] exit with save
+                                                              [Enter] continue (bonus XP) — NOT YET
+                                                              [q] exit with save ✅
 ```
 
-**DECISION (design review #1):** Quiz screen layout:
-- Show Chinese meaning prominently (bold white, centered)
-- Two English choices below, labeled [1] and [2]
+**Quiz screen layout (CORRECTED from original plan):**
+- Show **English word** prominently (bold white)
+- Two **Chinese meaning** choices below, labeled [1] and [2]
 - Single keypress to answer (no Enter needed)
-- Correct: cyan flash + "+15 XP" + 500ms pause, then next question
-- Wrong: dusty rose flash + show correct answer + 1s pause
+- Correct: cyan flash + "正确! +15 XP" + 500ms auto-advance
+- Wrong: dusty rose flash + show correct answer + 1s auto-advance
 
-**DECISION (design review #2):** Quiz transition screen between word-detail and quiz:
+**Quiz-intro screen:**
 - "词根测验 — [root]" header
 - "你刚学了5个词，来测试一下！按回车开始"
-- Brief pause for context switch (student knows they're entering quiz mode)
 
 ## V2 XP System
 
 **DECISION (eng review #3 + design review #6):**
-- Base: +10 XP per word read (learn mode, **silent** accumulation, no per-word popup)
-- Bonus: +5 XP per word if studying beyond dailyGoal (continue mode)
-- Quiz: +15 XP per correct answer (**visible** feedback, cyan flash)
-- XP summary shown at session end, not during learn-by-reading
-- `sessionBatch` counter tracks which batch the student is on (batch > 1 = bonus mode)
+- Base: +10 XP per word read (learn mode, **silent** accumulation, no per-word popup) ✅
+- Bonus: +5 XP per word if studying beyond dailyGoal (continue mode) — NOT YET (step 7)
+- Quiz: +15 XP per correct answer (**visible** feedback, cyan flash) ✅
+- XP summary shown at session end, not during learn-by-reading ✅
+- `sessionBatch` counter tracks which batch the student is on (batch > 1 = bonus mode) — NOT YET (step 7)
 
-## Eng Review Decisions (7 issues resolved)
+## Test Status
 
-| # | Issue | Decision | What Changes |
-|---|-------|----------|-------------|
-| 1 | Quiz-quit data gap: quitting mid-quiz loses quiz progress but V1 review criteria don't account for undefined quizAccuracy | Fix review selection: `!quizAccuracy \|\| (correct/total < 0.8) \|\| wordsStudied < 5` | progress.ts |
-| 2 | V2 migration strategy | Field-level backfill in `loadData()`, not separate migration step. Backup before V2 write. | store.ts |
-| 3 | Bonus XP tracking: no way to know if student is in "continue" mode | Add `sessionBatch` counter to session state. Batch > 1 = bonus XP mode. | daily-session.tsx |
-| 4 | DESIGN.md conflict: CJK "always dimmed" contradicts V2 plan (Chinese definitions dim→white) | Update DESIGN.md: white for content text (definitions, examples, translations). Dim ONLY for navigation hints. | DESIGN.md |
-| 5 | Session DRY: daily-session.tsx and review-session.tsx share ~80% identical code | Extract `useSessionFlow()` hook. Both sessions become thin wrappers calling shared hook. | NEW: useSessionFlow.ts, refactor daily-session.tsx + review-session.tsx |
-| 6 | Dead Set type in wordsStudied | Clean to `string[]` only, remove dead `Set<string>` branch from types.ts | types.ts |
-| 7 | markWordStudied double-count on re-study | **Leave as-is.** Counter is metadata, not user-facing. Not worth the complexity to deduplicate. | no change |
+| File | Tests | Coverage |
+|------|-------|----------|
+| `progress.test.ts` | 29 cases | All 8 functions in progress.ts: masteredCount, seenCount, updateStreak, addXP, markRootSeen, markWordStudied, selectNextMorphemes, generateStatsSummary |
+| `store.test.ts` | 6 cases | Path migration, V1→V2 backfill, V2 no re-migration, corrupt data, fresh start |
+| **Total** | **35 pass** | |
 
-## Design Review Decisions (9 decisions resolved)
-
-| # | Issue | Decision | What to Implement |
-|---|-------|----------|-------------------|
-| 1 | Quiz screen layout unspecified | Add full spec: Chinese meaning centered, two choices [1]/[2], single keypress, color-coded feedback | Quiz component |
-| 2 | No transition between learn and quiz | Add quiz-intro screen: "词根测验" header + instruction text + Enter to start | Quiz-intro component |
-| 3 | Welcome ceremony render strategy | Simple instant render (no streaming/typewriter). ASCII art + tagline + "按任意键开始学习" | Welcome component |
-| 4 | Empty states missing for 4 features | Specify empty states: review (no weak roots), speed round (no studied words), tree (no studied roots), share (no data) | Each component |
-| 5 | Import error output undefined | Fail-fast, all-or-nothing. Show all validation errors upfront, don't partial-merge. | Import command |
-| 6 | XP visibility timing unclear | Silent accumulation during learn-by-reading. Visible feedback only during quiz (+15 XP flash). Summary at session end. | XP display logic |
-| 7 | DESIGN.md needs V2 color updates | Add quiz feedback colors (cyan correct, dusty rose wrong). Update text hierarchy (content text = white, dim = nav hints only). | DESIGN.md |
-| 8 | Upgrade welcome format | Dashboard banner on first V2 run, not a separate screen. "alvy 已升级！新功能：测验、连胜保护、分享" banner that dismisses on any key. | Dashboard component |
-| 9 | Speed round timer feedback | Show elapsed time immediately after answer on same screen (not a separate results screen). e.g., "正确！⏱ 2.3秒 +15 XP" | Speed round component |
-
-## Outside Voice Findings (resolved)
-
-### Eng Review Outside Voice (Claude subagent)
-1. **Quiz identity challenge:** "Quiz contradicts 'learning IS the derivation chain' identity." **Resolution:** Keep quiz, but validate with students post-ship. Added to TODOS.md as P2 item. Quiz is removable without data loss.
-2. **Windows build fix:** Students reported `npm run build` fails on Windows. **Resolution:** Build it now (included in V2 scope, not deferred).
-3. **Celebration threshold:** V1 celebrates at 30 roots mastered, V2 has 60 roots. **Resolution:** Skipped. Not worth a TODO. Will naturally update when content expands.
-4. **Migration rollback:** No backup before V2 schema changes. **Resolution:** Add one `copyFileSync` call before V2 migration writes.
-
-### Design Review Outside Voice (Claude subagent)
-5 critical + 4 high gaps found. All resolved through the 9 design decisions above (quiz layout, transition screen, empty states, XP timing, etc.).
-
-## Test Plan
-
-**Current state:** 4 Vitest tests in `store.test.ts` (migration only). `progress.ts` has 0 tests.
-
-**DECISION (eng review):** Write full `progress.test.ts` before V2 code changes. 15+ test cases covering:
-
-### Critical Paths (must test)
-- `updateStreak()` — 4 branches: same day, consecutive, gap, first ever
-- `selectNextMorphemes()` — unseen first, then least-studied
-- `markWordStudied()` — XP increment, wordsStudied array update
-- `masteredCount()` — correct count with mixed progress states
-- V2 migration round-trip: load V1 data → backfill → save → reload → all fields present
-
-### V2-Specific Tests
-- Quiz accuracy tracking: correct/total increments across multiple quizzes
-- Review selection with mixed quizAccuracy states (undefined, low, high)
-- Quiz distractor: only 1 root studied → draw from unstudied roots
-- Continue session when all remaining roots mastered mid-batch → celebration
-- Custom goal validation: reject 0, 11 (outside 1-10 range)
-- Bonus XP: sessionBatch > 1 triggers +5 per word
-
-### Store Migration Tests (extend existing)
-- V1 data with no version field → migration adds version=2, settings, freeze fields
-- V2 data loads without re-migration
-- Corrupt data → graceful fallback
+Tests NOT yet written (from test plan):
+- Quiz accuracy tracking (step 6)
+- Review selection with quizAccuracy states
+- Quiz distractor edge cases
+- Continue session / celebration mid-batch
+- Custom goal validation
+- Bonus XP (sessionBatch)
 
 ## Implementation Sequence
 
@@ -224,68 +217,89 @@ alvy/
     index.tsx              # Entry point, CLI routing, --version, --goal N
     app.tsx                # Routes command to screen component
     components/
-      daily-session.tsx    # Thin wrapper → useSessionFlow()
-      review-session.tsx   # Thin wrapper → useSessionFlow() (filtered selection)
-      quiz-intro.tsx       # NEW: transition screen before quiz
-      quiz.tsx             # NEW: binary choice quiz (5 questions per root)
-      welcome.tsx          # NEW: first-run ASCII welcome ceremony
-      speed-round.tsx      # NEW: timed quiz from all studied words
-      share.tsx            # NEW: plain text progress card to stdout
-      import.tsx           # NEW: JSON content importer (fail-fast)
-      tree.tsx             # NEW: root family tree ASCII diagram
-      config.tsx           # NEW: persistent settings (goal, sound)
-      dashboard.tsx        # X/60 mastered + progress bar + streak + WotD + upgrade banner
-      root-lesson.tsx      # Root intro card
-      word-detail.tsx      # Single word display (+ phonetic, mnemonic if available)
+      daily-session.tsx    # ✅ Thin wrapper → useSessionFlow()
+      review-session.tsx   # ✅ Thin wrapper → useSessionFlow() (filtered selection)
+      quiz-intro.tsx       # ✅ NEW: transition screen before quiz
+      quiz.tsx             # ✅ NEW: English word → two Chinese choices
+      welcome.tsx          # Phase 4: first-run ASCII welcome ceremony
+      speed-round.tsx      # Phase 3: timed quiz from all studied words
+      share.tsx            # Phase 3: plain text progress card to stdout
+      import.tsx           # Phase 2: JSON content importer (fail-fast)
+      tree.tsx             # Phase 4: root family tree ASCII diagram
+      config.tsx           # Step 8: persistent settings (goal, sound)
+      dashboard.tsx        # X/30 mastered + progress bar + streak
+      root-lesson.tsx      # ✅ Root intro card (content text white)
+      word-detail.tsx      # ✅ Single word display (content text white)
       session-summary.tsx  # XP earned, streak, words studied
       celebration.tsx      # All roots mastered
       streak-header.tsx    # Streak counter + daily progress bar
       stats.tsx            # Export markdown progress summary
       doctor.tsx           # Environment checks
+      explore.tsx          # Placeholder (AI explore, deferred)
     hooks/
-      useSessionFlow.ts    # NEW: shared session state machine (extracted from daily/review)
+      useSessionFlow.ts    # ✅ Shared session state machine
     lib/
       __tests__/
-        store.test.ts      # Migration tests (4 existing + V2 extension)
-        progress.test.ts   # NEW: full business logic test suite (15+ cases)
+        store.test.ts      # ✅ 6 tests (migration + V2 backfill)
+        progress.test.ts   # ✅ 29 tests (all business logic)
       roots-db.ts          # Query functions over roots.json
-      store.ts             # JSON persistence, V1→V2 migration, backup
-      progress.ts          # All business logic (+ quiz accuracy, review criteria)
-      types.ts             # TypeScript interfaces (V2 fields added)
+      store.ts             # ✅ JSON persistence, V1→V2 migration, backup
+      progress.ts          # ✅ Business logic (Set branch cleaned)
+      types.ts             # ✅ TypeScript interfaces (V2 fields)
     data/
-      roots.json           # 60 entries × 5 words = 300 words (V2.0)
+      roots.json           # 30 roots × 5 words = 150 words (V1, expand in Phase 2)
   install.sh               # One-line installer for macOS/Linux
   package.json             # @derekhut/alvy
   tsconfig.json
-  DESIGN.md                # Updated with V2 color hierarchy + quiz feedback colors
+  DESIGN.md                # ✅ Updated with V2 text hierarchy
   ARCHITECTURE.md
 ```
 
-## Key Decisions (V2 changes from V1)
+## Key Files to Read First
 
-| V1 Decision | V2 Change | Why |
-|------------|-----------|-----|
-| No quiz (learning IS the derivation chain) | Add binary quiz after each root (hypothesis to validate) | Reinforcement through choosing. 90%+ win rate. Removable if students dislike. |
-| CJK always dimmed | Chinese content text → regular white. Dim ONLY for nav hints. | Content was unreadable on dark terminals. |
-| Batch writes only | Unchanged | Still batch writes at session end + SIGINT. |
-| Unconditional +10 XP | +10 learn (silent) + 15 quiz (visible) + 5 bonus (continue) | Richer XP system with visible quiz rewards. |
-| Ctrl+C only exit | q-key exit everywhere (except during quiz text input) | Student feedback. |
-| 3-roots-then-exit | Continue-or-quit prompt after daily goal | Students wanted to keep going. |
-| 30 roots / 150 words | 60 roots / 300 words at V2.0 launch | Content expansion most requested. |
+If you're picking this up, read in this order:
+1. `src/lib/types.ts` — all data interfaces
+2. `src/hooks/useSessionFlow.ts` — the state machine (this IS the app logic)
+3. `src/lib/progress.ts` — business logic functions
+4. `src/lib/store.ts` — persistence + V1→V2 migration
+5. `DESIGN.md` — color palette, text hierarchy, CJK rules
 
-## Review Status
+## Eng Review Decisions (7 issues resolved)
 
-| Review | Status | Date | Key Findings |
-|--------|--------|------|-------------|
-| CEO Review (V1 rename) | CLEAR | 2026-04-02 | HOLD SCOPE. Install script + rename. |
-| Eng Review (V1 rename) | CLEAR | 2026-04-02 | DRY fix, migration sequencing, Vitest. |
-| CEO Review (V2 plan) | CLEAR | 2026-04-02 | SELECTIVE EXPANSION. 9 proposals, 9 accepted. |
-| Eng Review (V2 plan) | CLEAR | 2026-04-02 | 7 issues, 3 critical gaps. All resolved. |
-| Design Review (V2 plan) | CLEAR | 2026-04-02 | 5/10 → 8/10. 9 design decisions added. |
-| Outside Voice (Eng) | Resolved | 2026-04-02 | Quiz identity, Windows, celebration, backup. |
-| Outside Voice (Design) | Resolved | 2026-04-02 | 5 critical + 4 high gaps. All resolved. |
+| # | Issue | Decision | Status |
+|---|-------|----------|--------|
+| 1 | Quiz-quit data gap | Fix review selection: `!quizAccuracy \|\| (correct/total < 0.8) \|\| wordsStudied < 5` | Step 6 |
+| 2 | V2 migration strategy | Field-level backfill in `loadData()`, backup before write | ✅ Done |
+| 3 | Bonus XP tracking | Add `sessionBatch` counter, batch > 1 = bonus mode | Step 7 |
+| 4 | DESIGN.md CJK conflict | White for content text, dim for nav hints only | ✅ Done |
+| 5 | Session DRY | Extract `useSessionFlow()` hook | ✅ Done |
+| 6 | Dead Set type | Clean to `string[]` only | ✅ Done |
+| 7 | markWordStudied double-count | Leave as-is (counter is metadata) | ✅ No change |
 
-**VERDICT:** CEO + ENG + DESIGN CLEARED. Ready to implement.
+## Design Review Decisions (9 decisions resolved)
+
+| # | Issue | Decision | Status |
+|---|-------|----------|--------|
+| 1 | Quiz screen layout | English word as question, two Chinese choices [1]/[2], single keypress | ✅ Done |
+| 2 | Learn-quiz transition | Quiz-intro screen with "词根测验" header | ✅ Done |
+| 3 | Welcome ceremony | Simple instant render, ASCII art + tagline | Phase 4 |
+| 4 | Empty states | Specify per-feature empty states | Per feature |
+| 5 | Import error output | Fail-fast, all-or-nothing validation | Phase 2 |
+| 6 | XP visibility timing | Silent during learn, visible during quiz, summary at end | ✅ Done |
+| 7 | DESIGN.md V2 colors | Content text white, dim nav only, quiz feedback colors | ✅ Done |
+| 8 | Upgrade welcome | Dashboard banner on first V2 run | Phase 4 |
+| 9 | Speed round timer | Show elapsed time on same screen after answer | Phase 3 |
+
+## Outside Voice Findings (resolved)
+
+### Eng Review Outside Voice (Claude subagent)
+1. **Quiz identity challenge:** "Quiz contradicts 'learning IS the derivation chain' identity." **Resolution:** Keep quiz, but validate with students post-ship. Added to TODOS.md as P2 item. Quiz is removable without data loss.
+2. **Windows build fix:** Students reported `npm run build` fails on Windows. **Resolution:** Build it now (included in V2 scope, not deferred).
+3. **Celebration threshold:** V1 celebrates at 30 roots mastered, V2 has 60 roots. **Resolution:** Skipped. Not worth a TODO. Will naturally update when content expands.
+4. **Migration rollback:** No backup before V2 schema changes. **Resolution:** ✅ Added `copyFileSync` in `loadData()` before V2 backfill.
+
+### Design Review Outside Voice (Claude subagent)
+5 critical + 4 high gaps found. All resolved through the 9 design decisions above.
 
 ## TODOS Added from V2 Reviews
 
@@ -299,6 +313,19 @@ alvy/
 - **CLI command:** `alvy`
 - **Data:** `~/.alvy/data.json`
 - **Known issue:** `EACCES` on `~/.npm/_cacache/` — fix with `sudo chown -R $(whoami) ~/.npm`
+
+## Development Commands
+
+```bash
+cd alvy
+npm run build          # Compile TypeScript
+npm run dev            # Watch mode
+npm test               # Run tests (Vitest, 35 passing)
+node dist/index.js     # Run daily session
+node dist/index.js review   # Review weak roots
+node dist/index.js stats    # Export progress
+node dist/index.js doctor   # Environment check
+```
 
 ## What Was Explicitly Deferred (V2)
 

@@ -145,7 +145,7 @@ fi
 # --- 安装 alvy ---
 
 echo "  正在安装 alvy..."
-npm install -g alvy 2>&1
+npm install -g @derekhut/alvy 2>&1
 
 if ! command -v alvy &>/dev/null; then
   # Check if it's in npm-global but not in PATH yet

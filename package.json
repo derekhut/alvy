@@ -1,5 +1,5 @@
 {
-  "name": "alvy",
+  "name": "@derekhut/alvy",
   "version": "1.0.0",
   "description": "Terminal-based vocabulary tool — learn English word roots with Chinese translations",
   "type": "module",

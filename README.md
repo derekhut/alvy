@@ -18,7 +18,7 @@ curl -fsSL https://raw.githubusercontent.com/derekhut/alvy/main/install.sh | bas
 
 ```powershell
 winget install OpenJS.NodeJS.LTS
-npm install -g alvy
+npm install -g @derekhut/alvy
 ```
 
 ## 命令
@@ -68,7 +68,7 @@ rm ~/.alvy/data.json
 ## 卸载
 
 ```bash
-npm uninstall -g alvy
+npm uninstall -g @derekhut/alvy
 ```
 
 ## 开发

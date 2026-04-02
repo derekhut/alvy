@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-02
 Branch: main
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1, step 4 next)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1, step 5 next)
 
 ## V1 Summary
 
@@ -181,7 +181,7 @@ Phase 1 (Foundation + Quiz):
   1. ✅ Data model changes (types.ts, store.ts migration, version field)
   2. ✅ Extract useSessionFlow() hook (DRY daily-session + review-session)
   3. ✅ Readability fix (dim → white for content text, update DESIGN.md)
-  4. q-key exit everywhere
+  4. ✅ q-key exit everywhere (already handled via useSessionFlow hook)
   5. Quiz system (quiz-intro → quiz(x5), binary choice, per-root)
   6. Quiz accuracy tracking in progress.ts
   7. Continue-after-session flow (depends on quiz for "complete" signal)

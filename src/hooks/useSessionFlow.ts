@@ -10,6 +10,7 @@ import {
   updateStreak,
   masteredCount,
   recordQuizResult,
+  selectNextMorphemes,
 } from "../lib/progress.js";
 
 export type SessionPhase =
@@ -20,6 +21,7 @@ export type SessionPhase =
   | "quiz-intro"
   | "quiz"
   | "quiz-feedback"
+  | "continue-prompt"
   | "summary"
   | "celebration"
   | "empty";
@@ -48,6 +50,7 @@ export interface SessionFlowState {
   quizIdx: number;
   quizQuestion: QuizQuestion | null;
   quizResult: { correct: boolean; correctAnswer: string } | null;
+  sessionBatch: number;
 }
 
 export interface SessionFlowActions {
@@ -57,6 +60,8 @@ export interface SessionFlowActions {
   startQuiz: () => void;
   answerQuiz: (choice: number) => void;
   advanceAfterFeedback: () => void;
+  continueSession: () => void;
+  goToSummary: () => void;
   quit: () => void;
 }
 
@@ -108,10 +113,12 @@ export function useSessionFlow(
   const { exit } = useApp();
   const [data, setData] = useState<UserData>(() => loadData());
   const [phase, setPhase] = useState<SessionPhase>(initialPhase);
+  const [morphemes, setMorphemes] = useState<RootEntry[]>(opts.morphemes);
   const [morphemeIdx, setMorphemeIdx] = useState(0);
   const [wordIdx, setWordIdx] = useState(0);
   const [sessionXP, setSessionXP] = useState(0);
   const [sessionWords, setSessionWords] = useState(0);
+  const [sessionBatch, setSessionBatch] = useState(0);
   const [quizIdx, setQuizIdx] = useState(0);
   const [quizQuestion, setQuizQuestion] = useState<QuizQuestion | null>(null);
   const [quizResult, setQuizResult] = useState<{
@@ -120,7 +127,7 @@ export function useSessionFlow(
   } | null>(null);
 
   const totalRoots = getRootCount();
-  const { morphemes, markSeen = true, checkCelebration = true } = opts;
+  const { markSeen = true, checkCelebration = true } = opts;
 
   // Save on unmount / SIGINT
   useEffect(() => {
@@ -149,6 +156,9 @@ export function useSessionFlow(
 
       if (checkCelebration && masteredCount(newData) >= totalRoots) {
         setPhase("celebration");
+      } else if (checkCelebration) {
+        // Daily session: offer to continue
+        setPhase("continue-prompt");
       } else {
         setPhase("summary");
       }
@@ -177,12 +187,13 @@ export function useSessionFlow(
   const advanceWord = useCallback(() => {
     const entry = morphemes[morphemeIdx]!;
     const currentWord = entry.words[wordIdx]!;
+    const xpAmount = sessionBatch > 0 ? 15 : 10; // +5 bonus in continue mode
 
     const newData = { ...data };
     markWordStudied(newData, entry.root, currentWord.word);
-    addXP(newData, 10);
+    addXP(newData, xpAmount);
     setData(newData);
-    setSessionXP((x) => x + 10);
+    setSessionXP((x) => x + xpAmount);
     setSessionWords((w) => w + 1);
 
     const nextWord = wordIdx + 1;
@@ -192,7 +203,7 @@ export function useSessionFlow(
       // All words done for this root → quiz-intro
       setPhase("quiz-intro");
     }
-  }, [morphemes, morphemeIdx, wordIdx, data]);
+  }, [morphemes, morphemeIdx, wordIdx, data, sessionBatch]);
 
   const startQuiz = useCallback(() => {
     const entry = morphemes[morphemeIdx]!;
@@ -239,6 +250,24 @@ export function useSessionFlow(
     }
   }, [morphemes, morphemeIdx, quizIdx, finishRoot]);
 
+  const continueSession = useCallback(() => {
+    const allRoots = getAllRoots();
+    const nextBatch = selectNextMorphemes(data, allRoots, data.settings?.dailyGoal ?? data.dailyGoal);
+    if (nextBatch.length === 0) {
+      setPhase("summary");
+      return;
+    }
+    setMorphemes(nextBatch);
+    setMorphemeIdx(0);
+    setWordIdx(0);
+    setSessionBatch((b) => b + 1);
+    setPhase("root-intro");
+  }, [data]);
+
+  const goToSummary = useCallback(() => {
+    setPhase("summary");
+  }, []);
+
   const quit = useCallback(() => {
     saveData(data);
     exit();
@@ -256,6 +285,7 @@ export function useSessionFlow(
     quizIdx,
     quizQuestion,
     quizResult,
+    sessionBatch,
   };
 
   return [
@@ -267,6 +297,8 @@ export function useSessionFlow(
       startQuiz,
       answerQuiz,
       advanceAfterFeedback,
+      continueSession,
+      goToSummary,
       quit,
     },
   ];

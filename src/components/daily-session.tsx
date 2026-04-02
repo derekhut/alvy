@@ -9,6 +9,7 @@ import RootLesson from "./root-lesson.js";
 import WordDetail from "./word-detail.js";
 import QuizIntro from "./quiz-intro.js";
 import Quiz from "./quiz.js";
+import ContinuePrompt from "./continue-prompt.js";
 import SessionSummary from "./session-summary.js";
 import Celebration from "./celebration.js";
 import StreakHeader from "./streak-header.js";
@@ -36,6 +37,10 @@ export default function DailySession() {
 
   useInput((input, key) => {
     if (input === "q") {
+      if (state.phase === "continue-prompt") {
+        actions.goToSummary();
+        return;
+      }
       actions.quit();
       return;
     }
@@ -66,6 +71,9 @@ export default function DailySession() {
           break;
         case "quiz-intro":
           actions.startQuiz();
+          break;
+        case "continue-prompt":
+          actions.continueSession();
           break;
         case "summary":
         case "celebration":
@@ -127,6 +135,16 @@ export default function DailySession() {
         />
       );
 
+    case "continue-prompt":
+      return (
+        <ContinuePrompt
+          sessionXP={state.sessionXP}
+          sessionWords={state.sessionWords}
+          rootsStudied={state.morphemes.length}
+          streak={state.data.streak.current}
+        />
+      );
+
     case "summary":
       return (
         <SessionSummary
@@ -134,6 +152,7 @@ export default function DailySession() {
           wordsLearned={state.sessionWords}
           rootsStudied={state.morphemes.length}
           streak={state.data.streak.current}
+          bonusMode={state.sessionBatch > 0}
         />
       );
 

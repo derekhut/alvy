@@ -1,21 +1,19 @@
 import React from "react";
 import { Box, Text } from "ink";
 
-interface SessionSummaryProps {
-  xpEarned: number;
-  wordsLearned: number;
+interface ContinuePromptProps {
+  sessionXP: number;
+  sessionWords: number;
   rootsStudied: number;
   streak: number;
-  bonusMode?: boolean;
 }
 
-export default function SessionSummary({
-  xpEarned,
-  wordsLearned,
+export default function ContinuePrompt({
+  sessionXP,
+  sessionWords,
   rootsStudied,
   streak,
-  bonusMode = false,
-}: SessionSummaryProps) {
+}: ContinuePromptProps) {
   return (
     <Box flexDirection="column" paddingLeft={2} paddingY={1}>
       <Box
@@ -26,31 +24,32 @@ export default function SessionSummary({
         paddingY={1}
       >
         <Text bold color="#AF5FFF">
-          今日学习完成！
+          今日目标已完成！
         </Text>
 
         <Box flexDirection="column" marginTop={1}>
           <Text>
-            ⭐ 获得经验: <Text bold color="#FFAF00">+{xpEarned}</Text> XP
-            {bonusMode && <Text color="#5FD7FF"> (含奖励)</Text>}
+            ⭐ 获得经验: <Text bold color="#FFAF00">+{sessionXP}</Text> XP
           </Text>
           <Text>
             📚 学习词根: <Text bold color="#FFAF00">{rootsStudied}</Text> 个
           </Text>
           <Text>
-            📚 学习单词: <Text bold color="#FFAF00">{wordsLearned}</Text> 个
+            📚 学习单词: <Text bold color="#FFAF00">{sessionWords}</Text> 个
           </Text>
           <Text>
             🔥 连续学习: <Text bold color="#FFAF00">{streak}</Text> 天
           </Text>
         </Box>
+
+        <Box flexDirection="column" marginTop={1}>
+          <Text color="#5FD7FF">想继续学习吗？额外 +5 XP/词 奖励！</Text>
+        </Box>
       </Box>
 
-      <Box marginTop={1}>
-        <Text dimColor>🌙 今日目标已完成，明天继续加油！</Text>
-      </Box>
-      <Box>
-        <Text dimColor>按回车退出</Text>
+      <Box marginTop={1} flexDirection="column">
+        <Text dimColor>按回车继续学习（奖励模式）→</Text>
+        <Text dimColor>按 q 结束今日学习</Text>
       </Box>
     </Box>
   );

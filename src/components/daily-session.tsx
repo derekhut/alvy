@@ -17,9 +17,10 @@ import StreakHeader from "./streak-header.js";
 export default function DailySession() {
   const allRoots = getAllRoots();
   const initialData = useMemo(() => loadData(), []);
+  const dailyGoal = initialData.settings?.dailyGoal ?? initialData.dailyGoal;
   const morphemes = useMemo(
-    () => selectNextMorphemes(initialData, allRoots, initialData.dailyGoal),
-    [initialData, allRoots],
+    () => selectNextMorphemes(initialData, allRoots, dailyGoal),
+    [initialData, allRoots, dailyGoal],
   );
 
   const [state, actions] = useSessionFlow(

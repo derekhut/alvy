@@ -94,6 +94,54 @@ describe("data migration", () => {
     expect(fs.existsSync(newDir)).toBe(true);
   });
 
+  it("V1 data gets V2 fields backfilled on load", async () => {
+    const newDir = path.join(tmpDir, ".alvy");
+    fs.mkdirSync(newDir, { recursive: true });
+    fs.writeFileSync(path.join(newDir, "data.json"), JSON.stringify(sampleData));
+
+    const store = await importStore();
+    const data = store.loadData();
+
+    expect(data.version).toBe(2);
+    expect(data.streak.freezeAvailable).toBe(true);
+    expect(data.streak.freezeUsedDate).toBeUndefined();
+    expect(data.settings).toEqual({ sound: false, dailyGoal: 3 });
+
+    // Verify backup was created during migration
+    const backupFile = path.join(tmpDir, ".alvy", "data.backup.json");
+    expect(fs.existsSync(backupFile)).toBe(true);
+  });
+
+  it("V2 data loads without re-migration", async () => {
+    const v2Data = {
+      version: 2,
+      streak: { current: 5, longest: 5, lastDate: "2026-04-02", freezeAvailable: false, freezeUsedDate: "2026-04-01" },
+      xp: { total: 200, today: 40 },
+      dailyGoal: 3,
+      rootProgress: {
+        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-02", quizAccuracy: { correct: 4, total: 5 } },
+      },
+      wordsStudied: ["benefit"],
+      settings: { sound: true, dailyGoal: 5 },
+    };
+    const newDir = path.join(tmpDir, ".alvy");
+    fs.mkdirSync(newDir, { recursive: true });
+    fs.writeFileSync(path.join(newDir, "data.json"), JSON.stringify(v2Data));
+
+    const store = await importStore();
+    const data = store.loadData();
+
+    expect(data.version).toBe(2);
+    expect(data.streak.freezeAvailable).toBe(false);
+    expect(data.streak.freezeUsedDate).toBe("2026-04-01");
+    expect(data.settings).toEqual({ sound: true, dailyGoal: 5 });
+    expect(data.rootProgress["bene-"]!.quizAccuracy).toEqual({ correct: 4, total: 5 });
+
+    // No backup created for already-V2 data
+    const backupFile = path.join(tmpDir, ".alvy", "data.backup.json");
+    expect(fs.existsSync(backupFile)).toBe(false);
+  });
+
   it("handles corrupt source file gracefully", async () => {
     const oldDir = path.join(tmpDir, ".toefl-roots");
     fs.mkdirSync(oldDir, { recursive: true });

@@ -1,8 +1,10 @@
 // Root/affix entry in roots.json
 export interface RootWord {
   word: string;
+  phonetic?: string; // IPA notation
   breakdown: string;
   derivation: string; // 新东方 style chain: "bene(好的) + fit(做) → 做好事 → 益处"
+  mnemonic?: string; // 联想记忆
   meaning_en: string;
   meaning_zh: string;
   example: string;
@@ -25,13 +27,20 @@ export interface RootProgress {
   seen: boolean;
   wordsStudied: number;
   lastStudied: string | null;
+  quizAccuracy?: {
+    correct: number;
+    total: number;
+  };
 }
 
 export interface UserData {
+  version: number;
   streak: {
     current: number;
     longest: number;
     lastDate: string | null;
+    freezeAvailable: boolean;
+    freezeUsedDate?: string;
   };
   xp: {
     total: number;
@@ -39,7 +48,11 @@ export interface UserData {
   };
   dailyGoal: number;
   rootProgress: Record<string, RootProgress>;
-  wordsStudied: Set<string> | string[]; // persisted as array
+  wordsStudied: string[];
+  settings?: {
+    sound: boolean;
+    dailyGoal: number;
+  };
 }
 
 export type Command = "daily" | "review" | "stats" | "doctor";

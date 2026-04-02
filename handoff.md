@@ -2,167 +2,312 @@
 
 Last updated: 2026-04-02
 Branch: main
-Status: Rename DONE, npm publish + GitHub repo rename PENDING
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1, step 2 next)
 
-## What Happened
+## V1 Summary
 
-V1 shipped as `toefl-roots` on 2026-04-01. Derek tested with students on 2026-04-01. Student feedback:
+V1 shipped 2026-04-01 as `toefl-roots`, renamed to `alvy` on 2026-04-02. Published as `@derekhut/alvy` (scoped, npm rejected `alvy` as too similar to `ajv`/`ava`). CLI command is `alvy`. Data at `~/.alvy/data.json`, auto-migrates from `~/.toefl-roots/`.
 
-1. **Installation is hard** — most students don't have Node.js or git
-2. **Windows build issues** — `npm run build` had problems on Windows
-3. **Content expansion** — students want SAT vocab and AP subject support (e.g., AP Psychology)
+Student feedback on V1: (1) installation is hard, (2) Windows build issues, (3) want more content. All addressed in V1 rename sprint (install.sh, README Windows section, content expansion planned for V2).
 
-On 2026-04-02: CEO Review + Eng Review decided to rename to `alvy`, add install script, add data migration, add tests. All code changes implemented same day.
+V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 
-## Implementation Status
+## V2 Plan Overview
 
-### DONE
+**Source of truth:** `~/.gstack/projects/derekhut-alvy/ceo-plans/2026-04-02-alvy-v2-full-overhaul.md`
 
-| Step | What | Status |
-|------|------|--------|
-| 1 | Rename all source references (9 source files) | DONE |
-| 2 | Add package.json fields (engines, files, prepublishOnly, test) | DONE |
-| 3 | Data migration in store.ts (export DATA_DIR, auto-migrate from ~/.toefl-roots/) | DONE |
-| 4 | DRY fix: doctor.tsx imports DATA_DIR from store.ts | DONE |
-| 5 | Vitest + 4 migration tests (migrate, already migrated, fresh start, corrupt) | DONE |
-| 6 | install.sh (one-line macOS/Linux installer) | DONE |
-| 7 | README.md rewrite (install flow, commands, uninstall) | DONE |
-| 8 | Documentation updates (DESIGN.md, ARCHITECTURE.md, CLAUDE.md) | DONE |
-| 9 | tsconfig.json: exclude __tests__ from tsc output | DONE |
-| 10 | Build passes, all tests pass | DONE |
+16 features across 4 phases. CEO review mode: SELECTIVE EXPANSION (9 proposals, 9 accepted, 0 deferred). All three reviews cleared.
 
-### PENDING (manual steps)
+### Target State
+60 roots (300 words) at launch, growing to 200+ via content pipeline. Quiz system with accuracy tracking. Continue-or-quit session flow. q-key exit everywhere. Shareable progress cards. Streak freeze. Content importer. Custom daily goals. Speed round. Root family tree. Animated progress. Sound effects (opt-in). Word of the Day. Welcome ceremony.
 
-| Step | What | Notes |
-|------|------|-------|
-| 11 | `npm pack --dry-run` | Verify contents: dist/, package.json, README.md |
-| 12 | `npm login` + `npm publish` | From Derek's machine. If 403 (name frozen), fall back to `alvy-cli` |
-| 13 | `npx alvy doctor` | Verify from registry |
-| 14 | Rename GitHub repo | Settings → Repository name → `alvy`. Update remote: `git remote set-url origin git@github.com:derekhut/alvy.git` |
-| 15 | Verify on clean machine | `npm install -g alvy`, `alvy`, `alvy --version`, `alvy doctor` |
-| 16 | Test install.sh on macOS | `curl -fsSL ... \| bash` end-to-end |
-| 17 | Test data migration | Create fake `~/.toefl-roots/data.json`, install alvy, verify at `~/.alvy/data.json` |
+## V2 Data Model
 
-### What was explicitly deferred
+### UserData (V2)
+```typescript
+UserData {
+  version: 2                        // NEW: triggers upgrade welcome if missing or < 2
+  streak: {
+    current: number
+    longest: number
+    lastDate: string | null
+    freezeAvailable: boolean        // NEW: default true
+    freezeUsedDate?: string         // NEW: last date freeze was used
+  }
+  xp: { total: number, today: number }
+  dailyGoal: number                 // DEPRECATED: V2 reads settings.dailyGoal, falls back here
+  rootProgress: Record<string, {
+    seen: boolean
+    wordsStudied: number
+    lastStudied: string
+    quizAccuracy?: {                // NEW: quiz performance per root
+      correct: number
+      total: number
+    }
+  }>
+  wordsStudied: string[]            // DECISION: clean to string[] only, remove dead Set<string> branch
+  settings?: {                      // NEW: user preferences
+    sound: boolean                  // default: false
+    dailyGoal: number               // persisted custom goal
+  }
+}
+```
 
-| Item | Why |
-|------|-----|
-| Standalone binaries (Bun compile) | Ink + yoga native bindings risk. Do it when content matures. |
-| SAT/AP content expansion | Separate plan. Same root-based engine works for SAT. AP Psychology is a different content model. |
-| Web app version | CLI is right for AI Camp coding students. Web app when audience expands. |
-| Spaced repetition | V2, per TODOS.md |
-| AI explore mode | V2, needs API key |
-| CI/CD for npm publish | Manual publish is fine for solo dev |
-| Homebrew/Scoop formula | Overkill for current audience |
-| `toefl_frequency` field rename in roots.json | Keep as data field. Not user-facing. Rename later if SAT content is added. |
+### RootWord (V2)
+```typescript
+RootWord {
+  word: string
+  phonetic?: string                 // NEW: IPA notation, optional
+  breakdown: string
+  derivation: string
+  mnemonic?: string                 // NEW: 联想记忆, optional
+  meaning_en: string
+  meaning_zh: string
+  example: string
+  example_zh: string
+  toefl_frequency: "high" | "medium" | "low"
+}
+```
 
-## What Changed (file-by-file)
+### V1 → V2 Migration
+**DECISION (eng review #2):** Field-level backfill inside `loadData()` in store.ts. After JSON parse, check for missing V2 fields, add defaults, atomic write. No separate migration step.
+- Backup original data.json before V2 schema changes (`copyFileSync` one-liner)
+- `version` defaults to `2`
+- `streak.freezeAvailable` defaults to `true`
+- `streak.freezeUsedDate` defaults to `undefined`
+- `rootProgress[*].quizAccuracy` defaults to `undefined`
+- `settings` defaults to `{ sound: false, dailyGoal: data.dailyGoal || 3 }`
 
-### Source files
+## V2 State Machine
 
-| File | What changed |
-|------|-------------|
-| `package.json` | name → `alvy`, bin → `alvy`, description drops "TOEFL", added engines/files/prepublishOnly/test, vitest devDep |
-| `src/lib/store.ts` | DATA_DIR → `~/.alvy/`, exports `DATA_DIR` + `DATA_FILE`, added `OLD_DATA_DIR`/`OLD_DATA_FILE` + `migrateFromOldPath()` |
-| `src/lib/types.ts` | Comment: `~/.toefl-roots/` → `~/.alvy/` |
-| `src/index.tsx` | Help text + error message: `toefl-roots` → `alvy` |
-| `src/components/doctor.tsx` | Imports `DATA_DIR` from store.ts (was hardcoded), removed os/path imports for data dir, title → `alvy 环境检查` |
-| `src/components/dashboard.tsx` | Title: `toefl-roots` → `alvy` |
-| `src/components/celebration.tsx` | `toefl-roots review` → `alvy review` |
-| `src/components/review-session.tsx` | `toefl-roots` → `alvy` |
-| `src/lib/progress.ts` | Stats header: `# TOEFL 词根学习进度` → `# 词根学习进度` |
-| `tsconfig.json` | Added `"exclude": ["src/**/__tests__"]` to prevent test files in dist/ |
+```
+V1:  dashboard → root-intro → word-detail(x5) → summary
 
-### New files
+V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) → summary
+                                                                            │
+                                                              [Enter] continue (bonus XP)
+                                                              [q] exit with save
+```
 
-| File | What |
-|------|------|
-| `src/lib/__tests__/store.test.ts` | 4 Vitest migration tests using tmp dirs + mocked homedir |
-| `install.sh` | One-line installer: sudo check, Node detection, nvm fallback, npm prefix fix, proxy verification, Chinese errors, logging to ~/.alvy/install.log |
+**DECISION (design review #1):** Quiz screen layout:
+- Show Chinese meaning prominently (bold white, centered)
+- Two English choices below, labeled [1] and [2]
+- Single keypress to answer (no Enter needed)
+- Correct: cyan flash + "+15 XP" + 500ms pause, then next question
+- Wrong: dusty rose flash + show correct answer + 1s pause
 
-### Documentation
+**DECISION (design review #2):** Quiz transition screen between word-detail and quiz:
+- "词根测验 — [root]" header
+- "你刚学了5个词，来测试一下！按回车开始"
+- Brief pause for context switch (student knows they're entering quiz mode)
 
-| File | What changed |
-|------|-------------|
-| `README.md` | Full rewrite: alvy install flow (curl one-liner + Windows), commands table, data storage at ~/.alvy/, uninstall instructions, migration note |
-| `DESIGN.md` | Title: `# Design System — alvy` |
-| `ARCHITECTURE.md` | Full rewrite: all paths/commands → alvy, added migration docs, added install.sh + test file to file reference, removed "No tests yet" from What Does NOT Exist |
-| `CLAUDE.md` (parent) | Section renamed to `alvy (formerly toefl-roots)`, paths → ~/.alvy/, added `npm test`, added install.sh to key files |
+## V2 XP System
 
-### NOT changed (intentional)
+**DECISION (eng review #3 + design review #6):**
+- Base: +10 XP per word read (learn mode, **silent** accumulation, no per-word popup)
+- Bonus: +5 XP per word if studying beyond dailyGoal (continue mode)
+- Quiz: +15 XP per correct answer (**visible** feedback, cyan flash)
+- XP summary shown at session end, not during learn-by-reading
+- `sessionBatch` counter tracks which batch the student is on (batch > 1 = bonus mode)
 
-| File | Why |
-|------|-----|
-| `src/data/roots.json` | `toefl_frequency` is a data attribute, not user-facing branding |
-| `src/lib/types.ts` line 10 | `toefl_frequency` type matches roots.json field |
-| `handoff.md` | Historical record; references to old name are context |
+## Eng Review Decisions (7 issues resolved)
+
+| # | Issue | Decision | What Changes |
+|---|-------|----------|-------------|
+| 1 | Quiz-quit data gap: quitting mid-quiz loses quiz progress but V1 review criteria don't account for undefined quizAccuracy | Fix review selection: `!quizAccuracy \|\| (correct/total < 0.8) \|\| wordsStudied < 5` | progress.ts |
+| 2 | V2 migration strategy | Field-level backfill in `loadData()`, not separate migration step. Backup before V2 write. | store.ts |
+| 3 | Bonus XP tracking: no way to know if student is in "continue" mode | Add `sessionBatch` counter to session state. Batch > 1 = bonus XP mode. | daily-session.tsx |
+| 4 | DESIGN.md conflict: CJK "always dimmed" contradicts V2 plan (Chinese definitions dim→white) | Update DESIGN.md: white for content text (definitions, examples, translations). Dim ONLY for navigation hints. | DESIGN.md |
+| 5 | Session DRY: daily-session.tsx and review-session.tsx share ~80% identical code | Extract `useSessionFlow()` hook. Both sessions become thin wrappers calling shared hook. | NEW: useSessionFlow.ts, refactor daily-session.tsx + review-session.tsx |
+| 6 | Dead Set type in wordsStudied | Clean to `string[]` only, remove dead `Set<string>` branch from types.ts | types.ts |
+| 7 | markWordStudied double-count on re-study | **Leave as-is.** Counter is metadata, not user-facing. Not worth the complexity to deduplicate. | no change |
+
+## Design Review Decisions (9 decisions resolved)
+
+| # | Issue | Decision | What to Implement |
+|---|-------|----------|-------------------|
+| 1 | Quiz screen layout unspecified | Add full spec: Chinese meaning centered, two choices [1]/[2], single keypress, color-coded feedback | Quiz component |
+| 2 | No transition between learn and quiz | Add quiz-intro screen: "词根测验" header + instruction text + Enter to start | Quiz-intro component |
+| 3 | Welcome ceremony render strategy | Simple instant render (no streaming/typewriter). ASCII art + tagline + "按任意键开始学习" | Welcome component |
+| 4 | Empty states missing for 4 features | Specify empty states: review (no weak roots), speed round (no studied words), tree (no studied roots), share (no data) | Each component |
+| 5 | Import error output undefined | Fail-fast, all-or-nothing. Show all validation errors upfront, don't partial-merge. | Import command |
+| 6 | XP visibility timing unclear | Silent accumulation during learn-by-reading. Visible feedback only during quiz (+15 XP flash). Summary at session end. | XP display logic |
+| 7 | DESIGN.md needs V2 color updates | Add quiz feedback colors (cyan correct, dusty rose wrong). Update text hierarchy (content text = white, dim = nav hints only). | DESIGN.md |
+| 8 | Upgrade welcome format | Dashboard banner on first V2 run, not a separate screen. "alvy 已升级！新功能：测验、连胜保护、分享" banner that dismisses on any key. | Dashboard component |
+| 9 | Speed round timer feedback | Show elapsed time immediately after answer on same screen (not a separate results screen). e.g., "正确！⏱ 2.3秒 +15 XP" | Speed round component |
+
+## Outside Voice Findings (resolved)
+
+### Eng Review Outside Voice (Claude subagent)
+1. **Quiz identity challenge:** "Quiz contradicts 'learning IS the derivation chain' identity." **Resolution:** Keep quiz, but validate with students post-ship. Added to TODOS.md as P2 item. Quiz is removable without data loss.
+2. **Windows build fix:** Students reported `npm run build` fails on Windows. **Resolution:** Build it now (included in V2 scope, not deferred).
+3. **Celebration threshold:** V1 celebrates at 30 roots mastered, V2 has 60 roots. **Resolution:** Skipped. Not worth a TODO. Will naturally update when content expands.
+4. **Migration rollback:** No backup before V2 schema changes. **Resolution:** Add one `copyFileSync` call before V2 migration writes.
+
+### Design Review Outside Voice (Claude subagent)
+5 critical + 4 high gaps found. All resolved through the 9 design decisions above (quiz layout, transition screen, empty states, XP timing, etc.).
+
+## Test Plan
+
+**Current state:** 4 Vitest tests in `store.test.ts` (migration only). `progress.ts` has 0 tests.
+
+**DECISION (eng review):** Write full `progress.test.ts` before V2 code changes. 15+ test cases covering:
+
+### Critical Paths (must test)
+- `updateStreak()` — 4 branches: same day, consecutive, gap, first ever
+- `selectNextMorphemes()` — unseen first, then least-studied
+- `markWordStudied()` — XP increment, wordsStudied array update
+- `masteredCount()` — correct count with mixed progress states
+- V2 migration round-trip: load V1 data → backfill → save → reload → all fields present
+
+### V2-Specific Tests
+- Quiz accuracy tracking: correct/total increments across multiple quizzes
+- Review selection with mixed quizAccuracy states (undefined, low, high)
+- Quiz distractor: only 1 root studied → draw from unstudied roots
+- Continue session when all remaining roots mastered mid-batch → celebration
+- Custom goal validation: reject 0, 11 (outside 1-10 range)
+- Bonus XP: sessionBatch > 1 triggers +5 per word
+
+### Store Migration Tests (extend existing)
+- V1 data with no version field → migration adds version=2, settings, freeze fields
+- V2 data loads without re-migration
+- Corrupt data → graceful fallback
+
+## Implementation Sequence
+
+```
+Phase 1 (Foundation + Quiz):
+  0. ✅ Write progress.test.ts (full test suite, BEFORE any V2 code)
+  1. ✅ Data model changes (types.ts, store.ts migration, version field)
+  2. Extract useSessionFlow() hook (DRY daily-session + review-session)
+  3. Readability fix (dim → white for content text, update DESIGN.md)
+  4. q-key exit everywhere
+  5. Quiz system (quiz-intro → quiz(x5), binary choice, per-root)
+  6. Quiz accuracy tracking in progress.ts
+  7. Continue-after-session flow (depends on quiz for "complete" signal)
+  8. Custom daily goal
+
+Phase 2 (Content):
+  9. Richer word format (phonetic, mnemonic fields in types + word-detail)
+  10. Content importer tool (fail-fast validation, all-or-nothing merge)
+  11. Expand to 60 roots using importer
+
+Phase 3 (Engagement):
+  12. Speed round mode (immediate timer feedback on same screen)
+  13. Streak freeze
+  14. Shareable progress card
+  15. Word of the Day (simple random for V2.0)
+  16. Animated progress bar (300ms fill)
+  17. Sound effects (opt-in, quiz-only)
+
+Phase 4 (Polish):
+  18. Installation ceremony (instant render, ASCII art + tagline)
+  19. Upgrade welcome (dashboard banner, not separate screen)
+  20. Root family tree
+```
+
+### Parallelization Strategy (3 lanes)
+
+```
+Lane A (core flow):     steps 0-2 → 5-8 (sequential, shared progress.ts + session hooks)
+Lane B (content):       steps 9-11 (independent, types.ts + roots.json only)
+Lane C (engagement):    steps 12-17 (independent, new components only)
+
+Execute: A first (foundation). Then B + C in parallel. Phase 4 after merge.
+```
+
+## Architecture (V2)
+
+```
+alvy/
+  src/
+    index.tsx              # Entry point, CLI routing, --version, --goal N
+    app.tsx                # Routes command to screen component
+    components/
+      daily-session.tsx    # Thin wrapper → useSessionFlow()
+      review-session.tsx   # Thin wrapper → useSessionFlow() (filtered selection)
+      quiz-intro.tsx       # NEW: transition screen before quiz
+      quiz.tsx             # NEW: binary choice quiz (5 questions per root)
+      welcome.tsx          # NEW: first-run ASCII welcome ceremony
+      speed-round.tsx      # NEW: timed quiz from all studied words
+      share.tsx            # NEW: plain text progress card to stdout
+      import.tsx           # NEW: JSON content importer (fail-fast)
+      tree.tsx             # NEW: root family tree ASCII diagram
+      config.tsx           # NEW: persistent settings (goal, sound)
+      dashboard.tsx        # X/60 mastered + progress bar + streak + WotD + upgrade banner
+      root-lesson.tsx      # Root intro card
+      word-detail.tsx      # Single word display (+ phonetic, mnemonic if available)
+      session-summary.tsx  # XP earned, streak, words studied
+      celebration.tsx      # All roots mastered
+      streak-header.tsx    # Streak counter + daily progress bar
+      stats.tsx            # Export markdown progress summary
+      doctor.tsx           # Environment checks
+    hooks/
+      useSessionFlow.ts    # NEW: shared session state machine (extracted from daily/review)
+    lib/
+      __tests__/
+        store.test.ts      # Migration tests (4 existing + V2 extension)
+        progress.test.ts   # NEW: full business logic test suite (15+ cases)
+      roots-db.ts          # Query functions over roots.json
+      store.ts             # JSON persistence, V1→V2 migration, backup
+      progress.ts          # All business logic (+ quiz accuracy, review criteria)
+      types.ts             # TypeScript interfaces (V2 fields added)
+    data/
+      roots.json           # 60 entries × 5 words = 300 words (V2.0)
+  install.sh               # One-line installer for macOS/Linux
+  package.json             # @derekhut/alvy
+  tsconfig.json
+  DESIGN.md                # Updated with V2 color hierarchy + quiz feedback colors
+  ARCHITECTURE.md
+```
+
+## Key Decisions (V2 changes from V1)
+
+| V1 Decision | V2 Change | Why |
+|------------|-----------|-----|
+| No quiz (learning IS the derivation chain) | Add binary quiz after each root (hypothesis to validate) | Reinforcement through choosing. 90%+ win rate. Removable if students dislike. |
+| CJK always dimmed | Chinese content text → regular white. Dim ONLY for nav hints. | Content was unreadable on dark terminals. |
+| Batch writes only | Unchanged | Still batch writes at session end + SIGINT. |
+| Unconditional +10 XP | +10 learn (silent) + 15 quiz (visible) + 5 bonus (continue) | Richer XP system with visible quiz rewards. |
+| Ctrl+C only exit | q-key exit everywhere (except during quiz text input) | Student feedback. |
+| 3-roots-then-exit | Continue-or-quit prompt after daily goal | Students wanted to keep going. |
+| 30 roots / 150 words | 60 roots / 300 words at V2.0 launch | Content expansion most requested. |
 
 ## Review Status
 
 | Review | Status | Date | Key Findings |
 |--------|--------|------|-------------|
-| CEO Review | CLEAR | 2026-04-02 | HOLD SCOPE. Install script + rename. Outside voice: 12 findings, all addressed. |
-| Eng Review | CLEAR | 2026-04-02 | DRY fix, data migration sequencing, proxy verification, Vitest migration test. All implemented. |
-| Outside Voice (CEO) | Resolved | 2026-04-02 | npm prefix EACCES (install.sh handles), Windows coverage (README), data migration (store.ts), form factor (CLI stays). |
-| Outside Voice (Eng) | Resolved | 2026-04-02 | npm name risk (fallback plan), migration sequencing (ensureDir → migrate → load), rename sweep (grep verified), npm pack (pending manual step). |
+| CEO Review (V1 rename) | CLEAR | 2026-04-02 | HOLD SCOPE. Install script + rename. |
+| Eng Review (V1 rename) | CLEAR | 2026-04-02 | DRY fix, migration sequencing, Vitest. |
+| CEO Review (V2 plan) | CLEAR | 2026-04-02 | SELECTIVE EXPANSION. 9 proposals, 9 accepted. |
+| Eng Review (V2 plan) | CLEAR | 2026-04-02 | 7 issues, 3 critical gaps. All resolved. |
+| Design Review (V2 plan) | CLEAR | 2026-04-02 | 5/10 → 8/10. 9 design decisions added. |
+| Outside Voice (Eng) | Resolved | 2026-04-02 | Quiz identity, Windows, celebration, backup. |
+| Outside Voice (Design) | Resolved | 2026-04-02 | 5 critical + 4 high gaps. All resolved. |
 
-## Architecture
+**VERDICT:** CEO + ENG + DESIGN CLEARED. Ready to implement.
 
-```
-toefl-roots/                 (directory name stays until GitHub repo rename)
-  src/
-    index.tsx              # Entry point, CLI command routing (meow), --version
-    app.tsx                # Routes command to screen component
-    components/
-      daily-session.tsx    # State machine: dashboard → root-intro → word-detail → summary
-      review-session.tsx   # Review weak roots (same flow, filtered selection)
-      dashboard.tsx        # X/30 mastered + progress bar + streak
-      root-lesson.tsx      # Root intro card: meaning, origin, related roots
-      word-detail.tsx      # Single word: breakdown, derivation chain, example, Chinese
-      session-summary.tsx  # XP earned, streak, words studied
-      celebration.tsx      # All 30 roots mastered
-      streak-header.tsx    # Streak counter + daily progress bar
-      stats.tsx            # Export markdown progress summary
-      doctor.tsx           # Environment checks (imports DATA_DIR from store.ts)
-      explore.tsx          # V2 stub
-    lib/
-      __tests__/
-        store.test.ts      # Vitest migration tests (4 cases)
-      roots-db.ts          # Query functions over roots.json
-      store.ts             # JSON read/write (~/.alvy/data.json), exports DATA_DIR/DATA_FILE, migration from ~/.toefl-roots/
-      progress.ts          # Business logic
-      ai.ts                # V2 stub
-      types.ts             # TypeScript interfaces
-    data/
-      roots.json           # 30 entries × 5 words = 150 words
-  install.sh               # One-line installer for macOS/Linux
-  package.json             # name: "alvy", bin: { "alvy": ... }
-  tsconfig.json            # Excludes __tests__ from compilation
-  DESIGN.md
-  ARCHITECTURE.md
-```
+## TODOS Added from V2 Reviews
 
-## Key Decisions (unchanged from V1)
+- **P2: Quiz validation with students** — collect feedback from 3+ students post-V2 ship. Key question: "你觉得每个词根学完后的小测验有用吗？还是想直接学下一个？"
+- **P3: Word of the Day dedup** — track last 7 shown words to avoid repeats within a week. Add `recentWotD: string[]` field.
 
-- Mastery = 5 words studied per root
-- No quiz system (learning IS the derivation chain)
-- Batch writes only (session end + SIGINT)
-- CJK never bold, always dimmed
-- All UI text in Chinese
-- roots.json keeps `toefl_frequency` field as data attribute
+## npm / Install Info (unchanged from V1)
 
-## Data Model (unchanged except path)
+- **Package:** `@derekhut/alvy` (scoped, public)
+- **Install:** `npm install -g @derekhut/alvy`
+- **CLI command:** `alvy`
+- **Data:** `~/.alvy/data.json`
+- **Known issue:** `EACCES` on `~/.npm/_cacache/` — fix with `sudo chown -R $(whoami) ~/.npm`
 
-Progress at `~/.alvy/data.json` (auto-migrated from `~/.toefl-roots/data.json` on first run).
+## What Was Explicitly Deferred (V2)
 
-```json
-{
-  "streak": { "current": 0, "longest": 0, "lastDate": null },
-  "xp": { "total": 0, "today": 0 },
-  "dailyGoal": 3,
-  "rootProgress": {
-    "bene-": { "seen": true, "wordsStudied": 5, "lastStudied": "2026-04-01" }
-  },
-  "wordsStudied": ["benefit", "benevolent", "benediction", "benefactor", "benign"]
-}
-```
+| Item | Why |
+|------|-----|
+| Standalone binaries (Bun compile) | Ink + yoga native bindings risk |
+| SAT/AP content expansion | Separate plan, different content model |
+| Web app version | CLI is right for AI Camp coding students |
+| Spaced repetition (FSRS) | V3, per TODOS.md. Needs V2 quiz data first. |
+| AI explore mode | Needs API key |
+| CI/CD for npm publish | Manual publish fine for solo dev |
+| Homebrew/Scoop formula | Overkill for current audience |

@@ -11,20 +11,35 @@ const OLD_DATA_DIR = path.join(os.homedir(), ".toefl-roots");
 const OLD_DATA_FILE = path.join(OLD_DATA_DIR, "data.json");
 
 interface PersistedData {
-  streak: { current: number; longest: number; lastDate: string | null };
+  version?: number;
+  streak: {
+    current: number;
+    longest: number;
+    lastDate: string | null;
+    freezeAvailable?: boolean;
+    freezeUsedDate?: string;
+  };
   xp: { total: number; today: number };
   dailyGoal: number;
-  rootProgress: Record<string, { seen: boolean; wordsStudied: number; lastStudied: string | null }>;
+  rootProgress: Record<string, {
+    seen: boolean;
+    wordsStudied: number;
+    lastStudied: string | null;
+    quizAccuracy?: { correct: number; total: number };
+  }>;
   wordsStudied: string[];
+  settings?: { sound: boolean; dailyGoal: number };
 }
 
 function defaultData(): UserData {
   return {
-    streak: { current: 0, longest: 0, lastDate: null },
+    version: 2,
+    streak: { current: 0, longest: 0, lastDate: null, freezeAvailable: true },
     xp: { total: 0, today: 0 },
     dailyGoal: 3,
     rootProgress: {},
     wordsStudied: [],
+    settings: { sound: false, dailyGoal: 3 },
   };
 }
 
@@ -58,10 +73,34 @@ export function loadData(): UserData {
       throw new Error("Invalid data structure");
     }
 
-    return {
-      ...parsed,
+    // V1 → V2 field-level backfill
+    const needsMigration = !parsed.version || parsed.version < 2;
+    if (needsMigration) {
+      fs.copyFileSync(DATA_FILE, BACKUP_FILE);
+    }
+
+    const data: UserData = {
+      version: parsed.version ?? 2,
+      streak: {
+        current: parsed.streak.current,
+        longest: parsed.streak.longest,
+        lastDate: parsed.streak.lastDate,
+        freezeAvailable: parsed.streak.freezeAvailable ?? true,
+        freezeUsedDate: parsed.streak.freezeUsedDate,
+      },
+      xp: parsed.xp,
+      dailyGoal: parsed.dailyGoal,
+      rootProgress: parsed.rootProgress,
       wordsStudied: parsed.wordsStudied ?? [],
+      settings: parsed.settings ?? { sound: false, dailyGoal: parsed.dailyGoal ?? 3 },
     };
+
+    if (needsMigration) {
+      data.version = 2;
+      saveData(data);
+    }
+
+    return data;
   } catch {
     if (fs.existsSync(DATA_FILE)) {
       fs.copyFileSync(DATA_FILE, BACKUP_FILE);
@@ -78,13 +117,13 @@ export function loadData(): UserData {
 export function saveData(data: UserData): void {
   ensureDir();
   const persisted: PersistedData = {
+    version: data.version,
     streak: data.streak,
     xp: data.xp,
     dailyGoal: data.dailyGoal,
     rootProgress: data.rootProgress,
-    wordsStudied: Array.isArray(data.wordsStudied)
-      ? data.wordsStudied
-      : [...data.wordsStudied],
+    wordsStudied: data.wordsStudied,
+    settings: data.settings,
   };
   const json = JSON.stringify(persisted, null, 2);
   const tmpFile = DATA_FILE + ".tmp";

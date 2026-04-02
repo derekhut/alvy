@@ -13,11 +13,13 @@ import {
 
 function makeData(overrides?: Partial<UserData>): UserData {
   return {
-    streak: { current: 0, longest: 0, lastDate: null },
+    version: 2,
+    streak: { current: 0, longest: 0, lastDate: null, freezeAvailable: true },
     xp: { total: 0, today: 0 },
     dailyGoal: 3,
     rootProgress: {},
     wordsStudied: [],
+    settings: { sound: false, dailyGoal: 3 },
     ...overrides,
   };
 }
@@ -98,7 +100,7 @@ describe("updateStreak", () => {
   it("same day: does nothing", () => {
     const today = new Date().toISOString().slice(0, 10);
     const data = makeData({
-      streak: { current: 3, longest: 5, lastDate: today },
+      streak: { current: 3, longest: 5, lastDate: today, freezeAvailable: true },
     });
     updateStreak(data);
     expect(data.streak.current).toBe(3);
@@ -108,7 +110,7 @@ describe("updateStreak", () => {
   it("consecutive day: increments current", () => {
     const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
     const data = makeData({
-      streak: { current: 3, longest: 5, lastDate: yesterday },
+      streak: { current: 3, longest: 5, lastDate: yesterday, freezeAvailable: true },
     });
     updateStreak(data);
     expect(data.streak.current).toBe(4);
@@ -118,7 +120,7 @@ describe("updateStreak", () => {
   it("gap: resets current to 1", () => {
     const twoDaysAgo = new Date(Date.now() - 2 * 86400000).toISOString().slice(0, 10);
     const data = makeData({
-      streak: { current: 5, longest: 5, lastDate: twoDaysAgo },
+      streak: { current: 5, longest: 5, lastDate: twoDaysAgo, freezeAvailable: true },
     });
     updateStreak(data);
     expect(data.streak.current).toBe(1);
@@ -134,7 +136,7 @@ describe("updateStreak", () => {
   it("updates longest when current exceeds it", () => {
     const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
     const data = makeData({
-      streak: { current: 5, longest: 5, lastDate: yesterday },
+      streak: { current: 5, longest: 5, lastDate: yesterday, freezeAvailable: true },
     });
     updateStreak(data);
     expect(data.streak.current).toBe(6);
@@ -144,7 +146,7 @@ describe("updateStreak", () => {
   it("does not update longest when current is below", () => {
     const twoDaysAgo = new Date(Date.now() - 2 * 86400000).toISOString().slice(0, 10);
     const data = makeData({
-      streak: { current: 3, longest: 10, lastDate: twoDaysAgo },
+      streak: { current: 3, longest: 10, lastDate: twoDaysAgo, freezeAvailable: true },
     });
     updateStreak(data);
     expect(data.streak.current).toBe(1);
@@ -158,7 +160,7 @@ describe("addXP", () => {
   it("adds default 10 XP", () => {
     const today = new Date().toISOString().slice(0, 10);
     const data = makeData({
-      streak: { current: 1, longest: 1, lastDate: today },
+      streak: { current: 1, longest: 1, lastDate: today, freezeAvailable: true },
     });
     addXP(data);
     expect(data.xp.total).toBe(10);
@@ -168,7 +170,7 @@ describe("addXP", () => {
   it("adds custom XP amount", () => {
     const today = new Date().toISOString().slice(0, 10);
     const data = makeData({
-      streak: { current: 1, longest: 1, lastDate: today },
+      streak: { current: 1, longest: 1, lastDate: today, freezeAvailable: true },
     });
     addXP(data, 15);
     expect(data.xp.total).toBe(15);
@@ -177,7 +179,7 @@ describe("addXP", () => {
 
   it("resets today XP if lastDate is different from today", () => {
     const data = makeData({
-      streak: { current: 1, longest: 1, lastDate: "2026-01-01" },
+      streak: { current: 1, longest: 1, lastDate: "2026-01-01", freezeAvailable: true },
       xp: { total: 100, today: 50 },
     });
     addXP(data);
@@ -188,7 +190,7 @@ describe("addXP", () => {
   it("accumulates today XP on same day", () => {
     const today = new Date().toISOString().slice(0, 10);
     const data = makeData({
-      streak: { current: 1, longest: 1, lastDate: today },
+      streak: { current: 1, longest: 1, lastDate: today, freezeAvailable: true },
       xp: { total: 100, today: 30 },
     });
     addXP(data);
@@ -339,7 +341,7 @@ describe("selectNextMorphemes", () => {
 describe("generateStatsSummary", () => {
   it("produces correct markdown with array wordsStudied", () => {
     const data = makeData({
-      streak: { current: 3, longest: 7, lastDate: "2026-04-01" },
+      streak: { current: 3, longest: 7, lastDate: "2026-04-01", freezeAvailable: true },
       xp: { total: 150, today: 30 },
       rootProgress: {
         "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },

@@ -63,12 +63,8 @@ export function markWordStudied(
   rootKey: string,
   word: string
 ): void {
-  const wordsArr = Array.isArray(data.wordsStudied)
-    ? data.wordsStudied
-    : [...data.wordsStudied];
-  if (!wordsArr.includes(word)) {
-    wordsArr.push(word);
-    data.wordsStudied = wordsArr;
+  if (!data.wordsStudied.includes(word)) {
+    data.wordsStudied.push(word);
   }
 
   const progress = data.rootProgress[rootKey];
@@ -109,9 +105,7 @@ export function selectNextMorphemes(
 export function generateStatsSummary(data: UserData, totalRoots: number): string {
   const mastered = masteredCount(data);
   const seen = seenCount(data);
-  const totalWords = Array.isArray(data.wordsStudied)
-    ? data.wordsStudied.length
-    : data.wordsStudied.size;
+  const totalWords = data.wordsStudied.length;
 
   return `# 词根学习进度
 

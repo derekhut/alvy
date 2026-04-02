@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-02
 Branch: main
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1, step 5 next)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1, step 6 next)
 
 ## V1 Summary
 
@@ -182,7 +182,7 @@ Phase 1 (Foundation + Quiz):
   2. ✅ Extract useSessionFlow() hook (DRY daily-session + review-session)
   3. ✅ Readability fix (dim → white for content text, update DESIGN.md)
   4. ✅ q-key exit everywhere (already handled via useSessionFlow hook)
-  5. Quiz system (quiz-intro → quiz(x5), binary choice, per-root)
+  5. ✅ Quiz system (quiz-intro → quiz(x5), binary choice, per-root)
   6. Quiz accuracy tracking in progress.ts
   7. Continue-after-session flow (depends on quiz for "complete" signal)
   8. Custom daily goal

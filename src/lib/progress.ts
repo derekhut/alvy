@@ -101,6 +101,77 @@ export function selectNextMorphemes(
   return sorted.slice(0, count);
 }
 
+/** Record a quiz result for a root */
+export function recordQuizResult(
+  data: UserData,
+  rootKey: string,
+  correct: boolean
+): void {
+  const progress = data.rootProgress[rootKey];
+  if (!progress) return;
+
+  if (!progress.quizAccuracy) {
+    progress.quizAccuracy = { correct: 0, total: 0 };
+  }
+  progress.quizAccuracy.total += 1;
+  if (correct) {
+    progress.quizAccuracy.correct += 1;
+  }
+}
+
+/** Check if a root needs review (for review selection) */
+export function needsReview(data: UserData, rootKey: string): boolean {
+  const progress = data.rootProgress[rootKey];
+  if (!progress || !progress.seen) return false;
+
+  // Not fully studied yet
+  if (progress.wordsStudied < 5) return true;
+
+  // Never quizzed
+  if (!progress.quizAccuracy) return true;
+
+  // Quiz accuracy below 80%
+  if (progress.quizAccuracy.total > 0) {
+    const accuracy = progress.quizAccuracy.correct / progress.quizAccuracy.total;
+    if (accuracy < 0.8) return true;
+  }
+
+  return false;
+}
+
+/** Select roots for review session (weak roots first) */
+export function selectReviewMorphemes(
+  data: UserData,
+  allRoots: RootEntry[],
+  count: number = 3
+): RootEntry[] {
+  const reviewable = allRoots
+    .filter((r) => needsReview(data, r.root))
+    .sort((a, b) => {
+      const pA = data.rootProgress[a.root];
+      const pB = data.rootProgress[b.root];
+
+      // Sort by quiz accuracy ascending (worst first), then by wordsStudied ascending
+      const accA = pA?.quizAccuracy
+        ? pA.quizAccuracy.correct / (pA.quizAccuracy.total || 1)
+        : 0;
+      const accB = pB?.quizAccuracy
+        ? pB.quizAccuracy.correct / (pB.quizAccuracy.total || 1)
+        : 0;
+      if (accA !== accB) return accA - accB;
+
+      const studiedA = pA?.wordsStudied ?? 0;
+      const studiedB = pB?.wordsStudied ?? 0;
+      if (studiedA !== studiedB) return studiedA - studiedB;
+
+      const dateA = pA?.lastStudied ?? "";
+      const dateB = pB?.lastStudied ?? "";
+      return dateA.localeCompare(dateB);
+    });
+
+  return reviewable.slice(0, count);
+}
+
 /** Generate stats summary as markdown */
 export function generateStatsSummary(data: UserData, totalRoots: number): string {
   const mastered = masteredCount(data);

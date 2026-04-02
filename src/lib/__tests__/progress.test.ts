@@ -9,6 +9,9 @@ import {
   markWordStudied,
   selectNextMorphemes,
   generateStatsSummary,
+  recordQuizResult,
+  needsReview,
+  selectReviewMorphemes,
 } from "../progress.js";
 
 function makeData(overrides?: Partial<UserData>): UserData {
@@ -365,5 +368,228 @@ describe("generateStatsSummary", () => {
     expect(summary).toContain("0 XP");
     expect(summary).toContain("0 天");
     expect(summary).toContain("0 个");
+  });
+});
+
+// --- recordQuizResult ---
+
+describe("recordQuizResult", () => {
+  it("creates quizAccuracy on first correct answer", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
+      },
+    });
+    recordQuizResult(data, "bene-", true);
+    expect(data.rootProgress["bene-"]!.quizAccuracy).toEqual({
+      correct: 1,
+      total: 1,
+    });
+  });
+
+  it("creates quizAccuracy on first wrong answer", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
+      },
+    });
+    recordQuizResult(data, "bene-", false);
+    expect(data.rootProgress["bene-"]!.quizAccuracy).toEqual({
+      correct: 0,
+      total: 1,
+    });
+  });
+
+  it("accumulates quiz results", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 3, total: 4 },
+        },
+      },
+    });
+    recordQuizResult(data, "bene-", true);
+    expect(data.rootProgress["bene-"]!.quizAccuracy).toEqual({
+      correct: 4,
+      total: 5,
+    });
+    recordQuizResult(data, "bene-", false);
+    expect(data.rootProgress["bene-"]!.quizAccuracy).toEqual({
+      correct: 4,
+      total: 6,
+    });
+  });
+
+  it("does nothing if root not in progress", () => {
+    const data = makeData();
+    recordQuizResult(data, "missing-", true);
+    expect(data.rootProgress["missing-"]).toBeUndefined();
+  });
+});
+
+// --- needsReview ---
+
+describe("needsReview", () => {
+  it("returns false for unseen root", () => {
+    const data = makeData();
+    expect(needsReview(data, "bene-")).toBe(false);
+  });
+
+  it("returns true for seen root with < 5 wordsStudied", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-01" },
+      },
+    });
+    expect(needsReview(data, "bene-")).toBe(true);
+  });
+
+  it("returns true for fully studied root with no quizAccuracy", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
+      },
+    });
+    expect(needsReview(data, "bene-")).toBe(true);
+  });
+
+  it("returns true for root with quiz accuracy < 80%", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 3, total: 5 },
+        },
+      },
+    });
+    expect(needsReview(data, "bene-")).toBe(true);
+  });
+
+  it("returns false for root with quiz accuracy >= 80%", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 4, total: 5 },
+        },
+      },
+    });
+    expect(needsReview(data, "bene-")).toBe(false);
+  });
+
+  it("returns false for root with 100% quiz accuracy", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 5, total: 5 },
+        },
+      },
+    });
+    expect(needsReview(data, "bene-")).toBe(false);
+  });
+});
+
+// --- selectReviewMorphemes ---
+
+describe("selectReviewMorphemes", () => {
+  const roots = [makeRoot("bene-"), makeRoot("mal-"), makeRoot("pre-"), makeRoot("post-")];
+
+  it("returns empty when no roots need review", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 5, total: 5 },
+        },
+        "mal-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 4, total: 5 },
+        },
+      },
+    });
+    expect(selectReviewMorphemes(data, roots)).toEqual([]);
+  });
+
+  it("selects roots with no quizAccuracy over those with good accuracy", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 5, total: 5 },
+        },
+        "mal-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
+        "pre-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 4, total: 5 },
+        },
+      },
+    });
+    const selected = selectReviewMorphemes(data, roots, 2);
+    expect(selected.map((r) => r.root)).toContain("mal-");
+  });
+
+  it("prioritizes lowest accuracy roots", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 3, total: 5 },
+        },
+        "mal-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 1, total: 5 },
+        },
+        "pre-": {
+          seen: true,
+          wordsStudied: 5,
+          lastStudied: "2026-04-01",
+          quizAccuracy: { correct: 2, total: 5 },
+        },
+      },
+    });
+    const selected = selectReviewMorphemes(data, roots, 2);
+    expect(selected[0]!.root).toBe("mal-");
+    expect(selected[1]!.root).toBe("pre-");
+  });
+
+  it("includes roots with < 5 wordsStudied", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": { seen: true, wordsStudied: 2, lastStudied: "2026-04-01" },
+      },
+    });
+    const selected = selectReviewMorphemes(data, roots, 3);
+    expect(selected.map((r) => r.root)).toContain("bene-");
+  });
+
+  it("does not include unseen roots", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": { seen: false, wordsStudied: 0, lastStudied: null },
+      },
+    });
+    expect(selectReviewMorphemes(data, roots)).toEqual([]);
   });
 });

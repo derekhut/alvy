@@ -9,6 +9,7 @@ import {
   addXP,
   updateStreak,
   masteredCount,
+  recordQuizResult,
 } from "../lib/progress.js";
 
 export type SessionPhase =
@@ -206,18 +207,20 @@ export function useSessionFlow(
       if (!quizQuestion) return;
       const correct = choice === quizQuestion.correctIdx;
       const correctAnswer = quizQuestion.choices[quizQuestion.correctIdx]!;
+      const entry = morphemes[morphemeIdx]!;
 
+      const newData = { ...data };
+      recordQuizResult(newData, entry.root, correct);
       if (correct) {
-        const newData = { ...data };
         addXP(newData, 15);
-        setData(newData);
         setSessionXP((x) => x + 15);
       }
+      setData(newData);
 
       setQuizResult({ correct, correctAnswer });
       setPhase("quiz-feedback");
     },
-    [quizQuestion, data],
+    [quizQuestion, data, morphemes, morphemeIdx],
   );
 
   const advanceAfterFeedback = useCallback(() => {

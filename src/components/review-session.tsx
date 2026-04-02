@@ -2,6 +2,7 @@ import React, { useMemo, useEffect } from "react";
 import { Box, Text, useInput } from "ink";
 import { getAllRoots, getRelatedMeanings } from "../lib/roots-db.js";
 import { loadData } from "../lib/store.js";
+import { selectReviewMorphemes } from "../lib/progress.js";
 import { useSessionFlow } from "../hooks/useSessionFlow.js";
 import RootLesson from "./root-lesson.js";
 import WordDetail from "./word-detail.js";
@@ -15,15 +16,7 @@ export default function ReviewSession() {
   const initialData = useMemo(() => loadData(), []);
 
   const reviewMorphemes = useMemo(
-    () =>
-      allRoots
-        .filter((r) => initialData.rootProgress[r.root]?.seen)
-        .sort((a, b) => {
-          const wA = initialData.rootProgress[a.root]?.wordsStudied ?? 0;
-          const wB = initialData.rootProgress[b.root]?.wordsStudied ?? 0;
-          return wA - wB;
-        })
-        .slice(0, 3),
+    () => selectReviewMorphemes(initialData, allRoots, 3),
     [allRoots, initialData],
   );
 

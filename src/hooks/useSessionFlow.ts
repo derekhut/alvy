@@ -231,8 +231,7 @@ export function useSessionFlow(
       setPhase("quiz");
     } else {
       // Quiz done for this root → next root or summary
-      setQuizResult(null);
-      setQuizQuestion(null);
+      // Keep quizQuestion/quizResult until phase changes to avoid null render
       finishRoot();
     }
   }, [morphemes, morphemeIdx, quizIdx, finishRoot]);

@@ -26,7 +26,7 @@ export type SessionPhase =
 export interface QuizQuestion {
   word: RootWord;
   correctIdx: number; // 0 or 1
-  choices: [string, string]; // two English meanings
+  choices: [string, string]; // two Chinese meanings
 }
 
 export interface SessionFlowOptions {
@@ -63,7 +63,7 @@ function generateQuizQuestion(
   word: RootWord,
   currentEntry: RootEntry,
 ): QuizQuestion {
-  // Get a distractor from a different word in the same root, or from other roots
+  // Get a distractor Chinese meaning from a different word
   const allRoots = getAllRoots();
   const otherWords: RootWord[] = [];
 
@@ -71,7 +71,7 @@ function generateQuizQuestion(
   for (const root of allRoots) {
     if (root.root === currentEntry.root) continue;
     for (const w of root.words) {
-      if (w.meaning_en !== word.meaning_en) {
+      if (w.meaning_zh !== word.meaning_zh) {
         otherWords.push(w);
       }
     }
@@ -80,7 +80,7 @@ function generateQuizQuestion(
   // Fallback: other words in the same root
   if (otherWords.length === 0) {
     for (const w of currentEntry.words) {
-      if (w.word !== word.word && w.meaning_en !== word.meaning_en) {
+      if (w.word !== word.word && w.meaning_zh !== word.meaning_zh) {
         otherWords.push(w);
       }
     }
@@ -89,13 +89,13 @@ function generateQuizQuestion(
   const distractor =
     otherWords.length > 0
       ? otherWords[Math.floor(Math.random() * otherWords.length)]!
-      : { meaning_en: "unknown" }; // extreme fallback
+      : { meaning_zh: "未知" }; // extreme fallback
 
   const correctIdx = Math.random() < 0.5 ? 0 : 1;
   const choices: [string, string] =
     correctIdx === 0
-      ? [word.meaning_en, distractor.meaning_en]
-      : [distractor.meaning_en, word.meaning_en];
+      ? [word.meaning_zh, distractor.meaning_zh]
+      : [distractor.meaning_zh, word.meaning_zh];
 
   return { word, correctIdx, choices };
 }

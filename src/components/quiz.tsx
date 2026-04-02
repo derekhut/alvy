@@ -31,17 +31,17 @@ export default function Quiz({
         paddingY={1}
         marginTop={1}
       >
-        {/* Chinese meaning prominently */}
-        <Text bold>{question.word.meaning_zh}</Text>
+        {/* English word as the question */}
+        <Text bold>{question.word.word}</Text>
 
-        {/* Two choices */}
+        {/* Two Chinese meaning choices */}
         <Box marginTop={1} flexDirection="column" gap={0}>
           {question.choices.map((choice, i) => {
             let color: string | undefined;
             if (result) {
               if (i === question.correctIdx) {
                 color = "#5FD7FF"; // cyan for correct
-              } else if (i !== question.correctIdx && result.correctAnswer !== choice) {
+              } else if (i !== question.correctIdx) {
                 color = "#FF5F87"; // dusty rose for wrong choice
               }
             }

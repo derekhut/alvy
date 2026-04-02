@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-02
 Branch: main
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1, step 2 next)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1, step 3 next)
 
 ## V1 Summary
 
@@ -179,7 +179,7 @@ V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) �
 Phase 1 (Foundation + Quiz):
   0. ✅ Write progress.test.ts (full test suite, BEFORE any V2 code)
   1. ✅ Data model changes (types.ts, store.ts migration, version field)
-  2. Extract useSessionFlow() hook (DRY daily-session + review-session)
+  2. ✅ Extract useSessionFlow() hook (DRY daily-session + review-session)
   3. Readability fix (dim → white for content text, update DESIGN.md)
   4. q-key exit everywhere
   5. Quiz system (quiz-intro → quiz(x5), binary choice, per-root)

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Box, Text } from "ink";
 import { execSync } from "node:child_process";
 import fs from "node:fs";
-import os from "node:os";
 import path from "node:path";
+import { DATA_DIR } from "../lib/store.js";
 
 interface Check {
   label: string;
@@ -57,8 +57,6 @@ export default function Doctor() {
     }
 
     // 3. CJK font rendering test
-    // We print Chinese characters and check if the terminal doesn't mangle them.
-    // We can't truly verify font support programmatically, but we can check locale.
     const lang = process.env["LANG"] || process.env["LC_ALL"] || "";
     const hasUtf8 = lang.toLowerCase().includes("utf") || process.platform === "darwin";
     if (hasUtf8) {
@@ -75,26 +73,25 @@ export default function Doctor() {
       });
     }
 
-    // 4. Data directory (~/.toefl-roots/)
-    const dataDir = path.join(os.homedir(), ".toefl-roots");
+    // 4. Data directory (~/.alvy/)
     try {
-      if (!fs.existsSync(dataDir)) {
-        fs.mkdirSync(dataDir, { recursive: true });
+      if (!fs.existsSync(DATA_DIR)) {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
       }
       // Test write permission
-      const testFile = path.join(dataDir, ".doctor-test");
+      const testFile = path.join(DATA_DIR, ".doctor-test");
       fs.writeFileSync(testFile, "ok");
       fs.unlinkSync(testFile);
       results.push({
         label: "数据目录",
         status: "pass",
-        detail: `${dataDir}（可写）`,
+        detail: `${DATA_DIR}（可写）`,
       });
     } catch (err) {
       results.push({
         label: "数据目录",
         status: "fail",
-        detail: `无法写入 ${dataDir}: ${err instanceof Error ? err.message : String(err)}`,
+        detail: `无法写入 ${DATA_DIR}: ${err instanceof Error ? err.message : String(err)}`,
       });
     }
 
@@ -133,7 +130,7 @@ export default function Doctor() {
 
   return (
     <Box flexDirection="column" paddingLeft={2} paddingY={1}>
-      <Text bold color="#AF5FFF">toefl-roots 环境检查</Text>
+      <Text bold color="#AF5FFF">alvy 环境检查</Text>
       <Text dimColor>正在检查你的环境…</Text>
       <Box flexDirection="column" marginTop={1}>
         {checks.map((check) => (

@@ -3,9 +3,12 @@ import path from "node:path";
 import os from "node:os";
 import type { UserData } from "./types.js";
 
-const DATA_DIR = path.join(os.homedir(), ".toefl-roots");
-const DATA_FILE = path.join(DATA_DIR, "data.json");
+export const DATA_DIR = path.join(os.homedir(), ".alvy");
+export const DATA_FILE = path.join(DATA_DIR, "data.json");
 const BACKUP_FILE = path.join(DATA_DIR, "data.backup.json");
+
+const OLD_DATA_DIR = path.join(os.homedir(), ".toefl-roots");
+const OLD_DATA_FILE = path.join(OLD_DATA_DIR, "data.json");
 
 interface PersistedData {
   streak: { current: number; longest: number; lastDate: string | null };
@@ -31,8 +34,15 @@ function ensureDir(): void {
   }
 }
 
+function migrateFromOldPath(): void {
+  if (!fs.existsSync(DATA_FILE) && fs.existsSync(OLD_DATA_FILE)) {
+    fs.copyFileSync(OLD_DATA_FILE, DATA_FILE);
+  }
+}
+
 export function loadData(): UserData {
   ensureDir();
+  migrateFromOldPath();
 
   if (!fs.existsSync(DATA_FILE)) {
     const data = defaultData();

@@ -1,4 +1,4 @@
-# Design System — toefl-roots
+# Design System — alvy
 
 ## Product Context
 - **What this is:** Terminal-based TOEFL vocabulary tool using 新东方词根词缀记忆法

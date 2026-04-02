@@ -20,7 +20,7 @@ export interface RootEntry {
   words: RootWord[];
 }
 
-// User progress stored at ~/.toefl-roots/data.json
+// User progress stored at ~/.alvy/data.json
 export interface RootProgress {
   seen: boolean;
   wordsStudied: number;

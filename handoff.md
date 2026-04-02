@@ -1,113 +1,160 @@
-# TOEFL Word Root CLI — Implementation Handoff
+# alvy — Implementation Handoff
 
-Last updated: 2026-04-01
-Branch: master
-Status: V1 SHIPPED
+Last updated: 2026-04-02
+Branch: main
+Status: Rename DONE, npm publish + GitHub repo rename PENDING
 
-## What This Is
+## What Happened
 
-A terminal-based vocabulary tool for Chinese TOEFL students. Students learn English word roots through 新东方-style derivation chains — each word is broken down into morphemes with Chinese translations, and a step-by-step derivation shows how the parts create the meaning. No quiz, no multiple choice. Built with Ink (React for CLI) + TypeScript + local JSON persistence.
+V1 shipped as `toefl-roots` on 2026-04-01. Derek tested with students on 2026-04-01. Student feedback:
 
-The core insight: word roots are the English equivalent of Chinese radicals. "benevolent" isn't arbitrary, it's `bene(好的) + vol(意愿) + ent(…的) → 有好意愿的 → 仁慈的`. Chinese translations in every explanation bridge the two languages.
+1. **Installation is hard** — most students don't have Node.js or git
+2. **Windows build issues** — `npm run build` had problems on Windows
+3. **Content expansion** — students want SAT vocab and AP subject support (e.g., AP Psychology)
 
-## Source Documents
+On 2026-04-02: CEO Review + Eng Review decided to rename to `alvy`, add install script, add data migration, add tests. All code changes implemented same day.
 
-- **Design doc (APPROVED):** `~/.gstack/projects/self-learn/derekhu-master-design-20260401-121754.md`
-- **CEO plan (6 expansions accepted):** `~/.gstack/projects/self-learn/ceo-plans/2026-04-01-toefl-word-root-cli.md`
-- **Design system:** `toefl-roots/DESIGN.md`
-- **Architecture:** `toefl-roots/ARCHITECTURE.md`
-- **TODOS (V2/V3):** `TODOS.md` in repo root
+## Implementation Status
+
+### DONE
+
+| Step | What | Status |
+|------|------|--------|
+| 1 | Rename all source references (9 source files) | DONE |
+| 2 | Add package.json fields (engines, files, prepublishOnly, test) | DONE |
+| 3 | Data migration in store.ts (export DATA_DIR, auto-migrate from ~/.toefl-roots/) | DONE |
+| 4 | DRY fix: doctor.tsx imports DATA_DIR from store.ts | DONE |
+| 5 | Vitest + 4 migration tests (migrate, already migrated, fresh start, corrupt) | DONE |
+| 6 | install.sh (one-line macOS/Linux installer) | DONE |
+| 7 | README.md rewrite (install flow, commands, uninstall) | DONE |
+| 8 | Documentation updates (DESIGN.md, ARCHITECTURE.md, CLAUDE.md) | DONE |
+| 9 | tsconfig.json: exclude __tests__ from tsc output | DONE |
+| 10 | Build passes, all tests pass | DONE |
+
+### PENDING (manual steps)
+
+| Step | What | Notes |
+|------|------|-------|
+| 11 | `npm pack --dry-run` | Verify contents: dist/, package.json, README.md |
+| 12 | `npm login` + `npm publish` | From Derek's machine. If 403 (name frozen), fall back to `alvy-cli` |
+| 13 | `npx alvy doctor` | Verify from registry |
+| 14 | Rename GitHub repo | Settings → Repository name → `alvy`. Update remote: `git remote set-url origin git@github.com:derekhut/alvy.git` |
+| 15 | Verify on clean machine | `npm install -g alvy`, `alvy`, `alvy --version`, `alvy doctor` |
+| 16 | Test install.sh on macOS | `curl -fsSL ... \| bash` end-to-end |
+| 17 | Test data migration | Create fake `~/.toefl-roots/data.json`, install alvy, verify at `~/.alvy/data.json` |
+
+### What was explicitly deferred
+
+| Item | Why |
+|------|-----|
+| Standalone binaries (Bun compile) | Ink + yoga native bindings risk. Do it when content matures. |
+| SAT/AP content expansion | Separate plan. Same root-based engine works for SAT. AP Psychology is a different content model. |
+| Web app version | CLI is right for AI Camp coding students. Web app when audience expands. |
+| Spaced repetition | V2, per TODOS.md |
+| AI explore mode | V2, needs API key |
+| CI/CD for npm publish | Manual publish is fine for solo dev |
+| Homebrew/Scoop formula | Overkill for current audience |
+| `toefl_frequency` field rename in roots.json | Keep as data field. Not user-facing. Rename later if SAT content is added. |
+
+## What Changed (file-by-file)
+
+### Source files
+
+| File | What changed |
+|------|-------------|
+| `package.json` | name → `alvy`, bin → `alvy`, description drops "TOEFL", added engines/files/prepublishOnly/test, vitest devDep |
+| `src/lib/store.ts` | DATA_DIR → `~/.alvy/`, exports `DATA_DIR` + `DATA_FILE`, added `OLD_DATA_DIR`/`OLD_DATA_FILE` + `migrateFromOldPath()` |
+| `src/lib/types.ts` | Comment: `~/.toefl-roots/` → `~/.alvy/` |
+| `src/index.tsx` | Help text + error message: `toefl-roots` → `alvy` |
+| `src/components/doctor.tsx` | Imports `DATA_DIR` from store.ts (was hardcoded), removed os/path imports for data dir, title → `alvy 环境检查` |
+| `src/components/dashboard.tsx` | Title: `toefl-roots` → `alvy` |
+| `src/components/celebration.tsx` | `toefl-roots review` → `alvy review` |
+| `src/components/review-session.tsx` | `toefl-roots` → `alvy` |
+| `src/lib/progress.ts` | Stats header: `# TOEFL 词根学习进度` → `# 词根学习进度` |
+| `tsconfig.json` | Added `"exclude": ["src/**/__tests__"]` to prevent test files in dist/ |
+
+### New files
+
+| File | What |
+|------|------|
+| `src/lib/__tests__/store.test.ts` | 4 Vitest migration tests using tmp dirs + mocked homedir |
+| `install.sh` | One-line installer: sudo check, Node detection, nvm fallback, npm prefix fix, proxy verification, Chinese errors, logging to ~/.alvy/install.log |
+
+### Documentation
+
+| File | What changed |
+|------|-------------|
+| `README.md` | Full rewrite: alvy install flow (curl one-liner + Windows), commands table, data storage at ~/.alvy/, uninstall instructions, migration note |
+| `DESIGN.md` | Title: `# Design System — alvy` |
+| `ARCHITECTURE.md` | Full rewrite: all paths/commands → alvy, added migration docs, added install.sh + test file to file reference, removed "No tests yet" from What Does NOT Exist |
+| `CLAUDE.md` (parent) | Section renamed to `alvy (formerly toefl-roots)`, paths → ~/.alvy/, added `npm test`, added install.sh to key files |
+
+### NOT changed (intentional)
+
+| File | Why |
+|------|-----|
+| `src/data/roots.json` | `toefl_frequency` is a data attribute, not user-facing branding |
+| `src/lib/types.ts` line 10 | `toefl_frequency` type matches roots.json field |
+| `handoff.md` | Historical record; references to old name are context |
+
+## Review Status
+
+| Review | Status | Date | Key Findings |
+|--------|--------|------|-------------|
+| CEO Review | CLEAR | 2026-04-02 | HOLD SCOPE. Install script + rename. Outside voice: 12 findings, all addressed. |
+| Eng Review | CLEAR | 2026-04-02 | DRY fix, data migration sequencing, proxy verification, Vitest migration test. All implemented. |
+| Outside Voice (CEO) | Resolved | 2026-04-02 | npm prefix EACCES (install.sh handles), Windows coverage (README), data migration (store.ts), form factor (CLI stays). |
+| Outside Voice (Eng) | Resolved | 2026-04-02 | npm name risk (fallback plan), migration sequencing (ensureDir → migrate → load), rename sweep (grep verified), npm pack (pending manual step). |
 
 ## Architecture
 
 ```
-toefl-roots/
+toefl-roots/                 (directory name stays until GitHub repo rename)
   src/
-    index.tsx              # Entry point, Ink render, CLI command routing (meow)
-    app.tsx                # Main app, routes command to screen component
+    index.tsx              # Entry point, CLI command routing (meow), --version
+    app.tsx                # Routes command to screen component
     components/
       daily-session.tsx    # State machine: dashboard → root-intro → word-detail → summary
       review-session.tsx   # Review weak roots (same flow, filtered selection)
-      dashboard.tsx        # X/30 mastered + progress bar + streak (shown on launch)
+      dashboard.tsx        # X/30 mastered + progress bar + streak
       root-lesson.tsx      # Root intro card: meaning, origin, related roots
       word-detail.tsx      # Single word: breakdown, derivation chain, example, Chinese
-      session-summary.tsx  # XP earned, streak, words studied this session
-      celebration.tsx      # Graduation screen when all 30 mastered
+      session-summary.tsx  # XP earned, streak, words studied
+      celebration.tsx      # All 30 roots mastered
       streak-header.tsx    # Streak counter + daily progress bar
       stats.tsx            # Export markdown progress summary
-      doctor.tsx           # Environment health checks
-      explore.tsx          # V2 stub ("Coming in V2")
+      doctor.tsx           # Environment checks (imports DATA_DIR from store.ts)
+      explore.tsx          # V2 stub
     lib/
-      roots-db.ts          # Query functions over roots.json (in-memory)
-      store.ts             # Local JSON read/write (~/.toefl-roots/data.json)
-      progress.ts          # Business logic: streak, XP, mastery, morpheme selection
-      ai.ts                # V2 stub (OpenAI client)
+      __tests__/
+        store.test.ts      # Vitest migration tests (4 cases)
+      roots-db.ts          # Query functions over roots.json
+      store.ts             # JSON read/write (~/.alvy/data.json), exports DATA_DIR/DATA_FILE, migration from ~/.toefl-roots/
+      progress.ts          # Business logic
+      ai.ts                # V2 stub
       types.ts             # TypeScript interfaces
     data/
-      roots.json           # 20 roots + 10 affixes, 5 words each = 150 words
-  package.json
-  tsconfig.json
-  DESIGN.md              # Design system (colors, typography, spacing, CJK rules)
-  ARCHITECTURE.md        # Detailed architecture doc for developers
+      roots.json           # 30 entries × 5 words = 150 words
+  install.sh               # One-line installer for macOS/Linux
+  package.json             # name: "alvy", bin: { "alvy": ... }
+  tsconfig.json            # Excludes __tests__ from compilation
+  DESIGN.md
+  ARCHITECTURE.md
 ```
 
-## 4 CLI Commands
+## Key Decisions (unchanged from V1)
 
-| Command | What it does |
-|---------|-------------|
-| `toefl-roots` | Daily session: 3 roots, each with intro + 5 word walkthroughs |
-| `toefl-roots review` | Practice weak roots (fewest words studied, already seen) |
-| `toefl-roots stats` | Export markdown progress summary |
-| `toefl-roots doctor` | Check Node.js version, npm access, UTF-8 locale, disk permissions |
+- Mastery = 5 words studied per root
+- No quiz system (learning IS the derivation chain)
+- Batch writes only (session end + SIGINT)
+- CJK never bold, always dimmed
+- All UI text in Chinese
+- roots.json keeps `toefl_frequency` field as data attribute
 
-## Key Decisions from Reviews
+## Data Model (unchanged except path)
 
-### Mastery: 5 words studied
-A root is "mastered" when `wordsStudied >= 5` (all 5 of its words have been studied). Checked by `masteredCount()` in progress.ts.
+Progress at `~/.alvy/data.json` (auto-migrated from `~/.toefl-roots/data.json` on first run).
 
-### No quiz system
-The design review explicitly decided against quizzes. Learning IS the derivation chain — students read how morphemes combine to create meaning. There are no questions, no right/wrong answers, no accuracy metrics.
-
-### File naming: roots.json stays
-Keep `roots.json` (not morphemes.json). Each entry has a `"type": "root" | "prefix" | "suffix"` field. The file name is user-facing in error messages, and "roots" is the concept students understand.
-
-### Store split: I/O vs business logic
-- `store.ts` — read/write JSON to `~/.toefl-roots/data.json`, handle first-run initialization, corrupted file backup
-- `progress.ts` — all business logic: `updateStreak()`, `addXP()`, `markRootSeen()`, `markWordStudied()`, `masteredCount()`, `selectNextMorphemes()`
-
-### Batch writes only
-Write `data.json` at session end + quit signal (SIGINT handler). Not after every word. Prevents filesystem thrashing. Uses atomic write (write to `.tmp`, then `rename()`).
-
-### CJK rendering
-Chinese text is always dimmed, never bold (preserves stroke clarity). All UI text is in Chinese. English only for vocabulary content. Left-aligned, never centered for mixed CJK/English.
-
-## Data Models
-
-### roots.json entry
-```json
-{
-  "root": "bene-",
-  "type": "root",
-  "meaning_en": "good, well",
-  "meaning_zh": "好的，善良的",
-  "origin": "Latin",
-  "related": ["mal-"],
-  "words": [
-    {
-      "word": "benefit",
-      "breakdown": "bene-(好的) + fit-(做)",
-      "derivation": "bene(好的) + fit(做) → 做好事 → 益处",
-      "meaning_en": "an advantage or profit gained from something",
-      "meaning_zh": "益处，好处",
-      "example": "Exercise has many health benefits.",
-      "example_zh": "运动有很多健康方面的益处。",
-      "toefl_frequency": "high"
-    }
-  ]
-}
-```
-
-### data.json (stored at ~/.toefl-roots/data.json)
 ```json
 {
   "streak": { "current": 0, "longest": 0, "lastDate": null },
@@ -119,92 +166,3 @@ Chinese text is always dimmed, never bold (preserves stroke clarity). All UI tex
   "wordsStudied": ["benefit", "benevolent", "benediction", "benefactor", "benign"]
 }
 ```
-
-### TypeScript interfaces
-```typescript
-interface UserData {
-  streak: { current: number; longest: number; lastDate: string | null };
-  xp: { total: number; today: number };
-  dailyGoal: number;
-  rootProgress: Record<string, RootProgress>;
-  wordsStudied: string[];
-}
-
-interface RootProgress {
-  seen: boolean;
-  wordsStudied: number;    // 0-5, mastered when >= 5
-  lastStudied: string | null;
-}
-```
-
-## Morpheme Selection Algorithm
-
-1. **Daily session (`selectNextMorphemes`):** Unseen roots first, in `roots.json` order. Once all 30 seen, pick roots with the fewest `wordsStudied`. Tie-breaker: oldest `lastStudied`.
-2. **Review mode:** Same algorithm but filtered to roots where `seen === true`. Picks the 3 weakest seen roots for repeat practice.
-
-## Session Flow
-
-```
-Launch → Dashboard (X/30 mastered, streak, XP)
-  → Root Intro (root meaning, origin, related roots)
-    → Word Detail (breakdown + derivation chain + Chinese + example)
-    → Word Detail ... (×5 per root, Enter to advance)
-  → Next Root Intro ... (×3 roots per session)
-  → Session Summary (words studied, XP earned, streak)
-  → If all 30 mastered → Celebration screen
-```
-
-State machine phases: `dashboard → root-intro → word-detail → summary | celebration`
-
-## XP and Streak Rules
-
-- **XP:** +10 per word studied. Unconditional — every word earns XP. No penalty, no bonus.
-- **Streak:** Increments when a session is completed. Consecutive calendar days. Missing a day resets to 0 (but `longest` is preserved).
-- **Daily XP reset:** `xp.today` resets to 0 when `lastDate` changes.
-
-## Quit Behavior
-
-Both `q` and Ctrl+C trigger graceful exit:
-1. Save current UserData to `data.json` (atomic write)
-2. Incomplete roots (lesson shown but not all words studied) retain partial `wordsStudied` count
-3. Streak only updates at session completion (`updateStreak` called after all roots done)
-
-## Implementation Status
-
-V1 is complete and shipped. The implementation order was:
-1. CJK prototype — root-lesson.tsx with Chinese in bordered box
-2. Data layer — roots.json, store.ts, progress.ts, roots-db.ts, types.ts
-3. Components — dashboard, word-detail, session-summary, celebration, streak-header, stats, doctor
-4. Commands — daily, review, stats, doctor
-5. Design polish — 15 commits of visual refinement per DESIGN.md
-
-## V1 Scope (shipped)
-
-- 20 roots + 10 prefixes/suffixes = 30 entries × 5 words = 150 words
-- Root family connections (cross-references between related roots)
-- Progress dashboard on launch (X/30 mastered + progress bar)
-- Completion celebration when all 30 mastered
-- Review mode for weak roots
-- Stats export as markdown
-- Doctor command for environment verification
-- Streaks, XP (+10/word studied), daily goal (3 roots/session)
-- Zero API calls in V1. ai.ts and explore.tsx are stubs.
-
-## NOT in V1
-
-- AI-powered explore mode (V2)
-- AI Chinese mnemonics (V2)
-- Spaced repetition algorithm (V2)
-- Parent progress reports (V2, `toefl-roots stats` is the simpler V1 version)
-- Weekly digest report (V2)
-- Terminal achievements/badges (V3)
-- 200+ roots (V1 has 30)
-- Test suite (no Vitest, no ink-testing-library yet)
-
-## Known Risks
-
-1. **CJK double-width alignment** — Ink's yoga-layout may break column alignment with Chinese characters. Verified working in Terminal.app and iTerm2.
-2. **Root database accuracy** — Every etymology hand-verified against Wiktionary. Wrong roots destroy trust.
-3. **Chinese translation quality** — Uses standard TOEFL translations, not AI-generated.
-4. **npx cold start** — First `npx toefl-roots` takes 10-30 seconds. Recommend `npm i -g toefl-roots` for repeat use.
-5. **Student environment** — Run `toefl-roots doctor` on test students' machines before use. Have USB fallback if npm is blocked by school firewall.

@@ -1,40 +1,34 @@
-# toefl-roots 词根学习
+# alvy 词根学习
 
 终端词根记忆工具，用新东方词根词缀记忆法帮你拆解英语单词。
 
-30个词根 × 5个单词 = 150个TOEFL核心词汇
+30个词根 × 5个单词 = 150个核心词汇
 
-## 快速开始
+## 安装
 
-需要 Node.js 18+（[下载](https://nodejs.org)）
+### macOS / Linux
+
+需要 Node.js 18+。如果没有，安装脚本会自动安装。
 
 ```bash
-git clone https://github.com/derekhut/memorize-words.git
-cd memorize-words
-npm install
-npm run build
-node dist/index.js
+curl -fsSL https://raw.githubusercontent.com/derekhut/alvy/main/install.sh | bash
 ```
 
-如果 `npm install` 遇到权限问题：
+### Windows
 
-```bash
-# 方法1：修复npm缓存权限
-sudo chown -R $(whoami) ~/.npm
-npm install
-
-# 方法2：使用临时缓存目录
-npm install --cache /tmp/npm-cache
+```powershell
+winget install OpenJS.NodeJS.LTS
+npm install -g alvy
 ```
 
 ## 命令
 
 | 命令 | 说明 |
 |------|------|
-| `node dist/index.js` | 开始今天的学习（每次3个词根） |
-| `node dist/index.js review` | 复习已学词根 |
-| `node dist/index.js stats` | 导出学习进度 |
-| `node dist/index.js doctor` | 检查运行环境 |
+| `alvy` | 开始今天的学习（每次3个词根） |
+| `alvy review` | 复习已学词根 |
+| `alvy stats` | 导出学习进度 |
+| `alvy doctor` | 检查运行环境 |
 
 ## 学习方式
 
@@ -56,18 +50,25 @@ pre(提前) + dict(说) → 提前说出 → 预测
 
 ## 数据存储
 
-学习进度保存在 `~/.toefl-roots/data.json`。
+学习进度保存在 `~/.alvy/data.json`。
 
 - 首次运行自动创建该文件
+- 从旧版（`~/.toefl-roots/`）升级时自动迁移数据
 - 如果文件损坏，自动备份至 `data.backup.json` 并重新开始
-- 重置进度：删除 `~/.toefl-roots/data.json` 即可从头开始
+- 重置进度：删除 `~/.alvy/data.json` 即可从头开始
 
 ```bash
 # 查看进度文件
-cat ~/.toefl-roots/data.json
+cat ~/.alvy/data.json
 
 # 重置所有进度
-rm ~/.toefl-roots/data.json
+rm ~/.alvy/data.json
+```
+
+## 卸载
+
+```bash
+npm uninstall -g alvy
 ```
 
 ## 开发
@@ -75,15 +76,14 @@ rm ~/.toefl-roots/data.json
 ### 项目结构
 
 ```
-toefl-roots/
-  src/
-    index.tsx           # CLI 入口
-    app.tsx             # 命令路由
-    components/         # UI 组件（Ink/React）
-    lib/                # 业务逻辑和数据层
-    data/roots.json     # 词根数据库
-  DESIGN.md             # 设计系统
-  ARCHITECTURE.md       # 架构文档
+src/
+  index.tsx           # CLI 入口
+  app.tsx             # 命令路由
+  components/         # UI 组件（Ink/React）
+  lib/                # 业务逻辑和数据层
+  data/roots.json     # 词根数据库
+DESIGN.md             # 设计系统
+ARCHITECTURE.md       # 架构文档
 ```
 
 ### 开发命令
@@ -91,13 +91,6 @@ toefl-roots/
 ```bash
 npm run build          # 编译 TypeScript
 npm run dev            # 监听模式编译
+npm test               # 运行测试
 node dist/index.js     # 运行
 ```
-
-### 注意事项
-
-- 目前没有测试套件
-- UI 文字全部使用中文（见 DESIGN.md）
-- CJK 字符不加粗（会影响笔画清晰度）
-- import 路径使用 `.js` 扩展名（ESM 规范）
-- 数据写入使用原子操作（先写 `.tmp` 再 `rename`）

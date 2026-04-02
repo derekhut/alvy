@@ -113,7 +113,7 @@ export function generateStatsSummary(data: UserData, totalRoots: number): string
     ? data.wordsStudied.length
     : data.wordsStudied.size;
 
-  return `# TOEFL 词根学习进度
+  return `# 词根学习进度
 
 - **已掌握:** ${mastered}/${totalRoots} 个词根
 - **已学习:** ${seen}/${totalRoots} 个词根

@@ -1,24 +1,33 @@
 {
-  "name": "toefl-roots",
+  "name": "alvy",
   "version": "1.0.0",
-  "description": "Terminal-based TOEFL vocabulary tool — learn English word roots with Chinese translations",
+  "description": "Terminal-based vocabulary tool — learn English word roots with Chinese translations",
   "type": "module",
   "bin": {
-    "toefl-roots": "./dist/index.js"
+    "alvy": "./dist/index.js"
   },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
     "start": "node dist/index.js",
-    "doctor": "node dist/index.js doctor"
+    "doctor": "node dist/index.js doctor",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "ink": "^5.1.0",
-    "react": "^18.3.1",
-    "meow": "^13.2.0"
+    "meow": "^13.2.0",
+    "react": "^18.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.2"
   }
 }

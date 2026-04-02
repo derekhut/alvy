@@ -116,7 +116,7 @@ export default function ReviewSession() {
         <Text bold color="#AF5FFF">
           还没有可以复习的词根
         </Text>
-        <Text>先运行 toefl-roots 学习新词根吧！</Text>
+        <Text>先运行 alvy 学习新词根吧！</Text>
         <Box marginTop={1}>
           <Text dimColor>按回车退出</Text>
         </Box>

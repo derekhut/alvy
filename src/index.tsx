@@ -8,10 +8,10 @@ import type { Command } from "./lib/types.js";
 const cli = meow(
   `
   用法
-    $ toefl-roots           每日学习（3 个词根，每个 5 个单词）
-    $ toefl-roots review    复习已学词根
-    $ toefl-roots stats     导出学习进度
-    $ toefl-roots doctor    检查运行环境
+    $ alvy           每日学习（3 个词根，每个 5 个单词）
+    $ alvy review    复习已学词根
+    $ alvy stats     导出学习进度
+    $ alvy doctor    检查运行环境
 
   选项
     --help    显示帮助信息
@@ -28,7 +28,7 @@ const command: Command = input && validCommands.has(input as Command)
   ? (input as Command)
   : input
     ? (() => {
-        console.error(`Unknown command: ${input}. Run toefl-roots --help for usage.`);
+        console.error(`Unknown command: ${input}. Run alvy --help for usage.`);
         process.exit(1);
       })()
     : "daily";

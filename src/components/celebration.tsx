@@ -45,7 +45,7 @@ export default function Celebration({ data, totalRoots }: CelebrationProps) {
 
         <Box marginTop={1}>
           <Text dimColor>
-            继续使用 toefl-roots review 来复习巩固！
+            继续使用 alvy review 来复习巩固！
           </Text>
         </Box>
       </Box>

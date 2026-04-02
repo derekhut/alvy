@@ -37,18 +37,18 @@ export default function RootLesson({
           <Text bold color="#AF5FFF">
             {entry.root}
           </Text>
-          <Text dimColor>({entry.origin})</Text>
-          <Text dimColor>{typeLabel}</Text>
+          <Text>({entry.origin})</Text>
+          <Text>{typeLabel}</Text>
         </Box>
         <Box marginTop={1}>
           <Text>
-            表示 "<Text dimColor>{entry.meaning_zh}</Text>"（{entry.meaning_en}）
+            表示 "{entry.meaning_zh}"（{entry.meaning_en}）
           </Text>
         </Box>
 
         {entry.related.length > 0 && (
           <Box marginTop={1}>
-            <Text dimColor>
+            <Text>
               相关:{" "}
               {entry.related
                 .map((r) =>
@@ -62,7 +62,7 @@ export default function RootLesson({
 
       {/* Word cloud */}
       <Box marginTop={1} flexDirection="column">
-        <Text dimColor>包含这个词根的单词:</Text>
+        <Text>包含这个词根的单词:</Text>
         <Box marginTop={0} gap={2} flexWrap="wrap">
           {entry.words.map((w) => (
             <Text key={w.word} bold>

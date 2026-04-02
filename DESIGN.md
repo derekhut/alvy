@@ -17,13 +17,14 @@
 - **Reward/XP:** `#FFAF00` (ANSI 214) — warm amber. Streaks, XP, earned progress numbers.
 - **Success:** `#5FD7FF` (ANSI 81) — soft cyan. Correct answers, positive feedback.
 - **Error:** `#FF5F87` (ANSI 204) — dusty rose. Wrong answers, gentle not punishing.
-- **Dimmed:** `#6C6C6C` (ANSI 242) — warm gray. Hints, secondary info, Chinese definitions.
+- **Dimmed:** `#6C6C6C` (ANSI 242) — warm gray. Navigation hints and progress indicators only.
 - **Borders:** `#4E4E4E` (ANSI 239) — cool slate. Structural, recedes.
 
 ## Text Hierarchy
 - **Bold + violet:** Root being studied, app title
 - **Bold + white:** English words (vocabulary)
-- **Regular + dim:** Chinese definitions (never bold CJK — loses stroke clarity)
+- **Regular + white:** Content text — Chinese definitions, translations, examples, section labels (never bold CJK — loses stroke clarity)
+- **Regular + dim:** Navigation hints only — "按回车继续 →", progress indicators "词根 1/3"
 - **Italic + dim:** Mnemonics, encouragement, "the app's voice"
 - **Bold + amber:** Numbers that matter (XP, streak count)
 
@@ -51,7 +52,7 @@ Emojis are punctuation, not decoration. One emoji per context, never two in a ro
 ## CJK Considerations
 - Left-align everything (never center mixed CJK/English)
 - Use `string-width` for column calculations if needed
-- Chinese text slightly dimmed but readable
+- Chinese content text in regular white (not dimmed)
 - Never bold CJK characters
 - Display Chinese in read-only contexts only
 
@@ -67,3 +68,4 @@ All UI text in Chinese. English only for vocabulary content itself.
 | 2026-04-01 | Chinese UI text | Product is for Chinese students. |
 | 2026-04-01 | Dusty rose for errors | "Not quite." reframes wrong answers as teaching moments. |
 | 2026-04-01 | Amber border on celebration card | Exception to slate border rule. Double border + amber = trophy moment. Only celebration screen uses this. |
+| 2026-04-02 | Content text white, dim nav only | Chinese definitions/examples were unreadable on dark terminals. Dim reserved for navigation hints. |

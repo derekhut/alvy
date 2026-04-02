@@ -50,7 +50,7 @@ export default function WordDetail({
 
         {/* Derivation chain — the core learning */}
         <Box marginTop={1} flexDirection="column">
-          <Text dimColor>词根拆解:</Text>
+          <Text>词根拆解:</Text>
           <Text color="#AF5FFF">  {word.derivation}</Text>
         </Box>
 
@@ -61,14 +61,14 @@ export default function WordDetail({
           </Text>
         </Box>
         <Box>
-          <Text dimColor>({word.meaning_en})</Text>
+          <Text>({word.meaning_en})</Text>
         </Box>
 
         {/* Example sentence */}
         <Box marginTop={1} flexDirection="column">
-          <Text dimColor>例句:</Text>
+          <Text>例句:</Text>
           <Text>  {word.example}</Text>
-          <Text dimColor>  {word.example_zh}</Text>
+          <Text>  {word.example_zh}</Text>
         </Box>
       </Box>
 

@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-02
 Branch: main
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1, step 6 next)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next)
 
 ## V1 Summary
 
@@ -51,7 +51,28 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 - Auto-advance uses `useEffect` timer in session components, NOT in the hook
 - Distractors drawn from other roots' `meaning_zh` (fallback: same root, extreme fallback: "未知")
 - +15 XP per correct answer (added via `addXP` in hook)
-- **Quiz accuracy tracking NOT yet implemented** (step 6) — XP works but `quizAccuracy` field not written
+- **Quiz accuracy tracking**: `recordQuizResult()` in progress.ts, called from `answerQuiz` in hook
+- **Review selection**: `selectReviewMorphemes()` uses eng review #1 criteria: `!quizAccuracy || accuracy < 0.8 || wordsStudied < 5`
+
+### Step 6: Quiz accuracy tracking
+- **progress.ts**: Added `recordQuizResult()`, `needsReview()`, `selectReviewMorphemes()`
+- **useSessionFlow.ts**: `answerQuiz()` now calls `recordQuizResult()` for every quiz answer (correct or wrong)
+- **review-session.tsx**: Replaced inline sort with `selectReviewMorphemes()` — prioritizes lowest accuracy, never-quizzed, and under-studied roots
+- **progress.test.ts**: 15 new tests (recordQuizResult ×4, needsReview ×6, selectReviewMorphemes ×5). Total: 50 tests
+- Review criteria per eng review #1: `!quizAccuracy || (correct/total < 0.8) || wordsStudied < 5`
+
+### Step 7: Continue-after-session flow
+- After completing daily batch quiz, shows `continue-prompt` phase instead of `summary`
+- Enter → `continueSession()`: selects next batch via `selectNextMorphemes()`, increments `sessionBatch`
+- q → `goToSummary()`: shows session summary and exits
+- **Bonus XP**: `sessionBatch > 0` gives +15 XP per word (base 10 + 5 bonus) instead of +10
+- `SessionSummary` shows "(含奖励)" indicator when in bonus mode
+- New component: `continue-prompt.tsx`
+
+### Step 8: Custom daily goal
+- `--goal N` CLI flag (1-10) persists to `settings.dailyGoal` and `dailyGoal`
+- Daily session reads `settings.dailyGoal` with fallback to `dailyGoal`
+- No interactive config screen — flag-based for simplicity
 
 ### Gotchas / bugs caught during implementation
 
@@ -87,7 +108,7 @@ UserData {
     seen: boolean
     wordsStudied: number
     lastStudied: string
-    quizAccuracy?: {                // quiz performance per root (NOT YET WRITTEN — step 6)
+    quizAccuracy?: {                // quiz performance per root ✅
       correct: number
       total: number
     }
@@ -124,10 +145,10 @@ Field-level backfill inside `loadData()` in store.ts. Backs up data.json before 
 ```
 V1:  dashboard → root-intro → word-detail(x5) → summary
 
-V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) → summary
+V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) → continue-prompt
                                                                             │
-                                                              [Enter] continue (bonus XP) — NOT YET
-                                                              [q] exit with save ✅
+                                                              [Enter] → next batch (bonus XP +5/word) ✅
+                                                              [q] → summary → exit ✅
 ```
 
 **Quiz screen layout (CORRECTED from original plan):**
@@ -145,26 +166,24 @@ V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) �
 
 **DECISION (eng review #3 + design review #6):**
 - Base: +10 XP per word read (learn mode, **silent** accumulation, no per-word popup) ✅
-- Bonus: +5 XP per word if studying beyond dailyGoal (continue mode) — NOT YET (step 7)
+- Bonus: +5 XP per word if studying beyond dailyGoal (continue mode, sessionBatch > 0) ✅
 - Quiz: +15 XP per correct answer (**visible** feedback, cyan flash) ✅
 - XP summary shown at session end, not during learn-by-reading ✅
-- `sessionBatch` counter tracks which batch the student is on (batch > 1 = bonus mode) — NOT YET (step 7)
+- `sessionBatch` counter tracks which batch the student is on (batch > 0 = bonus mode) ✅
 
 ## Test Status
 
 | File | Tests | Coverage |
 |------|-------|----------|
-| `progress.test.ts` | 29 cases | All 8 functions in progress.ts: masteredCount, seenCount, updateStreak, addXP, markRootSeen, markWordStudied, selectNextMorphemes, generateStatsSummary |
+| `progress.test.ts` | 44 cases | All 11 functions: masteredCount, seenCount, updateStreak, addXP, markRootSeen, markWordStudied, selectNextMorphemes, generateStatsSummary, recordQuizResult, needsReview, selectReviewMorphemes |
 | `store.test.ts` | 6 cases | Path migration, V1→V2 backfill, V2 no re-migration, corrupt data, fresh start |
-| **Total** | **35 pass** | |
+| **Total** | **50 pass** | |
 
 Tests NOT yet written (from test plan):
-- Quiz accuracy tracking (step 6)
-- Review selection with quizAccuracy states
 - Quiz distractor edge cases
-- Continue session / celebration mid-batch
-- Custom goal validation
-- Bonus XP (sessionBatch)
+- Continue session / celebration mid-batch (component-level, needs Ink test renderer)
+- Custom goal validation (CLI flag parsing, needs integration test)
+- Bonus XP (sessionBatch) (component-level)
 
 ## Implementation Sequence
 
@@ -176,9 +195,9 @@ Phase 1 (Foundation + Quiz):
   3. ✅ Readability fix (dim → white for content text, update DESIGN.md)
   4. ✅ q-key exit everywhere (already handled via useSessionFlow hook)
   5. ✅ Quiz system (quiz-intro → quiz(x5), binary choice, per-root)
-  6. Quiz accuracy tracking in progress.ts
-  7. Continue-after-session flow (depends on quiz for "complete" signal)
-  8. Custom daily goal
+  6. ✅ Quiz accuracy tracking in progress.ts
+  7. ✅ Continue-after-session flow (continue-prompt, bonus XP, sessionBatch)
+  8. ✅ Custom daily goal (--goal N flag, 1-10, persisted)
 
 Phase 2 (Content):
   9. Richer word format (phonetic, mnemonic fields in types + word-detail)
@@ -221,6 +240,7 @@ alvy/
       review-session.tsx   # ✅ Thin wrapper → useSessionFlow() (filtered selection)
       quiz-intro.tsx       # ✅ NEW: transition screen before quiz
       quiz.tsx             # ✅ NEW: English word → two Chinese choices
+      continue-prompt.tsx  # ✅ NEW: continue-or-quit after daily goal
       welcome.tsx          # Phase 4: first-run ASCII welcome ceremony
       speed-round.tsx      # Phase 3: timed quiz from all studied words
       share.tsx            # Phase 3: plain text progress card to stdout
@@ -268,9 +288,9 @@ If you're picking this up, read in this order:
 
 | # | Issue | Decision | Status |
 |---|-------|----------|--------|
-| 1 | Quiz-quit data gap | Fix review selection: `!quizAccuracy \|\| (correct/total < 0.8) \|\| wordsStudied < 5` | Step 6 |
+| 1 | Quiz-quit data gap | Fix review selection: `!quizAccuracy \|\| (correct/total < 0.8) \|\| wordsStudied < 5` | ✅ Done |
 | 2 | V2 migration strategy | Field-level backfill in `loadData()`, backup before write | ✅ Done |
-| 3 | Bonus XP tracking | Add `sessionBatch` counter, batch > 1 = bonus mode | Step 7 |
+| 3 | Bonus XP tracking | Add `sessionBatch` counter, batch > 0 = bonus mode | ✅ Done |
 | 4 | DESIGN.md CJK conflict | White for content text, dim for nav hints only | ✅ Done |
 | 5 | Session DRY | Extract `useSessionFlow()` hook | ✅ Done |
 | 6 | Dead Set type | Clean to `string[]` only | ✅ Done |
@@ -320,7 +340,7 @@ If you're picking this up, read in this order:
 cd alvy
 npm run build          # Compile TypeScript
 npm run dev            # Watch mode
-npm test               # Run tests (Vitest, 35 passing)
+npm test               # Run tests (Vitest, 50 passing)
 node dist/index.js     # Run daily session
 node dist/index.js review   # Review weak roots
 node dist/index.js stats    # Export progress

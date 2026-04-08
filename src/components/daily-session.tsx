@@ -49,7 +49,7 @@ export default function DailySession() {
   }, [state.phase, state.quizResult, actions]);
 
   useInput((input, key) => {
-    if (input === "q") {
+    if (key.escape) {
       if (state.phase === "continue-prompt") {
         actions.goToSummary();
         return;
@@ -71,7 +71,12 @@ export default function DailySession() {
       return; // ignore other keys during quiz
     }
 
-    if (key.return) {
+    if (key.leftArrow) {
+      actions.goBack();
+      return;
+    }
+
+    if (key.rightArrow) {
       switch (state.phase) {
         case "dashboard":
           actions.startSession();

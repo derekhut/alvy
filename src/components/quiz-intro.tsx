@@ -26,8 +26,9 @@ export default function QuizIntro({ rootKey, wordCount, quizTitle }: QuizIntroPr
           </Text>
         </Box>
       </Box>
-      <Box marginTop={1}>
-        <Text dimColor>按回车开始 →</Text>
+      <Box marginTop={1} justifyContent="space-between">
+        <Text dimColor>→</Text>
+        <Text dimColor>esc</Text>
       </Box>
     </Box>
   );

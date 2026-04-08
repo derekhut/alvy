@@ -47,9 +47,9 @@ export default function ContinuePrompt({
         </Box>
       </Box>
 
-      <Box marginTop={1} flexDirection="column">
-        <Text dimColor>按回车继续学习（奖励模式）→</Text>
-        <Text dimColor>按 q 结束今日学习</Text>
+      <Box marginTop={1} justifyContent="space-between">
+        <Text dimColor>→</Text>
+        <Text dimColor>esc</Text>
       </Box>
     </Box>
   );

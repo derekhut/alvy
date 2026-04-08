@@ -46,7 +46,7 @@ export default function ReviewSession() {
   }, [state.phase, state.quizResult, actions]);
 
   useInput((input, key) => {
-    if (input === "q") {
+    if (key.escape) {
       actions.quit();
       return;
     }
@@ -64,7 +64,12 @@ export default function ReviewSession() {
       return;
     }
 
-    if (key.return) {
+    if (key.leftArrow) {
+      actions.goBack();
+      return;
+    }
+
+    if (key.rightArrow) {
       switch (state.phase) {
         case "intro":
           actions.startSession();
@@ -95,8 +100,8 @@ export default function ReviewSession() {
           还没有可以复习的词根
         </Text>
         <Text>先运行 alvy 学习新词根吧！</Text>
-        <Box marginTop={1}>
-          <Text dimColor>按回车退出</Text>
+        <Box marginTop={1} justifyContent="flex-end">
+          <Text dimColor>esc</Text>
         </Box>
       </Box>
     );
@@ -127,8 +132,9 @@ export default function ReviewSession() {
               ))}
             </Box>
           </Box>
-          <Box marginTop={1}>
-            <Text dimColor>按回车开始 →</Text>
+          <Box marginTop={1} justifyContent="space-between">
+            <Text dimColor>→</Text>
+            <Text dimColor>esc</Text>
           </Box>
         </Box>
       );

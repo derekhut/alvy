@@ -70,8 +70,9 @@ export default function Quiz({
       </Box>
 
       {!result && (
-        <Box marginTop={1}>
-          <Text dimColor>按 1 或 2 选择答案</Text>
+        <Box marginTop={1} justifyContent="space-between">
+          <Text dimColor>1  2</Text>
+          <Text dimColor>esc</Text>
         </Box>
       )}
     </Box>

@@ -46,11 +46,9 @@ export default function SessionSummary({
         </Box>
       </Box>
 
-      <Box marginTop={1}>
+      <Box marginTop={1} justifyContent="space-between">
         <Text dimColor>🌙 今日目标已完成，明天继续加油！</Text>
-      </Box>
-      <Box>
-        <Text dimColor>按回车退出</Text>
+        <Text dimColor>esc</Text>
       </Box>
     </Box>
   );

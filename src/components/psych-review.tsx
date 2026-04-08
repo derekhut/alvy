@@ -51,7 +51,7 @@ export default function PsychReview() {
   }, [state.phase, state.quizResult, actions]);
 
   useInput((input, key) => {
-    if (input === "q") {
+    if (key.escape) {
       actions.quit();
       return;
     }
@@ -68,7 +68,12 @@ export default function PsychReview() {
       return;
     }
 
-    if (key.return) {
+    if (key.leftArrow) {
+      actions.goBack();
+      return;
+    }
+
+    if (key.rightArrow) {
       switch (state.phase) {
         case "intro":
           actions.startSession();
@@ -99,8 +104,8 @@ export default function PsychReview() {
           还没有可以复习的概念
         </Text>
         <Text>先运行 alvy psych 学习新概念吧！</Text>
-        <Box marginTop={1}>
-          <Text dimColor>按回车退出</Text>
+        <Box marginTop={1} justifyContent="flex-end">
+          <Text dimColor>esc</Text>
         </Box>
       </Box>
     );
@@ -131,8 +136,9 @@ export default function PsychReview() {
               ))}
             </Box>
           </Box>
-          <Box marginTop={1}>
-            <Text dimColor>按回车开始 →</Text>
+          <Box marginTop={1} justifyContent="space-between">
+            <Text dimColor>→</Text>
+            <Text dimColor>esc</Text>
           </Box>
         </Box>
       );

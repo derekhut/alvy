@@ -64,6 +64,7 @@ export interface SessionFlowActions {
   advanceAfterFeedback: () => void;
   continueSession: () => void;
   goToSummary: () => void;
+  goBack: () => void;
   quit: () => void;
 }
 
@@ -244,6 +245,28 @@ export function useSessionFlow(
     setPhase("summary");
   }, []);
 
+  const goBack = useCallback(() => {
+    if (phase === "word-detail") {
+      if (wordIdx > 0) {
+        setWordIdx(wordIdx - 1);
+      } else {
+        // First word → back to root-intro for current morpheme
+        setPhase("root-intro");
+      }
+    } else if (phase === "root-intro") {
+      if (morphemeIdx > 0) {
+        const prevEntry = morphemes[morphemeIdx - 1]!;
+        setMorphemeIdx(morphemeIdx - 1);
+        setWordIdx(prevEntry.words.length - 1);
+        setPhase("word-detail");
+      } else {
+        // First morpheme → back to dashboard (or intro for review)
+        setPhase(initialPhase);
+      }
+    }
+    // Other phases: no back navigation
+  }, [phase, wordIdx, morphemeIdx, morphemes, initialPhase]);
+
   const quit = useCallback(() => {
     saveData(data);
     exit();
@@ -275,6 +298,7 @@ export function useSessionFlow(
       advanceAfterFeedback,
       continueSession,
       goToSummary,
+      goBack,
       quit,
     },
   ];

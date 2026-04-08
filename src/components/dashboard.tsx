@@ -65,8 +65,9 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
         )}
       </Box>
 
-      <Box marginTop={1}>
-        <Text dimColor>按回车开始今天的学习 →</Text>
+      <Box marginTop={1} justifyContent="space-between">
+        <Text dimColor>→</Text>
+        <Text dimColor>esc</Text>
       </Box>
     </Box>
   );

@@ -49,7 +49,7 @@ export default function SubjectPicker({ data, onSelect }: SubjectPickerProps) {
       setCursor((prev) => (prev < subjects.length - 1 ? prev + 1 : 0));
     } else if (key.return) {
       onSelect(subjects[cursor]!.key);
-    } else if (input === "q") {
+    } else if (key.escape) {
       exit();
     }
   });
@@ -94,8 +94,9 @@ export default function SubjectPicker({ data, onSelect }: SubjectPickerProps) {
         </Box>
       </Box>
 
-      <Box marginTop={1}>
-        <Text dimColor>↑↓ 选择  回车确认  q 退出</Text>
+      <Box marginTop={1} justifyContent="space-between">
+        <Text dimColor>↑ ↓</Text>
+        <Text dimColor>esc</Text>
       </Box>
     </Box>
   );

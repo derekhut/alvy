@@ -90,8 +90,9 @@ export default function WordDetail({
         </Box>
       </Box>
 
-      <Box marginTop={1}>
-        <Text dimColor>按回车继续 →</Text>
+      <Box marginTop={1} justifyContent="space-between">
+        <Text dimColor>← →</Text>
+        <Text dimColor>esc</Text>
       </Box>
     </Box>
   );

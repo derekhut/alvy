@@ -81,8 +81,9 @@ export default function RootLesson({
         </Box>
       </Box>
 
-      <Box marginTop={1}>
-        <Text dimColor>按回车逐个学习 →</Text>
+      <Box marginTop={1} justifyContent="space-between">
+        <Text dimColor>← →</Text>
+        <Text dimColor>esc</Text>
       </Box>
     </Box>
   );

@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-08
 Branch: main
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP SUBJECTS PLANNED (CEO review complete, pedagogical model TBD)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE (subject picker at launch, remember-last)
 
 ## V1 Summary
 
@@ -74,6 +74,17 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 - Daily session reads `settings.dailyGoal` with fallback to `dailyGoal`
 - No interactive config screen — flag-based for simplicity
 
+### Step 9: Subject picker at launch
+- `alvy` (no args) now shows arrow-key subject picker instead of going straight to TOEFL daily session
+- Two subjects: TOEFL 词根 (30 roots) and AP 心理学 (16 concepts) with mastered/total progress
+- Remember-last: `settings.lastSubject` persisted, cursor pre-highlights previous choice
+- Direct commands still work: `alvy psych`, `alvy review`, etc. (no picker shown)
+- **types.ts**: Added `Subject` type, `"pick"` to `Command` union, `lastSubject?` to settings
+- **subject-picker.tsx**: New component with `useInput` for arrow keys, DESIGN.md compliant
+- **app.tsx**: State-based routing — `"pick"` renders SubjectPicker, `onSelect` saves lastSubject and resolves to `"daily"` or `"psych"`
+- **index.tsx**: Default command changed from `"daily"` to `"pick"`
+- **store.ts**: Updated `PersistedData` to include `lastSubject` field
+
 ### Gotchas / bugs caught during implementation
 
 1. **React state batching on phase transitions**: After the last quiz question, `advanceAfterFeedback()` originally set `quizQuestion = null` then called `finishRoot()`. React could render with `phase="quiz"` but `quizQuestion=null`, causing "Cannot read properties of null". Fix: don't null out `quizQuestion` — let it stay until phase changes away from quiz phases.
@@ -117,6 +128,7 @@ UserData {
   settings?: {                      // user preferences
     sound: boolean                  // default: false
     dailyGoal: number               // persisted custom goal
+    lastSubject?: Subject           // remember-last subject for picker ✅
   }
 }
 ```
@@ -177,7 +189,7 @@ V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) �
 |------|-------|----------|
 | `progress.test.ts` | 44 cases | All 11 functions: masteredCount, seenCount, updateStreak, addXP, markRootSeen, markWordStudied, selectNextMorphemes, generateStatsSummary, recordQuizResult, needsReview, selectReviewMorphemes |
 | `store.test.ts` | 6 cases | Path migration, V1→V2 backfill, V2 no re-migration, corrupt data, fresh start |
-| **Total** | **50 pass** | |
+| **Total** | **52 pass** | |
 
 Tests NOT yet written (from test plan):
 - Quiz distractor edge cases
@@ -199,23 +211,25 @@ Phase 1 (Foundation + Quiz):
   7. ✅ Continue-after-session flow (continue-prompt, bonus XP, sessionBatch)
   8. ✅ Custom daily goal (--goal N flag, 1-10, persisted)
 
+  9. ✅ Subject picker at launch (arrow-key menu, remember-last, "pick" command)
+
 Phase 2 (Content):
-  9. Richer word format (phonetic, mnemonic fields in types + word-detail)
-  10. Content importer tool (fail-fast validation, all-or-nothing merge)
-  11. Expand to 60 roots using importer
+  10. Richer word format (phonetic, mnemonic fields in types + word-detail)
+  11. Content importer tool (fail-fast validation, all-or-nothing merge)
+  12. Expand to 60 roots using importer
 
 Phase 3 (Engagement):
-  12. Speed round mode (immediate timer feedback on same screen)
-  13. Streak freeze
-  14. Shareable progress card
-  15. Word of the Day (simple random for V2.0)
-  16. Animated progress bar (300ms fill)
-  17. Sound effects (opt-in, quiz-only)
+  13. Speed round mode (immediate timer feedback on same screen)
+  14. Streak freeze
+  15. Shareable progress card
+  16. Word of the Day (simple random for V2.0)
+  17. Animated progress bar (300ms fill)
+  18. Sound effects (opt-in, quiz-only)
 
 Phase 4 (Polish):
-  18. Installation ceremony (instant render, ASCII art + tagline)
-  19. Upgrade welcome (dashboard banner, not separate screen)
-  20. Root family tree
+  19. Installation ceremony (instant render, ASCII art + tagline)
+  20. Upgrade welcome (dashboard banner, not separate screen)
+  21. Root family tree
 ```
 
 ### Parallelization Strategy (3 lanes)
@@ -233,9 +247,10 @@ Execute: A first (foundation). Then B + C in parallel. Phase 4 after merge.
 ```
 alvy/
   src/
-    index.tsx              # Entry point, CLI routing, --version, --goal N
-    app.tsx                # Routes command to screen component
+    index.tsx              # Entry point, CLI routing, default → "pick", --goal N
+    app.tsx                # Routes command: "pick" → SubjectPicker → resolved command
     components/
+      subject-picker.tsx   # ✅ Arrow-key subject menu (TOEFL/AP Psych, remember-last)
       daily-session.tsx    # ✅ Thin wrapper → useSessionFlow()
       review-session.tsx   # ✅ Thin wrapper → useSessionFlow() (filtered selection)
       quiz-intro.tsx       # ✅ NEW: transition screen before quiz
@@ -340,8 +355,8 @@ If you're picking this up, read in this order:
 cd alvy
 npm run build          # Compile TypeScript
 npm run dev            # Watch mode
-npm test               # Run tests (Vitest, 50 passing)
-node dist/index.js     # Run daily session
+npm test               # Run tests (Vitest, 52 passing)
+node dist/index.js     # Subject picker → daily session
 node dist/index.js review   # Review weak roots
 node dist/index.js stats    # Export progress
 node dist/index.js doctor   # Environment check
@@ -368,15 +383,21 @@ node dist/index.js doctor   # Environment check
 | 9 | `wordsStudied` collision | Prefix with subject namespace: `vocab:benefit`, `psych:adaptation` |
 | 10 | dailyGoal | No changes for now |
 
-### What's blocked
+### What's been built
 
-**Pedagogical model for AP Psych.** The derivation-chain walkthrough is what makes TOEFL vocab mode special (not just flashcards). AP Psych needs an equivalent: what does the "intro card → detail cards → quiz" look like for psychology concepts? Options considered but not decided:
+- Subject picker at launch (step 9) — `alvy` shows arrow-key menu, remembers last choice
+- AP Psychology session and review (`alvy psych`, `alvy psych review`) — reuses same state machine
+- `psych.json` content file (16 concepts), `psych-db.ts` query layer
+- `Subject` type, `"pick"` command, `lastSubject` in settings
 
-- Option A: Concept intro (name, explanation, researcher, real-world example) → term detail cards → quiz
-- Option B: Term flashcards only (skip concept intro)
-- Option C: Something else entirely
+### What's still open
 
-Derek needs to think about this before implementation starts. The code architecture (generalized hook, subject picker, data model) is ready to build once the pedagogy is clear.
+**Pedagogical model refinement for AP Psych.** Current implementation reuses the same walkthrough pattern (concept intro → term detail → quiz). The derivation-chain walkthrough is what makes TOEFL vocab mode special. AP Psych may benefit from a different pedagogical approach:
+
+- Option A: Concept intro (name, explanation, researcher, real-world example) → term detail cards → quiz (current)
+- Option B: Something more tailored to psychology concepts
+
+Derek can iterate on this based on student feedback.
 
 ### Architecture (Approach A: Generalize)
 
@@ -389,11 +410,16 @@ Key refactoring needed:
 - `store.ts`: V2→V3 migration (default `conceptProgress: {}`, `activeSubject: "vocab"`)
 - `store.ts`: update `PersistedData` interface and `saveData()` field list
 
-New files needed:
-- `src/data/ap-psych.json` (content: ~70 concepts, ~300+ terms)
-- `src/components/subject-picker.tsx` (new first screen)
-- `src/components/concept-intro.tsx` (like `root-lesson.tsx` for concepts)
-- `src/components/term-detail.tsx` (like `word-detail.tsx` for terms)
+Files built:
+- `src/data/psych.json` (16 concepts, content live)
+- `src/components/subject-picker.tsx` (arrow-key menu, remember-last)
+- `src/components/psych-session.tsx` (AP Psych daily session)
+- `src/components/psych-review.tsx` (AP Psych review)
+- `src/lib/psych-db.ts` (query layer over psych.json)
+
+Files still needed:
+- `src/components/concept-intro.tsx` (like `root-lesson.tsx` for concepts, if pedagogical model changes)
+- `src/components/term-detail.tsx` (like `word-detail.tsx` for terms, if pedagogical model changes)
 
 ### Content structure (AP Psych)
 

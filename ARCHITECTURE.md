@@ -4,34 +4,35 @@
 
 alvy is an interactive CLI study tool built with **Ink** (React for terminal) + **TypeScript**. It teaches through walkthrough-then-quiz sessions: students walk through learning material, then get quizzed for active recall. Currently supports TOEFL word roots (新东方-style derivation chains). AP Psychology is planned as the second subject. Progress is persisted as JSON at `~/.alvy/data.json`.
 
-## Multi-Subject Direction (Planned)
+## Multi-Subject Support
 
-alvy is evolving from a single-subject vocabulary tool to a multi-subject daily study tool. CEO review completed 2026-04-08 (HOLD SCOPE mode). Key decisions:
+alvy supports multiple subjects. `alvy` (no args) shows a subject picker with arrow-key navigation. Direct commands still work: `alvy psych`, `alvy review`, etc.
 
-- **Subject picker at launch** with remember-last (auto-selects previous subject, press key to switch)
+- **Subject picker at launch** with remember-last (`settings.lastSubject` persisted)
 - **Shared streak and XP** across all subjects (study any subject, streak continues)
+- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (16 concepts)
 - **Generalized `useSessionFlow`** hook (Approach A: refactor to be content-agnostic, not parallel duplication)
-- **Namespaced `wordsStudied`** array (`vocab:benefit`, `psych:adaptation`) to prevent collisions
-- **V2→V3 migration** in store.ts for `conceptProgress` and `activeSubject` fields
-- **First new subject:** AP Psychology (~70 concepts, ~300+ terms)
-- **Blocked on:** pedagogical model (what does the AP Psych walkthrough look like?)
+- **Planned:** Namespaced `wordsStudied` array (`vocab:benefit`, `psych:adaptation`) to prevent collisions
 
 See `handoff.md` "AP Subject Expansion" section for full decision log.
 
 ## Component Dependency Tree
 
 ```
-index.tsx          CLI entry point (meow parses args)
-  └─ app.tsx       Command router (switch on "daily" | "review" | "stats" | "doctor")
-       ├─ daily-session.tsx     Main learning flow (state machine)
+index.tsx          CLI entry point (meow parses args, default → "pick")
+  └─ app.tsx       Command router (state-based: "pick" → SubjectPicker, then resolved command)
+       ├─ subject-picker.tsx    Arrow-key subject menu (TOEFL/AP Psych, remember-last)
+       ├─ daily-session.tsx     TOEFL learning flow (state machine)
        │    ├─ dashboard.tsx        Launch screen (mastered count, streak, XP)
        │    ├─ streak-header.tsx    Reusable progress bar
        │    ├─ root-lesson.tsx      Root intro card (meaning, origin, related roots)
        │    ├─ word-detail.tsx      Single word (breakdown, derivation chain, example)
        │    ├─ session-summary.tsx  End-of-session stats
        │    └─ celebration.tsx      All 30 roots mastered
+       ├─ psych-session.tsx     AP Psychology learning flow (same state machine)
+       ├─ psych-review.tsx      AP Psychology review
        ├─ review-session.tsx    Review weak roots (same components as daily)
-       ├─ stats.tsx             Export markdown progress summary
+       ├─ stats.tsx             Export markdown progress summary (both subjects)
        ├─ doctor.tsx            Environment health checks
        └─ explore.tsx           V2 stub ("Coming in V2")
 ```
@@ -88,7 +89,7 @@ roots.json ──(import at startup)──> roots-db.ts (in-memory array, query 
                            └──────────────┘                  └──────────────┘
 ```
 
-Phase type: `"dashboard" | "root-intro" | "word-detail" | "summary" | "celebration"`
+Phase type: `"dashboard" | "root-intro" | "word-detail" | "quiz-intro" | "quiz" | "quiz-feedback" | "continue-prompt" | "summary" | "celebration" | "empty"`
 
 Each daily session presents 3 roots (configurable via `dailyGoal`). Each root has 5 words. The student presses Enter to advance through each screen.
 
@@ -110,8 +111,9 @@ Each daily session presents 3 roots (configurable via `dailyGoal`). Each root ha
 
 | File | Purpose |
 |------|---------|
-| `src/index.tsx` | CLI entry point. Parses commands with `meow`, renders `<App>`. |
-| `src/app.tsx` | Routes command to the correct top-level component. |
+| `src/index.tsx` | CLI entry point. Parses commands with `meow`, defaults to `"pick"`, renders `<App>`. |
+| `src/app.tsx` | Routes command to the correct top-level component. `"pick"` → SubjectPicker → resolved command. |
+| `src/components/subject-picker.tsx` | Arrow-key subject menu. Shows per-subject progress, remembers last choice. |
 | `src/components/daily-session.tsx` | State machine for the main learning flow. Manages phases, word/root indices, XP tracking. |
 | `src/components/review-session.tsx` | Like daily-session but selects weak roots (fewest `wordsStudied`, already `seen`). |
 | `src/components/dashboard.tsx` | Shows mastered count (X/30), streak, XP. Entry point to a session. |
@@ -123,7 +125,7 @@ Each daily session presents 3 roots (configurable via `dailyGoal`). Each root ha
 | `src/components/stats.tsx` | `alvy stats` — generates markdown progress summary. |
 | `src/components/doctor.tsx` | `alvy doctor` — checks Node.js version, npm, UTF-8 locale, disk permissions. Imports `DATA_DIR` from store.ts. |
 | `src/components/explore.tsx` | V2 stub. Shows "Coming in V2" message. |
-| `src/lib/types.ts` | TypeScript interfaces: `UserData`, `RootProgress`, `RootEntry`, `RootWord`, `Command`. |
+| `src/lib/types.ts` | TypeScript interfaces: `UserData`, `RootProgress`, `RootEntry`, `RootWord`, `Command`, `Subject`. |
 | `src/lib/store.ts` | Read/write `~/.alvy/data.json`. Auto-migrates from `~/.toefl-roots/`. Exports `DATA_DIR`, `DATA_FILE`. First-run init, corrupt-file backup, atomic writes. |
 | `src/lib/progress.ts` | Business logic: `masteredCount()`, `addXP()`, `updateStreak()`, `markRootSeen()`, `markWordStudied()`, `selectNextMorphemes()`. |
 | `src/lib/roots-db.ts` | Query layer over `roots.json`: `getAllRoots()`, `getRootByKey()`, `getRelatedMeanings()`. |
@@ -138,17 +140,20 @@ Planned but not yet built:
 
 | Name | Status |
 |------|--------|
-| `subject-picker.tsx` | Planned for AP expansion. Blocked on pedagogical model decision. |
 | `concept-intro.tsx` | Planned for AP Psych. Like `root-lesson.tsx` for concepts. |
 | `term-detail.tsx` | Planned for AP Psych. Like `word-detail.tsx` for terms. |
-| `ap-psych.json` | Content file for AP Psychology. Derek has source content. |
-| Generalized `useSessionFlow` | Current hook is TOEFL-specific. Needs refactoring for multi-subject. |
+| Generalized `useSessionFlow` | Current hook works for both subjects but still uses `RootEntry` types. |
 | `mnemonicCache` | No AI mnemonics. V2 Phase 2 feature (phonetic/mnemonic fields exist in types). |
 
 Previously referenced in stale docs but now exist:
 
 | Name | Current status |
 |------|---------------|
+| `subject-picker.tsx` | EXISTS. Arrow-key subject menu with remember-last. |
+| `psych-session.tsx` | EXISTS. AP Psychology daily session. |
+| `psych-review.tsx` | EXISTS. AP Psychology review session. |
+| `psych.json` | EXISTS. AP Psychology content (16 concepts). |
+| `psych-db.ts` | EXISTS. Query layer over psych.json. |
 | `quiz.tsx` | EXISTS. Binary-choice quiz (English word → two Chinese meanings). |
 | `quiz-intro.tsx` | EXISTS. Transition screen before quiz. |
 | `selectReviewMorphemes()` | EXISTS in progress.ts. Prioritizes lowest accuracy roots. |

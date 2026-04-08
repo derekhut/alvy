@@ -52,7 +52,10 @@ export interface UserData {
   settings?: {
     sound: boolean;
     dailyGoal: number;
+    lastSubject?: Subject;
   };
 }
 
-export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review";
+export type Subject = "toefl" | "psych";
+
+export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review" | "pick";

@@ -28,7 +28,7 @@ interface PersistedData {
     quizAccuracy?: { correct: number; total: number };
   }>;
   wordsStudied: string[];
-  settings?: { sound: boolean; dailyGoal: number };
+  settings?: { sound: boolean; dailyGoal: number; lastSubject?: "toefl" | "psych" };
 }
 
 function defaultData(): UserData {

@@ -9,7 +9,7 @@ import { loadData, saveData } from "./lib/store.js";
 const cli = meow(
   `
   用法
-    $ alvy              每日学习（3 个词根，每个 5 个单词）
+    $ alvy              选择科目开始学习
     $ alvy review       复习已学词根
     $ alvy psych        AP 心理学每日学习
     $ alvy psych review AP 心理学复习
@@ -50,7 +50,7 @@ if (cli.flags.goal !== undefined) {
   process.exit(0);
 }
 
-const validCommands = new Set<Command>(["daily", "review", "stats", "doctor", "psych", "psych-review"]);
+const validCommands = new Set<Command>(["daily", "review", "stats", "doctor", "psych", "psych-review", "pick"]);
 const input = cli.input[0] as string | undefined;
 const input2 = cli.input[1] as string | undefined;
 
@@ -64,6 +64,6 @@ const command: Command = resolvedInput && validCommands.has(resolvedInput as Com
         console.error(`Unknown command: ${resolvedInput}. Run alvy --help for usage.`);
         process.exit(1);
       })()
-    : "daily";
+    : "pick";
 
 render(<App command={command as Command} />);

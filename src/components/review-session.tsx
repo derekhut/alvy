@@ -1,6 +1,6 @@
-import React, { useMemo, useEffect } from "react";
+import React, { useMemo, useCallback, useEffect } from "react";
 import { Box, Text, useInput } from "ink";
-import { getAllRoots, getRelatedMeanings } from "../lib/roots-db.js";
+import { getAllRoots, getRootCount, getRelatedMeanings, getDistractorMeaning } from "../lib/roots-db.js";
 import { loadData } from "../lib/store.js";
 import { selectReviewMorphemes } from "../lib/progress.js";
 import { useSessionFlow } from "../hooks/useSessionFlow.js";
@@ -20,8 +20,20 @@ export default function ReviewSession() {
     [allRoots, initialData],
   );
 
+  const getNextBatch = useCallback((data: import("../lib/types.js").UserData) => {
+    return selectReviewMorphemes(data, allRoots, 3);
+  }, [allRoots]);
+
   const [state, actions] = useSessionFlow(
-    { morphemes: reviewMorphemes, markSeen: false, checkCelebration: false },
+    {
+      morphemes: reviewMorphemes,
+      totalUnits: getRootCount(),
+      getAllUnits: getAllRoots,
+      getDistractors: getDistractorMeaning,
+      getNextBatch,
+      markSeen: false,
+      checkCelebration: false,
+    },
     reviewMorphemes.length === 0 ? "empty" : "intro",
   );
 
@@ -55,6 +67,8 @@ export default function ReviewSession() {
     if (key.return) {
       switch (state.phase) {
         case "intro":
+          actions.startSession();
+          break;
         case "root-intro":
           actions.startWordWalkthrough();
           break;

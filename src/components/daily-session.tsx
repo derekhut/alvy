@@ -1,6 +1,6 @@
-import React, { useMemo, useEffect } from "react";
+import React, { useMemo, useCallback, useEffect } from "react";
 import { Box, useInput } from "ink";
-import { getAllRoots, getRelatedMeanings } from "../lib/roots-db.js";
+import { getAllRoots, getRootCount, getRelatedMeanings, getDistractorMeaning } from "../lib/roots-db.js";
 import { selectNextMorphemes } from "../lib/progress.js";
 import { loadData } from "../lib/store.js";
 import { useSessionFlow } from "../hooks/useSessionFlow.js";
@@ -23,8 +23,20 @@ export default function DailySession() {
     [initialData, allRoots, dailyGoal],
   );
 
+  const getNextBatch = useCallback((data: import("../lib/types.js").UserData) => {
+    return selectNextMorphemes(data, allRoots, data.settings?.dailyGoal ?? data.dailyGoal);
+  }, [allRoots]);
+
   const [state, actions] = useSessionFlow(
-    { morphemes, markSeen: true, checkCelebration: true },
+    {
+      morphemes,
+      totalUnits: getRootCount(),
+      getAllUnits: getAllRoots,
+      getDistractors: getDistractorMeaning,
+      getNextBatch,
+      markSeen: true,
+      checkCelebration: true,
+    },
     "dashboard",
   );
 

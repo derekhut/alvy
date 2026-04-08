@@ -1,7 +1,14 @@
 import type { UserData, RootEntry } from "./types.js";
 
-/** Count fully studied roots (all 5 words seen) */
-export function masteredCount(data: UserData): number {
+/** Count fully studied roots (all words seen) */
+export function masteredCount(data: UserData, allRoots?: RootEntry[]): number {
+  if (allRoots) {
+    return allRoots.filter((r) => {
+      const p = data.rootProgress[r.root];
+      return p?.seen && p.wordsStudied >= r.words.length;
+    }).length;
+  }
+  // Fallback: no root data available, check wordsStudied > 0 and seen
   return Object.values(data.rootProgress).filter(
     (p) => p.seen && p.wordsStudied >= 5
   ).length;
@@ -63,13 +70,16 @@ export function markWordStudied(
   rootKey: string,
   word: string
 ): void {
-  if (!data.wordsStudied.includes(word)) {
+  const isNew = !data.wordsStudied.includes(word);
+  if (isNew) {
     data.wordsStudied.push(word);
   }
 
   const progress = data.rootProgress[rootKey];
   if (progress) {
-    progress.wordsStudied = (progress.wordsStudied || 0) + 1;
+    if (isNew) {
+      progress.wordsStudied = (progress.wordsStudied || 0) + 1;
+    }
     progress.lastStudied = new Date().toISOString().slice(0, 10);
   }
 }
@@ -120,12 +130,12 @@ export function recordQuizResult(
 }
 
 /** Check if a root needs review (for review selection) */
-export function needsReview(data: UserData, rootKey: string): boolean {
+export function needsReview(data: UserData, rootKey: string, totalWords?: number): boolean {
   const progress = data.rootProgress[rootKey];
   if (!progress || !progress.seen) return false;
 
   // Not fully studied yet
-  if (progress.wordsStudied < 5) return true;
+  if (progress.wordsStudied < (totalWords ?? 5)) return true;
 
   // Never quizzed
   if (!progress.quizAccuracy) return true;
@@ -146,7 +156,7 @@ export function selectReviewMorphemes(
   count: number = 3
 ): RootEntry[] {
   const reviewable = allRoots
-    .filter((r) => needsReview(data, r.root))
+    .filter((r) => needsReview(data, r.root, r.words.length))
     .sort((a, b) => {
       const pA = data.rootProgress[a.root];
       const pB = data.rootProgress[b.root];
@@ -173,8 +183,8 @@ export function selectReviewMorphemes(
 }
 
 /** Generate stats summary as markdown */
-export function generateStatsSummary(data: UserData, totalRoots: number): string {
-  const mastered = masteredCount(data);
+export function generateStatsSummary(data: UserData, totalRoots: number, allRoots?: RootEntry[]): string {
+  const mastered = masteredCount(data, allRoots);
   const seen = seenCount(data);
   const totalWords = data.wordsStudied.length;
 

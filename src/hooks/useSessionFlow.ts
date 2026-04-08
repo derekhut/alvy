@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from "react";
 import { useApp } from "ink";
 import type { RootEntry, RootWord, UserData } from "../lib/types.js";
 import { loadData, saveData } from "../lib/store.js";
-import { getAllRoots, getRootCount } from "../lib/roots-db.js";
 import {
   markRootSeen,
   markWordStudied,
@@ -10,7 +9,6 @@ import {
   updateStreak,
   masteredCount,
   recordQuizResult,
-  selectNextMorphemes,
 } from "../lib/progress.js";
 
 export type SessionPhase =
@@ -34,6 +32,10 @@ export interface QuizQuestion {
 
 export interface SessionFlowOptions {
   morphemes: RootEntry[];
+  totalUnits: number;
+  getAllUnits: () => RootEntry[];
+  getDistractors: (word: RootWord, currentEntry: RootEntry) => string;
+  getNextBatch: (data: UserData) => RootEntry[];
   markSeen?: boolean;
   checkCelebration?: boolean;
 }
@@ -68,40 +70,15 @@ export interface SessionFlowActions {
 function generateQuizQuestion(
   word: RootWord,
   currentEntry: RootEntry,
+  getDistractors: (word: RootWord, currentEntry: RootEntry) => string,
 ): QuizQuestion {
-  // Get a distractor Chinese meaning from a different word
-  const allRoots = getAllRoots();
-  const otherWords: RootWord[] = [];
-
-  // First try words from other roots
-  for (const root of allRoots) {
-    if (root.root === currentEntry.root) continue;
-    for (const w of root.words) {
-      if (w.meaning_zh !== word.meaning_zh) {
-        otherWords.push(w);
-      }
-    }
-  }
-
-  // Fallback: other words in the same root
-  if (otherWords.length === 0) {
-    for (const w of currentEntry.words) {
-      if (w.word !== word.word && w.meaning_zh !== word.meaning_zh) {
-        otherWords.push(w);
-      }
-    }
-  }
-
-  const distractor =
-    otherWords.length > 0
-      ? otherWords[Math.floor(Math.random() * otherWords.length)]!
-      : { meaning_zh: "未知" }; // extreme fallback
+  const distractorMeaning = getDistractors(word, currentEntry);
 
   const correctIdx = Math.random() < 0.5 ? 0 : 1;
   const choices: [string, string] =
     correctIdx === 0
-      ? [word.meaning_zh, distractor.meaning_zh]
-      : [distractor.meaning_zh, word.meaning_zh];
+      ? [word.meaning_zh, distractorMeaning]
+      : [distractorMeaning, word.meaning_zh];
 
   return { word, correctIdx, choices };
 }
@@ -126,7 +103,7 @@ export function useSessionFlow(
     correctAnswer: string;
   } | null>(null);
 
-  const totalRoots = getRootCount();
+  const totalRoots = opts.totalUnits;
   const { markSeen = true, checkCelebration = true } = opts;
 
   // Save on unmount / SIGINT
@@ -154,7 +131,7 @@ export function useSessionFlow(
       setData(newData);
       saveData(newData);
 
-      if (checkCelebration && masteredCount(newData) >= totalRoots) {
+      if (checkCelebration && masteredCount(newData, opts.getAllUnits()) >= totalRoots) {
         setPhase("celebration");
       } else if (checkCelebration) {
         // Daily session: offer to continue
@@ -163,7 +140,7 @@ export function useSessionFlow(
         setPhase("summary");
       }
     }
-  }, [morphemeIdx, morphemes, data, totalRoots, checkCelebration]);
+  }, [morphemeIdx, morphemes, data, totalRoots, checkCelebration, opts]);
 
   const startSession = useCallback(() => {
     if (morphemes.length === 0) {
@@ -200,8 +177,8 @@ export function useSessionFlow(
     if (nextWord < entry.words.length) {
       setWordIdx(nextWord);
     } else {
-      // All words done for this root → quiz-intro
-      setPhase("quiz-intro");
+      // All words done for this root → skip quiz, go to next root
+      finishRoot();
     }
   }, [morphemes, morphemeIdx, wordIdx, data, sessionBatch]);
 
@@ -209,9 +186,9 @@ export function useSessionFlow(
     const entry = morphemes[morphemeIdx]!;
     setQuizIdx(0);
     setQuizResult(null);
-    setQuizQuestion(generateQuizQuestion(entry.words[0]!, entry));
+    setQuizQuestion(generateQuizQuestion(entry.words[0]!, entry, opts.getDistractors));
     setPhase("quiz");
-  }, [morphemes, morphemeIdx]);
+  }, [morphemes, morphemeIdx, opts]);
 
   const answerQuiz = useCallback(
     (choice: number) => {
@@ -241,18 +218,17 @@ export function useSessionFlow(
     if (nextQuiz < entry.words.length) {
       setQuizIdx(nextQuiz);
       setQuizResult(null);
-      setQuizQuestion(generateQuizQuestion(entry.words[nextQuiz]!, entry));
+      setQuizQuestion(generateQuizQuestion(entry.words[nextQuiz]!, entry, opts.getDistractors));
       setPhase("quiz");
     } else {
       // Quiz done for this root → next root or summary
       // Keep quizQuestion/quizResult until phase changes to avoid null render
       finishRoot();
     }
-  }, [morphemes, morphemeIdx, quizIdx, finishRoot]);
+  }, [morphemes, morphemeIdx, quizIdx, finishRoot, opts]);
 
   const continueSession = useCallback(() => {
-    const allRoots = getAllRoots();
-    const nextBatch = selectNextMorphemes(data, allRoots, data.settings?.dailyGoal ?? data.dailyGoal);
+    const nextBatch = opts.getNextBatch(data);
     if (nextBatch.length === 0) {
       setPhase("summary");
       return;
@@ -262,7 +238,7 @@ export function useSessionFlow(
     setWordIdx(0);
     setSessionBatch((b) => b + 1);
     setPhase("root-intro");
-  }, [data]);
+  }, [data, opts]);
 
   const goToSummary = useCallback(() => {
     setPhase("summary");

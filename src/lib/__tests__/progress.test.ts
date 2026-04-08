@@ -56,24 +56,38 @@ describe("masteredCount", () => {
     expect(masteredCount(data)).toBe(0);
   });
 
-  it("counts roots with 5+ wordsStudied and seen=true", () => {
+  it("counts roots with all words studied and seen=true", () => {
+    const roots = [makeRoot("bene-", 5), makeRoot("mal-", 3), makeRoot("pre-", 5)];
     const data = makeData({
       rootProgress: {
         "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
         "mal-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-01" },
-        "pre-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
+        "pre-": { seen: true, wordsStudied: 4, lastStudied: "2026-04-01" },
       },
     });
-    expect(masteredCount(data)).toBe(2);
+    expect(masteredCount(data, roots)).toBe(2); // bene (5/5) and mal (3/3)
   });
 
-  it("does not count unseen roots even with wordsStudied >= 5", () => {
+  it("does not count unseen roots even with all words studied", () => {
+    const roots = [makeRoot("bene-", 5)];
     const data = makeData({
       rootProgress: {
         "bene-": { seen: false, wordsStudied: 5, lastStudied: "2026-04-01" },
       },
     });
-    expect(masteredCount(data)).toBe(0);
+    expect(masteredCount(data, roots)).toBe(0);
+  });
+
+  it("handles variable word counts per root", () => {
+    const roots = [makeRoot("bene-", 3), makeRoot("mal-", 7), makeRoot("pre-", 2)];
+    const data = makeData({
+      rootProgress: {
+        "bene-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-01" },
+        "mal-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
+        "pre-": { seen: true, wordsStudied: 2, lastStudied: "2026-04-01" },
+      },
+    });
+    expect(masteredCount(data, roots)).toBe(2); // bene (3/3) and pre (2/2), not mal (5/7)
   });
 });
 
@@ -257,7 +271,7 @@ describe("markWordStudied", () => {
     expect(arr.filter((w) => w === "benefit").length).toBe(1);
   });
 
-  it("still increments wordsStudied counter on re-study (known V1 behavior)", () => {
+  it("does not increment wordsStudied counter on re-study", () => {
     const data = makeData({
       wordsStudied: ["benefit"],
       rootProgress: {
@@ -265,8 +279,8 @@ describe("markWordStudied", () => {
       },
     });
     markWordStudied(data, "bene-", "benefit");
-    // Counter increments even for duplicate word (eng review #7: leave as-is)
-    expect(data.rootProgress["bene-"]!.wordsStudied).toBe(2);
+    // Counter only increments for new words (fixed in eng review #9)
+    expect(data.rootProgress["bene-"]!.wordsStudied).toBe(1);
   });
 
   it("does nothing to rootProgress if root key not present", () => {
@@ -343,6 +357,7 @@ describe("selectNextMorphemes", () => {
 
 describe("generateStatsSummary", () => {
   it("produces correct markdown with array wordsStudied", () => {
+    const roots = [makeRoot("bene-", 5), makeRoot("mal-", 5)];
     const data = makeData({
       streak: { current: 3, longest: 7, lastDate: "2026-04-01", freezeAvailable: true },
       xp: { total: 150, today: 30 },
@@ -352,7 +367,7 @@ describe("generateStatsSummary", () => {
       },
       wordsStudied: ["benefit", "benevolent", "malice"],
     });
-    const summary = generateStatsSummary(data, 30);
+    const summary = generateStatsSummary(data, 30, roots);
     expect(summary).toContain("1/30 个词根");
     expect(summary).toContain("2/30 个词根");
     expect(summary).toContain("150 XP");
@@ -438,13 +453,23 @@ describe("needsReview", () => {
     expect(needsReview(data, "bene-")).toBe(false);
   });
 
-  it("returns true for seen root with < 5 wordsStudied", () => {
+  it("returns true for seen root with incomplete words studied", () => {
     const data = makeData({
       rootProgress: {
         "bene-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-01" },
       },
     });
-    expect(needsReview(data, "bene-")).toBe(true);
+    expect(needsReview(data, "bene-", 5)).toBe(true);
+  });
+
+  it("returns true when wordsStudied matches a smaller totalWords but not the given one", () => {
+    const data = makeData({
+      rootProgress: {
+        "bene-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-01" },
+      },
+    });
+    // 3 words studied, root has 3 words — fully studied, but no quiz yet
+    expect(needsReview(data, "bene-", 3)).toBe(true);
   });
 
   it("returns true for fully studied root with no quizAccuracy", () => {
@@ -453,7 +478,7 @@ describe("needsReview", () => {
         "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
       },
     });
-    expect(needsReview(data, "bene-")).toBe(true);
+    expect(needsReview(data, "bene-", 5)).toBe(true);
   });
 
   it("returns true for root with quiz accuracy < 80%", () => {
@@ -574,7 +599,7 @@ describe("selectReviewMorphemes", () => {
     expect(selected[1]!.root).toBe("pre-");
   });
 
-  it("includes roots with < 5 wordsStudied", () => {
+  it("includes roots with incomplete wordsStudied", () => {
     const data = makeData({
       rootProgress: {
         "bene-": { seen: true, wordsStudied: 2, lastStudied: "2026-04-01" },

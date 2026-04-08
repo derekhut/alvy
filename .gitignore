@@ -2,3 +2,4 @@ node_modules/
 dist/
 .gstack/
 scripts/expand-vocab/build/
+__pycache__/

@@ -5,7 +5,7 @@
     "meaning_en": "the body's electrochemical communication network",
     "meaning_zh": "神经系统：身体的电化学通信网络，分为中枢神经系统（脑+脊髓）和外周神经系统（躯体+自主）",
     "origin": "Unit 1: Biological Basis of Behavior",
-    "related": ["Brain Structure", "Chemical Messengers"],
+    "related": ["Brain Structure", "Chemical Messengers", "Sleep & Consciousness", "Sensation"],
     "words": [
       {
         "word": "CNS",
@@ -68,7 +68,7 @@
     "meaning_en": "major brain regions and their functions",
     "meaning_zh": "大脑结构：大脑各区域及其功能，包括额叶（决策）、颞叶（听觉/记忆）、顶叶（触觉）、枕叶（视觉）",
     "origin": "Unit 1: Biological Basis of Behavior",
-    "related": ["Nervous System", "Chemical Messengers"],
+    "related": ["Nervous System", "Chemical Messengers", "Sleep & Consciousness"],
     "words": [
       {
         "word": "Frontal Lobe",
@@ -133,7 +133,7 @@
     "meaning_en": "neurotransmitters and their effects on behavior",
     "meaning_zh": "化学信使：神经递质——神经元之间传递信息的化学物质，不同的神经递质影响不同的行为和情绪",
     "origin": "Unit 1: Biological Basis of Behavior",
-    "related": ["Nervous System", "Brain Structure"],
+    "related": ["Nervous System", "Brain Structure", "Sleep & Consciousness"],
     "words": [
       {
         "word": "Dopamine",
@@ -198,7 +198,7 @@
     "meaning_en": "how we encode, store, and retrieve information",
     "meaning_zh": "记忆系统：信息如何被编码、存储和提取。分为感觉记忆（极短）→短时记忆（7±2项）→长时记忆（无限）",
     "origin": "Unit 2: Cognition",
-    "related": ["Memory Processes", "Thinking"],
+    "related": ["Memory Processes", "Thinking", "Intelligence"],
     "words": [
       {
         "word": "Sensory Memory",
@@ -393,7 +393,7 @@
     "meaning_en": "how organisms learn through association and consequences",
     "meaning_zh": "学习与条件反射：有机体如何通过联想和后果来学习。经典条件反射（巴甫洛夫）和操作性条件反射（斯金纳）",
     "origin": "Unit 3: Development & Learning",
-    "related": ["Social Learning", "Cognitive Development"],
+    "related": ["Social Learning", "Cognitive Development", "Language Development"],
     "words": [
       {
         "word": "Classical Conditioning",
@@ -458,7 +458,7 @@
     "meaning_en": "how thinking and reasoning develop from infancy through adulthood",
     "meaning_zh": "认知发展：从婴儿到成人，思维和推理能力如何发展。皮亚杰的四阶段理论是核心考点",
     "origin": "Unit 3: Development & Learning",
-    "related": ["Social-Emotional Development", "Learning & Conditioning"],
+    "related": ["Social-Emotional Development", "Learning & Conditioning", "Physical Development", "Language Development"],
     "words": [
       {
         "word": "Piaget's Stages",
@@ -523,7 +523,7 @@
     "meaning_en": "how social bonds and emotional regulation develop across the lifespan",
     "meaning_zh": "社会情感发展：社会关系和情绪调节如何在一生中发展。关键理论：依恋理论（安斯沃斯）和心理社会发展理论（埃里克森）",
     "origin": "Unit 3: Development & Learning",
-    "related": ["Cognitive Development", "Personality Theories"],
+    "related": ["Cognitive Development", "Personality Theories", "Physical Development", "Language Development"],
     "words": [
       {
         "word": "Attachment",
@@ -588,7 +588,7 @@
     "meaning_en": "how we explain the causes of behavior",
     "meaning_zh": "归因理论：我们如何解释行为的原因。内部归因=性格导致；外部归因=环境导致。我们对自己和他人的归因方式不同",
     "origin": "Unit 4: Social Psychology",
-    "related": ["Social Influence", "Person Perception"],
+    "related": ["Social Influence", "Person Perception", "Cultural Influences"],
     "words": [
       {
         "word": "Fundamental Attribution Error",
@@ -718,7 +718,7 @@
     "meaning_en": "major perspectives on what makes each person unique",
     "meaning_zh": "人格理论：解释每个人为什么不同的主要理论视角。包括精神分析、人本主义、社会认知和特质理论",
     "origin": "Unit 4: Social Psychology",
-    "related": ["Social-Emotional Development", "Psychological Disorders"],
+    "related": ["Social-Emotional Development", "Psychological Disorders", "Cultural Influences"],
     "words": [
       {
         "word": "Psychodynamic",
@@ -783,7 +783,7 @@
     "meaning_en": "how stress affects health and how people cope",
     "meaning_zh": "压力与应对：压力如何影响身心健康，以及人们如何应对压力。应激反应、应对策略和心理韧性",
     "origin": "Unit 5: Mental & Physical Health",
-    "related": ["Psychological Disorders", "Treatment Approaches"],
+    "related": ["Psychological Disorders", "Treatment Approaches", "Health Psychology", "Positive Psychology"],
     "words": [
       {
         "word": "General Adaptation Syndrome",
@@ -848,7 +848,7 @@
     "meaning_en": "major categories of mental disorders and their symptoms",
     "meaning_zh": "心理障碍：主要的心理疾病类别及其症状。判断标准：偏离常态(deviance)、痛苦(distress)、功能障碍(dysfunction)",
     "origin": "Unit 5: Mental & Physical Health",
-    "related": ["Stress & Coping", "Treatment Approaches"],
+    "related": ["Stress & Coping", "Treatment Approaches", "Personality Disorders"],
     "words": [
       {
         "word": "Anxiety Disorders",
@@ -913,7 +913,7 @@
     "meaning_en": "methods for treating psychological disorders",
     "meaning_zh": "治疗方法：治疗心理障碍的方法。包括心理治疗（谈话疗法）和生物医学治疗（药物、脑刺激）",
     "origin": "Unit 5: Mental & Physical Health",
-    "related": ["Psychological Disorders", "Stress & Coping"],
+    "related": ["Psychological Disorders", "Stress & Coping", "Positive Psychology", "Personality Disorders"],
     "words": [
       {
         "word": "CBT",
@@ -978,7 +978,7 @@
     "meaning_en": "how we organize and interpret sensory information",
     "meaning_zh": "知觉：我们如何组织和解释感觉信息。感觉=接收原始数据；知觉=大脑赋予意义。自下而上 vs 自上而下加工",
     "origin": "Unit 2: Cognition",
-    "related": ["Sensation", "Thinking"],
+    "related": ["Sensation", "Thinking", "Intelligence"],
     "words": [
       {
         "word": "Bottom-up Processing",
@@ -1033,6 +1033,656 @@
         "mnemonic": "闭上一只眼接东西变难了——因为失去了双眼线索（视网膜像差）",
         "example": "Binocular cues require input from both eyes to judge distance.",
         "example_zh": "双眼线索需要两只眼睛的输入来判断距离。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Sleep & Consciousness",
+    "type": "root",
+    "meaning_en": "states of awareness, sleep stages, and their neural basis",
+    "meaning_zh": "睡眠与意识：意识的不同状态，包括清醒、睡眠各阶段（NREM/REM）、梦境，以及昼夜节律的调节",
+    "origin": "Unit 1: Biological Basis of Behavior",
+    "related": ["Nervous System", "Brain Structure", "Chemical Messengers"],
+    "words": [
+      {
+        "word": "NREM Sleep",
+        "breakdown": "Non-Rapid Eye Movement Sleep",
+        "meaning_en": "three stages of sleep with progressively deeper unconsciousness",
+        "meaning_zh": "非快速眼动睡眠：睡眠的三个阶段，意识逐渐加深。N1=浅睡（容易醒）；N2=睡眠纺锤波出现；N3=深度睡眠（身体修复、生长激素释放）",
+        "derivation": "Non(非) + Rapid(快速) + Eye Movement(眼动) → 眼球不快速运动的睡眠阶段",
+        "mnemonic": "N1像上课打盹（一叫就醒）；N2像在家午睡（需要摇醒）；N3像考完试大睡（雷打不动）",
+        "example": "Growth hormone is primarily released during NREM stage 3.",
+        "example_zh": "生长激素主要在NREM第三阶段释放。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "REM Sleep",
+        "breakdown": "Rapid Eye Movement Sleep",
+        "meaning_en": "sleep stage with vivid dreaming, rapid eye movements, and muscle paralysis",
+        "meaning_zh": "快速眼动睡眠：眼球快速运动、出现生动梦境、全身肌肉暂时麻痹。对记忆巩固和情绪调节至关重要",
+        "derivation": "Rapid(快速) + Eye Movement(眼动) → 眼球在眼皮下快速转动 → 大脑非常活跃（像清醒一样）",
+        "mnemonic": "REM = 大脑在「加班」：身体睡了，大脑却像白天一样忙着整理记忆和做梦",
+        "example": "Most vivid dreams occur during REM sleep.",
+        "example_zh": "最生动的梦发生在快速眼动睡眠阶段。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Circadian Rhythm",
+        "breakdown": "Circa(大约) + Dian(一天)",
+        "meaning_en": "biological clock cycling roughly every 24 hours; regulates sleep-wake cycle",
+        "meaning_zh": "昼夜节律：大约24小时为周期的生物钟，调节睡眠-觉醒周期。由下丘脑的视交叉上核(SCN)控制，受光线影响",
+        "derivation": "Circa(大约) + Dies(天) → 大约一天的周期 → 身体内置的24小时时钟",
+        "mnemonic": "时差反应(jet lag)就是昼夜节律被打乱——你的生物钟还在原来的时区",
+        "example": "Circadian rhythms are disrupted by jet lag and shift work.",
+        "example_zh": "昼夜节律会被时差和轮班工作打乱。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sleep Disorders",
+        "breakdown": "Sleep(睡眠) + Disorders(障碍)",
+        "meaning_en": "conditions disrupting normal sleep: insomnia, narcolepsy, sleep apnea",
+        "meaning_zh": "睡眠障碍：失眠症=难以入睡或维持睡眠；发作性睡病=突然不可控地入睡；睡眠呼吸暂停=睡眠中呼吸反复停止",
+        "derivation": "Insomnia(失眠)：in(不)+somnia(睡眠)；Narcolepsy(发作性睡病)：narco(麻醉)+lepsy(发作)",
+        "mnemonic": "失眠=躺在床上数羊到天亮；发作性睡病=上课突然睡着（不是因为无聊）",
+        "example": "Sleep apnea causes repeated breathing interruptions during sleep.",
+        "example_zh": "睡眠呼吸暂停导致睡眠中呼吸反复中断。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Consciousness States",
+        "breakdown": "Consciousness(意识) + States(状态)",
+        "meaning_en": "levels of awareness from full alertness to deep sleep, including altered states",
+        "meaning_zh": "意识状态：从完全清醒到深度睡眠的不同意识水平。包括催眠（高度暗示性）、冥想（集中注意力）和药物引起的意识改变",
+        "derivation": "Conscious(有意识的) → 意识不是全有或全无，而是一个连续体：清醒→放松→浅睡→深睡",
+        "mnemonic": "白日梦=意识在「漫游」；催眠=意识被「聚焦」；深睡=意识在「休息」",
+        "example": "Meditation produces a measurably altered state of consciousness.",
+        "example_zh": "冥想能产生可测量的意识改变状态。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Sensation",
+    "type": "root",
+    "meaning_en": "how sensory receptors detect and transduce physical stimuli",
+    "meaning_zh": "感觉：感觉受体如何检测和转换物理刺激。包括视觉、听觉等感觉通道的工作原理，以及感觉阈限和适应",
+    "origin": "Unit 1: Biological Basis of Behavior",
+    "related": ["Perception", "Nervous System"],
+    "words": [
+      {
+        "word": "Absolute Threshold",
+        "breakdown": "Absolute(绝对的) + Threshold(阈限)",
+        "meaning_en": "minimum stimulation needed to detect a stimulus 50% of the time",
+        "meaning_zh": "绝对阈限：能被检测到50%次数的最小刺激量。如在安静房间里能听到的最轻声音，或在黑暗中能看到的最弱光线",
+        "derivation": "Absolute(绝对的) + Threshold(门槛) → 感觉的「最低门槛」→ 低于这个值就感觉不到",
+        "mnemonic": "你在安静的夜里能听到针掉地上的声音——那就接近听觉的绝对阈限",
+        "example": "The absolute threshold for vision is a candle flame 30 miles away on a dark night.",
+        "example_zh": "视觉的绝对阈限是在漆黑的夜晚看到30英里外的烛光。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Signal Detection Theory",
+        "breakdown": "Signal(信号) + Detection(检测) + Theory(理论)",
+        "meaning_en": "detection depends on signal strength, background noise, and observer's criteria",
+        "meaning_zh": "信号检测理论：能否检测到信号不仅取决于信号强度，还取决于背景噪音和个人判断标准。四种结果：命中、虚报、漏报、正确拒绝",
+        "derivation": "不只是「听到没听到」→ 还受动机和期望影响 → 医生看X光片更倾向于「宁可误判也不漏诊」",
+        "mnemonic": "深夜听到声音：你觉得是小偷（虚报）还是风声（正确拒绝）？你的警惕程度影响判断",
+        "example": "Signal detection theory explains why radiologists may differ in reading X-rays.",
+        "example_zh": "信号检测理论解释了为什么放射科医生在读X光片时可能有不同判断。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sensory Adaptation",
+        "breakdown": "Sensory(感觉的) + Adaptation(适应)",
+        "meaning_en": "diminished sensitivity to constant, unchanging stimulation",
+        "meaning_zh": "感觉适应：对持续不变的刺激，敏感度逐渐降低。如进入有气味的房间，几分钟后就闻不到了",
+        "derivation": "Adapt(适应) → 感觉系统对不变的刺激「习惯了」→ 不再注意 → 把注意力留给变化的刺激",
+        "mnemonic": "戴手表：刚戴上能感觉到，过一会儿就忘了——感觉适应让你忽略不变的刺激",
+        "example": "Sensory adaptation explains why you stop noticing background noise.",
+        "example_zh": "感觉适应解释了为什么你不再注意到背景噪音。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Vision",
+        "breakdown": "Vision(视觉)",
+        "meaning_en": "rods for dim light, cones for color and detail; trichromatic and opponent-process theories",
+        "meaning_zh": "视觉：视杆细胞=暗光下工作（黑白视觉）；视锥细胞=明亮环境（彩色视觉）。三色理论=三种视锥检测红绿蓝；对立过程理论=红-绿、蓝-黄、黑-白成对加工",
+        "derivation": "Rods(视杆)=暗处用，灵敏但无色彩；Cones(视锥)=亮处用，能分辨颜色和细节",
+        "mnemonic": "夜晚看东西模糊无色（视杆工作）；白天色彩鲜艳（视锥工作）——两种细胞分工合作",
+        "example": "Color blindness results from deficiencies in cone receptors.",
+        "example_zh": "色盲是由视锥细胞受体缺陷导致的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hearing",
+        "breakdown": "Hearing(听觉)",
+        "meaning_en": "place theory for high-pitched sounds, frequency theory for low-pitched sounds",
+        "meaning_zh": "听觉：位置理论=不同频率的声音激活基底膜不同位置（高频）；频率理论=神经放电频率匹配声波频率（低频）。两者互补",
+        "derivation": "Sound wave(声波)→耳膜→听小骨→耳蜗→基底膜振动→毛细胞→神经信号",
+        "mnemonic": "基底膜像钢琴键盘：高音在一端，低音在另一端——不同位置对应不同频率",
+        "example": "Prolonged exposure to loud noise can cause permanent hearing loss.",
+        "example_zh": "长期暴露在噪音中可能导致永久性听力损失。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Intelligence",
+    "type": "root",
+    "meaning_en": "theories and measurement of cognitive ability",
+    "meaning_zh": "智力：认知能力的理论和测量。争论焦点：智力是单一能力(g因素)还是多元能力？先天还是后天？如何公平测量？",
+    "origin": "Unit 2: Cognition",
+    "related": ["Thinking", "Memory Systems", "Perception"],
+    "words": [
+      {
+        "word": "g-factor",
+        "breakdown": "General(一般) + factor(因素)",
+        "meaning_en": "Spearman's concept of a single general intelligence underlying all cognitive abilities",
+        "meaning_zh": "一般智力因素（斯皮尔曼）：认为所有认知能力背后有一个共同的一般智力因素。擅长数学的人往往语言也不差",
+        "derivation": "g = general(一般的) → 一个人在不同认知任务上的表现是相关的 → 背后有共同因素",
+        "mnemonic": "g因素像CPU——CPU好的电脑，跑什么软件都快",
+        "example": "Spearman proposed that g-factor underlies performance on all cognitive tests.",
+        "example_zh": "斯皮尔曼提出g因素是所有认知测试表现的基础。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sternberg's Triarchic Theory",
+        "breakdown": "Triarchic(三元的) + Theory(理论)",
+        "meaning_en": "intelligence as analytical, creative, and practical abilities",
+        "meaning_zh": "斯滕伯格三元智力理论：分析智力=解决学术问题；创造智力=新颖的解决方案；实践智力=适应日常生活（街头智慧）",
+        "derivation": "Tri(三) + Archic(统治) → 三种智力共同统治 → 不只是考试成绩好才算聪明",
+        "mnemonic": "学霸(分析智力)+发明家(创造智力)+生意人(实践智力)=三种不同的聪明",
+        "example": "Sternberg argued that street smarts are a form of practical intelligence.",
+        "example_zh": "斯滕伯格认为街头智慧是实践智力的一种形式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "IQ Tests",
+        "breakdown": "Intelligence Quotient(智力商数) + Tests(测试)",
+        "meaning_en": "standardized measures of cognitive ability; mean of 100, SD of 15",
+        "meaning_zh": "智商测试：标准化的认知能力测量。平均分100，标准差15。68%的人在85-115之间。常用测试：韦氏智力量表",
+        "derivation": "IQ = 智力年龄/实际年龄 × 100（原始公式）→ 现在用标准分数。信度高但文化偏见争议大",
+        "mnemonic": "IQ 100 = 平均水平。记住「钟形曲线」：大多数人在中间，极高极低都很少",
+        "example": "Modern IQ tests use a normal distribution with a mean of 100.",
+        "example_zh": "现代智商测试使用平均分为100的正态分布。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Flynn Effect",
+        "breakdown": "Flynn(弗林) + Effect(效应)",
+        "meaning_en": "the observed rise in average IQ scores over generations",
+        "meaning_zh": "弗林效应：每一代人的平均智商分数都在上升（每十年约3分）。可能原因：更好的营养、教育、环境刺激和对测试的熟悉",
+        "derivation": "以研究者 James Flynn 命名 → 发现全世界的IQ分数都在逐代上升",
+        "mnemonic": "你爷爷那一代的「天才」IQ分数，放到今天可能只是平均水平——这就是弗林效应",
+        "example": "The Flynn effect shows that average IQ scores have risen about 3 points per decade.",
+        "example_zh": "弗林效应显示平均智商分数每十年上升约3分。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Growth Mindset",
+        "breakdown": "Growth(成长) + Mindset(心态)",
+        "meaning_en": "Dweck's concept that intelligence can be developed through effort and learning",
+        "meaning_zh": "成长型心态（德韦克）：相信智力可以通过努力和学习来发展。对比固定型心态=相信智力是天生不变的",
+        "derivation": "Growth(成长) + Mind(心智) + Set(设定) → 心智设定为「可以成长」→ 挑战是学习的机会",
+        "mnemonic": "固定型：「我数学不好」（放弃）；成长型：「我数学还不够好」（继续努力）——一个「还」字的区别",
+        "example": "Students with a growth mindset embrace challenges as learning opportunities.",
+        "example_zh": "有成长型心态的学生把挑战当作学习机会。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Physical Development",
+    "type": "root",
+    "meaning_en": "bodily growth and change across the lifespan",
+    "meaning_zh": "生理发展：从受孕到老年的身体变化。包括产前发展、运动技能、青春期和衰老过程",
+    "origin": "Unit 3: Development & Learning",
+    "related": ["Cognitive Development", "Social-Emotional Development"],
+    "words": [
+      {
+        "word": "Prenatal Development",
+        "breakdown": "Pre(之前) + Natal(出生的) + Development(发展)",
+        "meaning_en": "three stages before birth: germinal, embryonic, fetal",
+        "meaning_zh": "产前发展三阶段：胚种期(0-2周)=受精卵着床；胚胎期(3-8周)=器官形成（最易受损）；胎儿期(9周-出生)=快速生长和成熟",
+        "derivation": "Pre(之前) + Natal(出生) → 出生之前的发展 → 胚胎期是器官形成的关键期",
+        "mnemonic": "胚胎期=建房子打地基（最怕出问题）；胎儿期=装修（已经成型在完善）",
+        "example": "Most organ formation occurs during the embryonic period.",
+        "example_zh": "大部分器官形成发生在胚胎期。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Teratogens",
+        "breakdown": "Terato(畸形) + Gen(产生)",
+        "meaning_en": "substances that can cause birth defects: alcohol, drugs, viruses",
+        "meaning_zh": "致畸因子：能导致出生缺陷的物质。如酒精(胎儿酒精综合征)、某些药物、病毒(风疹)。胚胎期影响最严重",
+        "derivation": "Terato(怪物/畸形) + Gen(产生) → 产生畸形的因素 → 孕期接触这些物质可能伤害胎儿",
+        "mnemonic": "「Terato-怪兽-gen产生」→ 致畸因子就是能产生「怪兽效应」的东西——孕期一定要避免",
+        "example": "Fetal alcohol syndrome is caused by a mother's alcohol consumption during pregnancy.",
+        "example_zh": "胎儿酒精综合征是由母亲在孕期饮酒引起的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Motor Development",
+        "breakdown": "Motor(运动的) + Development(发展)",
+        "meaning_en": "progression of movement abilities: rolling, sitting, crawling, walking",
+        "meaning_zh": "运动发展：从简单到复杂的运动能力发展。遵循两个方向：头尾方向（先控制头→再控制脚）和近远方向（先控制躯干→再控制手指）",
+        "derivation": "Cephalocaudal(头尾方向)=从头到脚；Proximodistal(近远方向)=从中心到四肢",
+        "mnemonic": "婴儿先抬头→再坐→再爬→最后走路——从上到下依次解锁",
+        "example": "Infants typically learn to walk between 9 and 15 months of age.",
+        "example_zh": "婴儿通常在9到15个月大时学会走路。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Puberty",
+        "breakdown": "Puberty(青春期)",
+        "meaning_en": "period of sexual maturation triggered by hormonal changes",
+        "meaning_zh": "青春期：由激素变化引发的性成熟时期。下丘脑→垂体→性腺轴激活。身体变化+情绪波动+同一性探索同时发生",
+        "derivation": "Puberty 来自拉丁语 pubertas(成年) → 从儿童过渡到成人的生理转变",
+        "mnemonic": "青春期=身体在「装修升级」：长个子、变声、长青春痘——一切都在剧烈变化",
+        "example": "Puberty typically begins earlier in girls than in boys.",
+        "example_zh": "青春期通常在女孩中比男孩更早开始。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Aging",
+        "breakdown": "Aging(衰老)",
+        "meaning_en": "physical and cognitive changes in late adulthood; fluid vs crystallized intelligence",
+        "meaning_zh": "衰老：晚年的身体和认知变化。流体智力(处理速度、工作记忆)随年龄下降；晶体智力(知识、词汇)保持稳定甚至增长",
+        "derivation": "Fluid intelligence(流体智力)=像水一样流动的思维能力→年老下降；Crystallized(晶体智力)=结晶的知识→越老越多",
+        "mnemonic": "老教授：解题速度变慢了（流体↓）但知识渊博、经验丰富（晶体↑）",
+        "example": "Crystallized intelligence tends to increase throughout adulthood.",
+        "example_zh": "晶体智力在整个成年期都倾向于增长。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Language Development",
+    "type": "root",
+    "meaning_en": "how children acquire and develop language abilities",
+    "meaning_zh": "语言发展：儿童如何获得和发展语言能力。从咿呀学语到完整句子的发展过程，以及先天语言能力的争论",
+    "origin": "Unit 3: Development & Learning",
+    "related": ["Cognitive Development", "Social-Emotional Development", "Learning & Conditioning"],
+    "words": [
+      {
+        "word": "Babbling",
+        "breakdown": "Babbling(咿呀学语)",
+        "meaning_en": "infant speech-like sounds beginning around 4 months; includes all phonemes",
+        "meaning_zh": "咿呀学语：约4个月开始，婴儿发出类似语言的声音。初期包含所有语言的音素，后来逐渐只保留母语中的音素",
+        "derivation": "Babble(咿呀) → 婴儿随意发出声音 → 全世界的婴儿初期咿呀声都一样（不分语言）",
+        "mnemonic": "「ba-ba-ba, ma-ma-ma」→ 所有婴儿都这样开始，因为这些音最容易发",
+        "example": "Babbling begins around 4 months and includes sounds from all languages.",
+        "example_zh": "咿呀学语约4个月开始，包含所有语言的声音。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "One-word & Telegraphic Stage",
+        "breakdown": "One-word(单词) + Telegraphic(电报式的)",
+        "meaning_en": "holophrastic stage (~1 yr) then two-word telegraphic speech (~2 yrs)",
+        "meaning_zh": "单词期和电报式语言：单词期(约1岁)=一个词表达整句意思（「奶」=我要喝奶）；电报期(约2岁)=只用关键词（「妈妈抱」省略了「请」和「我」）",
+        "derivation": "Holophrastic(整句的)=一个词=整句话；Telegraphic(电报式)=像发电报一样省略不必要的词",
+        "mnemonic": "发电报按字收费→只写关键词：「妈妈 来 抱」→ 电报式语言",
+        "example": "In the telegraphic stage, a child might say 'want cookie' instead of a full sentence.",
+        "example_zh": "在电报式语言阶段，孩子可能说「要饼干」而不是完整的句子。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Chomsky's LAD",
+        "breakdown": "Language Acquisition Device(语言获得装置)",
+        "meaning_en": "Chomsky's theory that humans have an innate brain mechanism for learning language",
+        "meaning_zh": "乔姆斯基的语言获得装置：人类大脑天生内置学习语言的机制。解释了为什么所有儿童都能在短时间内学会复杂的语法",
+        "derivation": "Language(语言) + Acquisition(获得) + Device(装置) → 大脑里「出厂自带」的语言学习硬件",
+        "mnemonic": "没人教你语法规则，你3岁就能说出从没听过的正确句子——因为大脑自带语言学习软件(LAD)",
+        "example": "Chomsky argued that the LAD enables children to learn any human language.",
+        "example_zh": "乔姆斯基认为语言获得装置使儿童能够学习任何人类语言。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Critical Period",
+        "breakdown": "Critical(关键的) + Period(时期)",
+        "meaning_en": "optimal window for language acquisition, roughly before puberty",
+        "meaning_zh": "关键期：语言习得的最佳窗口期，大约在青春期之前。错过关键期，语言学习会极其困难（如野孩子Genie的案例）",
+        "derivation": "Critical(关键的) + Period(时期) → 错过这个时期就很难补回来 → 像种子的播种季节",
+        "mnemonic": "为什么小孩学外语比大人快？因为他们还在语言关键期内——大脑的「语言窗口」还开着",
+        "example": "The critical period hypothesis explains why children learn languages more easily than adults.",
+        "example_zh": "关键期假说解释了为什么儿童比成人更容易学习语言。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Bilingualism",
+        "breakdown": "Bi(两) + Lingual(语言的) + -ism",
+        "meaning_en": "ability to speak two languages; associated with cognitive advantages",
+        "meaning_zh": "双语：能使用两种语言。双语者在执行功能（注意力切换、抑制控制）上有优势。不会导致语言混乱或发展迟缓",
+        "derivation": "Bi(两) + Lingua(语言) → 两种语言 → 大脑不断在两种语言间切换，像锻炼肌肉",
+        "mnemonic": "双语大脑像「双核处理器」——经常在两种语言间切换，认知灵活性更强",
+        "example": "Bilingual children show enhanced executive function skills.",
+        "example_zh": "双语儿童表现出更强的执行功能技能。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Person Perception",
+    "type": "root",
+    "meaning_en": "how we form impressions of and make judgments about others",
+    "meaning_zh": "人际知觉：我们如何形成对他人的印象和判断。包括第一印象、偏见、自证预言等影响我们看待他人的因素",
+    "origin": "Unit 4: Social Psychology",
+    "related": ["Attribution Theory", "Social Influence", "Cultural Influences"],
+    "words": [
+      {
+        "word": "Mere Exposure Effect",
+        "breakdown": "Mere(仅仅) + Exposure(暴露) + Effect(效应)",
+        "meaning_en": "repeated exposure to a stimulus increases liking for it",
+        "meaning_zh": "单纯曝光效应：反复接触某个刺激会增加对它的好感。看到某人越多次，越觉得他/她顺眼——即使从未交谈过",
+        "derivation": "Mere(仅仅) + Exposure(接触) → 仅仅是接触就够了 → 不需要任何互动，熟悉感自动产生好感",
+        "mnemonic": "一首歌第一次听觉得一般，听了几遍就觉得好听了——单纯曝光效应",
+        "example": "Advertisers use the mere exposure effect by repeating brand messages.",
+        "example_zh": "广告商利用单纯曝光效应反复展示品牌信息。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-fulfilling Prophecy",
+        "breakdown": "Self-fulfilling(自我实现的) + Prophecy(预言)",
+        "meaning_en": "a belief that causes itself to become true through behavioral confirmation",
+        "meaning_zh": "自证预言：一个信念通过影响行为而使自己变成现实。老师觉得某学生聪明→给更多关注→学生真的表现更好",
+        "derivation": "Self(自己) + Fulfill(实现) + Prophecy(预言) → 预言自己实现了自己",
+        "mnemonic": "Rosenthal效应：老师被告知「这些学生很聪明」（其实随机选的）→ 学期末这些学生真的进步最大",
+        "example": "A teacher's high expectations can create a self-fulfilling prophecy.",
+        "example_zh": "老师的高期望可以创造一个自证预言。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Comparison",
+        "breakdown": "Social(社会的) + Comparison(比较)",
+        "meaning_en": "evaluating ourselves by comparing with others (upward and downward)",
+        "meaning_zh": "社会比较：通过与他人比较来评价自己。向上比较=和比自己好的人比（激励或沮丧）；向下比较=和比自己差的人比（自我安慰）",
+        "derivation": "Social(社会) + Compare(比较) → 在社会中和别人比 → 人天生就会比较",
+        "mnemonic": "刷朋友圈觉得别人生活都很好（向上比较→焦虑）；看到更惨的新闻觉得自己还行（向下比较→安慰）",
+        "example": "Social media intensifies social comparison among teenagers.",
+        "example_zh": "社交媒体加剧了青少年之间的社会比较。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Implicit Bias",
+        "breakdown": "Implicit(内隐的) + Bias(偏见)",
+        "meaning_en": "unconscious attitudes that affect judgments outside of awareness",
+        "meaning_zh": "内隐偏见：无意识中影响判断的态度。即使你认为自己没有偏见，内隐联想测试(IAT)可能揭示潜意识中的偏好",
+        "derivation": "Implicit(隐含的) + Bias(偏差) → 隐藏在意识之下的偏见 → 自己都不知道自己有",
+        "mnemonic": "你觉得自己没有偏见，但看到不同种族的人时反应速度不同——这就是内隐偏见在「暗中操作」",
+        "example": "The Implicit Association Test (IAT) measures unconscious biases.",
+        "example_zh": "内隐联想测试(IAT)测量无意识的偏见。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Belief Perseverance",
+        "breakdown": "Belief(信念) + Perseverance(坚持)",
+        "meaning_en": "clinging to beliefs even after the evidence has been discredited",
+        "meaning_zh": "信念固着：即使支持某信念的证据已被否定，仍然坚持该信念。一旦形成了看法，很难改变——即使面对相反的证据",
+        "derivation": "Belief(信念) + Persevere(坚持) → 信念顽固地坚持 → 即使证据说你错了，你还是相信",
+        "mnemonic": "有人告诉你「一个坏消息」后说「我说错了，那不是真的」——但你心里已经信了",
+        "example": "Belief perseverance makes it hard to change first impressions.",
+        "example_zh": "信念固着使得改变第一印象很困难。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Cultural Influences",
+    "type": "root",
+    "meaning_en": "how culture shapes behavior, perception, and social norms",
+    "meaning_zh": "文化影响：文化如何塑造行为、认知和社会规范。个体主义vs集体主义文化在自我概念、情绪表达、服从行为上都有显著差异",
+    "origin": "Unit 4: Social Psychology",
+    "related": ["Social Influence", "Attribution Theory", "Person Perception", "Personality Theories"],
+    "words": [
+      {
+        "word": "Individualism vs Collectivism",
+        "breakdown": "Individualism(个人主义) vs Collectivism(集体主义)",
+        "meaning_en": "cultures prioritizing personal goals vs group harmony",
+        "meaning_zh": "个人主义vs集体主义：个人主义文化（美国、西欧）强调个人成就和独立；集体主义文化（东亚、拉美）强调群体和谐和家庭责任",
+        "derivation": "Individual(个人) → 重视「我」；Collective(集体) → 重视「我们」",
+        "mnemonic": "美国人说「追随你的心」（个人主义）；中国人说「光宗耀祖」（集体主义）——文化塑造价值观",
+        "example": "Collectivist cultures tend to prioritize family obligations over personal desires.",
+        "example_zh": "集体主义文化倾向于将家庭义务置于个人愿望之上。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cultural Display Rules",
+        "breakdown": "Cultural(文化的) + Display(表现) + Rules(规则)",
+        "meaning_en": "cultural norms dictating when and how to express emotions",
+        "meaning_zh": "文化表达规则：文化规范决定何时、如何表达情绪。如日本文化中在公共场合抑制负面情绪；美国文化鼓励公开表达感受",
+        "derivation": "Display(展示) + Rules(规则) → 情绪的「展示规则」→ 不同文化对情绪表达有不同的期望",
+        "mnemonic": "同样是输了比赛：美国运动员可能大哭；日本运动员可能微笑鞠躬——不同的文化表达规则",
+        "example": "Japanese culture emphasizes restraining negative emotional displays in public.",
+        "example_zh": "日本文化强调在公共场合抑制负面情绪表达。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gender & Culture",
+        "breakdown": "Gender(性别) + Culture(文化)",
+        "meaning_en": "how cultural norms shape gender roles, expectations, and behaviors",
+        "meaning_zh": "性别与文化：文化规范塑造性别角色和行为期望。生物性别(sex)是生理的；社会性别(gender)是文化建构的。不同文化的性别角色差异很大",
+        "derivation": "Sex(生物性别)=染色体决定；Gender(社会性别)=文化和社会塑造的角色期望",
+        "mnemonic": "「男孩不能哭」「女孩要文静」——这些不是天生的，是文化教的（性别角色社会化）",
+        "example": "Gender roles vary significantly across different cultures.",
+        "example_zh": "不同文化中的性别角色差异显著。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Superordinate Goals",
+        "breakdown": "Super(超越) + Ordinate(等级) + Goals(目标)",
+        "meaning_en": "shared goals that require cooperation between conflicting groups",
+        "meaning_zh": "超级目标：需要对立群体合作才能实现的共同目标。谢里夫的罗伯斯洞穴实验证明：共同目标能减少群际冲突",
+        "derivation": "Super(超越) + Ordinate(普通的) → 超越普通的、更高层次的目标 → 大到一个群体搞不定",
+        "mnemonic": "两个吵架的班级一起参加拔河比赛（对外）→ 必须合作 → 矛盾减少",
+        "example": "Sherif's Robbers Cave experiment used superordinate goals to reduce intergroup conflict.",
+        "example_zh": "谢里夫的罗伯斯洞穴实验用超级目标减少了群际冲突。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Traps",
+        "breakdown": "Social(社会的) + Traps(陷阱)",
+        "meaning_en": "situations where individuals pursuing self-interest harm the collective",
+        "meaning_zh": "社会陷阱：个人追求自身利益反而损害集体利益的情境。如公地悲剧：每个牧羊人都多放几只羊→草地被过度放牧→所有人受损",
+        "derivation": "Social(社会) + Trap(陷阱) → 社会中的陷阱 → 每个人都「理性」选择，结果所有人都输了",
+        "mnemonic": "堵车时每个人都想插队→所有人都更堵——社会陷阱的日常版本",
+        "example": "Climate change is a social trap where individual convenience harms everyone.",
+        "example_zh": "气候变化是一种社会陷阱，个人的便利损害了所有人。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Health Psychology",
+    "type": "root",
+    "meaning_en": "how psychological and behavioral factors affect health and illness",
+    "meaning_zh": "健康心理学：心理和行为因素如何影响健康与疾病。运用生物心理社会模型来理解健康行为、医患关系和疾病预防",
+    "origin": "Unit 5: Mental & Physical Health",
+    "related": ["Stress & Coping", "Positive Psychology"],
+    "words": [
+      {
+        "word": "Health Behaviors",
+        "breakdown": "Health(健康) + Behaviors(行为)",
+        "meaning_en": "actions that promote or harm health: exercise, diet, sleep, substance use",
+        "meaning_zh": "健康行为：促进或损害健康的行为。运动、均衡饮食、充足睡眠=促进健康；吸烟、酗酒、久坐=损害健康。行为改变模型帮助理解为什么改变很难",
+        "derivation": "Health(健康) + Behavior(行为) → 影响健康的行为 → 知道≠做到（知行差距）",
+        "mnemonic": "每个人都知道要运动、少吃垃圾食品——但为什么做不到？这就是健康心理学研究的问题",
+        "example": "Regular exercise is one of the most impactful health behaviors.",
+        "example_zh": "规律运动是最有影响力的健康行为之一。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Doctor-Patient Communication",
+        "breakdown": "Doctor-Patient(医患) + Communication(沟通)",
+        "meaning_en": "how effective communication improves treatment outcomes and adherence",
+        "meaning_zh": "医患沟通：有效的沟通能提高治疗效果和依从性。好的医患沟通=倾听+解释+共同决策。沟通差→患者不信任→不遵医嘱",
+        "derivation": "Doctor(医生) + Patient(患者) → 双方的互动质量 → 直接影响治疗效果",
+        "mnemonic": "医生说了一堆术语你听不懂→你不敢问→回家不知道怎么吃药——沟通失败的典型案例",
+        "example": "Good doctor-patient communication increases medication adherence.",
+        "example_zh": "良好的医患沟通能提高用药依从性。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Adherence",
+        "breakdown": "Adherence(依从/遵从)",
+        "meaning_en": "the extent to which patients follow medical advice and treatment plans",
+        "meaning_zh": "治疗依从性：患者遵循医嘱和治疗方案的程度。约50%的慢性病患者不按时服药。影响因素：治疗复杂度、副作用、医患关系、信念",
+        "derivation": "Adhere(坚持/遵从) → 坚持执行治疗方案 → 不依从是全球性的医疗难题",
+        "mnemonic": "抗生素吃了两天好了就停药（不依从）→ 细菌没被完全消灭→产生耐药性",
+        "example": "Non-adherence to medication is a major challenge in healthcare.",
+        "example_zh": "不遵从用药是医疗保健中的主要挑战。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Acute vs Chronic Stress",
+        "breakdown": "Acute(急性的) vs Chronic(慢性的) + Stress(压力)",
+        "meaning_en": "short-term stress (adaptive) vs long-term stress (harmful to health)",
+        "meaning_zh": "急性压力vs慢性压力：急性=短期的（考试前紧张→考完就好，可能有益）；慢性=长期持续的（长期工作压力→损害免疫系统、增加疾病风险）",
+        "derivation": "Acute(急性)=来得快去得快；Chronic(慢性)=持续不断地消耗 → 慢性压力才是健康杀手",
+        "mnemonic": "急性压力像短跑冲刺（累但能恢复）；慢性压力像不停跑马拉松（身体迟早崩溃）",
+        "example": "Chronic stress is linked to cardiovascular disease and weakened immunity.",
+        "example_zh": "慢性压力与心血管疾病和免疫力下降有关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Immune System & Stress",
+        "breakdown": "Immune(免疫的) + System(系统) + Stress(压力)",
+        "meaning_en": "psychoneuroimmunology: how stress suppresses immune function",
+        "meaning_zh": "免疫系统与压力：心理神经免疫学研究压力如何抑制免疫功能。慢性压力→皮质醇持续升高→免疫细胞减少→更容易生病",
+        "derivation": "Psycho(心理)+Neuro(神经)+Immunology(免疫学) → 心理状态通过神经系统影响免疫",
+        "mnemonic": "期末考试周总是容易感冒——因为压力让免疫系统「偷懒」了",
+        "example": "Students often get sick during finals because stress suppresses the immune system.",
+        "example_zh": "学生在期末考试期间经常生病，因为压力抑制了免疫系统。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Positive Psychology",
+    "type": "root",
+    "meaning_en": "scientific study of well-being, strengths, and optimal functioning",
+    "meaning_zh": "积极心理学：对幸福感、优势和最佳功能状态的科学研究。不仅关注治疗心理疾病，更关注如何让正常人活得更好",
+    "origin": "Unit 5: Mental & Physical Health",
+    "related": ["Stress & Coping", "Health Psychology", "Treatment Approaches"],
+    "words": [
+      {
+        "word": "Gratitude Practice",
+        "breakdown": "Gratitude(感恩) + Practice(练习)",
+        "meaning_en": "deliberately noting things one is thankful for; linked to increased well-being",
+        "meaning_zh": "感恩练习：有意识地记录值得感谢的事物。研究证明：每天写三件感恩的事→幸福感提升、抑郁减少、睡眠改善",
+        "derivation": "Gratitude(感激) + Practice(练习) → 有意识地练习感恩 → 重新训练大脑关注好的事物",
+        "mnemonic": "大脑天生关注「坏事」（负面偏差）→ 感恩练习=有意训练大脑多看「好事」",
+        "example": "Keeping a gratitude journal is associated with improved sleep and mood.",
+        "example_zh": "写感恩日记与改善睡眠和情绪有关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Flourishing",
+        "breakdown": "Flourishing(蓬勃发展)",
+        "meaning_en": "state of optimal well-being: positive emotions, engagement, meaning, and relationships",
+        "meaning_zh": "蓬勃发展（塞利格曼PERMA模型）：积极情绪(P)+投入(E)+人际关系(R)+意义(M)+成就(A)=完整的幸福",
+        "derivation": "Flourish(繁荣) → 不仅仅是「没有抑郁」→ 而是积极地蓬勃发展",
+        "mnemonic": "不生病≠健康，不抑郁≠幸福。蓬勃发展=不仅没病，还活力满满",
+        "example": "Seligman's PERMA model describes five pillars of flourishing.",
+        "example_zh": "塞利格曼的PERMA模型描述了蓬勃发展的五大支柱。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Post-traumatic Growth",
+        "breakdown": "Post(之后) + Traumatic(创伤的) + Growth(成长)",
+        "meaning_en": "positive personal transformation following a traumatic experience",
+        "meaning_zh": "创伤后成长：经历创伤后产生的积极个人转变。不是所有人都会PTSD——有些人经历磨难后变得更强大、更有同理心、更珍惜生活",
+        "derivation": "Post(之后) + Trauma(创伤) + Growth(成长) → 创伤之后的成长 → 逆境中开出的花",
+        "mnemonic": "「那些杀不死我的，使我更强大」（尼采）→ 创伤后成长的文学表达",
+        "example": "Cancer survivors often report post-traumatic growth in relationships and life priorities.",
+        "example_zh": "癌症幸存者经常报告在人际关系和生活优先事项上的创伤后成长。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Flow",
+        "breakdown": "Flow(心流)",
+        "meaning_en": "Csikszentmihalyi's concept of complete absorption in an optimally challenging task",
+        "meaning_zh": "心流（契克森米哈伊）：完全沉浸在一项最佳挑战的任务中的状态。特征：全神贯注、忘记时间、内在愉悦。任务难度和技能水平匹配时出现",
+        "derivation": "Flow(流动) → 意识像水一样顺畅流动 → 不会太难（焦虑）也不会太简单（无聊）",
+        "mnemonic": "打游戏忘了时间、写代码进入「心流」、运动员的「巅峰状态」——都是心流体验",
+        "example": "Musicians often experience flow during challenging performances.",
+        "example_zh": "音乐家在具有挑战性的演出中经常体验到心流。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Signature Strengths",
+        "breakdown": "Signature(标志性的) + Strengths(优势)",
+        "meaning_en": "top character strengths that define a person; using them boosts well-being",
+        "meaning_zh": "标志性优势：定义一个人的核心品格优势（如创造力、善良、幽默）。在日常生活中运用自己的标志性优势→幸福感和满意度提升",
+        "derivation": "Signature(标志性) + Strength(优势) → 你最突出的品格力量 → 像你的「个人签名」一样独特",
+        "mnemonic": "每个人都有自己的「超能力」——不是人人都要一样好，而是找到并发挥你最擅长的",
+        "example": "Using your signature strengths at work increases job satisfaction.",
+        "example_zh": "在工作中运用你的标志性优势会提高工作满意度。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Personality Disorders",
+    "type": "root",
+    "meaning_en": "enduring patterns of inner experience and behavior that deviate from cultural expectations",
+    "meaning_zh": "人格障碍：持久的内在体验和行为模式，显著偏离文化期望。通常在青春期或成年早期开始，导致痛苦或功能受损",
+    "origin": "Unit 5: Mental & Physical Health",
+    "related": ["Psychological Disorders", "Treatment Approaches", "Personality Theories"],
+    "words": [
+      {
+        "word": "Antisocial PD",
+        "breakdown": "Anti(反) + Social(社会的) + Personality Disorder(人格障碍)",
+        "meaning_en": "pattern of disregard for and violation of others' rights; lack of empathy and remorse",
+        "meaning_zh": "反社会人格障碍：持续漠视和侵犯他人权利的模式。缺乏同理心和悔恨。不是「不爱社交」，而是不尊重社会规则和他人权利",
+        "derivation": "Anti(反对) + Social(社会) → 反社会 → 不是害羞，而是蔑视社会规范和他人权利",
+        "mnemonic": "反社会≠社恐。社恐=害怕社交；反社会=不在乎伤害别人，没有愧疚感",
+        "example": "Antisocial personality disorder is characterized by a lack of remorse.",
+        "example_zh": "反社会人格障碍的特征是缺乏悔恨。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Borderline PD",
+        "breakdown": "Borderline(边缘的) + Personality Disorder(人格障碍)",
+        "meaning_en": "instability in relationships, self-image, and emotions; fear of abandonment",
+        "meaning_zh": "边缘型人格障碍：人际关系、自我形象和情绪极度不稳定，强烈害怕被抛弃。情绪像坐过山车，对亲近的人忽爱忽恨",
+        "derivation": "Borderline(边缘) → 最初被认为处于神经症和精神病的「边缘」→ 现在指情绪和关系的不稳定",
+        "mnemonic": "情绪像过山车：上一秒觉得你是世界上最好的人，下一秒觉得你在抛弃我——极端的爱恨交替",
+        "example": "Borderline PD often involves intense fear of abandonment.",
+        "example_zh": "边缘型人格障碍通常涉及对被抛弃的强烈恐惧。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Narcissistic PD",
+        "breakdown": "Narcissistic(自恋的) + Personality Disorder(人格障碍)",
+        "meaning_en": "grandiose sense of self-importance, need for admiration, lack of empathy",
+        "meaning_zh": "自恋型人格障碍：夸大自我重要性、需要被崇拜、缺乏同理心。表面自信实际内心脆弱，无法接受批评",
+        "derivation": "Narcissus(纳西索斯)=希腊神话中爱上自己水中倒影的美少年 → 过度自我迷恋",
+        "mnemonic": "纳西索斯看水中的自己看到入迷——自恋型人格就是过度地「爱上自己」",
+        "example": "Narcissistic PD involves a need for constant admiration from others.",
+        "example_zh": "自恋型人格障碍包含对他人持续崇拜的需求。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "OCD",
+        "breakdown": "Obsessive-Compulsive Disorder",
+        "meaning_en": "unwanted repetitive thoughts (obsessions) and behaviors (compulsions)",
+        "meaning_zh": "强迫症：不想要的重复想法（强迫思维）和行为（强迫行为）。如反复洗手、检查门锁。知道不合理但停不下来，造成严重痛苦",
+        "derivation": "Obsession(强迫思维)=闯入性的反复想法；Compulsion(强迫行为)=为减少焦虑而做的重复行为",
+        "mnemonic": "「门锁了吗？」回去检查了→走了两步→「真的锁了吗？」又回去——这就是OCD的折磨",
+        "example": "People with OCD may wash their hands dozens of times a day.",
+        "example_zh": "患有强迫症的人可能一天洗手几十次。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dissociative Identity Disorder",
+        "breakdown": "Dissociative(解离的) + Identity(身份) + Disorder(障碍)",
+        "meaning_en": "presence of two or more distinct personality states; formerly multiple personality disorder",
+        "meaning_zh": "解离性身份障碍（原称多重人格）：存在两个或更多不同的人格状态。通常与严重的童年创伤有关。争议：是真实的还是被暗示出来的？",
+        "derivation": "Dissociate(分离) + Identity(身份) → 身份被分离成多个 → 不同人格有不同的记忆和行为",
+        "mnemonic": "不是精神分裂症！精神分裂=现实和幻觉分不清；DID=一个人里住着多个「人格」",
+        "example": "DID is rare and often associated with severe childhood trauma.",
+        "example_zh": "解离性身份障碍很罕见，通常与严重的童年创伤有关。",
         "toefl_frequency": "medium"
       }
     ]

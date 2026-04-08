@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Text } from "ink";
 import type { UserData } from "../lib/types.js";
 import { masteredCount, seenCount } from "../lib/progress.js";
+import { getAllRoots } from "../lib/roots-db.js";
 
 interface DashboardProps {
   data: UserData;
@@ -9,7 +10,7 @@ interface DashboardProps {
 }
 
 export default function Dashboard({ data, totalRoots }: DashboardProps) {
-  const mastered = masteredCount(data);
+  const mastered = masteredCount(data, getAllRoots());
   const seen = seenCount(data);
 
   const barWidth = 30;

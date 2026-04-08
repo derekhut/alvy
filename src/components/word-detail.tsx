@@ -42,9 +42,10 @@ export default function WordDetail({
         paddingY={1}
         marginTop={1}
       >
-        {/* Word + frequency */}
+        {/* Word + phonetic + frequency */}
         <Box gap={2}>
           <Text bold>{word.word}</Text>
+          {word.phonetic && <Text dimColor>{word.phonetic}</Text>}
           <Text color="#FFAF00">{freqStars(word.toefl_frequency)}</Text>
         </Box>
 
@@ -53,6 +54,14 @@ export default function WordDetail({
           <Text>词根拆解:</Text>
           <Text color="#AF5FFF">  {word.derivation}</Text>
         </Box>
+
+        {/* Mnemonic — association memory aid */}
+        {word.mnemonic && (
+          <Box marginTop={1} flexDirection="column">
+            <Text>联想记忆:</Text>
+            <Text dimColor italic>  {word.mnemonic}</Text>
+          </Box>
+        )}
 
         {/* Chinese meaning */}
         <Box marginTop={1}>

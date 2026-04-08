@@ -1,8 +1,8 @@
 # alvy — Implementation Handoff
 
-Last updated: 2026-04-02
+Last updated: 2026-04-08
 Branch: main
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP SUBJECTS PLANNED (CEO review complete, pedagogical model TBD)
 
 ## V1 Summary
 
@@ -347,12 +347,84 @@ node dist/index.js stats    # Export progress
 node dist/index.js doctor   # Environment check
 ```
 
+## AP Subject Expansion (CEO Review 2026-04-08)
+
+**Status:** CEO review complete. 1 open decision (pedagogical model). Blocked on that decision before implementation.
+
+**Source of truth:** `~/.gstack/projects/derekhut-alvy/2026-0408-main-design-ap-subjects.md`
+
+### What was decided
+
+| # | Decision | Choice |
+|---|----------|--------|
+| 1 | First AP subject | AP Psychology (memorization-heavy, maps to walkthrough+quiz) |
+| 2 | Implementation approach | A: Generalize `useSessionFlow` to be content-agnostic |
+| 3 | Review mode | HOLD SCOPE (no expansions) |
+| 4 | CLI interface | Just `alvy` with subject picker at launch |
+| 5 | Subject picker friction | Remember last-used subject, auto-select on repeat visits |
+| 6 | Streak model | Shared across subjects (study any subject, streak continues) |
+| 7 | `alvy review` | Keep for TOEFL vocab, don't build for AP Psych |
+| 8 | Stats output | Combined (both subjects in `alvy stats`) |
+| 9 | `wordsStudied` collision | Prefix with subject namespace: `vocab:benefit`, `psych:adaptation` |
+| 10 | dailyGoal | No changes for now |
+
+### What's blocked
+
+**Pedagogical model for AP Psych.** The derivation-chain walkthrough is what makes TOEFL vocab mode special (not just flashcards). AP Psych needs an equivalent: what does the "intro card → detail cards → quiz" look like for psychology concepts? Options considered but not decided:
+
+- Option A: Concept intro (name, explanation, researcher, real-world example) → term detail cards → quiz
+- Option B: Term flashcards only (skip concept intro)
+- Option C: Something else entirely
+
+Derek needs to think about this before implementation starts. The code architecture (generalized hook, subject picker, data model) is ready to build once the pedagogy is clear.
+
+### Architecture (Approach A: Generalize)
+
+The CEO review initially chose Approach B (parallel track, copy session code). An outside voice challenged this: `useSessionFlow.ts` is 300 lines hardwired to `RootEntry`/`RootWord` types. Copying it means maintaining two near-identical state machines. Derek switched to Approach A: generalize the hook to be content-agnostic, then add AP Psych as a second content type.
+
+Key refactoring needed:
+- `useSessionFlow.ts`: make generic over content type (not hardwired to `RootEntry`)
+- `roots-db.ts`: the hook currently imports this singleton directly. Needs content injection instead.
+- `types.ts`: add `conceptProgress` to `UserData`, add `activeSubject` field
+- `store.ts`: V2→V3 migration (default `conceptProgress: {}`, `activeSubject: "vocab"`)
+- `store.ts`: update `PersistedData` interface and `saveData()` field list
+
+New files needed:
+- `src/data/ap-psych.json` (content: ~70 concepts, ~300+ terms)
+- `src/components/subject-picker.tsx` (new first screen)
+- `src/components/concept-intro.tsx` (like `root-lesson.tsx` for concepts)
+- `src/components/term-detail.tsx` (like `word-detail.tsx` for terms)
+
+### Content structure (AP Psych)
+
+```
+Unit (9 College Board units)
+  └── Concept (~7-8 per unit, ~70 total)
+        └── Term (~4-5 per concept, ~300+ total)
+```
+
+Derek has the content. AI can help format it into the JSON schema.
+
+### Outside voice findings (2026-04-08, Claude subagent)
+
+11 issues found, 5 presented as cross-model tensions:
+1. **Hook duplication** → resolved: switched to Approach A (generalize)
+2. **wordsStudied collision** → resolved: prefix with subject namespace
+3. **Subject picker friction** → resolved: remember last subject
+4. **dailyGoal semantics** → deferred: no changes for now
+5. **Pedagogical model** → open: Derek thinking about it
+
+Other findings noted but not blocking:
+- Quiz distractor quality may differ for AP Psych (definitions vary in length/structure)
+- Content authoring is the real bottleneck (Derek has content, so mitigated)
+- V2→V3 migration needed in store.ts
+- Removing `alvy review` should NOT delete existing TOEFL review code
+
 ## What Was Explicitly Deferred (V2)
 
 | Item | Why |
 |------|-----|
 | Standalone binaries (Bun compile) | Ink + yoga native bindings risk |
-| SAT/AP content expansion | Separate plan, different content model |
 | Web app version | CLI is right for AI Camp coding students |
 | Spaced repetition (FSRS) | V3, per TODOS.md. Needs V2 quiz data first. |
 | AI explore mode | Needs API key |

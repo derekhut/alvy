@@ -2,7 +2,21 @@
 
 ## Summary
 
-alvy is an interactive CLI vocabulary tool built with **Ink** (React for terminal) + **TypeScript**. It teaches word roots using 新东方-style derivation chains — no quiz, no multiple choice. Students walk through each root and its 5 derived words, reading morpheme breakdowns and Chinese translations. Progress is persisted as JSON at `~/.alvy/data.json`.
+alvy is an interactive CLI study tool built with **Ink** (React for terminal) + **TypeScript**. It teaches through walkthrough-then-quiz sessions: students walk through learning material, then get quizzed for active recall. Currently supports TOEFL word roots (新东方-style derivation chains). AP Psychology is planned as the second subject. Progress is persisted as JSON at `~/.alvy/data.json`.
+
+## Multi-Subject Direction (Planned)
+
+alvy is evolving from a single-subject vocabulary tool to a multi-subject daily study tool. CEO review completed 2026-04-08 (HOLD SCOPE mode). Key decisions:
+
+- **Subject picker at launch** with remember-last (auto-selects previous subject, press key to switch)
+- **Shared streak and XP** across all subjects (study any subject, streak continues)
+- **Generalized `useSessionFlow`** hook (Approach A: refactor to be content-agnostic, not parallel duplication)
+- **Namespaced `wordsStudied`** array (`vocab:benefit`, `psych:adaptation`) to prevent collisions
+- **V2→V3 migration** in store.ts for `conceptProgress` and `activeSubject` fields
+- **First new subject:** AP Psychology (~70 concepts, ~300+ terms)
+- **Blocked on:** pedagogical model (what does the AP Psych walkthrough look like?)
+
+See `handoff.md` "AP Subject Expansion" section for full decision log.
 
 ## Component Dependency Tree
 
@@ -118,17 +132,25 @@ Each daily session presents 3 roots (configurable via `dailyGoal`). Each root ha
 | `src/data/roots.json` | 20 roots + 10 affixes = 30 entries × 5 words = 150 words. |
 | `install.sh` | One-line installer for macOS/Linux. Installs Node.js via nvm if needed, configures npm prefix, installs alvy globally. |
 
-## What Does NOT Exist
+## What Does NOT Exist (Yet)
 
-These are frequently referenced in stale documentation but were never built:
+Planned but not yet built:
 
-| Name | Why it doesn't exist |
-|------|---------------------|
-| `word-drill.tsx` | No quiz system. Learning is derivation chain walkthrough, not multiple choice. |
-| `result.tsx` | No correct/wrong feedback — there are no questions to answer. |
-| `drillAccuracy` | No accuracy tracking. Mastery is based on `wordsStudied` count, not quiz scores. |
-| `wordHistory` | No per-word attempt tracking. `wordsStudied` is a flat array of word strings. |
-| `mnemonicCache` | No AI mnemonics. V2 feature. |
-| `updateDrillAccuracy()` | No such function in progress.ts. |
-| `selectReviewMorphemes()` | Review session uses the same `selectNextMorphemes()` with a filter for `seen` roots. |
-| Distractor selection | No distractors — there are no multiple choice questions. |
+| Name | Status |
+|------|--------|
+| `subject-picker.tsx` | Planned for AP expansion. Blocked on pedagogical model decision. |
+| `concept-intro.tsx` | Planned for AP Psych. Like `root-lesson.tsx` for concepts. |
+| `term-detail.tsx` | Planned for AP Psych. Like `word-detail.tsx` for terms. |
+| `ap-psych.json` | Content file for AP Psychology. Derek has source content. |
+| Generalized `useSessionFlow` | Current hook is TOEFL-specific. Needs refactoring for multi-subject. |
+| `mnemonicCache` | No AI mnemonics. V2 Phase 2 feature (phonetic/mnemonic fields exist in types). |
+
+Previously referenced in stale docs but now exist:
+
+| Name | Current status |
+|------|---------------|
+| `quiz.tsx` | EXISTS. Binary-choice quiz (English word → two Chinese meanings). |
+| `quiz-intro.tsx` | EXISTS. Transition screen before quiz. |
+| `selectReviewMorphemes()` | EXISTS in progress.ts. Prioritizes lowest accuracy roots. |
+| `quizAccuracy` | EXISTS in RootProgress. Tracks correct/total per root. |
+| Distractor selection | EXISTS in useSessionFlow. Draws from other roots' `meaning_zh`. |

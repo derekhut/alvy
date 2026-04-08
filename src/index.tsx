@@ -9,10 +9,12 @@ import { loadData, saveData } from "./lib/store.js";
 const cli = meow(
   `
   用法
-    $ alvy           每日学习（3 个词根，每个 5 个单词）
-    $ alvy review    复习已学词根
-    $ alvy stats     导出学习进度
-    $ alvy doctor    检查运行环境
+    $ alvy              每日学习（3 个词根，每个 5 个单词）
+    $ alvy review       复习已学词根
+    $ alvy psych        AP 心理学每日学习
+    $ alvy psych review AP 心理学复习
+    $ alvy stats        导出学习进度
+    $ alvy doctor       检查运行环境
 
   选项
     --goal N  设置每日学习词根数（1-10，默认 3）
@@ -48,13 +50,18 @@ if (cli.flags.goal !== undefined) {
   process.exit(0);
 }
 
-const validCommands = new Set<Command>(["daily", "review", "stats", "doctor"]);
+const validCommands = new Set<Command>(["daily", "review", "stats", "doctor", "psych", "psych-review"]);
 const input = cli.input[0] as string | undefined;
-const command: Command = input && validCommands.has(input as Command)
-  ? (input as Command)
-  : input
+const input2 = cli.input[1] as string | undefined;
+
+// Handle "alvy psych review" as "psych-review"
+const resolvedInput = input === "psych" && input2 === "review" ? "psych-review" : input;
+
+const command: Command = resolvedInput && validCommands.has(resolvedInput as Command)
+  ? (resolvedInput as Command)
+  : resolvedInput
     ? (() => {
-        console.error(`Unknown command: ${input}. Run alvy --help for usage.`);
+        console.error(`Unknown command: ${resolvedInput}. Run alvy --help for usage.`);
         process.exit(1);
       })()
     : "daily";

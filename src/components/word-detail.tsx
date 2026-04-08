@@ -7,6 +7,9 @@ interface WordDetailProps {
   wordNum: number;
   totalWords: number;
   rootKey: string;
+  hideFrequency?: boolean;
+  derivationLabel?: string;
+  wordLabel?: string;
 }
 
 const freqStars = (freq: string) => {
@@ -27,11 +30,17 @@ export default function WordDetail({
   wordNum,
   totalWords,
   rootKey,
+  hideFrequency,
+  derivationLabel,
+  wordLabel,
 }: WordDetailProps) {
+  const wordLabelText = wordLabel ?? "单词";
+  const derivationLabelText = derivationLabel ?? "词根拆解:";
+
   return (
     <Box flexDirection="column" paddingLeft={2} paddingY={1}>
       <Text dimColor>
-        {rootKey} — 单词 {wordNum}/{totalWords}
+        {rootKey} — {wordLabelText} {wordNum}/{totalWords}
       </Text>
 
       <Box
@@ -46,12 +55,12 @@ export default function WordDetail({
         <Box gap={2}>
           <Text bold>{word.word}</Text>
           {word.phonetic && <Text dimColor>{word.phonetic}</Text>}
-          <Text color="#FFAF00">{freqStars(word.toefl_frequency)}</Text>
+          {!hideFrequency && <Text color="#FFAF00">{freqStars(word.toefl_frequency)}</Text>}
         </Box>
 
         {/* Derivation chain — the core learning */}
         <Box marginTop={1} flexDirection="column">
-          <Text>词根拆解:</Text>
+          <Text>{derivationLabelText}</Text>
           <Text color="#AF5FFF">  {word.derivation}</Text>
         </Box>
 

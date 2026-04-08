@@ -1,16 +1,19 @@
 import React from "react";
 import { Box, Text } from "ink";
-import type { UserData } from "../lib/types.js";
+import type { UserData, RootEntry } from "../lib/types.js";
 import { masteredCount, seenCount } from "../lib/progress.js";
 import { getAllRoots } from "../lib/roots-db.js";
 
 interface DashboardProps {
   data: UserData;
   totalRoots: number;
+  subject?: "toefl" | "psych";
+  getAllUnits?: () => RootEntry[];
 }
 
-export default function Dashboard({ data, totalRoots }: DashboardProps) {
-  const mastered = masteredCount(data, getAllRoots());
+export default function Dashboard({ data, totalRoots, subject, getAllUnits }: DashboardProps) {
+  const units = getAllUnits ?? getAllRoots;
+  const mastered = masteredCount(data, units());
   const seen = seenCount(data);
 
   const barWidth = 30;
@@ -30,9 +33,9 @@ export default function Dashboard({ data, totalRoots }: DashboardProps) {
       >
         <Text>
           <Text bold color="#AF5FFF">alvy</Text>
-          <Text color="#AF5FFF"> 词根学习</Text>
+          <Text color="#AF5FFF"> {subject === "psych" ? "AP 心理学" : "词根学习"}</Text>
         </Text>
-        <Text dimColor>解锁英语的底层逻辑</Text>
+        <Text dimColor>{subject === "psych" ? "用中文搞定AP心理" : "解锁英语的底层逻辑"}</Text>
 
         <Box marginTop={1} gap={3}>
           <Text>

@@ -1,0 +1,1040 @@
+[
+  {
+    "root": "Nervous System",
+    "type": "root",
+    "meaning_en": "the body's electrochemical communication network",
+    "meaning_zh": "神经系统：身体的电化学通信网络，分为中枢神经系统（脑+脊髓）和外周神经系统（躯体+自主）",
+    "origin": "Unit 1: Biological Basis of Behavior",
+    "related": ["Brain Structure", "Chemical Messengers"],
+    "words": [
+      {
+        "word": "CNS",
+        "breakdown": "Central Nervous System",
+        "meaning_en": "brain and spinal cord",
+        "meaning_zh": "中枢神经系统：由大脑和脊髓组成，负责整合和处理所有信息",
+        "derivation": "Central(中枢) + Nervous(神经) + System(系统) → 大脑和脊髓组成的指挥中心",
+        "example": "Damage to the CNS can result in paralysis.",
+        "example_zh": "中枢神经系统受损可能导致瘫痪。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "PNS",
+        "breakdown": "Peripheral Nervous System",
+        "meaning_en": "nerves outside the brain and spinal cord; somatic + autonomic",
+        "meaning_zh": "外周神经系统：脑和脊髓以外的所有神经，包括躯体神经（控制随意运动）和自主神经（控制内脏）",
+        "derivation": "Peripheral(外周的) → 中枢以外的所有神经 → 分为躯体神经和自主神经",
+        "example": "The PNS connects the CNS to limbs and organs.",
+        "example_zh": "外周神经系统将中枢神经系统连接到四肢和器官。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sympathetic NS",
+        "breakdown": "Sympathetic Nervous System",
+        "meaning_en": "arousal; fight-or-flight response",
+        "meaning_zh": "交感神经系统：激活身体的「战斗或逃跑」反应——心跳加速、瞳孔放大、出汗增加",
+        "derivation": "Sympathetic(交感的) → 紧急情况下激活身体 → 想象遇到老虎时的反应",
+        "mnemonic": "交感 = 交战感觉，遇到危险全身紧张",
+        "example": "The sympathetic nervous system prepares the body for emergencies.",
+        "example_zh": "交感神经系统让身体为紧急情况做好准备。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Parasympathetic NS",
+        "breakdown": "Parasympathetic Nervous System",
+        "meaning_en": "calming; rest-and-digest response",
+        "meaning_zh": "副交感神经系统：让身体「休息和消化」——心跳减慢、消化加速、身体放松",
+        "derivation": "Para(旁边/相反) + Sympathetic(交感) → 和交感相反 → 让身体平静下来",
+        "mnemonic": "副交感 = 辅助恢复，吃完饭犯困就是它在工作",
+        "example": "After the danger passed, the parasympathetic NS calmed her body.",
+        "example_zh": "危险过去后，副交感神经系统让她的身体平静下来。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Neural Transmission",
+        "breakdown": "Neural signal pathway",
+        "meaning_en": "the process by which neurons communicate via electrical and chemical signals",
+        "meaning_zh": "神经传导：神经元通过电信号和化学信号传递信息的过程——静息电位→阈值→动作电位→突触传递",
+        "derivation": "刺激 → 达到阈值(threshold) → 产生动作电位(action potential) → 释放神经递质",
+        "mnemonic": "像多米诺骨牌：达到临界点就全力传递，不达到就完全不动（全或无定律）",
+        "example": "Neural transmission occurs when the action potential travels down the axon.",
+        "example_zh": "当动作电位沿轴突传导时，神经传导就发生了。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Brain Structure",
+    "type": "root",
+    "meaning_en": "major brain regions and their functions",
+    "meaning_zh": "大脑结构：大脑各区域及其功能，包括额叶（决策）、颞叶（听觉/记忆）、顶叶（触觉）、枕叶（视觉）",
+    "origin": "Unit 1: Biological Basis of Behavior",
+    "related": ["Nervous System", "Chemical Messengers"],
+    "words": [
+      {
+        "word": "Frontal Lobe",
+        "breakdown": "Frontal(前面的) + Lobe(叶)",
+        "meaning_en": "decision-making, planning, personality, voluntary movement",
+        "meaning_zh": "额叶：位于大脑前部，负责决策、计划、人格和随意运动。损伤后人格可能巨变（如 Phineas Gage 案例）",
+        "derivation": "Front(前面) → 大脑最前面的部分 → 负责高级思维和决策",
+        "mnemonic": "额头在前面 → 额叶在前面 → 负责「前瞻性」思考（计划、决策）",
+        "example": "The frontal lobe is responsible for planning and decision-making.",
+        "example_zh": "额叶负责计划和决策。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Broca's Area",
+        "breakdown": "Broca(人名) + Area(区域)",
+        "meaning_en": "brain region controlling speech production",
+        "meaning_zh": "布洛卡区：位于左侧额叶，控制语言产生（说话）。损伤后能理解语言但说不出来",
+        "derivation": "以发现者 Paul Broca 命名 → 控制嘴巴的运动来产生语言",
+        "mnemonic": "Broca = Broken speech（说话坏了），损伤后说不出话",
+        "example": "Damage to Broca's area results in difficulty producing speech.",
+        "example_zh": "布洛卡区受损会导致说话困难。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Wernicke's Area",
+        "breakdown": "Wernicke(人名) + Area(区域)",
+        "meaning_en": "brain region controlling language comprehension",
+        "meaning_zh": "韦尼克区：位于左侧颞叶，控制语言理解。损伤后能说话但说的话没有意义",
+        "derivation": "以发现者 Carl Wernicke 命名 → 负责理解听到的语言",
+        "mnemonic": "Wernicke ≈ 「问你咔」→ 问你话你听不懂，理解出了问题",
+        "example": "Wernicke's area damage leads to fluent but meaningless speech.",
+        "example_zh": "韦尼克区受损会导致说话流利但毫无意义。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cerebellum",
+        "breakdown": "Cerebellum(小脑)",
+        "meaning_en": "coordination of voluntary movement and balance",
+        "meaning_zh": "小脑：负责协调随意运动和保持平衡。喝醉后走路不稳就是因为酒精影响了小脑",
+        "derivation": "Cerebellum 来自拉丁语「小的大脑」→ 虽然小但对运动协调至关重要",
+        "mnemonic": "小脑 = 小助手，专门帮你协调动作、保持平衡",
+        "example": "The cerebellum coordinates balance and fine motor movements.",
+        "example_zh": "小脑协调平衡和精细运动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Brainstem",
+        "breakdown": "Brain(脑) + Stem(茎/干)",
+        "meaning_en": "vital functions: breathing, heart rate, consciousness",
+        "meaning_zh": "脑干：连接大脑和脊髓，控制呼吸、心跳等基本生命功能。损伤通常是致命的",
+        "derivation": "Brain(脑) + Stem(干) → 大脑的「树干」→ 支撑最基本的生命活动",
+        "mnemonic": "脑干 = 生命的根基，像树干支撑整棵树一样支撑生命",
+        "example": "The brainstem controls vital functions like breathing and heart rate.",
+        "example_zh": "脑干控制呼吸和心率等基本生命功能。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Chemical Messengers",
+    "type": "root",
+    "meaning_en": "neurotransmitters and their effects on behavior",
+    "meaning_zh": "化学信使：神经递质——神经元之间传递信息的化学物质，不同的神经递质影响不同的行为和情绪",
+    "origin": "Unit 1: Biological Basis of Behavior",
+    "related": ["Nervous System", "Brain Structure"],
+    "words": [
+      {
+        "word": "Dopamine",
+        "breakdown": "Dopamine(多巴胺)",
+        "meaning_en": "neurotransmitter involved in reward, pleasure, and movement",
+        "meaning_zh": "多巴胺：与奖赏、快感和运动有关的神经递质。过多→精神分裂症；过少→帕金森病",
+        "derivation": "奖赏系统的核心 → 吃到好吃的、刷到有趣的视频都会释放多巴胺",
+        "mnemonic": "多巴胺 = 「多吧，你」→ 大脑在说「多来点快乐吧」",
+        "example": "Dopamine plays a key role in the brain's reward system.",
+        "example_zh": "多巴胺在大脑的奖赏系统中起关键作用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Serotonin",
+        "breakdown": "Serotonin(血清素)",
+        "meaning_en": "neurotransmitter affecting mood, sleep, and appetite",
+        "meaning_zh": "血清素（5-羟色胺）：影响情绪、睡眠和食欲的神经递质。过少→抑郁症。抗抑郁药（SSRI）就是增加血清素",
+        "derivation": "调节情绪的「稳定器」→ 不够就会情绪低落、失眠、食欲异常",
+        "mnemonic": "Serotonin ≈ Serene(平静) → 让你保持平静愉悦的物质",
+        "example": "Low serotonin levels are associated with depression.",
+        "example_zh": "血清素水平过低与抑郁症有关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "GABA",
+        "breakdown": "Gamma-Aminobutyric Acid",
+        "meaning_en": "main inhibitory neurotransmitter; calms neural activity",
+        "meaning_zh": "GABA（γ-氨基丁酸）：主要的抑制性神经递质，减缓神经活动。过少→焦虑。安眠药/抗焦虑药增强GABA的作用",
+        "derivation": "抑制性 → 像刹车一样减慢神经活动 → 让大脑安静下来",
+        "mnemonic": "GABA = 「嘎巴」刹车声 → 给大脑踩刹车",
+        "example": "GABA is the brain's main inhibitory neurotransmitter.",
+        "example_zh": "GABA是大脑主要的抑制性神经递质。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Glutamate",
+        "breakdown": "Glutamate(谷氨酸)",
+        "meaning_en": "main excitatory neurotransmitter; involved in learning and memory",
+        "meaning_zh": "谷氨酸：主要的兴奋性神经递质，与学习和记忆有关。过多→过度兴奋→可能导致癫痫或神经损伤",
+        "derivation": "兴奋性 → 像油门一样加速神经活动 → 帮助学习和记忆",
+        "mnemonic": "Glutamate ≈ 「够了没」→ 太兴奋了够了没！过多会损伤神经",
+        "example": "Glutamate is essential for learning and memory formation.",
+        "example_zh": "谷氨酸对学习和记忆形成至关重要。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Endorphins",
+        "breakdown": "Endogenous(内源的) + Morphine(吗啡)",
+        "meaning_en": "natural painkillers produced by the body",
+        "meaning_zh": "内啡肽：身体自己产生的天然止痛剂。跑步后的愉悦感（runner's high）就是内啡肽的作用",
+        "derivation": "Endo(内部) + orphin(吗啡) → 身体内部的吗啡 → 天然止痛和愉悦",
+        "mnemonic": "内啡肽 = 内部的「嗨」→ 运动后自然产生的快感",
+        "example": "Endorphins are released during exercise, reducing pain perception.",
+        "example_zh": "运动时释放内啡肽，减轻疼痛感。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Memory Systems",
+    "type": "root",
+    "meaning_en": "how we encode, store, and retrieve information",
+    "meaning_zh": "记忆系统：信息如何被编码、存储和提取。分为感觉记忆（极短）→短时记忆（7±2项）→长时记忆（无限）",
+    "origin": "Unit 2: Cognition",
+    "related": ["Memory Processes", "Thinking"],
+    "words": [
+      {
+        "word": "Sensory Memory",
+        "breakdown": "Sensory(感觉的) + Memory(记忆)",
+        "meaning_en": "brief storage of sensory information (< 1 second)",
+        "meaning_zh": "感觉记忆：对感觉信息的极短暂存储（不到1秒）。像照相机的闪光——瞬间记录但很快消失",
+        "derivation": "Sensory(感觉) + Memory(记忆) → 感觉器官的即时记录 → 极短暂",
+        "mnemonic": "闪电划过天空，你闭眼还能「看到」一瞬间——那就是感觉记忆",
+        "example": "Sensory memory holds visual information for less than a second.",
+        "example_zh": "感觉记忆保存视觉信息不到一秒钟。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Working Memory",
+        "breakdown": "Working(工作的) + Memory(记忆)",
+        "meaning_en": "active processing of information; 7±2 items; ~30 seconds",
+        "meaning_zh": "工作记忆（短时记忆）：正在处理的信息，容量7±2项，持续约30秒。像大脑的「工作台」",
+        "derivation": "Working(正在工作的) → 你现在正在使用的记忆 → 容量有限，需要复述来维持",
+        "mnemonic": "记电话号码时在心里默念——那就是工作记忆在运作",
+        "example": "Working memory can hold about 7 items at a time.",
+        "example_zh": "工作记忆一次大约能保持7个项目。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Long-term Memory",
+        "breakdown": "Long-term(长期的) + Memory(记忆)",
+        "meaning_en": "relatively permanent storage; explicit (semantic/episodic) vs implicit (procedural)",
+        "meaning_zh": "长时记忆：相对永久的存储。分为外显记忆（语义记忆=知识，情景记忆=经历）和内隐记忆（程序记忆=技能）",
+        "derivation": "外显(explicit) = 你能说出来的 → 内隐(implicit) = 你做得到但说不清的",
+        "mnemonic": "骑自行车（内隐）你不用想就会，但解释怎么骑（外显）却很难",
+        "example": "Long-term memory has virtually unlimited capacity.",
+        "example_zh": "长时记忆的容量几乎是无限的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Encoding",
+        "breakdown": "Encoding(编码)",
+        "meaning_en": "process of converting information for memory storage",
+        "meaning_zh": "编码：把信息转换成记忆可以存储的形式。浅层加工（外观/声音）效果差，深层加工（意义）效果好",
+        "derivation": "像把文件保存到电脑 → 编码方式决定了以后能不能找到",
+        "mnemonic": "死记硬背（浅层）不如理解含义（深层）——这就是加工深度效应",
+        "example": "Deep encoding leads to better long-term retention.",
+        "example_zh": "深层编码能带来更好的长期记忆保持。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Retrieval",
+        "breakdown": "Retrieval(提取)",
+        "meaning_en": "process of accessing stored memories; recall vs recognition",
+        "meaning_zh": "提取：从记忆中找回信息的过程。回忆(recall)=自己想起来；再认(recognition)=看到就认出来",
+        "derivation": "像从图书馆找书 → 有线索（提取线索）就容易找到",
+        "mnemonic": "填空题靠回忆（难），选择题靠再认（简单）——提取方式不同，难度不同",
+        "example": "Retrieval cues help us access stored memories.",
+        "example_zh": "提取线索帮助我们找回存储的记忆。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Memory Processes",
+    "type": "root",
+    "meaning_en": "factors that enhance or distort memory",
+    "meaning_zh": "记忆加工：影响记忆效果的各种因素——编码策略（组块、助记术）、遗忘原因（干扰、衰退）、记忆扭曲",
+    "origin": "Unit 2: Cognition",
+    "related": ["Memory Systems", "Thinking"],
+    "words": [
+      {
+        "word": "Chunking",
+        "breakdown": "Chunk(块) + -ing",
+        "meaning_en": "organizing information into meaningful groups to improve memory",
+        "meaning_zh": "组块：把信息组织成有意义的单元来提高记忆容量。如把 149217761941 分成 1492-1776-1941 三个年份",
+        "derivation": "Chunk(一块) → 把零散信息打包成「块」→ 每块算一个记忆单元",
+        "mnemonic": "记电话号码分段记（138-0000-1234）就是组块策略",
+        "example": "Chunking helps us remember longer sequences of numbers.",
+        "example_zh": "组块帮助我们记住更长的数字序列。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Interference",
+        "breakdown": "Inter(之间) + ference(带来)",
+        "meaning_en": "forgetting caused by competing memories",
+        "meaning_zh": "干扰：竞争性记忆导致的遗忘。前摄干扰=旧记忆干扰新记忆；倒摄干扰=新记忆干扰旧记忆",
+        "derivation": "前摄(proactive)：学了法语→学西班牙语时老说法语；倒摄(retroactive)：学了新密码→忘了旧密码",
+        "mnemonic": "Pro(向前)=旧→新方向干扰；Retro(向后)=新→旧方向干扰",
+        "example": "Learning Spanish may interfere with previously learned French.",
+        "example_zh": "学习西班牙语可能会干扰之前学的法语。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Misinformation Effect",
+        "breakdown": "Mis(错误) + information(信息) + effect(效应)",
+        "meaning_en": "misleading post-event information distorts memory of the original event",
+        "meaning_zh": "错误信息效应：事后的误导性信息会扭曲对原始事件的记忆。由 Loftus 研究证实，对目击证词有重要影响",
+        "derivation": "Mis(错误) + Information(信息) → 错误信息混入记忆 → 以为自己真的看到了",
+        "mnemonic": "有人问「车撞碎时速度多快」vs「车碰到时速度多快」——用词不同，记忆就被改变了",
+        "example": "The misinformation effect explains why eyewitness testimony can be unreliable.",
+        "example_zh": "错误信息效应解释了为什么目击证词可能不可靠。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Serial Position Effect",
+        "breakdown": "Serial(序列的) + Position(位置) + Effect(效应)",
+        "meaning_en": "tendency to remember first (primacy) and last (recency) items best",
+        "meaning_zh": "序列位置效应：倾向于最好地记住列表的开头（首因效应）和结尾（近因效应），中间最容易忘",
+        "derivation": "Primacy(首因)=开头的有时间复述→进入长时记忆；Recency(近因)=结尾的还在工作记忆中",
+        "mnemonic": "背单词时，第一个和最后一个总是记得最牢——中间的最容易忘",
+        "example": "The serial position effect shows we recall the first and last items best.",
+        "example_zh": "序列位置效应表明我们最能记住第一个和最后一个项目。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Memory Distortion",
+        "breakdown": "Memory(记忆) + Distortion(扭曲)",
+        "meaning_en": "reconstruction errors in memory recall",
+        "meaning_zh": "记忆扭曲：记忆不是录像回放，而是每次都在重新建构。源头监控错误=记得内容但忘了从哪知道的",
+        "derivation": "记忆像拼图 → 每次回忆都在重新拼 → 可能拼错或加入不属于原图的碎片",
+        "mnemonic": "你确定小时候「亲眼看到」的事，可能只是听别人说了太多次",
+        "example": "Memories can be unconsciously altered each time they are recalled.",
+        "example_zh": "每次回忆时，记忆都可能被无意识地改变。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Thinking",
+    "type": "root",
+    "meaning_en": "cognitive processes including problem-solving and decision-making",
+    "meaning_zh": "思维：认知过程，包括概念形成、问题解决和决策判断。人类思维常走「捷径」（启发式），容易产生偏差",
+    "origin": "Unit 2: Cognition",
+    "related": ["Memory Systems", "Intelligence"],
+    "words": [
+      {
+        "word": "Schemas",
+        "breakdown": "Schema(图式) 复数",
+        "meaning_en": "mental frameworks that organize and interpret information",
+        "meaning_zh": "图式：组织和解释信息的心理框架。如你对「餐厅」的图式包括：坐下→看菜单→点餐→吃→付钱",
+        "derivation": "像大脑里的「模板」→ 帮你快速理解新情况 → 但也可能导致偏见",
+        "mnemonic": "你走进教室自动知道要坐下、听讲——因为你有「上课」的图式",
+        "example": "Children develop schemas to understand the world around them.",
+        "example_zh": "儿童发展图式来理解周围的世界。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Heuristics",
+        "breakdown": "Heuristic(启发式)",
+        "meaning_en": "mental shortcuts for quick decision-making",
+        "meaning_zh": "启发式：快速决策的心理捷径。虽然省时省力，但容易出错。包括可得性启发式和代表性启发式",
+        "derivation": "启发式 = 走捷径 → 不用仔细分析就能快速判断 → 但可能判断错误",
+        "mnemonic": "看到飞机失事新闻就觉得飞机很危险——可得性启发式（容易想到=觉得常见）",
+        "example": "Heuristics help us make quick decisions but can lead to errors.",
+        "example_zh": "启发式帮助我们快速决策，但可能导致错误。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Confirmation Bias",
+        "breakdown": "Confirmation(确认) + Bias(偏见)",
+        "meaning_en": "tendency to seek information that supports existing beliefs",
+        "meaning_zh": "确认偏误：倾向于寻找支持自己已有观点的信息，忽视反面证据。「我觉得他不好→只注意他的缺点」",
+        "derivation": "Confirm(确认) + Bias(偏差) → 只确认自己想相信的 → 形成思维泡泡",
+        "mnemonic": "你觉得某个牌子好，就只看好评——这就是确认偏误",
+        "example": "Confirmation bias leads people to ignore contradictory evidence.",
+        "example_zh": "确认偏误导致人们忽视矛盾的证据。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Overconfidence",
+        "breakdown": "Over(过度) + Confidence(自信)",
+        "meaning_en": "tendency to overestimate the accuracy of our beliefs and judgments",
+        "meaning_zh": "过度自信：高估自己的判断和知识准确性的倾向。考试觉得自己全对，结果错了很多",
+        "derivation": "Over(过度) + Confidence(自信) → 比实际能力更自信 → 导致判断失误",
+        "mnemonic": "90%的司机觉得自己驾驶水平「高于平均」——数学上不可能",
+        "example": "Overconfidence can lead to poor decision-making.",
+        "example_zh": "过度自信可能导致糟糕的决策。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fixation",
+        "breakdown": "Fix(固定) + -ation(状态)",
+        "meaning_en": "inability to see a problem from a fresh perspective",
+        "meaning_zh": "思维定势：无法从新角度看问题。功能固着=只能想到物品的常规用途（螺丝刀只能拧螺丝？还能开罐头！）",
+        "derivation": "Fix(固定) → 思维被固定住了 → 跳不出既有框架",
+        "mnemonic": "功能固着：你不会想到用鞋子钉钉子——因为「鞋子就是穿的」",
+        "example": "Mental fixation prevents creative problem-solving.",
+        "example_zh": "思维定势阻碍创造性地解决问题。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Learning & Conditioning",
+    "type": "root",
+    "meaning_en": "how organisms learn through association and consequences",
+    "meaning_zh": "学习与条件反射：有机体如何通过联想和后果来学习。经典条件反射（巴甫洛夫）和操作性条件反射（斯金纳）",
+    "origin": "Unit 3: Development & Learning",
+    "related": ["Social Learning", "Cognitive Development"],
+    "words": [
+      {
+        "word": "Classical Conditioning",
+        "breakdown": "Classical(经典的) + Conditioning(条件反射)",
+        "meaning_en": "learning through association; Pavlov's dogs",
+        "meaning_zh": "经典条件反射（巴甫洛夫）：通过联想学习。铃声(中性刺激)+食物(无条件刺激)反复配对→铃声单独就能引起流口水",
+        "derivation": "CS(条件刺激)+UCS(无条件刺激)→反复配对→CS单独产生CR(条件反应)",
+        "mnemonic": "巴甫洛夫的狗：铃声→流口水。你听到下课铃就想吃饭——也是经典条件反射",
+        "example": "Pavlov demonstrated classical conditioning with dogs salivating to a bell.",
+        "example_zh": "巴甫洛夫用狗听到铃声就流口水来演示了经典条件反射。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Operant Conditioning",
+        "breakdown": "Operant(操作性的) + Conditioning(条件反射)",
+        "meaning_en": "learning through consequences; reinforcement and punishment",
+        "meaning_zh": "操作性条件反射（斯金纳）：通过行为后果来学习。强化=增加行为（奖励）；惩罚=减少行为",
+        "derivation": "行为→后果→学习。正强化=给好的；负强化=去掉坏的；正惩罚=给坏的；负惩罚=去掉好的",
+        "mnemonic": "「正/负」不是好/坏，而是加/减。正强化=加奖励，负强化=减痛苦",
+        "example": "Skinner used operant conditioning to train pigeons.",
+        "example_zh": "斯金纳用操作性条件反射来训练鸽子。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Reinforcement",
+        "breakdown": "Re(再) + Inforce(加强) + -ment",
+        "meaning_en": "consequence that increases the likelihood of a behavior",
+        "meaning_zh": "强化：增加某行为再次发生概率的后果。正强化=给予奖励（发工资→继续工作）；负强化=移除不愉快（吃药→头不疼了→下次还吃药）",
+        "derivation": "Re(再次) + Inforce(加强) → 加强行为 → 让行为更可能重复",
+        "mnemonic": "强化≠奖励。负强化也是强化——系安全带让警报停止，你就学会了系安全带",
+        "example": "Positive reinforcement increases desired behaviors through rewards.",
+        "example_zh": "正强化通过奖励来增加期望的行为。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Extinction",
+        "breakdown": "Ex(出去) + tinct(灭) + -ion",
+        "meaning_en": "gradual disappearance of a conditioned response",
+        "meaning_zh": "消退：条件反应的逐渐消失。经典条件反射中：反复只给铃声不给食物→狗不再流口水。但可能自发恢复",
+        "derivation": "Ex(消除) → 条件反应被消除 → 但不是真正消失，可能自发恢复(spontaneous recovery)",
+        "mnemonic": "你不再喂流浪猫→它慢慢不来了（消退），但某天可能突然又来看看（自发恢复）",
+        "example": "Without reinforcement, the conditioned response undergoes extinction.",
+        "example_zh": "没有强化，条件反应会逐渐消退。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Reinforcement Schedules",
+        "breakdown": "Reinforcement(强化) + Schedule(方案/时间表)",
+        "meaning_en": "patterns of reinforcement: fixed/variable ratio/interval",
+        "meaning_zh": "强化程序：强化的模式。固定比率=每N次行为强化一次；可变比率=平均N次（如老虎机，最抗消退）；固定时距=每隔一段时间；可变时距=不定时间",
+        "derivation": "Fixed(固定)=可预测；Variable(可变)=不可预测→不可预测的强化最难消退",
+        "mnemonic": "老虎机(可变比率)最让人上瘾——因为你永远不知道下一次会不会中奖",
+        "example": "Variable ratio schedules produce the highest response rates.",
+        "example_zh": "可变比率强化程序产生最高的反应速率。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Cognitive Development",
+    "type": "root",
+    "meaning_en": "how thinking and reasoning develop from infancy through adulthood",
+    "meaning_zh": "认知发展：从婴儿到成人，思维和推理能力如何发展。皮亚杰的四阶段理论是核心考点",
+    "origin": "Unit 3: Development & Learning",
+    "related": ["Social-Emotional Development", "Learning & Conditioning"],
+    "words": [
+      {
+        "word": "Piaget's Stages",
+        "breakdown": "Piaget(皮亚杰) + Stages(阶段)",
+        "meaning_en": "four stages of cognitive development: sensorimotor, preoperational, concrete operational, formal operational",
+        "meaning_zh": "皮亚杰认知发展四阶段：感觉运动期(0-2岁)→前运算期(2-7岁)→具体运算期(7-11岁)→形式运算期(12岁+)",
+        "derivation": "感觉运动=用感觉探索；前运算=有符号思维但不合逻辑；具体运算=逻辑但需要具体物品；形式运算=抽象思维",
+        "mnemonic": "S-P-C-F：Some People Can't Fly（有些人不会飞）→ 感觉、前运算、具体运算、形式运算",
+        "example": "Piaget proposed four stages of cognitive development.",
+        "example_zh": "皮亚杰提出了认知发展的四个阶段。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Object Permanence",
+        "breakdown": "Object(物体) + Permanence(永久性)",
+        "meaning_en": "understanding that objects continue to exist even when not seen",
+        "meaning_zh": "客体永久性：理解物体即使看不到也仍然存在。约8个月大时获得。感觉运动期的关键成就",
+        "derivation": "Object(物体) + Permanence(永久) → 物体永远在那里 → 即使被遮住也不会消失",
+        "mnemonic": "躲猫猫(peek-a-boo)：婴儿以为你遮住脸就消失了——还没获得客体永久性",
+        "example": "Babies develop object permanence around 8 months of age.",
+        "example_zh": "婴儿大约在8个月大时发展出客体永久性。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Conservation",
+        "breakdown": "Conservation(守恒)",
+        "meaning_en": "understanding that quantity remains the same despite changes in shape",
+        "meaning_zh": "守恒：理解数量不因外观改变而改变。如等量的水倒进高杯和矮杯，水量一样多。前运算期的孩子不理解这个概念",
+        "derivation": "Conserve(保持不变) → 物质的量保持不变 → 不管怎么变形",
+        "mnemonic": "把一个饼干掰成两半，小孩觉得变多了——不懂守恒",
+        "example": "Children in the preoperational stage struggle with conservation tasks.",
+        "example_zh": "前运算期的儿童难以完成守恒任务。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Egocentrism",
+        "breakdown": "Ego(自我) + Centrism(中心主义)",
+        "meaning_en": "inability to see the world from another's perspective",
+        "meaning_zh": "自我中心：无法从他人的角度看世界。前运算期的典型特征。不是自私，而是认知上做不到换位思考",
+        "derivation": "Ego(自我) + Center(中心) → 以自我为中心 → 以为别人看到的和自己一样",
+        "mnemonic": "小孩打电话给奶奶说「你看这个！」——以为奶奶能看到自己手里的东西",
+        "example": "Egocentric children assume others see what they see.",
+        "example_zh": "自我中心的儿童以为别人看到的和自己一样。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Scaffolding",
+        "breakdown": "Scaffold(脚手架) + -ing",
+        "meaning_en": "Vygotsky's concept: temporary support to help learners master new skills",
+        "meaning_zh": "脚手架教学（维果茨基）：给学习者提供临时支持，帮助他们掌握新技能，然后逐渐撤除支持。在「最近发展区」内最有效",
+        "derivation": "Scaffold(脚手架) → 盖房子的临时支撑 → 房子盖好了就拆掉",
+        "mnemonic": "教小孩骑自行车：先扶着→慢慢放手→完全放手——这就是脚手架",
+        "example": "Teachers use scaffolding to support students in their zone of proximal development.",
+        "example_zh": "教师使用脚手架教学来支持学生在最近发展区内的学习。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Social-Emotional Development",
+    "type": "root",
+    "meaning_en": "how social bonds and emotional regulation develop across the lifespan",
+    "meaning_zh": "社会情感发展：社会关系和情绪调节如何在一生中发展。关键理论：依恋理论（安斯沃斯）和心理社会发展理论（埃里克森）",
+    "origin": "Unit 3: Development & Learning",
+    "related": ["Cognitive Development", "Personality Theories"],
+    "words": [
+      {
+        "word": "Attachment",
+        "breakdown": "Attach(依附) + -ment",
+        "meaning_en": "emotional bond between infant and caregiver",
+        "meaning_zh": "依恋：婴儿与照顾者之间的情感纽带。安全型=探索+回来找妈妈；回避型=不在意妈妈走不走；焦虑型=极度不安",
+        "derivation": "Attach(黏附) → 婴儿对照顾者的情感依附 → 影响一生的人际关系模式",
+        "mnemonic": "陌生情境实验：妈妈离开→婴儿的反应→判断依恋类型",
+        "example": "Secure attachment forms when caregivers are consistently responsive.",
+        "example_zh": "当照顾者持续回应时，安全型依恋就形成了。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Erikson's Stages",
+        "breakdown": "Erikson(埃里克森) + Stages(阶段)",
+        "meaning_en": "eight psychosocial stages from birth to death",
+        "meaning_zh": "埃里克森心理社会发展阶段：一生八个阶段，每个阶段有一个核心冲突。信任vs不信任→自主vs羞愧→…→完善vs绝望",
+        "derivation": "每个阶段的核心冲突：青少年期最重要的是 identity vs role confusion（同一性vs角色混乱）",
+        "mnemonic": "青春期的关键问题：「我是谁？」→ 同一性危机（identity crisis）",
+        "example": "Erikson believed identity formation is the key task of adolescence.",
+        "example_zh": "埃里克森认为同一性形成是青春期的关键任务。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Parenting Styles",
+        "breakdown": "Parenting(养育) + Styles(风格)",
+        "meaning_en": "authoritarian, authoritative, permissive parenting approaches",
+        "meaning_zh": "养育风格：专制型=严格+冷漠（我说了算）；权威型=严格+温暖（最佳）；放任型=宽松+温暖（溺爱）",
+        "derivation": "Authoritarian(专制)≠Authoritative(权威)！专制=只有规则；权威=规则+解释+温暖",
+        "mnemonic": "权威型(authoritative)最好——有规则也有爱，像好老师：严格但讲道理",
+        "example": "Authoritative parenting is associated with the best child outcomes.",
+        "example_zh": "权威型养育与最好的儿童发展结果相关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Temperament",
+        "breakdown": "Temperament(气质)",
+        "meaning_en": "inborn behavioral style and emotional reactivity",
+        "meaning_zh": "气质：天生的行为风格和情绪反应性。有的婴儿天生好养（easy），有的难养（difficult），有的慢热（slow-to-warm-up）",
+        "derivation": "Temperament(气质) → 天生自带的性格基础 → 后天环境会塑造但不会完全改变",
+        "mnemonic": "有的婴儿天生爱笑，有的天生爱哭——这就是气质差异",
+        "example": "Temperament is largely influenced by genetics.",
+        "example_zh": "气质在很大程度上受遗传影响。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Learning",
+        "breakdown": "Social(社会的) + Learning(学习)",
+        "meaning_en": "learning by observing and imitating others (Bandura)",
+        "meaning_zh": "社会学习（班杜拉）：通过观察和模仿他人来学习。波波玩偶实验：儿童看到成人打玩偶→自己也打",
+        "derivation": "Observe(观察) → Model(模仿) → 不需要亲身强化也能学会新行为",
+        "mnemonic": "孩子模仿父母说脏话——没人教他，他看到就学了（观察学习）",
+        "example": "Bandura's Bobo doll experiment demonstrated social learning.",
+        "example_zh": "班杜拉的波波玩偶实验展示了社会学习。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Attribution Theory",
+    "type": "root",
+    "meaning_en": "how we explain the causes of behavior",
+    "meaning_zh": "归因理论：我们如何解释行为的原因。内部归因=性格导致；外部归因=环境导致。我们对自己和他人的归因方式不同",
+    "origin": "Unit 4: Social Psychology",
+    "related": ["Social Influence", "Person Perception"],
+    "words": [
+      {
+        "word": "Fundamental Attribution Error",
+        "breakdown": "Fundamental(基本的) + Attribution(归因) + Error(错误)",
+        "meaning_en": "overestimating personality and underestimating situational factors in explaining others' behavior",
+        "meaning_zh": "基本归因错误：解释别人的行为时，高估性格因素、低估情境因素。「他迟到了=他这人不守时」而非「可能路上堵车了」",
+        "derivation": "对别人：归因于性格（他就是这样的人）。对自己：归因于情境（我是有原因的）",
+        "mnemonic": "别人考差了=笨；自己考差了=题太难。这就是基本归因错误",
+        "example": "The fundamental attribution error leads us to blame people rather than situations.",
+        "example_zh": "基本归因错误导致我们责怪人而非情境。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-serving Bias",
+        "breakdown": "Self-serving(自利的) + Bias(偏见)",
+        "meaning_en": "attributing successes to internal factors and failures to external factors",
+        "meaning_zh": "自利偏差：成功归因于自己（我聪明），失败归因于外部（老师出题太偏）。保护自尊的心理机制",
+        "derivation": "Self-serving(服务自己的) → 怎么解释都对自己有利 → 保护自尊心",
+        "mnemonic": "考好了=我努力了；考差了=题太难了——永远不是自己的问题",
+        "example": "Self-serving bias protects our self-esteem.",
+        "example_zh": "自利偏差保护我们的自尊。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Actor-Observer Bias",
+        "breakdown": "Actor(行动者) + Observer(观察者) + Bias(偏见)",
+        "meaning_en": "actors attribute behavior to situations; observers attribute it to personality",
+        "meaning_zh": "行动者-观察者偏差：自己做事时归因于情境，看别人做事时归因于性格。角度不同，归因就不同",
+        "derivation": "Actor(自己)=看到环境因素；Observer(旁观)=只看到人→归因于性格",
+        "mnemonic": "你摔倒了=地太滑（情境）；别人摔倒了=太不小心了（性格）",
+        "example": "The actor-observer bias explains different perspectives on the same behavior.",
+        "example_zh": "行动者-观察者偏差解释了对同一行为的不同看法。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Locus of Control",
+        "breakdown": "Locus(位置) + of + Control(控制)",
+        "meaning_en": "internal (self determines outcomes) vs external (outside forces determine outcomes)",
+        "meaning_zh": "控制点：内控=相信自己决定命运（努力就能成功）；外控=相信外部力量决定命运（成功靠运气）",
+        "derivation": "Locus(位置) + Control(控制) → 控制权在哪里？在你内部还是外部？",
+        "mnemonic": "内控型：「命运掌握在自己手中」；外控型：「都是命」",
+        "example": "People with an internal locus of control take more responsibility for outcomes.",
+        "example_zh": "内控型的人对结果承担更多责任。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Explanatory Style",
+        "breakdown": "Explanatory(解释的) + Style(风格)",
+        "meaning_en": "optimistic vs pessimistic patterns in explaining events",
+        "meaning_zh": "解释风格：乐观型=坏事是暂时的、局部的、外部的；悲观型=坏事是永久的、全面的、内部的",
+        "derivation": "Optimistic(乐观)=这次没考好而已；Pessimistic(悲观)=我什么都学不好",
+        "mnemonic": "悲观者：「我总是失败」（永久+全面+内部）→ 容易抑郁",
+        "example": "Pessimistic explanatory style is linked to depression.",
+        "example_zh": "悲观的解释风格与抑郁症有关。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Social Influence",
+    "type": "root",
+    "meaning_en": "how others affect our thoughts, feelings, and behaviors",
+    "meaning_zh": "社会影响：他人如何影响我们的想法、感受和行为。包括从众、服从和群体效应",
+    "origin": "Unit 4: Social Psychology",
+    "related": ["Attribution Theory", "Person Perception"],
+    "words": [
+      {
+        "word": "Conformity",
+        "breakdown": "Con(一起) + Form(形式) + -ity",
+        "meaning_en": "adjusting behavior to match group norms",
+        "meaning_zh": "从众：调整自己的行为以符合群体规范。阿希实验：明知答案错误，但因为其他人都选了错的，自己也跟着选错",
+        "derivation": "Con(一起) + Form(形式) → 和大家保持一致的形式 → 随大流",
+        "mnemonic": "阿希的线段实验：明明看得出哪条线一样长，但别人都说B，你也说B",
+        "example": "Asch's experiments demonstrated the power of conformity.",
+        "example_zh": "阿希的实验展示了从众的力量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Obedience",
+        "breakdown": "Ob(向) + edi(听) + -ence",
+        "meaning_en": "following direct commands from authority figures",
+        "meaning_zh": "服从：听从权威人物的直接命令。米尔格拉姆实验：65%的人在实验者的命令下给出了最大电击（450V）",
+        "derivation": "服从权威 → 即使觉得不对也会执行 → 因为「他是专家/上级」",
+        "mnemonic": "米尔格拉姆电击实验：穿白大褂的人说「继续」，大多数人就真的继续了",
+        "example": "Milgram's experiment showed surprising levels of obedience to authority.",
+        "example_zh": "米尔格拉姆的实验显示了令人惊讶的对权威的服从程度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Groupthink",
+        "breakdown": "Group(群体) + Think(思考)",
+        "meaning_en": "desire for group harmony overrides realistic evaluation",
+        "meaning_zh": "群体思维：为了群体和谐而压制不同意见，导致糟糕的决策。没人敢说「皇帝没穿衣服」",
+        "derivation": "Group(群体) + Think(思维) → 群体的思维 → 大家都同意=一定是对的（其实不一定）",
+        "mnemonic": "开会时没人反对→不是因为方案完美，而是没人敢说不同意见",
+        "example": "Groupthink contributed to several historical policy disasters.",
+        "example_zh": "群体思维导致了多次历史性的决策灾难。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Loafing",
+        "breakdown": "Social(社会的) + Loafing(偷懒)",
+        "meaning_en": "exerting less effort when working in a group",
+        "meaning_zh": "社会懈怠：在群体中工作时不那么努力。人越多，每个人的努力程度越低。「反正有别人做」",
+        "derivation": "Social(群体中) + Loaf(偷懒) → 群体中偷懒 → 因为责任被分散了",
+        "mnemonic": "小组作业时总有人划水——因为「反正有人会做的」",
+        "example": "Social loafing increases as group size grows.",
+        "example_zh": "随着群体规模增大，社会懈怠也增加。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Bystander Effect",
+        "breakdown": "Bystander(旁观者) + Effect(效应)",
+        "meaning_en": "less likely to help when others are present; diffusion of responsibility",
+        "meaning_zh": "旁观者效应：在场的人越多，每个人帮忙的可能性越小。因为责任扩散——「别人会帮的」",
+        "derivation": "Bystander(旁观者) → 大家都在旁观 → 没人行动 → 责任扩散(diffusion of responsibility)",
+        "mnemonic": "有人倒在路边：只有你一个人时你会帮忙，但如果有100个人路过，你可能就走了",
+        "example": "The bystander effect shows people are less likely to help in crowds.",
+        "example_zh": "旁观者效应表明人们在人群中不太可能伸出援手。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Personality Theories",
+    "type": "root",
+    "meaning_en": "major perspectives on what makes each person unique",
+    "meaning_zh": "人格理论：解释每个人为什么不同的主要理论视角。包括精神分析、人本主义、社会认知和特质理论",
+    "origin": "Unit 4: Social Psychology",
+    "related": ["Social-Emotional Development", "Psychological Disorders"],
+    "words": [
+      {
+        "word": "Psychodynamic",
+        "breakdown": "Psycho(心理) + Dynamic(动力的)",
+        "meaning_en": "Freud's theory: id, ego, superego; unconscious conflicts drive behavior",
+        "meaning_zh": "精神动力学（弗洛伊德）：本我(id)=本能欲望；自我(ego)=现实调节；超我(superego)=道德标准。潜意识冲突驱动行为",
+        "derivation": "Id(本我)=我想要；Superego(超我)=你不应该；Ego(自我)=折中一下",
+        "mnemonic": "想吃蛋糕(本我) vs 减肥不能吃(超我) → 只吃一小块(自我的妥协)",
+        "example": "Freud believed unconscious conflicts shape personality.",
+        "example_zh": "弗洛伊德认为潜意识冲突塑造人格。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Humanistic",
+        "breakdown": "Human(人) + -istic(…主义的)",
+        "meaning_en": "Maslow & Rogers: focus on growth, self-actualization, unconditional positive regard",
+        "meaning_zh": "人本主义（马斯洛&罗杰斯）：强调人的成长潜力。马斯洛需求层次=生理→安全→归属→尊重→自我实现",
+        "derivation": "以人为本 → 每个人都有成长和自我实现的潜力 → 无条件积极关注帮助成长",
+        "mnemonic": "马斯洛金字塔：先吃饱穿暖（底层），才能追求人生意义（顶层自我实现）",
+        "example": "Maslow's hierarchy places self-actualization at the top.",
+        "example_zh": "马斯洛的需求层次将自我实现放在最顶端。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Big Five (OCEAN)",
+        "breakdown": "五大人格特质",
+        "meaning_en": "openness, conscientiousness, extraversion, agreeableness, neuroticism",
+        "meaning_zh": "大五人格(OCEAN)：开放性(O)=爱尝试新事物；尽责性(C)=自律可靠；外向性(E)=社交活跃；宜人性(A)=友善合作；神经质(N)=情绪不稳定",
+        "derivation": "O-C-E-A-N → 五个维度描述人格 → 每个人在每个维度上都有高低之分",
+        "mnemonic": "OCEAN = 海洋，人格像海洋一样有五个维度，每个人的「海洋」形状不同",
+        "example": "The Big Five model is the most widely accepted trait theory.",
+        "example_zh": "大五人格模型是最被广泛接受的特质理论。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-efficacy",
+        "breakdown": "Self(自我) + Efficacy(效能)",
+        "meaning_en": "belief in one's ability to succeed in specific situations (Bandura)",
+        "meaning_zh": "自我效能感（班杜拉）：相信自己能在特定情境中成功的信念。自我效能感高→更努力→更可能成功→效能感更高（良性循环）",
+        "derivation": "Self(自己) + Efficacy(效力) → 相信自己有效力 → 「我能做到」的信念",
+        "mnemonic": "「我觉得我能学好AP心理」→ 高自我效能感 → 真的学得更好",
+        "example": "High self-efficacy leads to greater persistence and effort.",
+        "example_zh": "高自我效能感带来更强的坚持和努力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Defense Mechanisms",
+        "breakdown": "Defense(防御) + Mechanisms(机制)",
+        "meaning_en": "unconscious strategies to reduce anxiety (repression, projection, denial, etc.)",
+        "meaning_zh": "防御机制（弗洛伊德）：潜意识中减少焦虑的策略。压抑=遗忘痛苦记忆；投射=把自己的想法归给别人；否认=拒绝接受现实",
+        "derivation": "自我(ego)保护自己的方式 → 潜意识自动启动 → 不是故意的",
+        "mnemonic": "不喜欢某人但说「他不喜欢我」——投射（把自己的感受投到别人身上）",
+        "example": "Defense mechanisms operate unconsciously to protect the ego.",
+        "example_zh": "防御机制在潜意识中运作，保护自我。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Stress & Coping",
+    "type": "root",
+    "meaning_en": "how stress affects health and how people cope",
+    "meaning_zh": "压力与应对：压力如何影响身心健康，以及人们如何应对压力。应激反应、应对策略和心理韧性",
+    "origin": "Unit 5: Mental & Physical Health",
+    "related": ["Psychological Disorders", "Treatment Approaches"],
+    "words": [
+      {
+        "word": "General Adaptation Syndrome",
+        "breakdown": "GAS: General(一般的) + Adaptation(适应) + Syndrome(综合征)",
+        "meaning_en": "Selye's three-stage stress response: alarm, resistance, exhaustion",
+        "meaning_zh": "一般适应综合征（塞利）：压力反应三阶段。警觉期=身体动员（战斗或逃跑）→抵抗期=持续应对→衰竭期=资源耗尽，免疫力下降",
+        "derivation": "Alarm(警报)→Resistance(抵抗)→Exhaustion(耗竭) → 压力持续太久身体就垮了",
+        "mnemonic": "像手机电池：警报=开始掉电；抵抗=省电模式；衰竭=关机",
+        "example": "Prolonged stress leads to the exhaustion stage of GAS.",
+        "example_zh": "长期压力导致一般适应综合征的衰竭阶段。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fight-or-Flight",
+        "breakdown": "Fight(战斗) + or + Flight(逃跑)",
+        "meaning_en": "acute stress response activating the sympathetic nervous system",
+        "meaning_zh": "战斗或逃跑反应：面对威胁时，交感神经系统激活→心跳加速、肾上腺素释放、血液流向肌肉→准备战斗或逃跑",
+        "derivation": "遇到危险 → 身体自动准备 → 要么打（fight）要么跑（flight）",
+        "mnemonic": "路上遇到蛇：心跳狂飙、全身紧绷——你的身体在决定是打还是跑",
+        "example": "The fight-or-flight response prepares the body for immediate action.",
+        "example_zh": "战斗或逃跑反应让身体准备好立即行动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Coping Strategies",
+        "breakdown": "Coping(应对) + Strategies(策略)",
+        "meaning_en": "problem-focused (change situation) vs emotion-focused (manage feelings)",
+        "meaning_zh": "应对策略：问题导向=改变造成压力的情境（如制定学习计划）；情绪导向=管理情绪反应（如找朋友倾诉、运动减压）",
+        "derivation": "Problem-focused(问题导向)=解决问题本身；Emotion-focused(情绪导向)=调节情绪",
+        "mnemonic": "考试焦虑：问题导向=好好复习；情绪导向=深呼吸放松。最好两者结合",
+        "example": "Problem-focused coping addresses the source of stress directly.",
+        "example_zh": "问题导向的应对策略直接解决压力来源。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Resilience",
+        "breakdown": "Re(回) + sili(弹) + -ence",
+        "meaning_en": "ability to recover from adversity and adapt well",
+        "meaning_zh": "心理韧性：从逆境中恢复和良好适应的能力。保护因素包括：社会支持、乐观、自我效能感和意义感",
+        "derivation": "Resilient(有弹性的) → 像弹簧一样被压下去还能弹回来 → 逆境后的恢复能力",
+        "mnemonic": "竹子被风吹弯但不会断——弯了还能回来，这就是韧性",
+        "example": "Resilience factors include social support and optimism.",
+        "example_zh": "心理韧性的保护因素包括社会支持和乐观。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Biopsychosocial Model",
+        "breakdown": "Bio(生物) + Psycho(心理) + Social(社会) + Model(模型)",
+        "meaning_en": "health is determined by biological, psychological, and social factors",
+        "meaning_zh": "生物心理社会模型：健康由生物因素（基因、大脑）+心理因素（压力、人格）+社会因素（文化、支持）共同决定",
+        "derivation": "Bio(生物)+Psycho(心理)+Social(社会) → 三个层面共同影响健康",
+        "mnemonic": "为什么有人抽烟不得癌？因为健康不只是生物问题——心态和社会环境都有影响",
+        "example": "The biopsychosocial model takes a holistic approach to health.",
+        "example_zh": "生物心理社会模型采用整体方法来看待健康。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Psychological Disorders",
+    "type": "root",
+    "meaning_en": "major categories of mental disorders and their symptoms",
+    "meaning_zh": "心理障碍：主要的心理疾病类别及其症状。判断标准：偏离常态(deviance)、痛苦(distress)、功能障碍(dysfunction)",
+    "origin": "Unit 5: Mental & Physical Health",
+    "related": ["Stress & Coping", "Treatment Approaches"],
+    "words": [
+      {
+        "word": "Anxiety Disorders",
+        "breakdown": "Anxiety(焦虑) + Disorders(障碍)",
+        "meaning_en": "excessive fear and worry: GAD, phobias, panic disorder, PTSD",
+        "meaning_zh": "焦虑障碍：过度的恐惧和担忧。广泛性焦虑=什么都担心；恐惧症=特定恐惧；恐慌症=突然的强烈恐惧发作；PTSD=创伤后应激障碍",
+        "derivation": "正常的焦虑是保护性的 → 过度的、持续的、影响生活的焦虑 = 焦虑障碍",
+        "mnemonic": "考试前紧张是正常的；但如果每天每件事都极度焦虑到无法正常生活→焦虑障碍",
+        "example": "Anxiety disorders are the most common type of mental disorder.",
+        "example_zh": "焦虑障碍是最常见的心理障碍类型。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Depression",
+        "breakdown": "De(向下) + Press(压) + -ion",
+        "meaning_en": "persistent sadness, loss of interest, changes in sleep/appetite",
+        "meaning_zh": "抑郁症：持续的悲伤、失去兴趣、睡眠/食欲改变。不是「心情不好」，而是持续两周以上的严重情绪低落+功能受损",
+        "derivation": "De(向下) + Press(压) → 被压到谷底 → 持续的、严重的情绪低落",
+        "mnemonic": "抑郁症≠心情不好。是大脑化学物质（血清素等）失调，需要专业帮助",
+        "example": "Major depression affects approximately 7% of the adult population.",
+        "example_zh": "重度抑郁症影响大约7%的成年人口。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Schizophrenia",
+        "breakdown": "Schizo(分裂) + Phrenia(心智)",
+        "meaning_en": "disorder with delusions, hallucinations, and disorganized thinking",
+        "meaning_zh": "精神分裂症：包括妄想（错误信念）、幻觉（虚假感知）和思维混乱。阳性症状=多出来的（幻觉）；阴性症状=缺少的（情感淡漠）",
+        "derivation": "Schizo(分裂) + Phrenia(心智) → 心智分裂 → 注意：不是「多重人格」！",
+        "mnemonic": "精神分裂症≠人格分裂！是思维和现实的「分裂」——分不清什么是真的什么是假的",
+        "example": "Schizophrenia typically emerges in late adolescence or early adulthood.",
+        "example_zh": "精神分裂症通常在青春期晚期或成年早期出现。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Bipolar Disorder",
+        "breakdown": "Bi(两) + Polar(极) + Disorder(障碍)",
+        "meaning_en": "alternating between manic episodes and depressive episodes",
+        "meaning_zh": "双相情感障碍：在躁狂发作（极度兴奋、精力充沛、冲动）和抑郁发作（极度低落）之间交替。不是普通的「情绪波动」",
+        "derivation": "Bi(两个) + Polar(极端) → 两个极端之间摆动 → 从极度亢奋到极度低落",
+        "mnemonic": "像坐过山车：躁狂=冲到最高点（感觉无所不能）→抑郁=跌到最低点",
+        "example": "Bipolar disorder involves dramatic shifts between mania and depression.",
+        "example_zh": "双相情感障碍涉及躁狂和抑郁之间的剧烈转变。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "ADHD",
+        "breakdown": "Attention-Deficit/Hyperactivity Disorder",
+        "meaning_en": "persistent inattention, hyperactivity, and impulsivity",
+        "meaning_zh": "注意缺陷多动障碍：持续的注意力不集中、多动和冲动。不是「不听话」，是大脑执行功能的发展性障碍",
+        "derivation": "Attention-Deficit(注意缺陷) + Hyperactivity(多动) → 注意力不够+太活跃",
+        "mnemonic": "课堂上坐不住、写作业走神、说话不过脑子——不是故意的，是ADHD",
+        "example": "ADHD is one of the most common neurodevelopmental disorders in children.",
+        "example_zh": "ADHD是儿童中最常见的神经发育障碍之一。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Treatment Approaches",
+    "type": "root",
+    "meaning_en": "methods for treating psychological disorders",
+    "meaning_zh": "治疗方法：治疗心理障碍的方法。包括心理治疗（谈话疗法）和生物医学治疗（药物、脑刺激）",
+    "origin": "Unit 5: Mental & Physical Health",
+    "related": ["Psychological Disorders", "Stress & Coping"],
+    "words": [
+      {
+        "word": "CBT",
+        "breakdown": "Cognitive-Behavioral Therapy",
+        "meaning_en": "therapy combining cognitive restructuring with behavioral techniques",
+        "meaning_zh": "认知行为疗法：结合认知重构（改变想法）和行为技术（改变行为）。目前最有循证支持的疗法之一",
+        "derivation": "Cognitive(认知=改变想法) + Behavioral(行为=改变行动) → 想法变了，行为就变了",
+        "mnemonic": "「我什么都做不好」→ CBT帮你发现这个想法不对 → 找到证据反驳 → 情绪改善",
+        "example": "CBT is effective for treating depression and anxiety.",
+        "example_zh": "认知行为疗法对治疗抑郁症和焦虑症有效。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Psychoanalysis",
+        "breakdown": "Psycho(心理) + Analysis(分析)",
+        "meaning_en": "Freud's therapy: uncovering unconscious conflicts through free association",
+        "meaning_zh": "精神分析（弗洛伊德）：通过自由联想、梦的解析等方法揭示潜意识冲突。让潜意识变成意识→问题就能解决",
+        "derivation": "Psycho(心理) + Analysis(分析) → 分析你的心理 → 挖掘潜意识中的冲突",
+        "mnemonic": "躺在沙发上，想到什么说什么（自由联想）→ 治疗师帮你找到隐藏的心理问题",
+        "example": "Psychoanalysis aims to bring unconscious conflicts to awareness.",
+        "example_zh": "精神分析旨在将潜意识冲突带到意识层面。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Exposure Therapy",
+        "breakdown": "Exposure(暴露) + Therapy(治疗)",
+        "meaning_en": "gradually exposing patients to feared stimuli to reduce anxiety",
+        "meaning_zh": "暴露疗法：让患者逐渐接触恐惧的事物，从而减少焦虑。基于经典条件反射的消退原理。对恐惧症特别有效",
+        "derivation": "Exposure(暴露/接触) → 反复接触害怕的东西 → 恐惧逐渐消退",
+        "mnemonic": "怕蜘蛛？先看蜘蛛图片→再看真蜘蛛→最后碰蜘蛛——逐步脱敏",
+        "example": "Exposure therapy is highly effective for treating phobias.",
+        "example_zh": "暴露疗法对治疗恐惧症非常有效。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "SSRIs",
+        "breakdown": "Selective Serotonin Reuptake Inhibitors",
+        "meaning_en": "antidepressant medications that increase serotonin levels",
+        "meaning_zh": "选择性血清素再摄取抑制剂：最常用的抗抑郁药。阻止血清素被回收→突触中血清素增多→情绪改善",
+        "derivation": "阻止(Inhibit)血清素(Serotonin)被再摄取(Reuptake) → 让更多血清素留在突触中发挥作用",
+        "mnemonic": "血清素=快乐分子。SSRI=不让快乐分子被回收，让它多待一会儿",
+        "example": "SSRIs like Prozac are commonly prescribed for depression.",
+        "example_zh": "像百忧解这样的SSRI类药物常被用于治疗抑郁症。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Group Therapy",
+        "breakdown": "Group(团体) + Therapy(治疗)",
+        "meaning_en": "therapy conducted with multiple clients simultaneously",
+        "meaning_zh": "团体治疗：多个来访者同时参与的治疗。优点：社会支持、发现「不只是我这样」、学习他人的应对方式、成本更低",
+        "derivation": "Group(团体) + Therapy(治疗) → 在团体中治疗 → 互相支持和学习",
+        "mnemonic": "匿名戒酒会(AA)就是一种团体治疗——「你不是一个人在战斗」",
+        "example": "Group therapy provides social support alongside treatment.",
+        "example_zh": "团体治疗在治疗的同时提供社会支持。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Perception",
+    "type": "root",
+    "meaning_en": "how we organize and interpret sensory information",
+    "meaning_zh": "知觉：我们如何组织和解释感觉信息。感觉=接收原始数据；知觉=大脑赋予意义。自下而上 vs 自上而下加工",
+    "origin": "Unit 2: Cognition",
+    "related": ["Sensation", "Thinking"],
+    "words": [
+      {
+        "word": "Bottom-up Processing",
+        "breakdown": "Bottom-up(自下而上) + Processing(加工)",
+        "meaning_en": "perception driven by sensory input (data-driven)",
+        "meaning_zh": "自下而上加工：从感觉数据出发来构建知觉。先接收信息→再理解。如第一次看一幅抽象画，从细节慢慢理解",
+        "derivation": "Bottom(底部=感觉数据) → Up(上=知觉理解) → 从原始数据到理解",
+        "mnemonic": "拼拼图：从一块块碎片(感觉)拼出完整画面(知觉)=自下而上",
+        "example": "Bottom-up processing starts with sensory data.",
+        "example_zh": "自下而上加工从感觉数据开始。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Top-down Processing",
+        "breakdown": "Top-down(自上而下) + Processing(加工)",
+        "meaning_en": "perception driven by expectations and prior knowledge",
+        "meaning_zh": "自上而下加工：用已有知识和期望来解释感觉信息。先有预期→再感知。如在嘈杂环境中你能听懂朋友说话",
+        "derivation": "Top(上=已有知识) → Down(下=感觉数据) → 用经验指导理解",
+        "mnemonic": "你能读懂这句话：「研表究明，汉字的序顺不影响阅读」→ 大脑用经验自动纠正",
+        "example": "Top-down processing uses prior knowledge to interpret sensory input.",
+        "example_zh": "自上而下加工利用已有知识来解释感觉输入。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gestalt Principles",
+        "breakdown": "Gestalt(格式塔/完形) + Principles(原则)",
+        "meaning_en": "rules of perceptual organization: proximity, similarity, closure",
+        "meaning_zh": "格式塔原则：知觉组织的规则。接近性=近的成一组；相似性=像的成一组；闭合性=自动补全不完整的图形",
+        "derivation": "Gestalt = 整体 → 整体大于部分之和 → 大脑自动把零散信息组织成有意义的整体",
+        "mnemonic": "看到 · · · · 和 ·  ·  ·  · 你会把间距近的分成一组——接近性原则",
+        "example": "Gestalt principles explain how we organize visual information.",
+        "example_zh": "格式塔原则解释了我们如何组织视觉信息。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Perceptual Constancy",
+        "breakdown": "Perceptual(知觉的) + Constancy(恒常性)",
+        "meaning_en": "perceiving objects as stable despite changing sensory input",
+        "meaning_zh": "知觉恒常性：尽管感觉输入变化，仍将物体感知为稳定的。如朋友走远了变小了，但你知道他没有真的缩小（大小恒常性）",
+        "derivation": "Constancy(恒常) → 保持不变 → 知道物体本身没变，只是视角/距离变了",
+        "mnemonic": "门从侧面看是平行四边形，但你的大脑知道它是长方形——形状恒常性",
+        "example": "Size constancy helps us perceive objects as the same size at different distances.",
+        "example_zh": "大小恒常性帮助我们在不同距离感知物体大小不变。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Depth Cues",
+        "breakdown": "Depth(深度) + Cues(线索)",
+        "meaning_en": "monocular and binocular cues for perceiving distance",
+        "meaning_zh": "深度线索：帮助感知距离的线索。双眼线索=两眼视差（立体视觉）；单眼线索=线性透视、遮挡、相对大小等",
+        "derivation": "Binocular(双眼)=两眼不同角度→立体感；Monocular(单眼)=一只眼也能判断远近",
+        "mnemonic": "闭上一只眼接东西变难了——因为失去了双眼线索（视网膜像差）",
+        "example": "Binocular cues require input from both eyes to judge distance.",
+        "example_zh": "双眼线索需要两只眼睛的输入来判断距离。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  }
+]

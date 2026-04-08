@@ -4,9 +4,10 @@ import { Box, Text } from "ink";
 interface QuizIntroProps {
   rootKey: string;
   wordCount: number;
+  quizTitle?: string;
 }
 
-export default function QuizIntro({ rootKey, wordCount }: QuizIntroProps) {
+export default function QuizIntro({ rootKey, wordCount, quizTitle }: QuizIntroProps) {
   return (
     <Box flexDirection="column" paddingLeft={2} paddingY={1}>
       <Box
@@ -17,7 +18,7 @@ export default function QuizIntro({ rootKey, wordCount }: QuizIntroProps) {
         paddingY={1}
       >
         <Text bold color="#AF5FFF">
-          词根测验 — {rootKey}
+          {quizTitle ?? "词根测验"} — {rootKey}
         </Text>
         <Box marginTop={1}>
           <Text>

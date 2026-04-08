@@ -2,11 +2,17 @@ import React from "react";
 import { Box, Text } from "ink";
 import type { RootEntry } from "../lib/types.js";
 
+export interface RootLessonLabels {
+  unitLabel?: string;       // "词根" or "概念"
+  wordListIntro?: string;   // "包含这个词根的单词:" or "这个概念的核心术语:"
+}
+
 interface RootLessonProps {
   entry: RootEntry;
   index: number;
   total: number;
   relatedMeanings?: Record<string, string>;
+  labels?: RootLessonLabels;
 }
 
 export default function RootLesson({
@@ -14,14 +20,17 @@ export default function RootLesson({
   index,
   total,
   relatedMeanings,
+  labels,
 }: RootLessonProps) {
+  const unitLabel = labels?.unitLabel ?? "词根";
+  const wordListIntro = labels?.wordListIntro ?? "包含这个词根的单词:";
   const typeLabel =
-    entry.type === "root" ? "词根" : entry.type === "prefix" ? "前缀" : "后缀";
+    entry.type === "root" ? unitLabel : entry.type === "prefix" ? "前缀" : "后缀";
 
   return (
     <Box flexDirection="column" paddingLeft={2} paddingY={1}>
       <Text dimColor>
-        词根 {index + 1}/{total}
+        {unitLabel} {index + 1}/{total}
       </Text>
 
       {/* Root card */}
@@ -62,7 +71,7 @@ export default function RootLesson({
 
       {/* Word cloud */}
       <Box marginTop={1} flexDirection="column">
-        <Text>包含这个词根的单词:</Text>
+        <Text>{wordListIntro}</Text>
         <Box marginTop={0} gap={2} flexWrap="wrap">
           {entry.words.map((w) => (
             <Text key={w.word} bold>

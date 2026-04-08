@@ -55,4 +55,4 @@ export interface UserData {
   };
 }
 
-export type Command = "daily" | "review" | "stats" | "doctor";
+export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review";

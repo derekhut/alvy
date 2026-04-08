@@ -3,6 +3,8 @@ import type { Command } from "./lib/types.js";
 import Doctor from "./components/doctor.js";
 import DailySession from "./components/daily-session.js";
 import ReviewSession from "./components/review-session.js";
+import PsychSession from "./components/psych-session.js";
+import PsychReview from "./components/psych-review.js";
 import Stats from "./components/stats.js";
 
 interface AppProps {
@@ -15,6 +17,10 @@ export default function App({ command }: AppProps) {
       return <DailySession />;
     case "review":
       return <ReviewSession />;
+    case "psych":
+      return <PsychSession />;
+    case "psych-review":
+      return <PsychReview />;
     case "stats":
       return <Stats />;
     case "doctor":

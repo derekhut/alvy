@@ -183,18 +183,27 @@ export function selectReviewMorphemes(
 }
 
 /** Generate stats summary as markdown */
-export function generateStatsSummary(data: UserData, totalRoots: number, allRoots?: RootEntry[]): string {
+export function generateStatsSummary(
+  data: UserData,
+  totalRoots: number,
+  allRoots?: RootEntry[],
+  subject?: "toefl" | "psych",
+): string {
   const mastered = masteredCount(data, allRoots);
   const seen = seenCount(data);
   const totalWords = data.wordsStudied.length;
 
-  return `# 词根学习进度
+  const subjectLabel = subject === "psych" ? "AP 心理学" : "词根学习";
+  const unitLabel = subject === "psych" ? "概念" : "词根";
+  const wordLabel = subject === "psych" ? "术语" : "单词";
 
-- **已掌握:** ${mastered}/${totalRoots} 个词根
-- **已学习:** ${seen}/${totalRoots} 个词根
+  return `# ${subjectLabel}进度
+
+- **已掌握:** ${mastered}/${totalRoots} 个${unitLabel}
+- **已学习:** ${seen}/${totalRoots} 个${unitLabel}
 - **总经验值:** ${data.xp.total} XP
 - **当前连续天数:** ${data.streak.current} 天
 - **最长连续天数:** ${data.streak.longest} 天
-- **已学单词:** ${totalWords} 个
+- **已学${wordLabel}:** ${totalWords} 个
 `;
 }

@@ -34,12 +34,12 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 
 ### Step 3: Readability fix
 - Chinese definitions, translations, examples, section labels → regular white text (not dimmed)
-- Dim reserved ONLY for navigation hints ("按回车继续 →") and progress indicators ("词根 1/3")
+- Dim reserved ONLY for navigation hints ("← →", "esc") and progress indicators ("词根 1/3")
 - Updated DESIGN.md text hierarchy and CJK considerations to match
 
-### Step 4: q-key exit
-- Already handled via `useSessionFlow` hook — `quit()` fires `saveData()` + `exit()` in all phases
-- No additional code needed (was implicit from step 2)
+### Step 4: q-key exit (now Esc)
+- Originally q-key, now Esc — handled via `useSessionFlow` hook — `quit()` fires `saveData()` + `exit()` in all phases
+- Esc from continue-prompt goes to summary first (not immediate quit)
 
 ### Step 5: Quiz system
 - **New flow**: `word-detail(x5) → quiz-intro → quiz(x5) → next root or summary`
@@ -84,6 +84,17 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 - **app.tsx**: State-based routing — `"pick"` renders SubjectPicker, `onSelect` saves lastSubject and resolves to `"daily"` or `"psych"`
 - **index.tsx**: Default command changed from `"daily"` to `"pick"`
 - **store.ts**: Updated `PersistedData` to include `lastSubject` field
+
+### Step 10: Arrow-key navigation with back support
+- **→ (right arrow)** replaces Enter for all card navigation (dashboard → root-intro → word-detail → quiz-intro etc.)
+- **← (left arrow)** goes back: word→previous word, first word→root-intro, root-intro→previous root's last word, first root→dashboard
+- **Esc** replaces `q` for quit everywhere (saves data)
+- **Enter** removed as navigation key (only kept in subject picker for selection)
+- Quiz still uses `1`/`2` keys, arrows ignored during quiz
+- Nav hints moved inside cards as dimmed `← →` / `esc` indicators (no more `按回车...` text)
+- **useSessionFlow.ts**: Added `goBack()` action with full back-navigation logic
+- **All 4 session components**: Replaced `key.return` → `key.rightArrow`, `input === "q"` → `key.escape`, added `key.leftArrow` → `goBack()`
+- **All card components**: Replaced old hint text below cards with `justifyContent="space-between"` hint rows
 
 ### Gotchas / bugs caught during implementation
 
@@ -159,8 +170,10 @@ V1:  dashboard → root-intro → word-detail(x5) → summary
 
 V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) → continue-prompt
                                                                             │
-                                                              [Enter] → next batch (bonus XP +5/word) ✅
-                                                              [q] → summary → exit ✅
+                                                              [→] → next batch (bonus XP +5/word) ✅
+                                                              [Esc] → summary → exit ✅
+
+     Back nav (←): word-detail → prev word → root-intro → prev root's last word → dashboard
 ```
 
 **Quiz screen layout (CORRECTED from original plan):**
@@ -213,8 +226,10 @@ Phase 1 (Foundation + Quiz):
 
   9. ✅ Subject picker at launch (arrow-key menu, remember-last, "pick" command)
 
+  10. ✅ Arrow-key navigation (← → replaces Enter, Esc replaces q, goBack() action)
+
 Phase 2 (Content):
-  10. Richer word format (phonetic, mnemonic fields in types + word-detail)
+  11. Richer word format (phonetic, mnemonic fields in types + word-detail)
   11. Content importer tool (fail-fast validation, all-or-nothing merge)
   12. Expand to 60 roots using importer
 

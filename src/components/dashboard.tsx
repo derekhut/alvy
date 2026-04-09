@@ -3,6 +3,8 @@ import { Box, Text } from "ink";
 import type { UserData, RootEntry } from "../lib/types.js";
 import { masteredCount, seenCount } from "../lib/progress.js";
 import { getAllRoots } from "../lib/roots-db.js";
+import { getLevelName, xpToNextLevel } from "../lib/levels.js";
+import { AVATARS } from "../lib/avatars.js";
 
 interface DashboardProps {
   data: UserData;
@@ -22,6 +24,19 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
   const bar = "█".repeat(filled) + "░".repeat(empty);
   const pct = totalRoots > 0 ? Math.round((mastered / totalRoots) * 100) : 0;
 
+  const profile = data.profile;
+  const avatar = profile ? AVATARS[profile.avatar] : null;
+  const displayName = profile?.displayName;
+
+  const lp = data.levelProgress;
+  const levelName = getLevelName(lp.level);
+  const { progress: lvlProgress } = xpToNextLevel(data.xp.total);
+  const lvlBarWidth = 10;
+  const lvlFilled = Math.round(lvlProgress * lvlBarWidth);
+  const lvlEmpty = lvlBarWidth - lvlFilled;
+  const lvlBar = "█".repeat(lvlFilled) + "░".repeat(lvlEmpty);
+  const lvlPct = Math.round(lvlProgress * 100);
+
   return (
     <Box flexDirection="column" paddingLeft={2} paddingY={1}>
       <Box
@@ -31,11 +46,15 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
         paddingX={2}
         paddingY={1}
       >
+        {avatar && displayName ? (
+          <Text>
+            {avatar.emoji} {displayName}
+          </Text>
+        ) : null}
         <Text>
           <Text bold color="#AF5FFF">alvy</Text>
           <Text color="#AF5FFF"> {subject === "psych" ? "AP 心理学" : subject === "csp" ? "AP 计算机科学原理" : subject === "whap" ? "AP 世界历史" : "词根学习"}</Text>
         </Text>
-        <Text dimColor>{subject === "psych" ? "用中文搞定AP心理" : subject === "csp" ? "用中文搞定AP CSP" : subject === "whap" ? "用中文搞定AP世界史" : "解锁英语的底层逻辑"}</Text>
 
         <Box marginTop={1} gap={3}>
           <Text>
@@ -43,6 +62,12 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
           </Text>
           <Text>
             ⭐ <Text bold color="#FFAF00">{data.xp.total}</Text> XP
+          </Text>
+        </Box>
+
+        <Box>
+          <Text>
+            Lv.<Text bold color="#FFAF00">{lp.level}</Text> {levelName} <Text color="#AF5FFF">{lvlBar}</Text> {lvlPct}%
           </Text>
         </Box>
 

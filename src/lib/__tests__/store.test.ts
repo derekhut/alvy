@@ -102,17 +102,19 @@ describe("data migration", () => {
     const store = await importStore();
     const data = store.loadData();
 
-    expect(data.version).toBe(2);
+    expect(data.version).toBe(3);
     expect(data.streak.freezeAvailable).toBe(true);
     expect(data.streak.freezeUsedDate).toBeUndefined();
     expect(data.settings).toEqual({ sound: false, dailyGoal: 3 });
+    expect(data.levelProgress).toBeDefined();
+    expect(data.levelProgress.totalWordsStudied).toBe(5);
 
     // Verify backup was created during migration
     const backupFile = path.join(tmpDir, ".alvy", "data.backup.json");
     expect(fs.existsSync(backupFile)).toBe(true);
   });
 
-  it("V2 data loads without re-migration", async () => {
+  it("V2 data gets migrated to V3", async () => {
     const v2Data = {
       version: 2,
       streak: { current: 5, longest: 5, lastDate: "2026-04-02", freezeAvailable: false, freezeUsedDate: "2026-04-01" },
@@ -131,15 +133,69 @@ describe("data migration", () => {
     const store = await importStore();
     const data = store.loadData();
 
-    expect(data.version).toBe(2);
+    expect(data.version).toBe(3);
     expect(data.streak.freezeAvailable).toBe(false);
     expect(data.streak.freezeUsedDate).toBe("2026-04-01");
     expect(data.settings).toEqual({ sound: true, dailyGoal: 5 });
     expect(data.rootProgress["bene-"]!.quizAccuracy).toEqual({ correct: 4, total: 5 });
+    expect(data.levelProgress).toBeDefined();
+    expect(data.levelProgress.totalCorrectQuiz).toBe(4);
+    expect(data.levelProgress.totalQuizAttempts).toBe(5);
 
-    // No backup created for already-V2 data
+    // Backup created during V2→V3 migration
+    const backupFile = path.join(tmpDir, ".alvy", "data.backup.json");
+    expect(fs.existsSync(backupFile)).toBe(true);
+  });
+
+  it("V3 data loads without re-migration", async () => {
+    const v3Data = {
+      version: 3,
+      streak: { current: 5, longest: 5, lastDate: "2026-04-02", freezeAvailable: true },
+      xp: { total: 500, today: 40 },
+      dailyGoal: 3,
+      rootProgress: {
+        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-02", quizAccuracy: { correct: 4, total: 5 } },
+      },
+      wordsStudied: ["benefit"],
+      settings: { sound: false, dailyGoal: 3 },
+      profile: { displayName: "小明", avatar: "panda", createdAt: "2026-04-01" },
+      levelProgress: { level: 3, compositeScore: 42, totalStudyDays: 5, totalCorrectQuiz: 4, totalQuizAttempts: 5, totalWordsStudied: 1 },
+    };
+    const newDir = path.join(tmpDir, ".alvy");
+    fs.mkdirSync(newDir, { recursive: true });
+    fs.writeFileSync(path.join(newDir, "data.json"), JSON.stringify(v3Data));
+
+    const store = await importStore();
+    const data = store.loadData();
+
+    expect(data.version).toBe(3);
+    expect(data.profile?.displayName).toBe("小明");
+    expect(data.profile?.avatar).toBe("panda");
+    expect(data.levelProgress.level).toBe(3);
+    expect(data.levelProgress.compositeScore).toBe(42);
+
+    // No backup created for already-V3 data
     const backupFile = path.join(tmpDir, ".alvy", "data.backup.json");
     expect(fs.existsSync(backupFile)).toBe(false);
+  });
+
+  it("Migration computes initial level from existing XP", async () => {
+    const v1Data = {
+      streak: { current: 10, longest: 10, lastDate: "2026-04-01" },
+      xp: { total: 1250, today: 50 },
+      dailyGoal: 3,
+      rootProgress: {},
+      wordsStudied: [],
+    };
+    const newDir = path.join(tmpDir, ".alvy");
+    fs.mkdirSync(newDir, { recursive: true });
+    fs.writeFileSync(path.join(newDir, "data.json"), JSON.stringify(v1Data));
+
+    const store = await importStore();
+    const data = store.loadData();
+
+    expect(data.version).toBe(3);
+    expect(data.levelProgress.level).toBe(5); // 1250 XP = level 5
   });
 
   it("handles corrupt source file gracefully", async () => {

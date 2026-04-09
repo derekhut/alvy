@@ -6,6 +6,8 @@ import { getAllRoots, getRootCount } from "../lib/roots-db.js";
 import { getAllConcepts, getConceptCount } from "../lib/psych-db.js";
 import { getAllTopics, getTopicCount } from "../lib/csp-db.js";
 import { getAllTopics as getAllWhapTopics, getTopicCount as getWhapTopicCount } from "../lib/whap-db.js";
+import { getLevelName } from "../lib/levels.js";
+import { AVATARS } from "../lib/avatars.js";
 
 interface SubjectOption {
   key: Subject;
@@ -78,7 +80,11 @@ export default function SubjectPicker({ data, onSelect }: SubjectPickerProps) {
         paddingY={1}
       >
         <Text>
-          <Text bold color="#AF5FFF">alvy</Text>
+          {data.profile ? (
+            <Text>{AVATARS[data.profile.avatar].emoji} {data.profile.displayName} · Lv.<Text bold color="#FFAF00">{data.levelProgress.level}</Text> {getLevelName(data.levelProgress.level)}</Text>
+          ) : (
+            <Text bold color="#AF5FFF">alvy</Text>
+          )}
         </Text>
         <Text>选择学习科目</Text>
 

@@ -187,6 +187,7 @@ export default function CspSession() {
           rootsStudied={state.morphemes.length}
           streak={state.data.streak.current}
           bonusMode={state.sessionBatch > 0}
+          levelUp={state.levelUp}
         />
       );
 

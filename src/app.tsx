@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
-import type { Command, Subject } from "./lib/types.js";
+import type { Command, Subject, UserProfile } from "./lib/types.js";
 import { loadData, saveData } from "./lib/store.js";
 import { checkForUpdate } from "./lib/update-check.js";
 import type { UpdateInfo } from "./lib/update-check.js";
@@ -15,6 +15,8 @@ import WhapReview from "./components/whap-review.js";
 import Stats from "./components/stats.js";
 import SubjectPicker from "./components/subject-picker.js";
 import UpdatePrompt from "./components/update-prompt.js";
+import ProfileSetup from "./components/profile-setup.js";
+import ProfileView from "./components/profile-view.js";
 
 interface AppProps {
   command: Command;
@@ -27,6 +29,7 @@ export default function App({ command }: AppProps) {
   const [updateInfo, setUpdateInfo] = useState<UpdateInfo | null>(null);
   const [updateChecked, setUpdateChecked] = useState(command !== "pick");
   const [updateSkipped, setUpdateSkipped] = useState(false);
+  const [profileDone, setProfileDone] = useState(false);
 
   const data = useMemo(() => (command === "pick" ? loadData() : null), [command]);
 
@@ -37,6 +40,14 @@ export default function App({ command }: AppProps) {
       setUpdateChecked(true);
     });
   }, [command]);
+
+  const handleProfileComplete = useCallback((profile: UserProfile) => {
+    if (data) {
+      data.profile = profile;
+      saveData(data);
+    }
+    setProfileDone(true);
+  }, [data]);
 
   const handleSelect = useCallback((subject: Subject) => {
     if (data) {
@@ -57,6 +68,10 @@ export default function App({ command }: AppProps) {
           onSkip={() => setUpdateSkipped(true)}
         />
       );
+    }
+    // Profile setup gate: show on first launch when profile is undefined
+    if (!data.profile && !profileDone) {
+      return <ProfileSetup onComplete={handleProfileComplete} />;
     }
     return <SubjectPicker data={data} onSelect={handleSelect} />;
   }
@@ -82,6 +97,8 @@ export default function App({ command }: AppProps) {
       return <Stats />;
     case "doctor":
       return <Doctor />;
+    case "profile":
+      return <ProfileView />;
     default:
       return null;
   }

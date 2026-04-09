@@ -25,6 +25,9 @@ export default function StreakHeader({ data, totalRoots, getAllUnits }: StreakHe
       <Text>
         📚 <Text bold color="#FFAF00">{mastered}/{totalRoots}</Text>
       </Text>
+      <Text dimColor>
+        Lv.{data.levelProgress.level}
+      </Text>
     </Box>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Text } from "ink";
+import { getLevelName } from "../lib/levels.js";
 
 interface SessionSummaryProps {
   xpEarned: number;
@@ -7,6 +8,7 @@ interface SessionSummaryProps {
   rootsStudied: number;
   streak: number;
   bonusMode?: boolean;
+  levelUp?: { newLevel: number; oldLevel: number } | null;
 }
 
 export default function SessionSummary({
@@ -15,6 +17,7 @@ export default function SessionSummary({
   rootsStudied,
   streak,
   bonusMode = false,
+  levelUp,
 }: SessionSummaryProps) {
   return (
     <Box flexDirection="column" paddingLeft={2} paddingY={1}>
@@ -44,6 +47,14 @@ export default function SessionSummary({
             🔥 连续学习: <Text bold color="#FFAF00">{streak}</Text> 天
           </Text>
         </Box>
+
+        {levelUp && (
+          <Box marginTop={1}>
+            <Text color="#5FD7FF">
+              升级! Lv.{levelUp.oldLevel} → Lv.<Text bold color="#FFAF00">{levelUp.newLevel}</Text> {getLevelName(levelUp.newLevel)}
+            </Text>
+          </Box>
+        )}
       </Box>
 
       <Box marginTop={1} justifyContent="space-between">

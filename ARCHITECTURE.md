@@ -10,7 +10,7 @@ alvy supports multiple subjects. `alvy` (no args) shows a subject picker with ar
 
 - **Subject picker at launch** with remember-last (`settings.lastSubject` persisted)
 - **Shared streak and XP** across all subjects (study any subject, streak continues)
-- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (26 concepts / 130 terms), AP CSP (20 concepts / 72 terms), AP World History (batch 1: 5 concepts / 68 terms)
+- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (26 concepts / 130 terms), AP CSP (20 concepts / 72 terms), AP World History (batches 1-2: 10 concepts / 127 terms)
 - **Generalized `useSessionFlow`** hook (Approach A: refactor to be content-agnostic, not parallel duplication)
 - **Planned:** Namespaced `wordsStudied` array (`vocab:benefit`, `psych:adaptation`) to prevent collisions
 
@@ -144,7 +144,7 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/data/roots.json` | 20 roots + 10 affixes = 30 entries × 5 words = 150 words. |
 | `src/data/psych.json` | AP Psychology: 26 concepts × ~5 terms = 130 terms. |
 | `src/data/csp.json` | AP CSP: 20 concepts × ~3-6 terms = 72 terms. |
-| `src/data/whap.json` | AP World History batch 1: 5 concepts × ~7-22 terms = 68 terms. |
+| `src/data/whap.json` | AP World History batches 1-2: 10 concepts × ~6-22 terms = 127 terms. |
 | `install.sh` | One-line installer for macOS/Linux. Installs Node.js via nvm if needed, configures npm prefix, installs alvy globally. |
 
 ## What Does NOT Exist (Yet)

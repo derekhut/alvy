@@ -728,5 +728,645 @@
         "toefl_frequency": "medium"
       }
     ]
+  },
+  {
+    "root": "Trade & Commercial Practices",
+    "type": "root",
+    "meaning_en": "The financial instruments, commercial institutions, and trading practices that facilitated long-distance trade from 1200-1450",
+    "meaning_zh": "贸易与商业实践：1200-1450年间促进长途贸易的金融工具、商业机构和贸易做法",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Mongol Empires & Cultural Exchange", "Indian Ocean & Trans-Saharan Trade"],
+    "words": [
+      {
+        "word": "banking houses",
+        "breakdown": "Banking(银行的) + Houses(机构/商行)",
+        "meaning_en": "Commercial institutions that provided financial services including money lending, currency exchange, and credit to merchants engaged in trade.",
+        "meaning_zh": "银行商行：为从事贸易的商人提供货币借贷、货币兑换和信用服务的商业机构",
+        "derivation": "Bank(银行) + House(商行) → 提供贷款和汇兑服务 → 商人不必携带大量现金 → 长途贸易的金融后盾",
+        "example": "Banking houses in Italian city-states like Florence provided credit to merchants traveling along trade routes.",
+        "example_zh": "佛罗伦萨等意大利城邦的银行商行为沿贸易路线旅行的商人提供信贷。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "bills of exchange",
+        "breakdown": "Bills(票据) + of + Exchange(交换/兑换)",
+        "meaning_en": "Financial instruments that allowed merchants to transfer money across distances without physically transporting currency, facilitating long-distance trade.",
+        "meaning_zh": "汇票：允许商人在不实际运输货币的情况下跨距离转账的金融工具，促进了长途贸易",
+        "derivation": "Bill(票据) + Exchange(兑换) → 一纸凭证代替真金白银 → 在异地银行兑现 → 降低了运输风险",
+        "example": "Bills of exchange allowed a merchant in Cairo to pay a supplier in Baghdad without transporting gold.",
+        "example_zh": "汇票使开罗的商人无需运输黄金就能向巴格达的供应商付款。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "caravanserai",
+        "breakdown": "Caravan(商队) + Serai(旅馆/宫殿)",
+        "meaning_en": "A roadside inn or fortified trading post that provided shelter and facilities for merchants and traders traveling along trade routes.",
+        "meaning_zh": "商队旅馆：贸易路线沿线为商人和旅行者提供住所和设施的路边客栈或设防贸易站",
+        "derivation": "Caravan(商队) + Serai(旅馆) → 丝路上每隔一天路程就有一个 → 提供食宿、储存货物、交换信息 → 古代的「服务区」",
+        "example": "Caravanserais along the Silk Roads provided merchants with food, shelter, and a marketplace to trade goods.",
+        "example_zh": "丝绸之路沿线的商队旅馆为商人提供食物、住所和交易货物的市场。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "commercial practices",
+        "breakdown": "Commercial(商业的) + Practices(实践/做法)",
+        "meaning_en": "Methods and systems used in conducting trade and business, including standardized trading procedures and financial mechanisms that facilitated exchange.",
+        "meaning_zh": "商业实践：用于开展贸易和商业的方法和制度，包括标准化贸易程序和促进交换的金融机制",
+        "derivation": "Commerce(商业) + Practice(实践) → 统一度量衡+信用体系+合同制度 → 使跨文化贸易变得可行",
+        "example": "Standardized commercial practices, such as common weights and measures, facilitated trade across diverse regions.",
+        "example_zh": "统一度量衡等标准化商业实践促进了不同地区之间的贸易。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "forms of credit",
+        "breakdown": "Forms(形式) + of + Credit(信用/信贷)",
+        "meaning_en": "Financial instruments and practices, such as letters of credit, that facilitated long-distance trade by allowing merchants to conduct transactions without physically transporting large amounts of currency.",
+        "meaning_zh": "信用形式：信用证等金融工具和实践，通过允许商人无需实际运输大量货币即可进行交易来促进长途贸易",
+        "derivation": "Credit(信用) → 以信任为基础的金融工具 → 信用证+汇票+合伙制 → 化解长途贸易的资金难题",
+        "example": "Forms of credit, including letters of credit, allowed merchants to conduct business across vast distances safely.",
+        "example_zh": "信用证等信用形式使商人能够安全地在广大距离上开展业务。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "interregional trade",
+        "breakdown": "Inter-(之间) + Regional(区域的) + Trade(贸易)",
+        "meaning_en": "Commercial exchange of goods across vast geographic distances, connecting multiple continents and regions during the early modern period.",
+        "meaning_zh": "跨区域贸易：跨越广阔地理距离的商品交换，连接多个大洲和地区",
+        "derivation": "Inter-(跨) + Region(区域) + Trade(贸易) → 不同地区之间的商品流通 → 丝绸之路+印度洋+跨撒哈拉 → 全球化的雏形",
+        "example": "Interregional trade connected China, the Islamic world, Africa, and Europe through overland and maritime routes.",
+        "example_zh": "跨区域贸易通过陆路和海路连接了中国、伊斯兰世界、非洲和欧洲。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "iron and steel",
+        "breakdown": "Iron(铁) + and + Steel(钢)",
+        "meaning_en": "Metals whose manufacture expanded in China during this period, reflecting increased productive capacity and trade demand.",
+        "meaning_zh": "铁和钢：这一时期在中国制造量大幅增长的金属，反映了生产能力和贸易需求的增加",
+        "derivation": "Iron(铁) + Steel(钢) → 宋代冶铁技术领先世界 → 年产铁达12.5万吨 → 用于农具、武器和贸易商品",
+        "example": "Song China's iron and steel production surpassed that of all of Europe, reflecting its enormous productive capacity.",
+        "example_zh": "宋朝的铁和钢产量超过了整个欧洲，反映了其巨大的生产能力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "luxury goods",
+        "breakdown": "Luxury(奢侈的) + Goods(商品)",
+        "meaning_en": "High-value, non-essential commodities such as textiles, porcelains, spices, and precious items that were highly desired and traded across long distances.",
+        "meaning_zh": "奢侈品：纺织品、瓷器、香料和珍贵物品等高价值非必需商品，在长途贸易中备受追捧",
+        "derivation": "Luxury(奢华) + Goods(商品) → 丝绸、瓷器、香料、宝石 → 轻便高价值 → 值得长途运输 → 贸易的主要驱动力",
+        "example": "Luxury goods such as Chinese silk and porcelain were among the most valuable commodities traded along the Silk Roads.",
+        "example_zh": "中国丝绸和瓷器等奢侈品是丝绸之路上交易的最有价值的商品。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "money economies",
+        "breakdown": "Money(货币) + Economies(经济体系)",
+        "meaning_en": "Economic systems based on the use of currency and monetary exchange rather than barter, which expanded trade capabilities.",
+        "meaning_zh": "货币经济：基于货币使用和货币交换而非以物易物的经济体系，扩大了贸易能力",
+        "derivation": "Money(货币) + Economy(经济) → 从以物易物到使用货币 → 交易更方便 → 促进商业化和城市化",
+        "example": "The growth of money economies in Song China and the Islamic world facilitated the expansion of long-distance trade.",
+        "example_zh": "宋朝和伊斯兰世界货币经济的发展促进了长途贸易的扩展。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "paper money",
+        "breakdown": "Paper(纸) + Money(货币)",
+        "meaning_en": "Currency made from paper rather than metal, used in money economies to facilitate trade and commerce.",
+        "meaning_zh": "纸币：用纸而非金属制成的货币，宋朝首创「交子」，是世界最早的纸币",
+        "derivation": "Paper(纸) + Money(钱) → 宋代四川「交子」→ 世界最早的纸币 → 方便携带 → 促进大额贸易",
+        "example": "Paper money, first used in Song China, made large-scale commercial transactions far more convenient.",
+        "example_zh": "最先在宋朝使用的纸币使大规模商业交易变得更加便利。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "porcelains",
+        "breakdown": "Porcelain(瓷器)",
+        "meaning_en": "Fine ceramic goods produced primarily by Chinese artisans and exported as luxury items through trade networks.",
+        "meaning_zh": "瓷器：主要由中国工匠生产的精美陶瓷制品，通过贸易网络作为奢侈品出口，是中国的标志性商品",
+        "derivation": "Porcelain(瓷器) → 中国独有的制造技术 → 景德镇为中心 → 沿海路出口至全世界 → China=瓷器=中国",
+        "example": "Chinese porcelains were prized throughout Afro-Eurasia and traded along both the Silk Roads and maritime routes.",
+        "example_zh": "中国瓷器在整个亚非欧受到珍视，沿丝绸之路和海上航线交易。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "textiles",
+        "breakdown": "Textiles(纺织品)",
+        "meaning_en": "Woven fabrics and cloth produced by Chinese, Persian, and Indian artisans for export through trade networks.",
+        "meaning_zh": "纺织品：由中国、波斯和印度工匠生产的织物和布料，通过贸易网络出口",
+        "derivation": "Textile(纺织品) → 丝绸(中国) + 棉布(印度) + 地毯(波斯) → 贸易量最大的商品类别 → 丝绸之路因此得名",
+        "example": "Textiles, especially Chinese silk and Indian cotton, were among the most traded goods in Afro-Eurasian commerce.",
+        "example_zh": "纺织品，尤其是中国丝绸和印度棉布，是亚非欧贸易中交易量最大的商品。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "trade routes",
+        "breakdown": "Trade(贸易) + Routes(路线)",
+        "meaning_en": "Established pathways—both maritime and overland—along which merchants transported goods, ideas, and cultural practices between regions.",
+        "meaning_zh": "贸易路线：商人沿之运输商品、思想和文化习俗的既定通道，包括海路和陆路",
+        "derivation": "Trade(贸易) + Route(路线) → 陆上丝路+海上丝路+跨撒哈拉商路 → 商品、文化、宗教和疾病的传播通道",
+        "example": "Trade routes such as the Silk Roads and Indian Ocean networks connected distant civilizations across Afro-Eurasia.",
+        "example_zh": "丝绸之路和印度洋网络等贸易路线连接了亚非欧各地遥远的文明。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "trading cities",
+        "breakdown": "Trading(贸易的) + Cities(城市)",
+        "meaning_en": "Urban centers that grew wealthy and powerful through their role as hubs for commercial exchange and merchant activity.",
+        "meaning_zh": "贸易城市：作为商业交换和商人活动枢纽而变得富裕和强大的城市中心",
+        "derivation": "Trade(贸易) + City(城市) → 位于贸易路线交汇处 → 如杭州、巴格达、威尼斯、基尔瓦 → 财富汇聚之地",
+        "example": "Trading cities like Venice, Hangzhou, and Kilwa grew wealthy through their positions on major trade routes.",
+        "example_zh": "威尼斯、杭州和基尔瓦等贸易城市凭借其在主要贸易路线上的位置而变得富裕。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Mongol Empires & Cultural Exchange",
+    "type": "root",
+    "meaning_en": "The Mongol conquests and their impact on interregional contacts, cultural transfer, and knowledge exchange across Afro-Eurasia from 1200-1450",
+    "meaning_zh": "蒙古帝国与文化交流：1200-1450年间蒙古征服及其对亚非欧跨区域接触、文化传递和知识交流的影响",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Trade & Commercial Practices", "Cultural & Technological Diffusion"],
+    "words": [
+      {
+        "word": "Afro-Eurasian trade",
+        "breakdown": "Afro-(非洲) + Eurasian(欧亚的) + Trade(贸易)",
+        "meaning_en": "Commercial networks and exchange of goods connecting Africa, Europe, and Asia, facilitated by imperial expansion and conquest.",
+        "meaning_zh": "亚非欧贸易：连接非洲、欧洲和亚洲的商业网络和商品交换，因帝国扩张和征服而得到促进",
+        "derivation": "Afro(非洲) + Eurasia(欧亚) + Trade(贸易) → 三大洲通过贸易路线相连 → 蒙古和平时期达到顶峰",
+        "example": "Afro-Eurasian trade intensified during the Mongol period as the Pax Mongolica made trade routes safer.",
+        "example_zh": "蒙古时期随着「蒙古和平」使贸易路线更安全，亚非欧贸易显著加强。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "communication",
+        "breakdown": "Communication(交流/传播)",
+        "meaning_en": "The exchange of information, ideas, and cultural practices between different peoples and regions through trade and contact.",
+        "meaning_zh": "交流传播：通过贸易和接触在不同民族和地区之间交换信息、思想和文化习俗",
+        "derivation": "Communicate(交流) + -tion(行为) → 信息在不同文明间流动 → 语言、文字、宗教、技术都是传播内容",
+        "example": "Communication between civilizations accelerated as Mongol trade routes connected East Asia to Europe.",
+        "example_zh": "随着蒙古贸易路线连接东亚和欧洲，文明之间的交流传播加速了。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "conquerors' economies",
+        "breakdown": "Conquerors'(征服者的) + Economies(经济体系)",
+        "meaning_en": "Economic systems and structures established and controlled by imperial powers in conquered territories.",
+        "meaning_zh": "征服者经济：帝国在征服领土上建立和控制的经济制度和结构",
+        "derivation": "Conqueror(征服者) + Economy(经济) → 征服者重组被征服地区的经济 → 征税+贸易垄断+强制劳动",
+        "example": "Conquerors' economies in Mongol-controlled territories redirected trade flows to benefit the empire.",
+        "example_zh": "蒙古控制领土上的征服者经济将贸易流向重新引导以使帝国受益。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "cultural transfer",
+        "breakdown": "Cultural(文化的) + Transfer(转移/传递)",
+        "meaning_en": "The movement and adoption of ideas, beliefs, practices, and knowledge systems from one region or civilization to another.",
+        "meaning_zh": "文化传递：思想、信仰、实践和知识体系从一个地区或文明向另一个的流动和采纳",
+        "derivation": "Culture(文化) + Transfer(转移) → 文化随商人、传教士、征服者流动 → 在新环境中被改造和吸收",
+        "example": "Cultural transfer along Mongol trade routes brought Chinese printing technology and Islamic astronomy to Europe.",
+        "example_zh": "蒙古贸易路线上的文化传递将中国的印刷技术和伊斯兰天文学带到了欧洲。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "empires",
+        "breakdown": "Empires(帝国)",
+        "meaning_en": "Large political units that extended control over diverse populations and territories through conquest or colonization.",
+        "meaning_zh": "帝国：通过征服或殖民将控制扩展到多元人口和领土的大型政治单位",
+        "derivation": "Empire(帝国) → 通过武力征服建立 → 统治多民族多文化地区 → 如蒙古帝国横跨欧亚大陆",
+        "example": "Empires such as the Mongol Empire facilitated trade and cultural exchange across vast distances.",
+        "example_zh": "蒙古帝国等帝国促进了跨越广阔距离的贸易和文化交流。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Greco-Islamic medical knowledge",
+        "breakdown": "Greco-(希腊的) + Islamic(伊斯兰的) + Medical(医学的) + Knowledge(知识)",
+        "meaning_en": "Medical theories and practices developed through the synthesis of Greek and Islamic scholarship that were transmitted to western Europe during the medieval period.",
+        "meaning_zh": "希腊-伊斯兰医学知识：通过希腊和伊斯兰学术融合发展出的医学理论和实践，在中世纪传入西欧",
+        "derivation": "Greco(希腊) + Islamic(伊斯兰) + Medical(医学) → 希腊医学经阿拉伯学者翻译保存 → 加入临床经验 → 传回欧洲",
+        "example": "Greco-Islamic medical knowledge, preserved and expanded by scholars like Ibn Sina, reached Europe through translation movements.",
+        "example_zh": "由伊本·西那等学者保存和发展的希腊-伊斯兰医学知识通过翻译运动传入欧洲。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "imperial expansion",
+        "breakdown": "Imperial(帝国的) + Expansion(扩张)",
+        "meaning_en": "The process by which empires extended their territorial control and political authority over new regions and populations.",
+        "meaning_zh": "帝国扩张：帝国将其领土控制和政治权威扩展到新地区和新人口的过程",
+        "derivation": "Imperial(帝国) + Expand(扩展) → 军事征服+政治整合 → 版图不断扩大 → 蒙古从草原到横跨欧亚的典型案例",
+        "example": "Imperial expansion by the Mongols created the largest contiguous land empire in human history.",
+        "example_zh": "蒙古人的帝国扩张创建了人类历史上最大的连续陆地帝国。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "interregional contacts",
+        "breakdown": "Inter-(之间) + Regional(区域的) + Contacts(接触)",
+        "meaning_en": "Connections and interactions between different geographic regions and their peoples, often resulting in the exchange of goods, ideas, and technologies.",
+        "meaning_zh": "跨区域接触：不同地理区域及其人民之间的联系和互动，往往导致商品、思想和技术的交流",
+        "derivation": "Inter-(跨) + Region(区域) + Contact(接触) → 不同文明的相遇和互动 → 贸易、战争、传教都是接触方式",
+        "example": "Interregional contacts intensified during the Mongol period as trade routes became safer and more heavily traveled.",
+        "example_zh": "蒙古时期随着贸易路线变得更安全、更繁忙，跨区域接触显著加强。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mongol Empire",
+        "breakdown": "Mongol(蒙古) + Empire(帝国)",
+        "meaning_en": "A vast transcontinental empire established by Mongol conquests in the 13th and 14th centuries that facilitated extensive interregional contacts and exchanges.",
+        "meaning_zh": "蒙古帝国：13至14世纪由蒙古征服建立的庞大跨洲帝国，促进了广泛的跨区域接触和交流",
+        "derivation": "Mongol(蒙古) + Empire(帝国) → 成吉思汗统一蒙古部落 → 三次西征 → 横跨欧亚 → 「蒙古和平」促进贸易",
+        "example": "The Mongol Empire at its height stretched from Korea to Eastern Europe, facilitating unprecedented exchange.",
+        "example_zh": "蒙古帝国鼎盛时期从朝鲜延伸到东欧，促进了前所未有的交流。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mongol khanates",
+        "breakdown": "Mongol(蒙古) + Khanates(汗国)",
+        "meaning_en": "The regional divisions of the Mongol Empire, each ruled by a khan and representing distinct territorial and political units.",
+        "meaning_zh": "蒙古汗国：蒙古帝国的区域性分支，各由一位可汗统治，代表不同的领土和政治单位",
+        "derivation": "Mongol(蒙古) + Khan(汗/可汗) + -ate(政体) → 帝国分裂为四大汗国 → 金帐汗国+察合台汗国+窝阔台汗国+伊尔汗国",
+        "example": "After Genghis Khan's death, the Mongol Empire divided into four major Mongol khanates.",
+        "example_zh": "成吉思汗去世后，蒙古帝国分裂为四大蒙古汗国。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "numbering systems",
+        "breakdown": "Numbering(计数的) + Systems(系统)",
+        "meaning_en": "Mathematical systems for representing quantities, including the Hindu-Arabic numerals that were transferred to Europe through Mongol-era contacts.",
+        "meaning_zh": "计数系统：表示数量的数学系统，包括通过蒙古时代的交流传入欧洲的印度-阿拉伯数字",
+        "derivation": "Number(数字) + System(系统) → 印度发明0-9 → 阿拉伯学者改进传播 → 蒙古时代传入欧洲 → 取代罗马数字",
+        "example": "Hindu-Arabic numbering systems spread to Europe through interregional contacts during the Mongol era.",
+        "example_zh": "印度-阿拉伯计数系统在蒙古时代通过跨区域接触传播到欧洲。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "technological transfer",
+        "breakdown": "Technological(技术的) + Transfer(转移)",
+        "meaning_en": "The movement and adoption of tools, techniques, and innovations from one region or civilization to another.",
+        "meaning_zh": "技术转移：工具、技术和创新从一个地区或文明向另一个地区或文明的流动和采纳",
+        "derivation": "Technology(技术) + Transfer(转移) → 发明从原产地传播到其他文明 → 如火药从中国→伊斯兰世界→欧洲",
+        "example": "Technological transfer along Mongol trade routes brought Chinese gunpowder and printing to the Islamic world and Europe.",
+        "example_zh": "蒙古贸易路线上的技术转移将中国的火药和印刷术带到了伊斯兰世界和欧洲。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Uyghur script",
+        "breakdown": "Uyghur(维吾尔) + Script(文字/书写系统)",
+        "meaning_en": "A writing system used by the Uyghur people that was adopted by the Mongols and influenced writing systems across their empire.",
+        "meaning_zh": "回鹘文字：维吾尔人使用的书写系统，被蒙古人采用并影响了其帝国内的文字系统",
+        "derivation": "Uyghur(回鹘/维吾尔) + Script(文字) → 源自粟特文 → 被蒙古人借用为官方文字 → 后衍生出满文",
+        "example": "The Mongols adopted the Uyghur script as the basis for their own writing system to administer their vast empire.",
+        "example_zh": "蒙古人采用回鹘文字作为自己书写系统的基础，用于管理其庞大帝国。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Indian Ocean & Trans-Saharan Trade",
+    "type": "root",
+    "meaning_en": "The maritime and overland trade networks of the Indian Ocean and Sahara Desert that connected Africa, Asia, and the Middle East from 1200-1450",
+    "meaning_zh": "印度洋与跨撒哈拉贸易：1200-1450年间连接非洲、亚洲和中东的印度洋海上贸易和跨撒哈拉沙漠贸易网络",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Trade & Commercial Practices", "Mongol Empires & Cultural Exchange"],
+    "words": [
+      {
+        "word": "astrolabe",
+        "breakdown": "Astro-(星/天体) + Labe(取/测量)",
+        "meaning_en": "An astronomical instrument used for navigation and determining latitude by measuring the position of celestial bodies.",
+        "meaning_zh": "星盘：通过测量天体位置来导航和确定纬度的天文仪器，是中世纪航海的关键工具",
+        "derivation": "Astro(星星) + Labe(测量) → 测量星星位置的仪器 → 确定纬度和方向 → 远洋航海的「GPS」",
+        "example": "Arab navigators used the astrolabe to determine their latitude while sailing across the Indian Ocean.",
+        "example_zh": "阿拉伯航海家在横渡印度洋时使用星盘来确定纬度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "compass",
+        "breakdown": "Compass(指南针/罗盘)",
+        "meaning_en": "A navigational instrument using magnetic properties to determine direction, essential for oceanic navigation.",
+        "meaning_zh": "指南针：利用磁性确定方向的导航仪器，对远洋航行至关重要，由中国发明后传遍世界",
+        "derivation": "Com-(共同) + Pass(步伐/通过) → 指引方向的工具 → 中国四大发明之一 → 传入阿拉伯和欧洲 → 开启大航海时代",
+        "example": "The compass, originally invented in China, became essential for maritime navigation in the Indian Ocean.",
+        "example_zh": "最初由中国发明的指南针成为印度洋海上航行不可或缺的工具。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "diasporic communities",
+        "breakdown": "Diasporic(散居的) + Communities(社区)",
+        "meaning_en": "Groups of merchants and settlers from one region who established themselves in distant locations along trade routes, maintaining their own cultural traditions while interacting with local populations.",
+        "meaning_zh": "散居社区：来自某一地区的商人和定居者在贸易路线沿线的远方建立的聚居群体，保持自身文化传统同时与当地人互动",
+        "derivation": "Diaspora(散居/流散) + Community(社区) → 商人在异乡建立聚居区 → 如东南亚的华人社区 → 文化交融的桥梁",
+        "example": "Diasporic communities of Arab and Indian merchants in Southeast Asian port cities facilitated cross-cultural trade.",
+        "example_zh": "东南亚港口城市中阿拉伯和印度商人的散居社区促进了跨文化贸易。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "environmental knowledge",
+        "breakdown": "Environmental(环境的) + Knowledge(知识)",
+        "meaning_en": "Understanding of natural conditions and patterns, such as wind systems and ocean currents, that enabled the development and maintenance of trade networks.",
+        "meaning_zh": "环境知识：对风向系统和洋流等自然条件和规律的了解，使贸易网络的开发和维持成为可能",
+        "derivation": "Environment(环境) + Knowledge(知识) → 掌握季风和洋流规律 → 知道何时出发何时返回 → 航海的生存智慧",
+        "example": "Environmental knowledge of monsoon patterns allowed Indian Ocean sailors to time their voyages for optimal conditions.",
+        "example_zh": "对季风规律的环境知识使印度洋水手能够在最佳条件下安排航行时间。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gujarat",
+        "breakdown": "Gujarat(古吉拉特)",
+        "meaning_en": "A region in South Asia that became a powerful trading state through its participation in Indian Ocean commerce.",
+        "meaning_zh": "古吉拉特：南亚的一个地区，通过参与印度洋商业贸易成为强大的贸易国家",
+        "derivation": "Gujarat(古吉拉特) → 印度西海岸 → 地理位置连接阿拉伯海和印度内陆 → 棉纺织品出口中心 → 印度洋贸易重镇",
+        "example": "Gujarat became one of the wealthiest regions in South Asia through its dominance in Indian Ocean textile trade.",
+        "example_zh": "古吉拉特通过其在印度洋纺织品贸易中的主导地位成为南亚最富裕的地区之一。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Indian Ocean trading network",
+        "breakdown": "Indian Ocean(印度洋) + Trading(贸易的) + Network(网络)",
+        "meaning_en": "The interconnected system of maritime trade routes and commercial connections centered on the Indian Ocean that linked Africa, Asia, and the Middle East.",
+        "meaning_zh": "印度洋贸易网络：以印度洋为中心、连接非洲、亚洲和中东的海上贸易路线和商业联系的互联系统",
+        "derivation": "Indian Ocean(印度洋) + Trade(贸易) + Network(网络) → 季风驱动的海上贸易体系 → 连接三大洲数十个港口",
+        "example": "The Indian Ocean trading network was the largest maritime trade system in the world before 1500.",
+        "example_zh": "印度洋贸易网络是1500年之前世界上最大的海上贸易体系。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "maritime activity",
+        "breakdown": "Maritime(海上的) + Activity(活动)",
+        "meaning_en": "Trade, exploration, and military operations conducted by sea.",
+        "meaning_zh": "海上活动：在海上进行的贸易、探险和军事行动",
+        "derivation": "Maritime(海洋的) + Activity(活动) → 海上贸易+探险+海战 → 印度洋和南海的繁忙航运 → 连接沿海文明",
+        "example": "Maritime activity in the Indian Ocean intensified between 1200 and 1450 as new ship technologies emerged.",
+        "example_zh": "随着新的造船技术出现，1200至1450年间印度洋的海上活动日益频繁。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "ship designs",
+        "breakdown": "Ship(船) + Designs(设计)",
+        "meaning_en": "Innovations in vessel construction that enabled longer ocean voyages and increased cargo capacity.",
+        "meaning_zh": "船舶设计：使更远距离的远洋航行和更大运载量成为可能的造船创新",
+        "derivation": "Ship(船) + Design(设计) → 中国宝船+阿拉伯三角帆船(dhow)+欧洲卡拉维尔帆船 → 各有特色的造船技术",
+        "example": "Innovations in ship designs, such as the Chinese junk and Arab dhow, enabled longer and safer ocean voyages.",
+        "example_zh": "中国帆船和阿拉伯三角帆船等船舶设计的创新使更长距离、更安全的远洋航行成为可能。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sultanate of Malacca",
+        "breakdown": "Sultanate(苏丹国) + of + Malacca(马六甲)",
+        "meaning_en": "A maritime trading state in Southeast Asia that controlled strategic trade routes in the Indian Ocean.",
+        "meaning_zh": "马六甲苏丹国：东南亚的海上贸易国家，控制着印度洋的战略贸易路线，是东西方贸易的咽喉要道",
+        "derivation": "Sultan(苏丹) + Malacca(马六甲) → 控制马六甲海峡 → 东西方贸易必经之路 → 伊斯兰教在东南亚传播的中心",
+        "example": "The Sultanate of Malacca controlled the strategic strait between Sumatra and the Malay Peninsula.",
+        "example_zh": "马六甲苏丹国控制着苏门答腊和马来半岛之间的战略性海峡。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Swahili Coast",
+        "breakdown": "Swahili(斯瓦希里) + Coast(海岸)",
+        "meaning_en": "A region of East Africa along the Indian Ocean where city-states developed as major trading centers.",
+        "meaning_zh": "斯瓦希里海岸：东非沿印度洋的一个地区，城邦在此发展为主要贸易中心，融合了非洲和阿拉伯文化",
+        "derivation": "Swahili(海岸的人) + Coast(海岸) → 东非沿海城邦群 → 如基尔瓦、蒙巴萨 → 非洲内陆黄金象牙的出海口",
+        "example": "The Swahili Coast city-states such as Kilwa and Mombasa became wealthy through Indian Ocean trade.",
+        "example_zh": "基尔瓦和蒙巴萨等斯瓦希里海岸城邦通过印度洋贸易变得富裕。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "transportation technologies",
+        "breakdown": "Transportation(运输) + Technologies(技术)",
+        "meaning_en": "Innovations in methods and tools for moving goods and people, such as improved ships and navigation instruments, that increased the efficiency and volume of trade.",
+        "meaning_zh": "运输技术：改进货物和人员运输的方法和工具的创新，如改良船只和导航仪器，提高了贸易效率和规模",
+        "derivation": "Transport(运输) + Technology(技术) → 更大的船+更好的导航+更安全的路线 → 运输成本降低 → 贸易量激增",
+        "example": "Advances in transportation technologies, including the compass and improved sails, expanded maritime trade routes.",
+        "example_zh": "指南针和改良帆具等运输技术的进步扩展了海上贸易路线。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "wind and currents patterns",
+        "breakdown": "Wind(风) + and + Currents(洋流) + Patterns(规律)",
+        "meaning_en": "The predictable movements of ocean winds and water currents that facilitated efficient maritime routes for ships.",
+        "meaning_zh": "风向和洋流规律：可预测的海洋风向和水流运动，为船只提供了高效的海上航线",
+        "derivation": "Wind(风) + Current(洋流) + Pattern(规律) → 季风冬夏交替 → 决定航行时间和方向 → 掌握规律=掌握贸易命脉",
+        "example": "Knowledge of wind and currents patterns enabled sailors to navigate the Indian Ocean using seasonal monsoons.",
+        "example_zh": "对风向和洋流规律的了解使水手能够利用季节性季风在印度洋航行。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "camel saddle",
+        "breakdown": "Camel(骆驼) + Saddle(鞍)",
+        "meaning_en": "A specialized equipment designed to carry cargo on camels, enabling more efficient transport of goods across desert trade routes.",
+        "meaning_zh": "骆驼鞍：专门设计用于在骆驼上运载货物的装备，使沙漠贸易路线上的货物运输更加高效",
+        "derivation": "Camel(骆驼) + Saddle(鞍具) → 改良驼鞍设计 → 运载更多货物 → 跨撒哈拉贸易的关键技术突破",
+        "example": "The improved camel saddle allowed merchants to transport heavier loads across the Sahara Desert.",
+        "example_zh": "改良的骆驼鞍使商人能够跨越撒哈拉沙漠运输更重的货物。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "caravans",
+        "breakdown": "Caravans(商队)",
+        "meaning_en": "Organized groups of merchants and pack animals traveling together along trade routes for protection and efficiency.",
+        "meaning_zh": "商队：沿贸易路线结伴而行的有组织的商人和驮畜群体，以获得安全保障和提高效率",
+        "derivation": "Caravan(商队) → 数十上百头骆驼组成的队伍 → 结伴穿越沙漠 → 抵御劫匪和自然灾害 → 沙漠中的「船队」",
+        "example": "Caravans of hundreds of camels carried gold, salt, and textiles across the Sahara along trans-Saharan trade routes.",
+        "example_zh": "由数百头骆驼组成的商队沿跨撒哈拉贸易路线运送黄金、盐和纺织品。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mali",
+        "breakdown": "Mali(马里)",
+        "meaning_en": "A West African empire that expanded during the medieval period and played a major role in facilitating trans-Saharan trade and communication networks.",
+        "meaning_zh": "马里帝国：中世纪扩张的西非帝国，在促进跨撒哈拉贸易和通信网络中发挥了重要作用",
+        "derivation": "Mali(马里) → 曼萨·穆萨统治下达到鼎盛 → 控制西非黄金产地 → 1324年朝圣途中黄金之多震惊世界",
+        "example": "Mali's emperor Mansa Musa became legendary for his lavish pilgrimage to Mecca, distributing gold along the way.",
+        "example_zh": "马里帝国皇帝曼萨·穆萨因其奢华的麦加朝圣之旅而成为传奇，他沿途大量分发黄金。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "trans-Saharan trade",
+        "breakdown": "Trans-(跨越) + Saharan(撒哈拉的) + Trade(贸易)",
+        "meaning_en": "Trade networks and commercial routes that crossed the Sahara Desert, connecting sub-Saharan Africa with North Africa and the Mediterranean world.",
+        "meaning_zh": "跨撒哈拉贸易：穿越撒哈拉沙漠的贸易网络和商业路线，连接撒哈拉以南非洲与北非和地中海世界",
+        "derivation": "Trans-(跨越) + Sahara(撒哈拉) + Trade(贸易) → 骆驼商队穿越世界最大沙漠 → 黄金北运、盐南运 → 连接黑非洲与地中海",
+        "example": "Trans-Saharan trade routes carried gold northward and salt southward, enriching empires on both sides of the desert.",
+        "example_zh": "跨撒哈拉贸易路线将黄金向北运、盐向南运，使沙漠两侧的帝国都变得富裕。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Cultural & Technological Diffusion",
+    "type": "root",
+    "meaning_en": "The spread of cultural traditions, ideas, and technological innovations across Afro-Eurasia through trade networks and interregional contacts from 1200-1450",
+    "meaning_zh": "文化与技术扩散：1200-1450年间通过贸易网络和跨区域接触在亚非欧传播的文化传统、思想和技术创新",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Mongol Empires & Cultural Exchange", "Disease & Biological Exchange"],
+    "words": [
+      {
+        "word": "artistic traditions",
+        "breakdown": "Artistic(艺术的) + Traditions(传统)",
+        "meaning_en": "The visual, musical, and performative cultural practices and styles characteristic of a society.",
+        "meaning_zh": "艺术传统：一个社会特有的视觉、音乐和表演等文化实践和风格",
+        "derivation": "Art(艺术) + Tradition(传统) → 绘画、雕塑、音乐、舞蹈等代代相传的艺术形式 → 在交流中相互影响和融合",
+        "example": "Artistic traditions were exchanged along trade routes, blending Chinese, Islamic, and European styles.",
+        "example_zh": "艺术传统沿贸易路线相互交流，融合了中国、伊斯兰和欧洲的风格。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "cultural effects",
+        "breakdown": "Cultural(文化的) + Effects(影响/效果)",
+        "meaning_en": "The influence of trade and exchange networks on the customs, traditions, and practices of societies.",
+        "meaning_zh": "文化影响：贸易和交换网络对社会风俗、传统和实践产生的影响",
+        "derivation": "Culture(文化) + Effect(效果) → 贸易不仅交换商品也交换文化 → 饮食、服饰、宗教、语言都受影响",
+        "example": "The cultural effects of Indian Ocean trade included the spread of Islam to Southeast Asia and East Africa.",
+        "example_zh": "印度洋贸易的文化影响包括伊斯兰教向东南亚和东非的传播。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "diffusion",
+        "breakdown": "Diffusion(扩散/传播)",
+        "meaning_en": "The spread of cultural traditions, ideas, technologies, and innovations from one region or society to another.",
+        "meaning_zh": "扩散/传播：文化传统、思想、技术和创新从一个地区或社会向另一个地区或社会的传播",
+        "derivation": "Dif-(分散) + Fuse(倾注) → 像水波一样向外扩散 → 文化和技术从发源地向四周传播 → 贸易是最重要的传播媒介",
+        "example": "The diffusion of Chinese papermaking technology across Eurasia transformed record-keeping and communication.",
+        "example_zh": "中国造纸技术在欧亚大陆的扩散改变了记录保存和通信方式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "gunpowder",
+        "breakdown": "Gun(火炮) + Powder(粉末)",
+        "meaning_en": "An explosive mixture used in firearms and cannons that became a crucial military technology for imperial expansion.",
+        "meaning_zh": "火药：用于火器和大炮的爆炸性混合物，成为帝国扩张的关键军事技术，由中国发明",
+        "derivation": "Gun(火器) + Powder(粉末) → 中国四大发明之一 → 从烟花到武器 → 传入伊斯兰和欧洲 → 改变了战争形态",
+        "example": "Gunpowder, invented in China, spread westward through trade routes and transformed warfare across Eurasia.",
+        "example_zh": "在中国发明的火药通过贸易路线向西传播，改变了整个欧亚大陆的战争方式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "intellectual effects",
+        "breakdown": "Intellectual(知识的/学术的) + Effects(影响/效果)",
+        "meaning_en": "The impact of exchange networks on ideas, knowledge, and ways of thinking across cultures.",
+        "meaning_zh": "知识/学术影响：交换网络对不同文化的思想、知识和思维方式产生的影响",
+        "derivation": "Intellect(智力) + Effect(效果) → 贸易带动知识流动 → 数学、医学、哲学等跨文明传播 → 催生新的学术成果",
+        "example": "The intellectual effects of cross-cultural exchange included the transmission of Greek philosophy to medieval Europe via Islamic scholars.",
+        "example_zh": "跨文化交流的知识影响包括希腊哲学通过伊斯兰学者传入中世纪欧洲。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "literary traditions",
+        "breakdown": "Literary(文学的) + Traditions(传统)",
+        "meaning_en": "The body of written works, storytelling practices, and written cultural expressions of a society.",
+        "meaning_zh": "文学传统：一个社会的书面作品、叙事传统和书面文化表达的总体",
+        "derivation": "Literature(文学) + Tradition(传统) → 诗歌、散文、故事等文学形式 → 在贸易接触中相互影响 → 如波斯诗歌影响印度文学",
+        "example": "Literary traditions traveled along trade routes, as Persian poetry influenced literary works from India to Ottoman Turkey.",
+        "example_zh": "文学传统沿贸易路线传播，波斯诗歌影响了从印度到奥斯曼土耳其的文学作品。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "paper",
+        "breakdown": "Paper(纸)",
+        "meaning_en": "A Chinese technological innovation used for writing and communication that spread throughout Afro-Eurasia.",
+        "meaning_zh": "纸：中国的一项技术创新，用于书写和通信，传遍了整个亚非欧大陆",
+        "derivation": "Paper(纸) → 蔡伦改良造纸术 → 751年怛罗斯之战后传入阿拉伯 → 再传入欧洲 → 知识传播的革命性载体",
+        "example": "Paper, invented in China, spread to the Islamic world and then to Europe, revolutionizing the storage of knowledge.",
+        "example_zh": "在中国发明的纸传播到伊斯兰世界再到欧洲，革新了知识的存储方式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "scientific innovations",
+        "breakdown": "Scientific(科学的) + Innovations(创新)",
+        "meaning_en": "New discoveries and advances in knowledge about the natural world.",
+        "meaning_zh": "科学创新：关于自然世界的新发现和知识进步",
+        "derivation": "Science(科学) + Innovate(革新) → 天文、医学、数学、光学等领域的突破 → 在跨区域交流中传播和发展",
+        "example": "Scientific innovations in the Islamic world, including advances in optics and astronomy, spread to Europe through trade contacts.",
+        "example_zh": "伊斯兰世界的科学创新，包括光学和天文学的进步，通过贸易接触传播到欧洲。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "technological innovations",
+        "breakdown": "Technological(技术的) + Innovations(创新)",
+        "meaning_en": "New tools, techniques, and designs that improved efficiency in navigation, shipbuilding, and other productive activities.",
+        "meaning_zh": "技术创新：改进航海、造船和其他生产活动效率的新工具、新技术和新设计",
+        "derivation": "Technology(技术) + Innovate(革新) → 指南针、星盘、改良船只等新发明 → 提高生产和航行效率 → 推动贸易扩展",
+        "example": "Technological innovations such as the magnetic compass and lateen sail expanded the reach of maritime trade.",
+        "example_zh": "磁罗盘和三角帆等技术创新扩大了海上贸易的范围。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "urbanization",
+        "breakdown": "Urban(城市的) + -ization(化/过程)",
+        "meaning_en": "The process of population concentration in cities and the growth of urban areas as a result of migration and industrialization.",
+        "meaning_zh": "城市化：人口向城市集中和城市地区增长的过程，是贸易繁荣和经济发展的结果",
+        "derivation": "Urban(城市) + -ize(使…化) → 人口从农村涌入城市 → 贸易中心变成大城市 → 如杭州、巴格达、开罗成为百万人口都市",
+        "example": "Urbanization accelerated as trading cities like Hangzhou and Baghdad grew into some of the world's largest cities.",
+        "example_zh": "随着杭州和巴格达等贸易城市发展成为世界上最大的城市之一，城市化进程加速。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Disease & Biological Exchange",
+    "type": "root",
+    "meaning_en": "The spread of diseases, crops, and biological organisms across Afro-Eurasia through trade routes and human contact from 1200-1450",
+    "meaning_zh": "疾病与生物交换：1200-1450年间通过贸易路线和人类接触在亚非欧传播的疾病、作物和生物有机体",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Trade & Commercial Practices", "Indian Ocean & Trans-Saharan Trade"],
+    "words": [
+      {
+        "word": "bubonic plague",
+        "breakdown": "Bubonic(腺肿的) + Plague(瘟疫)",
+        "meaning_en": "A devastating epidemic disease transmitted along trade routes that caused massive mortality in Afro-Eurasia during the medieval period.",
+        "meaning_zh": "腺鼠疫/黑死病：沿贸易路线传播的毁灭性流行病，在中世纪造成亚非欧大量人口死亡",
+        "derivation": "Bubo(腹股沟淋巴结肿) + Plague(瘟疫) → 鼠疫杆菌经跳蚤传播 → 沿丝路和海路蔓延 → 欧洲死亡三分之一人口",
+        "example": "The bubonic plague, known as the Black Death, killed an estimated one-third of Europe's population in the 14th century.",
+        "example_zh": "被称为「黑死病」的腺鼠疫在14世纪夺去了欧洲约三分之一人口的生命。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "diffusion of crops",
+        "breakdown": "Diffusion(扩散) + of + Crops(作物)",
+        "meaning_en": "The spread and adoption of plant species across different regions through trade networks and cultural exchange.",
+        "meaning_zh": "作物扩散：通过贸易网络和文化交流在不同地区传播和采纳植物物种的过程",
+        "derivation": "Diffuse(扩散) + Crop(作物) → 占城稻从越南传入中国 → 柑橘从亚洲传入地中海 → 改变各地农业和饮食",
+        "example": "The diffusion of crops such as Champa rice from Vietnam to China dramatically increased agricultural productivity.",
+        "example_zh": "占城稻从越南传入中国等作物扩散极大地提高了农业生产力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "diffusion of pathogens",
+        "breakdown": "Diffusion(扩散) + of + Pathogens(病原体)",
+        "meaning_en": "The transmission and spread of disease-causing organisms across regions through trade routes and human contact.",
+        "meaning_zh": "病原体扩散：通过贸易路线和人类接触在各地区传播致病微生物的过程",
+        "derivation": "Diffuse(扩散) + Pathogen(病原体) → 商人和旅行者携带病菌 → 沿贸易路线传播 → 对无免疫力人群造成毁灭性打击",
+        "example": "The diffusion of pathogens along the Silk Roads contributed to the rapid spread of the Black Death across Eurasia.",
+        "example_zh": "病原体沿丝绸之路的扩散导致黑死病在欧亚大陆迅速蔓延。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "epidemic diseases",
+        "breakdown": "Epidemic(流行的) + Diseases(疾病)",
+        "meaning_en": "Diseases that spread rapidly through a population, affecting large numbers of people across wide geographic areas.",
+        "meaning_zh": "流行病：在人群中迅速传播、影响广大地理区域大量人口的疾病",
+        "derivation": "Epi-(在…之中) + Demos(人民) + Disease(疾病) → 在人群中蔓延的疾病 → 贸易路线成为传播通道 → 如鼠疫、天花",
+        "example": "Epidemic diseases such as the plague spread rapidly along trade routes, devastating populations from China to Europe.",
+        "example_zh": "鼠疫等流行病沿贸易路线迅速传播，从中国到欧洲的人口遭受了毁灭性打击。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "biological diffusion",
+        "breakdown": "Biological(生物的) + Diffusion(扩散)",
+        "meaning_en": "The movement and spread of plants, animals, and diseases across different regions through trade and human interaction.",
+        "meaning_zh": "生物扩散：通过贸易和人类互动在不同地区之间传播的植物、动物和疾病的流动",
+        "derivation": "Bio(生命) + Logical(学科的) + Diffuse(扩散) → 生物随人类活动迁移 → 作物、牲畜、病菌都在「旅行」→ 贸易的隐形乘客",
+        "example": "Biological diffusion along trade networks introduced new crops, livestock, and unfortunately diseases to distant regions.",
+        "example_zh": "贸易网络沿线的生物扩散将新的作物、牲畜以及不幸的是疾病引入了遥远的地区。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Silk Roads",
+        "breakdown": "Silk(丝绸) + Roads(道路)",
+        "meaning_en": "Major trade routes connecting East Asia, Central Asia, and the Mediterranean world, facilitating the exchange of goods, technologies, and ideas from c. 1200-1450.",
+        "meaning_zh": "丝绸之路：连接东亚、中亚和地中海世界的主要贸易路线，促进了约1200-1450年间商品、技术和思想的交流",
+        "derivation": "Silk(丝绸) + Road(道路) → 以中国丝绸命名 → 横贯欧亚大陆的贸易大动脉 → 不仅运输商品也传播文化、宗教和疾病",
+        "example": "The Silk Roads facilitated not only the trade of luxury goods but also the unintended spread of the bubonic plague.",
+        "example_zh": "丝绸之路不仅促进了奢侈品贸易，也无意中加速了腺鼠疫的传播。",
+        "toefl_frequency": "medium"
+      }
+    ]
   }
 ]

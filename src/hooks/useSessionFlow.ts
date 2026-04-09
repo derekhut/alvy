@@ -10,6 +10,7 @@ import {
   masteredCount,
   recordQuizResult,
 } from "../lib/progress.js";
+import { checkLevelUp } from "../lib/levels.js";
 
 export type SessionPhase =
   | "dashboard"
@@ -53,6 +54,7 @@ export interface SessionFlowState {
   quizQuestion: QuizQuestion | null;
   quizResult: { correct: boolean; correctAnswer: string } | null;
   sessionBatch: number;
+  levelUp: { newLevel: number; oldLevel: number } | null;
 }
 
 export interface SessionFlowActions {
@@ -103,6 +105,7 @@ export function useSessionFlow(
     correct: boolean;
     correctAnswer: string;
   } | null>(null);
+  const [levelUp, setLevelUp] = useState<{ newLevel: number; oldLevel: number } | null>(null);
 
   const totalRoots = opts.totalUnits;
   const { markSeen = true, checkCelebration = true } = opts;
@@ -129,6 +132,15 @@ export function useSessionFlow(
     } else {
       const newData = { ...data };
       updateStreak(newData);
+
+      // Update level progress
+      newData.levelProgress = { ...newData.levelProgress };
+      newData.levelProgress.totalWordsStudied = newData.wordsStudied.length;
+      const result = checkLevelUp(newData);
+      if (result.leveledUp) {
+        setLevelUp({ newLevel: result.newLevel, oldLevel: result.oldLevel });
+      }
+
       setData(newData);
       saveData(newData);
 
@@ -200,7 +212,10 @@ export function useSessionFlow(
 
       const newData = { ...data };
       recordQuizResult(newData, entry.root, correct);
+      newData.levelProgress = { ...newData.levelProgress };
+      newData.levelProgress.totalQuizAttempts += 1;
       if (correct) {
+        newData.levelProgress.totalCorrectQuiz += 1;
         addXP(newData, 15);
         setSessionXP((x) => x + 15);
       }
@@ -285,6 +300,7 @@ export function useSessionFlow(
     quizQuestion,
     quizResult,
     sessionBatch,
+    levelUp,
   };
 
   return [

@@ -1,3 +1,20 @@
+export type AvatarId = "scholar" | "panda" | "rocket" | "cat" | "star" | "dragon" | "phoenix" | "owl";
+
+export interface UserProfile {
+  displayName: string;
+  avatar: AvatarId;
+  createdAt: string; // ISO date
+}
+
+export interface LevelProgress {
+  level: number;
+  compositeScore: number;        // 0-100
+  totalStudyDays: number;
+  totalCorrectQuiz: number;
+  totalQuizAttempts: number;
+  totalWordsStudied: number;
+}
+
 // Root/affix entry in roots.json
 export interface RootWord {
   word: string;
@@ -54,8 +71,10 @@ export interface UserData {
     dailyGoal: number;
     lastSubject?: Subject;
   };
+  profile?: UserProfile;
+  levelProgress: LevelProgress;
 }
 
 export type Subject = "toefl" | "psych" | "csp" | "whap";
 
-export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review" | "csp" | "csp-review" | "whap" | "whap-review" | "pick";
+export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review" | "csp" | "csp-review" | "whap" | "whap-review" | "pick" | "profile";

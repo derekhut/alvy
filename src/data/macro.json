@@ -3955,5 +3955,619 @@
         "toefl_frequency": "medium"
       }
     ]
+  },
+  {
+    "root": "The Loanable Funds Market",
+    "type": "root",
+    "meaning_en": "the market for savings and borrowing where the real interest rate equates saving supply with investment demand",
+    "meaning_zh": "可贷资金市场：储蓄者供应资金、借款者需求资金的市场，实际利率是这个市场的「价格」。例如美国政府发债借钱会推高利率，挤出私人投资——这是联邦赤字影响经济的关键渠道",
+    "origin": "Unit 4: 4.7 The Loanable Funds Market",
+    "related": [
+      "Demand",
+      "Supply",
+      "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"
+    ],
+    "words": [
+      {
+        "word": "loanable funds market",
+        "breakdown": "Loanable(可借贷的) + Funds(资金) + Market(市场)",
+        "meaning_en": "the market where savers supply funds available for borrowing and borrowers demand funds, with the real interest rate serving as the price",
+        "meaning_zh": "可贷资金市场：储蓄者供给资金、借款者需求资金的市场，实际利率充当「价格」。把宏观的「储蓄 = 投资」恒等式画成供求图",
+        "derivation": "储蓄(供给) + 借款(需求) → 实际利率是价格 → 画出 S/D 图",
+        "mnemonic": "「可贷资金市场 = 宏观版的供求图，但 Y 轴是实际利率而不是商品价格」",
+        "example": "In the loanable funds market, the real interest rate adjusts to balance saving and investment.",
+        "example_zh": "在可贷资金市场，实际利率调整以平衡储蓄和投资。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "borrowers",
+        "breakdown": "Borrow(借) + ers(人)",
+        "meaning_en": "individuals or entities that demand loanable funds by taking loans in the loanable funds market",
+        "meaning_zh": "借款者：通过借钱在可贷资金市场上需求资金的个人或机构。企业借钱投资设备、政府借钱补赤字、家庭借钱买房——都是借款者",
+        "derivation": "Borrow(借) → 需要钱的人 → 在可贷资金市场形成需求",
+        "mnemonic": "「借款者 = 可贷资金市场的『买家』，买的不是商品而是『用钱的权利』」",
+        "example": "Borrowers demand more loanable funds when interest rates fall.",
+        "example_zh": "当利率下降时，借款者对可贷资金的需求增加。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "savers",
+        "breakdown": "Save(储蓄) + rs(人)",
+        "meaning_en": "individuals or entities that supply loanable funds by lending money in the loanable funds market",
+        "meaning_zh": "储蓄者：通过放贷在可贷资金市场上供给资金的个人或机构。例如你把钱存银行，就是储蓄者；银行转手把钱贷出去",
+        "derivation": "Save(储蓄) → 把钱放出去 → 形成资金的供给",
+        "mnemonic": "「储蓄者 = 可贷资金市场的『卖家』，『卖』的是现在的购买力换未来的利息」",
+        "example": "Higher interest rates encourage savers to supply more loanable funds.",
+        "example_zh": "较高的利率鼓励储蓄者供给更多可贷资金。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "demand for loanable funds",
+        "breakdown": "Demand(需求) + Loanable Funds(可贷资金)",
+        "meaning_en": "the quantity of loanable funds that borrowers are willing to borrow at various real interest rates, showing an inverse relationship with real interest rates",
+        "meaning_zh": "可贷资金需求：在不同实际利率下借款者愿意借的资金数量。和实际利率负相关——利率越高借得越少，所以曲线向下倾斜",
+        "derivation": "利率 ↑ → 借钱成本 ↑ → 投资项目不划算 → 需求 ↓",
+        "mnemonic": "「需求向下：利率是『借钱的价格』，价格越贵买得越少」",
+        "example": "The demand for loanable funds slopes downward because high rates make borrowing expensive.",
+        "example_zh": "可贷资金需求向下倾斜，因为高利率让借款成本增加。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "supply of loanable funds",
+        "breakdown": "Supply(供给) + Loanable Funds(可贷资金)",
+        "meaning_en": "the quantity of loanable funds that savers are willing to lend at various real interest rates, showing a positive relationship with real interest rates",
+        "meaning_zh": "可贷资金供给：在不同实际利率下储蓄者愿意借出的资金数量。和实际利率正相关——利率越高越愿意储蓄，曲线向上倾斜",
+        "derivation": "利率 ↑ → 储蓄回报 ↑ → 人们少消费多储蓄 → 供给 ↑",
+        "mnemonic": "「供给向上：利率越高越有人愿意『卖』现在的钱来换未来的利息」",
+        "example": "The supply of loanable funds is upward sloping because higher rates reward saving.",
+        "example_zh": "可贷资金供给向上倾斜，因为高利率奖励储蓄。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity demanded of loanable funds",
+        "breakdown": "Quantity(数量) + Demanded(需求的) + Loanable Funds",
+        "meaning_en": "the amount of funds that borrowers wish to borrow at a given real interest rate in the loanable funds market",
+        "meaning_zh": "可贷资金需求量：在某个特定实际利率下借款者想借的数额。注意区分「需求量」（曲线上一点）和「需求」（整条曲线）",
+        "derivation": "给定利率 → 对应需求曲线上的一点 → 读出具体数额",
+        "mnemonic": "「需求『量』是点，需求是线——利率变是沿线动，其他因素变是整条线平移」",
+        "example": "At a 5% real interest rate, the quantity demanded of loanable funds is $800 billion.",
+        "example_zh": "在 5% 的实际利率下，可贷资金需求量为 8000 亿美元。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "quantity supplied of loanable funds",
+        "breakdown": "Quantity(数量) + Supplied(供给的) + Loanable Funds",
+        "meaning_en": "the amount of funds that savers are willing to lend at a given real interest rate in the loanable funds market",
+        "meaning_zh": "可贷资金供给量：在某个特定实际利率下储蓄者愿意借出的数额。同样区分「量」（点）和「供给」（线）",
+        "derivation": "给定利率 → 对应供给曲线上的一点 → 读出具体数额",
+        "mnemonic": "「供给『量』沿曲线滑动，整条曲线动是供给变化——AP 考试最爱区分这两个」",
+        "example": "At equilibrium, the quantity supplied of loanable funds equals the quantity demanded.",
+        "example_zh": "在均衡状态下，可贷资金供给量等于需求量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "real interest rate",
+        "breakdown": "Real(实际的) + Interest Rate(利率)",
+        "meaning_en": "the interest rate adjusted for inflation, reflecting the true purchasing power gained or lost from lending or borrowing",
+        "meaning_zh": "实际利率：扣除通胀后的利率，反映真正的购买力变化。公式：实际利率 ≈ 名义利率 − 通胀率。可贷资金市场的 Y 轴就是它",
+        "derivation": "名义利率(看得到的) − 通胀率 = 实际利率(真购买力)",
+        "mnemonic": "「名义利率 5% 但通胀 4%，实际利率只有 1%——你的钱几乎没增值」",
+        "example": "If the nominal rate is 6% and inflation is 2%, the real interest rate is 4%.",
+        "example_zh": "若名义利率为 6%、通胀为 2%，则实际利率为 4%。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equilibrium",
+        "breakdown": "Equi(相等) + libri(平衡) + um → 均衡",
+        "meaning_en": "a market condition in which the quantity supplied equals the quantity demanded at a particular price, with no tendency for change",
+        "meaning_zh": "均衡：供给量等于需求量、价格没有变动倾向的市场状态。在可贷资金市场就是「实际利率让储蓄 = 投资」的那个点",
+        "derivation": "Equi(相等) + librium(平衡) → 供 = 求 → 价格稳定",
+        "mnemonic": "「均衡 = 市场的『静止点』，但稍有风吹草动就会朝新均衡移动」",
+        "example": "The loanable funds market is in equilibrium when saving equals borrowing.",
+        "example_zh": "当储蓄等于借款时，可贷资金市场处于均衡。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "disequilibrium",
+        "breakdown": "Dis(不) + equilibrium(均衡)",
+        "meaning_en": "a market condition in which the quantity supplied does not equal the quantity demanded, causing imbalances that create surpluses or shortages",
+        "meaning_zh": "非均衡：供给量不等于需求量的市场状态，出现过剩或短缺。实际利率会自动调整把市场推回均衡——这是「看不见的手」的体现",
+        "derivation": "Dis(不) + equilibrium(均衡) → 供 ≠ 求 → 不稳定",
+        "mnemonic": "「非均衡不会持久：利率像弹簧，很快把市场拉回均衡」",
+        "example": "Disequilibrium in the loanable funds market is corrected by movements in the real interest rate.",
+        "example_zh": "可贷资金市场的非均衡会通过实际利率的变动得以纠正。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "equilibrium interest rate",
+        "breakdown": "Equilibrium(均衡) + Interest Rate(利率)",
+        "meaning_en": "the interest rate at which the quantity of loanable funds demanded equals the quantity supplied",
+        "meaning_zh": "均衡利率：可贷资金需求量等于供给量时的实际利率。对应图上供求曲线的交点——这是可贷资金市场的核心考点",
+        "derivation": "供求曲线相交 → Y 轴对应的利率 → 均衡利率",
+        "mnemonic": "「均衡利率 = 储蓄和投资『谈妥』的那个价格——双方都不想再动」",
+        "example": "If saving rises, the equilibrium interest rate falls.",
+        "example_zh": "如果储蓄上升，均衡利率下降。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equilibrium quantity of funds",
+        "breakdown": "Equilibrium + Quantity(数量) + Funds(资金)",
+        "meaning_en": "the amount of loanable funds exchanged when the quantity demanded equals the quantity supplied",
+        "meaning_zh": "均衡资金数量：供求相等时可贷资金交易的总量。在图上是供求交点对应的 X 轴坐标——代表实际流通的借贷总额",
+        "derivation": "供求交点 → X 轴对应的数量 → 均衡资金量",
+        "mnemonic": "「均衡价格和均衡数量是一对双胞胎——在供求交点上同时读出」",
+        "example": "An increase in the supply of funds raises the equilibrium quantity of funds.",
+        "example_zh": "资金供给增加会提高均衡资金数量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "surplus",
+        "breakdown": "Sur(超过) + plus(加) → 过剩",
+        "meaning_en": "a situation in which the quantity supplied of a good exceeds the quantity demanded at a given price, resulting in excess inventory in the market",
+        "meaning_zh": "过剩：在某个价格下供给量超过需求量的情况。在可贷资金市场，当利率高于均衡利率时，储蓄超过投资——利率会向下调整",
+        "derivation": "利率太高 → 储蓄太多、借款太少 → 资金过剩 → 利率下降",
+        "mnemonic": "「过剩就像超市积压的面包，要打折才能卖掉——利率就是资金的『折扣』」",
+        "example": "When the real interest rate is above equilibrium, a surplus of loanable funds emerges.",
+        "example_zh": "当实际利率高于均衡利率时，可贷资金出现过剩。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "shortage",
+        "breakdown": "Short(短缺) + age → 短缺",
+        "meaning_en": "a situation in which the quantity demanded of a good exceeds the quantity supplied at a given price, resulting in insufficient supply to meet consumer demand",
+        "meaning_zh": "短缺：在某个价格下需求量超过供给量的情况。在可贷资金市场，当利率低于均衡利率时，借款需求超过储蓄——利率会向上调整",
+        "derivation": "利率太低 → 借款太多、储蓄太少 → 资金短缺 → 利率上升",
+        "mnemonic": "「短缺就像春运火车票，抢的人多票少，只能靠涨价平衡」",
+        "example": "When the real interest rate is below equilibrium, a shortage of loanable funds appears.",
+        "example_zh": "当实际利率低于均衡利率时，可贷资金出现短缺。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "market forces",
+        "breakdown": "Market(市场) + Forces(力量)",
+        "meaning_en": "the supply and demand pressures that drive prices toward equilibrium in response to surpluses and shortages",
+        "meaning_zh": "市场力量：供给和需求的压力，把价格推向均衡。可贷资金市场的「市场力量」就是实际利率——它自动调整直到储蓄 = 投资",
+        "derivation": "过剩 → 价格下降；短缺 → 价格上升 → 这就是市场力量",
+        "mnemonic": "「市场力量 = 亚当·斯密的『看不见的手』，在可贷资金市场里就是实际利率的自动调整」",
+        "example": "Market forces push the real interest rate toward the level where saving equals investment.",
+        "example_zh": "市场力量把实际利率推向储蓄等于投资的水平。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "determinants of demand",
+        "breakdown": "Determinants(决定因素) + Demand(需求)",
+        "meaning_en": "factors that influence and cause changes in the quantity of a good or service that consumers are willing and able to buy at various price levels",
+        "meaning_zh": "需求的决定因素：在可贷资金市场中，影响借款需求的因素——政府借款、企业投资信心、投资税收抵免等。这些因素变化会使整条需求曲线平移",
+        "derivation": "非利率因素变化 → 整条需求曲线平移(非沿线移动)",
+        "mnemonic": "「决定因素变 → 曲线平移；利率变 → 沿曲线滑动——这是 AP 最爱的区分」",
+        "example": "An investment tax credit is a key determinant of demand for loanable funds.",
+        "example_zh": "投资税收抵免是可贷资金需求的关键决定因素。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "determinants of supply",
+        "breakdown": "Determinants(决定因素) + Supply(供给)",
+        "meaning_en": "factors that influence the quantity of goods and services producers are willing and able to supply at various price levels",
+        "meaning_zh": "供给的决定因素：在可贷资金市场，影响储蓄供给的因素——储蓄习惯、税收政策、外资流入等。这些变化会平移整条供给曲线",
+        "derivation": "非利率因素变化 → 整条供给曲线平移",
+        "mnemonic": "「减税 → 可支配收入↑ → 储蓄↑ → 可贷资金供给曲线右移」",
+        "example": "A change in saving behavior is a determinant of supply in the loanable funds market.",
+        "example_zh": "储蓄行为的变化是可贷资金市场的供给决定因素。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "saving behavior",
+        "breakdown": "Saving(储蓄) + Behavior(行为)",
+        "meaning_en": "the decisions households and businesses make about how much income to save versus spend, which affects the supply of loanable funds",
+        "meaning_zh": "储蓄行为：家庭和企业决定把多少收入用于储蓄而非消费。储蓄倾向越高，可贷资金供给越多——东亚国家高储蓄率就是典型例子",
+        "derivation": "收入 − 消费 = 储蓄 → 决定可贷资金供给曲线位置",
+        "mnemonic": "「中国家庭储蓄率 30%+ vs 美国家庭储蓄率 5%——这就是储蓄行为差异的经典案例」",
+        "example": "A cultural shift toward thrift changes saving behavior and increases the supply of loanable funds.",
+        "example_zh": "崇尚节俭的文化转变改变储蓄行为，增加可贷资金供给。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "private savings",
+        "breakdown": "Private(私人的) + Savings(储蓄)",
+        "meaning_en": "the portion of household and business income that is not spent on consumption",
+        "meaning_zh": "私人储蓄：家庭和企业未用于消费的那部分收入。公式：Sprivate = Y − T − C（收入 − 税收 − 消费）。是可贷资金供给的主力",
+        "derivation": "Y(收入) − T(税) − C(消费) = 私人储蓄",
+        "mnemonic": "「私人储蓄 = 你钱包没花掉的钱 + 企业留存利润 → 都进了银行」",
+        "example": "Higher private savings boost the supply of loanable funds.",
+        "example_zh": "私人储蓄增加会提高可贷资金供给。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "public savings",
+        "breakdown": "Public(公共的) + Savings(储蓄)",
+        "meaning_en": "the portion of government tax revenue that is not spent on government consumption and transfer payments",
+        "meaning_zh": "公共储蓄：政府税收扣除政府支出后剩余的部分。公式：Spublic = T − G。正值是预算盈余，负值是预算赤字（政府借款）",
+        "derivation": "T(税收) − G(政府支出) = 公共储蓄 → 正为盈余，负为赤字",
+        "mnemonic": "「公共储蓄 > 0 = 政府攒钱；公共储蓄 < 0 = 政府向可贷资金市场借钱(赤字)」",
+        "example": "A budget deficit means public savings are negative.",
+        "example_zh": "预算赤字意味着公共储蓄为负。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "national savings",
+        "breakdown": "National(国家的) + Savings(储蓄)",
+        "meaning_en": "the total amount of income in an economy that is not spent on consumption, consisting of public savings and private savings in a closed economy",
+        "meaning_zh": "国民储蓄：整个经济中未用于消费的总收入。封闭经济中 S = Sprivate + Spublic = I（投资）——这是宏观恒等式的核心",
+        "derivation": "国民储蓄 = 私人储蓄 + 公共储蓄 → 封闭经济中 = 投资",
+        "mnemonic": "「国民储蓄 = 全国攒下的钱，在封闭经济中它必定等于投资——因为钱总得有去处」",
+        "example": "In a closed economy, national savings must equal investment.",
+        "example_zh": "在封闭经济中，国民储蓄必定等于投资。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "closed economy",
+        "breakdown": "Closed(封闭的) + Economy(经济)",
+        "meaning_en": "an economy that does not engage in international borrowing, lending, or trade with other countries",
+        "meaning_zh": "封闭经济：不和其他国家进行借贷或贸易的经济。是简化的理论模型——现实中几乎所有国家都是开放经济，但封闭模型方便分析",
+        "derivation": "Closed(封闭) → 无外资流动 → S = I 的简单世界",
+        "mnemonic": "「封闭经济 = 孤岛模型：岛上的钱只能在岛内转——储蓄必须等于投资」",
+        "example": "In a closed economy, the loanable funds market has no foreign capital flows.",
+        "example_zh": "在封闭经济中，可贷资金市场没有外资流动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "open economy",
+        "breakdown": "Open(开放的) + Economy(经济)",
+        "meaning_en": "an economy that engages in international trade and allows the free flow of goods, services, and financial capital across borders",
+        "meaning_zh": "开放经济：与外国进行贸易并允许资本自由流动的经济。在开放经济中，外资流入可以填补本国储蓄不足——美国就是典型的大幅外资流入国",
+        "derivation": "Open(开放) → 允许外资 → S ≠ I，差额靠净资本流入",
+        "mnemonic": "「开放经济 = 美国：借外国人的钱来投资，本国储蓄率低也不怕」",
+        "example": "In an open economy, foreign capital inflows supplement domestic savings.",
+        "example_zh": "在开放经济中，外国资本流入补充国内储蓄。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "net capital inflow",
+        "breakdown": "Net(净) + Capital(资本) + Inflow(流入)",
+        "meaning_en": "the net flow of foreign investment into a country, representing the difference between foreign investment in the domestic economy and domestic investment abroad",
+        "meaning_zh": "净资本流入：外国对本国投资减去本国对外投资。正值意味着外资净流入——在开放经济中它增加可贷资金供给、降低本国利率",
+        "derivation": "外资流入 − 本国对外投资 = 净资本流入",
+        "mnemonic": "「美国长期净资本流入 > 0 → 外国人买美债美股 → 美国利率保持低位」",
+        "example": "A positive net capital inflow increases the supply of loanable funds.",
+        "example_zh": "净资本流入为正会增加可贷资金供给。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "government borrowing",
+        "breakdown": "Government(政府) + Borrowing(借款)",
+        "meaning_en": "when a government borrows money, typically by issuing bonds, to finance a budget deficit",
+        "meaning_zh": "政府借款：政府通过发行债券等方式借钱来补贴预算赤字。政府借款增加了可贷资金需求，推高利率，可能「挤出」私人投资",
+        "derivation": "政府发债 → 需求可贷资金 ↑ → 利率 ↑ → 私人投资 ↓(挤出效应)",
+        "mnemonic": "「政府借款 = 加入可贷资金市场的『大买家』，把利率抬高、挤出私人企业」",
+        "example": "Government borrowing to finance the deficit raises the demand for loanable funds.",
+        "example_zh": "政府为补贴赤字而借款，会提高可贷资金需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "government spending",
+        "breakdown": "Government(政府) + Spending(支出)",
+        "meaning_en": "government expenditures that can affect the demand for loanable funds and interest rates",
+        "meaning_zh": "政府支出：在可贷资金市场的视角下，当政府支出 > 税收时出现赤字，需要借款——间接推高可贷资金需求和利率",
+        "derivation": "G > T → 预算赤字 → 政府借款 → 需求曲线右移",
+        "mnemonic": "「政府支出增加 + 税收不变 → 赤字 → 需要借钱 → 利率被推高」",
+        "example": "Increased government spending without tax hikes can push up interest rates.",
+        "example_zh": "政府支出增加但税收不变时，会推高利率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "taxes",
+        "breakdown": "Tax(税) + es",
+        "meaning_en": "government revenues that affect disposable income and the supply of loanable funds available for borrowing",
+        "meaning_zh": "税收：在可贷资金市场分析中，税收影响可支配收入和储蓄。减税会增加可支配收入，间接提高私人储蓄——推动供给曲线右移",
+        "derivation": "减税 → 可支配收入 ↑ → 私人储蓄 ↑ → 供给 ↑ → 利率 ↓",
+        "mnemonic": "「减税 → 利率降：让老百姓有钱存 → 可贷资金更充裕」",
+        "example": "A tax cut increases private savings and shifts the supply of loanable funds to the right.",
+        "example_zh": "减税增加私人储蓄，使可贷资金供给曲线右移。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "investment tax credit",
+        "breakdown": "Investment(投资) + Tax Credit(税收抵免)",
+        "meaning_en": "a tax incentive that reduces taxes on business investment, increasing the demand for loanable funds",
+        "meaning_zh": "投资税收抵免：政府对企业投资给予的税收减免。让投资项目税后收益更高，企业愿意借更多钱投资——可贷资金需求曲线右移、利率上升",
+        "derivation": "投资税收抵免 → 税后收益 ↑ → 企业想投更多 → 需求曲线右移",
+        "mnemonic": "「投资税收抵免 = 政府『补贴』企业借钱投资 → 可贷资金需求被推高」",
+        "example": "An investment tax credit shifts the demand for loanable funds to the right.",
+        "example_zh": "投资税收抵免使可贷资金需求曲线右移。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Fiscal and Monetary Policy Actions in the Short-Run",
+    "type": "root",
+    "meaning_en": "short-run use of government spending, taxes, and central bank tools to affect aggregate demand, output, and the price level",
+    "meaning_zh": "短期财政与货币政策：政府用支出/税收（财政政策）和央行用利率/货币供给（货币政策）在短期内调节总需求。例如 2008 年金融危机时美国既降息又减税——典型的双管齐下",
+    "origin": "Unit 5: 5.1 Fiscal and Monetary Policy Actions in the Short-Run",
+    "related": [
+      "Business Cycles",
+      "Unemployment",
+      "The Loanable Funds Market"
+    ],
+    "words": [
+      {
+        "word": "aggregate demand",
+        "breakdown": "Aggregate(总的) + Demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求：在 5.1 中是短期政策的直接作用对象——扩张性政策让 AD 右移，紧缩性政策让 AD 左移。AD = C + I + G + NX",
+        "derivation": "C + I + G + NX → 整个经济的需求 → 政策通过影响这些分量来移动 AD",
+        "mnemonic": "「扩张政策 → AD 右移 → 产出和价格都上升；紧缩政策 → AD 左移 → 二者都下降」",
+        "example": "Expansionary fiscal policy shifts aggregate demand to the right in the short run.",
+        "example_zh": "短期内，扩张性财政政策使总需求曲线右移。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expansionary fiscal policy",
+        "breakdown": "Expansionary(扩张性的) + Fiscal(财政的) + Policy(政策)",
+        "meaning_en": "government spending increases or tax decreases designed to increase aggregate demand and stimulate economic growth",
+        "meaning_zh": "扩张性财政政策：政府通过增加支出或减税来提高总需求、刺激经济增长。衰退期的标准操作——例如 2009 年美国 ARRA 刺激法案",
+        "derivation": "G ↑ 或 T ↓ → 可支配收入 ↑ → C ↑ → AD 右移",
+        "mnemonic": "「扩张性财政 = 政府『踩油门』：发钱、修路、减税，把经济从衰退里拉出来」",
+        "example": "During a recession, expansionary fiscal policy can include tax rebates and infrastructure spending.",
+        "example_zh": "衰退期间，扩张性财政政策可能包括退税和基建支出。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "contractionary fiscal policy",
+        "breakdown": "Contractionary(紧缩性的) + Fiscal + Policy",
+        "meaning_en": "government spending decreases or tax increases designed to decrease aggregate demand and reduce inflation",
+        "meaning_zh": "紧缩性财政政策：政府通过减少支出或增税来降低总需求、抑制通胀。过热经济的「降温」药——但政治上很不受欢迎",
+        "derivation": "G ↓ 或 T ↑ → 可支配收入 ↓ → C ↓ → AD 左移",
+        "mnemonic": "「紧缩性财政 = 政府『踩刹车』：砍预算、加税——经济过热时用，但选民会不高兴」",
+        "example": "Contractionary fiscal policy may be used to cool an overheating economy.",
+        "example_zh": "紧缩性财政政策可以用来给过热经济降温。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expansionary monetary policy",
+        "breakdown": "Expansionary + Monetary(货币的) + Policy",
+        "meaning_en": "central bank actions that increase the money supply and lower interest rates to stimulate economic growth and reduce unemployment",
+        "meaning_zh": "扩张性货币政策：央行增加货币供给、降低利率来刺激经济、减少失业。例如 2020 年疫情期间美联储紧急降息到零——典型的扩张性货币政策",
+        "derivation": "央行买债券 → 货币供给 ↑ → 利率 ↓ → 借款 ↑ → C、I ↑ → AD 右移",
+        "mnemonic": "「扩张性货币 = 央行『印钱发糖』，利率降到地板 → 企业和家庭借钱消费投资」",
+        "example": "The Fed used expansionary monetary policy during the 2008 crisis by cutting rates to near zero.",
+        "example_zh": "美联储在 2008 年危机期间采取扩张性货币政策，把利率降到接近零。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "contractionary monetary policy",
+        "breakdown": "Contractionary + Monetary + Policy",
+        "meaning_en": "central bank actions that decrease the money supply and raise interest rates to reduce inflation and cool down an overheating economy",
+        "meaning_zh": "紧缩性货币政策：央行减少货币供给、提高利率来抑制通胀、给过热经济降温。例如 Volcker 1979-1981 年加息到 20% 对抗滞胀——经典案例",
+        "derivation": "央行卖债券 → 货币供给 ↓ → 利率 ↑ → 借款 ↓ → C、I ↓ → AD 左移",
+        "mnemonic": "「紧缩性货币 = 央行『抽油泵』，利率飙高 → 借钱变贵 → 经济降温 → 通胀回落」",
+        "example": "Contractionary monetary policy in the early 1980s brought double-digit inflation under control.",
+        "example_zh": "1980 年代初的紧缩性货币政策把两位数的通胀控制了下来。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "interest rates",
+        "breakdown": "Interest(利息) + Rates(率)",
+        "meaning_en": "the cost of borrowing money, influenced by monetary policy and affecting exchange rates through changes in currency demand",
+        "meaning_zh": "利率：在 5.1 中是货币政策的主要传导机制——央行通过调整利率来影响企业投资和家庭消费，进而移动 AD",
+        "derivation": "央行政策 → 利率变化 → I 和 C 变化 → AD 移动",
+        "mnemonic": "「利率是央行的『操纵杆』：往下拉经济升温，往上推经济降温」",
+        "example": "Lower interest rates encourage borrowing and investment, shifting aggregate demand right.",
+        "example_zh": "较低的利率鼓励借贷和投资，使总需求曲线右移。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：在 5.1 中是 AD-AS 图的 Y 轴——政策移动 AD 曲线时，价格水平也会相应变化。扩张政策推高价格，紧缩政策压低价格",
+        "derivation": "AD 右移 → 交点上移 → 价格水平 ↑；AD 左移 → 价格水平 ↓",
+        "mnemonic": "「价格水平 = AD-AS 图的 Y 轴，政策移动 AD 时它会跟着动」",
+        "example": "Expansionary policy tends to raise the price level in the short run.",
+        "example_zh": "短期内扩张性政策往往会推高价格水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "real output",
+        "breakdown": "Real(实际的) + Output(产出)",
+        "meaning_en": "the total production of goods and services in an economy adjusted for inflation, measured in constant dollars",
+        "meaning_zh": "实际产出：在 5.1 中是 AD-AS 图的 X 轴——扣除通胀后的真实 GDP。政策的终极目标是让实际产出回到潜在产出水平",
+        "derivation": "名义产出 / 价格指数 = 实际产出 → AD-AS 图的 X 轴",
+        "mnemonic": "「实际产出 = 真正的『蛋糕大小』——政策就是想让蛋糕恰好做到潜在产出那么大」",
+        "example": "Expansionary fiscal policy increases real output and reduces unemployment in the short run.",
+        "example_zh": "短期内扩张性财政政策增加实际产出并减少失业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "full employment",
+        "breakdown": "Full(完全的) + Employment(就业)",
+        "meaning_en": "an economic condition where all available labor resources are being used efficiently and unemployment is at its natural rate",
+        "meaning_zh": "充分就业：在 5.1 中是政策追求的「理想状态」——实际产出 = 潜在产出、失业率 = 自然失业率。政策的目标就是把经济推回这里",
+        "derivation": "充分就业 → 无产出缺口 → 政策的目标状态",
+        "mnemonic": "「充分就业 = 政策的『瞄准点』：过热要降、衰退要拉，都是为了回到这里」",
+        "example": "The goal of fiscal policy is to return the economy to full employment.",
+        "example_zh": "财政政策的目标是使经济回到充分就业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflationary output gap",
+        "breakdown": "Inflationary(通胀的) + Output(产出) + Gap(缺口)",
+        "meaning_en": "a positive output gap occurring when actual real output exceeds the full-employment level of output, putting upward pressure on prices",
+        "meaning_zh": "通胀产出缺口：实际产出超过充分就业产出的「正缺口」，对价格造成上行压力。这时政府应采取紧缩政策让经济降温",
+        "derivation": "实际 GDP > 潜在 GDP → 正缺口 → 资源紧张 → 通胀 ↑",
+        "mnemonic": "「通胀缺口 = 经济『超速』：工厂满产、工人加班、价格被抢着推高 → 央行赶紧加息」",
+        "example": "An inflationary output gap calls for contractionary fiscal or monetary policy.",
+        "example_zh": "通胀产出缺口需要用紧缩性财政或货币政策来应对。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "The Phillips Curve",
+    "type": "root",
+    "meaning_en": "a model showing the short-run trade-off and long-run vertical relationship between inflation and unemployment",
+    "meaning_zh": "菲利普斯曲线：描述通胀率和失业率关系的模型。短期下倾（低失业 = 高通胀），长期垂直（自然失业率）。1970s 滞胀让这个模型升级——引入了短期与长期的区分",
+    "origin": "Unit 5: 5.2 The Phillips Curve",
+    "related": [
+      "Fiscal and Monetary Policy Actions in the Short-Run",
+      "Business Cycles",
+      "Unemployment"
+    ],
+    "words": [
+      {
+        "word": "Phillips curve model",
+        "breakdown": "Phillips(人名) + Curve(曲线) + Model(模型)",
+        "meaning_en": "an economic model showing the relationship between the rate of inflation and the rate of unemployment in an economy",
+        "meaning_zh": "菲利普斯曲线模型：1958 年新西兰经济学家 A.W. Phillips 提出，原本是「工资增长 vs 失业」的反向关系。后来发展为短期/长期两条曲线，是 AP 宏观的核心模型",
+        "derivation": "Phillips 1958 → 工资-失业反向 → 演变为通胀-失业的 PC 模型",
+        "mnemonic": "「菲利普斯曲线 = 宏观的『另一张供求图』：X 轴是失业率，Y 轴是通胀率」",
+        "example": "The Phillips curve model plots inflation against unemployment.",
+        "example_zh": "菲利普斯曲线模型把通胀率画在纵轴、失业率画在横轴。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "short-run Phillips curve",
+        "breakdown": "Short-run(短期的) + Phillips Curve",
+        "meaning_en": "a downward-sloping curve that illustrates the short-run trade-off between inflation and unemployment in an economy",
+        "meaning_zh": "短期菲利普斯曲线（SRPC）：向下倾斜的曲线，表现短期内通胀和失业的取舍关系。扩张政策移动到左上（低失业高通胀），紧缩政策移动到右下",
+        "derivation": "AD 右移 → 短期 AS 曲线上滑 → 通胀↑失业↓ → 沿 SRPC 左上方移动",
+        "mnemonic": "「SRPC 向下倾斜 = 『通胀和失业不可兼得』——短期里必须二选一」",
+        "example": "The short-run Phillips curve shows a trade-off between inflation and unemployment.",
+        "example_zh": "短期菲利普斯曲线显示通胀与失业之间的取舍关系。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "long-run Phillips curve",
+        "breakdown": "Long-run(长期的) + Phillips Curve",
+        "meaning_en": "a vertical curve at the natural rate of unemployment that illustrates the long-run relationship between inflation and unemployment",
+        "meaning_zh": "长期菲利普斯曲线（LRPC）：位于自然失业率处的垂直线，表明长期内通胀和失业无取舍——任何通胀率下失业率都回到自然水平。1970s 滞胀后被 Friedman 确立",
+        "derivation": "长期 → 预期调整 → 失业率回到自然率 → LRPC 垂直",
+        "mnemonic": "「LRPC 垂直 = 长期内印钱不能减少失业，只会推高通胀——Friedman 的教训」",
+        "example": "The long-run Phillips curve is vertical at the natural rate of unemployment.",
+        "example_zh": "长期菲利普斯曲线在自然失业率处垂直。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "natural rate of unemployment",
+        "breakdown": "Natural(自然的) + Rate(率) + Unemployment",
+        "meaning_en": "the unemployment rate that exists when the economy produces full-employment real output, equal to the sum of frictional and structural unemployment",
+        "meaning_zh": "自然失业率：在 5.2 中是长期菲利普斯曲线（LRPC）所处的位置——垂直线的 X 坐标。长期内失业率总会回归它，无论通胀率如何",
+        "derivation": "摩擦性失业 + 结构性失业 = 自然失业率 → LRPC 的 X 轴位置",
+        "mnemonic": "「自然失业率 = LRPC 的『锚点』——通胀再高也拉不下它，这就是 Friedman 的货币主义核心」",
+        "example": "The long-run Phillips curve is vertical at the natural rate of unemployment.",
+        "example_zh": "长期菲利普斯曲线在自然失业率处垂直。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflation",
+        "breakdown": "Inflation(通货膨胀)",
+        "meaning_en": "a sustained increase in the general price level of goods and services in an economy over time",
+        "meaning_zh": "通货膨胀：在 5.2 中是菲利普斯曲线的 Y 轴——短期内和失业率负相关（SRPC 下倾），长期内无论高低失业率都回到自然率",
+        "derivation": "价格水平持续上升 → 通胀率 → 菲利普斯曲线的 Y 轴",
+        "mnemonic": "「通胀 = 菲利普斯图的 Y 轴：短期里能用高通胀『买』低失业，长期里这招失效」",
+        "example": "The Phillips curve plots inflation on the vertical axis.",
+        "example_zh": "菲利普斯曲线把通胀率画在纵轴。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "employment",
+        "breakdown": "Employ(雇佣) + ment → 就业",
+        "meaning_en": "the state of having a paid job or being engaged in work for compensation",
+        "meaning_zh": "就业：在 5.2 中和失业率互补——失业率下降就是就业率上升。菲利普斯曲线的分析中，用失业率作为 X 轴标签",
+        "derivation": "有工作 = 就业 → 失业率 + 就业率 ≈ 劳动力的 100%",
+        "mnemonic": "「就业率 ↑ → 失业率 ↓ → 沿 SRPC 向左上方移动 → 通胀也上来」",
+        "example": "Strong employment growth often coincides with rising inflation.",
+        "example_zh": "就业强劲增长往往伴随着通胀上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "short run",
+        "breakdown": "Short(短) + Run(期间)",
+        "meaning_en": "a time period in macroeconomics where at least one factor of production is fixed and prices may not fully adjust to changes in demand",
+        "meaning_zh": "短期：在 5.2 中，是菲利普斯曲线呈下倾关系的时段——工资和价格粘性让通胀和失业出现取舍。一般指几个月到几年",
+        "derivation": "要素粘性 → 价格/工资未完全调整 → SRPC 下倾",
+        "mnemonic": "「短期 = 工资没来得及涨的阶段 → 这时政策能真正影响产出和就业」",
+        "example": "In the short run, higher inflation can temporarily lower unemployment.",
+        "example_zh": "短期内通胀上升可能暂时降低失业率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "long run",
+        "breakdown": "Long(长) + Run(期间)",
+        "meaning_en": "a time period in macroeconomics where all factors of production are variable and prices fully adjust to changes in supply and demand",
+        "meaning_zh": "长期：在 5.2 中，是菲利普斯曲线变成垂直 LRPC 的时段——价格和工资完全调整，预期追上现实，失业率回到自然率",
+        "derivation": "预期调整完毕 → 工资跟上通胀 → 失业率回归自然率 → LRPC 垂直",
+        "mnemonic": "「长期 = 大家都看清了真相的那一天 → 印钱的错觉消失 → 失业率回到起点」",
+        "example": "In the long run, unemployment returns to its natural rate regardless of inflation.",
+        "example_zh": "长期内，无论通胀如何，失业率都会回到自然率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "short-run equilibrium",
+        "breakdown": "Short-run + Equilibrium(均衡)",
+        "meaning_en": "the point where aggregate demand and short-run aggregate supply intersect, determining the current price level and output in the Phillips curve model",
+        "meaning_zh": "短期均衡：AD 与 SRAS 的交点决定了当前价格水平和产出。映射到菲利普斯曲线上，就是 SRPC 上的当前点——代表此时的通胀率和失业率",
+        "derivation": "AD = SRAS → 短期均衡点 → 对应 SRPC 上的一点",
+        "mnemonic": "「短期均衡 = 此时此刻的经济状态——对应 SRPC 上某一点，不一定在 LRPC 上」",
+        "example": "A short-run equilibrium can lie to the left or right of the long-run Phillips curve.",
+        "example_zh": "短期均衡可能位于长期菲利普斯曲线的左侧或右侧。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "long-run equilibrium",
+        "breakdown": "Long-run + Equilibrium",
+        "meaning_en": "the point where the short-run Phillips curve intersects the long-run Phillips curve, representing a stable economic state",
+        "meaning_zh": "长期均衡：SRPC 与 LRPC 的交点——这时失业率等于自然率，通胀率等于预期通胀。经济处于充分就业、无产出缺口的状态",
+        "derivation": "SRPC 与 LRPC 相交 → 失业率 = 自然率 → 稳定状态",
+        "mnemonic": "「长期均衡 = SRPC 和 LRPC 的交点：失业率回到自然率，经济『安顿下来』」",
+        "example": "In long-run equilibrium, actual unemployment equals the natural rate.",
+        "example_zh": "在长期均衡状态下，实际失业率等于自然失业率。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "inflationary gap",
+        "breakdown": "Inflationary(通胀的) + Gap(缺口)",
+        "meaning_en": "an economic condition represented by points to the left of long-run equilibrium, where actual output exceeds potential output and inflation pressures exist",
+        "meaning_zh": "通胀缺口：在菲利普斯曲线图上是长期均衡点「左侧」的位置——失业率 < 自然率，通胀压力上升。经济「过热」的信号",
+        "derivation": "实际 GDP > 潜在 GDP → 失业率 < 自然率 → SRPC 上左移 → 通胀 ↑",
+        "mnemonic": "「通胀缺口 = 菲利普斯图上『左边』的点：失业率太低、通胀冲天 → 央行要加息」",
+        "example": "An inflationary gap is shown to the left of the long-run Phillips curve.",
+        "example_zh": "通胀缺口在长期菲利普斯曲线的左侧显示。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "recessionary gap",
+        "breakdown": "Recessionary(衰退的) + Gap(缺口)",
+        "meaning_en": "an economic condition represented by points to the right of long-run equilibrium, where actual output falls short of potential output and unemployment is elevated",
+        "meaning_zh": "衰退缺口：在菲利普斯曲线图上是长期均衡点「右侧」的位置——失业率 > 自然率，通胀率低。经济「冷却」，需要扩张政策",
+        "derivation": "实际 GDP < 潜在 GDP → 失业率 > 自然率 → SRPC 上右移 → 通胀 ↓",
+        "mnemonic": "「衰退缺口 = 菲利普斯图上『右边』的点：失业率高、通胀低 → 政府要刺激」",
+        "example": "A recessionary gap appears to the right of the long-run Phillips curve.",
+        "example_zh": "衰退缺口出现在长期菲利普斯曲线的右侧。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "demand shocks",
+        "breakdown": "Demand(需求) + Shocks(冲击)",
+        "meaning_en": "unexpected changes in aggregate demand that cause movement along the short-run Phillips curve",
+        "meaning_zh": "需求冲击：总需求的意外变化，导致沿 SRPC 移动（而非曲线平移）。例如消费者信心突降 → AD 左移 → 在 SRPC 上向右下方滑",
+        "derivation": "意外 AD 变化 → AD 曲线平移 → 沿 SRPC 移动(不是整条 SRPC 移动)",
+        "mnemonic": "「需求冲击 → 沿 SRPC 滑动；供给冲击 → 整条 SRPC 平移——这是 5.2 最爱考的区分」",
+        "example": "A sudden drop in consumer confidence is a demand shock.",
+        "example_zh": "消费者信心突然下降是一种需求冲击。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "supply shocks",
+        "breakdown": "Supply(供给) + Shocks(冲击)",
+        "meaning_en": "unexpected changes in aggregate supply that cause the short-run Phillips curve to shift",
+        "meaning_zh": "供给冲击：总供给的意外变化，导致整条 SRPC 平移。例如 1970s 石油危机让 SRPC 整体右移——通胀和失业同时上升，即「滞胀」",
+        "derivation": "意外 AS 变化 → SRAS 曲线平移 → 整条 SRPC 平移",
+        "mnemonic": "「滞胀 stagflation：1970s 石油危机 → SRAS 左移 → 通胀↑ + 失业↑同时发生 → SRPC 右移」",
+        "example": "The 1973 oil shock shifted the short-run Phillips curve outward, causing stagflation.",
+        "example_zh": "1973 年石油冲击使短期菲利普斯曲线外移，引发滞胀。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

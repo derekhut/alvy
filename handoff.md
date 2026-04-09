@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-09
 Branch: update_version
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE (34 concepts / 445 terms, batches 1–3 done) | AP CSP LIVE | AP WHAP COMPLETE (19 concepts / 255 terms) | Update checker LIVE | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score) | v1.6.5 — "mastered" concept removed + rotation bug fixed
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych COMPLETE (36 concepts / 607 terms, all 5 batches done — full CED coverage) | AP CSP LIVE | AP WHAP COMPLETE (19 concepts / 255 terms) | Update checker LIVE | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score) | v1.6.6 — AP Psychology content expansion complete
 
 ## V1 Summary
 
@@ -456,7 +456,7 @@ node dist/index.js doctor   # Environment check
 
 - Subject picker at launch (step 9) — `alvy` shows arrow-key menu, remembers last choice
 - AP Psychology session and review (`alvy psych`, `alvy psych review`) — reuses same state machine
-- `psych.json` content file (26 concepts / 130 terms), `psych-db.ts` query layer
+- `psych.json` content file (36 concepts / 607 terms, full CED coverage), `psych-db.ts` query layer
 - AP CSP session and review (`alvy csp`, `alvy csp review`) — same pattern as AP Psych
 - `csp.json` content file (20 concepts / 72 terms), `csp-db.ts` query layer
 - AP World History session and review (`alvy whap`, `alvy whap review`) — same pattern as AP CSP
@@ -484,7 +484,7 @@ Key refactoring needed:
 - `store.ts`: update `PersistedData` interface and `saveData()` field list
 
 Files built:
-- `src/data/psych.json` (26 concepts, content live)
+- `src/data/psych.json` (36 concepts / 607 terms, full CED coverage)
 - `src/data/csp.json` (20 concepts / 72 terms, content live)
 - `src/data/whap.json` (19 concepts / 255 terms, COMPLETE)
 - `src/components/subject-picker.tsx` (arrow-key menu, remember-last, 4 subjects)

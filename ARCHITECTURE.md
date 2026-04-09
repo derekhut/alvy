@@ -10,7 +10,7 @@ alvy supports multiple subjects. `alvy` (no args) shows a subject picker with ar
 
 - **Subject picker at launch** with remember-last (`settings.lastSubject` persisted)
 - **Shared streak and XP** across all subjects (study any subject, streak continues)
-- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (26 concepts / 130 terms), AP CSP (20 concepts / 72 terms), AP World History (19 concepts / 255 terms)
+- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (36 concepts / 607 terms, full CED coverage), AP CSP (20 concepts / 72 terms), AP World History (19 concepts / 255 terms)
 - **Generalized `useSessionFlow`** hook (Approach A: refactor to be content-agnostic, not parallel duplication)
 - **Planned:** Namespaced `wordsStudied` array (`vocab:benefit`, `psych:adaptation`) to prevent collisions
 
@@ -152,7 +152,7 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/lib/__tests__/levels.test.ts` | Vitest level system tests (10 cases: xpForLevel, computeLevel, xpToNextLevel, compositeScore, checkLevelUp). |
 | `src/lib/__tests__/store.test.ts` | Vitest migration tests (10 cases: migrate, already migrated, fresh start, V1→V3, V2→V3, V3 no re-migration, XP→level, old avatar ID remap, corrupt source). |
 | `src/data/roots.json` | 20 roots + 10 affixes = 30 entries × 5 words = 150 words. |
-| `src/data/psych.json` | AP Psychology: 26 concepts × ~5 terms = 130 terms. |
+| `src/data/psych.json` | AP Psychology: 36 concepts / 607 terms (full CED coverage, Units 1-5). |
 | `src/data/csp.json` | AP CSP: 20 concepts × ~3-6 terms = 72 terms. |
 | `src/data/whap.json` | AP World History: 19 concepts × ~6-22 terms = 255 terms. |
 | `install.sh` | One-line installer for macOS/Linux. Installs Node.js via nvm if needed, configures npm prefix, installs alvy globally. |
@@ -175,7 +175,7 @@ Previously referenced in stale docs but now exist:
 | `subject-picker.tsx` | EXISTS. Arrow-key subject menu with remember-last. |
 | `psych-session.tsx` | EXISTS. AP Psychology daily session. |
 | `psych-review.tsx` | EXISTS. AP Psychology review session. |
-| `psych.json` | EXISTS. AP Psychology content (26 concepts / 130 terms). |
+| `psych.json` | EXISTS. AP Psychology content (36 concepts / 607 terms, full CED coverage). |
 | `psych-db.ts` | EXISTS. Query layer over psych.json. |
 | `csp-session.tsx` | EXISTS. AP CSP daily session. |
 | `csp-review.tsx` | EXISTS. AP CSP review session. |
@@ -183,7 +183,7 @@ Previously referenced in stale docs but now exist:
 | `csp-db.ts` | EXISTS. Query layer over csp.json. |
 | `whap-session.tsx` | EXISTS. AP World History daily session. |
 | `whap-review.tsx` | EXISTS. AP World History review session. |
-| `whap.json` | EXISTS. AP World History content (batch 1: 5 concepts / 68 terms). |
+| `whap.json` | EXISTS. AP World History content (19 concepts / 255 terms, COMPLETE). |
 | `whap-db.ts` | EXISTS. Query layer over whap.json. |
 | `quiz.tsx` | EXISTS. Binary-choice quiz (English word → two Chinese meanings). |
 | `quiz-intro.tsx` | EXISTS. Transition screen before quiz. |

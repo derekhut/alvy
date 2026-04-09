@@ -2880,5 +2880,407 @@
         "toefl_frequency": "medium"
       }
     ]
+  },
+  {
+    "root": "Libraries",
+    "type": "root",
+    "meaning_en": "collections of pre-written procedures that programmers reuse via documented APIs",
+    "meaning_zh": "库：现成的、可复用的代码集合，通过 API 让程序员调用其中的过程，无需从头写。例如不用自己实现快速排序——直接用 Python 的 `sorted()`",
+    "origin": "Unit 3: 3.14 Libraries",
+    "related": ["Calling Procedures", "Developing Procedures", "Random Values"],
+    "words": [
+      {
+        "word": "application program interface",
+        "breakdown": "Application(应用) + Program(程序) + Interface(接口)",
+        "meaning_en": "specifications that define how procedures in a library behave and how they can be used in programs",
+        "meaning_zh": "应用程序接口（API）：规定库中过程行为和用法的规范文档。例如「这个 sort 函数接受一个列表，返回排序后的列表」就是 API 的描述",
+        "derivation": "Application(应用) + Program(程序) + Interface(接口) → 「应用程序之间的对接规范」",
+        "mnemonic": "API 像电源插座的标准：只要符合规范，任何设备都能插上用——不用关心电是怎么发出来的",
+        "example": "The API documentation explains how to call the sort procedure.",
+        "example_zh": "API 文档说明如何调用 sort 过程。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "code segment",
+        "breakdown": "Code(代码) + Segment(段)",
+        "meaning_en": "a portion of a program consisting of one or more lines of code that performs a specific function",
+        "meaning_zh": "代码段：程序中一段（一行或多行）执行特定功能的代码。可以是一个函数、一个循环或几行相关语句的组合",
+        "derivation": "Code(代码) + Segment(段) → 「代码的一段」",
+        "mnemonic": "代码段像文章的一段——几句话围绕同一主题，独立又相关",
+        "example": "The code segment uses a procedure from the library to compute the average.",
+        "example_zh": "该代码段使用库中的一个过程来计算平均值。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "documentation",
+        "breakdown": "Document(文档) + ation(名词后缀)",
+        "meaning_en": "written information that explains the behaviors provided by an API or library and how to use them",
+        "meaning_zh": "文档：解释 API 或库的行为和使用方法的书面信息。好的文档能让陌生人在几分钟内上手——糟糕的文档会让用户放弃整个库",
+        "derivation": "Document(文档) + ation(名词) → 「书面记录」",
+        "mnemonic": "好的库 = 80% 是文档：写出来不解释，等于没写",
+        "example": "Reading the documentation helps you understand how to use the library.",
+        "example_zh": "阅读文档帮助你理解如何使用该库。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "procedure",
+        "breakdown": "Pro(向前) + ced(走) + ure(名词后缀)",
+        "meaning_en": "a named block of reusable code that performs a specific task and can be called multiple times throughout a program",
+        "meaning_zh": "过程：在库的语境中，过程是库提供的「现成功能」。例如数学库提供 sqrt、sin、cos 等过程，你直接调用就能完成复杂运算",
+        "derivation": "Pro(向前) + ced(走) → 库中「准备好的步骤」",
+        "mnemonic": "库中的 procedure 像超市里的速食——拆开就能吃，不用自己做",
+        "example": "The procedure sqrt() is provided by the math library.",
+        "example_zh": "过程 sqrt() 由数学库提供。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "software library",
+        "breakdown": "Software(软件) + Library(库)",
+        "meaning_en": "a collection of pre-written procedures and code that can be reused in creating new programs",
+        "meaning_zh": "软件库：可在新程序中复用的预写过程和代码的集合。例如 Python 的 `math` 库、JavaScript 的 `lodash`——站在巨人的肩膀上",
+        "derivation": "Software(软件) + Library(图书馆) → 「代码的图书馆」",
+        "mnemonic": "软件库像借书：不用自己写整本书，借现成的章节用",
+        "example": "Most modern programs depend on dozens of software libraries.",
+        "example_zh": "大多数现代程序都依赖数十个软件库。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Random Values",
+    "type": "root",
+    "meaning_en": "values produced by a random number generator with equal probability for each outcome",
+    "meaning_zh": "随机值：由随机数生成器产生、每个结果概率相等的数值。让程序具有不确定性——每次运行都不一样，是游戏、模拟和密码学的基础",
+    "origin": "Unit 3: 3.15 Random Values",
+    "related": ["Libraries", "Simulations", "Calling Procedures"],
+    "words": [
+      {
+        "word": "random integer",
+        "breakdown": "Random(随机的) + Integer(整数)",
+        "meaning_en": "a whole number selected randomly from a specified range, where each integer in that range has an equal probability of being chosen",
+        "meaning_zh": "随机整数：从指定范围内随机选出的整数，每个整数被选中的概率相等。例如「在 1 到 6 之间随机选一个」模拟掷骰子",
+        "derivation": "Random(随机) + Integer(整数) → 「随机的整数」",
+        "mnemonic": "random integer = 摇号——号码框里每个号码都可能被摇出来",
+        "example": "RANDOM(1, 6) generates a random integer between 1 and 6, like a die roll.",
+        "example_zh": "RANDOM(1, 6) 生成 1 到 6 之间的随机整数，就像掷骰子。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "random number generation",
+        "breakdown": "Random(随机) + Number(数字) + Generation(生成)",
+        "meaning_en": "the process of using a program function to produce unpredictable numeric values, where each program execution may produce different results",
+        "meaning_zh": "随机数生成：用程序函数产生不可预测数值的过程，每次执行都可能得到不同结果。是游戏洗牌、密码生成、统计采样的基础",
+        "derivation": "Random(随机) + Number Generation(数字生成) → 「制造不可预测的数」",
+        "mnemonic": "电脑其实没有真正的随机——大多数 random 是「伪随机」，用算法生成看似随机的序列",
+        "example": "Random number generation is used to shuffle cards in a digital game.",
+        "example_zh": "随机数生成用于在数字游戏中洗牌。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "random values",
+        "breakdown": "Random(随机的) + Values(值)",
+        "meaning_en": "numbers generated by a program where each possible outcome is equally likely to occur, and the specific result cannot be predicted in advance",
+        "meaning_zh": "随机值：每个可能结果概率相等、事先无法预测的数。是许多算法的「秘密武器」——蒙特卡洛模拟、密码学、机器学习训练都依赖它",
+        "derivation": "Random(随机) + Values(值) → 「无法预测的数值」",
+        "mnemonic": "random values = 概率世界的「公平骰子」——每个面都同样可能",
+        "example": "Random values are used to simulate unpredictable events in nature.",
+        "example_zh": "随机值用于模拟自然界中不可预测的事件。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "RANDOM(a, b)",
+        "breakdown": "Random(随机) + (a, b)(范围)",
+        "meaning_en": "a function that generates and returns a random integer from a to b, inclusive, where each result is equally likely to occur",
+        "meaning_zh": "RANDOM(a, b)：生成并返回从 a 到 b（含两端）之间随机整数的函数。例如 `RANDOM(1, 100)` 返回 1 到 100 中的任何整数，每个概率相等",
+        "derivation": "Random(随机) → CSP 伪代码的内置函数语法",
+        "mnemonic": "RANDOM(1, 6) = 数字版骰子：CSP 考试常用它模拟掷骰、抽签",
+        "example": "RANDOM(1, 100) returns a random integer between 1 and 100 inclusive.",
+        "example_zh": "RANDOM(1, 100) 返回 1 到 100 之间（含两端）的随机整数。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Simulations",
+    "type": "root",
+    "meaning_en": "computational abstractions that model real-world systems using varying values and randomness",
+    "meaning_zh": "模拟：用变化的值和随机性来建模真实世界系统的计算抽象。例如天气预报、交通流量预测、疫情扩散——都是用计算机模拟现实",
+    "origin": "Unit 3: 3.16 Simulations",
+    "related": ["Random Values", "Libraries", "Algorithmic Efficiency"],
+    "words": [
+      {
+        "word": "abstractions",
+        "breakdown": "Abstract(抽象) + ion(名词) + s(复数)",
+        "meaning_en": "simplified representations of more complex objects or phenomena created by removing specific details or simplifying functionality",
+        "meaning_zh": "抽象：通过去除具体细节或简化功能来表示复杂对象或现象的简化表达。模拟本质上就是对现实的抽象——保留关键特征，忽略无关细节",
+        "derivation": "Abstract(抽象) + ions(名词复数) → 「简化的表示」",
+        "mnemonic": "地图是城市的 abstraction——保留街道，忽略每块砖头",
+        "example": "Simulations are abstractions because they leave out unimportant details.",
+        "example_zh": "模拟是抽象，因为它们省略了不重要的细节。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "bias",
+        "breakdown": "Bias(偏见、偏差)",
+        "meaning_en": "prejudice or systematic error in computing innovations that can result from algorithms or data, reflecting existing human prejudices",
+        "meaning_zh": "偏差：模拟中的偏差源于不准确的假设或数据。例如交通模拟假设「所有人都按规则开车」，结果就严重偏离现实",
+        "derivation": "Bias(倾斜) → 模拟假设的「歪曲」 → 结果不准确",
+        "mnemonic": "模拟中的 bias = 「输入垃圾，输出垃圾」——假设错了，结果再精密也没用",
+        "example": "Bias in the simulation came from assuming all drivers obey speed limits.",
+        "example_zh": "模拟中的偏差来自假设所有司机都遵守限速。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "hypotheses",
+        "breakdown": "Hypothesis(假设) + es(复数)",
+        "meaning_en": "testable predictions or proposed explanations about objects or phenomena that can be formulated and refined through simulations",
+        "meaning_zh": "假设：可通过模拟来检验和完善的预测或解释。例如「如果增加红绿灯时长，拥堵会减少」是个假设——用交通模拟去验证它",
+        "derivation": "Hypo(在下) + thesis(论题) → 「待验证的论断」",
+        "mnemonic": "好的科学家先提 hypothesis，再用 simulation 或实验去检验",
+        "example": "Scientists use simulations to test hypotheses about climate change.",
+        "example_zh": "科学家使用模拟来检验关于气候变化的假设。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "random number generators",
+        "breakdown": "Random(随机) + Number(数字) + Generator(生成器) + s(复数)",
+        "meaning_en": "computational tools that produce sequences of random values to simulate the variability and unpredictability found in real-world events",
+        "meaning_zh": "随机数生成器：产生随机值序列的计算工具，用来模拟现实事件中的多变性和不可预测性。例如模拟疫情时，每个人的感染概率由随机数决定",
+        "derivation": "Random(随机) + Generator(生成器) → 「随机数的生产工厂」",
+        "mnemonic": "没有 RNG 的模拟就像静止的电影——每次都一样，没有现实的味道",
+        "example": "Random number generators help simulate the spread of a disease.",
+        "example_zh": "随机数生成器帮助模拟疾病的传播。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "real-world phenomena",
+        "breakdown": "Real-world(现实世界) + Phenomena(现象)",
+        "meaning_en": "events, processes, or systems that occur in nature or society that can be represented or studied through computational models",
+        "meaning_zh": "现实世界现象：可以通过计算模型来表示或研究的自然或社会事件、过程或系统。例如天气、股市波动、人口增长都是 real-world phenomena",
+        "derivation": "Real-world(现实世界) + Phenomena(现象) → 「现实中发生的事」",
+        "mnemonic": "模拟的目标就是 real-world phenomena——把现实搬进电脑里研究",
+        "example": "Weather forecasting models real-world phenomena like wind and pressure.",
+        "example_zh": "天气预报对风和气压等现实世界现象进行建模。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "simulations",
+        "breakdown": "Simulate(模拟) + ion(名词) + s(复数)",
+        "meaning_en": "abstractions of real-world objects or phenomena that use varying sets of values to represent changing states for a specific purpose",
+        "meaning_zh": "模拟：使用变化的值集合来表示状态变化的现实对象或现象的抽象。可以做到现实中无法做的实验——例如「如果我们今天关闭所有学校会怎样」",
+        "derivation": "Simulate(模仿) + ions(名词复数) → 「在电脑里模仿现实」",
+        "mnemonic": "模拟 = 数字沙盘：现实中拆不起的东西，模拟里随便玩",
+        "example": "Flight simulations let pilots train without using a real airplane.",
+        "example_zh": "飞行模拟让飞行员在不使用真飞机的情况下训练。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "variability",
+        "breakdown": "Vari(变化) + ability(能力)",
+        "meaning_en": "the natural differences and unpredictability that exist in real-world systems and can be represented in simulations",
+        "meaning_zh": "可变性：现实系统中存在的自然差异和不可预测性，可以在模拟中表示出来。例如每个人走路速度不同、天气每天不同——这些都是 variability",
+        "derivation": "Vari(变化) + ability(可…性) → 「变化的能力」",
+        "mnemonic": "好的模拟必须包含 variability——否则就成了刻板的动画",
+        "example": "Simulations capture the variability of customer arrivals at a store.",
+        "example_zh": "模拟捕捉顾客到达商店的可变性。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Algorithmic Efficiency",
+    "type": "root",
+    "meaning_en": "the measure of how well an algorithm uses computational resources as input size grows",
+    "meaning_zh": "算法效率：算法随着输入规模增长使用资源（时间、内存）的效率。多项式效率的算法实用，指数和阶乘效率的算法在大输入下不可用",
+    "origin": "Unit 3: 3.17 Algorithmic Efficiency",
+    "related": ["Developing Algorithms", "Binary Search", "Undecidable Problems"],
+    "words": [
+      {
+        "word": "algorithm",
+        "breakdown": "Algorithm(算法) — from al-Khwarizmi",
+        "meaning_en": "step-by-step procedures or sets of rules designed to solve a problem or accomplish a task",
+        "meaning_zh": "算法：解决问题的步骤集合。讨论效率时关心的是「输入翻倍，运行时间翻几倍」——这决定了算法在大数据上是否实用",
+        "derivation": "al-Khwarizmi → Algorithm → 「关于步骤的学问」",
+        "mnemonic": "好算法 vs 坏算法：处理 100 项时都很快，但 100 万项时差距就出来了",
+        "example": "The algorithm's efficiency determines whether it can handle large inputs.",
+        "example_zh": "算法的效率决定它是否能处理大输入。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "approximate solution",
+        "breakdown": "Approximate(近似的) + Solution(解)",
+        "meaning_en": "a solution that is not guaranteed to be optimal but is sought when efficient algorithms for finding optimal solutions are impractical",
+        "meaning_zh": "近似解：不保证最优、但在最优算法不实用时寻求的解。例如旅行商问题的最优解是 NP-hard，实践中只能用 heuristic 找到近似最优",
+        "derivation": "Approximate(接近) + Solution(解) → 「差不多的解」",
+        "mnemonic": "approximate solution = 差不多就行：「最快路线」找不到，给你一条「挺快的路线」",
+        "example": "An approximate solution is acceptable when finding the optimal one would take years.",
+        "example_zh": "当找到最优解需要数年时，近似解是可以接受的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "decision problem",
+        "breakdown": "Decision(决策) + Problem(问题)",
+        "meaning_en": "a problem that requires a yes-or-no answer as output",
+        "meaning_zh": "判定问题：要求输出 yes 或 no 的问题。例如「这个数是质数吗？」「这个图是连通的吗？」是 CSP 理论中的基本问题类型",
+        "derivation": "Decision(决策) + Problem(问题) → 「需要做出是非判断的问题」",
+        "mnemonic": "决策问题 = 算法版的「是非题」——只有 yes/no 两个答案",
+        "example": "Is this number prime is a decision problem.",
+        "example_zh": "「这个数是质数吗」是一个判定问题。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "efficiency",
+        "breakdown": "Efficient(高效的) + cy(名词后缀)",
+        "meaning_en": "an estimation of the amount of computational resources (such as time or memory) used by an algorithm, typically expressed as a function of the input size",
+        "meaning_zh": "效率：算法使用计算资源（时间、内存）的估算，通常用输入规模的函数表示。例如 O(n) 是线性、O(n²) 是平方、O(2ⁿ) 是指数",
+        "derivation": "Efficient(高效) + cy(性质) → 「使用资源的程度」",
+        "mnemonic": "效率不是「快慢」而是「随规模增长的速度」——小输入看不出差别，大输入差距悬殊",
+        "example": "The efficiency of binary search is much better than that of sequential search.",
+        "example_zh": "二分搜索的效率远优于线性搜索。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "exponential efficiency",
+        "breakdown": "Exponential(指数的) + Efficiency(效率)",
+        "meaning_en": "an algorithm's efficiency that grows exponentially with input size, causing it to run in an unreasonable amount of time",
+        "meaning_zh": "指数效率：运行时间随输入规模指数增长（如 2ⁿ）的效率。输入加 1，时间翻倍——n=20 时还行，n=50 时电脑就跑不动了",
+        "derivation": "Exponential(指数的) + Efficiency(效率) → 「成倍爆炸的运行时间」",
+        "mnemonic": "指数效率 = 棋盘上的麦粒：第64格要 2⁶³ 颗，比全世界的麦子还多",
+        "example": "An algorithm with exponential efficiency cannot handle inputs of size 100.",
+        "example_zh": "指数效率的算法无法处理大小为 100 的输入。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "factorial efficiency",
+        "breakdown": "Factorial(阶乘的) + Efficiency(效率)",
+        "meaning_en": "an algorithm's efficiency that grows at a factorial rate with input size, causing it to run in an unreasonable amount of time",
+        "meaning_zh": "阶乘效率：运行时间随输入规模阶乘增长（n!）的效率。比指数还可怕——n=20 时就达到 2.4×10¹⁸，宇宙寿命都跑不完",
+        "derivation": "Factorial(阶乘) + Efficiency(效率) → 「比指数更恐怖的爆炸」",
+        "mnemonic": "阶乘效率 = 旅行商问题的暴力解法：n 个城市有 n! 种走法，n=15 就要算 13亿次",
+        "example": "Computing all permutations has factorial efficiency.",
+        "example_zh": "计算所有排列具有阶乘效率。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "heuristic",
+        "breakdown": "Heuristic(启发式的) — from Greek 'heurisko' (to find)",
+        "meaning_en": "an approach to a problem that produces a solution that is not guaranteed to be optimal but may be used when techniques that always find an optimal solution are impractical",
+        "meaning_zh": "启发式方法：不保证最优、但在最优方法不实用时使用的解决思路。例如下棋时「优先抢中心格」就是一个 heuristic——不一定最佳，但通常有效",
+        "derivation": "希腊语 heurisko(找到) → Heuristic(启发式) → 「凭经验找到的方法」",
+        "mnemonic": "heuristic = 「经验法则」：阿基米德泡澡时喊「Eureka!」（我发现了）",
+        "example": "A heuristic helps find a good solution quickly when optimal is too slow.",
+        "example_zh": "启发式方法在最优解太慢时帮助快速找到好的解。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "optimization problem",
+        "breakdown": "Optimize(优化) + ation(名词) + Problem(问题)",
+        "meaning_en": "a problem with the goal of finding the best solution among many possible solutions",
+        "meaning_zh": "优化问题：在许多可能解中寻找最优解的问题。例如「找出最短路径」「打包尽可能多的物品」——往往很难精确求解",
+        "derivation": "Optimize(优化) + ation(名词) + Problem(问题) → 「找最优解的问题」",
+        "mnemonic": "优化问题的「圣杯」是找到最优解——但很多时候只能用 heuristic 找近似",
+        "example": "The traveling salesman is a famous optimization problem.",
+        "example_zh": "旅行商问题是著名的优化问题。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "polynomial efficiency",
+        "breakdown": "Polynomial(多项式的) + Efficiency(效率)",
+        "meaning_en": "an algorithm's efficiency that grows at a polynomial rate (constant, linear, square, cube, etc.) relative to input size, allowing it to run in reasonable time",
+        "meaning_zh": "多项式效率：运行时间按多项式速率增长（常数、线性、平方、立方等）的效率。例如 O(n²) 是平方时间——是「合理时间」算法的标志",
+        "derivation": "Polynomial(多项式) + Efficiency(效率) → 「按多项式速率增长」",
+        "mnemonic": "多项式效率 = 实用算法的门槛：O(n)、O(n log n)、O(n²) 都属于这类，能用",
+        "example": "Sorting algorithms with polynomial efficiency can handle millions of elements.",
+        "example_zh": "多项式效率的排序算法可以处理数百万个元素。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "problem",
+        "breakdown": "Problem(问题)",
+        "meaning_en": "a general description of a task that can or cannot be solved algorithmically, which may have specific inputs or instances",
+        "meaning_zh": "问题：可能能用算法解决也可能不能的任务的一般描述，可能有具体输入或实例。CSP 关注的核心问题：哪些问题可解？哪些不可解？",
+        "derivation": "Problem(问题) → 计算理论的研究对象",
+        "mnemonic": "「问题」分三类：可在合理时间解决、可解但不在合理时间、根本不可解（undecidable）",
+        "example": "The problem of finding the shortest path has many efficient algorithms.",
+        "example_zh": "找最短路径的问题有许多高效的算法。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "reasonable time",
+        "breakdown": "Reasonable(合理的) + Time(时间)",
+        "meaning_en": "algorithms with polynomial efficiency or lower (constant, linear, square, cube, etc.) that can be solved in a practical amount of time",
+        "meaning_zh": "合理时间：多项式效率或更低的算法可以在实用时间内解决。即「能用」——大学考试一般认为多项式时间内的算法是可接受的",
+        "derivation": "Reasonable(合理的) + Time(时间) → 「人能等得起的时间」",
+        "mnemonic": "reasonable time 的标准：1 秒处理 100 个 vs 100 万个——只要不是几年几十年",
+        "example": "Polynomial algorithms run in reasonable time even for large inputs.",
+        "example_zh": "多项式算法即使对大输入也能在合理时间内运行。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "unreasonable time",
+        "breakdown": "Unreasonable(不合理的) + Time(时间)",
+        "meaning_en": "algorithms with exponential or factorial efficiencies that require impractically long amounts of time to solve",
+        "meaning_zh": "不合理时间：指数或阶乘效率的算法所需的不实用的长时间。例如某些密码破解算法需要宇宙寿命——这就是密码学的安全保障",
+        "derivation": "Unreasonable(不合理的) + Time(时间) → 「等不起的时间」",
+        "mnemonic": "unreasonable time = 宇宙都凉了还没算完——但这正是 RSA 加密的安全所在",
+        "example": "Brute-force decryption takes unreasonable time, which is why encryption is secure.",
+        "example_zh": "暴力解密需要不合理的时间，这就是加密安全的原因。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Undecidable Problems",
+    "type": "root",
+    "meaning_en": "problems for which no algorithm can produce a correct answer for all possible inputs",
+    "meaning_zh": "不可判定问题：没有任何算法能对所有可能输入都给出正确答案的问题。例如著名的「停机问题」——无法用算法判断任意程序是否会停止",
+    "origin": "Unit 3: 3.18 Undecidable Problems",
+    "related": ["Algorithmic Efficiency", "Developing Algorithms"],
+    "words": [
+      {
+        "word": "algorithm",
+        "breakdown": "Algorithm(算法) — from al-Khwarizmi",
+        "meaning_en": "step-by-step procedures or sets of rules designed to solve a problem or accomplish a task",
+        "meaning_zh": "算法：在不可判定问题的语境下，重点是「不存在能解决所有情况的算法」。可决定问题有完美算法，不可判定问题没有",
+        "derivation": "al-Khwarizmi → Algorithm → 「能用步骤解决问题的方法」",
+        "mnemonic": "算法的能力是有边界的——有些问题数学上证明了「不可能写出算法」",
+        "example": "No algorithm can solve all instances of an undecidable problem.",
+        "example_zh": "没有算法可以解决不可判定问题的所有实例。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "decidable problem",
+        "breakdown": "Decidable(可判定的) + Problem(问题)",
+        "meaning_en": "a decision problem for which an algorithm can be written to produce a correct output for all inputs",
+        "meaning_zh": "可判定问题：存在算法能对所有输入给出正确输出的判定问题。例如「这个数是偶数吗？」就是可判定的——用 `n MOD 2 == 0` 一次搞定",
+        "derivation": "Decide(判定) + able(可…) + Problem(问题) → 「能做出判断的问题」",
+        "mnemonic": "可判定问题 = 有「万能算法」的问题：任何输入都能正确回答",
+        "example": "Checking if a number is even is a decidable problem.",
+        "example_zh": "检查一个数是否为偶数是一个可判定问题。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "decision problem",
+        "breakdown": "Decision(决策) + Problem(问题)",
+        "meaning_en": "a problem that requires a yes-or-no answer as output",
+        "meaning_zh": "判定问题：要求输出 yes 或 no 的问题。在不可判定的语境下，问的是「这种 yes/no 问题是否存在通用算法」",
+        "derivation": "Decision(决策) + Problem(问题) → 「需要做出是非判断的问题」",
+        "mnemonic": "决策问题是计算理论的「最简单形式」——但即便如此，有些也无法解决",
+        "example": "A decision problem outputs only true or false.",
+        "example_zh": "判定问题只输出 true 或 false。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "undecidable problem",
+        "breakdown": "Un(不) + Decidable(可判定的) + Problem(问题)",
+        "meaning_en": "a problem for which no algorithm can be constructed that is always capable of providing a correct yes-or-no answer for all instances",
+        "meaning_zh": "不可判定问题：无法构造出能对所有实例总是给出正确 yes/no 答案的算法的问题。最著名的例子是图灵的「停机问题」",
+        "derivation": "Un(不) + Decidable(可判定) → 「无法用算法解决的问题」",
+        "mnemonic": "图灵 1936 年证明了停机问题不可判定——计算机科学最深刻的理论结果之一",
+        "example": "The halting problem is the most famous undecidable problem.",
+        "example_zh": "停机问题是最著名的不可判定问题。",
+        "toefl_frequency": "medium"
+      }
+    ]
   }
 ]

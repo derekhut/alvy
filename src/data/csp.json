@@ -3282,5 +3282,486 @@
         "toefl_frequency": "medium"
       }
     ]
+  },
+  {
+    "root": "Intro to Big Idea 4",
+    "type": "root",
+    "meaning_en": "the Internet as a global system of interconnected networks using packets and standardized protocols",
+    "meaning_zh": "大概念4导论：互联网是由互联网络组成的全球系统，使用数据包和标准化协议进行通信。它是分布式、容错、可扩展的——支撑着我们今天数字生活的一切",
+    "origin": "Unit 4: 4.1 The Internet",
+    "related": ["Fault Tolerance", "Parallel and Distributed Computing"],
+    "words": [
+      {
+        "word": "bandwidth",
+        "breakdown": "Band(带) + Width(宽度)",
+        "meaning_en": "the maximum amount of data that can be sent in a fixed amount of time, typically measured in bits per second",
+        "meaning_zh": "带宽：在固定时间内能发送的最大数据量，通常以每秒位数（bps）为单位。例如100 Mbps 的网络每秒能传 1 亿位——影响下载速度和视频流畅度",
+        "derivation": "Band(频带) + Width(宽度) → 「数据通道的宽度」",
+        "mnemonic": "带宽像高速公路的车道数——车道越多，每秒能通过的车（数据）越多",
+        "example": "A higher bandwidth means faster download speeds.",
+        "example_zh": "更高的带宽意味着更快的下载速度。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "communication protocols",
+        "breakdown": "Communication(通信) + Protocol(协议) + s(复数)",
+        "meaning_en": "standardized rules that govern how data is transmitted and received between computing devices on a network",
+        "meaning_zh": "通信协议：管理网络上设备之间数据传输和接收的标准规则。没有协议，不同厂商的设备就无法交流——就像人类没有共同语言",
+        "derivation": "Communication(通信) + Protocols(协议) → 「设备交流的语法规则」",
+        "mnemonic": "通信协议像外交礼仪——大家按同一套规则握手、寒暄、告别，才能顺畅交流",
+        "example": "Communication protocols like HTTP let browsers and servers talk to each other.",
+        "example_zh": "像 HTTP 这样的通信协议让浏览器和服务器互相交流。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "computer network",
+        "breakdown": "Computer(计算机) + Network(网络)",
+        "meaning_en": "a group of interconnected computing devices capable of sending or receiving data",
+        "meaning_zh": "计算机网络：能互相发送或接收数据的相互连接的计算设备组。可以小到家里的 Wi-Fi，也可以大到整个互联网——本质都是「联网的设备」",
+        "derivation": "Computer(计算机) + Network(网络) → 「连起来的计算机」",
+        "mnemonic": "网络像蜘蛛网——每个节点（设备）都和其他节点相连，信息可以从任意点流到任意点",
+        "example": "A computer network connects all the devices in an office.",
+        "example_zh": "计算机网络连接办公室里的所有设备。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "computing device",
+        "breakdown": "Computing(计算) + Device(设备)",
+        "meaning_en": "a physical artifact that can run a program, such as computers, tablets, servers, routers, and smart sensors",
+        "meaning_zh": "计算设备：能运行程序的物理装置，包括电脑、平板、服务器、路由器、智能传感器等。任何能跑代码的硬件都算 computing device",
+        "derivation": "Compute(计算) + Device(设备) → 「能算东西的硬件」",
+        "mnemonic": "computing device 不只是电脑——你的智能冰箱、智能手表都算",
+        "example": "Your phone is a computing device that runs apps.",
+        "example_zh": "你的手机是一种运行应用的计算设备。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "computing system",
+        "breakdown": "Computing(计算) + System(系统)",
+        "meaning_en": "a group of computing devices and programs working together for a common purpose",
+        "meaning_zh": "计算系统：为共同目的协同工作的一组计算设备和程序。例如一家公司的网站是一个 computing system——前端、后端、数据库、CDN 共同协作",
+        "derivation": "Computing(计算) + System(系统) → 「设备 + 程序的协作整体」",
+        "mnemonic": "计算系统 = 设备 + 软件 + 协作：单独一台服务器不算，加上前端和数据库才算",
+        "example": "An e-commerce website is a complex computing system.",
+        "example_zh": "电子商务网站是一个复杂的计算系统。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "data reassembly",
+        "breakdown": "Data(数据) + Re(再) + Assembly(组装)",
+        "meaning_en": "the process of reconstructing the original data from packets that may arrive out of order or incompletely",
+        "meaning_zh": "数据重组：从可能乱序或不完整到达的数据包中重建原始数据的过程。TCP 协议会负责重组——把碎片按正确顺序拼回完整文件",
+        "derivation": "Data(数据) + Reassembly(重新组装) → 「把数据包拼回原样」",
+        "mnemonic": "数据重组像拼乐高——所有零件先散落，再按编号一片片组装",
+        "example": "Data reassembly puts all the packets back in the right order.",
+        "example_zh": "数据重组将所有数据包按正确顺序重新排列。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "data stream",
+        "breakdown": "Data(数据) + Stream(流)",
+        "meaning_en": "a continuous flow of information passed through the Internet, composed of chunks of data organized into packets",
+        "meaning_zh": "数据流：通过互联网传递的连续信息流，由组织成数据包的数据块构成。例如观看视频时，视频内容就以数据流的形式不断传输到你的设备",
+        "derivation": "Data(数据) + Stream(流) → 「持续不断的数据流动」",
+        "mnemonic": "data stream 像水流——源源不断地从源头流向目的地",
+        "example": "Streaming a movie creates a continuous data stream over the network.",
+        "example_zh": "流式播放电影会在网络上产生连续的数据流。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "dynamic routing",
+        "breakdown": "Dynamic(动态的) + Routing(路由)",
+        "meaning_en": "a routing method where the path data takes across a network is determined in real-time rather than being specified in advance",
+        "meaning_zh": "动态路由：数据在网络上的路径由实时决定而非预先指定的路由方式。如果某条线路堵塞或断开，路由器会自动选择新路径——这就是互联网容错的关键",
+        "derivation": "Dynamic(动态的) + Routing(路由) → 「实时决定的数据路径」",
+        "mnemonic": "动态路由像导航软件 GPS——前面堵车了自动绕开，不会一条路走到黑",
+        "example": "Dynamic routing reroutes packets when a network link goes down.",
+        "example_zh": "动态路由在网络链路断开时重新路由数据包。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "HTTP",
+        "breakdown": "HyperText Transfer Protocol(超文本传输协议)",
+        "meaning_en": "a protocol used by the World Wide Web to transmit and receive data between web browsers and servers",
+        "meaning_zh": "HTTP：万维网用于在浏览器和服务器之间传输数据的协议。每次你在浏览器输入网址，背后都是 HTTP 请求和响应在工作",
+        "derivation": "HyperText(超文本) + Transfer(传输) + Protocol(协议) → 网页传输的标准",
+        "mnemonic": "URL 开头的 http:// 不是装饰——它告诉浏览器「按 HTTP 协议来取这个页面」",
+        "example": "Every time you visit a website, your browser uses HTTP.",
+        "example_zh": "每次你访问网站，浏览器都使用 HTTP。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "interconnected networks",
+        "breakdown": "Inter(之间) + Connected(相连的) + Networks(网络)",
+        "meaning_en": "multiple separate networks that are connected together to form a larger network system, such as the Internet",
+        "meaning_zh": "互联网络：多个独立网络相互连接形成的更大网络系统。互联网（Internet）这个词的字面意思就是「网络之间的网络」",
+        "derivation": "Inter(之间) + Connected(相连) + Networks(网络) → 「相互连接的网络」",
+        "mnemonic": "Internet = Inter + net = 「网络之间的网络」——名字本身就解释了它是什么",
+        "example": "The Internet is built from millions of interconnected networks.",
+        "example_zh": "互联网由数百万个互联网络构建而成。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Internet",
+        "breakdown": "Inter(之间) + Net(网络)",
+        "meaning_en": "a computer network consisting of interconnected networks that use standardized, open communication protocols to enable global communication and data exchange",
+        "meaning_zh": "互联网：由使用标准化开放协议的互联网络组成的计算机网络，实现全球通信和数据交换。注意：互联网 ≠ 万维网，万维网只是互联网上的一个应用",
+        "derivation": "Inter(之间) + Net(网络) → 「网络之间的网络」",
+        "mnemonic": "互联网像全球邮政系统——任何人可以给任何人寄信，只要写对地址",
+        "example": "The Internet allows people to communicate across the world.",
+        "example_zh": "互联网允许人们跨越世界进行交流。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "IP",
+        "breakdown": "Internet Protocol(互联网协议)",
+        "meaning_en": "Internet Protocol; a common protocol used on the Internet for routing packets between devices",
+        "meaning_zh": "IP（互联网协议）：互联网上用于在设备之间路由数据包的常用协议。每个联网设备都有一个 IP 地址，就像每户人家都有门牌号",
+        "derivation": "Internet(互联网) + Protocol(协议) → 互联网的「邮政系统」",
+        "mnemonic": "IP 地址 = 网络上的「身份证 + 门牌号」——告诉数据包该往哪送",
+        "example": "Every device on the Internet has a unique IP address.",
+        "example_zh": "互联网上的每个设备都有一个唯一的 IP 地址。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "metadata",
+        "breakdown": "Meta(关于) + Data(数据)",
+        "meaning_en": "data that describes other data, such as the date of creation or file size of an image, used for finding, organizing, and managing information",
+        "meaning_zh": "元数据：描述其他数据的数据，例如图片的创建日期或文件大小。在网络数据包中，元数据包括发送方、接收方、长度等头信息——告诉路由器怎么处理这个包",
+        "derivation": "Meta(关于) + Data(数据) → 「关于数据的数据」",
+        "mnemonic": "metadata 是数据的「身份证」——内容是什么、谁发的、什么时候发的",
+        "example": "Each packet's metadata tells the router where to send it.",
+        "example_zh": "每个数据包的元数据告诉路由器该发往哪里。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "nonproprietary",
+        "breakdown": "Non(非) + Proprietary(专有的)",
+        "meaning_en": "not owned or controlled by a single company; publicly available and accessible to all users",
+        "meaning_zh": "非专有的：不由单一公司拥有或控制的，公开可用、所有用户可访问。互联网协议都是 nonproprietary——这是它能成为全球标准的关键",
+        "derivation": "Non(非) + Proprietary(专有的) → 「不属于任何一家的」",
+        "mnemonic": "nonproprietary 是开放的代名词——任何公司都能用，没有许可费",
+        "example": "Open protocols like HTTP are nonproprietary.",
+        "example_zh": "像 HTTP 这样的开放协议是非专有的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "open protocols",
+        "breakdown": "Open(开放的) + Protocols(协议)",
+        "meaning_en": "non-proprietary communication protocols that are publicly available and allow users to easily connect additional devices to a network",
+        "meaning_zh": "开放协议：非专有的、公开可用的通信协议，允许用户轻松地将更多设备连接到网络。是互联网能够成长为全球网络的根本——任何设备都可以加入",
+        "derivation": "Open(开放的) + Protocols(协议) → 「公开的通信规则」",
+        "mnemonic": "开放协议 = 通用插座——你买的任何电器都能用，不用担心兼容性",
+        "example": "Open protocols make it easy to add new devices to the Internet.",
+        "example_zh": "开放协议让向互联网添加新设备变得容易。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "packets",
+        "breakdown": "Packet(小包)",
+        "meaning_en": "chunks of data that are encapsulated with metadata and sent through the Internet from an origin to a destination",
+        "meaning_zh": "数据包：被封装上元数据并通过互联网从源发送到目的地的数据块。互联网传输的最小单位——大文件会被切成多个小包发送",
+        "derivation": "Pack(打包) + et(小) → 「小包裹」",
+        "mnemonic": "数据包 = 网络快递包裹：每个都有地址（IP）、运单号（序号），电脑负责拼回原件",
+        "example": "A large file is broken into many packets before being sent.",
+        "example_zh": "大文件在发送前被分解成许多数据包。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "path",
+        "breakdown": "Path(路径)",
+        "meaning_en": "a sequence of directly connected computing devices that begins at a sender and ends at a receiver on a computer network",
+        "meaning_zh": "路径：从发送方到接收方直接相连的计算设备序列。数据包通过这条路径在网络上传输，每个中间节点都是一个路由器",
+        "derivation": "Path(路径) → 「数据走过的具体线路」",
+        "mnemonic": "网络的 path 像快递的运输路线——从北京发往上海，可能经过天津、济南、南京",
+        "example": "The packet's path passed through five routers before reaching its destination.",
+        "example_zh": "数据包的路径在到达目的地之前经过了五个路由器。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "protocol",
+        "breakdown": "Proto(原始) + Col(粘贴)",
+        "meaning_en": "an agreed-upon set of rules that specify the behavior of a system and enable devices to communicate with each other",
+        "meaning_zh": "协议：商定好的规则集，规定系统行为并让设备能够互相通信。没有协议，网络就乱套——大家都「说自己的话」，谁也听不懂谁",
+        "derivation": "Proto(最初) + Col(粘贴) → 「最初的约定」",
+        "mnemonic": "协议像握手礼仪——双方都按同样的步骤来，就能顺畅交流",
+        "example": "A protocol defines exactly how two devices should communicate.",
+        "example_zh": "协议精确定义了两个设备应如何通信。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "receiver",
+        "breakdown": "Receive(接收) + er(者)",
+        "meaning_en": "the computing device that receives data sent from a sender in a network communication",
+        "meaning_zh": "接收方：网络通信中接收发送方发来数据的计算设备。每次通信都有 sender 和 receiver——你打开网页时，浏览器是 receiver，服务器是 sender",
+        "derivation": "Receive(接收) + er(者) → 「接收数据的一方」",
+        "mnemonic": "receiver 像快递的收件人——等着包裹送上门",
+        "example": "The receiver's IP address tells the network where to deliver the packet.",
+        "example_zh": "接收方的 IP 地址告诉网络该把数据包送到哪里。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "routing",
+        "breakdown": "Route(路线) + ing(动名词)",
+        "meaning_en": "the process of finding a path from sender to receiver on a computer network",
+        "meaning_zh": "路由：在计算机网络上找出从发送方到接收方路径的过程。路由器会动态地为每个数据包选择最佳路径——这是互联网的「交通指挥」",
+        "derivation": "Route(路线) + ing(动作) → 「找路的过程」",
+        "mnemonic": "路由像快递的分拣中心——根据目的地决定下一站送到哪个分拣点",
+        "example": "Routing finds the fastest path for each packet across the Internet.",
+        "example_zh": "路由为每个数据包找到穿越互联网的最快路径。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "scalability",
+        "breakdown": "Scal(规模) + ability(能力)",
+        "meaning_en": "the ability of a solution to maintain or improve performance as the problem size or computational resources increase",
+        "meaning_zh": "可扩展性：解决方案在问题规模或计算资源增加时保持或改善性能的能力。互联网的设计就极具 scalability——从几台机器扩展到几十亿台仍能运行",
+        "derivation": "Scale(规模) + ability(能力) → 「应对规模变化的能力」",
+        "mnemonic": "scalability 像橡皮筋——能从手指圈拉成腰带，依然有弹性不会断",
+        "example": "The Internet's scalability allows it to handle billions of devices.",
+        "example_zh": "互联网的可扩展性使其能够处理数十亿台设备。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "sender",
+        "breakdown": "Send(发送) + er(者)",
+        "meaning_en": "the computing device that initiates the sending of data in a network communication",
+        "meaning_zh": "发送方：网络通信中发起数据发送的计算设备。和 receiver 是一对——例如发邮件时，你的电脑是 sender，对方的邮箱服务器是 receiver",
+        "derivation": "Send(发送) + er(者) → 「发数据的一方」",
+        "mnemonic": "sender 像快递员——把包裹（数据）交出去，告诉网络「请送到那个地址」",
+        "example": "The sender packages the data into packets before transmitting them.",
+        "example_zh": "发送方在传输数据之前把数据打包成数据包。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "TCP",
+        "breakdown": "Transmission Control Protocol(传输控制协议)",
+        "meaning_en": "Transmission Control Protocol; a common protocol used on the Internet that ensures reliable, ordered delivery of data packets",
+        "meaning_zh": "TCP（传输控制协议）：互联网上确保数据包可靠、有序传送的常用协议。是「快但更可靠」的代名词——网页、邮件都用 TCP，确保数据不丢、顺序正确",
+        "derivation": "Transmission(传输) + Control(控制) + Protocol(协议) → 「可靠传输的规则」",
+        "mnemonic": "TCP = 挂号信：每个包都签收，丢了重发；UDP = 普通信：发了就不管",
+        "example": "TCP makes sure no packets are lost when downloading a file.",
+        "example_zh": "TCP 确保下载文件时没有数据包丢失。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "UDP",
+        "breakdown": "User Datagram Protocol(用户数据报协议)",
+        "meaning_en": "User Datagram Protocol; a common protocol used on the Internet for faster but less reliable data transmission compared to TCP",
+        "meaning_zh": "UDP（用户数据报协议）：互联网上比 TCP 更快但不太可靠的常用协议。适合视频通话、在线游戏——丢一两个包没关系，但延迟必须低",
+        "derivation": "User(用户) + Datagram(数据报) + Protocol(协议) → 「无连接的快速传输」",
+        "mnemonic": "UDP = 「发了就忘」——速度优先，可靠性靠后；视频会议丢一帧没事，但延迟一秒就受不了",
+        "example": "Online games use UDP to minimize delay.",
+        "example_zh": "在线游戏使用 UDP 来最小化延迟。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "World Wide Web",
+        "breakdown": "World Wide(全球) + Web(网)",
+        "meaning_en": "a system of linked pages, programs, and files that operates on top of the Internet using HTTP protocol",
+        "meaning_zh": "万维网：在互联网之上运行、使用 HTTP 协议的链接页面、程序和文件的系统。注意：WWW 只是互联网的一个应用——电子邮件、FTP 都是其他应用",
+        "derivation": "World Wide(全球) + Web(网) → 「全球范围的链接网页系统」",
+        "mnemonic": "WWW ≠ Internet：互联网是基础设施，万维网只是上面的「网页应用」之一",
+        "example": "The World Wide Web is just one of many applications running on the Internet.",
+        "example_zh": "万维网只是运行在互联网上的众多应用之一。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Fault Tolerance",
+    "type": "root",
+    "meaning_en": "the ability of a system to continue functioning when components fail, often through redundancy",
+    "meaning_zh": "容错：系统在某些组件失效时仍能继续运行的能力，通常通过冗余实现。互联网就具有高度的容错性——单条线路或单台路由器故障不会导致整个网络瘫痪",
+    "origin": "Unit 4: 4.2 Fault Tolerance",
+    "related": ["Intro to Big Idea 4", "Parallel and Distributed Computing"],
+    "words": [
+      {
+        "word": "fault tolerance",
+        "breakdown": "Fault(故障) + Tolerance(容忍)",
+        "meaning_en": "the ability of a system to continue operating and providing service even when some of its components fail",
+        "meaning_zh": "容错：系统在某些组件失效时仍能继续运行和提供服务的能力。互联网的设计目标之一——即使核心战争中一些线路被毁，其余仍能正常通信",
+        "derivation": "Fault(故障) + Tolerance(容忍) → 「能容忍故障的能力」",
+        "mnemonic": "fault tolerance 是互联网最伟大的特性之一——飞机断了一个引擎还能飞",
+        "example": "Fault tolerance keeps the website running even if one server crashes.",
+        "example_zh": "容错让网站在一个服务器崩溃时仍能保持运行。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "network redundancy",
+        "breakdown": "Network(网络) + Redundancy(冗余)",
+        "meaning_en": "the practice of having multiple paths or duplicate components in a network to ensure continued operation if one path or component fails",
+        "meaning_zh": "网络冗余：在网络中保留多条路径或重复组件以确保单点故障时仍能继续运行的做法。是实现 fault tolerance 的关键手段",
+        "derivation": "Network(网络) + Redundancy(冗余) → 「网络中的备用路径和组件」",
+        "mnemonic": "网络冗余像飞机的多发动机——一个挂了，其他还能撑住",
+        "example": "Network redundancy means there is always a backup path for data.",
+        "example_zh": "网络冗余意味着数据总有备用路径。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "redundancy",
+        "breakdown": "Re(再) + Dund(波动) + ancy(名词后缀)",
+        "meaning_en": "repetition or unnecessary duplication in data representation that can be reduced through compression",
+        "meaning_zh": "冗余：在容错的语境下，是「故意保留多份副本」以应对故障。和数据压缩中的 redundancy（要去除的重复）正好相反——一个是「多即好」，一个是「多即冗」",
+        "derivation": "Re(再) + Dund(满) + ancy(状态) → 「重复 / 多余」",
+        "mnemonic": "冗余有两面：在容错里是好事（多份备份），在压缩里是坏事（要消除）",
+        "example": "Network redundancy uses extra cables to provide backup paths.",
+        "example_zh": "网络冗余使用额外的电缆来提供备用路径。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "reliability",
+        "breakdown": "Reli(依赖) + ability(能力)",
+        "meaning_en": "the ability of a system to perform its intended function consistently and dependably over time",
+        "meaning_zh": "可靠性：系统在长时间内一致、可靠地执行其预期功能的能力。容错增加可靠性——一个组件故障不会让整个系统宕机",
+        "derivation": "Rely(依赖) + ability(能力) → 「能被依赖的程度」",
+        "mnemonic": "可靠性 = 「该来的时候一定来」：99.9% uptime 才能让用户信任",
+        "example": "The bank's high reliability depends on multiple backup systems.",
+        "example_zh": "银行的高可靠性依赖于多个备份系统。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "routing",
+        "breakdown": "Route(路线) + ing(动名词)",
+        "meaning_en": "the process of finding a path from sender to receiver on a computer network",
+        "meaning_zh": "路由：在容错的语境下，路由的「动态」特性是关键——能自动绕开故障节点。这就是为什么互联网比传统电话网更具弹性",
+        "derivation": "Route(路线) + ing(动作) → 「自动找新路径」",
+        "mnemonic": "动态路由是容错的眼睛和腿——发现故障，立刻绕开",
+        "example": "Dynamic routing reroutes data when a network link fails.",
+        "example_zh": "动态路由在网络链路故障时重新路由数据。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "vulnerabilities",
+        "breakdown": "Vulner(伤口) + ability(能力) + es(复数)",
+        "meaning_en": "weaknesses or points of failure in a system that could cause it to malfunction or stop operating",
+        "meaning_zh": "脆弱点：系统中可能导致故障或停止运行的弱点或失败点。例如单点故障——如果整个公司只有一台路由器，那台路由器就是 vulnerability",
+        "derivation": "Vulner(伤口) + ability(可…性) → 「易受伤的地方」",
+        "mnemonic": "vulnerability = 「软肋」：找出来要么修补，要么用冗余化解",
+        "example": "Single points of failure are the biggest vulnerabilities in a network.",
+        "example_zh": "单点故障是网络中最大的脆弱点。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Parallel and Distributed Computing",
+    "type": "root",
+    "meaning_en": "computational models that use multiple processors or devices to solve problems faster",
+    "meaning_zh": "并行与分布式计算：使用多个处理器或设备来更快解决问题的计算模型。并行 = 一台机器多核同时工作；分布式 = 多台机器协作。是大数据和云计算的根基",
+    "origin": "Unit 4: 4.3 Parallel and Distributed Computing",
+    "related": ["Intro to Big Idea 4", "Fault Tolerance", "Algorithmic Efficiency"],
+    "words": [
+      {
+        "word": "distributed computing",
+        "breakdown": "Distribute(分配) + ed + Computing(计算)",
+        "meaning_en": "a computational model in which multiple devices are used to run a program",
+        "meaning_zh": "分布式计算：使用多个设备运行程序的计算模型。例如 Google 搜索的索引是分布在全球数千台机器上的——任何单台机器的算力都远远不够",
+        "derivation": "Distribute(分配) + Computing(计算) → 「分散到多台设备的计算」",
+        "mnemonic": "分布式计算 = 分组协作：每台机器负责一部分数据，最后汇总",
+        "example": "Distributed computing lets thousands of servers cooperate on a single task.",
+        "example_zh": "分布式计算让数千台服务器协作完成单个任务。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "efficiency",
+        "breakdown": "Efficient(高效的) + cy(名词后缀)",
+        "meaning_en": "an estimation of the amount of computational resources (such as time or memory) used by an algorithm, typically expressed as a function of the input size",
+        "meaning_zh": "效率：在并行/分布式计算的语境下，效率不只看算法本身，还要看「能否被并行化」。完全顺序的算法即使再多 CPU 也加速不了",
+        "derivation": "Efficient(高效) + cy(性质) → 「使用资源的效率」",
+        "mnemonic": "有些算法天生适合并行（map-reduce），有些天生不能（递归 Fibonacci）",
+        "example": "Parallel computing can dramatically improve the efficiency of data processing.",
+        "example_zh": "并行计算可以大幅提高数据处理的效率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "parallel computing",
+        "breakdown": "Parallel(并行的) + Computing(计算)",
+        "meaning_en": "a computational model where a program is broken into multiple smaller sequential computing operations, some of which are performed simultaneously",
+        "meaning_zh": "并行计算：把程序拆分成多个较小的顺序计算操作，其中一些同时执行的计算模型。例如多核 CPU 可以同时处理多个任务——4 核理论上可以快 4 倍",
+        "derivation": "Parallel(平行的) + Computing(计算) → 「同时进行的计算」",
+        "mnemonic": "并行 = 多路同时：一个人粉刷一面墙慢，4 个人同时刷四个角落快",
+        "example": "Parallel computing speeds up image rendering by using multiple CPU cores.",
+        "example_zh": "并行计算通过使用多个 CPU 核心来加速图像渲染。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "parallel portion",
+        "breakdown": "Parallel(并行的) + Portion(部分)",
+        "meaning_en": "the part of a solution that can be executed simultaneously across multiple processors or cores",
+        "meaning_zh": "并行部分：解决方案中可以跨多个处理器或核心同时执行的部分。例如对一个列表中每个元素做独立计算——这部分可以完美并行",
+        "derivation": "Parallel(并行) + Portion(部分) → 「能并行执行的那部分」",
+        "mnemonic": "并行部分 = 「能拆开同时干的活」：洗 100 件衣服可以分给 10 台洗衣机",
+        "example": "The parallel portion of the algorithm runs on all CPU cores at once.",
+        "example_zh": "算法的并行部分同时在所有 CPU 核心上运行。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "processing time",
+        "breakdown": "Processing(处理) + Time(时间)",
+        "meaning_en": "the amount of time required for a computer to execute a computation or solve a problem",
+        "meaning_zh": "处理时间：计算机执行计算或解决问题所需的时间。并行计算的目标就是减少 processing time——更多核心 = 更快完成",
+        "derivation": "Processing(处理) + Time(时间) → 「计算所需的时间」",
+        "mnemonic": "processing time 是「程序员的敌人」——所有优化都在和它斗",
+        "example": "Adding more cores reduced the processing time by half.",
+        "example_zh": "增加更多核心将处理时间减少了一半。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "scalability",
+        "breakdown": "Scal(规模) + ability(能力)",
+        "meaning_en": "the ability of a solution to maintain or improve performance as the problem size or computational resources increase",
+        "meaning_zh": "可扩展性：在并行/分布式的语境下，scalability 通常指「加更多机器是否能线性提速」。完美 scalability 是 10 台机器比 1 台快 10 倍",
+        "derivation": "Scale(规模) + ability(能力) → 「应对更大规模的能力」",
+        "mnemonic": "可扩展性的反例：「9 个女人花 1 个月生不出 1 个孩子」——有些任务无法并行",
+        "example": "Distributed systems are designed for scalability across thousands of machines.",
+        "example_zh": "分布式系统设计用于跨数千台机器的可扩展性。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "sequential computing",
+        "breakdown": "Sequential(顺序的) + Computing(计算)",
+        "meaning_en": "a computational model in which operations are performed in order one at a time",
+        "meaning_zh": "顺序计算：操作按顺序一次执行一个的计算模型。是最传统的计算方式，也是并行计算的对立面——CPU 单核执行就是顺序计算",
+        "derivation": "Sequential(顺序的) + Computing(计算) → 「一次只做一件事」",
+        "mnemonic": "顺序计算 = 单线程：一件做完再做下一件，不能同时干两件事",
+        "example": "Sequential computing performs each step before moving to the next.",
+        "example_zh": "顺序计算在转到下一步之前先执行每一步。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "sequential portion",
+        "breakdown": "Sequential(顺序的) + Portion(部分)",
+        "meaning_en": "the part of a solution that must be executed in order, one step at a time, and cannot be parallelized",
+        "meaning_zh": "顺序部分：必须按顺序一步步执行、无法并行化的解决方案部分。这部分决定了并行能加速的极限——Amdahl 定律：顺序部分越大，并行收益越小",
+        "derivation": "Sequential(顺序的) + Portion(部分) → 「必须顺序执行的部分」",
+        "mnemonic": "顺序部分是并行的「天花板」：任何算法都有顺序部分，加再多 CPU 也突破不了",
+        "example": "The sequential portion limits how much speedup parallel computing can achieve.",
+        "example_zh": "顺序部分限制了并行计算可以实现的加速程度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "speedup",
+        "breakdown": "Speed(速度) + Up(向上)",
+        "meaning_en": "a measure of parallel computing performance calculated as the time to complete a task sequentially divided by the time to complete it in parallel",
+        "meaning_zh": "加速比：并行计算性能的度量，等于顺序完成任务的时间除以并行完成的时间。例如 4 核加速到原来的 3.5 倍，speedup 就是 3.5",
+        "derivation": "Speed(速度) + Up(提升) → 「加速的倍数」",
+        "mnemonic": "理想 speedup = 核心数（4核快4倍），现实 speedup 总是更小（顺序部分拖后腿）",
+        "example": "The parallel version achieved a speedup of 7x with 8 cores.",
+        "example_zh": "并行版本在 8 核上实现了 7 倍的加速比。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "storage needs",
+        "breakdown": "Storage(存储) + Needs(需求)",
+        "meaning_en": "the amount of memory or data storage capacity required to solve a problem or store its data",
+        "meaning_zh": "存储需求：解决问题或存储其数据所需的内存或数据存储容量。分布式系统通常有巨大的 storage needs——例如 Google 的搜索索引以 PB 计",
+        "derivation": "Storage(存储) + Needs(需要) → 「需要多少存储空间」",
+        "mnemonic": "处理大数据的两个挑战：处理时间（CPU）和存储需求（磁盘）——缺一不可",
+        "example": "Big data applications have enormous storage needs.",
+        "example_zh": "大数据应用具有巨大的存储需求。",
+        "toefl_frequency": "medium"
+      }
+    ]
   }
 ]

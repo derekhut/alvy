@@ -4569,5 +4569,645 @@
         "toefl_frequency": "high"
       }
     ]
+  },
+  {
+    "root": "Money Growth and Inflation",
+    "type": "root",
+    "meaning_en": "how changes in the money supply drive inflation in the long run",
+    "meaning_zh": "货币增长与通胀：长期来看，物价水平主要由货币供应量决定。核心工具是数量方程 MV=PY——央行印太多钱、总产出不变时，物价必然飙升。Zimbabwe 2008、Weimar 1923 都是教科书案例",
+    "origin": "Unit 5: 5.3 Money Growth and Inflation",
+    "related": [
+      "Price Indices and Inflation",
+      "Costs of Inflation",
+      "Real vs Nominal GDP"
+    ],
+    "words": [
+      {
+        "word": "deflation",
+        "breakdown": "De(反/下) + flation(通胀) → 反通胀",
+        "meaning_en": "a sustained decrease in the general price level of goods and services in an economy over time",
+        "meaning_zh": "通缩：物价整体持续下降。听起来「东西变便宜」很好，其实可怕——消费者推迟购买等更便宜，企业降价裁员，经济陷入螺旋。日本「失去的30年」就是典型",
+        "derivation": "De(下降) + flation(通胀) → 通胀的反面 → 物价下跌",
+        "mnemonic": "「日本90年代至今：消费者今天不买等明天更便宜 → 企业卖不动 → 裁员降薪 → 没钱更不敢买 → 通缩螺旋」",
+        "example": "Japan experienced prolonged deflation starting in the 1990s, which slowed its economic recovery.",
+        "example_zh": "日本从 1990 年代起经历了长期通缩，拖慢了经济复苏。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "full employment",
+        "breakdown": "Full(完全) + Employment(就业)",
+        "meaning_en": "an economic condition where all available labor resources are being used efficiently and unemployment is at its natural rate",
+        "meaning_zh": "充分就业：不是 0% 失业率，而是失业率等于自然失业率（约 4-5%）。此时只剩摩擦性和结构性失业，没有周期性失业。是长期供给曲线对应的就业水平",
+        "derivation": "Full(完全) + Employment(就业) → 所有想工作的人（在自然率之内）都有工作",
+        "mnemonic": "「充分就业 ≠ 零失业——它接受一个「健康的」失业率，就像健康的人也会有几根白头发」",
+        "example": "When the economy is at full employment, only frictional and structural unemployment remain.",
+        "example_zh": "当经济处于充分就业时，只剩下摩擦性和结构性失业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflation",
+        "breakdown": "In(进入) + flat(膨胀) + ion → 价格膨胀",
+        "meaning_en": "a sustained increase in the general price level of goods and services in an economy over time",
+        "meaning_zh": "通胀：物价整体持续上涨，钱的购买力下降。温和通胀（2% 左右）被认为是健康的，恶性通胀会摧毁经济。美联储的通胀目标长期锁定在 2%",
+        "derivation": "In + flat(膨胀) → 价格像气球一样鼓起来 → 钱变薄",
+        "mnemonic": "「Zimbabwe 2008 恶性通胀：月通胀率 79,600,000,000% → 政府发行 100 万亿津巴布韦元纸币 → 一卷卫生纸比一张钞票还值钱」",
+        "example": "Inflation eroded the purchasing power of workers' wages last year.",
+        "example_zh": "去年通胀侵蚀了工人工资的购买力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflation rate",
+        "breakdown": "Inflation(通胀) + Rate(率)",
+        "meaning_en": "the percentage change in the general price level of goods and services in an economy over a specific time period",
+        "meaning_zh": "通胀率：价格水平变化的百分比，通常按年计算。公式：(今年 CPI − 去年 CPI) / 去年 CPI × 100%。新闻里说的「通胀 3.2%」就是这个",
+        "derivation": "价格变化 ÷ 原价格 × 100% → 用百分比量化通胀速度",
+        "mnemonic": "「通胀率就是「钱的贬值速度表」——3% 意味着你的 100 块今年只相当于去年的 97 块」",
+        "example": "The inflation rate reached 9.1% in June 2022, the highest in 40 years in the U.S.",
+        "example_zh": "2022 年 6 月美国通胀率达到 9.1%，是 40 年来最高。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "money supply",
+        "breakdown": "Money(货币) + Supply(供应)",
+        "meaning_en": "the total amount of money available in an economy at a given time, including currency in circulation and deposits in financial institutions",
+        "meaning_zh": "货币供应量：经济中流通的货币总量。分 M1（现金+活期存款）、M2（M1+定期存款和储蓄账户）等层次。央行通过公开市场操作、准备金率、贴现率来控制它",
+        "derivation": "Money(钱) + Supply(供应) → 经济里到底有多少钱在流通",
+        "mnemonic": "「美联储在 2020 年疫情期间把 M2 从 15 万亿暴增到 21 万亿 → 两年后通胀飙升到 9.1% → 教科书级货币增长→通胀案例」",
+        "example": "The Federal Reserve increased the money supply sharply during the 2020 pandemic.",
+        "example_zh": "美联储在 2020 年疫情期间大幅增加了货币供应量。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：经济中所有商品和服务价格的平均值，用 CPI 或 GDP 平减指数衡量。AD-AS 模型的纵轴就是它——通胀 = 价格水平上升",
+        "derivation": "整个经济的「平均价」→ 用一个数字概括全部物价 → 通常是指数（例如 CPI=275）",
+        "mnemonic": "「价格水平 = 经济的「血压读数」——单个商品涨跌没意义，要看整体压力」",
+        "example": "A rising price level indicates inflation in the economy.",
+        "example_zh": "价格水平上升表明经济出现通胀。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity theory of money",
+        "breakdown": "Quantity(数量) + Theory(理论) + of Money(货币)",
+        "meaning_en": "an economic theory stating that the money supply multiplied by its velocity of circulation equals the price level multiplied by real output, establishing a direct relationship between money supply growth and inflation",
+        "meaning_zh": "货币数量论：经典方程 MV = PY（费雪方程）——货币供应量 × 流通速度 = 价格水平 × 实际产出。长期 V 和 Y 相对稳定，所以 M 增长直接推高 P。货币主义（Friedman）的核心主张",
+        "derivation": "Fisher 方程 MV=PY → 假设 V、Y 不变 → M↑ 直接导致 P↑ → 「通胀始终是货币现象」(Friedman)",
+        "mnemonic": "「Milton Friedman 名言：Inflation is always and everywhere a monetary phenomenon —— 货币多印一倍，物价最终也翻一倍」",
+        "example": "The quantity theory of money predicts that doubling the money supply will eventually double the price level.",
+        "example_zh": "货币数量论预测，货币供应量翻倍最终会使价格水平翻倍。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "real output",
+        "breakdown": "Real(真实的) + Output(产出)",
+        "meaning_en": "the total production of goods and services in an economy adjusted for inflation, measured in constant dollars",
+        "meaning_zh": "实际产出：剔除通胀因素后的真实产出量（实际 GDP），用不变价格计算。数量方程中的 Y——长期由生产要素和技术决定，货币政策无法改变它",
+        "derivation": "Nominal Output(名义产出) − 通胀影响 → 真正生产了多少东西",
+        "mnemonic": "「实际产出就是「烤了多少个面包」，名义产出是「面包卖了多少钱」——钱翻倍面包没变多」",
+        "example": "Real output grew by 2.5% last quarter despite rising prices.",
+        "example_zh": "尽管物价上涨，上季度实际产出增长了 2.5%。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "velocity",
+        "breakdown": "Veloc(速度) + ity",
+        "meaning_en": "the average number of times a unit of money is spent on final goods and services in a given time period",
+        "meaning_zh": "货币流通速度：一块钱在一年内平均被花出去多少次。公式 V = PY/M。V 高 → 钱周转快、经济活跃；V 低 → 钱被囤积、经济低迷。疫情期间 V 暴跌",
+        "derivation": "V = PY/M → 名义 GDP ÷ 货币供应 → 每单位货币的「使用频率」",
+        "mnemonic": "「1 张 100 元一年买了 10 次咖啡，V=10。疫情期间大家存钱不花 → V 从 1.4 跌到 1.1 → 印了钱通胀却没立刻来」",
+        "example": "The velocity of money fell sharply in 2020 as households saved more during the pandemic.",
+        "example_zh": "2020 年疫情期间家庭储蓄增加，货币流通速度大幅下降。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Deficits and the National Debt",
+    "type": "root",
+    "meaning_en": "how government budget shortfalls accumulate into national debt and burden future generations",
+    "meaning_zh": "财政赤字与国债：政府每年花的钱超过税收就产生赤字，赤字累积起来就是国债。美国国债已超 34 万亿美元，每年光利息就占联邦预算约 13%。是政治上最具争议的话题之一",
+    "origin": "Unit 5: 5.4 Deficits and the National Debt",
+    "related": [
+      "Circular Flow and GDP",
+      "Money Growth and Inflation"
+    ],
+    "words": [
+      {
+        "word": "burden of the national debt",
+        "breakdown": "Burden(负担) + of + National Debt(国债)",
+        "meaning_en": "the economic and fiscal consequences and challenges that result from a large national debt, including effects on interest payments, economic growth, and future fiscal policy",
+        "meaning_zh": "国债负担：庞大国债带来的经济后果——利息支付占预算越来越大、未来加税或减支空间变小、挤出私人投资、汇率贬值风险。「今天借的钱孙子来还」",
+        "derivation": "Debt(债) → 利息 → 年复一年 → 下一代的税单 → 国债的「代际负担」",
+        "mnemonic": "「2024 年美国光付国债利息就花了 8,700 亿美元——比国防预算还高。这就是 burden of the national debt 的真实样子」",
+        "example": "Economists warn that the burden of the national debt could limit future fiscal policy options.",
+        "example_zh": "经济学家警告国债负担可能限制未来的财政政策空间。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "government budget deficit",
+        "breakdown": "Government(政府) + Budget(预算) + Deficit(赤字)",
+        "meaning_en": "the situation when tax revenues fall short of government purchases plus transfer payments in a given year",
+        "meaning_zh": "政府预算赤字：一年内政府支出（购买+转移支付）超过税收收入的差额。赤字需要借债弥补，赤字累积 = 国债。2020 年美国赤字达 GDP 的 15%，创战后纪录",
+        "derivation": "支出 > 收入 → 差额 → 借钱填补 → 国债增加",
+        "mnemonic": "「赤字就像「月光族」：这个月工资 5000 花了 6000 → 刷信用卡 1000 → 这 1000 就是赤字，累积起来就是「国债」」",
+        "example": "The U.S. ran a budget deficit of $1.7 trillion in fiscal year 2023.",
+        "example_zh": "美国在 2023 财年出现了 1.7 万亿美元的预算赤字。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "government budget surplus",
+        "breakdown": "Government(政府) + Budget(预算) + Surplus(盈余)",
+        "meaning_en": "the situation when tax revenues exceed government purchases plus transfer payments in a given year",
+        "meaning_zh": "政府预算盈余：一年内税收超过政府支出的情况。美国上次出现盈余是 1998-2001（Clinton 时期），之后一直赤字。盈余可以用来还债或减税",
+        "derivation": "收入 > 支出 → 多余的钱 → 可以还债或减税",
+        "mnemonic": "「美国上次预算盈余是 1998-2001（Clinton 时期）——此后 20 多年一直赤字。盈余就像独角兽：存在但罕见」",
+        "example": "The U.S. last recorded a budget surplus in 2001 under President Clinton.",
+        "example_zh": "美国上次出现预算盈余是在 2001 年 Clinton 总统任内。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "government purchases",
+        "breakdown": "Government(政府) + Purchases(购买)",
+        "meaning_en": "spending by the government on goods and services",
+        "meaning_zh": "政府购买：政府买实际商品和服务的支出——造桥修路、军费、公务员工资。注意：不包括转移支付（因为不交换商品）。是 GDP 四大组成部分之一（C+I+G+NX 的 G）",
+        "derivation": "政府花钱买东西 → 造导弹、建学校、发公务员工资 → GDP 中的 G",
+        "mnemonic": "「政府购买 = 政府当「顾客」——买 F-35 战斗机、建州际公路、给老师发工资。不包括发给老人的养老金（那叫转移支付）」",
+        "example": "Government purchases include military spending, public education, and infrastructure projects.",
+        "example_zh": "政府购买包括军费、公共教育和基础设施项目。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "national debt",
+        "breakdown": "National(国家的) + Debt(债)",
+        "meaning_en": "the total accumulated debt owed by the government, which increases when budget deficits occur and requires interest payments",
+        "meaning_zh": "国债：政府历年赤字累积的总债务，通过发行国债（Treasury bonds）借来。美国国债已超 34 万亿美元，约占 GDP 的 123%。日本更高，达 260%",
+        "derivation": "每年赤字累加 → 国债像滚雪球 → 利息越来越多",
+        "mnemonic": "「美国国债 34+ 万亿 ÷ 3.3 亿人 ≈ 每个美国人背 10 万美元 → 刚出生的婴儿也欠 10 万」",
+        "example": "The U.S. national debt surpassed $34 trillion in early 2024.",
+        "example_zh": "美国国债在 2024 年初突破 34 万亿美元。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "tax revenues",
+        "breakdown": "Tax(税) + Revenues(收入)",
+        "meaning_en": "income collected by the government through taxation",
+        "meaning_zh": "税收收入：政府通过征税获得的收入，包括个人所得税、公司税、工资税、消费税等。美国联邦税收中个人所得税占最大头（约 50%），其次是工资税",
+        "derivation": "政府征税 → 个税、公司税、工资税 → 政府的主要收入来源",
+        "mnemonic": "「美国联邦税收结构：个人所得税 50% + 工资税 35% + 公司税 9% + 其他 6%——个税是政府最大的「钱袋子」」",
+        "example": "Tax revenues fell during the recession as unemployment rose.",
+        "example_zh": "经济衰退期间失业率上升，税收收入下降。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "transfer payments",
+        "breakdown": "Transfer(转移) + Payments(支付)",
+        "meaning_en": "government payments to individuals or groups that are not in exchange for goods or services, such as social security or welfare benefits",
+        "meaning_zh": "转移支付：政府无偿发给个人的钱——社保、医保、失业救济、食品券。不计入 GDP 的 G（因为没有交换商品），但是预算支出的最大项（约 60%）",
+        "derivation": "Transfer(转移) → 钱从政府转给个人 → 没有商品交换 → 不是 GDP 的一部分",
+        "mnemonic": "「转移支付 = 「政府的红包」：Social Security、Medicare、失业金——政府给你钱，但你不用给政府任何东西回去」",
+        "example": "Social Security is the largest category of transfer payments in the U.S. federal budget.",
+        "example_zh": "社会保障是美国联邦预算中最大的转移支付项目。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Crowding Out",
+    "type": "root",
+    "meaning_en": "how government borrowing raises interest rates and displaces private investment",
+    "meaning_zh": "挤出效应：政府为弥补赤字大量借钱 → 可贷资金市场需求增加 → 实际利率上升 → 私人投资减少。这削弱了扩张性财政政策的效果，是反对大赤字的核心论据",
+    "origin": "Unit 5: 5.5 Crowding Out",
+    "related": [
+      "Deficits and the National Debt",
+      "Money Growth and Inflation"
+    ],
+    "words": [
+      {
+        "word": "crowding out",
+        "breakdown": "Crowd(拥挤) + out(出去) → 挤出去",
+        "meaning_en": "the phenomenon where increased government borrowing leads to higher interest rates, which reduces private investment spending",
+        "meaning_zh": "挤出效应：政府大量借钱推高利率，使企业借不起钱投资——政府支出「挤掉」了私人投资。是扩张性财政政策的主要副作用，保守派经济学家常用它反对赤字支出",
+        "derivation": "政府借钱 → 可贷资金需求↑ → 利率↑ → 私人投资↓ → 「挤出」",
+        "mnemonic": "「想象一个自助餐：政府先进去装了一大盘 → 菜被抢光 → 企业进来发现没菜了（利率变贵，借不起钱）→ crowding out」",
+        "example": "Economists worry that crowding out will reduce business investment during large stimulus programs.",
+        "example_zh": "经济学家担心大规模刺激计划期间，挤出效应会减少企业投资。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "economic growth",
+        "breakdown": "Economic(经济的) + Growth(增长)",
+        "meaning_en": "an increase in the production of goods and services in an economy over time, measured by the growth rate of real GDP per capita",
+        "meaning_zh": "经济增长：经济产出随时间增加，通常用人均实际 GDP 增长率衡量。挤出效应会降低长期经济增长，因为私人投资被压缩——资本积累减少",
+        "derivation": "Real GDP per capita ↑ → 经济蛋糕变大 → 生活水平提高",
+        "mnemonic": "「复利魔法：2% 年增长 → 35 年翻一倍；7% 年增长 → 10 年翻一倍 → 这就是为什么中国 40 年高速增长让人均 GDP 涨了 30 倍」",
+        "example": "Excessive government borrowing can slow economic growth through crowding out.",
+        "example_zh": "过度政府借贷可能通过挤出效应拖慢经济增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equilibrium real interest rate",
+        "breakdown": "Equilibrium(均衡) + Real(实际的) + Interest Rate(利率)",
+        "meaning_en": "the interest rate at which the quantity of loanable funds supplied equals the quantity demanded",
+        "meaning_zh": "均衡实际利率：可贷资金市场上供给和需求相交的那个利率。「实际」= 剔除通胀后的真实成本。政府借款需求曲线右移 → 新均衡利率更高 → 挤出效应发生",
+        "derivation": "可贷资金供给 = 可贷资金需求 → 交点 → 均衡利率",
+        "mnemonic": "「均衡实际利率就像「钱的价格标签」——供需交点决定它，政府大量借钱就把这个价格标签抬高」",
+        "example": "An increase in government borrowing raises the equilibrium real interest rate.",
+        "example_zh": "政府借款增加会推高均衡实际利率。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "fiscal policy",
+        "breakdown": "Fiscal(财政的) + Policy(政策)",
+        "meaning_en": "government spending and taxation decisions that influence aggregate demand, real output, price level, and exchange rates",
+        "meaning_zh": "财政政策：政府通过调整支出和税收来影响经济。扩张性财政政策（增支或减税）刺激经济但可能挤出私人投资；紧缩性财政政策（减支或加税）抑制通胀。和货币政策是宏观调控的两大工具",
+        "derivation": "Fiscal(来自拉丁语 fiscus「国库」) → 政府「钱袋子」的政策 → 支出+税收",
+        "mnemonic": "「2020 年美国 CARES Act 2.2 万亿美元救助 → 就是财政政策的核弹级使用，直接发支票给每个人 1,200 美元」",
+        "example": "Expansionary fiscal policy can stimulate demand but risks crowding out private investment.",
+        "example_zh": "扩张性财政政策可以刺激需求，但有挤出私人投资的风险。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "government borrowing",
+        "breakdown": "Government(政府) + Borrowing(借贷)",
+        "meaning_en": "when a government borrows money, typically by issuing bonds, to finance a budget deficit",
+        "meaning_zh": "政府借贷：政府通过发行国债向公众和外国借钱来弥补赤字。借得越多 → 可贷资金市场需求越大 → 利率越高 → 挤出效应越强",
+        "derivation": "赤字 → 发行国债 → 向家庭/企业/外国借钱 → 推高利率",
+        "mnemonic": "「政府借钱 = 财政部拍卖国债 → 全世界央行和大户来投标 → 中国、日本是美国国债的两个最大外国买家」",
+        "example": "Government borrowing in the loanable funds market increases the demand for funds.",
+        "example_zh": "政府在可贷资金市场借款会增加对资金的需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "government budget deficit",
+        "breakdown": "Government(政府) + Budget(预算) + Deficit(赤字)",
+        "meaning_en": "the situation when tax revenues fall short of government purchases plus transfer payments in a given year",
+        "meaning_zh": "政府预算赤字：支出超过税收的差额。在挤出效应的语境下——赤字越大，政府借款越多，对可贷资金需求越强，利率被推得越高，私人投资被挤出越多",
+        "derivation": "支出 > 税收 → 赤字 → 必须借钱 → 推高利率 → 挤出私人投资",
+        "mnemonic": "「赤字 → 借钱 → 利率↑ → 私人投资↓——这条链子就是「为什么大赤字不一定是好事」的核心逻辑」",
+        "example": "A large government budget deficit can lead to crowding out in the loanable funds market.",
+        "example_zh": "大规模政府预算赤字可能导致可贷资金市场出现挤出效应。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "loanable funds market",
+        "breakdown": "Loanable(可贷的) + Funds(资金) + Market(市场)",
+        "meaning_en": "the market where savers supply funds available for borrowing and borrowers demand funds, with the real interest rate serving as the price",
+        "meaning_zh": "可贷资金市场：储蓄者（供给方）和借款者（需求方）交易可贷资金的市场，价格是实际利率。政府赤字增加需求曲线右移，均衡利率上升——这就是挤出效应的图形化表达",
+        "derivation": "储蓄方 → 供给曲线；借款方（企业+政府）→ 需求曲线；纵轴 = 实际利率；交点 = 均衡",
+        "mnemonic": "「可贷资金市场 = 钱的「批发市场」。政府一进来大举采购，其他人（企业）都得出更高价才能抢到 → 这就是挤出」",
+        "example": "In the loanable funds market, the real interest rate balances the supply of savings and demand for loans.",
+        "example_zh": "在可贷资金市场中，实际利率平衡储蓄供给和贷款需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "physical capital accumulation",
+        "breakdown": "Physical(物理的) + Capital(资本) + Accumulation(积累)",
+        "meaning_en": "the process of building up the stock of productive assets and equipment in an economy",
+        "meaning_zh": "物质资本积累：经济中机器、设备、厂房等生产性资产的增加。挤出效应抑制私人投资 → 物质资本积累放缓 → 长期经济增长受损。资本越多，每个工人产出越高",
+        "derivation": "投资 → 新机器+新厂房 → 资本存量增加 → 劳动生产率提升 → 长期增长",
+        "mnemonic": "「物质资本积累 = 经济的「肌肉训练」——每年投资就是举铁，肌肉（产能）越来越强」",
+        "example": "Crowding out reduces physical capital accumulation and slows long-term growth.",
+        "example_zh": "挤出效应减少物质资本积累，拖慢长期增长。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "private investment",
+        "breakdown": "Private(私人的) + Investment(投资)",
+        "meaning_en": "spending by the private sector on capital goods and other interest-sensitive expenditures",
+        "meaning_zh": "私人投资：企业和家庭在资本品上的支出——工厂、设备、软件、新住房。对利率高度敏感，利率一涨马上缩减。是挤出效应的直接受害者",
+        "derivation": "企业花钱买设备+建厂 → GDP 中的 I → 利率上升 → I 减少",
+        "mnemonic": "「私人投资 = 经济的「种子钱」。利率一涨，企业就不敢种地了——挤出效应挤掉的就是这些种子」",
+        "example": "Rising interest rates from government borrowing can reduce private investment.",
+        "example_zh": "政府借款推高利率可能减少私人投资。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Economic Growth",
+    "type": "root",
+    "meaning_en": "sustained increases in an economy's productive capacity over time",
+    "meaning_zh": "经济增长：一个经济体长期生产能力的提升，用人均实际 GDP 增长率衡量。由劳动力、资本、技术三大要素推动。长期增长表现为 LRAS 曲线右移或 PPC 外移",
+    "origin": "Unit 5: 5.6 Economic Growth",
+    "related": [
+      "Opportunity Cost and the Production Possibilities Curve (PPC)",
+      "Real vs Nominal GDP",
+      "Circular Flow and GDP"
+    ],
+    "words": [
+      {
+        "word": "aggregate employment",
+        "breakdown": "Aggregate(总的) + Employment(就业)",
+        "meaning_en": "the total number of workers employed across an entire economy",
+        "meaning_zh": "总就业：整个经济体受雇工人的总数。是总量生产函数的劳动投入 L。长期增长要求总就业随人口增加而稳步上升",
+        "derivation": "所有行业就业人数相加 → 经济总劳动投入 → 生产函数的 L",
+        "mnemonic": "「总就业 = 经济的「总劳动力大军」人数。美国约 1.6 亿人，中国约 7.8 亿人 → 劳动力规模是增长基础」",
+        "example": "Aggregate employment rose by 200,000 jobs last month.",
+        "example_zh": "上月总就业增加了 20 万个工作岗位。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "aggregate output",
+        "breakdown": "Aggregate(总的) + Output(产出)",
+        "meaning_en": "the total quantity of goods and services produced in an economy, typically measured as real GDP",
+        "meaning_zh": "总产出：经济体生产的所有商品和服务总量，通常用实际 GDP 衡量。是生产函数的 Y。经济增长 = 总产出持续增加",
+        "derivation": "所有企业产出相加 → 总产出 Y → 就是实际 GDP",
+        "mnemonic": "「总产出 = 全国「总生产蛋糕」。蛋糕每年做得更大就是经济增长」",
+        "example": "Aggregate output is measured by real GDP.",
+        "example_zh": "总产出用实际 GDP 衡量。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "aggregate production function",
+        "breakdown": "Aggregate(总的) + Production(生产) + Function(函数)",
+        "meaning_en": "an economic model showing the relationship between total inputs (labor, capital, technology) and total output produced in an economy",
+        "meaning_zh": "总量生产函数：Y = A × F(K, L)——产出 Y 由技术 A、资本 K、劳动 L 决定。这是经济增长理论的核心公式，增长来源于 A↑、K↑ 或 L↑",
+        "derivation": "Y = A·F(K,L) → 总产出 = 技术 × 函数(资本, 劳动)",
+        "mnemonic": "「总量生产函数就是「经济的食谱」：投入多少面粉（资本）+ 多少厨师（劳动）+ 什么配方（技术）= 做出多少面包（产出）」",
+        "example": "The aggregate production function shows how labor, capital, and technology combine to produce output.",
+        "example_zh": "总量生产函数展示了劳动、资本和技术如何组合产生产出。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "economic growth",
+        "breakdown": "Economic(经济的) + Growth(增长)",
+        "meaning_en": "an increase in the production of goods and services in an economy over time, measured by the growth rate of real GDP per capita",
+        "meaning_zh": "经济增长：经济体产出长期增加的过程，以人均实际 GDP 增长率衡量。在 5.6 的语境下，核心图形表达是 LRAS 右移或 PPC 外移——生产能力真正扩大",
+        "derivation": "长期总产出 ↑ + 人口稳定 → 人均 GDP ↑ → 生活水平提升",
+        "mnemonic": "「经济增长的 70 法则：70 ÷ 增长率 ≈ 翻倍所需年数。2% → 35 年翻倍，7% → 10 年翻倍，10% → 7 年翻倍」",
+        "example": "Economic growth in the U.S. averaged about 2% per year over the past decade.",
+        "example_zh": "过去十年美国经济增长平均约为每年 2%。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "human capital",
+        "breakdown": "Human(人的) + Capital(资本)",
+        "meaning_en": "the skills, knowledge, education, and experience of workers that contribute to their productivity",
+        "meaning_zh": "人力资本：工人的技能、知识、教育和经验——让他们更有生产力的一切。投资教育和培训就是投资人力资本。是长期经济增长的关键驱动力之一",
+        "derivation": "教育+培训+经验 → 工人更高效 → 生产函数 A↑（通过劳动质量）",
+        "mnemonic": "「人力资本 = 「装进脑袋里的资本」。Norway 靠石油致富，但 Singapore 靠人力资本致富 → 教育是最好的长期投资」",
+        "example": "Investment in education raises human capital and long-term growth.",
+        "example_zh": "教育投资提升人力资本和长期增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "labor productivity",
+        "breakdown": "Labor(劳动) + Productivity(生产率)",
+        "meaning_en": "the amount of output produced per worker, measured as output per employed worker",
+        "meaning_zh": "劳动生产率：每个工人生产的产出量（Y/L）。生产率提升 = 人均生活水平提升的根本原因。由资本深化、技术进步、人力资本共同决定",
+        "derivation": "Y ÷ L → 每个工人产出多少 → 生产率衡量",
+        "mnemonic": "「劳动生产率公式：Y/L。你一个人一天能做 10 个产品，用了机器能做 100 个——机器让你 10 倍生产率」",
+        "example": "Higher labor productivity leads to higher wages over time.",
+        "example_zh": "长期来看，更高的劳动生产率会带来更高的工资。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Long-Run Aggregate Supply curve",
+        "breakdown": "Long-Run(长期) + Aggregate Supply(总供给) + Curve(曲线)",
+        "meaning_en": "a vertical line on a graph representing the maximum sustainable output an economy can produce when all resources are fully employed and wages and prices have fully adjusted",
+        "meaning_zh": "长期总供给曲线（LRAS）：垂直线，位于潜在产出 Y*。表示长期经济的生产能力——由要素和技术决定，与价格水平无关。经济增长表现为 LRAS 向右平移",
+        "derivation": "长期 → 工资和价格完全调整 → 产出只由供给面决定 → 与 P 无关 → 垂直线",
+        "mnemonic": "「LRAS 就是经济的「体能极限」——无论今天物价多高，你一天就只能跑 42 公里马拉松（潜在产出）。锻炼让极限提高 = LRAS 右移」",
+        "example": "A rightward shift of the Long-Run Aggregate Supply curve represents economic growth.",
+        "example_zh": "长期总供给曲线右移代表经济增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "output per capita",
+        "breakdown": "Output(产出) + per capita(人均)",
+        "meaning_en": "the total output produced in an economy divided by the population, showing average production per person",
+        "meaning_zh": "人均产出：总产出 ÷ 人口。是衡量生活水平最常用的指标。中国 GDP 总量世界第二但人均排 70 多位——人均产出才真正反映富裕程度",
+        "derivation": "Y ÷ Population → 每个人平均生产多少 → 生活水平代理指标",
+        "mnemonic": "「印度 GDP 总量 3.7 万亿（全球第 5）但人均只有 2,600（全球第 140）——总量吓人，人均才真实」",
+        "example": "Output per capita is a common measure of living standards.",
+        "example_zh": "人均产出是衡量生活水平的常用指标。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "outward shift",
+        "breakdown": "Outward(向外) + Shift(移动)",
+        "meaning_en": "movement of a curve away from the origin, indicating an increase in production capacity or economic output",
+        "meaning_zh": "向外移动：曲线（特别是 PPC）向远离原点的方向移动，表示生产能力增加。PPC 外移 = 经济增长的经典图形表达。可由资本增加、技术进步、劳动力增长引起",
+        "derivation": "PPC 离原点更远 → 两种商品都能生产更多 → 生产能力扩大",
+        "mnemonic": "「PPC 外移 = 经济「长个子」了——以前最多能造 100 辆车或 500 吨粮食，现在能造 150 辆或 750 吨」",
+        "example": "An outward shift of the PPC illustrates economic growth.",
+        "example_zh": "PPC 向外移动图示了经济增长。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "physical capital",
+        "breakdown": "Physical(物理的) + Capital(资本)",
+        "meaning_en": "tangible assets such as machinery, equipment, buildings, and infrastructure used in production",
+        "meaning_zh": "物质资本：生产中使用的有形资产——机器、设备、厂房、基础设施。生产函数中的 K。物质资本积累是经济增长的三大源泉之一",
+        "derivation": "有形资产 → 工厂、机器、道路 → 生产函数的 K",
+        "mnemonic": "「物质资本 = 你能「踢一脚」的生产工具。电脑、机床、卡车、公路——都是。程序员的代码不是（那是人力资本）」",
+        "example": "Investment in physical capital such as factories boosts economic growth.",
+        "example_zh": "对工厂等物质资本的投资推动经济增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Production Possibilities Curve",
+        "breakdown": "Production(生产) + Possibilities(可能性) + Curve(曲线)",
+        "meaning_en": "a graph showing the maximum combinations of two goods that can be produced with available resources and technology",
+        "meaning_zh": "生产可能性曲线（PPC）：展示给定资源和技术下，两种商品所有可能的最大产出组合。曲线外移 = 经济增长；曲线内点 = 资源未充分利用；曲线上点 = 技术有效",
+        "derivation": "两种商品 → 资源取舍 → 曲线边界 → 机会成本的可视化",
+        "mnemonic": "「PPC 经典例子：「大炮 vs 黄油」——冷战期间美苏都在 PPC 上选择，造更多大炮就要少做黄油」",
+        "example": "An outward shift of the Production Possibilities Curve represents economic growth.",
+        "example_zh": "生产可能性曲线向外移动代表经济增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "real GDP per capita",
+        "breakdown": "Real(实际的) + GDP + per capita(人均)",
+        "meaning_en": "the total value of goods and services produced by an economy adjusted for inflation and divided by the population, used to measure economic growth",
+        "meaning_zh": "人均实际 GDP：剔除通胀后的 GDP ÷ 人口。是衡量经济增长和生活水平最权威的指标。长期增长 = 人均实际 GDP 持续上升",
+        "derivation": "Real GDP ÷ Population → 剔除通胀+人均化 → 最真实的富裕度",
+        "mnemonic": "「人均实际 GDP = 衡量一国人民「真实富裕度」的金标准。美国 ~$82k，中国 ~$13k，日本 ~$34k——两个校正缺一不可」",
+        "example": "Real GDP per capita is the most common measure of economic growth.",
+        "example_zh": "人均实际 GDP 是最常用的经济增长衡量指标。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "rightward shift",
+        "breakdown": "Rightward(向右的) + Shift(移动)",
+        "meaning_en": "movement of a curve to the right on a graph, indicating an increase in quantity supplied or produced at each price level",
+        "meaning_zh": "向右移动：曲线整体向右平移，表示在每个价格水平下数量都增加。LRAS 右移 = 经济增长；SRAS 右移 = 短期成本下降；AD 右移 = 需求增加",
+        "derivation": "曲线整条向右 → 同一个 P 下 Q 更大 → 供给或需求增加",
+        "mnemonic": "「LRAS 右移 = 经济的生产边界向右拓宽。就像游戏里「解锁新地图」，可活动范围变大了」",
+        "example": "A rightward shift of the LRAS curve represents economic growth.",
+        "example_zh": "LRAS 曲线右移代表经济增长。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "technology",
+        "breakdown": "Techno(技术) + logy(学)",
+        "meaning_en": "tools, techniques, and knowledge used in production that improve efficiency and output",
+        "meaning_zh": "技术：提高生产效率的工具、方法和知识。生产函数中的 A——全要素生产率。Solow 模型表明长期增长的主要驱动力是技术进步，而不是资本或劳动本身",
+        "derivation": "生产函数 Y = A·F(K,L) → A 就是技术 → A↑ 同样的 K、L 产出更多",
+        "mnemonic": "「技术 = 生产函数中的 A。iPhone 让一个人能做以前 100 人的工作 → 同样的劳动投入，10 倍产出 → 这就是 A 提升」",
+        "example": "Advances in technology are a key driver of long-run economic growth.",
+        "example_zh": "技术进步是长期经济增长的关键驱动力。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Public Policy and Economic Growth",
+    "type": "root",
+    "meaning_en": "how government policies influence long-run economic growth",
+    "meaning_zh": "公共政策与经济增长：政府通过教育、基础设施、研发补贴、供给侧改革等政策推动长期增长。关键是影响 LRAS 而不是 AD——追求的是潜在产出的扩大，而不是短期需求刺激",
+    "origin": "Unit 5: 5.7 Public Policy and Economic Growth",
+    "related": [
+      "Economic Growth",
+      "Crowding Out",
+      "Deficits and the National Debt"
+    ],
+    "words": [
+      {
+        "word": "aggregate demand",
+        "breakdown": "Aggregate(总的) + Demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求（AD）：一个经济体在不同价格水平下对所有商品和服务的总需求量。AD = C + I + G + NX。注意：公共政策刺激 AD 是短期的，不等于长期增长——长期增长要看 AS",
+        "derivation": "C(消费) + I(投资) + G(政府支出) + NX(净出口) → 总需求",
+        "mnemonic": "「AD 四大金刚：C 家庭消费 + I 企业投资 + G 政府花钱 + NX 出口减进口——美国 AD 中 C 占 70%」",
+        "example": "Expansionary fiscal policy increases aggregate demand in the short run.",
+        "example_zh": "扩张性财政政策在短期内增加总需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "aggregate supply",
+        "breakdown": "Aggregate(总的) + Supply(供给)",
+        "meaning_en": "the total quantity of goods and services that producers are willing and able to supply at various price levels",
+        "meaning_zh": "总供给（AS）：所有企业在不同价格水平下愿意且能够供应的商品和服务总量。供给侧政策的目标是右移 LRAS——真正扩大经济的长期生产能力",
+        "derivation": "所有企业供给 → 总供给曲线 → 短期 SRAS 向上倾斜，长期 LRAS 垂直",
+        "mnemonic": "「总供给 = 经济的「总产能」。政府减税刺激投资 → 工厂扩建 → AS 右移 → 长期增长」",
+        "example": "Supply-side policies aim to shift aggregate supply to the right.",
+        "example_zh": "供给侧政策旨在使总供给向右移动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "economic growth",
+        "breakdown": "Economic(经济的) + Growth(增长)",
+        "meaning_en": "an increase in the production of goods and services in an economy over time, measured by the growth rate of real GDP per capita",
+        "meaning_zh": "经济增长：在 5.7 语境下特指政策能影响的长期增长——不是靠刺激 AD 的短期繁荣，而是靠教育、基础设施、研发、激励机制让潜在产出真正提高",
+        "derivation": "政策 → 影响 LRAS → 长期 Y* 上升 → 真正的增长",
+        "mnemonic": "「Lee Kuan Yew 的新加坡：从贫穷渔村到人均 GDP 8.4 万美元，靠的是公共政策——教育、反腐、基建、开放——不是央行放水」",
+        "example": "Public policies such as investment in infrastructure promote long-term economic growth.",
+        "example_zh": "基础设施投资等公共政策促进长期经济增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "incentives",
+        "breakdown": "In(使) + centive(激励) → 诱因",
+        "meaning_en": "factors that motivate households and businesses to make economic decisions and take actions",
+        "meaning_zh": "激励：驱动家庭和企业做经济决策的因素。经济学十大原理之一：「人们会对激励做出反应」。政策设计的核心——减税激励投资、补贴激励研发、产权保护激励创业",
+        "derivation": "In(入) + cent(刺激) → 激发行动的因素 → 经济学的基石",
+        "mnemonic": "「Mankiw 经济学十大原理第 4 条：人们会对激励做出反应。安全带法律 → 司机觉得更安全 → 开车更鲁莽 → 行人死亡率反而上升（意外结果）」",
+        "example": "Tax cuts provide incentives for businesses to invest more.",
+        "example_zh": "减税为企业增加投资提供了激励。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "infrastructure",
+        "breakdown": "Infra(在下) + structure(结构) → 基础结构",
+        "meaning_en": "basic physical systems and facilities, such as roads, bridges, and utilities, that support economic activity",
+        "meaning_zh": "基础设施：支撑经济活动的基础物理系统——道路、桥梁、港口、电网、宽带。投资基础设施是推动长期增长的经典政策，因为它提高物质资本和生产率",
+        "derivation": "Infra(下) + structure(结构) → 「底层」设施 → 道路、电网、水管、宽带",
+        "mnemonic": "「中国过去 20 年基础设施狂潮：4.5 万公里高铁（全球 70%）+ 世界最多机场——这是 LRAS 右移的教科书案例」",
+        "example": "Public investment in infrastructure boosts long-term economic growth.",
+        "example_zh": "对基础设施的公共投资推动长期经济增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "labor force participation",
+        "breakdown": "Labor Force(劳动力) + Participation(参与)",
+        "meaning_en": "the percentage of the working-age population that is either employed or actively seeking employment",
+        "meaning_zh": "劳动力参与率：工作年龄人口中正在工作或积极找工作的比例。提高参与率（如女性就业、提高退休年龄）可以扩大劳动力 L，从而推动长期增长",
+        "derivation": "(就业+失业) ÷ 工作年龄人口 → 劳动力参与率",
+        "mnemonic": "「美国劳动力参与率从 2000 年 67% 降到 2024 年 62%——老龄化+疫情后退休潮 → 每 1% 下降损失约 160 万劳动力」",
+        "example": "Policies that increase labor force participation can boost economic growth.",
+        "example_zh": "提高劳动力参与率的政策可以推动经济增长。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "long-run economic growth",
+        "breakdown": "Long-Run(长期) + Economic Growth(经济增长)",
+        "meaning_en": "the sustained increase in an economy's productive capacity and real GDP over an extended period of time",
+        "meaning_zh": "长期经济增长：经济体生产能力和实际 GDP 的持续提升。关键区分：短期 AD 波动 ≠ 长期增长。长期增长由供给面决定——要素积累和技术进步",
+        "derivation": "长期 → 供给面主导 → LRAS 右移 → 潜在产出上升",
+        "mnemonic": "「长期增长就像树的生长——不是今天浇水明天就高，而是几十年积累。韩国 60 年代人均 GDP ~$100 → 2024 年 $34k，这才叫长期增长」",
+        "example": "Investments in education and research drive long-run economic growth.",
+        "example_zh": "对教育和研究的投资推动长期经济增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "potential output",
+        "breakdown": "Potential(潜在的) + Output(产出)",
+        "meaning_en": "the maximum level of real GDP an economy can produce when all resources are fully and efficiently utilized",
+        "meaning_zh": "潜在产出（Y*）：经济体在充分利用所有资源时能达到的最大实际 GDP 水平。对应 LRAS 曲线的位置。公共政策的最终目标就是提高 Y*——而不是短期偏离它",
+        "derivation": "充分就业+所有资源充分利用 → 最大可持续产出 → Y*",
+        "mnemonic": "「潜在产出 = 经济的「最大速度」。公共政策目标就是提高最大速度（LRAS 右移），而不是暂时踩油门超速（短期 AD 刺激）」",
+        "example": "Supply-side policies aim to raise the economy's potential output.",
+        "example_zh": "供给侧政策旨在提高经济的潜在产出。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "productivity",
+        "breakdown": "Product(产品) + ivity(性)",
+        "meaning_en": "the amount of output produced per unit of input, such as output per worker or output per hour of labor",
+        "meaning_zh": "生产率：每单位投入的产出量。可以是每工人产出、每工时产出、或全要素生产率。生产率增长是长期经济增长和工资提升的根本来源",
+        "derivation": "Output ÷ Input → 效率的量化 → 产出/工时 是最常见的衡量",
+        "mnemonic": "「Paul Krugman 名言：生产率不是一切，但长期来说它几乎是一切。工资长期涨不涨，完全看生产率涨不涨」",
+        "example": "Rising productivity leads to higher wages and living standards in the long run.",
+        "example_zh": "长期来看，生产率上升会带来更高的工资和生活水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "public policies",
+        "breakdown": "Public(公共的) + Policies(政策)",
+        "meaning_en": "government actions and programs designed to influence economic outcomes and achieve specific economic objectives",
+        "meaning_zh": "公共政策：政府为影响经济结果而采取的行动和计划——财政政策、货币政策、监管、补贴、教育投资等。促进长期增长的公共政策通常聚焦于供给面",
+        "derivation": "政府 → 设计政策 → 影响经济 → 达成目标",
+        "mnemonic": "「公共政策 = 政府的「经济工具箱」。财政、货币、监管、产业——每种工具解决不同问题，组合使用才能推动长期增长」",
+        "example": "Public policies that promote innovation can accelerate long-term growth.",
+        "example_zh": "促进创新的公共政策可以加速长期增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "real GDP per capita",
+        "breakdown": "Real(实际的) + GDP + per capita(人均)",
+        "meaning_en": "the total value of goods and services produced by an economy adjusted for inflation and divided by the population, used to measure economic growth",
+        "meaning_zh": "人均实际 GDP：衡量经济增长和生活水平的金标准。在 5.7 语境下，公共政策的终极目标就是让人均实际 GDP 持续增长——让人们生活越来越好",
+        "derivation": "实际 GDP ÷ 人口 → 每个人平均分到多少产出 → 生活水平代理",
+        "mnemonic": "「人均实际 GDP 的分母很重要：如果 GDP 涨 2% 但人口涨 3%，其实人均变穷了——这就是为什么印度 GDP 总量涨但人均仍低」",
+        "example": "Public policies aim to raise real GDP per capita over time.",
+        "example_zh": "公共政策旨在随时间推移提高人均实际 GDP。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "supply-side fiscal policies",
+        "breakdown": "Supply-side(供给侧) + Fiscal(财政的) + Policies(政策)",
+        "meaning_en": "government policies that focus on increasing aggregate supply through tax cuts, deregulation, or incentives to boost production, investment, and economic growth",
+        "meaning_zh": "供给侧财政政策：通过减税、放松管制、激励投资来增加总供给的政策。Reagan 1980 年代「供给侧革命」的核心——相信减税能激励生产，长期推动 LRAS 右移",
+        "derivation": "聚焦供给方 → 减税+去监管 → 激励生产 → LRAS 右移",
+        "mnemonic": "「Reagan 1981 年 Economic Recovery Tax Act 把最高个税率从 70% 砍到 50% → 拉弗曲线经典应用 → 这就是供给侧财政政策」",
+        "example": "Supply-side fiscal policies include tax cuts and deregulation.",
+        "example_zh": "供给侧财政政策包括减税和放松管制。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "technology",
+        "breakdown": "Techno(技术) + logy(学)",
+        "meaning_en": "tools, techniques, and knowledge used in production that improve efficiency and output",
+        "meaning_zh": "技术：在 5.7 语境下特指公共政策可以促进的技术进步——通过研发补贴、专利保护、教育投资、基础研究资金等方式。DARPA 资助催生了 Internet 和 GPS",
+        "derivation": "政府研发支出 → 基础研究突破 → 商业化 → 生产率提升 → 经济增长",
+        "mnemonic": "「美国政府 DARPA（国防高级研究计划局）资助催生了：Internet、GPS、Siri、无人驾驶——公共政策对技术的支持回报惊人」",
+        "example": "Government funding for research and development accelerates technological progress.",
+        "example_zh": "政府对研发的资助加速技术进步。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

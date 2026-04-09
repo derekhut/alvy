@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-09
 Branch: update_version
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych COMPLETE (36 concepts / 607 terms, all 5 batches done — full CED coverage) | AP CSP CED rewrite IN PROGRESS (Big Idea 1+2 complete locally = 8 concepts / 128 terms; npm 1.6.9 has BI1 only) | AP WHAP COMPLETE (19 concepts / 255 terms) | Update flow REWRITTEN (no auto-relaunch) | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score) | **v1.6.9 PUBLISHED** to npm — update flow fix + CSP BI1 rewrite
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych COMPLETE (36 concepts / 607 terms, all 5 batches done — full CED coverage) | **AP CSP COMPLETE (35 concepts / 385 terms, all 10 batches done — full CED coverage of Big Ideas 1-5)** | AP WHAP COMPLETE (19 concepts / 255 terms) | Update flow REWRITTEN (no auto-relaunch) | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score) | **v1.6.10 LOCAL** — CSP CED expansion COMPLETE (was 20/72 → 35/385)
 
 ## V1 Summary
 

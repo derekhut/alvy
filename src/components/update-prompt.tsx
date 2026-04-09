@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Box, Text, useInput, useApp } from "ink";
-import { runUpdate, relaunchAlvy } from "../lib/update-check.js";
+import type { ChildProcess } from "node:child_process";
+import { runUpdate } from "../lib/update-check.js";
 import type { UpdateInfo } from "../lib/update-check.js";
 
 interface UpdatePromptProps {
@@ -18,30 +19,49 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
     success: boolean;
     message: string;
   } | null>(null);
+  const childRef = useRef<ChildProcess | null>(null);
 
   const options = ["立即更新", "跳过"];
 
-  // Auto-relaunch after successful update
+  // Cleanup: kill child process if component unmounts mid-update
   useEffect(() => {
-    if (phase === "done" && result?.success) {
-      const timer = setTimeout(() => {
-        relaunchAlvy();
-      }, 800);
-      return () => clearTimeout(timer);
-    }
-  }, [phase, result]);
+    return () => {
+      const child = childRef.current;
+      if (child && !child.killed) {
+        try {
+          child.kill("SIGTERM");
+        } catch {
+          // ignore
+        }
+      }
+    };
+  }, []);
 
   useInput((input, key) => {
     if (phase === "done") {
-      if (result?.success) {
-        relaunchAlvy();
-      } else {
-        exit();
+      exit();
+      return;
+    }
+
+    if (phase === "updating") {
+      const isCancel =
+        key.escape || input === "q" || (key.ctrl && input === "c");
+      if (isCancel) {
+        const child = childRef.current;
+        if (child && !child.killed) {
+          try {
+            child.kill("SIGTERM");
+          } catch {
+            // ignore
+          }
+        }
+        setResult({ success: false, message: "已取消" });
+        setPhase("done");
       }
       return;
     }
-    if (phase !== "prompt") return;
 
+    // phase === "prompt"
     if (key.upArrow) {
       setCursor((prev) => (prev > 0 ? prev - 1 : options.length - 1));
     } else if (key.downArrow) {
@@ -49,11 +69,15 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
     } else if (key.return) {
       if (cursor === 0) {
         setPhase("updating");
-        // Run update in next tick so "正在更新..." renders first
+        // Spawn in next tick so "正在更新..." renders first
         setTimeout(() => {
-          const res = runUpdate();
-          setResult(res);
-          setPhase("done");
+          childRef.current = runUpdate({
+            onDone: (res) => {
+              setResult(res);
+              setPhase("done");
+              childRef.current = null;
+            },
+          });
         }, 0);
       } else {
         onSkip();
@@ -101,12 +125,17 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
           </>
         )}
 
-        {phase === "updating" && <Text>正在更新...</Text>}
+        {phase === "updating" && (
+          <Box flexDirection="column">
+            <Text>正在更新...</Text>
+            <Text dimColor>按 esc 取消</Text>
+          </Box>
+        )}
 
         {phase === "done" && result && (
           <Text color={result.success ? "#5FD7FF" : "#FF5F87"}>
             {result.success
-              ? `更新成功！正在重启...`
+              ? `更新成功！请重新运行 alvy`
               : `更新失败：${result.message}`}
           </Text>
         )}
@@ -119,7 +148,7 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
         </Box>
       )}
 
-      {phase === "done" && result && !result.success && (
+      {phase === "done" && result && (
         <Box marginTop={1}>
           <Text dimColor>按任意键退出</Text>
         </Box>

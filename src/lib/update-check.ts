@@ -1,4 +1,5 @@
-import { execSync, spawn } from "node:child_process";
+import { spawn } from "node:child_process";
+import type { ChildProcess } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
@@ -9,6 +10,16 @@ const pkgPath = join(__dirname, "..", "..", "package.json");
 export interface UpdateInfo {
   current: string;
   latest: string;
+}
+
+export interface UpdateResult {
+  success: boolean;
+  message: string;
+}
+
+export interface RunUpdateOptions {
+  onStdout?: (line: string) => void;
+  onDone: (result: UpdateResult) => void;
 }
 
 function getCurrentVersion(): string {
@@ -56,27 +67,97 @@ export async function checkForUpdate(): Promise<UpdateInfo | null> {
   }
 }
 
-export function runUpdate(): { success: boolean; message: string } {
-  try {
-    execSync("npm install -g @derekhut/alvy", {
-      stdio: "pipe",
-      timeout: 30000,
-    });
-    return { success: true, message: "更新成功" };
-  } catch (err) {
-    const msg =
-      err instanceof Error ? err.message : "未知错误";
-    return { success: false, message: msg };
-  }
-}
-
-/** Relaunch alvy after update — spawns new process and exits current one */
-export function relaunchAlvy(): void {
-  const child = spawn("alvy", [], {
-    stdio: "inherit",
-    detached: true,
-    shell: true,
+/**
+ * Run `npm install -g @derekhut/alvy` as an async child process.
+ * Returns the ChildProcess handle so the caller can cancel with child.kill().
+ * Invokes onDone exactly once — on clean exit, failure, timeout, or kill.
+ */
+export function runUpdate(opts: RunUpdateOptions): ChildProcess {
+  const child = spawn("npm", ["install", "-g", "@derekhut/alvy"], {
+    stdio: ["ignore", "pipe", "pipe"],
   });
-  child.unref();
-  process.exit(0);
+
+  let stderrBuf = "";
+  let stdoutLineBuf = "";
+  let done = false;
+  let watchdog: NodeJS.Timeout | null = null;
+  let killEscalation: NodeJS.Timeout | null = null;
+
+  const clearTimers = () => {
+    if (watchdog) {
+      clearTimeout(watchdog);
+      watchdog = null;
+    }
+    if (killEscalation) {
+      clearTimeout(killEscalation);
+      killEscalation = null;
+    }
+  };
+
+  const finish = (result: UpdateResult) => {
+    if (done) return;
+    done = true;
+    opts.onDone(result);
+  };
+
+  // 60s watchdog: SIGTERM, then SIGKILL after 5s grace
+  watchdog = setTimeout(() => {
+    watchdog = null;
+    try {
+      child.kill("SIGTERM");
+    } catch {
+      // ignore
+    }
+    killEscalation = setTimeout(() => {
+      killEscalation = null;
+      try {
+        child.kill("SIGKILL");
+      } catch {
+        // ignore
+      }
+    }, 5000);
+    finish({ success: false, message: "更新超时" });
+  }, 60000);
+
+  child.stdout?.on("data", (chunk: Buffer) => {
+    if (!opts.onStdout) return;
+    stdoutLineBuf += chunk.toString("utf-8");
+    let idx: number;
+    while ((idx = stdoutLineBuf.indexOf("\n")) !== -1) {
+      const line = stdoutLineBuf.slice(0, idx).replace(/\r$/, "");
+      stdoutLineBuf = stdoutLineBuf.slice(idx + 1);
+      if (line.length > 0) opts.onStdout(line);
+    }
+  });
+
+  child.stderr?.on("data", (chunk: Buffer) => {
+    stderrBuf += chunk.toString("utf-8");
+    // Keep only the tail ~400 chars to bound memory
+    if (stderrBuf.length > 400) {
+      stderrBuf = stderrBuf.slice(-400);
+    }
+  });
+
+  child.on("error", (err) => {
+    clearTimers();
+    finish({
+      success: false,
+      message: err instanceof Error ? err.message : "未知错误",
+    });
+  });
+
+  child.on("close", (code, signal) => {
+    clearTimers();
+    if (done) return;
+    if (code === 0) {
+      finish({ success: true, message: "更新成功" });
+    } else {
+      const tail = stderrBuf.trim().slice(-200);
+      const codeLabel = code !== null ? `退出码 ${code}` : `信号 ${signal ?? "未知"}`;
+      const message = tail.length > 0 ? `${codeLabel}: ${tail}` : codeLabel;
+      finish({ success: false, message });
+    }
+  });
+
+  return child;
 }

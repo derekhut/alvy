@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Text, useInput, useApp } from "ink";
 import type { UserData, Subject } from "../lib/types.js";
+import type { UpdateInfo } from "../lib/update-check.js";
 import { AVATARS } from "../lib/avatars.js";
 
 interface SubjectOption {
@@ -12,9 +13,17 @@ interface SubjectPickerProps {
   data: UserData;
   onSelect: (subject: Subject) => void;
   onEditProfile?: () => void;
+  updateAvailable?: UpdateInfo | null;
+  onRequestUpdate?: () => void;
 }
 
-export default function SubjectPicker({ data, onSelect, onEditProfile }: SubjectPickerProps) {
+export default function SubjectPicker({
+  data,
+  onSelect,
+  onEditProfile,
+  updateAvailable,
+  onRequestUpdate,
+}: SubjectPickerProps) {
   const { exit } = useApp();
 
   const subjects: SubjectOption[] = [
@@ -40,6 +49,8 @@ export default function SubjectPicker({ data, onSelect, onEditProfile }: Subject
       onSelect(subjects[cursor]!.key);
     } else if (input === "p" && data.profile && onEditProfile) {
       onEditProfile();
+    } else if (input === "u" && updateAvailable && onRequestUpdate) {
+      onRequestUpdate();
     } else if (key.escape || input === "q") {
       exit();
     }
@@ -96,8 +107,17 @@ export default function SubjectPicker({ data, onSelect, onEditProfile }: Subject
       <Box marginTop={1} justifyContent="space-between">
         <Text dimColor>↑ ↓</Text>
         {data.profile && <Text dimColor>p 修改资料</Text>}
+        {updateAvailable && <Text dimColor>u 更新</Text>}
         <Text dimColor>esc/q</Text>
       </Box>
+
+      {updateAvailable && (
+        <Box marginTop={1}>
+          <Text color="#FFAF00">
+            📦 发现新版本 {updateAvailable.latest} — 按 u 更新
+          </Text>
+        </Box>
+      )}
     </Box>
   );
 }

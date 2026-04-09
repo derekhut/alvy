@@ -27,8 +27,8 @@ export default function App({ command }: AppProps) {
     command === "pick" ? null : command,
   );
   const [updateInfo, setUpdateInfo] = useState<UpdateInfo | null>(null);
-  const [updateChecked, setUpdateChecked] = useState(command !== "pick");
   const [updateSkipped, setUpdateSkipped] = useState(false);
+  const [showUpdatePrompt, setShowUpdatePrompt] = useState(false);
   const [profileDone, setProfileDone] = useState(false);
   const [editingProfile, setEditingProfile] = useState(false);
 
@@ -38,7 +38,6 @@ export default function App({ command }: AppProps) {
     if (command !== "pick") return;
     checkForUpdate().then((info) => {
       if (info) setUpdateInfo(info);
-      setUpdateChecked(true);
     });
   }, [command]);
 
@@ -72,12 +71,15 @@ export default function App({ command }: AppProps) {
     setResolved(subject === "psych" ? "psych" : subject === "csp" ? "csp" : subject === "whap" ? "whap" : "daily");
   }, [data]);
 
-  if (resolved === null && data && updateChecked) {
-    if (updateInfo && !updateSkipped) {
+  if (resolved === null && data) {
+    if (showUpdatePrompt && updateInfo && !updateSkipped) {
       return (
         <UpdatePrompt
           info={updateInfo}
-          onSkip={() => setUpdateSkipped(true)}
+          onSkip={() => {
+            setUpdateSkipped(true);
+            setShowUpdatePrompt(false);
+          }}
         />
       );
     }
@@ -99,6 +101,8 @@ export default function App({ command }: AppProps) {
         data={data}
         onSelect={handleSelect}
         onEditProfile={() => setEditingProfile(true)}
+        updateAvailable={updateInfo && !updateSkipped ? updateInfo : null}
+        onRequestUpdate={() => setShowUpdatePrompt(true)}
       />
     );
   }

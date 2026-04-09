@@ -111,7 +111,7 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 - **Profile setup** (`profile-setup.tsx`): Two-step first-launch flow (name input → avatar picker). Esc defaults to "学生"/duck. No external dependency (built name input with raw `useInput`).
 - **Profile setup gate** in `app.tsx`: `"pick" → UpdatePrompt? → ProfileSetup? → SubjectPicker`
 - **Level-up detection** in `useSessionFlow.ts`: tracks quiz attempts/correct in `levelProgress`, calls `checkLevelUp()` at end of batch, exposes `levelUp` state.
-- **UI updates**: Dashboard shows inline avatar + name + level badge with progress bar. Subject picker shows inline avatar + name + `Lv.N` in header. Session summary shows level-up notification (`Lv.N → Lv.N`). Streak header shows `Lv.N`. Profile view shows full multi-line ASCII art.
+- **UI updates**: Dashboard shows full 3-line ASCII art avatar + name + level badge with progress bar. Subject picker shows full 3-line ASCII art avatar + name + `Lv.N` in header. Session summary shows level-up notification (`Lv.N → Lv.N`). Streak header shows `Lv.N`. Profile view shows full multi-line ASCII art. All three views use the same horizontal layout: art left, name/level right-aligned to bottom.
 - **`alvy profile` command**: Shows profile card with full ASCII art, name, level, composite score, stats.
 - **Tests**: 10 new level tests + 4 new store migration tests (including old avatar ID remap). Total: 75 tests passing.
 - **Phase B planned**: Email login via Supabase OTP, cloud data sync. Not yet implemented.

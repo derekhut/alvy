@@ -46,9 +46,16 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
         paddingY={1}
       >
         {avatar && displayName ? (
-          <Text>
-            {avatar.inline} {displayName}
-          </Text>
+          <Box flexDirection="row" gap={1}>
+            <Box flexDirection="column">
+              {avatar.art.map((line, i) => (
+                <Text key={i} color="#AF5FFF">{line}</Text>
+              ))}
+            </Box>
+            <Box flexDirection="column" justifyContent="flex-end">
+              <Text>{displayName} · Lv.<Text bold color="#FFAF00">{lp.level}</Text></Text>
+            </Box>
+          </Box>
         ) : null}
         <Text>
           <Text bold color="#AF5FFF">alvy</Text>

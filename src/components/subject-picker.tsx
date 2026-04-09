@@ -78,13 +78,20 @@ export default function SubjectPicker({ data, onSelect }: SubjectPickerProps) {
         paddingX={2}
         paddingY={1}
       >
-        <Text>
-          {data.profile ? (
-            <Text>{AVATARS[data.profile.avatar].inline} {data.profile.displayName} · Lv.<Text bold color="#FFAF00">{data.levelProgress.level}</Text></Text>
-          ) : (
-            <Text bold color="#AF5FFF">alvy</Text>
-          )}
-        </Text>
+        {data.profile ? (
+          <Box flexDirection="row" gap={1}>
+            <Box flexDirection="column">
+              {AVATARS[data.profile.avatar].art.map((line, i) => (
+                <Text key={i} color="#AF5FFF">{line}</Text>
+              ))}
+            </Box>
+            <Box flexDirection="column" justifyContent="flex-end">
+              <Text>{data.profile.displayName} · Lv.<Text bold color="#FFAF00">{data.levelProgress.level}</Text></Text>
+            </Box>
+          </Box>
+        ) : (
+          <Text bold color="#AF5FFF">alvy</Text>
+        )}
         <Text>选择学习科目</Text>
 
         <Box flexDirection="column" marginTop={1}>

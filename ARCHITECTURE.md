@@ -64,7 +64,7 @@ roots.json ──(import at startup)──> roots-db.ts (in-memory array, query 
 - **store.ts** reads/writes `~/.alvy/data.json`. Creates dir + file on first run. Auto-migrates from `~/.toefl-roots/data.json` if present. V1→V2→V3 migration chain. Backs up corrupt files to `data.backup.json`. Exports `DATA_DIR` and `DATA_FILE` for use by other modules (e.g., doctor.tsx).
 - **progress.ts** contains all business logic. Operates on the in-memory `UserData` object. Never touches the filesystem directly.
 - **levels.ts** contains level system logic: XP curve, level computation, composite score, level-up detection. Pure functions. No level names — numeric `Lv.N` only.
-- **avatars.ts** contains 18 ASCII art avatar constants. Each has `art` (3-line string array), `label` (Chinese name), and `inline` (compact single-line for headers).
+- **avatars.ts** contains 18 ASCII art avatar constants. Each has `art` (3-line string array), `label` (Chinese name), and `inline` (compact single-line, legacy). Dashboard, subject picker, and profile view all display the full 3-line `art`.
 
 ## Session State Machine
 
@@ -123,10 +123,10 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 |------|---------|
 | `src/index.tsx` | CLI entry point. Parses commands with `meow`, defaults to `"pick"`, renders `<App>`. |
 | `src/app.tsx` | Routes command to the correct top-level component. `"pick"` → UpdatePrompt (if update available) → SubjectPicker → resolved command. |
-| `src/components/subject-picker.tsx` | Arrow-key subject menu. Shows per-subject progress, remembers last choice. |
+| `src/components/subject-picker.tsx` | Arrow-key subject menu. Shows full ASCII art avatar + name/level, per-subject progress, remembers last choice. |
 | `src/components/daily-session.tsx` | State machine for the main learning flow. Manages phases, word/root indices, XP tracking. |
 | `src/components/review-session.tsx` | Like daily-session but selects weak roots (fewest `wordsStudied`, already `seen`). |
-| `src/components/dashboard.tsx` | Shows mastered count (X/30), streak, XP. Entry point to a session. |
+| `src/components/dashboard.tsx` | Shows full ASCII art avatar + name/level, mastered count, streak, XP. Entry point to a session. |
 | `src/components/root-lesson.tsx` | Displays root card: root, meaning (EN + ZH), origin, related roots. |
 | `src/components/word-detail.tsx` | Displays one word: breakdown, derivation chain, meaning, example sentence. |
 | `src/components/session-summary.tsx` | End-of-session: words studied, XP earned, streak status. |

@@ -192,6 +192,7 @@ export default function ReviewSession() {
           wordsLearned={state.sessionWords}
           rootsStudied={state.morphemes.length}
           streak={state.data.streak.current}
+          levelUp={state.levelUp}
         />
       );
 

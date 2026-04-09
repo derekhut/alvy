@@ -69,3 +69,5 @@ All UI text in Chinese. English only for vocabulary content itself.
 | 2026-04-01 | Dusty rose for errors | "Not quite." reframes wrong answers as teaching moments. |
 | 2026-04-01 | Amber border on celebration card | Exception to slate border rule. Double border + amber = trophy moment. Only celebration screen uses this. |
 | 2026-04-02 | Content text white, dim nav only | Chinese definitions/examples were unreadable on dark terminals. Dim reserved for navigation hints. |
+| 2026-04-09 | Avatar emojis in profile/dashboard | Avatars are punctuation not decoration — one emoji per profile display. 8 student-chosen options. |
+| 2026-04-09 | Level badge format `Lv.N title` | Compact format with amber number + Chinese title. Progress bar in violet. |

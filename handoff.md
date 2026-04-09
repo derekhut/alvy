@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-09
 Branch: update_version
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE | AP WHAP batches 1-2 LIVE (10 concepts / 127 terms) | Update checker LIVE
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE | AP WHAP batches 1-2 LIVE (10 concepts / 127 terms) | Update checker LIVE | Gamification Phase A LIVE (levels, avatars, profile, composite score)
 
 ## V1 Summary
 
@@ -102,6 +102,20 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 - **app.tsx**: Runs `checkForUpdate()` on mount (only in picker mode). Shows `UpdatePrompt` before `SubjectPicker` if update available. `onSkip` dismisses and continues to picker.
 - Non-blocking: 2s timeout, failures silently ignored (returns null). Direct commands (`alvy psych`, etc.) skip the check entirely.
 
+### Step 12: Gamification Phase A (levels, avatars, profile, composite score)
+- **Data model V3**: `UserProfile` (displayName, avatar, createdAt), `LevelProgress` (level, compositeScore, totalStudyDays, totalCorrectQuiz, totalQuizAttempts, totalWordsStudied), `AvatarId` union type (8 avatars)
+- **V2→V3 migration** in `store.ts`: backfills `levelProgress` from existing quiz data (`rootProgress.quizAccuracy`) and XP. Computes initial level from `xp.total`. Backs up before migration.
+- **Level system** (`levels.ts`): XP curve `50 * level²` (Level 2 = 200 XP, Level 10 = 5000 XP, Level 20 = 20000 XP). Capped at level 20. Chinese titles: 初学者/进阶者/高手/学霸/大师.
+- **Composite score**: `accuracy × 0.5 + consistency × 0.3 + volume × 0.2` (0-100 scale). Accuracy = quiz %, consistency = streak/30, volume = wordsStudied/200.
+- **Avatar constants** (`avatars.ts`): 8 avatars (scholar 🎓, panda 🐼, rocket 🚀, cat 🐱, star 🌟, dragon 🐉, phoenix 🔥, owl 🦉)
+- **Profile setup** (`profile-setup.tsx`): Two-step first-launch flow (name input → avatar picker). Esc defaults to "学生"/scholar. No external dependency (built name input with raw `useInput`).
+- **Profile setup gate** in `app.tsx`: `"pick" → UpdatePrompt? → ProfileSetup? → SubjectPicker`
+- **Level-up detection** in `useSessionFlow.ts`: tracks quiz attempts/correct in `levelProgress`, calls `checkLevelUp()` at end of batch, exposes `levelUp` state.
+- **UI updates**: Dashboard shows avatar + name + level badge with progress bar. Subject picker shows avatar + name + level in header. Session summary shows level-up notification. Streak header shows `Lv.N`.
+- **`alvy profile` command**: Shows profile card with avatar, name, level, composite score, stats.
+- **Tests**: 15 new level tests + 3 new store migration tests. Total: 79 tests passing.
+- **Phase B planned**: Email login via Supabase OTP, cloud data sync. Not yet implemented.
+
 ### Gotchas / bugs caught during implementation
 
 1. **React state batching on phase transitions**: After the last quiz question, `advanceAfterFeedback()` originally set `quizQuestion = null` then called `finishRoot()`. React could render with `phase="quiz"` but `quizQuestion=null`, causing "Cannot read properties of null". Fix: don't null out `quizQuestion` — let it stay until phase changes away from quiz phases.
@@ -117,12 +131,12 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 ### Target State
 60 roots (300 words) at launch, growing to 200+ via content pipeline. Quiz system with accuracy tracking. Continue-or-quit session flow. q-key exit everywhere. Shareable progress cards. Streak freeze. Content importer. Custom daily goals. Speed round. Root family tree. Animated progress. Sound effects (opt-in). Word of the Day. Welcome ceremony.
 
-## V2 Data Model
+## V3 Data Model
 
-### UserData (V2) — IMPLEMENTED
+### UserData (V3) — IMPLEMENTED
 ```typescript
 UserData {
-  version: 2                        // triggers upgrade welcome if missing or < 2
+  version: 3                        // V1→V2→V3 migration chain
   streak: {
     current: number
     longest: number
@@ -147,6 +161,19 @@ UserData {
     dailyGoal: number               // persisted custom goal
     lastSubject?: Subject           // remember-last subject for picker ✅
   }
+  profile?: {                       // V3: student profile (set on first launch)
+    displayName: string             // max 8 chars
+    avatar: AvatarId                // 8 options: scholar/panda/rocket/cat/star/dragon/phoenix/owl
+    createdAt: string               // ISO date
+  }
+  levelProgress: {                  // V3: level system
+    level: number                   // 1-20, computed from XP
+    compositeScore: number          // 0-100, blended metric
+    totalStudyDays: number
+    totalCorrectQuiz: number        // aggregated from all quizzes
+    totalQuizAttempts: number
+    totalWordsStudied: number
+  }
 }
 ```
 
@@ -166,8 +193,8 @@ RootWord {
 }
 ```
 
-### V1 → V2 Migration — IMPLEMENTED
-Field-level backfill inside `loadData()` in store.ts. Backs up data.json before first V2 write. No separate migration step.
+### V1 → V2 → V3 Migration — IMPLEMENTED
+Field-level backfill inside `loadData()` in store.ts. Backs up data.json before migration write. V2→V3 backfills `levelProgress` from existing `rootProgress.quizAccuracy` and `xp.total`. Computes initial level from XP. No separate migration step.
 
 ## V2 State Machine — IMPLEMENTED
 
@@ -207,8 +234,9 @@ V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) �
 | File | Tests | Coverage |
 |------|-------|----------|
 | `progress.test.ts` | 44 cases | All 11 functions: masteredCount, seenCount, updateStreak, addXP, markRootSeen, markWordStudied, selectNextMorphemes, generateStatsSummary, recordQuizResult, needsReview, selectReviewMorphemes |
-| `store.test.ts` | 6 cases | Path migration, V1→V2 backfill, V2 no re-migration, corrupt data, fresh start |
-| **Total** | **52 pass** | |
+| `store.test.ts` | 9 cases | Path migration, V1→V3 backfill, V2→V3 migration, V3 no re-migration, XP→level computation, corrupt data, fresh start |
+| `levels.test.ts` | 15 cases | xpForLevel boundaries, computeLevel edges, xpToNextLevel progress, getLevelName tiers, compositeScore blending, checkLevelUp detection |
+| **Total** | **79 pass** | |
 
 Tests NOT yet written (from test plan):
 - Quiz distractor edge cases
@@ -235,10 +263,12 @@ Phase 1 (Foundation + Quiz):
   10. ✅ Arrow-key navigation (← → replaces Enter, Esc replaces q, goBack() action)
   11. ✅ Auto-update checker (npm registry check, update prompt before subject picker)
 
+  12. ✅ Gamification Phase A (levels, avatars, profile, composite score, level-up, `alvy profile`)
+
 Phase 2 (Content):
-  11. Richer word format (phonetic, mnemonic fields in types + word-detail)
-  11. Content importer tool (fail-fast validation, all-or-nothing merge)
-  12. Expand to 60 roots using importer
+  13. Richer word format (phonetic, mnemonic fields in types + word-detail)
+  14. Content importer tool (fail-fast validation, all-or-nothing merge)
+  15. Expand to 60 roots using importer
 
 Phase 3 (Engagement):
   13. Speed round mode (immediate timer feedback on same screen)
@@ -273,7 +303,10 @@ alvy/
     app.tsx                # Routes command: "pick" → UpdatePrompt? → SubjectPicker → resolved command
     components/
       update-prompt.tsx    # ✅ NEW: update available prompt (立即更新/跳过)
+      profile-setup.tsx    # ✅ NEW: first-launch profile (name + avatar picker)
+      avatar-picker.tsx    # ✅ NEW: 2×4 grid arrow-key avatar selector
       subject-picker.tsx   # ✅ Arrow-key subject menu (TOEFL/AP Psych/AP CSP, remember-last)
+      profile-view.tsx     # ✅ NEW: `alvy profile` — avatar, level, composite score, stats
       daily-session.tsx    # ✅ Thin wrapper → useSessionFlow()
       review-session.tsx   # ✅ Thin wrapper → useSessionFlow() (filtered selection)
       quiz-intro.tsx       # ✅ NEW: transition screen before quiz
@@ -299,12 +332,15 @@ alvy/
       useSessionFlow.ts    # ✅ Shared session state machine
     lib/
       __tests__/
-        store.test.ts      # ✅ 6 tests (migration + V2 backfill)
+        store.test.ts      # ✅ 9 tests (migration + V2→V3 backfill)
         progress.test.ts   # ✅ 29 tests (all business logic)
+        levels.test.ts     # ✅ 15 tests (level system + composite score)
       roots-db.ts          # Query functions over roots.json
-      store.ts             # ✅ JSON persistence, V1→V2 migration, backup
+      store.ts             # ✅ JSON persistence, V1→V2→V3 migration, backup
       progress.ts          # ✅ Business logic (Set branch cleaned)
-      types.ts             # ✅ TypeScript interfaces (V2 fields)
+      levels.ts            # ✅ NEW: level system, composite score, level-up detection
+      avatars.ts           # ✅ NEW: 8 avatar constants (emoji + label)
+      types.ts             # ✅ TypeScript interfaces (V3 fields)
       update-check.ts      # ✅ NEW: npm registry version check + runUpdate()
     data/
       roots.json           # 30 roots × 5 words = 150 words (V1, expand in Phase 2)
@@ -380,9 +416,10 @@ If you're picking this up, read in this order:
 cd alvy
 npm run build          # Compile TypeScript
 npm run dev            # Watch mode
-npm test               # Run tests (Vitest, 77 passing)
+npm test               # Run tests (Vitest, 79 passing)
 node dist/index.js     # Subject picker → daily session
 node dist/index.js review   # Review weak roots
+node dist/index.js profile  # View profile (avatar, level, composite score)
 node dist/index.js stats    # Export progress
 node dist/index.js doctor   # Environment check
 ```
@@ -480,7 +517,7 @@ Derek has the content. AI can help format it into the JSON schema.
 Other findings noted but not blocking:
 - Quiz distractor quality may differ for AP Psych (definitions vary in length/structure)
 - Content authoring is the real bottleneck (Derek has content, so mitigated)
-- V2→V3 migration needed in store.ts
+- V2→V3 migration needed in store.ts — ✅ Done (gamification Phase A)
 - Removing `alvy review` should NOT delete existing TOEFL review code
 
 ## What Was Explicitly Deferred (V2)

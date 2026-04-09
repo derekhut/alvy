@@ -42,8 +42,8 @@ Last updated: 2026-04-08 by /plan-eng-review
 ### Consolidate dailyGoal duplication
 **What:** Daily goal stored in both top-level `dailyGoal` and `settings.dailyGoal`. Drop the top-level duplicate, use `settings.dailyGoal` only.
 **Why:** Reduces confusion, simplifies data model. Currently both get written (`index.tsx:40-46`) and `daily-session.tsx:20` reads from settings with fallback.
-**Fix:** Bundle with V2→V3 migration. Migration sets `settings.dailyGoal` from top-level value, drops top-level field.
-**Depends on:** V2→V3 migration.
+**Fix:** Bundle with next migration. Migration sets `settings.dailyGoal` from top-level value, drops top-level field.
+**Depends on:** Nothing (V2→V3 migration shipped, can do in V3→V4 or as a separate cleanup).
 **Source:** Eng review issue 10 (2026-04-08)
 
 ### Quiz layout for long-text distractors (AP Psych)

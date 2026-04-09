@@ -1,63 +1,652 @@
 [
   {
+    "root": "Heredity & Environment",
+    "type": "root",
+    "meaning_en": "how genes and environment interact to shape behavior",
+    "meaning_zh": "遗传与环境：基因和环境如何相互作用塑造行为。核心问题是「先天vs后天」——现代观点认为两者密不可分",
+    "origin": "Unit 1: 1.1 Interaction of Heredity & Environment",
+    "related": [
+      "Nervous System",
+      "Physical Development",
+      "Cognitive Development"
+    ],
+    "words": [
+      {
+        "word": "Evolutionary Perspective",
+        "breakdown": "Evolutionary(进化的) + Perspective(视角)",
+        "meaning_en": "views behavior as shaped by natural selection over generations",
+        "meaning_zh": "进化心理学视角：认为人类行为和心理特征是经过世代自然选择而形成的。例如对蛇和蜘蛛的恐惧、对甜食的偏好都是进化遗留",
+        "derivation": "达尔文进化论 → 能生存繁衍的行为被保留下来 → 今天的心理特征都有进化意义",
+        "mnemonic": "为什么你怕黑？因为古代怕黑的祖先躲过了夜行猛兽，活下来把基因传给了你",
+        "example": "The evolutionary perspective explains why humans universally fear snakes.",
+        "example_zh": "进化视角解释了为什么人类普遍害怕蛇。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Natural Selection",
+        "breakdown": "Natural(自然的) + Selection(选择)",
+        "meaning_en": "traits that aid survival and reproduction become more common over generations",
+        "meaning_zh": "自然选择：有利于生存和繁衍的特征会在世代中变得更普遍——达尔文进化论的核心机制。「适者生存」",
+        "derivation": "个体差异 → 环境筛选 → 有利特征被保留 → 传给后代 → 物种逐渐演化",
+        "mnemonic": "长颈鹿脖子为什么长？不是「努力伸长」，而是脖子长的祖先更容易吃到树叶、活下来",
+        "example": "Natural selection favored early humans with a fear of heights.",
+        "example_zh": "自然选择偏好那些害怕高处的早期人类。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Eugenics",
+        "breakdown": "Eu(好的) + Gen(基因) + ics(学)",
+        "meaning_en": "discredited movement aimed at \"improving\" the human gene pool through selective breeding",
+        "meaning_zh": "优生学：通过选择性生育来「改良」人类基因的运动。20世纪初被滥用，导致强制绝育和种族主义政策，现已被科学界和伦理界否定",
+        "derivation": "Eu(好) + Gen(基因) → 「好基因」运动 → 历史上被纳粹等滥用 → 现代心理学警惕的案例",
+        "mnemonic": "Eu(好) = 想要「好」基因却做了最坏的事——优生学是心理学史上的黑暗一页",
+        "example": "The eugenics movement led to forced sterilization laws in the early 20th century.",
+        "example_zh": "优生学运动在20世纪初导致了强制绝育法。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Twin Studies",
+        "breakdown": "Twin(双胞胎) + Studies(研究)",
+        "meaning_en": "research comparing identical vs fraternal twins to estimate genetic vs environmental influence",
+        "meaning_zh": "双胞胎研究：通过比较同卵双胞胎（100%基因相同）和异卵双胞胎（50%基因相同）来估计遗传和环境的影响。分开抚养的同卵双胞胎研究最有说服力",
+        "derivation": "同卵双胞胎相似度-异卵双胞胎相似度 = 遗传影响 → 控制变量法的巧妙应用",
+        "mnemonic": "分开抚养的同卵双胞胎长大后惊人相似——这告诉我们基因的力量",
+        "example": "Twin studies suggest intelligence is about 50% heritable.",
+        "example_zh": "双胞胎研究表明智力的遗传度约为50%。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
     "root": "Nervous System",
     "type": "root",
     "meaning_en": "the body's electrochemical communication network",
     "meaning_zh": "神经系统：身体的电化学通信网络，分为中枢神经系统（脑+脊髓）和外周神经系统（躯体+自主）",
-    "origin": "Unit 1: Biological Basis of Behavior",
-    "related": ["Brain Structure", "Chemical Messengers", "Sleep & Consciousness", "Sensation"],
+    "origin": "Unit 1: 1.2 Overview of the Nervous System",
+    "related": [
+      "Neuron & Neural Firing",
+      "Chemical Messengers",
+      "Brain Structure",
+      "Sensation"
+    ],
     "words": [
       {
-        "word": "CNS",
-        "breakdown": "Central Nervous System",
+        "word": "Central Nervous System",
+        "breakdown": "Central(中枢) + Nervous(神经) + System(系统)",
         "meaning_en": "brain and spinal cord",
-        "meaning_zh": "中枢神经系统：由大脑和脊髓组成，负责整合和处理所有信息",
-        "derivation": "Central(中枢) + Nervous(神经) + System(系统) → 大脑和脊髓组成的指挥中心",
-        "example": "Damage to the CNS can result in paralysis.",
+        "meaning_zh": "中枢神经系统（CNS）：由大脑和脊髓组成，负责整合和处理所有信息。是身体的指挥中心",
+        "derivation": "Central(中枢) → 信息汇总和指令发出的中心 → 大脑+脊髓",
+        "mnemonic": "中枢神经系统 = 公司的「总部」，所有决策都在这里做出",
+        "example": "Damage to the central nervous system can result in paralysis.",
         "example_zh": "中枢神经系统受损可能导致瘫痪。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "PNS",
-        "breakdown": "Peripheral Nervous System",
-        "meaning_en": "nerves outside the brain and spinal cord; somatic + autonomic",
-        "meaning_zh": "外周神经系统：脑和脊髓以外的所有神经，包括躯体神经（控制随意运动）和自主神经（控制内脏）",
-        "derivation": "Peripheral(外周的) → 中枢以外的所有神经 → 分为躯体神经和自主神经",
-        "example": "The PNS connects the CNS to limbs and organs.",
-        "example_zh": "外周神经系统将中枢神经系统连接到四肢和器官。",
+        "word": "Peripheral Nervous System",
+        "breakdown": "Peripheral(外周的) + Nervous(神经) + System(系统)",
+        "meaning_en": "all nerves outside the brain and spinal cord; connects CNS to limbs and organs",
+        "meaning_zh": "外周神经系统（PNS）：脑和脊髓以外的所有神经。分为躯体神经（控制骨骼肌）和自主神经（控制内脏）。把CNS和身体各部分连接起来",
+        "derivation": "Peripheral(外周) → 中枢以外 → 像公司的各个分支办公室和员工",
+        "mnemonic": "外周神经系统 = 总部派出去的「信使和传令兵」，负责上传下达",
+        "example": "The peripheral nervous system carries signals between the CNS and the rest of the body.",
+        "example_zh": "外周神经系统在中枢神经系统和身体其余部分之间传递信号。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Sympathetic NS",
-        "breakdown": "Sympathetic Nervous System",
+        "word": "Autonomic Nervous System",
+        "breakdown": "Auto(自动的) + nomic(调节)",
+        "meaning_en": "controls involuntary functions: heartbeat, digestion, breathing",
+        "meaning_zh": "自主神经系统：控制不随意的功能，如心跳、消化、呼吸。进一步分为交感（战或逃）和副交感（休息消化）两个分支",
+        "derivation": "Auto(自动) → 自动运行，不需要你的意识控制 → 睡着了心脏也在跳",
+        "mnemonic": "自主 = 「自动驾驶」→ 不用你操心的身体功能",
+        "example": "The autonomic nervous system regulates heart rate without conscious effort.",
+        "example_zh": "自主神经系统在无需意识控制的情况下调节心率。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Somatic Nervous System",
+        "breakdown": "Somatic(身体的) + Nervous System",
+        "meaning_en": "controls voluntary movement of skeletal muscles",
+        "meaning_zh": "躯体神经系统：控制随意运动（骨骼肌）的神经。你决定举手、走路——都是它在工作",
+        "derivation": "Somatic 来自希腊语 soma(身体) → 控制你能主动指挥的身体部分",
+        "mnemonic": "Somatic ≈ Some-matic(身体自主控制) → 你说动就动的那部分",
+        "example": "The somatic nervous system controls voluntary actions like waving your hand.",
+        "example_zh": "躯体神经系统控制挥手等随意动作。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sympathetic Nervous System",
+        "breakdown": "Sympathetic(交感的)",
         "meaning_en": "arousal; fight-or-flight response",
-        "meaning_zh": "交感神经系统：激活身体的「战斗或逃跑」反应——心跳加速、瞳孔放大、出汗增加",
-        "derivation": "Sympathetic(交感的) → 紧急情况下激活身体 → 想象遇到老虎时的反应",
-        "mnemonic": "交感 = 交战感觉，遇到危险全身紧张",
+        "meaning_zh": "交感神经系统：激活身体的「战斗或逃跑」反应——心跳加速、瞳孔放大、出汗增加、消化减慢、血液流向肌肉",
+        "derivation": "紧急情况下激活 → 想象遇到老虎时的全身反应 → 准备战斗或逃跑",
+        "mnemonic": "交感 = 「交战感觉」，遇到危险全身紧张起来",
         "example": "The sympathetic nervous system prepares the body for emergencies.",
         "example_zh": "交感神经系统让身体为紧急情况做好准备。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Parasympathetic NS",
-        "breakdown": "Parasympathetic Nervous System",
+        "word": "Parasympathetic Nervous System",
+        "breakdown": "Para(旁/相反) + Sympathetic(交感)",
         "meaning_en": "calming; rest-and-digest response",
-        "meaning_zh": "副交感神经系统：让身体「休息和消化」——心跳减慢、消化加速、身体放松",
-        "derivation": "Para(旁边/相反) + Sympathetic(交感) → 和交感相反 → 让身体平静下来",
-        "mnemonic": "副交感 = 辅助恢复，吃完饭犯困就是它在工作",
-        "example": "After the danger passed, the parasympathetic NS calmed her body.",
+        "meaning_zh": "副交感神经系统：让身体「休息和消化」——心跳减慢、消化加速、身体放松。与交感系统相反，负责恢复能量",
+        "derivation": "Para(相反) + Sympathetic → 和交感作用相反 → 像踩刹车，让身体平静下来",
+        "mnemonic": "副交感 = 「辅助恢复」，吃完饭犯困就是它在工作",
+        "example": "After the danger passed, the parasympathetic nervous system calmed her body.",
         "example_zh": "危险过去后，副交感神经系统让她的身体平静下来。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Neuron & Neural Firing",
+    "type": "root",
+    "meaning_en": "structure and electrochemical signaling of nerve cells",
+    "meaning_zh": "神经元与神经冲动：神经细胞的结构和电化学信号传递机制。包括神经元类型、动作电位、突触传递和相关疾病",
+    "origin": "Unit 1: 1.3 The Neuron and Neural Firing",
+    "related": [
+      "Nervous System",
+      "Chemical Messengers",
+      "Brain Structure"
+    ],
+    "words": [
+      {
+        "word": "Neuron",
+        "breakdown": "Neuron(神经元)",
+        "meaning_en": "basic building block of the nervous system; transmits electrochemical signals",
+        "meaning_zh": "神经元：神经系统的基本单位，传递电化学信号。由树突（接收）、胞体（整合）、轴突（传递）三部分组成",
+        "derivation": "树突(接收信号) → 胞体(整合) → 轴突(传出) → 轴突末梢(释放神经递质)",
+        "mnemonic": "神经元像一棵树：树根(树突)收集养分，树干(轴突)输送，树梢(末梢)传给下一棵树",
+        "example": "The human brain contains about 86 billion neurons.",
+        "example_zh": "人脑约有860亿个神经元。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Neural Transmission",
-        "breakdown": "Neural signal pathway",
-        "meaning_en": "the process by which neurons communicate via electrical and chemical signals",
-        "meaning_zh": "神经传导：神经元通过电信号和化学信号传递信息的过程——静息电位→阈值→动作电位→突触传递",
-        "derivation": "刺激 → 达到阈值(threshold) → 产生动作电位(action potential) → 释放神经递质",
-        "mnemonic": "像多米诺骨牌：达到临界点就全力传递，不达到就完全不动（全或无定律）",
-        "example": "Neural transmission occurs when the action potential travels down the axon.",
-        "example_zh": "当动作电位沿轴突传导时，神经传导就发生了。",
+        "word": "Glial Cells",
+        "breakdown": "Glial(胶质的) + Cells(细胞)",
+        "meaning_en": "support cells that nourish, insulate, and protect neurons",
+        "meaning_zh": "神经胶质细胞：支持神经元的细胞——提供营养、形成髓鞘绝缘轴突、清除废物、参与免疫。数量约是神经元的10倍",
+        "derivation": "Glia 来自希腊语「胶水」→ 把神经元「粘」在一起并提供支持",
+        "mnemonic": "胶质细胞 = 神经元的「保姆和清洁工」，没它们神经元活不下去",
+        "example": "Glial cells form the myelin sheath that insulates axons.",
+        "example_zh": "神经胶质细胞形成包裹轴突的髓鞘。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Reflex Arc",
+        "breakdown": "Reflex(反射) + Arc(弧)",
+        "meaning_en": "neural pathway for a reflex; bypasses the brain via the spinal cord",
+        "meaning_zh": "反射弧：实现反射的神经通路。感受器→感觉神经元→脊髓中间神经元→运动神经元→肌肉，绕过大脑，所以反应极快",
+        "derivation": "刺激 → 感觉神经 → 脊髓 → 运动神经 → 反应，大脑后知后觉",
+        "mnemonic": "摸到烫的东西「先缩手再喊烫」——缩手是反射弧，喊烫是大脑后收到的信号",
+        "example": "The knee-jerk reflex is a classic example of a reflex arc.",
+        "example_zh": "膝跳反射是反射弧的经典例子。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sensory Neurons",
+        "breakdown": "Sensory(感觉的) + Neurons(神经元)",
+        "meaning_en": "carry signals from sensory receptors to the CNS",
+        "meaning_zh": "感觉神经元（传入神经元）：把感觉器官（皮肤、眼、耳等）的信号传向中枢神经系统。也叫「传入神经元」",
+        "derivation": "Sensory(感觉) → 从感受器 → 送向大脑 → 「上传」信息",
+        "mnemonic": "感觉神经元 = 「上行列车」，把外界信息送到大脑总站",
+        "example": "Sensory neurons in your fingertips detect pressure and temperature.",
+        "example_zh": "指尖的感觉神经元检测压力和温度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Motor Neurons",
+        "breakdown": "Motor(运动的) + Neurons(神经元)",
+        "meaning_en": "carry signals from the CNS to muscles and glands",
+        "meaning_zh": "运动神经元（传出神经元）：把中枢神经系统的指令传给肌肉和腺体，让身体执行动作",
+        "derivation": "Motor(运动) → 从大脑 → 送向肌肉 → 「下载」指令",
+        "mnemonic": "运动神经元 = 「下行列车」，把大脑的命令送到肌肉执行",
+        "example": "Motor neurons send signals from the brain to the muscles.",
+        "example_zh": "运动神经元把信号从大脑传到肌肉。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Interneurons",
+        "breakdown": "Inter(之间) + Neurons(神经元)",
+        "meaning_en": "neurons within the CNS that connect sensory and motor neurons",
+        "meaning_zh": "中间神经元：位于中枢神经系统内部，连接感觉神经元和运动神经元。数量最多，承担大部分信息处理工作",
+        "derivation": "Inter(在…之间) → 在感觉神经元和运动神经元「之间」→ 处理和整合信息",
+        "mnemonic": "中间神经元 = 「中间商」，在输入和输出之间加工信息",
+        "example": "Interneurons in the spinal cord mediate the reflex arc.",
+        "example_zh": "脊髓中的中间神经元介导反射弧。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "All-or-Nothing Principle",
+        "breakdown": "All(全部) + Nothing(无)",
+        "meaning_en": "a neuron either fires completely or not at all; strength of stimulus doesn't affect intensity",
+        "meaning_zh": "全或无定律：神经元要么完全放电，要么不放电——不存在「半放电」。刺激强度通过「放电频率」编码，而不是「放电强度」",
+        "derivation": "类似扣扳机：要么枪响要么不响，子弹的速度不会因为你按得用力而变快",
+        "mnemonic": "像抽水马桶：按下去就冲到底，按轻了根本不冲——没有中间状态",
+        "example": "The all-or-nothing principle means every action potential has the same magnitude.",
+        "example_zh": "全或无定律意味着每次动作电位的强度都相同。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Depolarization",
+        "breakdown": "De(去除) + Polar(极性) + ization",
+        "meaning_en": "loss of the neuron's negative charge as Na+ rushes in; triggers action potential",
+        "meaning_zh": "去极化：神经元内部由负电位变为正电位的过程。钠离子涌入细胞 → 膜电位反转 → 触发动作电位",
+        "derivation": "De(去除) + Polarization(极化) → 打破原本的「内负外正」状态 → 神经元被激活",
+        "mnemonic": "去极化 = 「去掉平静状态」→ 神经元兴奋起来准备放电",
+        "example": "Depolarization occurs when sodium ions flood into the neuron.",
+        "example_zh": "当钠离子涌入神经元时发生去极化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Refractory Period",
+        "breakdown": "Refractory(不应的) + Period(期)",
+        "meaning_en": "brief pause after firing during which a neuron cannot fire again",
+        "meaning_zh": "不应期：神经元放电后短暂的「冷却期」，无法再次放电。确保信号只沿一个方向传递，并限制最大放电频率",
+        "derivation": "Refractory(不响应) → 刚放完电，暂时「不接受新刺激」→ 需要时间恢复",
+        "mnemonic": "像手机闪光灯闪完一下需要充电，才能再闪——神经元也需要「恢复时间」",
+        "example": "During the refractory period, the neuron resets its ion concentrations.",
+        "example_zh": "在不应期内，神经元重置其离子浓度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Resting Potential",
+        "breakdown": "Resting(静息) + Potential(电位)",
+        "meaning_en": "the neuron's baseline electrical charge when not firing (~-70mV)",
+        "meaning_zh": "静息电位：神经元未放电时的基础电压，约为-70毫伏（内负外正）。由钠钾泵维持的离子浓度差产生",
+        "derivation": "Resting(休息) → 神经元「待命」状态 → 等待刺激达到阈值",
+        "mnemonic": "像手机待机状态：没在用但有电量，随时准备工作",
+        "example": "The resting potential of a typical neuron is about -70 millivolts.",
+        "example_zh": "典型神经元的静息电位约为-70毫伏。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Reuptake",
+        "breakdown": "Re(再) + Uptake(吸收)",
+        "meaning_en": "reabsorption of neurotransmitters by the sending neuron after release",
+        "meaning_zh": "再摄取：神经递质完成任务后被发送端神经元重新吸收的过程。SSRI类抗抑郁药就是通过阻止血清素的再摄取来起作用",
+        "derivation": "Re(再) + Uptake(摄取) → 「回收利用」释放出去的神经递质 → 结束信号",
+        "mnemonic": "SSRI 「选择性血清素再摄取抑制剂」→ 阻止再摄取 → 让血清素多留在突触",
+        "example": "SSRIs treat depression by blocking serotonin reuptake.",
+        "example_zh": "SSRI通过阻断血清素再摄取来治疗抑郁症。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Threshold",
+        "breakdown": "Threshold(阈值)",
+        "meaning_en": "minimum stimulation needed to trigger an action potential",
+        "meaning_zh": "阈值：触发动作电位所需的最小刺激强度。刺激达到阈值就放电，达不到就完全不放电——和全或无定律配套",
+        "derivation": "Threshold(门槛) → 「门槛」高低决定了容不容易被激活",
+        "mnemonic": "像需要集满500个赞才发货——499个什么都不发生，500个立即发货",
+        "example": "Only stimuli exceeding the threshold will trigger a nerve impulse.",
+        "example_zh": "只有超过阈值的刺激才会触发神经冲动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Multiple Sclerosis",
+        "breakdown": "Multiple(多发) + Sclerosis(硬化)",
+        "meaning_en": "autoimmune disease that destroys the myelin sheath on neurons",
+        "meaning_zh": "多发性硬化症：自身免疫系统攻击并破坏神经元髓鞘的疾病。髓鞘受损导致信号传导减慢，引起肌无力、视力问题、协调障碍",
+        "derivation": "免疫系统「误伤」髓鞘 → 轴突失去绝缘层 → 电信号泄漏或减慢",
+        "mnemonic": "像电线的橡胶皮被剥掉——信号乱窜、传不过去",
+        "example": "Multiple sclerosis can cause muscle weakness and vision problems.",
+        "example_zh": "多发性硬化症可能导致肌无力和视力问题。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Myasthenia Gravis",
+        "breakdown": "My(肌肉) + asthenia(无力) + gravis(严重)",
+        "meaning_en": "autoimmune disease blocking acetylcholine receptors at muscles; causes severe muscle weakness",
+        "meaning_zh": "重症肌无力：免疫系统攻击神经肌肉接头的乙酰胆碱受体，导致严重肌肉无力。即使大脑发出信号，肌肉也收不到",
+        "derivation": "神经发出的乙酰胆碱 → 肌肉受体被封堵 → 肌肉收不到指令 → 无力",
+        "mnemonic": "大脑在「打电话」给肌肉，但电话线被堵了——信号传不过去",
+        "example": "Myasthenia gravis is characterized by fluctuating muscle weakness.",
+        "example_zh": "重症肌无力的特征是波动性的肌肉无力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Excitatory Neurotransmitter",
+        "breakdown": "Excitatory(兴奋性的) + Neurotransmitter",
+        "meaning_en": "neurotransmitters that make receiving neurons more likely to fire",
+        "meaning_zh": "兴奋性神经递质：让接收神经元更容易放电的神经递质。代表：谷氨酸（Glutamate）。作用像「油门」",
+        "derivation": "Excite(兴奋) → 促进放电 → 增加神经活动",
+        "mnemonic": "兴奋性 = 「加油门」，让神经元更容易激活",
+        "example": "Glutamate is the brain's main excitatory neurotransmitter.",
+        "example_zh": "谷氨酸是大脑主要的兴奋性神经递质。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Inhibitory Neurotransmitter",
+        "breakdown": "Inhibitory(抑制性的) + Neurotransmitter",
+        "meaning_en": "neurotransmitters that make receiving neurons less likely to fire",
+        "meaning_zh": "抑制性神经递质：让接收神经元更难放电的神经递质。代表：GABA。作用像「刹车」",
+        "derivation": "Inhibit(抑制) → 阻止放电 → 减少神经活动",
+        "mnemonic": "抑制性 = 「踩刹车」，让神经元安静下来",
+        "example": "GABA is the brain's main inhibitory neurotransmitter.",
+        "example_zh": "GABA是大脑主要的抑制性神经递质。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Chemical Messengers",
+    "type": "root",
+    "meaning_en": "neurotransmitters, hormones, and drugs that affect brain function",
+    "meaning_zh": "化学信使：影响大脑功能的化学物质——神经递质（突触间传递）、激素（血液传播）、精神活性药物（外源性干预）",
+    "origin": "Unit 1: 1.3 The Neuron and Neural Firing",
+    "related": [
+      "Neuron & Neural Firing",
+      "Nervous System",
+      "Brain Structure",
+      "Sleep & Consciousness"
+    ],
+    "words": [
+      {
+        "word": "Dopamine",
+        "breakdown": "Dopamine(多巴胺)",
+        "meaning_en": "neurotransmitter involved in reward, pleasure, and movement",
+        "meaning_zh": "多巴胺：与奖赏、快感和运动相关的神经递质。过多 → 精神分裂症的阳性症状；过少 → 帕金森病（运动障碍）",
+        "derivation": "奖赏系统的核心 → 吃到好吃的、刷到有趣视频都会释放 → 成瘾的生化基础",
+        "mnemonic": "多巴胺 = 「多吧，你」→ 大脑在说「再多来点快乐」",
+        "example": "Dopamine plays a key role in the brain's reward system.",
+        "example_zh": "多巴胺在大脑的奖赏系统中起关键作用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Serotonin",
+        "breakdown": "Serotonin(血清素)",
+        "meaning_en": "neurotransmitter affecting mood, sleep, and appetite",
+        "meaning_zh": "血清素（5-羟色胺）：影响情绪、睡眠和食欲的神经递质。过少 → 抑郁症。SSRI类抗抑郁药通过增加血清素来起作用",
+        "derivation": "情绪的「稳定器」 → 不够就会情绪低落、失眠、食欲异常",
+        "mnemonic": "Serotonin ≈ Serene(平静) → 让你保持平静愉悦的物质",
+        "example": "Low serotonin levels are associated with depression.",
+        "example_zh": "血清素水平过低与抑郁症有关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Norepinephrine",
+        "breakdown": "Nor + Epinephrine(肾上腺素)",
+        "meaning_en": "neurotransmitter involved in arousal, alertness, and fight-or-flight",
+        "meaning_zh": "去甲肾上腺素：与觉醒、警觉和「战或逃」反应有关的神经递质。过少 → 抑郁；过多 → 焦虑/躁动",
+        "derivation": "和肾上腺素是「亲戚」 → 同样激活交感系统 → 让你警觉起来",
+        "mnemonic": "考试前心跳加速、手心出汗——那就是去甲肾上腺素在工作",
+        "example": "Norepinephrine prepares the body for action during stressful events.",
+        "example_zh": "去甲肾上腺素在应激事件中让身体准备行动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Glutamate",
+        "breakdown": "Glutamate(谷氨酸)",
+        "meaning_en": "main excitatory neurotransmitter; involved in learning and memory",
+        "meaning_zh": "谷氨酸：大脑主要的兴奋性神经递质，与学习和记忆有关。过多 → 过度兴奋 → 可能引起癫痫或神经损伤",
+        "derivation": "兴奋性 → 像油门加速神经活动 → 帮助学习和记忆",
+        "mnemonic": "Glutamate ≈ 「够了没」→ 太兴奋了够了没！",
+        "example": "Glutamate is essential for learning and memory formation.",
+        "example_zh": "谷氨酸对学习和记忆形成至关重要。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "GABA",
+        "breakdown": "Gamma-Aminobutyric Acid",
+        "meaning_en": "main inhibitory neurotransmitter; calms neural activity",
+        "meaning_zh": "GABA（γ-氨基丁酸）：大脑主要的抑制性神经递质，减缓神经活动。过少 → 焦虑、失眠。安眠药和抗焦虑药通过增强GABA起作用",
+        "derivation": "抑制性 → 像刹车减慢神经活动 → 让大脑安静下来",
+        "mnemonic": "GABA = 「嘎巴」刹车声 → 给大脑踩刹车",
+        "example": "GABA is the brain's main inhibitory neurotransmitter.",
+        "example_zh": "GABA是大脑主要的抑制性神经递质。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Substance P",
+        "breakdown": "Substance(物质) + P(pain的首字母)",
+        "meaning_en": "neurotransmitter that transmits pain signals to the brain",
+        "meaning_zh": "P物质：把疼痛信号传递到大脑的神经递质。P代表「pain（疼痛）」。阻断P物质可以缓解慢性疼痛",
+        "derivation": "P = Pain(疼痛) → 专门传递疼痛信号的物质",
+        "mnemonic": "P = Pain（疼痛），字面上就是「疼痛物质」",
+        "example": "Substance P is involved in transmitting pain signals to the brain.",
+        "example_zh": "P物质参与将疼痛信号传递到大脑。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Endorphins",
+        "breakdown": "Endogenous(内源的) + Morphine(吗啡)",
+        "meaning_en": "natural painkillers produced by the body",
+        "meaning_zh": "内啡肽：身体自己产生的天然止痛剂。跑步后的愉悦感（runner's high）、巧克力带来的快乐都与内啡肽有关",
+        "derivation": "Endo(内部) + orphin(吗啡) → 身体内部的吗啡 → 天然止痛和愉悦",
+        "mnemonic": "内啡肽 = 内部的「嗨」→ 运动后自然产生的快感",
+        "example": "Endorphins are released during exercise, reducing pain perception.",
+        "example_zh": "运动时释放内啡肽，减轻疼痛感。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Acetylcholine",
+        "breakdown": "Acetyl + choline",
+        "meaning_en": "neurotransmitter for muscle contraction, attention, and memory",
+        "meaning_zh": "乙酰胆碱（ACh）：参与肌肉收缩、注意力和记忆的神经递质。阿尔兹海默症患者大脑中的乙酰胆碱水平显著降低",
+        "derivation": "在神经肌肉接头释放 → 让肌肉收缩；在海马体 → 参与记忆",
+        "mnemonic": "想动肌肉需要「乙酰胆碱」，记忆衰退的阿尔兹海默症也缺它",
+        "example": "Alzheimer's disease is associated with low levels of acetylcholine.",
+        "example_zh": "阿尔兹海默症与乙酰胆碱水平低有关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hormones",
+        "breakdown": "Hormones(激素)",
+        "meaning_en": "chemical messengers produced by glands; travel through bloodstream",
+        "meaning_zh": "激素：内分泌腺产生并通过血液传播的化学信使。比神经递质作用慢但持续时间长。由下丘脑-垂体-腺体轴调控",
+        "derivation": "Hormao(希腊语：激发) → 激发远处器官的反应 → 血液中的「化学邮件」",
+        "mnemonic": "神经递质 = 「即时短信」（快速精确），激素 = 「群发邮件」（慢但广泛）",
+        "example": "Hormones regulate growth, metabolism, and reproduction.",
+        "example_zh": "激素调节生长、代谢和生殖。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Adrenaline",
+        "breakdown": "Ad(向) + Renal(肾的) + ine",
+        "meaning_en": "epinephrine; stress hormone triggering fight-or-flight",
+        "meaning_zh": "肾上腺素（epinephrine）：由肾上腺分泌的应激激素，触发「战斗或逃跑」反应。心跳加速、血糖升高、肌肉紧张",
+        "derivation": "Ad(在…旁) + Renal(肾) → 「肾脏旁边的腺体」分泌的 → 肾上腺素",
+        "mnemonic": "被吓一跳时的心慌感——就是肾上腺素瞬间飙升",
+        "example": "Adrenaline surges when you're startled or in danger.",
+        "example_zh": "当你受惊或面临危险时肾上腺素会激增。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Leptin",
+        "breakdown": "Leptin(瘦素)",
+        "meaning_en": "hormone that signals fullness and suppresses hunger",
+        "meaning_zh": "瘦素：脂肪细胞分泌的激素，告诉大脑「吃饱了」，抑制食欲。瘦素抵抗是肥胖的重要机制之一",
+        "derivation": "Leptos(希腊语：瘦) → 让你「保持瘦」的激素 → 吃饱了就别再吃",
+        "mnemonic": "Leptin = Lep(饱) + tin → 「饱了停」的信号",
+        "example": "Leptin signals the brain that the body has enough energy stored.",
+        "example_zh": "瘦素告诉大脑身体已经储存了足够的能量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Ghrelin",
+        "breakdown": "Ghrelin(饥饿素)",
+        "meaning_en": "hormone that stimulates hunger",
+        "meaning_zh": "饥饿素：由胃分泌的激素，告诉大脑「饿了」，刺激食欲。空腹时升高，进食后降低。睡眠不足会使饥饿素升高",
+        "derivation": "胃空了 → 分泌饥饿素 → 传到下丘脑 → 产生饥饿感",
+        "mnemonic": "Ghrelin ≈ Grr(咕咕) → 肚子咕咕叫 → 饥饿素在工作",
+        "example": "Ghrelin levels rise before meals and fall after eating.",
+        "example_zh": "饥饿素水平在餐前升高，在进食后下降。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Melatonin",
+        "breakdown": "Melatonin(褪黑素)",
+        "meaning_en": "hormone that regulates sleep-wake cycles",
+        "meaning_zh": "褪黑素：松果体分泌的激素，调节睡眠-觉醒周期。天黑后分泌增加让人困倦，天亮后减少让人清醒。蓝光会抑制褪黑素分泌",
+        "derivation": "光线减少 → 松果体分泌褪黑素 → 困意来袭 → 「身体的熄灯信号」",
+        "mnemonic": "晚上刷手机睡不着？蓝光抑制了褪黑素——所以睡前少看屏幕",
+        "example": "Melatonin supplements are sometimes used to treat jet lag.",
+        "example_zh": "褪黑素补充剂有时被用来治疗时差反应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Oxytocin",
+        "breakdown": "Oxy(快) + tocin(分娩)",
+        "meaning_en": "\"love hormone\"; promotes bonding, trust, and social attachment",
+        "meaning_zh": "催产素（爱的激素）：促进社会纽带、信任和依恋的激素。拥抱、亲吻、母乳喂养、分娩时大量释放",
+        "derivation": "原本发现于分娩时触发子宫收缩 → 后来发现它还是「爱的黏合剂」",
+        "mnemonic": "拥抱释放催产素 → 拉近彼此距离 → 情侣分手后更难受也是因为它",
+        "example": "Oxytocin is released during breastfeeding and physical affection.",
+        "example_zh": "催产素在母乳喂养和身体接触时释放。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Agonist Drugs",
+        "breakdown": "Agon(竞争) + ist → 模仿者",
+        "meaning_en": "drugs that mimic or enhance a neurotransmitter's effect",
+        "meaning_zh": "激动剂：模仿或增强神经递质作用的药物。通过激活受体产生类似天然神经递质的效果。例如吗啡是内啡肽的激动剂",
+        "derivation": "Agonist(激动剂) → 「唤醒」受体 → 和神经递质本身产生一样的效果",
+        "mnemonic": "Ago = Action(行动) → 让受体动起来 → 激动剂",
+        "example": "Morphine is an agonist that mimics endorphins.",
+        "example_zh": "吗啡是模仿内啡肽作用的激动剂。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Antagonist Drugs",
+        "breakdown": "Anti(反对) + agonist → 对抗者",
+        "meaning_en": "drugs that block a neurotransmitter's effect",
+        "meaning_zh": "拮抗剂（对抗剂）：阻断神经递质作用的药物。占据受体但不激活它，阻止天然神经递质起作用。例如抗精神病药是多巴胺拮抗剂",
+        "derivation": "Anti(反对) + agonist → 「对抗」激动剂 → 阻止受体被激活",
+        "mnemonic": "Anti = 反对 → 「反对」神经递质 → 挡住受体",
+        "example": "Antipsychotic drugs are dopamine antagonists.",
+        "example_zh": "抗精神病药是多巴胺拮抗剂。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stimulants",
+        "breakdown": "Stimul(刺激) + ants",
+        "meaning_en": "drugs that speed up CNS activity; increase alertness and energy",
+        "meaning_zh": "兴奋剂：加快中枢神经系统活动的药物。增加警觉、精力和心率。代表：咖啡因、可卡因、安非他命、尼古丁",
+        "derivation": "Stimulate(刺激) → 加速大脑活动 → 让你更清醒、更兴奋",
+        "mnemonic": "兴奋剂 = 「油门」，让大脑踩油门加速",
+        "example": "Stimulants like caffeine and cocaine increase heart rate and alertness.",
+        "example_zh": "咖啡因和可卡因等兴奋剂会增加心率和警觉。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Caffeine",
+        "breakdown": "Caffeine(咖啡因)",
+        "meaning_en": "mild stimulant found in coffee, tea, and soft drinks; blocks adenosine receptors",
+        "meaning_zh": "咖啡因：咖啡、茶、可乐中的温和兴奋剂。通过阻断腺苷受体来减少困倦感。世界上使用最广泛的精神活性物质",
+        "derivation": "阻断腺苷受体 → 腺苷是让你困的物质 → 所以咖啡因让你不困",
+        "mnemonic": "咖啡因不是「给你能量」，而是「骗过困意」——真正的能量来自休息",
+        "example": "Caffeine works by blocking adenosine receptors in the brain.",
+        "example_zh": "咖啡因通过阻断大脑中的腺苷受体来起作用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cocaine",
+        "breakdown": "Cocaine(可卡因)",
+        "meaning_en": "powerful stimulant that blocks dopamine reuptake",
+        "meaning_zh": "可卡因：强效兴奋剂，通过阻断多巴胺再摄取使多巴胺在突触中积累，产生强烈欣快感。高度成瘾，戒断反应严重",
+        "derivation": "阻止多巴胺被回收 → 突触中多巴胺过多 → 强烈快感 → 但很快耗尽 → 崩溃",
+        "mnemonic": "可卡因 = 把多巴胺「堵在突触里」→ 快感爆棚后大脑耗尽 → 抑郁反弹",
+        "example": "Cocaine produces intense euphoria by blocking dopamine reuptake.",
+        "example_zh": "可卡因通过阻断多巴胺再摄取产生强烈欣快感。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Depressants",
+        "breakdown": "Depress(压抑) + ants",
+        "meaning_en": "drugs that slow down CNS activity; reduce anxiety and inhibitions",
+        "meaning_zh": "抑制剂：减慢中枢神经系统活动的药物。减少焦虑、降低抑制力，剂量大时会困倦甚至麻醉。代表：酒精、巴比妥类、苯二氮卓类",
+        "derivation": "Depress(压下去) → 压制大脑活动 → 和兴奋剂作用相反",
+        "mnemonic": "抑制剂 = 「刹车」，让大脑慢下来 → 所以喝酒后反应变慢",
+        "example": "Alcohol is the most commonly used depressant.",
+        "example_zh": "酒精是最常用的抑制剂。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Alcohol",
+        "breakdown": "Alcohol(酒精)",
+        "meaning_en": "depressant that enhances GABA and impairs judgment, coordination",
+        "meaning_zh": "酒精：通过增强GABA（抑制性）来减慢大脑活动的抑制剂。损害判断力、协调性和记忆。长期使用导致依赖和肝损伤",
+        "derivation": "增强GABA → 大脑抑制加强 → 反应迟钝、判断变差 → 最终失去意识",
+        "mnemonic": "「喝多了胆子就大」= 前额叶（判断中心）被酒精压制 → 管不住自己",
+        "example": "Alcohol impairs judgment by reducing frontal lobe activity.",
+        "example_zh": "酒精通过降低额叶活动来损害判断力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hallucinogens",
+        "breakdown": "Hallucin(幻觉) + ogens(产生)",
+        "meaning_en": "drugs that distort perception and may cause hallucinations",
+        "meaning_zh": "致幻剂：扭曲感知、产生幻觉的药物。代表：LSD、裸盖菇素。使用者可能看到不存在的东西或对时间、空间产生扭曲感",
+        "derivation": "Hallucinate(产生幻觉) → 让大脑「看到」不存在的东西 → 主要作用于血清素系统",
+        "mnemonic": "致幻剂 = 「大脑特效滤镜」→ 看到的世界变得奇幻但不真实",
+        "example": "LSD is a powerful hallucinogen that distorts sensory experiences.",
+        "example_zh": "LSD是一种强效致幻剂，会扭曲感官体验。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Marijuana",
+        "breakdown": "Marijuana(大麻)",
+        "meaning_en": "mild hallucinogen whose active ingredient THC affects perception and mood",
+        "meaning_zh": "大麻：温和的致幻剂，活性成分THC作用于大脑的内源性大麻素受体。放松感、欣快感、感知改变、食欲增加、短时记忆受损",
+        "derivation": "THC → 模仿大脑天然的内源性大麻素 → 产生放松和欣快 → 但损害记忆",
+        "mnemonic": "大麻让人「放松又饿」→ 记忆模糊、时间变慢",
+        "example": "Marijuana's active ingredient THC binds to cannabinoid receptors.",
+        "example_zh": "大麻的活性成分THC与大麻素受体结合。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Opioids",
+        "breakdown": "Opi(鸦片) + oids",
+        "meaning_en": "powerful painkillers that mimic endorphins; highly addictive",
+        "meaning_zh": "阿片类药物：强效止痛药，模仿内啡肽作用。包括吗啡、海洛因、芬太尼、羟考酮。极易成瘾，过量致死风险高",
+        "derivation": "Opium(鸦片) → 模仿身体的内啡肽 → 强效止痛和欣快 → 但大脑停止自产内啡肽 → 依赖",
+        "mnemonic": "阿片 = 让大脑「外包」产生内啡肽 → 身体停产 → 一停药就痛苦",
+        "example": "Opioid misuse has caused a public health crisis in the United States.",
+        "example_zh": "阿片类药物滥用在美国引发了公共健康危机。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Heroin",
+        "breakdown": "Heroin(海洛因)",
+        "meaning_en": "highly addictive opioid that rapidly crosses into the brain",
+        "meaning_zh": "海洛因：高度成瘾的阿片类药物，比吗啡更快进入大脑。产生强烈欣快感但耐受性发展极快，戒断反应极其痛苦",
+        "derivation": "比吗啡更快穿过血脑屏障 → 快感更强但成瘾更快 → 历史上曾被当成「安全止痛药」推广",
+        "mnemonic": "Heroin ≈ Hero-ruin(毁掉英雄) → 曾以为是灵药，却毁掉无数人",
+        "example": "Heroin crosses the blood-brain barrier faster than morphine.",
+        "example_zh": "海洛因比吗啡更快地穿过血脑屏障。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Addiction",
+        "breakdown": "Addict(沉溺) + ion",
+        "meaning_en": "compulsive drug seeking despite harmful consequences",
+        "meaning_zh": "成瘾：尽管带来负面后果，仍无法自制地寻求药物的状态。涉及大脑奖赏回路（多巴胺系统）的长期改变。有生理和心理两个层面",
+        "derivation": "反复使用 → 大脑奖赏系统重塑 → 自然奖赏（食物、社交）失去吸引力 → 只想要药物",
+        "mnemonic": "成瘾 = 「劫持了奖赏系统」→ 大脑只认这一个奖赏",
+        "example": "Addiction involves long-term changes in the brain's reward pathway.",
+        "example_zh": "成瘾涉及大脑奖赏通路的长期改变。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Withdrawal",
+        "breakdown": "Withdraw(撤回) + al",
+        "meaning_en": "unpleasant physical and psychological symptoms when stopping a drug",
+        "meaning_zh": "戒断反应：停用药物后出现的生理和心理不适。症状与药物效应相反：兴奋剂戒断→困倦；抑制剂戒断→焦虑震颤。严重时可致命",
+        "derivation": "身体已适应药物存在 → 停药 → 平衡被打破 → 身体反弹",
+        "mnemonic": "戒断 = 身体「报复」→ 你不给它，它就让你难受",
+        "example": "Alcohol withdrawal can cause tremors and even seizures.",
+        "example_zh": "酒精戒断可能导致震颤甚至癫痫发作。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Tolerance",
+        "breakdown": "Toler(承受) + ance",
+        "meaning_en": "needing more of a drug to achieve the same effect",
+        "meaning_zh": "耐受性：反复使用后，需要更大剂量才能达到相同效果。身体对药物产生适应，是成瘾发展的关键步骤",
+        "derivation": "重复使用 → 身体下调受体或加快代谢 → 相同剂量效果减弱 → 需要加量",
+        "mnemonic": "第一次喝酒一杯就醉，后来能喝一瓶——这就是耐受性",
+        "example": "Tolerance develops as the body adapts to repeated drug use.",
+        "example_zh": "耐受性随着身体对反复用药的适应而发展。",
         "toefl_frequency": "medium"
       }
     ]
@@ -65,27 +654,253 @@
   {
     "root": "Brain Structure",
     "type": "root",
-    "meaning_en": "major brain regions and their functions",
-    "meaning_zh": "大脑结构：大脑各区域及其功能，包括额叶（决策）、颞叶（听觉/记忆）、顶叶（触觉）、枕叶（视觉）",
-    "origin": "Unit 1: Biological Basis of Behavior",
-    "related": ["Nervous System", "Chemical Messengers", "Sleep & Consciousness"],
+    "meaning_en": "major brain regions, functions, and research techniques",
+    "meaning_zh": "大脑结构：大脑各区域的位置和功能，以及研究大脑的技术（脑成像、损伤研究）",
+    "origin": "Unit 1: 1.4 The Brain",
+    "related": [
+      "Nervous System",
+      "Neuron & Neural Firing",
+      "Chemical Messengers",
+      "Sleep & Consciousness",
+      "Memory Systems"
+    ],
     "words": [
+      {
+        "word": "Brain Stem",
+        "breakdown": "Brain(脑) + Stem(干)",
+        "meaning_en": "connects brain to spinal cord; controls basic life-sustaining functions",
+        "meaning_zh": "脑干：连接大脑和脊髓的部分，控制呼吸、心跳、血压等基本生命功能。包括延髓、脑桥、中脑。损伤通常是致命的",
+        "derivation": "Brain(脑) + Stem(树干) → 大脑的「树干」→ 支撑基本生命活动",
+        "mnemonic": "脑干 = 生命的根基，像树干支撑整棵树",
+        "example": "The brainstem controls vital functions like breathing and heart rate.",
+        "example_zh": "脑干控制呼吸和心率等基本生命功能。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Medulla",
+        "breakdown": "Medulla(延髓)",
+        "meaning_en": "base of brainstem; controls heartbeat, breathing, blood pressure",
+        "meaning_zh": "延髓：脑干最下端，紧连脊髓。控制心跳、呼吸、血压等最基本的生命功能。拳击手的脑干受击可致命就是因为它",
+        "derivation": "延髓 = 「脑的最低层」→ 生命最基本的指挥部",
+        "mnemonic": "Medulla 像 Middle → 位于脑干「中间偏下」→ 掌管生命命脉",
+        "example": "Damage to the medulla can stop breathing and heartbeat.",
+        "example_zh": "延髓受损可能导致呼吸和心跳停止。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Reticular Activating System",
+        "breakdown": "Reticular(网状) + Activating(激活) + System(系统)",
+        "meaning_en": "network in the brainstem that regulates arousal and attention",
+        "meaning_zh": "网状激活系统（RAS）：脑干中的神经元网络，调节觉醒和注意。像大脑的「开关」——损伤会导致昏迷，活跃则让你保持清醒",
+        "derivation": "Reticular(网状) → 像网一样的结构 → 激活大脑皮层 → 保持清醒和警觉",
+        "mnemonic": "RAS = 「大脑的闹钟」→ 它响你就醒，它坏你就昏迷不醒",
+        "example": "Damage to the reticular activating system can cause coma.",
+        "example_zh": "网状激活系统受损可能导致昏迷。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Brain's Reward Center",
+        "breakdown": "Reward(奖赏) + Center(中心)",
+        "meaning_en": "dopamine pathway (including nucleus accumbens) that signals pleasure",
+        "meaning_zh": "大脑奖赏中心：以伏隔核为核心的多巴胺通路。被食物、性、社交、药物等激活，产生愉悦感。成瘾的生化基础",
+        "derivation": "腹侧被盖区 → 释放多巴胺 → 伏隔核 → 「感觉真好，再来一次」",
+        "mnemonic": "奖赏中心 = 大脑的「点赞按钮」→ 一被激活你就想重复这个行为",
+        "example": "Drugs of abuse hijack the brain's reward center.",
+        "example_zh": "成瘾药物会劫持大脑的奖赏中心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cerebellum",
+        "breakdown": "Cerebellum(小脑)",
+        "meaning_en": "coordinates voluntary movement, balance, and some learning",
+        "meaning_zh": "小脑：位于脑干后方，协调随意运动、保持平衡、学习运动技能。喝醉后走路不稳就是酒精影响了小脑",
+        "derivation": "拉丁语「小的大脑」→ 虽小但对运动协调至关重要",
+        "mnemonic": "小脑 = 「小助手」，专门帮你协调动作、保持平衡",
+        "example": "The cerebellum coordinates balance and fine motor movements.",
+        "example_zh": "小脑协调平衡和精细运动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cerebral Cortex",
+        "breakdown": "Cerebral(大脑的) + Cortex(皮层)",
+        "meaning_en": "outer layer of the brain; site of higher thinking",
+        "meaning_zh": "大脑皮层：大脑的外层「灰质」，是高级思维、知觉、语言和意识的所在地。折叠成沟回以增加表面积",
+        "derivation": "Cortex(树皮/外层) → 大脑最外面的一层 → 负责最「人类」的功能",
+        "mnemonic": "大脑皮层像「皱巴巴的核桃壳」→ 折叠越多表面积越大 → 智力越高",
+        "example": "The cerebral cortex is where conscious thought occurs.",
+        "example_zh": "大脑皮层是意识思维发生的地方。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hemispheres",
+        "breakdown": "Hemi(半) + Sphere(球)",
+        "meaning_en": "left and right halves of the cerebrum with specialized functions",
+        "meaning_zh": "大脑半球：大脑分为左右两个半球。左半球通常主管语言和逻辑，右半球主管空间和情感。通过胼胝体相连",
+        "derivation": "Hemi(半) + Sphere(球) → 「半球」→ 左右各一个 → 控制对侧身体",
+        "mnemonic": "左脑说话右脑画画（侧化），但实际上两侧高度协作",
+        "example": "The two hemispheres communicate through the corpus callosum.",
+        "example_zh": "两个大脑半球通过胼胝体相互沟通。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Limbic System",
+        "breakdown": "Limbic(边缘的) + System(系统)",
+        "meaning_en": "emotion and memory center; includes hippocampus, amygdala, hypothalamus",
+        "meaning_zh": "边缘系统：情绪和记忆的中心，包括海马体（记忆）、杏仁核（恐惧）、下丘脑（动机）和扣带回。位于大脑皮层和脑干之间",
+        "derivation": "Limbus(边缘) → 围绕脑干「边缘」的结构 → 情绪和记忆的基地",
+        "mnemonic": "边缘系统 = 「情绪脑」→ 害怕、快乐、记忆都在这里",
+        "example": "The limbic system plays a central role in emotion and memory.",
+        "example_zh": "边缘系统在情绪和记忆中起核心作用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Thalamus",
+        "breakdown": "Thalamus(丘脑)",
+        "meaning_en": "sensory relay station; routes all senses (except smell) to the cortex",
+        "meaning_zh": "丘脑：感觉信息的「中转站」。除嗅觉外，所有感觉信息（视觉、听觉、触觉、味觉）都先经过丘脑再送到大脑皮层对应区域",
+        "derivation": "Thalamos(希腊语：内室) → 大脑深处的「接待室」→ 接收并分发感觉信息",
+        "mnemonic": "丘脑 = 大脑的「邮件分拣中心」→ 把感觉信息送到对应部门",
+        "example": "All senses except smell pass through the thalamus.",
+        "example_zh": "除嗅觉外，所有感觉都经过丘脑。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hypothalamus",
+        "breakdown": "Hypo(下) + thalamus(丘脑)",
+        "meaning_en": "regulates hunger, thirst, body temperature, sexual behavior, and the endocrine system",
+        "meaning_zh": "下丘脑：丘脑下方的小区域，调节饥饿、口渴、体温、性行为和激素分泌。控制自主神经系统和脑垂体，是「内稳态」的总管",
+        "derivation": "Hypo(下) + thalamus(丘脑) → 丘脑下面 → 控制身体的基本需求和内分泌",
+        "mnemonic": "下丘脑 = 身体的「管家」→ 管吃、管喝、管冷热、管激素",
+        "example": "The hypothalamus regulates hunger and body temperature.",
+        "example_zh": "下丘脑调节饥饿和体温。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Pituitary Gland",
+        "breakdown": "Pituitary(垂体的) + Gland(腺)",
+        "meaning_en": "\"master gland\"; releases hormones controlling other glands and growth",
+        "meaning_zh": "脑垂体（「主腺」）：位于下丘脑下方，分泌多种激素调控其他内分泌腺。控制生长、代谢、生殖和应激反应。受下丘脑指挥",
+        "derivation": "下丘脑(指挥官) → 垂体(总经理) → 其他腺体(员工) → 垂体是内分泌系统的「总枢纽」",
+        "mnemonic": "脑垂体 = 「主腺」→ 它一发话，其他腺体都得听",
+        "example": "The pituitary gland releases growth hormone and many others.",
+        "example_zh": "脑垂体释放生长激素和许多其他激素。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hippocampus",
+        "breakdown": "Hippo(马) + campus(海马)",
+        "meaning_en": "forms new long-term memories",
+        "meaning_zh": "海马体：边缘系统的一部分，负责把短期记忆转化为长期记忆。损伤导致顺行性失忆（无法形成新记忆）。H.M. 病例就是海马体被切除",
+        "derivation": "形似海马 → 希腊语「海马」→ 记忆的「保存按钮」",
+        "mnemonic": "海马体 = 记忆的「保存键」→ 按不了保存键，新的经历就留不下来",
+        "example": "Damage to the hippocampus prevents the formation of new memories.",
+        "example_zh": "海马体受损会阻止新记忆的形成。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Amygdala",
+        "breakdown": "Amygdala(杏仁核)",
+        "meaning_en": "processes fear, aggression, and emotional memory",
+        "meaning_zh": "杏仁核：边缘系统中的小核团，处理恐惧、愤怒和情绪记忆。是「威胁探测器」——看到蛇或愤怒的脸会瞬间激活",
+        "derivation": "形似杏仁 → 拉丁语「杏仁」→ 情绪大脑的「警报器」",
+        "mnemonic": "杏仁核 = 「恐惧报警器」→ 一感觉到威胁就让你心跳加速、准备战逃",
+        "example": "The amygdala activates when you see a threatening face.",
+        "example_zh": "看到威胁性面孔时杏仁核会激活。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Corpus Callosum",
+        "breakdown": "Corpus(体) + Callosum(胼胝)",
+        "meaning_en": "large band of nerve fibers connecting the two hemispheres",
+        "meaning_zh": "胼胝体：连接左右大脑半球的大束神经纤维，让两半球能共享信息。切除后（裂脑手术）两半球独立工作",
+        "derivation": "Corpus(体) + Callosum(胼胝：厚的) → 「厚实的连接体」→ 两半球的「桥梁」",
+        "mnemonic": "胼胝体 = 「大脑的跨海大桥」→ 左右两岸通过它交换信息",
+        "example": "The corpus callosum allows the two hemispheres to share information.",
+        "example_zh": "胼胝体让两个大脑半球能够共享信息。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Occipital Lobe",
+        "breakdown": "Occipital(枕的) + Lobe(叶)",
+        "meaning_en": "processes visual information",
+        "meaning_zh": "枕叶：位于大脑后部（后脑勺处），专门处理视觉信息。损伤会导致皮层盲——眼睛是好的，但大脑看不见",
+        "derivation": "Occiput(后脑勺) → 脑袋后面的那块 → 主管视觉",
+        "mnemonic": "枕叶在后脑勺 → 你看到的画面在「脑后」被处理",
+        "example": "The occipital lobe at the back of the brain processes vision.",
+        "example_zh": "位于大脑后部的枕叶处理视觉。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Temporal Lobe",
+        "breakdown": "Temporal(颞的) + Lobe(叶)",
+        "meaning_en": "processes auditory information and language comprehension",
+        "meaning_zh": "颞叶：位于太阳穴附近，处理听觉信息、语言理解（Wernicke区）和部分记忆功能（海马体就在此处）",
+        "derivation": "Temporal(太阳穴) → 耳朵上方 → 主管听觉",
+        "mnemonic": "颞叶在太阳穴附近 → 「太阳穴」对应「听觉」→ 耳朵附近的脑区管听",
+        "example": "The temporal lobes process sounds and help you understand speech.",
+        "example_zh": "颞叶处理声音，帮助你理解言语。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Parietal Lobe",
+        "breakdown": "Parietal(顶的) + Lobe(叶)",
+        "meaning_en": "processes touch, temperature, pain, and spatial awareness",
+        "meaning_zh": "顶叶：位于大脑顶部，处理触觉、温度、疼痛和空间感知。包含躯体感觉皮层，是身体感觉的「地图」",
+        "derivation": "Parietal(顶部的) → 大脑顶部 → 主管触觉和空间",
+        "mnemonic": "顶叶 = 头顶 → 负责感觉「从头到脚」的触觉",
+        "example": "The parietal lobe contains the somatosensory cortex.",
+        "example_zh": "顶叶包含躯体感觉皮层。",
+        "toefl_frequency": "medium"
+      },
       {
         "word": "Frontal Lobe",
         "breakdown": "Frontal(前面的) + Lobe(叶)",
         "meaning_en": "decision-making, planning, personality, voluntary movement",
-        "meaning_zh": "额叶：位于大脑前部，负责决策、计划、人格和随意运动。损伤后人格可能巨变（如 Phineas Gage 案例）",
-        "derivation": "Front(前面) → 大脑最前面的部分 → 负责高级思维和决策",
+        "meaning_zh": "额叶：大脑最前面的部分，负责决策、计划、人格和随意运动。损伤后人格可能巨变（如 Phineas Gage 案例）",
+        "derivation": "Frontal(前面) → 大脑最前面的部分 → 负责高级思维和决策",
         "mnemonic": "额头在前面 → 额叶在前面 → 负责「前瞻性」思考（计划、决策）",
         "example": "The frontal lobe is responsible for planning and decision-making.",
         "example_zh": "额叶负责计划和决策。",
         "toefl_frequency": "medium"
       },
       {
+        "word": "Somatosensory Cortex",
+        "breakdown": "Somato(身体的) + Sensory(感觉的) + Cortex",
+        "meaning_en": "strip in parietal lobe that processes body touch and position",
+        "meaning_zh": "躯体感觉皮层：顶叶前部的一条带状区域，接收身体各部分的触觉信息。身体不同部位在皮层上有对应的「地图」（感觉小人）",
+        "derivation": "Somato(身体) + Sensory(感觉) → 身体感觉的「接收站」→ 按身体部位排列",
+        "mnemonic": "嘴唇和手的感觉皮层区域最大——因为这些部位触觉最敏感",
+        "example": "The somatosensory cortex maps sensations from different body parts.",
+        "example_zh": "躯体感觉皮层对应身体各部位的感觉。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Motor Cortex",
+        "breakdown": "Motor(运动的) + Cortex(皮层)",
+        "meaning_en": "strip in frontal lobe that controls voluntary movements",
+        "meaning_zh": "运动皮层：额叶后部的一条带状区域，控制身体的随意运动。和躯体感觉皮层一样，身体不同部位在皮层上有对应的地图",
+        "derivation": "Motor(运动) + Cortex → 发出「动起来」的指令 → 身体各部位各有其「遥控器」",
+        "mnemonic": "手和脸的运动皮层区域最大——因为动作最精细",
+        "example": "Stimulating the motor cortex causes specific muscles to twitch.",
+        "example_zh": "刺激运动皮层会使特定肌肉抽动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Split Brain Research",
+        "breakdown": "Split(分开) + Brain(脑) + Research(研究)",
+        "meaning_en": "studies of patients whose corpus callosum was severed to treat epilepsy",
+        "meaning_zh": "裂脑研究：对接受胼胝体切除术的癫痫患者的研究（Gazzaniga 和 Sperry）。揭示了左右脑的功能分工——两半球被切断后各做各的",
+        "derivation": "胼胝体切断 → 左右脑无法沟通 → 巧妙的实验显示两半球各自的独立功能",
+        "mnemonic": "把大脑「切成两半」的研究 → 发现左脑右脑是两个「并行处理器」",
+        "example": "Split brain research revealed specialized functions of the two hemispheres.",
+        "example_zh": "裂脑研究揭示了两个大脑半球的专门功能。",
+        "toefl_frequency": "medium"
+      },
+      {
         "word": "Broca's Area",
         "breakdown": "Broca(人名) + Area(区域)",
-        "meaning_en": "brain region controlling speech production",
-        "meaning_zh": "布洛卡区：位于左侧额叶，控制语言产生（说话）。损伤后能理解语言但说不出来",
+        "meaning_en": "left frontal area controlling speech production",
+        "meaning_zh": "布洛卡区：位于左侧额叶，控制语言产生（说话）。损伤后能理解语言但说不出来（布洛卡失语症）",
         "derivation": "以发现者 Paul Broca 命名 → 控制嘴巴的运动来产生语言",
         "mnemonic": "Broca = Broken speech（说话坏了），损伤后说不出话",
         "example": "Damage to Broca's area results in difficulty producing speech.",
@@ -95,8 +910,8 @@
       {
         "word": "Wernicke's Area",
         "breakdown": "Wernicke(人名) + Area(区域)",
-        "meaning_en": "brain region controlling language comprehension",
-        "meaning_zh": "韦尼克区：位于左侧颞叶，控制语言理解。损伤后能说话但说的话没有意义",
+        "meaning_en": "left temporal area controlling language comprehension",
+        "meaning_zh": "韦尼克区：位于左侧颞叶，控制语言理解。损伤后能说话但说的话没有意义（韦尼克失语症）",
         "derivation": "以发现者 Carl Wernicke 命名 → 负责理解听到的语言",
         "mnemonic": "Wernicke ≈ 「问你咔」→ 问你话你听不懂，理解出了问题",
         "example": "Wernicke's area damage leads to fluent but meaningless speech.",
@@ -104,90 +919,779 @@
         "toefl_frequency": "medium"
       },
       {
-        "word": "Cerebellum",
-        "breakdown": "Cerebellum(小脑)",
-        "meaning_en": "coordination of voluntary movement and balance",
-        "meaning_zh": "小脑：负责协调随意运动和保持平衡。喝醉后走路不稳就是因为酒精影响了小脑",
-        "derivation": "Cerebellum 来自拉丁语「小的大脑」→ 虽然小但对运动协调至关重要",
-        "mnemonic": "小脑 = 小助手，专门帮你协调动作、保持平衡",
-        "example": "The cerebellum coordinates balance and fine motor movements.",
-        "example_zh": "小脑协调平衡和精细运动。",
+        "word": "Aphasia",
+        "breakdown": "A(无) + phasia(说话)",
+        "meaning_en": "language impairment from brain damage",
+        "meaning_zh": "失语症：由脑损伤引起的语言能力障碍。布洛卡失语（说话困难但理解正常）和韦尼克失语（说话流利但无意义）是两种典型",
+        "derivation": "A(无) + phasia(说话能力) → 失去了「说」的能力",
+        "mnemonic": "A-phasia = 「没-说话」→ 说话能力出问题",
+        "example": "Aphasia can affect speech production, comprehension, or both.",
+        "example_zh": "失语症可能影响言语产生、理解或两者兼有。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Brainstem",
-        "breakdown": "Brain(脑) + Stem(茎/干)",
-        "meaning_en": "vital functions: breathing, heart rate, consciousness",
-        "meaning_zh": "脑干：连接大脑和脊髓，控制呼吸、心跳等基本生命功能。损伤通常是致命的",
-        "derivation": "Brain(脑) + Stem(干) → 大脑的「树干」→ 支撑最基本的生命活动",
-        "mnemonic": "脑干 = 生命的根基，像树干支撑整棵树一样支撑生命",
-        "example": "The brainstem controls vital functions like breathing and heart rate.",
-        "example_zh": "脑干控制呼吸和心率等基本生命功能。",
+        "word": "Brain Plasticity",
+        "breakdown": "Brain(脑) + Plasticity(可塑性)",
+        "meaning_en": "brain's ability to reorganize by forming new neural connections",
+        "meaning_zh": "大脑可塑性：大脑通过形成新的神经连接来重组自身的能力。儿童时期最强，但终生存在。中风后康复、学习新技能都依赖它",
+        "derivation": "Plasticity(可塑性：像塑料一样可以改变形状) → 大脑不是固定不变的 → 会根据经验重塑",
+        "mnemonic": "大脑像「橡皮泥」→ 每次学习都在重新塑形",
+        "example": "Brain plasticity allows recovery after stroke through rehabilitation.",
+        "example_zh": "大脑可塑性让中风后可以通过康复恢复。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Brain Scans (EEG, fMRI)",
+        "breakdown": "EEG(脑电图) + fMRI(功能磁共振)",
+        "meaning_en": "imaging techniques measuring brain activity",
+        "meaning_zh": "脑扫描技术：EEG（脑电图）测量脑电波，时间精度高但空间精度低；fMRI（功能磁共振）通过血流变化显示脑活动，空间精度高",
+        "derivation": "EEG → 记录电信号 → 快但不精确；fMRI → 记录血流 → 精确但慢",
+        "mnemonic": "EEG看「什么时候」活动，fMRI看「哪里」活动——两者互补",
+        "example": "fMRI can show which brain areas activate during a specific task.",
+        "example_zh": "fMRI能显示特定任务时哪些脑区被激活。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Lesioning",
+        "breakdown": "Lesion(损伤) + ing",
+        "meaning_en": "destroying small areas of brain tissue to study their function",
+        "meaning_zh": "损伤法：通过破坏动物大脑的特定小区域来研究该区域的功能。也用于研究自然损伤的人类患者（如中风或肿瘤）",
+        "derivation": "Lesion(损伤) → 故意损伤某区域 → 看缺了它会发生什么 → 推断它的功能",
+        "mnemonic": "像拔零件：把零件拔掉看机器哪里坏了 → 就知道这个零件是干嘛的",
+        "example": "Early neuroscience used lesioning to map brain functions in animals.",
+        "example_zh": "早期神经科学用损伤法来绘制动物的大脑功能图。",
         "toefl_frequency": "medium"
       }
     ]
   },
   {
-    "root": "Chemical Messengers",
+    "root": "Sleep & Consciousness",
     "type": "root",
-    "meaning_en": "neurotransmitters and their effects on behavior",
-    "meaning_zh": "化学信使：神经递质——神经元之间传递信息的化学物质，不同的神经递质影响不同的行为和情绪",
-    "origin": "Unit 1: Biological Basis of Behavior",
-    "related": ["Nervous System", "Brain Structure", "Sleep & Consciousness"],
+    "meaning_en": "states of awareness, sleep stages, dreams, and sleep disorders",
+    "meaning_zh": "睡眠与意识：意识的不同状态，包括清醒、睡眠各阶段（NREM/REM）、梦境、昼夜节律，以及睡眠障碍",
+    "origin": "Unit 1: 1.5 Sleep",
+    "related": [
+      "Brain Structure",
+      "Chemical Messengers",
+      "Memory Systems"
+    ],
     "words": [
       {
-        "word": "Dopamine",
-        "breakdown": "Dopamine(多巴胺)",
-        "meaning_en": "neurotransmitter involved in reward, pleasure, and movement",
-        "meaning_zh": "多巴胺：与奖赏、快感和运动有关的神经递质。过多→精神分裂症；过少→帕金森病",
-        "derivation": "奖赏系统的核心 → 吃到好吃的、刷到有趣的视频都会释放多巴胺",
-        "mnemonic": "多巴胺 = 「多吧，你」→ 大脑在说「多来点快乐吧」",
-        "example": "Dopamine plays a key role in the brain's reward system.",
-        "example_zh": "多巴胺在大脑的奖赏系统中起关键作用。",
+        "word": "Consciousness",
+        "breakdown": "Consciousness(意识)",
+        "meaning_en": "awareness of ourselves and our environment",
+        "meaning_zh": "意识：对自己和环境的觉察。包括清醒的警觉、白日梦、睡眠、催眠和药物改变的状态。是一个「连续体」，不是开或关",
+        "derivation": "Con(一起) + Scio(知道) → 「和自己一起知道」→ 知道自己知道",
+        "mnemonic": "意识 = 「心灵的聚光灯」→ 你此刻注意到的就是意识的内容",
+        "example": "Consciousness ranges from full alertness to deep sleep.",
+        "example_zh": "意识从完全清醒到深度睡眠有不同水平。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Serotonin",
-        "breakdown": "Serotonin(血清素)",
-        "meaning_en": "neurotransmitter affecting mood, sleep, and appetite",
-        "meaning_zh": "血清素（5-羟色胺）：影响情绪、睡眠和食欲的神经递质。过少→抑郁症。抗抑郁药（SSRI）就是增加血清素",
-        "derivation": "调节情绪的「稳定器」→ 不够就会情绪低落、失眠、食欲异常",
-        "mnemonic": "Serotonin ≈ Serene(平静) → 让你保持平静愉悦的物质",
-        "example": "Low serotonin levels are associated with depression.",
-        "example_zh": "血清素水平过低与抑郁症有关。",
+        "word": "Circadian Rhythm",
+        "breakdown": "Circa(大约) + Dian(一天)",
+        "meaning_en": "biological clock cycling roughly every 24 hours",
+        "meaning_zh": "昼夜节律：大约24小时为周期的生物钟，调节睡眠-觉醒周期。由下丘脑的视交叉上核(SCN)控制，受光线影响",
+        "derivation": "Circa(大约) + Dies(天) → 大约一天的周期 → 身体内置的24小时时钟",
+        "mnemonic": "时差反应(jet lag)就是昼夜节律被打乱——你的生物钟还在原来的时区",
+        "example": "Circadian rhythms are disrupted by jet lag and shift work.",
+        "example_zh": "昼夜节律会被时差和轮班工作打乱。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "GABA",
-        "breakdown": "Gamma-Aminobutyric Acid",
-        "meaning_en": "main inhibitory neurotransmitter; calms neural activity",
-        "meaning_zh": "GABA（γ-氨基丁酸）：主要的抑制性神经递质，减缓神经活动。过少→焦虑。安眠药/抗焦虑药增强GABA的作用",
-        "derivation": "抑制性 → 像刹车一样减慢神经活动 → 让大脑安静下来",
-        "mnemonic": "GABA = 「嘎巴」刹车声 → 给大脑踩刹车",
-        "example": "GABA is the brain's main inhibitory neurotransmitter.",
-        "example_zh": "GABA是大脑主要的抑制性神经递质。",
+        "word": "Disruptions to Circadian Rhythm",
+        "breakdown": "Disruptions(扰乱) + Circadian Rhythm",
+        "meaning_en": "jet lag, shift work, and light exposure that throw off the biological clock",
+        "meaning_zh": "昼夜节律紊乱：打乱生物钟的因素——时差、轮班工作、夜间蓝光暴露、熬夜。导致失眠、疲劳、情绪问题、代谢紊乱",
+        "derivation": "光线是主要「授时因子」→ 错误时间的光线让大脑误判时间 → 节律紊乱",
+        "mnemonic": "晚上刷手机的蓝光 → 骗大脑「还是白天」→ 褪黑素不分泌 → 睡不着",
+        "example": "Shift workers often experience circadian rhythm disruptions.",
+        "example_zh": "轮班工人经常经历昼夜节律紊乱。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Glutamate",
-        "breakdown": "Glutamate(谷氨酸)",
-        "meaning_en": "main excitatory neurotransmitter; involved in learning and memory",
-        "meaning_zh": "谷氨酸：主要的兴奋性神经递质，与学习和记忆有关。过多→过度兴奋→可能导致癫痫或神经损伤",
-        "derivation": "兴奋性 → 像油门一样加速神经活动 → 帮助学习和记忆",
-        "mnemonic": "Glutamate ≈ 「够了没」→ 太兴奋了够了没！过多会损伤神经",
-        "example": "Glutamate is essential for learning and memory formation.",
-        "example_zh": "谷氨酸对学习和记忆形成至关重要。",
+        "word": "Sleep Stages",
+        "breakdown": "Sleep(睡眠) + Stages(阶段)",
+        "meaning_en": "cyclic progression through NREM 1-3 and REM, about 90 minutes per cycle",
+        "meaning_zh": "睡眠阶段：整夜睡眠按90分钟为周期循环。一个完整周期：N1→N2→N3（深睡）→回到N2→REM。一夜大约4-5个周期，后半夜REM变长",
+        "derivation": "入睡 → 越来越深 → 到达最深 → 又浮上来到REM → 重新循环",
+        "mnemonic": "睡眠像潜水：一会儿潜到最深（N3）恢复身体，一会儿浮到水面（REM）做梦",
+        "example": "A complete sleep cycle lasts about 90 minutes.",
+        "example_zh": "一个完整的睡眠周期约持续90分钟。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Endorphins",
-        "breakdown": "Endogenous(内源的) + Morphine(吗啡)",
-        "meaning_en": "natural painkillers produced by the body",
-        "meaning_zh": "内啡肽：身体自己产生的天然止痛剂。跑步后的愉悦感（runner's high）就是内啡肽的作用",
-        "derivation": "Endo(内部) + orphin(吗啡) → 身体内部的吗啡 → 天然止痛和愉悦",
-        "mnemonic": "内啡肽 = 内部的「嗨」→ 运动后自然产生的快感",
-        "example": "Endorphins are released during exercise, reducing pain perception.",
-        "example_zh": "运动时释放内啡肽，减轻疼痛感。",
+        "word": "NREM Stage 1",
+        "breakdown": "NREM(非快速眼动) + Stage 1",
+        "meaning_en": "light sleep just after falling asleep; easily awakened",
+        "meaning_zh": "NREM第一阶段：刚入睡的最浅阶段，持续几分钟。容易被唤醒，可能出现入睡幻觉（hypnagogic sensations）——如下坠感",
+        "derivation": "从清醒过渡到睡眠 → 肌肉开始放松 → 意识模糊",
+        "mnemonic": "像上课打盹 → 一叫就醒 → 还知道周围发生了什么",
+        "example": "Hypnagogic sensations often occur during NREM stage 1.",
+        "example_zh": "入睡幻觉经常发生在NREM第一阶段。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "NREM Stage 2",
+        "breakdown": "NREM + Stage 2",
+        "meaning_en": "light sleep with sleep spindles and K-complexes",
+        "meaning_zh": "NREM第二阶段：浅睡但比N1深。脑电图出现「睡眠纺锤波」和「K-复合波」。占一夜睡眠的约50%，是主要的浅睡阶段",
+        "derivation": "睡眠纺锤波 → 大脑在「过滤」外界干扰 → 让睡眠更稳定",
+        "mnemonic": "像在家午睡 → 需要轻轻摇才会醒 → 是最常见的睡眠阶段",
+        "example": "About half of total sleep time is spent in NREM stage 2.",
+        "example_zh": "大约一半的总睡眠时间花在NREM第二阶段。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "NREM Stage 3",
+        "breakdown": "NREM + Stage 3",
+        "meaning_en": "deep slow-wave sleep; hardest to wake; body restoration",
+        "meaning_zh": "NREM第三阶段（深睡/慢波睡眠）：最深的睡眠，极难唤醒。脑电图出现delta慢波。身体修复、生长激素释放、记忆巩固主要在这个阶段",
+        "derivation": "慢波睡眠 → 大脑「省电模式」→ 身体忙着修复和生长",
+        "mnemonic": "像考完试大睡 → 雷打不动 → 被叫醒会很迷糊",
+        "example": "Growth hormone is primarily released during NREM stage 3.",
+        "example_zh": "生长激素主要在NREM第三阶段释放。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hypnagogic Sensations",
+        "breakdown": "Hypno(睡眠) + agogic(引导)",
+        "meaning_en": "vivid sensory experiences during the transition from wake to sleep",
+        "meaning_zh": "入睡幻觉：从清醒到睡眠过渡期（N1）出现的生动感觉体验——突然的下坠感、听到声音、看到闪光或经历「睡眠抽动」",
+        "derivation": "Hypno(睡眠) + agogic(引向) → 「引向睡眠」→ 入睡过渡期的感觉",
+        "mnemonic": "睡着前突然感觉从床上掉下去 → 身体猛一抽 → 就是入睡幻觉",
+        "example": "Hypnagogic sensations include the feeling of falling as you drift off.",
+        "example_zh": "入睡幻觉包括入睡时下坠的感觉。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "REM Sleep",
+        "breakdown": "Rapid Eye Movement",
+        "meaning_en": "sleep stage with vivid dreams, rapid eye movements, and muscle paralysis",
+        "meaning_zh": "快速眼动睡眠：眼球快速运动、生动梦境、全身肌肉暂时麻痹。大脑像白天一样活跃，所以也叫「矛盾睡眠」。对记忆巩固和情绪调节至关重要",
+        "derivation": "眼球快速转动 → 大脑非常活跃 → 身体麻痹防止你把梦演出来",
+        "mnemonic": "REM = 大脑「加班」：身体睡了，大脑在忙着整理记忆和做梦",
+        "example": "Most vivid dreams occur during REM sleep.",
+        "example_zh": "最生动的梦发生在快速眼动睡眠。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dreaming",
+        "breakdown": "Dream(梦) + ing",
+        "meaning_en": "mental imagery experienced during sleep, especially REM",
+        "meaning_zh": "做梦：睡眠中的心理体验，主要发生在REM阶段。内容通常离奇、情绪强烈。多种理论解释梦的功能：情绪处理、记忆整理、神经活动副产品",
+        "derivation": "REM阶段大脑活跃 → 产生内部体验 → 没有外部输入的「幻觉」",
+        "mnemonic": "梦 = REM期大脑的「故事会」→ 用白天的经历拼出新故事",
+        "example": "Dreaming is most vivid during REM sleep.",
+        "example_zh": "做梦在快速眼动睡眠期最生动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "REM Rebound",
+        "breakdown": "REM + Rebound(反弹)",
+        "meaning_en": "increased REM sleep after REM deprivation",
+        "meaning_zh": "REM反弹：被剥夺REM睡眠后（如连续几晚不让进入REM），之后的睡眠中REM时间显著增加。说明REM对大脑有重要功能",
+        "derivation": "身体「知道」自己缺了REM → 第二天自动补偿 → 像欠了债要还",
+        "mnemonic": "REM反弹 = 「睡眠补债」→ 缺了的REM总得补回来",
+        "example": "Alcohol suppresses REM and can cause rebound the next night.",
+        "example_zh": "酒精抑制REM，第二晚可能出现REM反弹。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Activation-Synthesis Dream Theory",
+        "breakdown": "Activation(激活) + Synthesis(合成)",
+        "meaning_en": "Hobson's theory: dreams are the brain's attempt to make sense of random neural activity",
+        "meaning_zh": "激活-合成假说（Hobson）：梦是大脑对REM期随机神经活动的「事后解释」。脑干随机放电 → 皮层试图编织成故事 → 形成梦",
+        "derivation": "Activation(随机激活) + Synthesis(合成故事) → 梦没有深层意义，只是大脑「强行解释」",
+        "mnemonic": "梦 = 大脑的「即兴创作」→ 把随机信号拼成一个故事",
+        "example": "Activation-synthesis theory argues dreams are meaning-making from noise.",
+        "example_zh": "激活-合成理论认为梦是对随机神经活动的意义赋予。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Consolidation Dream Theory",
+        "breakdown": "Consolidation(巩固)",
+        "meaning_en": "dreams help strengthen and organize memories",
+        "meaning_zh": "记忆巩固理论：梦的功能是帮助巩固和整理白天的记忆，把短期记忆转为长期记忆，并处理情绪相关的经历",
+        "derivation": "白天的经历 → 睡眠中（特别是REM）被重新播放 → 整合进长期记忆",
+        "mnemonic": "考试前要睡好 → 睡眠中梦把白天学的知识「存档」",
+        "example": "The consolidation theory suggests dreams help process daily learning.",
+        "example_zh": "巩固理论认为梦帮助处理每日学习。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sleep Function",
+        "breakdown": "Sleep(睡眠) + Function(功能)",
+        "meaning_en": "why we sleep: recovery, memory consolidation, growth, emotion regulation",
+        "meaning_zh": "睡眠的功能：身体恢复（NREM第三阶段修复组织）、记忆巩固（REM整合记忆）、生长（生长激素释放）、情绪调节（REM处理情绪）、免疫维护",
+        "derivation": "没有单一功能 → 睡眠是多种重要过程的综合 → 缺觉会同时影响多个系统",
+        "mnemonic": "睡眠 = 身体的「夜间维护」→ 不睡就等于不维护机器",
+        "example": "Sleep serves multiple functions including memory consolidation.",
+        "example_zh": "睡眠有多种功能，包括记忆巩固。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Insomnia",
+        "breakdown": "In(无) + somnia(睡眠)",
+        "meaning_en": "persistent difficulty falling or staying asleep",
+        "meaning_zh": "失眠症：持续的入睡困难或维持睡眠困难。可能是原发性或由压力、焦虑、抑郁引起。CBT-I（失眠认知行为疗法）是首选治疗",
+        "derivation": "In(无) + somnia(睡眠) → 「无睡眠」→ 想睡却睡不着",
+        "mnemonic": "Insomnia ≈ In-somnolent(不-困倦) → 该困却不困",
+        "example": "Insomnia affects about 30% of adults at some point.",
+        "example_zh": "大约30%的成年人在某个时期经历失眠。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Narcolepsy",
+        "breakdown": "Narco(麻醉) + lepsy(发作)",
+        "meaning_en": "sudden uncontrollable sleep attacks, often into REM directly",
+        "meaning_zh": "发作性睡病：白天突然、不可控地陷入睡眠，甚至直接进入REM。常伴有猝倒（情绪激动时肌张力丧失）。由下丘脑的促醒物质缺乏引起",
+        "derivation": "Narco(麻醉) + lepsy(发作) → 「发作性麻醉」→ 突然被按下睡眠键",
+        "mnemonic": "上课大笑时突然瘫倒睡着 → 典型的发作性睡病",
+        "example": "Narcolepsy can cause sudden sleep attacks during the day.",
+        "example_zh": "发作性睡病可能导致白天突然睡眠发作。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "REM Sleep Behavior Disorder",
+        "breakdown": "REM + Behavior Disorder",
+        "meaning_en": "muscle paralysis fails during REM, causing dream enactment",
+        "meaning_zh": "REM睡眠行为障碍：REM期本应有的肌肉麻痹失效，导致患者「演出」梦境——喊叫、挥拳、从床上跳起。多见于老年人，有时是帕金森的前兆",
+        "derivation": "正常REM：身体麻痹防止演梦 → 障碍时：麻痹失效 → 梦里打架就真打",
+        "mnemonic": "睡着了却在挥拳 → REM行为障碍 → 把梦「演出来」",
+        "example": "REM sleep behavior disorder can sometimes precede Parkinson's disease.",
+        "example_zh": "REM睡眠行为障碍有时会先于帕金森病出现。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sleep Apnea",
+        "breakdown": "A(无) + pnea(呼吸)",
+        "meaning_en": "repeated breathing interruptions during sleep",
+        "meaning_zh": "睡眠呼吸暂停：睡眠中反复出现呼吸停止（每次至少10秒）。患者无意识中多次短暂觉醒，导致白天疲劳。常见于肥胖人群，用CPAP治疗",
+        "derivation": "A(无) + pnea(呼吸) → 「无呼吸」→ 睡眠中呼吸停止",
+        "mnemonic": "睡眠呼吸暂停 = 睡着了却「喘不过气」→ 白天嗜睡、打鼾严重",
+        "example": "Sleep apnea causes repeated breathing interruptions during sleep.",
+        "example_zh": "睡眠呼吸暂停导致睡眠中呼吸反复中断。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Somnambulism",
+        "breakdown": "Somn(睡眠) + ambul(行走) + ism",
+        "meaning_en": "sleepwalking; usually during deep NREM sleep",
+        "meaning_zh": "梦游症：在深度NREM睡眠中起床活动（行走、开门甚至吃东西），醒后完全不记得。多见于儿童，通常随年龄增长消失",
+        "derivation": "Somn(睡眠) + ambul(行走) → 「睡着走路」→ 身体活动了但意识没醒",
+        "mnemonic": "Somnambulism = Sleep(睡觉) + Ambulance(救护车) 的「走」→ 睡着走路",
+        "example": "Somnambulism typically occurs during deep NREM sleep.",
+        "example_zh": "梦游通常发生在深度NREM睡眠期间。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Sensation",
+    "type": "root",
+    "meaning_en": "how sensory receptors detect and transduce physical stimuli",
+    "meaning_zh": "感觉：感觉器官如何检测物理刺激并转化为神经信号。涵盖视觉、听觉、味觉、嗅觉、触觉、前庭觉和本体觉",
+    "origin": "Unit 1: 1.6 Sensation",
+    "related": [
+      "Perception",
+      "Nervous System",
+      "Brain Structure"
+    ],
+    "words": [
+      {
+        "word": "Sensation",
+        "breakdown": "Sensation(感觉)",
+        "meaning_en": "process by which sensory receptors detect stimulus energy",
+        "meaning_zh": "感觉：感觉受体检测刺激能量（光、声、压力等）并将其转化为神经信号的过程。是「自下而上」加工的起点",
+        "derivation": "刺激 → 感受器 → 换能 → 神经信号 → 大脑 → 知觉",
+        "mnemonic": "感觉 = 原始数据（像相机的传感器），知觉 = 处理后的图像",
+        "example": "Sensation begins when light strikes photoreceptors in the retina.",
+        "example_zh": "感觉始于光线击中视网膜上的感光细胞。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Absolute Threshold",
+        "breakdown": "Absolute(绝对的) + Threshold(阈限)",
+        "meaning_en": "minimum stimulation needed to detect a stimulus 50% of the time",
+        "meaning_zh": "绝对阈限：能被检测到50%次数的最小刺激量。如安静房间里能听到的最轻声音，或黑暗中能看到的最弱光线",
+        "derivation": "Absolute(绝对) + Threshold(门槛) → 感觉的「最低门槛」→ 低于这个值就感觉不到",
+        "mnemonic": "安静夜里能听到针落地的声音——接近听觉的绝对阈限",
+        "example": "The absolute threshold for vision is a candle flame 30 miles away on a dark night.",
+        "example_zh": "视觉的绝对阈限是漆黑夜晚能看到30英里外的烛光。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Transduction",
+        "breakdown": "Trans(跨越) + duction(引导)",
+        "meaning_en": "converting physical stimulus energy into neural signals",
+        "meaning_zh": "换能作用：把物理刺激（光、声、压力）转换成神经电信号的过程。没有换能，大脑就无法「听懂」外界",
+        "derivation": "Trans(跨越) + duction(引导) → 「跨界引导」→ 把物理能量翻译成神经语言",
+        "mnemonic": "换能 = 感官的「翻译」→ 把光翻译成神经信号",
+        "example": "In the eye, transduction happens when photoreceptors respond to light.",
+        "example_zh": "在眼睛里，当感光细胞对光做出反应时就发生了换能。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Just Noticeable Difference",
+        "breakdown": "Just(刚刚) + Noticeable(可察觉的) + Difference(差别)",
+        "meaning_en": "smallest detectable change in a stimulus (also called difference threshold)",
+        "meaning_zh": "最小可觉差（差别阈限）：能被察觉到的最小刺激变化。50%的情况下能察觉到差别的那个差异量",
+        "derivation": "Just(刚刚好) + Noticeable(能察觉) → 刚刚能察觉到的差 → 不是差多少，而是「差多少才能感觉到」",
+        "mnemonic": "两个几乎一样的东西放一起，恰好能感觉到不同——那就是JND",
+        "example": "The just noticeable difference explains why small price changes go unnoticed.",
+        "example_zh": "最小可觉差解释了为什么小幅价格变化不被察觉。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sensory Adaptation",
+        "breakdown": "Sensory(感觉的) + Adaptation(适应)",
+        "meaning_en": "diminished sensitivity to constant, unchanging stimulation",
+        "meaning_zh": "感觉适应：对持续不变的刺激，敏感度逐渐降低。进入有气味的房间几分钟后就闻不到了，戴上手表不久就感觉不到",
+        "derivation": "不变的刺激 → 感觉系统「习惯了」→ 把注意力留给变化的刺激",
+        "mnemonic": "戴手表：刚戴能感觉到，一会儿就忘了——感觉适应在工作",
+        "example": "Sensory adaptation explains why you stop noticing background noise.",
+        "example_zh": "感觉适应解释了为什么你不再注意到背景噪音。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Weber's Law",
+        "breakdown": "Weber(人名) + Law(定律)",
+        "meaning_en": "JND is a constant proportion of the original stimulus",
+        "meaning_zh": "韦伯定律：最小可觉差是原始刺激的一个恒定比例（而非恒定数值）。如重物增加10%才能感觉到变重——对于1kg需加0.1kg，对于10kg需加1kg",
+        "derivation": "差别感觉 = 差别绝对值 / 原始大小 → 比例恒定 → 刺激越大，差别阈限越大",
+        "mnemonic": "背着1斤书包加1两会感觉重，背着10斤书包加1两毫无感觉——差别是比例的",
+        "example": "Weber's law predicts that a 2% change is detectable regardless of the original weight.",
+        "example_zh": "韦伯定律预测无论原始重量多少，2%的变化都可以察觉。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sensory Interaction",
+        "breakdown": "Sensory(感觉的) + Interaction(相互作用)",
+        "meaning_en": "one sense influences another",
+        "meaning_zh": "感觉交互：一种感觉会影响另一种。例如气味影响味觉（感冒时食物没味道），视觉影响听觉（麦格克效应）",
+        "derivation": "不同感官并非独立 → 大脑整合所有感觉 → 一种感觉能改变另一种",
+        "mnemonic": "堵住鼻子吃苹果和土豆——分不清味道 → 因为嗅觉和味觉在交互",
+        "example": "Sensory interaction is why food tastes bland when you have a cold.",
+        "example_zh": "感觉交互解释了为什么感冒时食物尝起来没味道。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Synesthesia",
+        "breakdown": "Syn(一起) + esthesia(感觉)",
+        "meaning_en": "one sense automatically triggers another (e.g., seeing colors when hearing music)",
+        "meaning_zh": "联觉：一种感觉的刺激自动引发另一种感觉。例如听到音乐看到颜色，看到数字感到温度。约4%的人有联觉，被认为与神经连接异常丰富有关",
+        "derivation": "Syn(一起) + esthesia(感觉) → 「感觉合在一起」→ 多种感觉联动",
+        "mnemonic": "看到「5」就觉得是红色 → 那是联觉 → 感觉被「串线」了",
+        "example": "People with synesthesia may see numbers as having distinct colors.",
+        "example_zh": "有联觉的人可能把数字看成有不同颜色。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Vision",
+        "breakdown": "Vision(视觉)",
+        "meaning_en": "sense of sight; detects electromagnetic light waves",
+        "meaning_zh": "视觉：检测电磁波（可见光）的感觉。光线经过角膜、瞳孔、晶状体聚焦到视网膜，由视杆和视锥细胞换能，经视神经传向大脑枕叶",
+        "derivation": "光 → 角膜 → 瞳孔 → 晶状体 → 视网膜 → 视神经 → 枕叶",
+        "mnemonic": "视觉是「最霸道」的感觉——占用了大脑约30%的皮层",
+        "example": "Vision is the dominant sense in humans.",
+        "example_zh": "视觉是人类的主导感觉。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Retina",
+        "breakdown": "Retina(视网膜)",
+        "meaning_en": "light-sensitive inner surface of the eye containing rods and cones",
+        "meaning_zh": "视网膜：眼球内表面的感光层，含有视杆细胞和视锥细胞。图像在此形成并转化为神经信号。不同区域由不同神经节细胞向大脑传递",
+        "derivation": "像相机底片 → 接收聚焦后的光 → 转化为电信号",
+        "mnemonic": "视网膜 = 眼睛的「底片」→ 图像在这里被「拍」下来",
+        "example": "Images form on the retina upside down before the brain corrects them.",
+        "example_zh": "图像在视网膜上是上下颠倒的，然后由大脑校正。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Blind Spot",
+        "breakdown": "Blind(盲) + Spot(点)",
+        "meaning_en": "retinal area where the optic nerve exits, lacking receptors",
+        "meaning_zh": "盲点：视网膜上视神经离开眼球的地方，没有感光细胞，因此看不见。大脑会「填补」这个缺口，所以我们通常察觉不到",
+        "derivation": "视神经必须有出口 → 那块位置没受体 → 看不见 → 大脑自动补",
+        "mnemonic": "闭一只眼做实验：物体移动到某个位置会「消失」——那就是盲点",
+        "example": "Each eye has a blind spot, but we don't notice because the brain fills it in.",
+        "example_zh": "每只眼睛都有盲点，但我们不会察觉，因为大脑会填补。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Lens",
+        "breakdown": "Lens(晶状体)",
+        "meaning_en": "transparent structure behind the pupil that changes shape to focus light",
+        "meaning_zh": "晶状体：瞳孔后方的透明结构，通过改变形状（调节）把光线聚焦到视网膜上。看近的物体时变厚，看远的物体时变薄",
+        "derivation": "肌肉改变晶状体形状 → 改变屈光度 → 让图像聚焦在视网膜上",
+        "mnemonic": "晶状体 = 眼睛的「变焦镜头」→ 看远看近都能自动对焦",
+        "example": "The lens changes shape to focus light on the retina.",
+        "example_zh": "晶状体通过改变形状把光线聚焦到视网膜上。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Accommodation",
+        "breakdown": "Accommodate(适应) + ation",
+        "meaning_en": "the lens changes shape to focus on near or far objects",
+        "meaning_zh": "调节（眼睛）：晶状体通过改变形状使不同距离的物体在视网膜上清晰成像。注意：和皮亚杰理论中的「调节」是不同概念",
+        "derivation": "睫状肌收缩 → 晶状体变凸 → 看近；放松 → 晶状体变扁 → 看远",
+        "mnemonic": "眼睛的「对焦」→ 让远近物体都能看清",
+        "example": "Accommodation of the lens helps us focus on objects at different distances.",
+        "example_zh": "晶状体的调节帮助我们看清不同距离的物体。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Nearsightedness",
+        "breakdown": "Near(近) + sighted(视力) + ness",
+        "meaning_en": "myopia; can see near objects clearly but distant objects are blurry",
+        "meaning_zh": "近视：看近清楚，看远模糊。眼球太长或晶状体屈光力太强 → 远处的光聚焦在视网膜前方 → 看远模糊",
+        "derivation": "眼球长 → 像照相机镜头太靠前 → 远处物体成像在视网膜前",
+        "mnemonic": "近视 = 「近的看得清，远的看不清」→ 眼球太长",
+        "example": "Nearsightedness can be corrected with concave lenses.",
+        "example_zh": "近视可以用凹透镜矫正。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Farsightedness",
+        "breakdown": "Far(远) + sighted(视力) + ness",
+        "meaning_en": "hyperopia; can see distant objects clearly but near objects are blurry",
+        "meaning_zh": "远视：看远清楚，看近模糊。眼球太短或晶状体屈光力不够 → 近处的光聚焦在视网膜后方 → 看近模糊",
+        "derivation": "眼球短 → 像照相机镜头太靠后 → 近处物体成像在视网膜后",
+        "mnemonic": "远视 = 「远的看得清，近的看不清」→ 老花眼就是一种远视",
+        "example": "Farsightedness is corrected with convex lenses.",
+        "example_zh": "远视用凸透镜矫正。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Rods",
+        "breakdown": "Rods(视杆细胞)",
+        "meaning_en": "retinal receptors for dim light; black-and-white vision; peripheral vision",
+        "meaning_zh": "视杆细胞：视网膜中对弱光敏感的感光细胞，只能分辨亮暗（黑白），不能分辨颜色。数量多（约1.2亿），分布在视网膜外周",
+        "derivation": "形似小棒 → 「杆状」细胞 → 对光很敏感但无色觉",
+        "mnemonic": "视杆 = 「晚上的眼睛」→ 夜视靠它们，但只能看到黑白",
+        "example": "Rods allow us to see in dim light but cannot detect color.",
+        "example_zh": "视杆细胞让我们在暗光下看东西，但不能分辨颜色。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cones",
+        "breakdown": "Cones(视锥细胞)",
+        "meaning_en": "retinal receptors for color and detail; function best in bright light",
+        "meaning_zh": "视锥细胞：视网膜中对颜色和细节敏感的感光细胞。需要较强光线才工作。分为三种（红、绿、蓝），集中在中央凹",
+        "derivation": "形似小锥 → 「锥状」细胞 → 三种各自对应不同波长（红绿蓝）",
+        "mnemonic": "视锥 = 「白天的眼睛」→ 能看颜色和细节，但在暗处不工作",
+        "example": "Cones allow us to see colors in bright light.",
+        "example_zh": "视锥细胞让我们在亮光下看到颜色。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fovea",
+        "breakdown": "Fovea(中央凹)",
+        "meaning_en": "central retinal area with densest cones; sharpest vision",
+        "meaning_zh": "中央凹：视网膜中心的小区域，视锥细胞最密集。我们看东西的「聚焦中心」，视力最清晰的地方。没有视杆，所以暗处中央凹反而看不清",
+        "derivation": "Fovea(小凹) → 视网膜中心的一个小坑 → 视锥集中于此 → 最清晰",
+        "mnemonic": "看书要让字落在中央凹 → 那里视觉最锐利",
+        "example": "The fovea contains the densest concentration of cones.",
+        "example_zh": "中央凹拥有最密集的视锥细胞。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Light/Dark Adaptation",
+        "breakdown": "Light(明) + Dark(暗) + Adaptation",
+        "meaning_en": "adjusting sensitivity when moving between bright and dim environments",
+        "meaning_zh": "明暗适应：从亮处进入暗处（或反之）时眼睛逐渐调整敏感度。暗适应慢（20-30分钟），明适应快（几秒）。暗适应依赖视杆细胞",
+        "derivation": "光感受器中的视色素需要时间重建 → 所以暗适应比较慢",
+        "mnemonic": "刚进电影院看不清座位 → 过几分钟就能看清 → 暗适应在起作用",
+        "example": "Dark adaptation takes about 20 minutes as rods regenerate their pigment.",
+        "example_zh": "暗适应需要约20分钟，因为视杆细胞需要时间重建色素。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Trichromatic Color Theory",
+        "breakdown": "Tri(三) + Chromatic(色彩的)",
+        "meaning_en": "Young-Helmholtz: three types of cones (red, green, blue) combine to produce all colors",
+        "meaning_zh": "三色理论（Young-Helmholtz）：视网膜有三种视锥细胞，分别对红、绿、蓝敏感。所有颜色都是这三种细胞不同激活比例的组合。色盲通常是某种视锥缺失",
+        "derivation": "三种视锥 → 像显示屏的RGB → 混合出所有颜色",
+        "mnemonic": "手机屏幕的RGB原理 = 三色理论 → 三色混合出所有颜色",
+        "example": "Color blindness usually results from missing or defective cones.",
+        "example_zh": "色盲通常是由视锥缺失或有缺陷引起的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Opponent-Process Color Theory",
+        "breakdown": "Opponent(对立) + Process(过程)",
+        "meaning_en": "Hering: colors are processed in antagonistic pairs (red-green, blue-yellow, black-white)",
+        "meaning_zh": "对立过程理论（Hering）：颜色在神经层面以成对对立的方式加工——红-绿、蓝-黄、黑-白。解释了后像现象（看红色后移开视线会看到绿色）",
+        "derivation": "神经节细胞对「红兴奋-绿抑制」→ 持续看红色后，绿色神经元反弹 → 产生绿色后像",
+        "mnemonic": "盯着红色看久了闭眼会看到绿色 → 对立过程理论的证据",
+        "example": "Opponent-process theory explains why staring at red produces a green afterimage.",
+        "example_zh": "对立过程理论解释了为什么盯着红色后会看到绿色后像。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Afterimages",
+        "breakdown": "After(之后) + Image(图像)",
+        "meaning_en": "visual sensation persisting after the stimulus is removed",
+        "meaning_zh": "后像：刺激消失后仍持续的视觉感觉。盯着红色方块看久了，移开视线会看到绿色方块——这是对立过程理论的直接证据",
+        "derivation": "持续看一种颜色 → 该通道「疲劳」→ 对立颜色的通道反弹 → 产生后像",
+        "mnemonic": "盯灯泡看完闭眼——还能「看到」灯泡的影像 → 那是后像",
+        "example": "Staring at an American flag and looking away produces an afterimage in opponent colors.",
+        "example_zh": "盯着美国国旗看后再看别处，会产生对立色的后像。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Ganglion Cells",
+        "breakdown": "Ganglion(神经节) + Cells(细胞)",
+        "meaning_en": "retinal cells whose axons form the optic nerve",
+        "meaning_zh": "神经节细胞：视网膜的输出神经元。接收来自视杆和视锥细胞的信号，其轴突汇合成视神经送往大脑。是视觉信号进入中枢的「出发点」",
+        "derivation": "视杆/视锥 → 双极细胞 → 神经节细胞 → 视神经 → 大脑",
+        "mnemonic": "神经节细胞 = 视网膜的「邮递员」→ 把信号送出眼睛",
+        "example": "Ganglion cell axons bundle together to form the optic nerve.",
+        "example_zh": "神经节细胞的轴突汇集成视神经。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dichromatism",
+        "breakdown": "Di(二) + Chromatism(色觉)",
+        "meaning_en": "color blindness with only two functional cone types",
+        "meaning_zh": "二色视觉：只有两种功能性视锥细胞，是最常见的色盲类型。红绿色盲（无法区分红绿）就是二色视觉的一种",
+        "derivation": "Di(二) → 只有两种视锥 → 色彩世界不完整",
+        "mnemonic": "大多数「色盲」其实是二色视觉——缺一种视锥",
+        "example": "Red-green color blindness is the most common form of dichromatism.",
+        "example_zh": "红绿色盲是二色视觉最常见的类型。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Monochromatism",
+        "breakdown": "Mono(一) + Chromatism(色觉)",
+        "meaning_en": "complete color blindness; only rods or one cone type function",
+        "meaning_zh": "单色视觉：完全色盲，只有一种视锥或只有视杆。看到的世界只有黑白和灰度。非常罕见",
+        "derivation": "Mono(单) → 只看到单一「颜色」→ 其实是没有颜色",
+        "mnemonic": "单色视觉 = 世界是黑白电影 → 完全看不到颜色",
+        "example": "People with monochromatism see the world in shades of gray.",
+        "example_zh": "单色视觉者眼中的世界是灰色的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Prosopagnosia",
+        "breakdown": "Prosopo(脸) + agnosia(失认)",
+        "meaning_en": "face blindness; inability to recognize familiar faces",
+        "meaning_zh": "面孔失认症：无法识别熟悉的面孔，即使是家人和自己。通常由梭状回面孔区损伤引起。并不影响一般视力",
+        "derivation": "Prosopo(脸) + agnosia(不认识) → 「不认识脸」→ 大脑处理面孔的专门区域坏了",
+        "mnemonic": "认得人的声音和衣服，但认不出脸 → 面孔失认症",
+        "example": "Someone with prosopagnosia may not recognize their own family.",
+        "example_zh": "患有面孔失认症的人可能认不出自己的家人。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Blindsight",
+        "breakdown": "Blind(盲) + sight(视觉)",
+        "meaning_en": "ability to respond to visual stimuli without conscious awareness of seeing them",
+        "meaning_zh": "盲视：视觉皮层受损导致「主观失明」的患者，却能对物体位置做出正确反应（如避开障碍物）。说明视觉加工可以在意识之外进行",
+        "derivation": "视觉皮层（意识视觉）坏了 → 但其他视觉通路还在 → 不知道却能看 → 矛盾的现象",
+        "mnemonic": "盲视 = 「看见了却不知道自己看见了」→ 意识和视觉可以分离",
+        "example": "Patients with blindsight can avoid obstacles they claim not to see.",
+        "example_zh": "盲视患者能避开他们声称看不到的障碍物。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sound Waves",
+        "breakdown": "Sound(声音) + Waves(波)",
+        "meaning_en": "pressure waves in air that we perceive as sound",
+        "meaning_zh": "声波：空气中分子振动产生的压力波。频率（赫兹）决定音高，振幅决定响度。我们听到的所有声音都是声波被大脑解读的结果",
+        "derivation": "物体振动 → 推动空气分子 → 形成波 → 进入耳朵 → 振动耳膜",
+        "mnemonic": "声波像水面的波纹 → 频率高（密）= 高音，振幅大 = 响",
+        "example": "Sound waves travel faster through water than through air.",
+        "example_zh": "声波在水中比在空气中传播更快。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Wavelength",
+        "breakdown": "Wave(波) + length(长度)",
+        "meaning_en": "distance between wave peaks; determines pitch (sound) or hue (light)",
+        "meaning_zh": "波长：波峰之间的距离。对声波来说，波长决定音高（波长短=高音）；对光波来说，波长决定颜色（短波=紫/蓝，长波=红）",
+        "derivation": "波长短 → 频率高 → 高音/蓝光；波长长 → 频率低 → 低音/红光",
+        "mnemonic": "钢琴左边键（低音）波长长，右边键（高音）波长短",
+        "example": "Short wavelengths correspond to blue light; long wavelengths to red.",
+        "example_zh": "短波长对应蓝光，长波长对应红光。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Amplitude",
+        "breakdown": "Amplitude(振幅)",
+        "meaning_en": "wave height; determines loudness (sound) or brightness (light)",
+        "meaning_zh": "振幅：波的高度。声波振幅大 → 声音响；光波振幅大 → 亮度高。以分贝(dB)衡量声音响度",
+        "derivation": "振幅越大 → 波峰越高 → 能量越强 → 听/看得越清",
+        "mnemonic": "喊话声大 = 振幅大；悄悄话 = 振幅小",
+        "example": "Amplitude determines how loud a sound is perceived.",
+        "example_zh": "振幅决定声音的响度感知。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Place Theory",
+        "breakdown": "Place(位置) + Theory(理论)",
+        "meaning_en": "pitch is determined by which place on the cochlea's basilar membrane is activated",
+        "meaning_zh": "位置理论：音高由基底膜上被激活的位置决定。高频声音激活基底膜靠近卵圆窗的一端，低频激活远端。解释高频声音效果好",
+        "derivation": "基底膜不同位置对应不同频率 → 像钢琴键盘的对应关系 → 高音在一端，低音在另一端",
+        "mnemonic": "基底膜像钢琴 → 不同「键」对应不同音高 → 高音在一头，低音在另一头",
+        "example": "Place theory best explains how we perceive high-pitched sounds.",
+        "example_zh": "位置理论最好地解释了我们如何感知高音。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Frequency Theory",
+        "breakdown": "Frequency(频率) + Theory(理论)",
+        "meaning_en": "pitch is determined by the frequency of neural firing matching the sound wave",
+        "meaning_zh": "频率理论：音高由听神经放电频率决定——放电频率与声波频率同步。适合解释低频声音，但单个神经元最高只能跟上约1000Hz",
+        "derivation": "声波频率 → 神经元同频放电 → 大脑根据频率判断音高",
+        "mnemonic": "神经元「跟着声音节奏放电」→ 但跟不上太快的节奏（高频）",
+        "example": "Frequency theory best explains how we perceive low-pitched sounds.",
+        "example_zh": "频率理论最好地解释了我们如何感知低音。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Volley Theory",
+        "breakdown": "Volley(齐射) + Theory(理论)",
+        "meaning_en": "groups of neurons alternate firing to encode frequencies above single-neuron limits",
+        "meaning_zh": "齐射理论：神经元轮流放电（像士兵齐射），让群体放电频率高于单个神经元的极限（1000Hz以上）。补充了频率理论对中高频的解释",
+        "derivation": "单个神经元跟不上高频 → 多个神经元「轮流放枪」→ 总频率更高",
+        "mnemonic": "像士兵轮流开枪：单个人慢但群体可以持续高频",
+        "example": "Volley theory extends frequency theory to higher pitches.",
+        "example_zh": "齐射理论把频率理论扩展到更高的音高。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Conduction Deafness",
+        "breakdown": "Conduction(传导) + Deafness(失聪)",
+        "meaning_en": "hearing loss from damage to the outer or middle ear",
+        "meaning_zh": "传导性耳聋：声波无法有效从外耳/中耳传到内耳，常因耳膜穿孔或听小骨损伤。助听器和手术可以改善",
+        "derivation": "外耳/中耳（传导系统）出问题 → 声音传不进去 → 但内耳和听神经完好",
+        "mnemonic": "传导性 = 「路」坏了 → 修路（助听器/手术）就行",
+        "example": "Conduction deafness can often be treated with hearing aids.",
+        "example_zh": "传导性耳聋通常可以用助听器治疗。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sensorineural Deafness",
+        "breakdown": "Sensory(感觉的) + Neural(神经的) + Deafness",
+        "meaning_en": "hearing loss from damage to the cochlea's hair cells or auditory nerve",
+        "meaning_zh": "感音神经性耳聋：内耳毛细胞或听神经损伤导致的耳聋。常由噪音暴露、衰老、疾病引起。助听器效果有限，严重时需要人工耳蜗",
+        "derivation": "毛细胞一旦坏了不会再生 → 所以大声音乐会「吃掉」听力",
+        "mnemonic": "感音 = 「接收器」坏了 → 只能换「新接收器」（人工耳蜗）",
+        "example": "Prolonged loud music exposure can cause sensorineural deafness.",
+        "example_zh": "长期暴露在大声音乐下可能导致感音神经性耳聋。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Pheromones",
+        "breakdown": "Phero(传递) + mones(激素)",
+        "meaning_en": "chemical signals released into the environment affecting others of the same species",
+        "meaning_zh": "信息素：动物释放到环境中影响同种其他个体行为的化学信号。例如性信息素、警报信息素。人类信息素的存在和作用仍有争议",
+        "derivation": "Phero(携带) + hormone(激素) → 「被携带的激素」→ 在空气中传递的化学信号",
+        "mnemonic": "蚂蚁留下的气味路径 → 那就是信息素 → 同类能「闻懂」这个信号",
+        "example": "Many insects use pheromones to attract mates.",
+        "example_zh": "许多昆虫用信息素来吸引配偶。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Olfactory System",
+        "breakdown": "Olfactory(嗅的) + System(系统)",
+        "meaning_en": "sense of smell; molecules bind to receptors in the nose",
+        "meaning_zh": "嗅觉系统：检测空气中化学分子的感觉系统。分子 → 鼻腔顶部的嗅觉受体 → 嗅球 → 直接连接到边缘系统（情绪和记忆）",
+        "derivation": "嗅觉是唯一不经过丘脑的感觉 → 直接连到情绪/记忆中心 → 所以气味能强烈唤起记忆",
+        "mnemonic": "闻到某个气味突然想起童年 → 嗅觉直接连到记忆和情绪",
+        "example": "The olfactory system has a direct path to emotion and memory centers.",
+        "example_zh": "嗅觉系统有一条直通情绪和记忆中心的通路。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gustation",
+        "breakdown": "Gustation(味觉)",
+        "meaning_en": "sense of taste; five basic tastes",
+        "meaning_zh": "味觉：通过舌头上的味蕾检测食物化学成分的感觉。五种基本味觉：甜、酸、咸、苦、鲜(umami)。近年来还发现了第六种：脂肪味(oleogustus)",
+        "derivation": "食物分子 → 味蕾中的味觉细胞 → 神经信号 → 大脑岛叶",
+        "mnemonic": "五种基本味 = 甜酸咸苦鲜 → 其他复杂的「味道」都是味觉+嗅觉的组合",
+        "example": "Gustation detects five basic tastes: sweet, sour, salty, bitter, and umami.",
+        "example_zh": "味觉检测五种基本味道：甜、酸、咸、苦和鲜。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Umami",
+        "breakdown": "Umami(鲜味)",
+        "meaning_en": "the fifth basic taste; savory, associated with glutamate",
+        "meaning_zh": "鲜味：第五种基本味觉，由日本科学家池田菊苗命名。由谷氨酸（味精MSG）引起，酱油、奶酪、肉汤都富含鲜味",
+        "derivation": "umai(日语:美味) → 鲜味的日文 → 谷氨酸是主要触发物质",
+        "mnemonic": "鲜味 = 喝一口骨头汤的「鲜」→ 酱油、海带、番茄都有",
+        "example": "Umami is the savory taste of glutamate found in mushrooms and cheese.",
+        "example_zh": "鲜味是蘑菇和奶酪中谷氨酸的鲜美味道。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Supertasters",
+        "breakdown": "Super(超级) + Tasters(品尝者)",
+        "meaning_en": "people with unusually dense taste buds and heightened taste sensitivity",
+        "meaning_zh": "超级味觉者：味蕾密度异常高的人（约占25%），对苦味、辣味、甜味尤其敏感。常不喜欢苦味食物如西兰花、咖啡",
+        "derivation": "天生多几倍味蕾 → 味道信号更强 → 对苦味特别敏感",
+        "mnemonic": "超级味觉者可能觉得西兰花「苦得无法下咽」→ 不是挑食，是真的更敏感",
+        "example": "Supertasters often dislike bitter foods like grapefruit.",
+        "example_zh": "超级味觉者往往不喜欢葡萄柚等苦味食物。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gate Control Theory",
+        "breakdown": "Gate(门) + Control(控制) + Theory",
+        "meaning_en": "spinal cord has a \"gate\" that blocks or allows pain signals",
+        "meaning_zh": "闸门控制理论（Melzack & Wall）：脊髓中有一个神经「闸门」可以打开或关闭来调节疼痛信号。揉一下撞疼的地方会减轻疼痛——因为触觉信号「关闭」了疼痛闸门",
+        "derivation": "小的神经纤维传递疼痛 → 大的神经纤维传递触觉 → 大纤维激活时「关闭闸门」→ 疼痛减轻",
+        "mnemonic": "撞疼了揉一揉——触觉信号「关闭」疼痛闸门 → 没那么疼了",
+        "example": "Gate control theory explains why rubbing a sore spot reduces pain.",
+        "example_zh": "闸门控制理论解释了为什么揉一下疼的地方能减轻疼痛。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Phantom Limb Syndrome",
+        "breakdown": "Phantom(幻影) + Limb(肢) + Syndrome(综合征)",
+        "meaning_en": "experiencing sensation or pain in a limb that has been amputated",
+        "meaning_zh": "幻肢综合征：截肢者感觉缺失的肢体仍在，甚至感到疼痛。反映大脑对身体的「地图」不会因为肢体消失而立即更新。镜像疗法可以帮助缓解",
+        "derivation": "大脑感觉皮层仍保留截肢部位的「地图」 → 邻近区域的信号被误认为来自截肢 → 产生幻觉",
+        "mnemonic": "大脑认为手还在 → 所以「感觉」到已经没有的手在痛",
+        "example": "Amputees often experience phantom limb pain for years.",
+        "example_zh": "截肢者经常在多年内经历幻肢疼痛。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Vestibular Sense",
+        "breakdown": "Vestibular(前庭的) + Sense(感觉)",
+        "meaning_en": "sense of body movement and balance; located in the inner ear",
+        "meaning_zh": "前庭觉：感知头部位置和运动的平衡感觉。位于内耳的半规管和前庭器官。让你知道「上下左右」，晕车晕船就是前庭觉和视觉冲突导致",
+        "derivation": "内耳液体随头部移动 → 刺激毛细胞 → 大脑知道身体的朝向和加速度",
+        "mnemonic": "前庭觉 = 身体的「陀螺仪」→ 闭着眼睛也知道自己是站着还是倒立",
+        "example": "The vestibular sense helps you maintain balance.",
+        "example_zh": "前庭觉帮助你保持平衡。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Semicircular Canals",
+        "breakdown": "Semi(半) + circular(圆的) + Canals(管)",
+        "meaning_en": "three fluid-filled inner ear structures detecting head rotation",
+        "meaning_zh": "半规管：内耳中三个互相垂直的充液环管，检测头部旋转。旋转时液体晃动 → 刺激毛细胞 → 大脑感知旋转。转多了停下还会觉得在转",
+        "derivation": "三个管对应三个维度（水平、垂直、侧向）→ 所以能感知任何方向的旋转",
+        "mnemonic": "三个「水平仪」互相垂直 → 覆盖所有旋转方向",
+        "example": "The semicircular canals detect head rotation in three dimensions.",
+        "example_zh": "半规管在三个维度上检测头部旋转。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Kinesthesis",
+        "breakdown": "Kinesis(运动) + esthesis(感觉)",
+        "meaning_en": "sense of the position and movement of body parts",
+        "meaning_zh": "动觉（本体觉）：感知身体各部分位置和运动的感觉。来自肌肉、肌腱和关节中的感受器。闭眼也能知道手在哪，是所有协调动作的基础",
+        "derivation": "Kinesis(动) + esthesis(感觉) → 「运动的感觉」→ 身体的内部GPS",
+        "mnemonic": "闭眼摸自己的鼻子——动觉告诉你手和鼻子在哪",
+        "example": "Kinesthesis lets you touch your nose with your eyes closed.",
+        "example_zh": "动觉让你能闭着眼睛摸到自己的鼻子。",
         "toefl_frequency": "medium"
       }
     ]
@@ -198,7 +1702,11 @@
     "meaning_en": "how we encode, store, and retrieve information",
     "meaning_zh": "记忆系统：信息如何被编码、存储和提取。分为感觉记忆（极短）→短时记忆（7±2项）→长时记忆（无限）",
     "origin": "Unit 2: Cognition",
-    "related": ["Memory Processes", "Thinking", "Intelligence"],
+    "related": [
+      "Memory Processes",
+      "Thinking",
+      "Intelligence"
+    ],
     "words": [
       {
         "word": "Sensory Memory",
@@ -263,7 +1771,10 @@
     "meaning_en": "factors that enhance or distort memory",
     "meaning_zh": "记忆加工：影响记忆效果的各种因素——编码策略（组块、助记术）、遗忘原因（干扰、衰退）、记忆扭曲",
     "origin": "Unit 2: Cognition",
-    "related": ["Memory Systems", "Thinking"],
+    "related": [
+      "Memory Systems",
+      "Thinking"
+    ],
     "words": [
       {
         "word": "Chunking",
@@ -328,7 +1839,10 @@
     "meaning_en": "cognitive processes including problem-solving and decision-making",
     "meaning_zh": "思维：认知过程，包括概念形成、问题解决和决策判断。人类思维常走「捷径」（启发式），容易产生偏差",
     "origin": "Unit 2: Cognition",
-    "related": ["Memory Systems", "Intelligence"],
+    "related": [
+      "Memory Systems",
+      "Intelligence"
+    ],
     "words": [
       {
         "word": "Schemas",
@@ -393,7 +1907,11 @@
     "meaning_en": "how organisms learn through association and consequences",
     "meaning_zh": "学习与条件反射：有机体如何通过联想和后果来学习。经典条件反射（巴甫洛夫）和操作性条件反射（斯金纳）",
     "origin": "Unit 3: Development & Learning",
-    "related": ["Social Learning", "Cognitive Development", "Language Development"],
+    "related": [
+      "Social Learning",
+      "Cognitive Development",
+      "Language Development"
+    ],
     "words": [
       {
         "word": "Classical Conditioning",
@@ -458,7 +1976,12 @@
     "meaning_en": "how thinking and reasoning develop from infancy through adulthood",
     "meaning_zh": "认知发展：从婴儿到成人，思维和推理能力如何发展。皮亚杰的四阶段理论是核心考点",
     "origin": "Unit 3: Development & Learning",
-    "related": ["Social-Emotional Development", "Learning & Conditioning", "Physical Development", "Language Development"],
+    "related": [
+      "Social-Emotional Development",
+      "Learning & Conditioning",
+      "Physical Development",
+      "Language Development"
+    ],
     "words": [
       {
         "word": "Piaget's Stages",
@@ -523,7 +2046,12 @@
     "meaning_en": "how social bonds and emotional regulation develop across the lifespan",
     "meaning_zh": "社会情感发展：社会关系和情绪调节如何在一生中发展。关键理论：依恋理论（安斯沃斯）和心理社会发展理论（埃里克森）",
     "origin": "Unit 3: Development & Learning",
-    "related": ["Cognitive Development", "Personality Theories", "Physical Development", "Language Development"],
+    "related": [
+      "Cognitive Development",
+      "Personality Theories",
+      "Physical Development",
+      "Language Development"
+    ],
     "words": [
       {
         "word": "Attachment",
@@ -588,7 +2116,11 @@
     "meaning_en": "how we explain the causes of behavior",
     "meaning_zh": "归因理论：我们如何解释行为的原因。内部归因=性格导致；外部归因=环境导致。我们对自己和他人的归因方式不同",
     "origin": "Unit 4: Social Psychology",
-    "related": ["Social Influence", "Person Perception", "Cultural Influences"],
+    "related": [
+      "Social Influence",
+      "Person Perception",
+      "Cultural Influences"
+    ],
     "words": [
       {
         "word": "Fundamental Attribution Error",
@@ -653,7 +2185,10 @@
     "meaning_en": "how others affect our thoughts, feelings, and behaviors",
     "meaning_zh": "社会影响：他人如何影响我们的想法、感受和行为。包括从众、服从和群体效应",
     "origin": "Unit 4: Social Psychology",
-    "related": ["Attribution Theory", "Person Perception"],
+    "related": [
+      "Attribution Theory",
+      "Person Perception"
+    ],
     "words": [
       {
         "word": "Conformity",
@@ -718,7 +2253,11 @@
     "meaning_en": "major perspectives on what makes each person unique",
     "meaning_zh": "人格理论：解释每个人为什么不同的主要理论视角。包括精神分析、人本主义、社会认知和特质理论",
     "origin": "Unit 4: Social Psychology",
-    "related": ["Social-Emotional Development", "Psychological Disorders", "Cultural Influences"],
+    "related": [
+      "Social-Emotional Development",
+      "Psychological Disorders",
+      "Cultural Influences"
+    ],
     "words": [
       {
         "word": "Psychodynamic",
@@ -783,7 +2322,12 @@
     "meaning_en": "how stress affects health and how people cope",
     "meaning_zh": "压力与应对：压力如何影响身心健康，以及人们如何应对压力。应激反应、应对策略和心理韧性",
     "origin": "Unit 5: Mental & Physical Health",
-    "related": ["Psychological Disorders", "Treatment Approaches", "Health Psychology", "Positive Psychology"],
+    "related": [
+      "Psychological Disorders",
+      "Treatment Approaches",
+      "Health Psychology",
+      "Positive Psychology"
+    ],
     "words": [
       {
         "word": "General Adaptation Syndrome",
@@ -848,7 +2392,11 @@
     "meaning_en": "major categories of mental disorders and their symptoms",
     "meaning_zh": "心理障碍：主要的心理疾病类别及其症状。判断标准：偏离常态(deviance)、痛苦(distress)、功能障碍(dysfunction)",
     "origin": "Unit 5: Mental & Physical Health",
-    "related": ["Stress & Coping", "Treatment Approaches", "Personality Disorders"],
+    "related": [
+      "Stress & Coping",
+      "Treatment Approaches",
+      "Personality Disorders"
+    ],
     "words": [
       {
         "word": "Anxiety Disorders",
@@ -913,7 +2461,12 @@
     "meaning_en": "methods for treating psychological disorders",
     "meaning_zh": "治疗方法：治疗心理障碍的方法。包括心理治疗（谈话疗法）和生物医学治疗（药物、脑刺激）",
     "origin": "Unit 5: Mental & Physical Health",
-    "related": ["Psychological Disorders", "Stress & Coping", "Positive Psychology", "Personality Disorders"],
+    "related": [
+      "Psychological Disorders",
+      "Stress & Coping",
+      "Positive Psychology",
+      "Personality Disorders"
+    ],
     "words": [
       {
         "word": "CBT",
@@ -978,7 +2531,11 @@
     "meaning_en": "how we organize and interpret sensory information",
     "meaning_zh": "知觉：我们如何组织和解释感觉信息。感觉=接收原始数据；知觉=大脑赋予意义。自下而上 vs 自上而下加工",
     "origin": "Unit 2: Cognition",
-    "related": ["Sensation", "Thinking", "Intelligence"],
+    "related": [
+      "Sensation",
+      "Thinking",
+      "Intelligence"
+    ],
     "words": [
       {
         "word": "Bottom-up Processing",
@@ -1038,142 +2595,16 @@
     ]
   },
   {
-    "root": "Sleep & Consciousness",
-    "type": "root",
-    "meaning_en": "states of awareness, sleep stages, and their neural basis",
-    "meaning_zh": "睡眠与意识：意识的不同状态，包括清醒、睡眠各阶段（NREM/REM）、梦境，以及昼夜节律的调节",
-    "origin": "Unit 1: Biological Basis of Behavior",
-    "related": ["Nervous System", "Brain Structure", "Chemical Messengers"],
-    "words": [
-      {
-        "word": "NREM Sleep",
-        "breakdown": "Non-Rapid Eye Movement Sleep",
-        "meaning_en": "three stages of sleep with progressively deeper unconsciousness",
-        "meaning_zh": "非快速眼动睡眠：睡眠的三个阶段，意识逐渐加深。N1=浅睡（容易醒）；N2=睡眠纺锤波出现；N3=深度睡眠（身体修复、生长激素释放）",
-        "derivation": "Non(非) + Rapid(快速) + Eye Movement(眼动) → 眼球不快速运动的睡眠阶段",
-        "mnemonic": "N1像上课打盹（一叫就醒）；N2像在家午睡（需要摇醒）；N3像考完试大睡（雷打不动）",
-        "example": "Growth hormone is primarily released during NREM stage 3.",
-        "example_zh": "生长激素主要在NREM第三阶段释放。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "REM Sleep",
-        "breakdown": "Rapid Eye Movement Sleep",
-        "meaning_en": "sleep stage with vivid dreaming, rapid eye movements, and muscle paralysis",
-        "meaning_zh": "快速眼动睡眠：眼球快速运动、出现生动梦境、全身肌肉暂时麻痹。对记忆巩固和情绪调节至关重要",
-        "derivation": "Rapid(快速) + Eye Movement(眼动) → 眼球在眼皮下快速转动 → 大脑非常活跃（像清醒一样）",
-        "mnemonic": "REM = 大脑在「加班」：身体睡了，大脑却像白天一样忙着整理记忆和做梦",
-        "example": "Most vivid dreams occur during REM sleep.",
-        "example_zh": "最生动的梦发生在快速眼动睡眠阶段。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Circadian Rhythm",
-        "breakdown": "Circa(大约) + Dian(一天)",
-        "meaning_en": "biological clock cycling roughly every 24 hours; regulates sleep-wake cycle",
-        "meaning_zh": "昼夜节律：大约24小时为周期的生物钟，调节睡眠-觉醒周期。由下丘脑的视交叉上核(SCN)控制，受光线影响",
-        "derivation": "Circa(大约) + Dies(天) → 大约一天的周期 → 身体内置的24小时时钟",
-        "mnemonic": "时差反应(jet lag)就是昼夜节律被打乱——你的生物钟还在原来的时区",
-        "example": "Circadian rhythms are disrupted by jet lag and shift work.",
-        "example_zh": "昼夜节律会被时差和轮班工作打乱。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Sleep Disorders",
-        "breakdown": "Sleep(睡眠) + Disorders(障碍)",
-        "meaning_en": "conditions disrupting normal sleep: insomnia, narcolepsy, sleep apnea",
-        "meaning_zh": "睡眠障碍：失眠症=难以入睡或维持睡眠；发作性睡病=突然不可控地入睡；睡眠呼吸暂停=睡眠中呼吸反复停止",
-        "derivation": "Insomnia(失眠)：in(不)+somnia(睡眠)；Narcolepsy(发作性睡病)：narco(麻醉)+lepsy(发作)",
-        "mnemonic": "失眠=躺在床上数羊到天亮；发作性睡病=上课突然睡着（不是因为无聊）",
-        "example": "Sleep apnea causes repeated breathing interruptions during sleep.",
-        "example_zh": "睡眠呼吸暂停导致睡眠中呼吸反复中断。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Consciousness States",
-        "breakdown": "Consciousness(意识) + States(状态)",
-        "meaning_en": "levels of awareness from full alertness to deep sleep, including altered states",
-        "meaning_zh": "意识状态：从完全清醒到深度睡眠的不同意识水平。包括催眠（高度暗示性）、冥想（集中注意力）和药物引起的意识改变",
-        "derivation": "Conscious(有意识的) → 意识不是全有或全无，而是一个连续体：清醒→放松→浅睡→深睡",
-        "mnemonic": "白日梦=意识在「漫游」；催眠=意识被「聚焦」；深睡=意识在「休息」",
-        "example": "Meditation produces a measurably altered state of consciousness.",
-        "example_zh": "冥想能产生可测量的意识改变状态。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Sensation",
-    "type": "root",
-    "meaning_en": "how sensory receptors detect and transduce physical stimuli",
-    "meaning_zh": "感觉：感觉受体如何检测和转换物理刺激。包括视觉、听觉等感觉通道的工作原理，以及感觉阈限和适应",
-    "origin": "Unit 1: Biological Basis of Behavior",
-    "related": ["Perception", "Nervous System"],
-    "words": [
-      {
-        "word": "Absolute Threshold",
-        "breakdown": "Absolute(绝对的) + Threshold(阈限)",
-        "meaning_en": "minimum stimulation needed to detect a stimulus 50% of the time",
-        "meaning_zh": "绝对阈限：能被检测到50%次数的最小刺激量。如在安静房间里能听到的最轻声音，或在黑暗中能看到的最弱光线",
-        "derivation": "Absolute(绝对的) + Threshold(门槛) → 感觉的「最低门槛」→ 低于这个值就感觉不到",
-        "mnemonic": "你在安静的夜里能听到针掉地上的声音——那就接近听觉的绝对阈限",
-        "example": "The absolute threshold for vision is a candle flame 30 miles away on a dark night.",
-        "example_zh": "视觉的绝对阈限是在漆黑的夜晚看到30英里外的烛光。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Signal Detection Theory",
-        "breakdown": "Signal(信号) + Detection(检测) + Theory(理论)",
-        "meaning_en": "detection depends on signal strength, background noise, and observer's criteria",
-        "meaning_zh": "信号检测理论：能否检测到信号不仅取决于信号强度，还取决于背景噪音和个人判断标准。四种结果：命中、虚报、漏报、正确拒绝",
-        "derivation": "不只是「听到没听到」→ 还受动机和期望影响 → 医生看X光片更倾向于「宁可误判也不漏诊」",
-        "mnemonic": "深夜听到声音：你觉得是小偷（虚报）还是风声（正确拒绝）？你的警惕程度影响判断",
-        "example": "Signal detection theory explains why radiologists may differ in reading X-rays.",
-        "example_zh": "信号检测理论解释了为什么放射科医生在读X光片时可能有不同判断。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Sensory Adaptation",
-        "breakdown": "Sensory(感觉的) + Adaptation(适应)",
-        "meaning_en": "diminished sensitivity to constant, unchanging stimulation",
-        "meaning_zh": "感觉适应：对持续不变的刺激，敏感度逐渐降低。如进入有气味的房间，几分钟后就闻不到了",
-        "derivation": "Adapt(适应) → 感觉系统对不变的刺激「习惯了」→ 不再注意 → 把注意力留给变化的刺激",
-        "mnemonic": "戴手表：刚戴上能感觉到，过一会儿就忘了——感觉适应让你忽略不变的刺激",
-        "example": "Sensory adaptation explains why you stop noticing background noise.",
-        "example_zh": "感觉适应解释了为什么你不再注意到背景噪音。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Vision",
-        "breakdown": "Vision(视觉)",
-        "meaning_en": "rods for dim light, cones for color and detail; trichromatic and opponent-process theories",
-        "meaning_zh": "视觉：视杆细胞=暗光下工作（黑白视觉）；视锥细胞=明亮环境（彩色视觉）。三色理论=三种视锥检测红绿蓝；对立过程理论=红-绿、蓝-黄、黑-白成对加工",
-        "derivation": "Rods(视杆)=暗处用，灵敏但无色彩；Cones(视锥)=亮处用，能分辨颜色和细节",
-        "mnemonic": "夜晚看东西模糊无色（视杆工作）；白天色彩鲜艳（视锥工作）——两种细胞分工合作",
-        "example": "Color blindness results from deficiencies in cone receptors.",
-        "example_zh": "色盲是由视锥细胞受体缺陷导致的。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Hearing",
-        "breakdown": "Hearing(听觉)",
-        "meaning_en": "place theory for high-pitched sounds, frequency theory for low-pitched sounds",
-        "meaning_zh": "听觉：位置理论=不同频率的声音激活基底膜不同位置（高频）；频率理论=神经放电频率匹配声波频率（低频）。两者互补",
-        "derivation": "Sound wave(声波)→耳膜→听小骨→耳蜗→基底膜振动→毛细胞→神经信号",
-        "mnemonic": "基底膜像钢琴键盘：高音在一端，低音在另一端——不同位置对应不同频率",
-        "example": "Prolonged exposure to loud noise can cause permanent hearing loss.",
-        "example_zh": "长期暴露在噪音中可能导致永久性听力损失。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
     "root": "Intelligence",
     "type": "root",
     "meaning_en": "theories and measurement of cognitive ability",
     "meaning_zh": "智力：认知能力的理论和测量。争论焦点：智力是单一能力(g因素)还是多元能力？先天还是后天？如何公平测量？",
     "origin": "Unit 2: Cognition",
-    "related": ["Thinking", "Memory Systems", "Perception"],
+    "related": [
+      "Thinking",
+      "Memory Systems",
+      "Perception"
+    ],
     "words": [
       {
         "word": "g-factor",
@@ -1238,7 +2669,10 @@
     "meaning_en": "bodily growth and change across the lifespan",
     "meaning_zh": "生理发展：从受孕到老年的身体变化。包括产前发展、运动技能、青春期和衰老过程",
     "origin": "Unit 3: Development & Learning",
-    "related": ["Cognitive Development", "Social-Emotional Development"],
+    "related": [
+      "Cognitive Development",
+      "Social-Emotional Development"
+    ],
     "words": [
       {
         "word": "Prenatal Development",
@@ -1303,7 +2737,11 @@
     "meaning_en": "how children acquire and develop language abilities",
     "meaning_zh": "语言发展：儿童如何获得和发展语言能力。从咿呀学语到完整句子的发展过程，以及先天语言能力的争论",
     "origin": "Unit 3: Development & Learning",
-    "related": ["Cognitive Development", "Social-Emotional Development", "Learning & Conditioning"],
+    "related": [
+      "Cognitive Development",
+      "Social-Emotional Development",
+      "Learning & Conditioning"
+    ],
     "words": [
       {
         "word": "Babbling",
@@ -1368,7 +2806,11 @@
     "meaning_en": "how we form impressions of and make judgments about others",
     "meaning_zh": "人际知觉：我们如何形成对他人的印象和判断。包括第一印象、偏见、自证预言等影响我们看待他人的因素",
     "origin": "Unit 4: Social Psychology",
-    "related": ["Attribution Theory", "Social Influence", "Cultural Influences"],
+    "related": [
+      "Attribution Theory",
+      "Social Influence",
+      "Cultural Influences"
+    ],
     "words": [
       {
         "word": "Mere Exposure Effect",
@@ -1433,7 +2875,12 @@
     "meaning_en": "how culture shapes behavior, perception, and social norms",
     "meaning_zh": "文化影响：文化如何塑造行为、认知和社会规范。个体主义vs集体主义文化在自我概念、情绪表达、服从行为上都有显著差异",
     "origin": "Unit 4: Social Psychology",
-    "related": ["Social Influence", "Attribution Theory", "Person Perception", "Personality Theories"],
+    "related": [
+      "Social Influence",
+      "Attribution Theory",
+      "Person Perception",
+      "Personality Theories"
+    ],
     "words": [
       {
         "word": "Individualism vs Collectivism",
@@ -1498,7 +2945,10 @@
     "meaning_en": "how psychological and behavioral factors affect health and illness",
     "meaning_zh": "健康心理学：心理和行为因素如何影响健康与疾病。运用生物心理社会模型来理解健康行为、医患关系和疾病预防",
     "origin": "Unit 5: Mental & Physical Health",
-    "related": ["Stress & Coping", "Positive Psychology"],
+    "related": [
+      "Stress & Coping",
+      "Positive Psychology"
+    ],
     "words": [
       {
         "word": "Health Behaviors",
@@ -1563,7 +3013,11 @@
     "meaning_en": "scientific study of well-being, strengths, and optimal functioning",
     "meaning_zh": "积极心理学：对幸福感、优势和最佳功能状态的科学研究。不仅关注治疗心理疾病，更关注如何让正常人活得更好",
     "origin": "Unit 5: Mental & Physical Health",
-    "related": ["Stress & Coping", "Health Psychology", "Treatment Approaches"],
+    "related": [
+      "Stress & Coping",
+      "Health Psychology",
+      "Treatment Approaches"
+    ],
     "words": [
       {
         "word": "Gratitude Practice",
@@ -1628,7 +3082,11 @@
     "meaning_en": "enduring patterns of inner experience and behavior that deviate from cultural expectations",
     "meaning_zh": "人格障碍：持久的内在体验和行为模式，显著偏离文化期望。通常在青春期或成年早期开始，导致痛苦或功能受损",
     "origin": "Unit 5: Mental & Physical Health",
-    "related": ["Psychological Disorders", "Treatment Approaches", "Personality Theories"],
+    "related": [
+      "Psychological Disorders",
+      "Treatment Approaches",
+      "Personality Theories"
+    ],
     "words": [
       {
         "word": "Antisocial PD",

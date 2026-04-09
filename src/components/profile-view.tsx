@@ -23,19 +23,18 @@ export default function ProfileView() {
     <Box flexDirection="column" paddingLeft={2} paddingY={1}>
       <Box
         flexDirection="column"
+        alignItems="center"
         borderStyle="round"
         borderColor="#4E4E4E"
         paddingX={2}
         paddingY={1}
       >
-        <Box flexDirection="column" alignItems="center">
-          {avatar.art.map((line, i) => (
-            <Text key={i} color="#AF5FFF">{line}</Text>
-          ))}
-          <Text color="#AF5FFF">{displayName}</Text>
-        </Box>
+        {avatar.art.map((line, i) => (
+          <Text key={i} color="#AF5FFF">{line}</Text>
+        ))}
+        <Text color="#AF5FFF">{displayName}</Text>
 
-        <Box marginTop={1} flexDirection="column">
+        <Box marginTop={1} flexDirection="column" alignItems="center">
           <Text>
             Lv.<Text bold color="#FFAF00">{lp.level}</Text>
           </Text>
@@ -45,7 +44,7 @@ export default function ProfileView() {
           </Box>
         </Box>
 
-        <Box marginTop={1} flexDirection="column">
+        <Box marginTop={1} flexDirection="column" alignItems="center">
           <Text>
             综合得分: <Text bold color="#FFAF00">{lp.compositeScore}</Text>/100
           </Text>

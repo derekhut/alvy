@@ -13,7 +13,7 @@ interface ProfileSetupProps {
 
 export default function ProfileSetup({ onComplete, initialName, initialAvatar }: ProfileSetupProps) {
   const [step, setStep] = useState<Step>("name");
-  const [name, setName] = useState(initialName ?? "");
+  const [name, setName] = useState("");
 
   const handleEscDefault = () => {
     onComplete({
@@ -28,8 +28,9 @@ export default function ProfileSetup({ onComplete, initialName, initialAvatar }:
       <NameInput
         value={name}
         onChange={setName}
+        placeholder={initialName}
         onSubmit={(n) => {
-          setName(n || "学生");
+          setName(n || initialName || "学生");
           setStep("avatar");
         }}
         onEsc={handleEscDefault}
@@ -59,9 +60,10 @@ interface NameInputProps {
   onSubmit: (v: string) => void;
   onEsc: () => void;
   isEditing?: boolean;
+  placeholder?: string;
 }
 
-function NameInput({ value, onChange, onSubmit, onEsc, isEditing }: NameInputProps) {
+function NameInput({ value, onChange, onSubmit, onEsc, isEditing, placeholder }: NameInputProps) {
   useInput((input, key) => {
     if (key.escape) {
       onEsc();
@@ -96,10 +98,14 @@ function NameInput({ value, onChange, onSubmit, onEsc, isEditing }: NameInputPro
         <Text>{isEditing ? "修改昵称" : "欢迎! 先来设置你的个人资料"}</Text>
 
         <Box marginTop={1} flexDirection="column">
-          <Text>输入你的昵称 (最多 8 个字符):</Text>
+          <Text>{isEditing ? "输入新昵称 (回车保留当前):" : "输入你的昵称 (最多 8 个字符):"}</Text>
           <Box marginTop={1}>
             <Text color="#AF5FFF">{"> "}</Text>
-            <Text>{value}</Text>
+            {value ? (
+              <Text>{value}</Text>
+            ) : placeholder ? (
+              <Text dimColor>{placeholder}</Text>
+            ) : null}
             <Text color="#AF5FFF">_</Text>
           </Box>
         </Box>

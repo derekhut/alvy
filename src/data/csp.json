@@ -2433,5 +2433,452 @@
         "toefl_frequency": "high"
       }
     ]
+  },
+  {
+    "root": "Lists",
+    "type": "root",
+    "meaning_en": "ordered collections of elements with built-in procedures for traversal and modification",
+    "meaning_zh": "列表：一种有序的元素集合，配有遍历、增删等内置操作。是 CSP 中处理多个相关数据的核心结构，例如存储一个班所有学生的分数",
+    "origin": "Unit 3: 3.10 Lists",
+    "related": ["Data Abstraction", "Iteration", "Binary Search", "Calling Procedures"],
+    "words": [
+      {
+        "word": "APPEND",
+        "breakdown": "Ap(向) + Pend(挂) → 挂在末尾",
+        "meaning_en": "a list procedure that adds a value to the end of a list, increasing its length by 1",
+        "meaning_zh": "APPEND：把一个值加到列表末尾的内置过程。例如对 `[1, 2, 3]` 调用 `APPEND(list, 4)` 会得到 `[1, 2, 3, 4]`",
+        "derivation": "Ap(朝向) + Pend(悬挂) → 「挂」到列表后面",
+        "mnemonic": "APPEND 像在队伍最后面加人——前面的人都不动",
+        "example": "APPEND adds the new score to the end of the grades list.",
+        "example_zh": "APPEND 把新分数加到 grades 列表的末尾。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "average",
+        "breakdown": "Average(平均)",
+        "meaning_en": "the mean value of a list of numbers, calculated by dividing the sum of all elements by the number of elements",
+        "meaning_zh": "平均值：列表数字的算术平均。计算时常用「遍历列表求和 → 除以列表长度」的算法",
+        "derivation": "Average(平均) → 一组数的「中间水平」",
+        "mnemonic": "平均值 = 总分 ÷ 人数：考试出成绩时全班最关心的数字",
+        "example": "The average of the list scores was 85.",
+        "example_zh": "列表 scores 的平均值是 85。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "complete traversal",
+        "breakdown": "Complete(完整的) + Traversal(遍历)",
+        "meaning_en": "a list traversal where all elements in the list are accessed",
+        "meaning_zh": "完整遍历：访问列表中每一个元素的遍历方式。例如用 FOR EACH 循环把列表里所有元素都打印一遍",
+        "derivation": "Complete(完整的) + Traversal(穿越) → 「全程」走过一遍",
+        "mnemonic": "完整遍历像签到点名——一个都不能漏",
+        "example": "The complete traversal of the list visited every element exactly once.",
+        "example_zh": "对列表的完整遍历恰好访问每个元素一次。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "FOR EACH loop",
+        "breakdown": "For Each(对每一个) + Loop(循环)",
+        "meaning_en": "an iteration statement that assigns each element of a list to a variable sequentially and executes a block of statements for each element",
+        "meaning_zh": "FOR EACH 循环：依次把列表每个元素赋给一个变量，并对每个元素执行代码块的循环。是遍历列表的最自然方式，不需要管索引",
+        "derivation": "For Each(对每一个) + Loop(循环) → 「对每一个元素，做...」",
+        "mnemonic": "FOR EACH 像值日表：今天小明，明天小红，后天小李——一个个轮过去",
+        "example": "FOR EACH name IN list { DISPLAY(name) } prints every name in the list.",
+        "example_zh": "FOR EACH name IN list { DISPLAY(name) } 打印列表中的每个名字。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "index",
+        "breakdown": "Index(索引)",
+        "meaning_en": "the position of an element within a list, numbered starting from 1 through the length of the list",
+        "meaning_zh": "索引：元素在列表中的位置编号。AP CSP 伪代码从 1 开始计数（不像 Python 从 0），例如 `list[1]` 是第一个元素",
+        "derivation": "Index(目录) → 元素的「门牌号」",
+        "mnemonic": "CSP 索引从1开始——不像 Python/Java 从0，考试时千万别搞混",
+        "example": "The index 1 refers to the first element of the list in CSP pseudocode.",
+        "example_zh": "在 CSP 伪代码中，索引 1 表示列表的第一个元素。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "INSERT",
+        "breakdown": "In(进) + Sert(放) → 放进去",
+        "meaning_en": "a list procedure that adds a value at a specified index, shifting existing elements to the right",
+        "meaning_zh": "INSERT：在指定索引处插入一个值的过程，原有元素向右移动。例如对 `[A, B, C]` 调用 `INSERT(list, 2, X)` 得到 `[A, X, B, C]`",
+        "derivation": "In(进入) + Sert(放置) → 「插」进列表中间",
+        "mnemonic": "INSERT 像插队——后面的人都被挤往后退一位",
+        "example": "INSERT places the new student at index 3 of the seating list.",
+        "example_zh": "INSERT 把新学生放在座位列表的第 3 位。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "iteration statement",
+        "breakdown": "Iteration(迭代) + Statement(语句)",
+        "meaning_en": "a control structure used to repeat a block of code, such as a FOR EACH loop, to traverse through elements of a list",
+        "meaning_zh": "迭代语句：用来重复执行代码块的控制结构。在处理列表时，常用 FOR EACH 或 REPEAT 来遍历每个元素",
+        "derivation": "Iteration(迭代) + Statement(语句) → 「重复执行」的指令",
+        "mnemonic": "迭代语句是列表的「自动化工具」——一行代码处理100个元素",
+        "example": "An iteration statement like FOR EACH visits every element in the list.",
+        "example_zh": "像 FOR EACH 这样的迭代语句访问列表中的每个元素。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "LENGTH",
+        "breakdown": "Length(长度)",
+        "meaning_en": "a list procedure that returns the number of elements currently in a list",
+        "meaning_zh": "LENGTH：返回列表当前元素个数的过程。例如 `LENGTH([A, B, C])` 返回 3。常用于循环边界",
+        "derivation": "Length(长度) → 列表的「身高」",
+        "mnemonic": "想知道列表有多少元素？问它的 LENGTH——就像问「这队伍有几个人」",
+        "example": "LENGTH(scores) returns the total number of students.",
+        "example_zh": "LENGTH(scores) 返回学生总数。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "list indexing",
+        "breakdown": "List(列表) + Indexing(索引)",
+        "meaning_en": "the process of accessing elements in a list by their position, where the first element is at index 1",
+        "meaning_zh": "列表索引：通过位置访问列表元素的过程。在 CSP 伪代码中，第一个元素的索引是 1，最后一个是 LENGTH(list)",
+        "derivation": "List(列表) + Indexing(编索引) → 「按号取物」",
+        "mnemonic": "list indexing = 储物柜：知道柜号才能取走里面的东西",
+        "example": "List indexing lets us access scores[3] to get the third grade.",
+        "example_zh": "列表索引让我们用 scores[3] 获取第三个分数。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "list procedures",
+        "breakdown": "List(列表) + Procedures(过程)",
+        "meaning_en": "built-in operations that manipulate lists, such as INSERT, APPEND, REMOVE, and LENGTH",
+        "meaning_zh": "列表过程：操作列表的内置过程，包括 INSERT、APPEND、REMOVE、LENGTH 等。CSP 提供这些标准操作来管理列表",
+        "derivation": "List(列表) + Procedures(过程) → 「列表的工具箱」",
+        "mnemonic": "列表过程像瑞士军刀的不同工具：APPEND 加、REMOVE 删、LENGTH 量",
+        "example": "List procedures like APPEND and REMOVE manage the contents of the list.",
+        "example_zh": "像 APPEND 和 REMOVE 这样的列表过程管理列表内容。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "list traversal",
+        "breakdown": "List(列表) + Traversal(遍历)",
+        "meaning_en": "the process of accessing elements in a list, either completely (visiting all elements) or partially (visiting only some elements)",
+        "meaning_zh": "列表遍历：访问列表元素的过程，可以是完整遍历（访问所有）或部分遍历（只访问一部分）。是处理列表的核心操作",
+        "derivation": "List(列表) + Traverse(穿越) → 「走过」列表的每个位置",
+        "mnemonic": "列表遍历像逛超市——可以每条货架都看一遍（complete），也可以只看零食区（partial）",
+        "example": "List traversal is used to compute the sum of all elements.",
+        "example_zh": "列表遍历用于计算所有元素的总和。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "maximum value",
+        "breakdown": "Maximum(最大) + Value(值)",
+        "meaning_en": "the largest element in a list, which can be determined using an iteration algorithm",
+        "meaning_zh": "最大值：列表中最大的元素。在列表的语境下，用迭代算法找最大值是经典例题——遍历每个元素并和当前最大值比较",
+        "derivation": "Maximum(最大) + Value(值) → 「列表里的冠军」",
+        "mnemonic": "找最大值像选拔比赛：每来一个新选手就和当前冠军比一下",
+        "example": "The algorithm scans the list to find the maximum value.",
+        "example_zh": "算法扫描列表以找出最大值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "minimum value",
+        "breakdown": "Minimum(最小) + Value(值)",
+        "meaning_en": "the smallest element in a list, which can be determined using an iteration algorithm",
+        "meaning_zh": "最小值：列表中最小的元素。和最大值算法对称——只是把比较运算符反过来",
+        "derivation": "Minimum(最小) + Value(值) → 「列表里的最矮」",
+        "mnemonic": "找最小值是找最大值的镜像——把 `>` 换成 `<` 就行",
+        "example": "The algorithm finds the minimum value by tracking the smallest element seen so far.",
+        "example_zh": "算法通过跟踪迄今为止看到的最小元素来找出最小值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "partial traversal",
+        "breakdown": "Partial(部分的) + Traversal(遍历)",
+        "meaning_en": "a list traversal where only a portion of the elements in the list are accessed",
+        "meaning_zh": "部分遍历：只访问列表中一部分元素的遍历方式。例如线性查找找到目标后立即停止——不需要继续看后面的元素",
+        "derivation": "Partial(部分的) + Traversal(遍历) → 「半途而止的访问」",
+        "mnemonic": "部分遍历像找钥匙——找到了就停，不会继续翻完整个抽屉",
+        "example": "A sequential search uses partial traversal because it stops when the value is found.",
+        "example_zh": "线性搜索使用部分遍历，因为它在找到值时就停止。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "REMOVE",
+        "breakdown": "Re(去除) + Move(移动)",
+        "meaning_en": "a list procedure that deletes an element at a specified index and shifts remaining elements to the left",
+        "meaning_zh": "REMOVE：删除指定索引处元素的过程，后续元素向左移动。例如对 `[A, B, C, D]` 调用 `REMOVE(list, 2)` 得到 `[A, C, D]`",
+        "derivation": "Re(去除) + Move(移动) → 「移走」一个元素",
+        "mnemonic": "REMOVE 像同学转学——后面的同学都往前补一位",
+        "example": "REMOVE deletes the canceled order from the queue list.",
+        "example_zh": "REMOVE 从队列列表中删除已取消的订单。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "sequential search",
+        "breakdown": "Sequential(顺序的) + Search(搜索)",
+        "meaning_en": "a search algorithm that examines each element in a data set one by one in order until the desired value is found",
+        "meaning_zh": "线性搜索：从头到尾依次检查每个元素，直到找到目标值的搜索算法。最简单的搜索方式，但效率不高——平均要看一半的元素",
+        "derivation": "Sequential(顺序的) + Search(搜索) → 「按顺序一个个找」",
+        "mnemonic": "线性搜索像翻字典——但从第一页一页一页翻到最后",
+        "example": "A sequential search checks each name in the list until it finds Derek.",
+        "example_zh": "线性搜索逐个检查列表中的每个名字直到找到 Derek。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "sum",
+        "breakdown": "Sum(总和)",
+        "meaning_en": "the total obtained by adding all elements in a list of numbers, which can be computed using iteration",
+        "meaning_zh": "总和：列表所有数字相加的结果。用迭代遍历列表，把每个元素累加到 sum 变量上——这是 CSP 学生最先掌握的列表算法",
+        "derivation": "Sum(总和) → 一堆数字的「合计」",
+        "mnemonic": "求和的咒语：`sum ← sum + item`——这一行是 CSP 列表算法的入门符咒",
+        "example": "The algorithm computes the sum of all values in the list.",
+        "example_zh": "算法计算列表中所有值的总和。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Binary Search",
+    "type": "root",
+    "meaning_en": "an efficient search algorithm that repeatedly halves a sorted data set to find a target",
+    "meaning_zh": "二分查找：在有序数据集上反复折半的高效搜索算法。每次排除一半数据，从100万元素中找一个只需约20次比较——比线性搜索快几个数量级",
+    "origin": "Unit 3: 3.11 Binary Search",
+    "related": ["Lists", "Iteration", "Calling Procedures"],
+    "words": [
+      {
+        "word": "binary search algorithm",
+        "breakdown": "Binary(二分的) + Search(搜索) + Algorithm(算法)",
+        "meaning_en": "a search algorithm that starts at the middle of a sorted data set and eliminates half of the remaining data with each iteration until the desired value is found or all elements are eliminated",
+        "meaning_zh": "二分查找算法：从已排序数据集的中点开始，每次迭代排除一半剩余数据，直到找到目标或排除所有元素。前提：数据必须有序",
+        "derivation": "Binary(二分) + Search(搜索) → 「每次砍一半」的搜索",
+        "mnemonic": "猜数字游戏的最优策略——从1到100猜，先猜50，太大就猜25，太小就猜75。这就是二分查找",
+        "example": "The binary search algorithm finds 42 in a sorted list in just 7 steps out of 100 elements.",
+        "example_zh": "二分查找算法在 100 个有序元素中只用 7 步就找到 42。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "iterations",
+        "breakdown": "Iter(再次) + ation(名词) + s(复数)",
+        "meaning_en": "the repeated cycles or steps of a process; in binary search, the number of times the algorithm divides the data set in half",
+        "meaning_zh": "迭代次数：过程重复的次数。在二分查找中，迭代次数是算法把数据折半的次数——n 个元素最多需要 log₂(n) 次迭代",
+        "derivation": "Iteration(迭代) → 「重复一次」的次数计数",
+        "mnemonic": "二分查找的迭代次数是 log₂(n)——1024 个元素只要 10 次，超快",
+        "example": "Binary search needs only about 10 iterations to find an item among 1024 elements.",
+        "example_zh": "二分查找在 1024 个元素中只需大约 10 次迭代即可找到一项。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "sequential search",
+        "breakdown": "Sequential(顺序的) + Search(搜索)",
+        "meaning_en": "a search algorithm that examines each element in a data set one by one in order until the desired value is found",
+        "meaning_zh": "线性搜索：在二分查找的对比下显得很慢——从头到尾一个个找。但好处是不需要数据有序，任何列表都能用",
+        "derivation": "Sequential(顺序的) + Search(搜索) → 「按顺序一个个找」",
+        "mnemonic": "线性 vs 二分：线性是「翻字典从第一页开始」，二分是「翻到中间，太靠后就再翻到前半段中间」",
+        "example": "Sequential search checks every element, but binary search skips half each time.",
+        "example_zh": "线性搜索检查每个元素，但二分搜索每次跳过一半。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "sorted data",
+        "breakdown": "Sorted(已排序的) + Data(数据)",
+        "meaning_en": "data arranged in a specific order (ascending or descending) that is required for binary search to function correctly",
+        "meaning_zh": "已排序数据：按升序或降序排列的数据。是二分查找的前提条件——如果数据无序，二分查找的「折半」逻辑就完全失效",
+        "derivation": "Sort(排序) + ed(过去分词) → 「已经排好序的」数据",
+        "mnemonic": "想用二分查找？先 sort！没排序的数据上跑二分 = 在乱糟糟的字典里翻字典",
+        "example": "Sorted data is required before applying the binary search algorithm.",
+        "example_zh": "在应用二分查找算法之前，数据必须是已排序的。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Calling Procedures",
+    "type": "root",
+    "meaning_en": "invoking named code blocks with arguments to reuse logic and structure programs",
+    "meaning_zh": "调用过程：通过名称和参数触发预定义的代码块来执行任务。让程序模块化——写一次、用多次，避免重复代码",
+    "origin": "Unit 3: 3.12 Calling Procedures",
+    "related": ["Lists", "Binary Search", "Developing Procedures", "Mathematical Expressions"],
+    "words": [
+      {
+        "word": "argument",
+        "breakdown": "Argu(争论) + ment(名词后缀)",
+        "meaning_en": "the actual values passed to a procedure when it is called, which correspond to the procedure's parameters",
+        "meaning_zh": "实参：调用过程时传入的实际值，对应过程的形参。例如 `area(5, 3)` 中，5 和 3 是 arguments，它们会被赋给 length 和 width 两个 parameters",
+        "derivation": "Argu(争论) + ment(物) → 「呈给过程审议的具体材料」",
+        "mnemonic": "argument = 调用时的「真材实料」：每次调用可以传不同的 argument",
+        "example": "The argument 5 is passed to the procedure square(x).",
+        "example_zh": "实参 5 被传递给过程 square(x)。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "flow of control",
+        "breakdown": "Flow(流) + Control(控制)",
+        "meaning_en": "the order in which statements are executed in a program, including how control transfers to and from procedures",
+        "meaning_zh": "控制流：程序中语句执行的顺序，包括过程调用时的「跳转和返回」。调用过程会暂停当前执行，跳到过程内部，结束后再跳回来",
+        "derivation": "Flow(流) + Control(控制) → 程序执行的「行进路线」",
+        "mnemonic": "调用过程像看电影时去厕所——按暂停（保存现场），处理完事（过程执行），回来按播放（继续）",
+        "example": "Calling a procedure transfers the flow of control to its body.",
+        "example_zh": "调用过程将控制流转移到其主体内。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "parameter",
+        "breakdown": "Para(旁边) + meter(测量)",
+        "meaning_en": "variables in a procedure that allow it to accept different input values, enabling the procedure to be generalized and reused with a range of inputs",
+        "meaning_zh": "形参：过程定义中的变量，让过程能接受不同输入值，从而被通用化和复用。例如 `PROCEDURE area(length, width)` 中的 length 和 width 是 parameters",
+        "derivation": "Para(旁边) + meter(测量) → 「在过程旁边的变量」",
+        "mnemonic": "parameter 是过程的「插槽」，argument 是插进去的「卡」——每次调用换不同的卡",
+        "example": "The parameter x in square(x) accepts any number as input.",
+        "example_zh": "square(x) 中的形参 x 接受任何数字作为输入。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "procedure",
+        "breakdown": "Pro(向前) + ced(走) + ure(名词后缀)",
+        "meaning_en": "a named block of reusable code that performs a specific task and can be called multiple times throughout a program",
+        "meaning_zh": "过程：执行特定任务的命名代码块，可以在程序中多次调用。是「写一次，用多次」的代码复用机制——也称为函数或方法",
+        "derivation": "Pro(向前) + ced(走) → 「按步骤前进」 → 命名的执行步骤",
+        "mnemonic": "procedure 像快捷键——一次定义，到处调用，不用每次重写一长串代码",
+        "example": "The procedure greet(name) prints a personalized hello message.",
+        "example_zh": "过程 greet(name) 打印个性化的问候消息。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "procedure call",
+        "breakdown": "Procedure(过程) + Call(调用)",
+        "meaning_en": "a statement that executes a named procedure, interrupting sequential execution and transferring control to the procedure",
+        "meaning_zh": "过程调用：执行命名过程的语句，会中断顺序执行并把控制权转移到过程内部。例如 `greet(\"Derek\")` 就是一次过程调用",
+        "derivation": "Procedure(过程) + Call(调用) → 「叫过程来干活」",
+        "mnemonic": "过程调用像点外卖——告诉店家（过程名）和要求（参数），等他们做好送来",
+        "example": "The procedure call sqrt(16) returns 4.",
+        "example_zh": "过程调用 sqrt(16) 返回 4。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "return values",
+        "breakdown": "Return(返回) + Values(值)",
+        "meaning_en": "values that a procedure sends back to the point where it was called",
+        "meaning_zh": "返回值：过程发送回调用点的值。例如 `sqrt(16)` 的返回值是 4，可以直接用在表达式中：`y ← sqrt(16) + 1`",
+        "derivation": "Return(返回) + Values(值) → 过程「回赠」给调用方的礼物",
+        "mnemonic": "返回值是过程的「答卷」——你给问题（参数），它给答案（return value）",
+        "example": "The return value of sqrt(25) is 5.",
+        "example_zh": "sqrt(25) 的返回值是 5。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "sequential execution",
+        "breakdown": "Sequential(顺序的) + Execution(执行)",
+        "meaning_en": "the execution of programming statements in the order they appear, one after another",
+        "meaning_zh": "顺序执行：按代码语句出现的先后顺序一行行执行。过程调用会暂时打断顺序执行——跳到过程内部执行完再回来",
+        "derivation": "Sequential(顺序的) + Execution(执行) → 「按行进的执行方式」",
+        "mnemonic": "顺序执行像看书——一页一页从前往后；过程调用像查脚注——临时跳走再回来",
+        "example": "Sequential execution proceeds line by line until a procedure call interrupts it.",
+        "example_zh": "顺序执行逐行进行，直到一个过程调用中断它。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Developing Procedures",
+    "type": "root",
+    "meaning_en": "writing procedures that abstract away details and improve readability, modularity, and reuse",
+    "meaning_zh": "开发过程：编写隐藏内部细节、提高可读性、模块化和复用性的过程。好的过程像「黑盒子」——你只需要知道做什么，不需要知道怎么做",
+    "origin": "Unit 3: 3.13 Developing Procedures",
+    "related": ["Calling Procedures", "Mathematical Expressions"],
+    "words": [
+      {
+        "word": "argument",
+        "breakdown": "Argu(争论) + ment(名词后缀)",
+        "meaning_en": "the actual values passed to a procedure when it is called, which correspond to the procedure's parameters",
+        "meaning_zh": "实参：调用过程时传入的具体值。开发过程时要考虑「过程应该接受什么样的实参」——通用的过程能处理多种实参",
+        "derivation": "Argu(争论) + ment(物) → 「呈给过程审议的具体材料」",
+        "mnemonic": "argument = 「实物」，parameter = 「占位符」——一个虚一个实",
+        "example": "The argument \"Derek\" is passed to the procedure greet(name).",
+        "example_zh": "实参 \"Derek\" 被传递给过程 greet(name)。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "code readability",
+        "breakdown": "Code(代码) + Readability(可读性)",
+        "meaning_en": "the quality of being easy to understand and follow in a program, which is improved through the use of procedural abstraction",
+        "meaning_zh": "代码可读性：程序易于理解和跟随的程度。把复杂逻辑封装成有意义的过程名（如 `calculateTax()`），代码就像读英文一样清晰",
+        "derivation": "Code(代码) + Read(读) + ability(可…性) → 「能读懂的程度」",
+        "mnemonic": "把 100 行计算税金的代码换成 `calculateTax()`——可读性瞬间起飞",
+        "example": "Code readability improves when complex logic is wrapped in well-named procedures.",
+        "example_zh": "把复杂逻辑包装在命名得好的过程中可以改善代码可读性。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "code reuse",
+        "breakdown": "Code(代码) + Reuse(再利用)",
+        "meaning_en": "the practice of using existing procedures or code in multiple places within a program to avoid duplication and manage complexity",
+        "meaning_zh": "代码复用：在程序多处使用已有过程或代码，避免重复并管理复杂度。修一次 bug，所有调用点都受益——这就是 DRY 原则（Don't Repeat Yourself）",
+        "derivation": "Code(代码) + Re(再) + Use(使用) → 「重复使用」代码",
+        "mnemonic": "代码复用 = 写一份模板，复印 100 份——改模板时100份一起更新，不用一份份改",
+        "example": "Code reuse reduces bugs because you only have to fix the procedure in one place.",
+        "example_zh": "代码复用减少 bug，因为你只需要在一处修复过程。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "modularity",
+        "breakdown": "Modular(模块的) + ity(名词后缀)",
+        "meaning_en": "the subdivision of a computer program into separate subprograms or modules to manage complexity",
+        "meaning_zh": "模块化:把程序拆分成独立的子程序或模块来管理复杂度。每个模块只做一件事，模块之间通过明确接口交流——便于维护和测试",
+        "derivation": "Module(模块) + ity(性质) → 「拆成模块的程度」",
+        "mnemonic": "模块化像乐高——每个砖块独立但能组合，坏了一块换一块，不用拆整个城堡",
+        "example": "Modularity allows different programmers to work on separate procedures simultaneously.",
+        "example_zh": "模块化允许不同的程序员同时处理不同的过程。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "parameter",
+        "breakdown": "Para(旁边) + meter(测量)",
+        "meaning_en": "variables in a procedure that allow it to accept different input values, enabling the procedure to be generalized and reused with a range of inputs",
+        "meaning_zh": "形参：过程定义中的变量，让过程能接受不同输入值。开发过程时要选好 parameters——既要灵活又不要太多，否则调用很麻烦",
+        "derivation": "Para(旁边) + meter(测量) → 「过程旁边的占位变量」",
+        "mnemonic": "parameter 是过程的「插口」——每个插口插不同的 argument，过程就能处理不同情况",
+        "example": "The parameters length and width make the area procedure work for any rectangle.",
+        "example_zh": "形参 length 和 width 让 area 过程适用于任何矩形。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "procedural abstraction",
+        "breakdown": "Procedural(过程的) + Abstract(抽象) + ion(名词后缀)",
+        "meaning_en": "a programming technique that provides a name for a process and allows a procedure to be used by knowing what it does without needing to know how it works internally",
+        "meaning_zh": "过程抽象：给一段处理过程起个名字，让使用者「知其然而不必知其所以然」。例如你用 `sqrt(16)` 时，不需要懂牛顿迭代法的细节",
+        "derivation": "Procedural(过程的) + Abstraction(抽象) → 「把过程当成黑盒子」",
+        "mnemonic": "过程抽象 = 微波炉——你按「热饭」键就行，不用懂磁控管的物理原理",
+        "example": "Procedural abstraction lets you call sort(list) without knowing how the sort works internally.",
+        "example_zh": "过程抽象让你调用 sort(list) 而不必知道排序的内部工作原理。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "procedure",
+        "breakdown": "Pro(向前) + ced(走) + ure(名词后缀)",
+        "meaning_en": "a named block of reusable code that performs a specific task and can be called multiple times throughout a program",
+        "meaning_zh": "过程：执行特定任务的命名代码块。开发过程时的关键原则：单一职责——一个过程只做一件事，做好那一件事",
+        "derivation": "Pro(向前) + ced(走) → 「按步骤前进」的命名代码块",
+        "mnemonic": "好过程像锋利的刀——一把切菜，一把切水果，不要造瑞士军刀塞进所有功能",
+        "example": "The procedure findMaximum(list) returns the largest value in the list.",
+        "example_zh": "过程 findMaximum(list) 返回列表中的最大值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "RETURN statement",
+        "breakdown": "Return(返回) + Statement(语句)",
+        "meaning_en": "a statement that causes a procedure to immediately exit and return a value to the calling statement",
+        "meaning_zh": "RETURN 语句：让过程立即退出并把一个值返回给调用方的语句。例如 `RETURN sum / count` 会算出平均值并立刻退出过程",
+        "derivation": "Return(返回) + Statement(语句) → 「带值返回」的指令",
+        "mnemonic": "RETURN 像快递的「签收」——把包裹（值）交出去，工作就结束了",
+        "example": "The RETURN statement sends the result back to the caller.",
+        "example_zh": "RETURN 语句把结果发送回调用方。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "subproblems",
+        "breakdown": "Sub(下) + Problem(问题) + s(复数)",
+        "meaning_en": "smaller, more manageable problems that together form the solution to a larger problem in a program",
+        "meaning_zh": "子问题：更小、更易管理的问题，组合起来构成大问题的解。开发过程的核心思路：把一个大问题分解成几个小子问题，每个子问题写一个过程",
+        "derivation": "Sub(下) + Problems(问题) → 「下一级的小问题」",
+        "mnemonic": "解决大问题的诀窍：「分而治之」——把大象切成块吃，每次吃一块",
+        "example": "The big task is split into subproblems, each solved by its own procedure.",
+        "example_zh": "大任务被拆分成子问题，每个子问题由自己的过程解决。",
+        "toefl_frequency": "medium"
+      }
+    ]
   }
 ]

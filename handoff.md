@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-09
 Branch: update_version
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE | AP WHAP batches 1-2 LIVE (10 concepts / 127 terms) | Update checker LIVE | Gamification Phase A LIVE (levels, avatars, profile, composite score)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE | AP WHAP batches 1-3 LIVE (15 concepts / 191 terms) | Update checker LIVE | Gamification Phase A LIVE (levels, avatars, profile, composite score)
 
 ## V1 Summary
 
@@ -453,7 +453,7 @@ node dist/index.js doctor   # Environment check
 - AP CSP session and review (`alvy csp`, `alvy csp review`) — same pattern as AP Psych
 - `csp.json` content file (20 concepts / 72 terms), `csp-db.ts` query layer
 - AP World History session and review (`alvy whap`, `alvy whap review`) — same pattern as AP CSP
-- `whap.json` content file (batches 1-2: 10 concepts / 127 terms), `whap-db.ts` query layer
+- `whap.json` content file (batches 1-3: 15 concepts / 191 terms), `whap-db.ts` query layer
 - `Subject` type (`"toefl" | "psych" | "csp" | "whap"`), `"pick"` command, `lastSubject` in settings
 
 ### What's still open
@@ -479,7 +479,7 @@ Key refactoring needed:
 Files built:
 - `src/data/psych.json` (26 concepts, content live)
 - `src/data/csp.json` (20 concepts / 72 terms, content live)
-- `src/data/whap.json` (batches 1-2: 10 concepts / 127 terms, content live — ~260 terms total, 3-4 more batches planned)
+- `src/data/whap.json` (batches 1-3: 15 concepts / 191 terms, content live — ~260 terms total, 1-2 more batches planned)
 - `src/components/subject-picker.tsx` (arrow-key menu, remember-last, 4 subjects)
 - `src/components/psych-session.tsx` (AP Psych daily session)
 - `src/components/psych-review.tsx` (AP Psych review)

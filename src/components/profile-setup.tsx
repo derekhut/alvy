@@ -16,7 +16,7 @@ export default function ProfileSetup({ onComplete }: ProfileSetupProps) {
   const handleEscDefault = () => {
     onComplete({
       displayName: "学生",
-      avatar: "scholar",
+      avatar: "duck",
       createdAt: new Date().toISOString().slice(0, 10),
     });
   };

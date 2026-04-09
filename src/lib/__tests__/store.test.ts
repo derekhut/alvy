@@ -158,7 +158,7 @@ describe("data migration", () => {
       },
       wordsStudied: ["benefit"],
       settings: { sound: false, dailyGoal: 3 },
-      profile: { displayName: "小明", avatar: "panda", createdAt: "2026-04-01" },
+      profile: { displayName: "小明", avatar: "penguin", createdAt: "2026-04-01" },
       levelProgress: { level: 3, compositeScore: 42, totalStudyDays: 5, totalCorrectQuiz: 4, totalQuizAttempts: 5, totalWordsStudied: 1 },
     };
     const newDir = path.join(tmpDir, ".alvy");
@@ -170,7 +170,7 @@ describe("data migration", () => {
 
     expect(data.version).toBe(3);
     expect(data.profile?.displayName).toBe("小明");
-    expect(data.profile?.avatar).toBe("panda");
+    expect(data.profile?.avatar).toBe("penguin");
     expect(data.levelProgress.level).toBe(3);
     expect(data.levelProgress.compositeScore).toBe(42);
 
@@ -196,6 +196,28 @@ describe("data migration", () => {
 
     expect(data.version).toBe(3);
     expect(data.levelProgress.level).toBe(5); // 1250 XP = level 5
+  });
+
+  it("remaps old avatar IDs to robot", async () => {
+    const v3Data = {
+      version: 3,
+      streak: { current: 1, longest: 1, lastDate: "2026-04-02", freezeAvailable: true },
+      xp: { total: 100, today: 10 },
+      dailyGoal: 3,
+      rootProgress: {},
+      wordsStudied: [],
+      settings: { sound: false, dailyGoal: 3 },
+      profile: { displayName: "小明", avatar: "panda", createdAt: "2026-04-01" },
+      levelProgress: { level: 1, compositeScore: 0, totalStudyDays: 0, totalCorrectQuiz: 0, totalQuizAttempts: 0, totalWordsStudied: 0 },
+    };
+    const newDir = path.join(tmpDir, ".alvy");
+    fs.mkdirSync(newDir, { recursive: true });
+    fs.writeFileSync(path.join(newDir, "data.json"), JSON.stringify(v3Data));
+
+    const store = await importStore();
+    const data = store.loadData();
+
+    expect(data.profile?.avatar).toBe("robot");
   });
 
   it("handles corrupt source file gracefully", async () => {

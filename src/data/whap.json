@@ -5,7 +5,10 @@
     "meaning_en": "The economic, cultural, and political developments of Song Dynasty China and their impact on East Asian trade networks",
     "meaning_zh": "宋朝中国与东亚贸易：宋代经济文化高度发达，儒学官僚体系成熟，推动了东亚贸易网络的繁荣与扩展",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Islamic Civilization & Scholarship", "Africa & Americas"],
+    "related": [
+      "Islamic Civilization & Scholarship",
+      "Africa & Americas"
+    ],
     "words": [
       {
         "word": "agricultural innovation",
@@ -145,7 +148,10 @@
     "meaning_en": "The political, intellectual, and religious developments of the Islamic world from 1200-1450",
     "meaning_zh": "伊斯兰文明与学术：1200-1450年间伊斯兰世界的政治演变、知识创新和宗教传播，是连接东西方的文化桥梁",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Song China & East Asian Trade", "South & Southeast Asian States"],
+    "related": [
+      "Song China & East Asian Trade",
+      "South & Southeast Asian States"
+    ],
     "words": [
       {
         "word": "Abbasid Caliphate",
@@ -375,7 +381,10 @@
     "meaning_en": "The diverse political entities, religious traditions, and state-building processes in South and Southeast Asia from 1200-1450",
     "meaning_zh": "南亚与东南亚国家：1200-1450年间南亚和东南亚多元的政治实体、宗教传统和国家构建过程",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Islamic Civilization & Scholarship", "Song China & East Asian Trade"],
+    "related": [
+      "Islamic Civilization & Scholarship",
+      "Song China & East Asian Trade"
+    ],
     "words": [
       {
         "word": "Bhakti movement",
@@ -515,7 +524,10 @@
     "meaning_en": "The diverse state systems and civilizations that developed in Africa and the Americas from 1200-1450",
     "meaning_zh": "非洲与美洲：1200-1450年间非洲和美洲发展出的多元国家体系和文明，展现了不同环境下的政治创新",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Song China & East Asian Trade", "Medieval Europe"],
+    "related": [
+      "Song China & East Asian Trade",
+      "Medieval Europe"
+    ],
     "words": [
       {
         "word": "Aztec Empire",
@@ -595,7 +607,10 @@
     "meaning_en": "The political, economic, and social structures of European civilization from 1200-1450, and comparative concepts in state formation",
     "meaning_zh": "中世纪欧洲：1200-1450年间欧洲文明的政治、经济和社会结构，以及国家形成的比较概念",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Islamic Civilization & Scholarship", "Africa & Americas"],
+    "related": [
+      "Islamic Civilization & Scholarship",
+      "Africa & Americas"
+    ],
     "words": [
       {
         "word": "agriculture",
@@ -735,7 +750,10 @@
     "meaning_en": "The financial instruments, commercial institutions, and trading practices that facilitated long-distance trade from 1200-1450",
     "meaning_zh": "贸易与商业实践：1200-1450年间促进长途贸易的金融工具、商业机构和贸易做法",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Mongol Empires & Cultural Exchange", "Indian Ocean & Trans-Saharan Trade"],
+    "related": [
+      "Mongol Empires & Cultural Exchange",
+      "Indian Ocean & Trans-Saharan Trade"
+    ],
     "words": [
       {
         "word": "banking houses",
@@ -885,7 +903,10 @@
     "meaning_en": "The Mongol conquests and their impact on interregional contacts, cultural transfer, and knowledge exchange across Afro-Eurasia from 1200-1450",
     "meaning_zh": "蒙古帝国与文化交流：1200-1450年间蒙古征服及其对亚非欧跨区域接触、文化传递和知识交流的影响",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Trade & Commercial Practices", "Cultural & Technological Diffusion"],
+    "related": [
+      "Trade & Commercial Practices",
+      "Cultural & Technological Diffusion"
+    ],
     "words": [
       {
         "word": "Afro-Eurasian trade",
@@ -1025,7 +1046,10 @@
     "meaning_en": "The maritime and overland trade networks of the Indian Ocean and Sahara Desert that connected Africa, Asia, and the Middle East from 1200-1450",
     "meaning_zh": "印度洋与跨撒哈拉贸易：1200-1450年间连接非洲、亚洲和中东的印度洋海上贸易和跨撒哈拉沙漠贸易网络",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Trade & Commercial Practices", "Mongol Empires & Cultural Exchange"],
+    "related": [
+      "Trade & Commercial Practices",
+      "Mongol Empires & Cultural Exchange"
+    ],
     "words": [
       {
         "word": "astrolabe",
@@ -1195,7 +1219,10 @@
     "meaning_en": "The spread of cultural traditions, ideas, and technological innovations across Afro-Eurasia through trade networks and interregional contacts from 1200-1450",
     "meaning_zh": "文化与技术扩散：1200-1450年间通过贸易网络和跨区域接触在亚非欧传播的文化传统、思想和技术创新",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Mongol Empires & Cultural Exchange", "Disease & Biological Exchange"],
+    "related": [
+      "Mongol Empires & Cultural Exchange",
+      "Disease & Biological Exchange"
+    ],
     "words": [
       {
         "word": "artistic traditions",
@@ -1305,7 +1332,10 @@
     "meaning_en": "The spread of diseases, crops, and biological organisms across Afro-Eurasia through trade routes and human contact from 1200-1450",
     "meaning_zh": "疾病与生物交换：1200-1450年间通过贸易路线和人类接触在亚非欧传播的疾病、作物和生物有机体",
     "origin": "Unit 1: 1200-1450 交流网络",
-    "related": ["Trade & Commercial Practices", "Indian Ocean & Trans-Saharan Trade"],
+    "related": [
+      "Trade & Commercial Practices",
+      "Indian Ocean & Trans-Saharan Trade"
+    ],
     "words": [
       {
         "word": "bubonic plague",
@@ -1365,6 +1395,711 @@
         "derivation": "Silk(丝绸) + Road(道路) → 以中国丝绸命名 → 横贯欧亚大陆的贸易大动脉 → 不仅运输商品也传播文化、宗教和疾病",
         "example": "The Silk Roads facilitated not only the trade of luxury goods but also the unintended spread of the bubonic plague.",
         "example_zh": "丝绸之路不仅促进了奢侈品贸易，也无意中加速了腺鼠疫的传播。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Land-Based Empires & Rivalries",
+    "type": "root",
+    "meaning_en": "The major land-based empires of 1450-1750 that expanded through territorial conquest and military power, and the rivalries that shaped their interactions",
+    "meaning_zh": "陆上帝国与争霸：1450-1750年间通过领土征服和军事力量扩张的主要陆上帝国，以及塑造其互动关系的竞争对抗",
+    "origin": "Unit 3: 1450-1750 陆上帝国",
+    "related": [
+      "State Building & Administration",
+      "Religious Reform & Syncretism"
+    ],
+    "words": [
+      {
+        "word": "armed trade",
+        "breakdown": "Armed(武装的) + Trade(贸易)",
+        "meaning_en": "Commercial activity backed by military force, used by empires to establish economic dominance and territorial control.",
+        "meaning_zh": "武装贸易：以军事力量为后盾的商业活动，帝国借此确立经济主导地位和领土控制权",
+        "derivation": "Armed(武装) + Trade(贸易) → 军队护航商队 → 武力打开市场 → 贸易与征服合二为一",
+        "example": "Armed trade allowed European and Asian empires to dominate lucrative commerce routes by combining military power with economic ambition.",
+        "example_zh": "武装贸易使欧亚帝国通过将军事力量与经济野心相结合来主导利润丰厚的商业路线。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "cannons",
+        "breakdown": "Cannon(大炮) + -s(复数)",
+        "meaning_en": "Large artillery weapons that fired projectiles and were essential military tools for land-based empires to establish and maintain control.",
+        "meaning_zh": "大炮：发射炮弹的大型火炮武器，是陆上帝国建立和维持控制的关键军事工具，被称为「火药帝国」的标志",
+        "derivation": "Cannon(大炮) → 火药技术从中国西传 → 奥斯曼攻破君士坦丁堡 → 改变攻城战和帝国扩张模式",
+        "example": "Cannons played a decisive role in the Ottoman conquest of Constantinople in 1453, breaching walls that had stood for centuries.",
+        "example_zh": "大炮在1453年奥斯曼帝国攻克君士坦丁堡中发挥了决定性作用，攻破了屹立数百年的城墙。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "land-based empires",
+        "breakdown": "Land-based(以陆地为基础的) + Empires(帝国)",
+        "meaning_en": "Empires that expanded and maintained control through territorial conquest and direct governance of contiguous lands, such as the Ottoman, Russian, and Qing empires.",
+        "meaning_zh": "陆上帝国：通过领土征服和对毗连土地的直接统治来扩张和维持控制的帝国，如奥斯曼、俄罗斯和清帝国",
+        "derivation": "Land(陆地) + Based(基于) + Empire(帝国) → 控制广袤陆地 → 与海洋帝国形成对比 → 火药技术助力扩张",
+        "example": "Land-based empires like the Ottoman, Safavid, and Mughal used gunpowder weapons to expand across vast territories.",
+        "example_zh": "奥斯曼、萨法维和莫卧儿等陆上帝国利用火药武器在广袤领土上扩张。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Manchu",
+        "breakdown": "Manchu(满洲/满族)",
+        "meaning_en": "A land-based empire that expanded in Central and East Asia during the period 1450-1750.",
+        "meaning_zh": "满洲/清帝国：1450-1750年间在中亚和东亚扩张的陆上帝国，满族入关建立清朝，统治中国近三百年",
+        "derivation": "满洲(Manchu) → 女真后裔 → 努尔哈赤统一各部 → 1644年入关建清 → 疆域远超明朝",
+        "example": "The Manchu conquered Ming China and established the Qing Dynasty, one of the largest land-based empires in history.",
+        "example_zh": "满洲人征服明朝并建立了清朝，这是历史上最大的陆上帝国之一。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Mughal",
+        "breakdown": "Mughal(莫卧儿/蒙古人后裔)",
+        "meaning_en": "A land-based empire that expanded in South and Central Asia during the period 1450-1750.",
+        "meaning_zh": "莫卧儿帝国：1450-1750年间在南亚和中亚扩张的陆上帝国，融合了波斯、突厥和印度文化",
+        "derivation": "Mughal(蒙古人后裔) → 巴布尔建立 → 阿克巴大帝扩张 → 融合伊斯兰与印度教文化 → 泰姬陵为其文化象征",
+        "example": "The Mughal Empire at its height ruled over most of the Indian subcontinent and was known for its cultural synthesis.",
+        "example_zh": "莫卧儿帝国鼎盛时期统治了印度次大陆大部分地区，以文化融合著称。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Ottoman Empire",
+        "breakdown": "Ottoman(奥斯曼) + Empire(帝国)",
+        "meaning_en": "A major Islamic empire that ruled from the 14th to early 20th century and was predominantly Sunni Muslim.",
+        "meaning_zh": "奥斯曼帝国：14世纪至20世纪初统治的主要伊斯兰帝国，以逊尼派穆斯林为主，地跨欧亚非三洲",
+        "derivation": "Ottoman(奥斯曼家族) + Empire(帝国) → 1453年攻克君士坦丁堡 → 控制东地中海 → 逊尼派伊斯兰中心",
+        "example": "The Ottoman Empire controlled vast territories across Europe, Asia, and Africa and served as a center of Sunni Islamic culture.",
+        "example_zh": "奥斯曼帝国控制着横跨欧洲、亚洲和非洲的广大领土，是逊尼派伊斯兰文化的中心。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Safavid Empire",
+        "breakdown": "Safavid(萨法维) + Empire(帝国)",
+        "meaning_en": "A Persian Islamic empire that ruled from the 16th to 18th century and was predominantly Shi'a Muslim.",
+        "meaning_zh": "萨法维帝国：16至18世纪统治波斯的伊斯兰帝国，以什叶派穆斯林为主，与逊尼派奥斯曼帝国长期对抗",
+        "derivation": "Safavid(萨法维教团) + Empire(帝国) → 伊斯玛仪一世建立 → 强制推行什叶派 → 与奥斯曼教派对立",
+        "example": "The Safavid Empire established Shi'a Islam as the state religion of Persia, setting it apart from neighboring Sunni empires.",
+        "example_zh": "萨法维帝国将什叶派伊斯兰教确立为波斯国教，使其有别于邻近的逊尼派帝国。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Safavid-Mughal conflict",
+        "breakdown": "Safavid(萨法维) + Mughal(莫卧儿) + Conflict(冲突)",
+        "meaning_en": "A rivalry between the Safavid and Mughal empires in the Middle East and South Asia that resulted from political and religious disputes.",
+        "meaning_zh": "萨法维-莫卧儿冲突：萨法维和莫卧儿帝国之间因政治和宗教争端而产生的对抗，争夺中亚和阿富汗地区控制权",
+        "derivation": "Safavid(什叶派波斯) + Mughal(逊尼派印度) → 教派分歧 + 领土争端 → 争夺坎大哈等战略要地",
+        "example": "The Safavid-Mughal conflict over Kandahar reflected both religious differences and strategic competition in Central Asia.",
+        "example_zh": "萨法维与莫卧儿围绕坎大哈的冲突反映了宗教差异和中亚地区的战略竞争。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Songhai Empire",
+        "breakdown": "Songhai(桑海) + Empire(帝国)",
+        "meaning_en": "A major West African empire that dominated the region from the 15th to 16th centuries, known for its control of trans-Saharan trade routes.",
+        "meaning_zh": "桑海帝国：15至16世纪主导西非的大帝国，以控制跨撒哈拉贸易路线和廷巴克图学术中心而闻名",
+        "derivation": "Songhai(桑海族) + Empire(帝国) → 取代马里帝国 → 控制廷巴克图和杰内 → 垄断跨撒哈拉黄金-食盐贸易",
+        "example": "The Songhai Empire controlled major trans-Saharan trade routes and the intellectual center of Timbuktu.",
+        "example_zh": "桑海帝国控制着主要的跨撒哈拉贸易路线和廷巴克图这一学术中心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "state rivalries",
+        "breakdown": "State(国家) + Rivalries(竞争/对抗)",
+        "meaning_en": "Competitive conflicts between empires and states over territory, resources, and political influence.",
+        "meaning_zh": "国家间竞争：帝国和国家之间争夺领土、资源和政治影响力的对抗性冲突",
+        "derivation": "State(国家) + Rivalry(对抗) → 领土争夺 + 宗教分歧 + 贸易竞争 → 战争与外交并行",
+        "example": "State rivalries between the Ottoman and Safavid empires were intensified by their competing claims to Islamic leadership.",
+        "example_zh": "奥斯曼帝国和萨法维帝国之间的国家竞争因双方争夺伊斯兰领导权而加剧。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "State Building & Administration",
+    "type": "root",
+    "meaning_en": "The methods, institutions, and strategies used by rulers to consolidate power, legitimize authority, and administer their territories during 1450-1750",
+    "meaning_zh": "国家建设与行政管理：1450-1750年间统治者用来巩固权力、确立统治合法性和管理领土的方法、制度和策略",
+    "origin": "Unit 3: 1450-1750 国家建设",
+    "related": [
+      "Land-Based Empires & Rivalries",
+      "Religious Reform & Syncretism"
+    ],
+    "words": [
+      {
+        "word": "bureaucratic elites",
+        "breakdown": "Bureaucratic(官僚的) + Elites(精英)",
+        "meaning_en": "Educated officials and administrators appointed by rulers to manage government functions and maintain centralized control.",
+        "meaning_zh": "官僚精英：由统治者任命的受过教育的官员和行政人员，负责管理政府职能并维持中央集权",
+        "derivation": "Bureau(官署) + -cratic(统治的) + Elite(精英) → 科举/考试选拔 → 忠于君主的行政阶层 → 帝国运转的核心",
+        "example": "Bureaucratic elites in the Ottoman and Chinese empires were selected through rigorous examination and training systems.",
+        "example_zh": "奥斯曼帝国和中国帝国的官僚精英通过严格的考试和培训体系选拔。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "centralized control",
+        "breakdown": "Centralized(集中的) + Control(控制)",
+        "meaning_en": "A system of government where power is concentrated in the rulers.",
+        "meaning_zh": "中央集权：权力集中于统治者手中的政府体制，地方服从中央，确保政令统一",
+        "derivation": "Central(中央) + -ize(使…化) + Control(控制) → 权力集于一人/一处 → 官僚体系执行 → 地方听命中央",
+        "example": "Centralized control allowed rulers like Louis XIV of France to direct state policy without the interference of regional authorities.",
+        "example_zh": "中央集权使法国的路易十四等统治者能够在不受地方当局干预的情况下制定国家政策。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "consolidate power",
+        "breakdown": "Consolidate(巩固) + Power(权力)",
+        "meaning_en": "To strengthen and secure a ruler's control over their territory and subjects.",
+        "meaning_zh": "巩固权力：加强和确保统治者对其领土和臣民的控制，消除内部威胁，强化统治根基",
+        "derivation": "Con-(共同) + Solid(坚固) + -ate(使) → 使权力坚如磐石 → 削弱对手 + 拉拢盟友 + 建立制度",
+        "example": "Rulers consolidated power by building loyal armies, creating bureaucracies, and eliminating political rivals.",
+        "example_zh": "统治者通过建立忠诚的军队、创建官僚机构和消灭政治对手来巩固权力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "devshirme",
+        "breakdown": "Devshirme(德夫希尔梅/征召制度)",
+        "meaning_en": "The Ottoman system of recruiting young boys from conquered territories to serve as elite military and administrative officials.",
+        "meaning_zh": "德夫希尔梅制度：奥斯曼帝国从被征服领土征召基督教男孩，培训为精英军事和行政官员的制度",
+        "derivation": "Devshirme(征召/采集) → 从基督教家庭征召男孩 → 改信伊斯兰教 → 培训为耶尼切里近卫军或高级官员",
+        "example": "The devshirme system provided the Ottoman Empire with a loyal corps of soldiers and administrators who owed their position entirely to the sultan.",
+        "example_zh": "德夫希尔梅制度为奥斯曼帝国提供了一支忠诚的士兵和行政人员队伍，他们的地位完全依赖于苏丹。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "divine right",
+        "breakdown": "Divine(神圣的/神授的) + Right(权利)",
+        "meaning_en": "The European political concept that a ruler's authority to govern comes directly from God and cannot be questioned.",
+        "meaning_zh": "君权神授：欧洲政治概念，认为统治者的权威直接来自上帝，不可质疑，为专制君主制提供理论基础",
+        "derivation": "Divine(神的) + Right(权利) → 上帝授权国王统治 → 反抗国王即反抗上帝 → 专制主义的理论支柱",
+        "example": "European monarchs like Louis XIV invoked divine right to justify their absolute authority over their subjects.",
+        "example_zh": "路易十四等欧洲君主援引君权神授来为其对臣民的绝对权威辩护。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "human sacrifice",
+        "breakdown": "Human(人的) + Sacrifice(牺牲/祭祀)",
+        "meaning_en": "The Mexica religious practice of offering human lives to the gods as a means of legitimizing state power and maintaining cosmic order.",
+        "meaning_zh": "人祭：阿兹特克（墨西卡）人将活人献祭给神灵的宗教实践，用以维持宇宙秩序并为国家权力提供合法性",
+        "derivation": "Human(人) + Sacrifice(献祭) → 阿兹特克信仰太阳需要人血滋养 → 大规模祭祀 → 彰显帝国权威",
+        "example": "Human sacrifice in Mexica society served both religious and political purposes, reinforcing the power of the ruling elite.",
+        "example_zh": "墨西卡社会的人祭同时服务于宗教和政治目的，强化了统治精英的权力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "legitimize",
+        "breakdown": "Legitim(合法的) + -ize(使…化)",
+        "meaning_en": "To establish or justify the right of a ruler to hold power through various methods and institutions.",
+        "meaning_zh": "使合法化：通过各种方法和制度确立或证明统治者掌握权力的正当性",
+        "derivation": "Legitimus(拉丁语：合法的) + -ize(使) → 宗教加冕 + 法律制度 + 建筑展示 → 让臣民认可统治权威",
+        "example": "Rulers legitimized their authority through religious endorsement, monumental architecture, and legal codes.",
+        "example_zh": "统治者通过宗教认可、纪念性建筑和法律法典来使其权威合法化。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "military professionals",
+        "breakdown": "Military(军事的) + Professionals(职业人员)",
+        "meaning_en": "Trained soldiers and military officers employed by rulers to maintain order and expand state power.",
+        "meaning_zh": "职业军人：由统治者雇佣的受过训练的士兵和军官，负责维持秩序和扩张国家权力",
+        "derivation": "Military(军队) + Professional(专业的) → 不再依赖封建征召 → 常备军 + 专业训练 → 帝国扩张的利器",
+        "example": "Military professionals such as the Ottoman Janissaries formed the backbone of imperial armies in the early modern period.",
+        "example_zh": "奥斯曼帝国的耶尼切里等职业军人构成了近代早期帝国军队的中坚力量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "monumental architecture",
+        "breakdown": "Monumental(纪念性的/宏伟的) + Architecture(建筑)",
+        "meaning_en": "Large-scale buildings and structures constructed by rulers to display power, religious devotion, and state authority.",
+        "meaning_zh": "纪念性建筑：统治者建造的大型建筑和构造物，用以展示权力、宗教虔诚和国家权威，如泰姬陵、凡尔赛宫",
+        "derivation": "Monument(纪念碑) + -al(形容词) + Architecture(建筑) → 宏伟建筑彰显皇权 → 泰姬陵、凡尔赛宫、紫禁城",
+        "example": "Monumental architecture like the Taj Mahal and Versailles served as powerful symbols of imperial authority and cultural achievement.",
+        "example_zh": "泰姬陵和凡尔赛宫等纪念性建筑是帝国权威和文化成就的有力象征。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "samurai",
+        "breakdown": "Samurai(侍/武士)",
+        "meaning_en": "Japanese military professionals who served feudal lords and were compensated with regular salaries rather than land grants.",
+        "meaning_zh": "武士：为封建领主效力的日本职业军人，以定期俸禄而非封地作为报酬，遵循武士道精神",
+        "derivation": "侍(さむらい/Samurai) → 原为贵族侍从 → 发展为武士阶层 → 德川幕府时期领取俸禄 → 成为行政管理者",
+        "example": "Samurai in Tokugawa Japan transitioned from battlefield warriors to salaried bureaucratic administrators.",
+        "example_zh": "德川时代的武士从战场勇士转变为领取俸禄的行政官员。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "tax farming",
+        "breakdown": "Tax(税收) + Farming(承包/包收)",
+        "meaning_en": "A system where rulers grant the right to collect taxes to private individuals or officials who keep a portion of the collected revenue.",
+        "meaning_zh": "包税制：统治者将征税权授予私人或官员，承包者保留所征收税款的一部分作为报酬的制度",
+        "derivation": "Tax(税) + Farm(承包) → 国家出让征税权 → 包税人代为征收 → 留取差额 → 效率高但易滋生腐败",
+        "example": "Tax farming was used by the Ottoman Empire to efficiently collect revenue across its vast territories.",
+        "example_zh": "奥斯曼帝国使用包税制在其广大领土上高效地征收税款。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "tribute collection",
+        "breakdown": "Tribute(贡品/进贡) + Collection(收集/征收)",
+        "meaning_en": "The practice of demanding goods, resources, or payments from conquered or subordinate peoples as a sign of submission and source of revenue.",
+        "meaning_zh": "贡赋征收：向被征服或从属民族索取物资、资源或钱财的做法，既是臣服的象征也是收入来源",
+        "derivation": "Tribute(进贡) + Collect(征收) → 弱国向强国纳贡 → 承认宗主权 → 换取和平与保护",
+        "example": "Tribute collection from conquered peoples provided empires with valuable resources and reinforced political hierarchies.",
+        "example_zh": "向被征服民族征收贡赋为帝国提供了宝贵资源并强化了政治等级制度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "zamindar",
+        "breakdown": "Zamindar(柴明达尔/地主)",
+        "meaning_en": "A Mughal tax collector or landowner who collected taxes on behalf of the state in exchange for a portion of the revenue.",
+        "meaning_zh": "柴明达尔：莫卧儿帝国代表国家征税的地方税吏或地主，以保留部分税款作为报酬",
+        "derivation": "Zamin(波斯语：土地) + -dar(持有者) → 土地持有者 → 代国家征税 → 介于中央和农民之间的中间人",
+        "example": "Zamindars in the Mughal Empire served as intermediaries between the central government and local peasant communities.",
+        "example_zh": "莫卧儿帝国的柴明达尔充当了中央政府与地方农民社区之间的中间人。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Religious Reform & Syncretism",
+    "type": "root",
+    "meaning_en": "The major religious transformations, reform movements, and blending of belief systems during the period 1450-1750",
+    "meaning_zh": "宗教改革与融合：1450-1750年间重大的宗教变革、改革运动和信仰体系的融合，重塑了全球宗教版图",
+    "origin": "Unit 3: 1450-1750 宗教改革",
+    "related": [
+      "State Building & Administration",
+      "Land-Based Empires & Rivalries"
+    ],
+    "words": [
+      {
+        "word": "Catholic Reformation",
+        "breakdown": "Catholic(天主教的) + Reformation(改革)",
+        "meaning_en": "The Catholic Church's response to the Protestant Reformation, involving religious reforms and efforts to strengthen Catholic faith and practice.",
+        "meaning_zh": "天主教改革（反宗教改革）：天主教会对新教改革的回应，包括宗教改革和加强天主教信仰及实践的努力",
+        "derivation": "Catholic(天主教) + Reform(改革) + -ation(过程) → 特伦托会议 → 整顿教会纪律 + 耶稣会传教 → 重振天主教",
+        "example": "The Catholic Reformation, including the Council of Trent and the Jesuit order, revitalized the Catholic Church in response to Protestantism.",
+        "example_zh": "天主教改革，包括特伦托会议和耶稣会的建立，振兴了天主教会以回应新教运动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Christian traditions",
+        "breakdown": "Christian(基督教的) + Traditions(传统)",
+        "meaning_en": "The established practices, doctrines, and beliefs within Christianity that had developed over centuries before the Reformation.",
+        "meaning_zh": "基督教传统：在宗教改革之前经过数世纪发展形成的基督教内部的既定实践、教义和信仰",
+        "derivation": "Christ(基督) + -ian(属于的) + Tradition(传统) → 圣经 + 圣礼 + 教会组织 → 千年积淀的信仰体系",
+        "example": "Christian traditions such as papal authority, sacraments, and monasticism were challenged during the Protestant Reformation.",
+        "example_zh": "教皇权威、圣礼和修道制度等基督教传统在新教改革期间受到了挑战。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Protestant Reformation",
+        "breakdown": "Protestant(新教的/抗议的) + Reformation(改革)",
+        "meaning_en": "A religious movement beginning in the 16th century that challenged Catholic Church authority and led to the establishment of Protestant churches.",
+        "meaning_zh": "新教改革：16世纪开始的宗教运动，挑战天主教会权威，导致新教教会的建立，深刻改变了欧洲宗教格局",
+        "derivation": "Protest(抗议) + -ant(人) + Reform(改革) → 马丁·路德《九十五条论纲》→ 挑战教皇权威 → 基督教分裂",
+        "example": "The Protestant Reformation begun by Martin Luther in 1517 permanently divided Western Christianity into Catholic and Protestant branches.",
+        "example_zh": "马丁·路德于1517年发起的新教改革永久性地将西方基督教分裂为天主教和新教两大分支。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Shi'a",
+        "breakdown": "Shi'a(什叶派/追随者)",
+        "meaning_en": "A branch of Islam whose followers believe in the spiritual and political leadership of Ali and his descendants, tracing back from the Prophet Muhammad.",
+        "meaning_zh": "什叶派：伊斯兰教的一个分支，信徒相信阿里及其后代的精神和政治领导权，追溯至先知穆罕默德",
+        "derivation": "Shi'at Ali(阿里的追随者) → 认为阿里才是合法继承人 → 与逊尼派分裂 → 萨法维帝国的国教",
+        "example": "Shi'a Islam became the official religion of the Safavid Empire, creating a lasting division with the Sunni Ottoman Empire.",
+        "example_zh": "什叶派伊斯兰教成为萨法维帝国的官方宗教，与逊尼派奥斯曼帝国形成了持久的分裂。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Sikhism",
+        "breakdown": "Sikh(锡克/学习者) + -ism(主义/信仰)",
+        "meaning_en": "A monotheistic religion that developed in South Asia during the 15th-16th centuries from interactions between Hindu and Islamic traditions.",
+        "meaning_zh": "锡克教：15-16世纪在南亚由印度教和伊斯兰教传统的互动中发展而来的一神教，是宗教融合的典型代表",
+        "derivation": "Sikh(旁遮普语：学习者) + -ism(信仰) → 纳纳克创立 → 融合印度教与伊斯兰教元素 → 一神信仰 + 平等理念",
+        "example": "Sikhism emerged in the Punjab region as a syncretic faith blending elements of Hindu devotional practice and Islamic monotheism.",
+        "example_zh": "锡克教在旁遮普地区兴起，是融合了印度教虔信修行和伊斯兰教一神论元素的混合信仰。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sunni",
+        "breakdown": "Sunni(逊尼派/遵循圣行者)",
+        "meaning_en": "The largest branch of Islam, whose followers accept the Sunna (teachings and practices of the Prophet Muhammad) and the authority of the caliphs.",
+        "meaning_zh": "逊尼派：伊斯兰教最大的分支，信徒接受圣行（先知穆罕默德的教导和实践）以及哈里发的权威",
+        "derivation": "Sunna(圣行/惯例) → 遵循先知传统 → 承认四大哈里发的合法性 → 奥斯曼帝国的国教 → 占穆斯林总数约85%",
+        "example": "Sunni Islam was the dominant faith of the Ottoman Empire, which positioned itself as the protector of the Sunni Muslim world.",
+        "example_zh": "逊尼派伊斯兰教是奥斯曼帝国的主要信仰，该帝国将自己定位为逊尼派穆斯林世界的保护者。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "syncretic belief systems",
+        "breakdown": "Syncretic(融合的) + Belief(信仰) + Systems(体系)",
+        "meaning_en": "Religious or spiritual systems that blend elements from two or more different belief traditions into a new combined practice.",
+        "meaning_zh": "融合性信仰体系：将两种或多种不同信仰传统的元素融合为新的综合实践的宗教或灵性体系",
+        "derivation": "Syn-(共同) + Cretic(混合) → 不同宗教元素交融 → 如锡克教融合印度教和伊斯兰教 → 文化接触的产物",
+        "example": "Syncretic belief systems developed in regions where Islam, Hinduism, and indigenous traditions came into contact, such as in Southeast Asia.",
+        "example_zh": "在伊斯兰教、印度教和本土传统相互接触的地区，如东南亚，发展出了融合性信仰体系。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Maritime Technology & Exploration",
+    "type": "root",
+    "meaning_en": "The technological innovations in shipbuilding and navigation, and the state-sponsored voyages of exploration that established transoceanic connections during 1450-1750",
+    "meaning_zh": "海洋技术与探索：1450-1750年间造船和航海技术创新，以及建立跨洋联系的国家资助探险航行",
+    "origin": "Unit 4: 1450-1750 跨洋联系",
+    "related": [
+      "Columbian Exchange & Colonial Economy",
+      "Land-Based Empires & Rivalries"
+    ],
+    "words": [
+      {
+        "word": "transoceanic travel",
+        "breakdown": "Trans-(跨越) + Oceanic(大洋的) + Travel(旅行)",
+        "meaning_en": "Long-distance ocean travel across the Atlantic and other major bodies of water that connected the Eastern and Western Hemispheres.",
+        "meaning_zh": "跨洋航行：横跨大西洋和其他主要水域的远距离航海旅行，连接了东半球和西半球",
+        "derivation": "Trans-(横跨) + Ocean(大洋) + -ic(的) → 跨越大洋的航行 → 哥伦布横渡大西洋 → 全球联系从此开始",
+        "example": "Transoceanic travel transformed global trade by connecting the Americas with Europe, Africa, and Asia.",
+        "example_zh": "跨洋航行通过连接美洲与欧洲、非洲和亚洲，改变了全球贸易格局。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "astronomical charts",
+        "breakdown": "Astronomical(天文的) + Charts(图表/海图)",
+        "meaning_en": "Maps and diagrams showing positions of stars and celestial bodies used for navigation and determining latitude at sea.",
+        "meaning_zh": "天文图表：显示星体和天体位置的地图和图表，用于航海导航和确定海上纬度",
+        "derivation": "Astro-(星/天) + -nomical(学科的) + Chart(图表) → 绘制星空位置 → 确定纬度 → 远洋航行的导航依据",
+        "example": "Astronomical charts enabled sailors to determine their latitude by observing the positions of stars and celestial bodies.",
+        "example_zh": "天文图表使水手能够通过观察星体和天体的位置来确定纬度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "caravel",
+        "breakdown": "Caravel(卡拉维尔帆船)",
+        "meaning_en": "A small, highly maneuverable sailing ship developed in Portugal with triangular sails, used for exploration and trade.",
+        "meaning_zh": "卡拉维尔帆船：葡萄牙开发的小型高机动性帆船，配备三角帆，用于探险和贸易，是大航海时代的标志性船型",
+        "derivation": "Caravel(葡萄牙语caravela) → 小巧灵活 + 三角帆(lateen sail) → 能逆风航行 → 非洲海岸探险的主力船",
+        "example": "The caravel's maneuverability and ability to sail against the wind made it ideal for Portuguese exploration along the African coast.",
+        "example_zh": "卡拉维尔帆船的机动性和逆风航行能力使其成为葡萄牙人沿非洲海岸探险的理想船型。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "carrack",
+        "breakdown": "Carrack(克拉克大帆船)",
+        "meaning_en": "A large, multi-decked sailing ship with high castles at bow and stern, used for long-distance ocean voyages and trade.",
+        "meaning_zh": "克拉克大帆船：具有高船首和船尾楼的大型多层甲板帆船，用于远距离跨洋航行和贸易",
+        "derivation": "Carrack(阿拉伯语qaraqir) → 大型远洋帆船 → 多层甲板 + 大载货量 → 跨大西洋贸易的主力船",
+        "example": "Carracks were the primary vessels used by Spanish and Portuguese sailors for transoceanic voyages to the Americas and Asia.",
+        "example_zh": "克拉克大帆船是西班牙和葡萄牙水手跨洋航行至美洲和亚洲的主要船只。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "fluyt",
+        "breakdown": "Fluyt(弗鲁特商船)",
+        "meaning_en": "A Dutch merchant ship designed for efficient cargo transport with a narrow hull and shallow draft, used in 17th-century trade.",
+        "meaning_zh": "弗鲁特商船：荷兰设计的高效货运商船，具有窄船体和浅吃水，广泛用于17世纪贸易，是荷兰海上霸权的关键",
+        "derivation": "Fluyt(荷兰语：货船) → 窄船体 + 浅吃水 + 少量船员 → 运输成本极低 → 荷兰商业霸权的秘密武器",
+        "example": "The fluyt gave Dutch merchants a competitive advantage by reducing shipping costs through its efficient design requiring fewer crew members.",
+        "example_zh": "弗鲁特商船通过其高效设计减少船员需求，降低了运输成本，为荷兰商人提供了竞争优势。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "lateen sail",
+        "breakdown": "Lateen(拉丁式的) + Sail(帆)",
+        "meaning_en": "A triangular sail rigged on a long diagonal spar, allowing ships to sail closer to the wind and improving maneuverability.",
+        "meaning_zh": "三角帆（拉丁帆）：安装在长斜桁上的三角形帆，使船只能更贴近风向航行，提高了操纵性能",
+        "derivation": "Lateen(拉丁式) + Sail(帆) → 三角形帆面 → 可迎风航行 → 源自阿拉伯单桅帆船 → 被欧洲人吸收改进",
+        "example": "The lateen sail, borrowed from Arab dhow designs, allowed European ships to sail more effectively against prevailing winds.",
+        "example_zh": "借鉴阿拉伯单桅帆船设计的三角帆使欧洲船只能更有效地逆风航行。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "patterns of trade",
+        "breakdown": "Patterns(模式) + of + Trade(贸易)",
+        "meaning_en": "The established routes, commodities, and commercial networks through which goods were exchanged between regions.",
+        "meaning_zh": "贸易模式：各地区之间进行商品交换的既有路线、商品种类和商业网络",
+        "derivation": "Pattern(模式) + Trade(贸易) → 固定航线 + 主要商品 + 贸易伙伴 → 形成稳定的全球商业体系",
+        "example": "New patterns of trade emerged as European maritime exploration connected previously isolated markets across the Atlantic.",
+        "example_zh": "随着欧洲海上探险连接了大西洋两岸此前孤立的市场，新的贸易模式应运而生。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "alternative sailing routes",
+        "breakdown": "Alternative(替代的) + Sailing(航行) + Routes(路线)",
+        "meaning_en": "New ocean pathways sought by European explorers to reach Asia, bypassing existing trade routes controlled by other powers.",
+        "meaning_zh": "替代航线：欧洲探险家寻找的新海上通道，绕过由其他势力控制的现有贸易路线以到达亚洲",
+        "derivation": "Alternative(替代的) + Sail(航行) + Route(路线) → 绕开奥斯曼控制的陆路 → 向西(哥伦布) + 向南(达伽马)",
+        "example": "The search for alternative sailing routes to Asia led Columbus westward across the Atlantic and da Gama southward around Africa.",
+        "example_zh": "寻找通往亚洲的替代航线促使哥伦布向西横跨大西洋，达伽马向南绕过非洲。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "maritime exploration",
+        "breakdown": "Maritime(海洋的) + Exploration(探索)",
+        "meaning_en": "Voyages by sea undertaken by European states to discover new trade routes and territories, particularly to Africa and Asia.",
+        "meaning_zh": "海上探险：欧洲国家为发现新贸易路线和领土而进行的海上航行，尤其是前往非洲和亚洲的航行",
+        "derivation": "Maritime(海洋的) + Explore(探索) + -ation(过程) → 国家资助 + 新航路 + 殖民征服 → 大航海时代",
+        "example": "Maritime exploration by Portugal and Spain in the 15th and 16th centuries opened new trade routes and led to European colonization.",
+        "example_zh": "15-16世纪葡萄牙和西班牙的海上探险开辟了新贸易路线并导致了欧洲殖民化。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "maritime technology",
+        "breakdown": "Maritime(海洋的) + Technology(技术)",
+        "meaning_en": "Advancements in ship design, navigation instruments, and nautical knowledge that enabled long-distance ocean voyages.",
+        "meaning_zh": "航海技术：船舶设计、导航仪器和航海知识的进步，使远距离跨洋航行成为可能",
+        "derivation": "Maritime(海洋的) + Technology(技术) → 指南针 + 星盘 + 新型帆船 → 突破近海限制 → 远洋航行成为可能",
+        "example": "Advances in maritime technology, including the magnetic compass and astrolabe, made long-distance ocean voyages possible.",
+        "example_zh": "航海技术的进步，包括磁罗盘和星盘的使用，使远距离跨洋航行成为可能。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "navigational skills",
+        "breakdown": "Navigational(导航的) + Skills(技能)",
+        "meaning_en": "Techniques and knowledge used to determine direction and location at sea, essential for successful maritime exploration.",
+        "meaning_zh": "航海技能：用于确定海上方向和位置的技术和知识，对成功的海上探险至关重要",
+        "derivation": "Navigate(导航) + -ional(形容词) + Skill(技能) → 星象定位 + 罗盘使用 + 海图绘制 → 安全抵达目的地",
+        "example": "Navigational skills such as celestial observation and compass use were critical for European explorers crossing unknown oceans.",
+        "example_zh": "天体观测和指南针使用等航海技能对欧洲探险家横跨未知海洋至关重要。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "state-supported",
+        "breakdown": "State(国家) + Supported(支持的)",
+        "meaning_en": "Funded, organized, or sponsored by government authorities rather than by private individuals or merchants.",
+        "meaning_zh": "国家资助的：由政府当局而非私人或商人出资、组织或赞助的，如西班牙王室资助哥伦布远航",
+        "derivation": "State(国家) + Support(支持) → 王室出资 + 政府授权 → 探险队代表国家利益 → 发现即占领",
+        "example": "State-supported expeditions by Spain and Portugal were driven by competition for new trade routes and colonial territories.",
+        "example_zh": "西班牙和葡萄牙的国家资助远征活动受到对新贸易路线和殖民地竞争的驱动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "states",
+        "breakdown": "States(国家/政治实体)",
+        "meaning_en": "Political entities or governments that exercised power and authority, particularly in organizing and funding maritime exploration during this period.",
+        "meaning_zh": "国家：行使权力和权威的政治实体或政府，在这一时期尤指组织和资助海上探险的欧洲国家",
+        "derivation": "State(国家) → 拥有主权的政治实体 → 组织探险 + 建立殖民地 + 争夺海上霸权",
+        "example": "European states competed fiercely to sponsor maritime exploration and claim new territories across the globe.",
+        "example_zh": "欧洲各国激烈竞争，资助海上探险并在全球各地宣称新领土。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "trading-post empire",
+        "breakdown": "Trading-post(贸易站) + Empire(帝国)",
+        "meaning_en": "A colonial system based on establishing fortified trading stations along coastlines to control trade rather than conquering large territories.",
+        "meaning_zh": "贸易站帝国：基于沿海岸线建立设防贸易站来控制贸易而非征服大片领土的殖民体系，葡萄牙为典型代表",
+        "derivation": "Trading(贸易) + Post(据点) + Empire(帝国) → 不占领内陆 → 沿海设立贸易站 → 控制关键航线和商品 → 以点带面",
+        "example": "Portugal established a trading-post empire across the Indian Ocean, controlling key ports rather than conquering inland territories.",
+        "example_zh": "葡萄牙在印度洋建立了贸易站帝国，控制关键港口而非征服内陆领土。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "transoceanic",
+        "breakdown": "Trans-(跨越) + Oceanic(大洋的)",
+        "meaning_en": "Crossing or spanning across oceans, referring to voyages that traveled across major bodies of water between continents.",
+        "meaning_zh": "跨洋的：横跨或穿越大洋的，指在各大洲之间穿越主要水域的航行",
+        "derivation": "Trans-(横跨) + Ocean(大洋) + -ic(的) → 从一个大洲到另一个大洲 → 连接东西半球 → 全球化的起点",
+        "example": "Transoceanic voyages by European explorers fundamentally changed the connections between the world's civilizations.",
+        "example_zh": "欧洲探险家的跨洋航行从根本上改变了世界各文明之间的联系。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "transoceanic trade",
+        "breakdown": "Transoceanic(跨洋的) + Trade(贸易)",
+        "meaning_en": "Commercial exchange of goods between Europe and distant regions across the Atlantic and Pacific Oceans.",
+        "meaning_zh": "跨洋贸易：欧洲与大西洋和太平洋对岸遥远地区之间的商品交换，开创了全球贸易新纪元",
+        "derivation": "Trans-(横跨) + Ocean(大洋) + Trade(贸易) → 大西洋三角贸易 + 马尼拉大帆船贸易 → 全球商业网络形成",
+        "example": "Transoceanic trade networks connected Europe, Africa, the Americas, and Asia in an unprecedented global exchange of goods.",
+        "example_zh": "跨洋贸易网络将欧洲、非洲、美洲和亚洲连接在前所未有的全球商品交换中。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Columbian Exchange & Colonial Economy",
+    "type": "root",
+    "meaning_en": "The transfer of plants, animals, diseases, and peoples between hemispheres, and the colonial economic systems that emerged from European expansion during 1450-1750",
+    "meaning_zh": "哥伦布交换与殖民经济：1450-1750年间东西半球之间动植物、疾病和人口的转移，以及欧洲扩张中形成的殖民经济体系",
+    "origin": "Unit 4: 1450-1750 哥伦布交换",
+    "related": [
+      "Maritime Technology & Exploration",
+      "Land-Based Empires & Rivalries"
+    ],
+    "words": [
+      {
+        "word": "Afro-Eurasian crops",
+        "breakdown": "Afro-Eurasian(亚非欧的) + Crops(农作物)",
+        "meaning_en": "Plants and grains from Africa, Europe, and Asia, including sugar and various fruits and grains, that were brought to the Americas by Europeans.",
+        "meaning_zh": "亚非欧作物：来自非洲、欧洲和亚洲的植物和谷物，包括甘蔗和各种水果谷物，由欧洲人带到美洲",
+        "derivation": "Afro(非洲) + Eurasian(欧亚的) + Crop(作物) → 旧大陆的农作物 → 甘蔗、小麦、水稻等 → 移植到美洲种植园",
+        "example": "Afro-Eurasian crops like sugar, wheat, and rice were introduced to the Americas, transforming the agricultural landscape.",
+        "example_zh": "甘蔗、小麦和水稻等亚非欧作物被引入美洲，改变了当地的农业面貌。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "American food crops",
+        "breakdown": "American(美洲的) + Food(食物) + Crops(农作物)",
+        "meaning_en": "Plants native to the Americas that became staple crops in Europe, Asia, and Africa following the Columbian Exchange.",
+        "meaning_zh": "美洲食物作物：原产于美洲的植物，在哥伦布交换后成为欧洲、亚洲和非洲的主食作物，如玉米、马铃薯、番茄",
+        "derivation": "American(美洲的) + Food(食物) + Crop(作物) → 玉米、马铃薯、番薯 → 传入旧大陆 → 引发人口爆炸",
+        "example": "American food crops such as maize, potatoes, and tomatoes dramatically increased food production and population growth across Eurasia.",
+        "example_zh": "玉米、马铃薯和番茄等美洲食物作物极大地提高了欧亚大陆的粮食产量和人口增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "cash crops",
+        "breakdown": "Cash(现金/商业) + Crops(农作物)",
+        "meaning_en": "Crops grown primarily for commercial sale and export rather than for local consumption.",
+        "meaning_zh": "经济作物：主要为商业销售和出口而种植的农作物，而非用于当地消费，如甘蔗、烟草、棉花",
+        "derivation": "Cash(现金) + Crop(作物) → 种来卖钱而非自己吃 → 甘蔗、烟草、棉花 → 种植园经济的核心",
+        "example": "Cash crops like sugar and tobacco drove the plantation economy in the Americas and fueled the demand for enslaved labor.",
+        "example_zh": "甘蔗和烟草等经济作物推动了美洲的种植园经济，并加剧了对奴隶劳动力的需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Columbian Exchange",
+        "breakdown": "Columbian(哥伦布的) + Exchange(交换)",
+        "meaning_en": "The transfer of plants, animals, diseases, and other goods between the Eastern and Western Hemispheres following European contact with the Americas.",
+        "meaning_zh": "哥伦布交换：欧洲人接触美洲后东西半球之间动植物、疾病和其他物品的转移，是人类历史上最重大的生态事件之一",
+        "derivation": "Columbus(哥伦布) + Exchange(交换) → 1492年后 → 旧大陆↔新大陆 → 动植物、疾病、人口大交换 → 改变全球生态",
+        "example": "The Columbian Exchange transformed ecosystems on both sides of the Atlantic by introducing new species and diseases.",
+        "example_zh": "哥伦布交换通过引入新物种和疾病改变了大西洋两岸的生态系统。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "disease vectors",
+        "breakdown": "Disease(疾病) + Vectors(载体/传播媒介)",
+        "meaning_en": "Organisms, such as mosquitoes and rats, that transmit infectious diseases from one location to another.",
+        "meaning_zh": "疾病传播媒介：将传染病从一个地方传播到另一个地方的生物体，如蚊子和老鼠",
+        "derivation": "Disease(疾病) + Vector(载体) → 蚊子传播疟疾 + 老鼠传播鼠疫 → 随船只跨洋传播 → 生态灾难",
+        "example": "Disease vectors like mosquitoes and rats were inadvertently transported across the Atlantic, spreading malaria and other illnesses.",
+        "example_zh": "蚊子和老鼠等疾病传播媒介被无意间跨大西洋运输，传播了疟疾和其他疾病。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "domesticated animals",
+        "breakdown": "Domesticated(驯化的) + Animals(动物)",
+        "meaning_en": "Animals brought by Europeans to the Americas, including horses, pigs, and cattle.",
+        "meaning_zh": "驯化动物：欧洲人带到美洲的动物，包括马、猪和牛，深刻改变了美洲的生态环境和原住民生活方式",
+        "derivation": "Domestic(家庭的) + -ate(使) → 驯化野生动物 → 马、牛、猪、羊传入美洲 → 改变原住民的生产和生活方式",
+        "example": "Domesticated animals such as horses and cattle, introduced by Europeans, transformed the economies and lifestyles of indigenous peoples in the Americas.",
+        "example_zh": "欧洲人引入的马和牛等驯化动物改变了美洲原住民的经济和生活方式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "endemic diseases",
+        "breakdown": "Endemic(地方性的) + Diseases(疾病)",
+        "meaning_en": "Diseases that are naturally present and established in a particular geographic region or population.",
+        "meaning_zh": "地方性疾病：在特定地理区域或人群中自然存在并已建立的疾病，当地人具有一定免疫力而外来者则不然",
+        "derivation": "En-(在…之中) + Dem(人民) + -ic(的) → 某地人民中常见的疾病 → 当地人有免疫力 → 外来者则易感染",
+        "example": "Endemic diseases in the Eastern Hemisphere, such as smallpox and measles, devastated indigenous American populations who lacked immunity.",
+        "example_zh": "东半球的天花和麻疹等地方性疾病摧毁了缺乏免疫力的美洲原住民。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "indigenous populations",
+        "breakdown": "Indigenous(原住的/土著的) + Populations(人口)",
+        "meaning_en": "The native peoples who originally inhabited territories before imperial conquest and colonization.",
+        "meaning_zh": "原住民：在帝国征服和殖民之前最初居住在某领土上的本地民族",
+        "derivation": "Indi-(在…之内) + Gen(产生) + -ous(的) → 在本地产生的 → 土生土长的居民 → 被殖民者征服和压迫",
+        "example": "Indigenous populations in the Americas suffered catastrophic population decline due to European diseases, warfare, and forced labor.",
+        "example_zh": "美洲原住民因欧洲疾病、战争和强迫劳动而遭受了灾难性的人口下降。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "malaria",
+        "breakdown": "Malaria(疟疾：Mal-坏的 + Aria-空气)",
+        "meaning_en": "A parasitic disease transmitted by mosquitoes that causes fever and is associated with poverty and inadequate public health infrastructure.",
+        "meaning_zh": "疟疾：由蚊子传播的寄生虫病，导致发热，与贫困和公共卫生基础设施不足有关",
+        "derivation": "Mal(坏的) + Aria(空气) → 古人认为是坏空气致病 → 实际由蚊子传播疟原虫 → 在热带殖民地肆虐",
+        "example": "Malaria, transmitted by mosquitoes, became a major killer in tropical colonial regions and shaped patterns of European settlement.",
+        "example_zh": "由蚊子传播的疟疾成为热带殖民地区的主要杀手，影响了欧洲人的定居模式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "measles",
+        "breakdown": "Measles(麻疹)",
+        "meaning_en": "An infectious disease transmitted from the Eastern Hemisphere to the Americas with devastating effects on indigenous populations.",
+        "meaning_zh": "麻疹：从东半球传入美洲的传染病，对原住民造成了毁灭性影响，因原住民完全缺乏免疫力",
+        "derivation": "Measles(麻疹) → 旧大陆的地方病 → 欧洲人带入美洲 → 原住民毫无免疫力 → 大规模死亡",
+        "example": "Measles, along with smallpox, decimated indigenous populations in the Americas who had no prior exposure to these diseases.",
+        "example_zh": "麻疹和天花一起摧毁了美洲原住民，他们此前从未接触过这些疾病。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "plantations",
+        "breakdown": "Plantation(种植园) + -s(复数)",
+        "meaning_en": "Large-scale agricultural estates focused on producing cash crops for export, typically using coerced labor.",
+        "meaning_zh": "种植园：专注于生产出口经济作物的大型农业庄园，通常使用强制劳动力，是殖民经济的支柱",
+        "derivation": "Plant(种植) + -ation(场所) → 大规模单一作物种植 → 甘蔗/烟草/棉花 → 依赖奴隶劳动 → 殖民经济命脉",
+        "example": "Plantations in the Caribbean and Brazil produced sugar and tobacco using the labor of millions of enslaved Africans.",
+        "example_zh": "加勒比海和巴西的种植园使用数百万非洲奴隶的劳动力生产甘蔗和烟草。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "smallpox",
+        "breakdown": "Small(小的) + Pox(痘疮)",
+        "meaning_en": "A highly contagious disease brought from the Eastern Hemisphere to the Americas that caused massive mortality among indigenous populations.",
+        "meaning_zh": "天花：从东半球传入美洲的高度传染性疾病，在原住民中造成了大规模死亡，是哥伦布交换中最致命的疾病",
+        "derivation": "Small(小的) + Pox(痘) → 区别于大痘(great pox/梅毒) → 欧洲人携带入美洲 → 原住民人口锐减90%",
+        "example": "Smallpox was the most devastating disease of the Columbian Exchange, killing an estimated 90% of some indigenous populations.",
+        "example_zh": "天花是哥伦布交换中最具毁灭性的疾病，估计杀死了某些原住民群体90%的人口。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Asante",
+        "breakdown": "Asante(阿散蒂)",
+        "meaning_en": "A West African state whose growth and influence expanded through participation in maritime and regional trading networks during the 16th-18th centuries.",
+        "meaning_zh": "阿散蒂王国：16-18世纪通过参与海上和区域贸易网络而扩大影响力的西非国家，以黄金贸易闻名",
+        "derivation": "Asante(阿散蒂族) → 黄金海岸崛起 → 控制黄金和奴隶贸易 → 与欧洲商人交易 → 成为西非强国",
+        "example": "The Asante Kingdom grew wealthy and powerful through its control of gold resources and participation in Atlantic trade networks.",
+        "example_zh": "阿散蒂王国通过控制黄金资源和参与大西洋贸易网络变得富有而强大。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "chattel slavery",
+        "breakdown": "Chattel(动产/财产) + Slavery(奴隶制)",
+        "meaning_en": "A labor system in which enslaved people are treated as property that can be bought, sold, and inherited.",
+        "meaning_zh": "动产奴隶制：一种将被奴役者视为可以买卖和继承的财产的劳动制度，是大西洋奴隶贸易的核心特征",
+        "derivation": "Chattel(动产/财产) + Slave(奴隶) → 人被视为物品 → 可买卖、转让、继承 → 最残酷的奴隶制形式",
+        "example": "Chattel slavery in the Americas treated enslaved Africans as property, stripping them of all legal rights and human dignity.",
+        "example_zh": "美洲的动产奴隶制将被奴役的非洲人视为财产，剥夺了他们所有的法律权利和人格尊严。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "colonial economies",
+        "breakdown": "Colonial(殖民的) + Economies(经济)",
+        "meaning_en": "Economic systems established in colonized territories, typically organized to benefit the colonizing power.",
+        "meaning_zh": "殖民经济：在殖民地建立的经济体系，通常以有利于殖民宗主国为目的而组织运作",
+        "derivation": "Colony(殖民地) + -ial(的) + Economy(经济) → 宗主国获利 → 殖民地提供原材料 → 重商主义的体现",
+        "example": "Colonial economies in Latin America were structured to extract raw materials and precious metals for export to Europe.",
+        "example_zh": "拉丁美洲的殖民经济被组织成开采原材料和贵金属出口到欧洲的结构。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "economic systems",
+        "breakdown": "Economic(经济的) + Systems(体系)",
+        "meaning_en": "The organized structures and methods by which societies produce, distribute, and consume goods and services.",
+        "meaning_zh": "经济体系：社会生产、分配和消费商品与服务的有组织的结构和方法",
+        "derivation": "Economy(经济) + System(体系) → 生产什么 + 如何分配 + 谁来消费 → 决定社会运转方式",
+        "example": "New economic systems emerged during the colonial period as European powers integrated global markets through mercantilism.",
+        "example_zh": "殖民时期随着欧洲列强通过重商主义整合全球市场，新的经济体系应运而生。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "encomienda",
+        "breakdown": "Encomienda(恩科米恩达/委托监护制)",
+        "meaning_en": "A Spanish colonial labor system that granted colonists control over indigenous peoples' labor in exchange for their protection and conversion to Christianity.",
+        "meaning_zh": "恩科米恩达制度：西班牙殖民劳动制度，授予殖民者控制原住民劳动力的权利，以换取对他们的保护和基督教化",
+        "derivation": "Encomendar(西班牙语：委托) → 国王「委托」原住民给殖民者 → 名义上保护+传教 → 实际上强制劳动+剥削",
+        "example": "The encomienda system allowed Spanish colonists to exploit indigenous labor under the guise of religious instruction and protection.",
+        "example_zh": "恩科米恩达制度允许西班牙殖民者以宗教教化和保护为幌子剥削原住民劳动力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "hacienda",
+        "breakdown": "Hacienda(庄园/大地产)",
+        "meaning_en": "A large agricultural estate in Spanish America, typically worked by indigenous peoples or enslaved laborers.",
+        "meaning_zh": "庄园（阿西恩达）：西属美洲的大型农业地产，通常由原住民或被奴役的劳动者耕作",
+        "derivation": "Hacienda(西班牙语：庄园) → 大地主占有大片土地 → 原住民和混血农民为佃农 → 殖民地社会的经济基础",
+        "example": "Haciendas in colonial Mexico and Peru were large agricultural estates that relied on the labor of indigenous peoples and mestizo workers.",
+        "example_zh": "殖民时期墨西哥和秘鲁的庄园是依赖原住民和混血工人劳动的大型农业地产。",
         "toefl_frequency": "medium"
       }
     ]

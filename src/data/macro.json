@@ -1,0 +1,821 @@
+[
+  {
+    "root": "Scarcity",
+    "type": "root",
+    "meaning_en": "the fundamental economic problem that resources are limited while wants are unlimited",
+    "meaning_zh": "稀缺性：经济学的根本问题——资源有限但人的欲望无限。例如全世界淡水只有这么多，但人口在增长，所以必须做选择",
+    "origin": "Unit 1: 1.1 Scarcity",
+    "related": [],
+    "words": [
+      {
+        "word": "capital",
+        "breakdown": "Capital(资本) — 生产要素之一",
+        "meaning_en": "a factor of production consisting of tools, equipment, and infrastructure used to produce goods and services",
+        "meaning_zh": "资本：生产要素之一，包括工具、设备和基础设施。例如工厂里的机床、餐馆的烤箱、网约车司机的汽车，都是资本",
+        "derivation": "Capital(头部，主要的) → 头号生产工具 → 用来造其他东西的东西",
+        "mnemonic": "「资本」不是钱本身，而是钱买的「能造东西的东西」——所以印钞机解决不了缺资本",
+        "example": "A factory's capital includes its machines, conveyor belts, and warehouses.",
+        "example_zh": "一个工厂的资本包括机器、传送带和仓库。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "factors of production",
+        "breakdown": "Factors(要素) + of + Production(生产)",
+        "meaning_en": "the resources used to produce goods and services, including land, labor, capital, and entrepreneurship",
+        "meaning_zh": "生产要素：用于生产商品与服务的所有资源，传统上分为土地、劳动、资本和企业家精神四类。少了任何一项都造不出东西",
+        "derivation": "Factor(因素) + Production(生产) → 决定产量的关键投入",
+        "mnemonic": "记住四要素：土地(L)+劳动(L)+资本(K)+企业家(E) → \"LLKE\" 听起来像\"老柯\"",
+        "example": "All four factors of production are needed to open a bakery: a shop space, bakers, ovens, and someone to plan it.",
+        "example_zh": "开一家面包店需要全部四种生产要素：店面、面包师、烤箱，以及做规划的人。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "labor",
+        "breakdown": "Labor(劳动) — 生产要素之一",
+        "meaning_en": "a factor of production consisting of human effort and skills used to produce goods and services",
+        "meaning_zh": "劳动：生产要素之一，指人付出的体力和脑力。从工厂工人到软件工程师，都是劳动",
+        "derivation": "Labor(辛劳) → 人类付出的努力 → 既包括搬砖也包括写代码",
+        "mnemonic": "Labor Day（劳动节）就是为了纪念这一生产要素",
+        "example": "Skilled labor is essential for advanced manufacturing.",
+        "example_zh": "高级制造业离不开熟练的劳动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "land",
+        "breakdown": "Land(土地) — 生产要素之一",
+        "meaning_en": "a factor of production that includes natural resources and physical space used in production",
+        "meaning_zh": "土地：生产要素之一，不只是地皮，还包含森林、矿藏、水源等所有自然资源。农场要地、工厂要地、连数据中心都要地",
+        "derivation": "Land(陆地) → 大自然给的一切 → 土地+矿+森林+水",
+        "mnemonic": "Land 不只是\"地\"，是\"大自然的礼物包\"——挖矿、伐木、捕鱼都算用 Land",
+        "example": "A coffee farm depends on fertile land and the right climate.",
+        "example_zh": "咖啡农场依赖肥沃的土地和合适的气候。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "non-rival",
+        "breakdown": "Non(非) + Rival(竞争) → 非竞争性",
+        "meaning_en": "a characteristic of a good or resource where one person's use does not prevent another person from using it simultaneously",
+        "meaning_zh": "非竞争性：一种商品或资源的特征，指我用了不影响你用。例如路灯、广播、网上的开源代码——一万人同时享受也不会用完",
+        "derivation": "Non(不) + Rival(对手) → 不需要抢 → 我用你也能用",
+        "mnemonic": "苹果是 rival（你吃了我就没得吃），但维基百科是 non-rival（一亿人同时看也不少一个字）",
+        "example": "A radio broadcast is non-rival because adding listeners doesn't reduce the signal.",
+        "example_zh": "广播是非竞争性的，因为多增加听众并不会减少信号。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "resources",
+        "breakdown": "Re(再) + source(来源) → 可被使用的来源",
+        "meaning_en": "inputs or materials used to produce goods and services, including factors of production such as land, labor, and capital",
+        "meaning_zh": "资源：用来生产商品和服务的投入物或原料，涵盖土地、劳动、资本等生产要素。「资源稀缺」是经济学的起点",
+        "derivation": "Re(再) + source(来源) → 可以反复取用的源头 → 但实际上有限",
+        "mnemonic": "Resource = Re-Source（一次次地取用），但水井总有干涸的一天",
+        "example": "Oil, water, and skilled workers are all resources used in production.",
+        "example_zh": "石油、水和熟练工人都是生产中使用的资源。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "scarcity",
+        "breakdown": "Scarce(稀少的) + ity(名词) → 稀缺性",
+        "meaning_en": "the fundamental economic problem that resources are limited while wants and needs are unlimited",
+        "meaning_zh": "稀缺性：经济学的根本问题——资源有限，但人的需求无限。正因为稀缺，每个选择都意味着放弃别的，这就是经济学存在的理由",
+        "derivation": "Scarce(稀少) + ity → 稀少的状态 → 人想要的永远比能得到的多",
+        "mnemonic": "如果人的欲望不无限或者资源不有限，经济学这门课就不存在了——稀缺是一切的开端",
+        "example": "Scarcity forces every country to decide how to use its limited budget.",
+        "example_zh": "稀缺性迫使每个国家都要决定如何使用有限的预算。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "trade-offs",
+        "breakdown": "Trade(交换) + off(放弃) → 权衡取舍",
+        "meaning_en": "the choices made when selecting one option over another due to limited resources and competing wants",
+        "meaning_zh": "权衡取舍：因为资源有限、欲望相互竞争，选了 A 就要放弃 B 的决策过程。例如一晚上要么学习要么打游戏，时间只有这么多",
+        "derivation": "Trade(交易) + off(掉) → 用一个换走另一个 → 没有两全",
+        "mnemonic": "「鱼与熊掌不可兼得」就是 trade-off 的中文翻译",
+        "example": "Choosing to study for the exam meant trading off a night out with friends.",
+        "example_zh": "选择为考试复习意味着放弃了和朋友外出的夜晚。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Opportunity Cost and the Production Possibilities Curve (PPC)",
+    "type": "root",
+    "meaning_en": "how the PPC graphically represents scarcity, opportunity cost, efficiency, and growth",
+    "meaning_zh": "机会成本与生产可能性曲线：用一条曲线把\"鱼与熊掌不可兼得\"画出来。曲线上的点是高效，曲线内的点是浪费，曲线外的点是\"暂时做不到\"。每移动一步都付出机会成本",
+    "origin": "Unit 1: 1.2 Opportunity Cost and the Production Possibilities Curve (PPC)",
+    "related": ["Scarcity", "Comparative Advantage and Trade"],
+    "words": [
+      {
+        "word": "constant opportunity costs",
+        "breakdown": "Constant(不变的) + Opportunity Cost(机会成本)",
+        "meaning_en": "a situation where the opportunity cost of producing one good remains the same regardless of the quantity produced, resulting in a linear PPC",
+        "meaning_zh": "不变的机会成本：每多产 1 单位 A 都要放弃同样数量的 B，PPC 是一条直线。意味着资源在 A 和 B 之间可以完美互换",
+        "derivation": "Constant(常数) + 机会成本 → 每次取舍代价都相等 → PPC 画出来是直线",
+        "mnemonic": "直线 PPC = 不变机会成本：资源像乐高积木，搭飞机和搭车一样灵活",
+        "example": "If a worker can switch between picking apples and oranges with equal ease, opportunity costs are constant.",
+        "example_zh": "如果一个工人采苹果和橘子同样轻松，那么机会成本就是不变的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "decreasing opportunity costs",
+        "breakdown": "Decreasing(递减的) + Opportunity Cost(机会成本)",
+        "meaning_en": "a situation where the opportunity cost of producing one good decreases as more of that good is produced, resulting in a bowed-in PPC",
+        "meaning_zh": "递减的机会成本：越多生产 A，每多 1 单位需要放弃的 B 反而越少，PPC 凹向原点。在现实经济中很少见，多用于理论对比",
+        "derivation": "Decreasing(变少) + 机会成本 → 越生产越便宜 → 出现规模经济",
+        "mnemonic": "凹进去的 PPC ≈ 越做越熟练，第 100 件成本反而比第 10 件低",
+        "example": "Decreasing opportunity costs are rare, but appear when learning effects make repeated production cheaper.",
+        "example_zh": "机会成本递减很少见，但当学习效应让重复生产变得更便宜时会出现。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "economic contraction",
+        "breakdown": "Economic(经济的) + Contraction(收缩)",
+        "meaning_en": "a decrease in an economy's capacity to produce goods and services, typically represented by an inward shift of the PPC",
+        "meaning_zh": "经济收缩：一国生产能力的下降，PPC 整条向内移。可能由战争、瘟疫、自然灾害或资本设备老化造成",
+        "derivation": "Contraction(收缩) → 经济变小 → PPC 向原点方向萎缩",
+        "mnemonic": "看到 PPC 向内缩 = 经济在生病，可能是疫情、战争、地震",
+        "example": "The pandemic caused an economic contraction as factories shut down.",
+        "example_zh": "疫情造成了经济收缩，因为工厂纷纷停工。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "economic growth",
+        "breakdown": "Economic(经济的) + Growth(增长)",
+        "meaning_en": "an increase in the production of goods and services in an economy over time, measured by the growth rate of real GDP per capita",
+        "meaning_zh": "经济增长：一国产出能力随时间提升，PPC 整条向外推。通常用真实人均 GDP 增长率衡量。生产要素增加或技术进步都能带来增长",
+        "derivation": "Economic(经济) + Growth(成长) → 蛋糕越做越大 → PPC 向外推",
+        "mnemonic": "PPC 向外 = 蛋糕变大 = 大家都能多分一点（前提是分配合理）",
+        "example": "Economic growth allows a country to produce more of both consumer and capital goods.",
+        "example_zh": "经济增长让一个国家可以同时生产更多的消费品和资本品。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "efficiency",
+        "breakdown": "Efficient(高效的) + cy(名词) → 效率",
+        "meaning_en": "the production of the maximum output from a given set of resources, represented by points on the PPC",
+        "meaning_zh": "效率：用一组资源生产出最大产量的状态，对应 PPC 曲线上的所有点。任何曲线内的点都意味着浪费",
+        "derivation": "Efficient(有效的) + cy → 不浪费 → 物尽其用",
+        "mnemonic": "PPC 曲线上的每一点都是「100% 满血」，曲线内的点都是「血量未满」",
+        "example": "An economy operating on its PPC has achieved productive efficiency.",
+        "example_zh": "运行在 PPC 上的经济实现了生产效率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "factors of production",
+        "breakdown": "Factors(要素) + Production(生产)",
+        "meaning_en": "the resources used to produce goods and services, including land, labor, capital, and entrepreneurship",
+        "meaning_zh": "生产要素：投入到生产中的所有资源——土地、劳动、资本、企业家精神。生产要素增加 → PPC 向外推 → 经济增长",
+        "derivation": "Factor(决定因素) + Production → 决定能造多少的关键投入",
+        "mnemonic": "PPC 外推的两条路：要素更多 或 技术更好，缺一不可",
+        "example": "An influx of immigrant workers expands a country's factors of production.",
+        "example_zh": "移民工人的流入扩大了一国的生产要素。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "increasing opportunity costs",
+        "breakdown": "Increasing(递增的) + Opportunity Cost(机会成本)",
+        "meaning_en": "a situation where the opportunity cost of producing one good increases as more of that good is produced, resulting in a bowed-out PPC",
+        "meaning_zh": "递增的机会成本：越多生产 A，每多 1 单位放弃的 B 越多，PPC 是凸向外的曲线（向外鼓）。这是现实中最常见的形状，因为资源不可能完美互换",
+        "derivation": "Increasing(递增) + 机会成本 → 越多越贵 → PPC 向外凸出",
+        "mnemonic": "PPC 凸出 = 现实世界：把农民全部抓去造手机？最差的农民也得改行，效率掉得快",
+        "example": "Increasing opportunity costs explain why moving all farmers into factories sharply reduces food production.",
+        "example_zh": "机会成本递增解释了为什么把所有农民都调去工厂会让粮食产量急剧下降。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inefficiency",
+        "breakdown": "In(不) + efficient(有效的) + cy",
+        "meaning_en": "a situation where resources are not being used optimally, resulting in production below the maximum possible output",
+        "meaning_zh": "低效：资源没有得到最优利用，产出低于最大可能水平。在 PPC 图上对应曲线内部的点——你本可以多生产却没有",
+        "derivation": "In(不) + efficiency(效率) → 不到位 → PPC 内部",
+        "mnemonic": "PPC 内的点都是「资源没用满」——可能是失业、闲置工厂、技能不匹配",
+        "example": "High unemployment is a sign of inefficiency in the economy.",
+        "example_zh": "高失业率是经济低效的一个信号。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "opportunity cost",
+        "breakdown": "Opportunity(机会) + Cost(成本)",
+        "meaning_en": "the value of the next best alternative that must be given up when making a choice",
+        "meaning_zh": "机会成本：做出一个选择时，你所放弃的最有价值的替代方案。例如周六去打工赚 200 元 vs 复习考试，复习的机会成本就是那 200 元",
+        "derivation": "Opportunity(机会) + Cost → 放弃的机会的价值 → 成本不只是钱",
+        "mnemonic": "经济学最核心的概念：「免费」其实从来不存在——你总在放弃别的东西",
+        "example": "The opportunity cost of studying medicine is the salary you could have earned in those years.",
+        "example_zh": "学医的机会成本是那些年你本可以赚到的薪水。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Production Possibilities Curve",
+        "breakdown": "Production(生产) + Possibilities(可能性) + Curve(曲线)",
+        "meaning_en": "a graph showing the maximum combinations of two goods that can be produced with available resources and technology",
+        "meaning_zh": "生产可能性曲线：用一张图展示两种商品在现有资源和技术下能达到的最大产量组合。曲线上的点高效，内部点浪费，外部点暂时做不到",
+        "derivation": "Production(生产) + Possibilities(可能性) → 能造出来的所有组合 → 边界线就是 PPC",
+        "mnemonic": "PPC 是经济学第一张图：教你用一根曲线讲清「稀缺、效率、机会成本、增长」全部概念",
+        "example": "The PPC shows the trade-off between producing guns and butter.",
+        "example_zh": "PPC 展示了生产大炮和黄油之间的取舍。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "productivity",
+        "breakdown": "Product(产品) + ivity(名词) → 生产率",
+        "meaning_en": "the amount of output produced per unit of input, such as output per worker or output per hour of labor",
+        "meaning_zh": "生产率：每单位投入产出的数量，例如每工人每小时能造多少件商品。生产率提升是长期经济增长的根本来源",
+        "derivation": "Product(产品) + ivity → 单位投入造出多少产品",
+        "mnemonic": "GDP 增长 = 人口增长 + 生产率增长——发达国家几乎只能靠后者",
+        "example": "Better tools doubled the workers' productivity in just a year.",
+        "example_zh": "更好的工具在一年内就让工人的生产率翻了一番。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "scarcity",
+        "breakdown": "Scarce(稀少) + ity → 稀缺性",
+        "meaning_en": "the fundamental economic problem that resources are limited while wants and needs are unlimited",
+        "meaning_zh": "稀缺性：在 PPC 框架下，稀缺性体现为\"曲线之外的点暂时无法到达\"——你不可能既生产无限的枪，又生产无限的黄油",
+        "derivation": "Scarce(稀少) + ity → PPC 之外的世界 → 资源不允许",
+        "mnemonic": "PPC 外面的点 = \"如果不稀缺该多好\"，但现实就是到不了",
+        "example": "Scarcity is the reason a country cannot produce unlimited goods at once.",
+        "example_zh": "稀缺性是一个国家无法同时生产无限商品的原因。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "technology",
+        "breakdown": "Techno(技艺) + logy(学问) → 技术",
+        "meaning_en": "tools, techniques, and knowledge used in production that improve efficiency and output",
+        "meaning_zh": "技术：用于生产的工具、技巧和知识。技术进步是 PPC 向外移动的两条路径之一（另一条是要素增加）",
+        "derivation": "Techno(技艺) + logy(学) → 怎么做得更好的本事",
+        "mnemonic": "蒸汽机、电力、互联网、AI——每一次技术革命都把全世界 PPC 推外一大截",
+        "example": "Technology advances have allowed farmers to produce far more food per acre.",
+        "example_zh": "技术进步让农民每英亩可以生产远超以往的粮食。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "trade-offs",
+        "breakdown": "Trade(交换) + off(放弃) → 权衡取舍",
+        "meaning_en": "the choices made when selecting one option over another due to limited resources and competing wants",
+        "meaning_zh": "权衡取舍：在 PPC 框架下，权衡体现为\"沿曲线移动\"——多生产 A 必然少生产 B。这种取舍量化后就是机会成本",
+        "derivation": "Trade(换) + off(掉) → 沿 PPC 移动一步 → 必有得失",
+        "mnemonic": "在 PPC 上每挪一步都要付费 = 机会成本",
+        "example": "Producing more military equipment requires trade-offs in consumer goods production.",
+        "example_zh": "多生产军事装备需要在消费品生产上做出取舍。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "underutilized resources",
+        "breakdown": "Under(不足) + utilized(被利用的) + resources(资源)",
+        "meaning_en": "resources that are not being used to their full productive capacity, represented by points inside the PPC",
+        "meaning_zh": "未充分利用的资源：没被发挥到最大产能的资源，对应 PPC 内部的点。例如失业的工人、闲置的工厂，都是被浪费的产能",
+        "derivation": "Under(不到位) + utilize(利用) → 没榨干 → PPC 内部的点",
+        "mnemonic": "PPC 内的点 = 「明明能做更多却没做」——经济在打盹",
+        "example": "High unemployment means underutilized labor resources.",
+        "example_zh": "高失业率意味着劳动资源未被充分利用。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Comparative Advantage and Trade",
+    "type": "root",
+    "meaning_en": "how comparative advantage and specialization create gains from trade",
+    "meaning_zh": "比较优势与贸易：即使一国在所有商品上都不如对方，只要在某种商品上的机会成本更低，双方专业化分工再交易就能双赢。这是国际贸易最强有力的论证",
+    "origin": "Unit 1: 1.3 Comparative Advantage and Trade",
+    "related": ["Opportunity Cost and the Production Possibilities Curve (PPC)", "Scarcity"],
+    "words": [
+      {
+        "word": "absolute advantage",
+        "breakdown": "Absolute(绝对) + Advantage(优势)",
+        "meaning_en": "a situation in which an individual, business, or country can produce more of a good or service than any other producer with the same quantity of resources",
+        "meaning_zh": "绝对优势：用同样的资源能比对方造出更多的产品。例如同样 1 小时美国农民能产 10 蒲式耳小麦，而中国农民只能产 5 蒲式耳，美国就有绝对优势",
+        "derivation": "Absolute(绝对的) + Advantage → 单纯比谁产量多 → 不看代价",
+        "mnemonic": "绝对优势看「谁更猛」，比较优势看「谁更便宜」——后者才决定贸易",
+        "example": "Saudi Arabia has an absolute advantage in oil production due to its vast reserves.",
+        "example_zh": "沙特阿拉伯凭借巨大的储量在石油生产上拥有绝对优势。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "comparative advantage",
+        "breakdown": "Comparative(比较的) + Advantage(优势)",
+        "meaning_en": "the ability of a producer to create a good or service at a lower opportunity cost than another producer",
+        "meaning_zh": "比较优势：以更低的机会成本生产某种商品的能力。这才是贸易的真正基础——即使你哪样都不如对方，只要在某样上「相对吃亏少」，就该专做这样",
+        "derivation": "Comparative(相比之下) + Advantage → 看谁放弃得少 → 机会成本更低的赢",
+        "mnemonic": "比较优势的金句：「即使乔布斯打字比秘书快，他也该让秘书打字」——因为他打字的机会成本太高",
+        "example": "China has a comparative advantage in manufacturing electronics due to lower opportunity costs.",
+        "example_zh": "中国因机会成本较低，在电子产品制造上拥有比较优势。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "consumption opportunities",
+        "breakdown": "Consumption(消费) + Opportunities(机会)",
+        "meaning_en": "the range of goods and services that can be consumed, which may extend beyond what a producer can make alone through specialization and trade",
+        "meaning_zh": "消费可能性：一国能消费的所有商品组合。通过专业化和贸易，消费可能性曲线可以推到 PPC 之外——这是贸易最神奇的好处",
+        "derivation": "Consumption(消费) + Opportunities → 能享受到的东西 → 贸易后可超过自己 PPC",
+        "mnemonic": "贸易让你「消费 > 生产」——这就是为什么没有国家闭关锁国会更富裕",
+        "example": "Trade expands consumption opportunities beyond a country's PPC.",
+        "example_zh": "贸易让消费可能性超出了一国的 PPC 范围。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "gains from trade",
+        "breakdown": "Gains(收益) + from + Trade(贸易)",
+        "meaning_en": "the economic benefits that result when producers specialize according to comparative advantage and engage in mutually beneficial exchange",
+        "meaning_zh": "贸易收益：当生产者按照比较优势分工再交换时，双方获得的额外收益。结果是「1+1>2」——总产出比各干各的更高",
+        "derivation": "Gain(收获) + Trade → 通过交换得来的好处 → 双方都赚",
+        "mnemonic": "贸易不是零和：经济学最美的发现之一——交换让蛋糕变大",
+        "example": "The gains from trade allow both countries to consume more than they could produce alone.",
+        "example_zh": "贸易收益让两国都能消费比独自生产更多的商品。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "mutually beneficial trade",
+        "breakdown": "Mutually(相互地) + Beneficial(有益的) + Trade(贸易)",
+        "meaning_en": "exchange between trading partners where both parties gain from the transaction",
+        "meaning_zh": "互利贸易：贸易双方都获益的交换。只要交换比率落在双方机会成本之间，这次贸易就一定互利",
+        "derivation": "Mutual(相互) + Benefit → 双方都受益 → 而非一方占便宜",
+        "mnemonic": "好的贸易像谈恋爱：必须双方都开心，否则迟早分手",
+        "example": "Mutually beneficial trade ensures that no party feels cheated by the deal.",
+        "example_zh": "互利的贸易确保任何一方都不会觉得自己吃亏。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "opportunity cost",
+        "breakdown": "Opportunity(机会) + Cost(成本)",
+        "meaning_en": "the value of the next best alternative that must be given up when making a choice",
+        "meaning_zh": "机会成本：在贸易语境下，机会成本是判断比较优势的尺子。谁生产某商品的机会成本低，谁就有比较优势，应该专做这样",
+        "derivation": "Opportunity(机会) + Cost → 在 1.3 中是判断比较优势的尺子",
+        "mnemonic": "比较优势 = 机会成本最低的人 → 专做这件事",
+        "example": "We compare opportunity costs to determine which country should produce wheat.",
+        "example_zh": "我们比较机会成本以决定哪个国家应该生产小麦。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Production Possibilities Curve",
+        "breakdown": "Production(生产) + Possibilities(可能性) + Curve(曲线)",
+        "meaning_en": "a graph showing the maximum combinations of two goods that can be produced with available resources and technology",
+        "meaning_zh": "生产可能性曲线：在贸易讨论中，PPC 用来显示两国「自给自足」时各自能产的组合。引入贸易后，消费组合可以跑到 PPC 外面",
+        "derivation": "PPC → 在 1.3 中作为「无贸易时的产能上限」",
+        "mnemonic": "贸易前 PPC = 生产=消费；贸易后消费>生产，PPC 不再是消费上限",
+        "example": "Each country's PPC sets the limits of what it can produce without trade.",
+        "example_zh": "每个国家的 PPC 设定了在没有贸易时它能生产的上限。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "specialization",
+        "breakdown": "Special(专门的) + ization(名词) → 专业化",
+        "meaning_en": "the concentration of production effort by individuals, regions, or countries on goods or services in which they have a comparative advantage",
+        "meaning_zh": "专业化：把生产资源集中在自己最有比较优势的产品上。然后通过贸易换取其他东西。这是分工经济最核心的逻辑",
+        "derivation": "Special(专门) + ization → 只做擅长的事 → 然后用贸易换其他",
+        "mnemonic": "亚当斯密的针厂故事：分工让产量翻几十倍——专业化是经济增长的引擎",
+        "example": "Specialization allows Switzerland to focus on watches and Saudi Arabia on oil.",
+        "example_zh": "专业化让瑞士专注于手表，让沙特专注于石油。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "terms of trade",
+        "breakdown": "Terms(条件) + of + Trade(贸易)",
+        "meaning_en": "the ratio at which one good or service is exchanged for another; the price at which trade occurs between trading partners",
+        "meaning_zh": "贸易条件：两种商品的交换比率，也就是贸易的「价格」。互利贸易要求该比率落在双方机会成本之间",
+        "derivation": "Terms(条款) + Trade → 交换的价目表 → 1 蒲式耳小麦 ↔ 多少米",
+        "mnemonic": "Terms of trade 是贸易的「汇率」——双方都得能接受这个价格才能成交",
+        "example": "The terms of trade determine how the gains from trade are split between the two countries.",
+        "example_zh": "贸易条件决定了贸易收益在两国之间如何分配。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Demand",
+    "type": "root",
+    "meaning_en": "the law of demand and the factors that shift the demand curve",
+    "meaning_zh": "需求：在其他条件不变时，价格和消费者愿意购买的数量呈反向关系。价格变 → 沿曲线移动；其他因素变（收入、偏好、相关品价格）→ 整条曲线平移",
+    "origin": "Unit 1: 1.4 Demand",
+    "related": ["Supply", "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"],
+    "words": [
+      {
+        "word": "consumer income",
+        "breakdown": "Consumer(消费者) + Income(收入)",
+        "meaning_en": "the total earnings and resources available to consumers, which influences their ability and willingness to purchase goods and services",
+        "meaning_zh": "消费者收入：消费者掌握的可支配收入总量，是需求的非价格决定因素之一。收入上升通常使正常品需求曲线右移，劣等品左移",
+        "derivation": "Consumer(消费者) + Income → 兜里的钱 → 钱多就敢花",
+        "mnemonic": "工资涨了 → 你买更多牛排（正常品）少买泡面（劣等品）",
+        "example": "Higher consumer income shifts the demand for cars to the right.",
+        "example_zh": "消费者收入提升让汽车的需求曲线向右移。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "demand curve",
+        "breakdown": "Demand(需求) + Curve(曲线)",
+        "meaning_en": "a graph showing the relationship between the price of a good and the quantity demanded, typically downward-sloping to reflect the law of demand",
+        "meaning_zh": "需求曲线：用一条向下倾斜的线表示价格和需求量的关系。X 轴是数量，Y 轴是价格——价格越低，消费者愿买的数量越多",
+        "derivation": "Demand(需求) + Curve → 把\"价格-数量\"画出来 → 一条向右下方的线",
+        "mnemonic": "需求曲线总是向下：价格涨 → 量减；价格降 → 量增——这是经济学第一直觉",
+        "example": "The demand curve for coffee slopes downward, showing more cups bought at lower prices.",
+        "example_zh": "咖啡的需求曲线向下倾斜，价格越低买的杯数越多。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "determinants of demand",
+        "breakdown": "Determinants(决定因素) + Demand(需求)",
+        "meaning_en": "factors that influence and cause changes in the quantity of a good or service that consumers are willing and able to buy at various price levels",
+        "meaning_zh": "需求的决定因素：除价格外影响需求的所有因素，常见有：收入、偏好、相关品价格、未来预期、消费者人数。这些一变，整条需求曲线就移动",
+        "derivation": "Determinants(决定者) + Demand → 价格之外推动需求的力量",
+        "mnemonic": "记住「TIPEN」：Tastes 偏好, Income 收入, Prices of related goods 相关品价格, Expectations 预期, Number of buyers 买家数",
+        "example": "Changes in determinants of demand cause the entire curve to shift.",
+        "example_zh": "需求决定因素的变化会让整条曲线发生平移。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "downward-sloping demand curve",
+        "breakdown": "Downward(向下) + Sloping(倾斜) + Demand Curve(需求曲线)",
+        "meaning_en": "a demand curve that slopes downward from left to right, illustrating the inverse relationship between price and quantity demanded",
+        "meaning_zh": "向下倾斜的需求曲线：从左上到右下的曲线，体现价格和需求量的反向关系。这是几乎所有商品的标准形态",
+        "derivation": "Downward(向下) + Sloping(斜) → 从左上到右下 → 价低量大",
+        "mnemonic": "需求曲线就像下坡的滑梯：价格滑下来，数量滑上去",
+        "example": "Almost every market shows a downward-sloping demand curve.",
+        "example_zh": "几乎每个市场都呈现向下倾斜的需求曲线。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "good",
+        "breakdown": "Good(物品) — 经济学里的有形商品",
+        "meaning_en": "a tangible product that can be produced, bought, and sold in a market",
+        "meaning_zh": "商品：有形的物品，可以被生产、购买和出售。例如手机、面包、衣服。和服务（service）相对",
+        "derivation": "Good(好东西) → 经济学语境下指任何可买可卖的有形物",
+        "mnemonic": "Goods 摸得着，Services 摸不着——这是经济学的基本二分",
+        "example": "Cars, books, and apples are all goods sold in different markets.",
+        "example_zh": "汽车、书籍和苹果都是在不同市场上销售的商品。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inverse relationship",
+        "breakdown": "Inverse(反向的) + Relationship(关系)",
+        "meaning_en": "a relationship between two variables where one increases as the other decreases, and vice versa",
+        "meaning_zh": "反向关系：两个变量一升一降的关系。需求曲线之所以向下，就是因为价格和需求量是反向关系",
+        "derivation": "Inverse(反过来) + Relationship → 一个涨另一个跌 → 跷跷板",
+        "mnemonic": "反向 = 跷跷板：一头上去，另一头必下来",
+        "example": "There is an inverse relationship between price and quantity demanded.",
+        "example_zh": "价格和需求量之间存在反向关系。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "law of demand",
+        "breakdown": "Law(定律) + of + Demand(需求)",
+        "meaning_en": "an economic principle stating that there is an inverse relationship between the price of a good and the quantity demanded by consumers, all else being equal",
+        "meaning_zh": "需求定律：在其他条件不变的前提下，价格和需求量呈反向关系。价格涨需求量减，价格降需求量增。注意——是「其他条件不变」时",
+        "derivation": "Law(定律) + Demand → 经济学的第一条定律之一",
+        "mnemonic": "需求定律 = 「越贵越少买」——这是几乎所有人的直觉",
+        "example": "The law of demand explains why sales attract more customers.",
+        "example_zh": "需求定律解释了为什么打折能吸引更多顾客。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "market demand curve",
+        "breakdown": "Market(市场) + Demand Curve(需求曲线)",
+        "meaning_en": "a graph showing the relationship between the price of a good and the total quantity demanded by all consumers in a market at each price level",
+        "meaning_zh": "市场需求曲线：把市场上所有消费者在每个价格下的需求量横向相加得到的曲线。它是个体需求曲线的水平加总",
+        "derivation": "Market(整个市场) + Demand Curve → 所有人需求曲线的横向相加",
+        "mnemonic": "个人需求是一根树枝，市场需求是把所有树枝绑成一棵树",
+        "example": "The market demand curve adds up the demand of every consumer in the city.",
+        "example_zh": "市场需求曲线把城市里每个消费者的需求加在一起。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "price",
+        "breakdown": "Price(价格)",
+        "meaning_en": "the amount of money required to purchase a good or service",
+        "meaning_zh": "价格：购买一件商品或服务所需支付的货币数量。在需求曲线上是 Y 轴。价格变化引起的是「沿曲线移动」，不是曲线平移",
+        "derivation": "Price(价钱) → 标签上的数字 → Y 轴",
+        "mnemonic": "价格变 = 沿曲线动；其他因素变 = 整条曲线动——千万别搞反",
+        "example": "When the price of gasoline rises, the quantity demanded falls.",
+        "example_zh": "汽油价格上涨时，需求量会下降。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity demanded",
+        "breakdown": "Quantity(数量) + Demanded(被需求的)",
+        "meaning_en": "the amount of a good or service that consumers are willing and able to purchase at a specific price",
+        "meaning_zh": "需求量：在某个特定价格下，消费者愿意且有能力购买的数量。注意「需求量」对应曲线上的某一点，「需求」是整条曲线",
+        "derivation": "Quantity(数量) + Demanded → 在某个价格点上的需求数",
+        "mnemonic": "需求量 = 一个点；需求 = 整条线——区分这俩是入门必修",
+        "example": "At $5, the quantity demanded for hamburgers is 200 a day.",
+        "example_zh": "5 美元时，每天对汉堡的需求量是 200 个。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "service",
+        "breakdown": "Service(服务) — 无形的商品",
+        "meaning_en": "an intangible product or activity provided by a producer to satisfy consumer wants",
+        "meaning_zh": "服务：无形的产品或活动，例如理发、教学、咨询、医疗。和有形商品（good）相对，但同样有需求曲线",
+        "derivation": "Service(服务) → 摸不着但能享受 → 理发、咨询、上网课",
+        "mnemonic": "国家越发达，服务业占 GDP 比重越高——美国服务业 ≈ 80% GDP",
+        "example": "A haircut is a service that cannot be stored or resold.",
+        "example_zh": "理发是一种无法储存或转卖的服务。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "shift in demand",
+        "breakdown": "Shift(移动) + in + Demand(需求)",
+        "meaning_en": "a change in the entire demand curve caused by factors other than price, resulting in consumers demanding different quantities at each price level",
+        "meaning_zh": "需求平移：由价格之外的因素（收入、偏好、预期等）引起的整条需求曲线的左右移动。区别于「沿曲线移动」",
+        "derivation": "Shift(平移) + Demand → 整条曲线动 → 不是某一点动",
+        "mnemonic": "平移 = 整条线左右挪；沿曲线 = 在线上点之间滑——不是同一回事",
+        "example": "Rising consumer income causes a shift in demand for new cars.",
+        "example_zh": "消费者收入上升导致新车的需求曲线发生平移。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Supply",
+    "type": "root",
+    "meaning_en": "the law of supply and the factors that shift the supply curve",
+    "meaning_zh": "供给：在其他条件不变时，价格越高，生产者愿意生产并销售的数量越多。供给曲线向上倾斜。投入价格、技术、政策等改变会让整条曲线平移",
+    "origin": "Unit 1: 1.5 Supply",
+    "related": ["Demand", "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"],
+    "words": [
+      {
+        "word": "determinants of supply",
+        "breakdown": "Determinants(决定因素) + Supply(供给)",
+        "meaning_en": "factors that influence the quantity of goods and services producers are willing and able to supply at various price levels",
+        "meaning_zh": "供给的决定因素：除价格外影响供给的所有因素，包括投入价格、技术、政府税收/补贴、生产者数量、未来预期。这些变化使整条供给曲线平移",
+        "derivation": "Determinants(决定者) + Supply → 价格之外推动供给的力量",
+        "mnemonic": "记住「TONIE」：Technology, Other goods 替代生产, Number of sellers, Input prices, Expectations",
+        "example": "A new technology that lowers production costs is a key determinant of supply.",
+        "example_zh": "降低生产成本的新技术是供给的关键决定因素。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "good",
+        "breakdown": "Good(物品)",
+        "meaning_en": "a tangible product that can be produced, bought, and sold in a market",
+        "meaning_zh": "商品：在供给侧，商品是生产者愿意制造并出售的有形物品。从汽车到面包，所有有形产品都有供给曲线",
+        "derivation": "Good(物品) → 在 1.5 中是被供给的对象",
+        "mnemonic": "供给方关心：造一件 good 要多少成本？卖一件能赚多少？",
+        "example": "Bakeries supply different goods such as bread, pastries, and cakes.",
+        "example_zh": "面包店供给各种商品，如面包、糕点和蛋糕。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "input prices",
+        "breakdown": "Input(投入) + Prices(价格)",
+        "meaning_en": "the costs of resources and factors of production used to produce goods and services",
+        "meaning_zh": "投入价格：生产过程中所用资源和生产要素的成本，例如原材料、工资、电费。投入价格上升 → 供给曲线左移（成本变高，相同价格下愿生产的量减少）",
+        "derivation": "Input(投入) + Prices → 造东西要花多少钱 → 直接影响供给",
+        "mnemonic": "原油涨价 → 塑料贵 → 塑料制品供给左移 → 价格上涨——一条供给链的多米诺",
+        "example": "Higher input prices for steel raise the costs of car manufacturers.",
+        "example_zh": "钢铁等投入价格的上升提高了汽车制造商的成本。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "law of supply",
+        "breakdown": "Law(定律) + Supply(供给)",
+        "meaning_en": "an economic principle stating that there is a positive relationship between the price of a good and the quantity suppliers are willing to produce and sell",
+        "meaning_zh": "供给定律：在其他条件不变时，价格越高，供给量越大。供给曲线之所以向上，是因为高价格能补偿生产者更高的边际成本",
+        "derivation": "Law(定律) + Supply → 价高量增 → 供给曲线向上",
+        "mnemonic": "「价高利大 → 大家都想造」——这就是供给定律的直觉",
+        "example": "The law of supply explains why farmers plant more wheat when wheat prices rise.",
+        "example_zh": "供给定律解释了为什么小麦价格上涨时农民会多种小麦。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "market supply curve",
+        "breakdown": "Market(市场) + Supply Curve(供给曲线)",
+        "meaning_en": "a graph showing the relationship between the price of a good and the total quantity supplied by all producers in the market at each price level",
+        "meaning_zh": "市场供给曲线：把市场上所有生产者在每个价格下的供给量横向加总得到的曲线。是个体供给曲线的水平加总",
+        "derivation": "Market(整个市场) + Supply Curve → 所有生产者供给的横向相加",
+        "mnemonic": "一家面包店的供给曲线 + 全城所有面包店 = 城市的市场供给曲线",
+        "example": "The market supply curve combines all individual producers' supply curves.",
+        "example_zh": "市场供给曲线把所有生产者的供给曲线合并起来。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "positive relationship",
+        "breakdown": "Positive(正向的) + Relationship(关系)",
+        "meaning_en": "a direct relationship between two variables where an increase in one corresponds to an increase in the other",
+        "meaning_zh": "正向关系：两个变量同方向变化，一升另一也升。供给曲线之所以向上，就是因为价格和供给量正向相关",
+        "derivation": "Positive(正) + Relationship → 同涨同跌 → 同方向",
+        "mnemonic": "正向关系 = 「同进退」——价格涨，供给量也涨",
+        "example": "There is a positive relationship between price and quantity supplied.",
+        "example_zh": "价格和供给量之间存在正向关系。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "price",
+        "breakdown": "Price(价格)",
+        "meaning_en": "the amount of money required to purchase a good or service",
+        "meaning_zh": "价格：在供给侧，价格是生产者收取的报酬。价格变 → 沿供给曲线滑动；其他决定因素变 → 整条供给曲线平移",
+        "derivation": "Price(价钱) → 在 1.5 中是生产者的收入",
+        "mnemonic": "对消费者：价格是支出；对生产者：价格是收入——一枚硬币的两面",
+        "example": "Higher prices motivate suppliers to produce more.",
+        "example_zh": "价格上涨激励供给者生产更多。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity supplied",
+        "breakdown": "Quantity(数量) + Supplied(被供给的)",
+        "meaning_en": "the amount of a good or service that producers are willing and able to offer for sale at a given price",
+        "meaning_zh": "供给量：在某个特定价格下，生产者愿意且有能力出售的数量。是供给曲线上的某一个点。供给量变化 vs 供给变化是经典考点",
+        "derivation": "Quantity(数量) + Supplied → 某个价格点上的供给数",
+        "mnemonic": "供给量 = 一个点；供给 = 整条线——同需求量与需求的区分",
+        "example": "At $10, the quantity supplied of T-shirts is 1000 per week.",
+        "example_zh": "10 美元时，T 恤每周的供给量是 1000 件。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "service",
+        "breakdown": "Service(服务) — 无形产品",
+        "meaning_en": "an intangible product or activity provided by a producer to satisfy consumer wants",
+        "meaning_zh": "服务：在供给侧，服务是无形的产出，例如理发、教学、咨询。供给方决定每小时提供多少节课、多少次理发",
+        "derivation": "Service(服务) → 在 1.5 中是被供给的无形产出",
+        "mnemonic": "服务无库存：今天没卖出去的航班座位，明天就消失了——这影响供给决策",
+        "example": "Online tutors supply educational services at various price points.",
+        "example_zh": "在线辅导员以各种价格提供教育服务。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "shift",
+        "breakdown": "Shift(平移) — 整条曲线移动",
+        "meaning_en": "a change in the entire supply curve caused by factors other than price, resulting in a different quantity supplied at each price level",
+        "meaning_zh": "平移：由价格之外的因素引起的整条供给曲线左右移动。例如新技术让生产成本下降 → 供给曲线整体右移",
+        "derivation": "Shift(平移) → 整条线动 → 不是沿线滑",
+        "mnemonic": "平移 vs 沿曲线滑动 = 经济学最常考的二选一选择题",
+        "example": "A new harvesting technology causes a shift in the supply curve to the right.",
+        "example_zh": "新的收割技术让供给曲线向右平移。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "supply curve",
+        "breakdown": "Supply(供给) + Curve(曲线)",
+        "meaning_en": "a graph showing the relationship between the price of a good and the quantity supplied, typically upward-sloping to reflect the law of supply",
+        "meaning_zh": "供给曲线：用一条向上倾斜的线展示价格和供给量的关系。X 轴是数量，Y 轴是价格。价格越高，生产者越愿意造",
+        "derivation": "Supply(供给) + Curve → 价格-数量关系 → 一条向右上方的线",
+        "mnemonic": "供给曲线像爬山：价格越高 → 量越大 → 一路向上",
+        "example": "The supply curve for oranges slopes upward, reflecting higher prices encouraging more growers.",
+        "example_zh": "橙子的供给曲线向上倾斜，反映了高价格鼓励更多种植户。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Market Equilibrium, Disequilibrium, and Changes in Equilibrium",
+    "type": "root",
+    "meaning_en": "how market forces drive prices toward equilibrium and how shifts in supply or demand change it",
+    "meaning_zh": "市场均衡、失衡与均衡变化：当供给曲线和需求曲线相交时，市场达到均衡——此时供求相等，没有过剩也没有短缺。当任一曲线移动，均衡价格和数量都会变",
+    "origin": "Unit 1: 1.6 Market Equilibrium, Disequilibrium, and Changes in Equilibrium",
+    "related": ["Demand", "Supply"],
+    "words": [
+      {
+        "word": "demand",
+        "breakdown": "Demand(需求)",
+        "meaning_en": "the quantity of a good or service that consumers are willing and able to buy at various price levels",
+        "meaning_zh": "需求：在各种价格水平下，消费者愿意且有能力购买的数量。在均衡分析中是与供给相对的一边，二者相交点决定均衡价格和数量",
+        "derivation": "Demand(需求) → 在 1.6 中与 supply 共同决定均衡",
+        "mnemonic": "供给和需求是经济学的「双手」——一只手都不能少，缺一就没法形成价格",
+        "example": "Strong demand pushes equilibrium price upward.",
+        "example_zh": "旺盛的需求把均衡价格往上推。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "determinants of demand",
+        "breakdown": "Determinants(决定因素) + Demand(需求)",
+        "meaning_en": "factors that influence and cause changes in the quantity of a good or service that consumers are willing and able to buy at various price levels",
+        "meaning_zh": "需求决定因素：在均衡分析中，这些因素一变，需求曲线就会平移，均衡价格和均衡数量随之变化。是分析\"均衡如何变化\"的关键",
+        "derivation": "Determinants + Demand → 1.6 中是\"均衡变化\"的根源之一",
+        "mnemonic": "决定因素变 → 曲线移 → 新均衡——这就是市场分析的标准流程",
+        "example": "A change in determinants of demand will move the equilibrium to a new price and quantity.",
+        "example_zh": "需求决定因素的变化会让均衡移到新的价格和数量。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "determinants of supply",
+        "breakdown": "Determinants(决定因素) + Supply(供给)",
+        "meaning_en": "factors that influence the quantity of goods and services producers are willing and able to supply at various price levels",
+        "meaning_zh": "供给决定因素：在均衡分析中，这些因素一变，供给曲线就会平移，均衡价格和均衡数量也会变。和需求决定因素一起构成「均衡变动」的两条路径",
+        "derivation": "Determinants + Supply → 1.6 中是\"均衡变化\"的另一根源",
+        "mnemonic": "供给决定因素 → 供给曲线动 → 均衡变 → 这就是「外部冲击」如何影响市场",
+        "example": "A drop in input prices is a determinant of supply that lowers equilibrium price.",
+        "example_zh": "投入价格下降是一个供给决定因素，它会降低均衡价格。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "disequilibrium",
+        "breakdown": "Dis(否定) + Equilibrium(均衡) → 失衡",
+        "meaning_en": "a market condition in which the quantity supplied does not equal the quantity demanded, causing imbalances that create surpluses or shortages",
+        "meaning_zh": "失衡：供给量和需求量不相等的市场状态，会出现过剩或短缺。市场力量会推动价格变动直到回归均衡",
+        "derivation": "Dis(不) + Equilibrium → 不平衡 → 必有过剩或短缺",
+        "mnemonic": "失衡 = 跷跷板没坐稳，不是这边过重就是那边过重",
+        "example": "Disequilibrium occurs when prices are set above or below the equilibrium level.",
+        "example_zh": "当价格被定在均衡水平上下时就会出现失衡。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equilibrium",
+        "breakdown": "Equi(相等) + librium(平衡)",
+        "meaning_en": "a market condition in which the quantity supplied equals the quantity demanded at a particular price, with no tendency for change",
+        "meaning_zh": "均衡：在某个价格下，供给量等于需求量，没有过剩也没有短缺，市场没有改变的动力。这是供给曲线和需求曲线的交点",
+        "derivation": "Equi(等) + librium(平衡) → 两边相等 → 市场休息",
+        "mnemonic": "均衡 = 「供需大爷握手」——价格定下来，谁都不抗议",
+        "example": "At equilibrium, every buyer can find a seller and every seller can find a buyer.",
+        "example_zh": "在均衡状态下，每个买家都能找到卖家，每个卖家都能找到买家。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equilibrium price",
+        "breakdown": "Equilibrium(均衡) + Price(价格)",
+        "meaning_en": "the price at which the quantity demanded equals the quantity supplied, resulting in no tendency for change",
+        "meaning_zh": "均衡价格：让需求量等于供给量的那个价格。在供给-需求图上是 S 曲线和 D 曲线的交点对应的 Y 值",
+        "derivation": "Equilibrium(均衡) + Price → 让供需相等的那个价 → 又称\"市场出清价\"",
+        "mnemonic": "均衡价格 = 市场的「自然温度」——会自己回到这一点",
+        "example": "The equilibrium price for masks fell after factories ramped up production.",
+        "example_zh": "工厂加大产量后，口罩的均衡价格下降了。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equilibrium quantity",
+        "breakdown": "Equilibrium(均衡) + Quantity(数量)",
+        "meaning_en": "the quantity bought and sold at market equilibrium, where quantity demanded equals quantity supplied",
+        "meaning_zh": "均衡数量：在均衡价格下，市场上实际成交的数量。也是 S 和 D 交点对应的 X 值",
+        "derivation": "Equilibrium(均衡) + Quantity → 在均衡价上实际成交多少",
+        "mnemonic": "均衡价格是 Y 坐标，均衡数量是 X 坐标——交点决定二者",
+        "example": "The equilibrium quantity rose as both supply and demand increased.",
+        "example_zh": "供给和需求都上升时，均衡数量增加。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "market equilibrium",
+        "breakdown": "Market(市场) + Equilibrium(均衡)",
+        "meaning_en": "the price and quantity at which the quantity demanded equals the quantity supplied in a market",
+        "meaning_zh": "市场均衡：使市场需求量等于市场供给量的价格和数量组合。市场处于自动调节状态——只要曲线不动，均衡就保持不变",
+        "derivation": "Market(市场) + Equilibrium → 整个市场达到的均衡 → 不是某一笔交易",
+        "mnemonic": "市场均衡是「自动驾驶」状态——只要外部条件不变，市场就停在那一点",
+        "example": "Market equilibrium for gasoline shifts whenever oil supply changes.",
+        "example_zh": "每当石油供给变化，汽油的市场均衡就会发生变化。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "market forces",
+        "breakdown": "Market(市场) + Forces(力量)",
+        "meaning_en": "the supply and demand pressures that drive prices toward equilibrium in response to surpluses and shortages",
+        "meaning_zh": "市场力量：供给和需求带来的压力，会自动推动价格向均衡靠拢——出现过剩时价格下降，出现短缺时价格上升",
+        "derivation": "Market(市场) + Forces → 看不见的手 → 自动调节器",
+        "mnemonic": "「看不见的手」（亚当·斯密）= 市场力量的诗意说法",
+        "example": "Market forces eventually erased the shortage by pushing prices up.",
+        "example_zh": "市场力量最终通过推高价格消除了短缺。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity demanded",
+        "breakdown": "Quantity(数量) + Demanded(被需求的)",
+        "meaning_en": "the amount of a good or service that consumers are willing and able to purchase at a specific price",
+        "meaning_zh": "需求量：在均衡分析中，需求量等于供给量时市场达到均衡。如果价格高于均衡价 → 需求量 < 供给量 → 过剩",
+        "derivation": "Quantity(数量) + Demanded → 在 1.6 中是\"判断均衡\"的尺子",
+        "mnemonic": "需求量 = 供给量 → 均衡；不相等 → 失衡",
+        "example": "When the quantity demanded equals the quantity supplied, the market is in equilibrium.",
+        "example_zh": "当需求量等于供给量时，市场处于均衡状态。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity supplied",
+        "breakdown": "Quantity(数量) + Supplied(被供给的)",
+        "meaning_en": "the amount of a good or service that producers are willing and able to offer for sale at a given price",
+        "meaning_zh": "供给量：在均衡分析中，与需求量相等时市场出清。如果价格低于均衡价 → 供给量 < 需求量 → 短缺",
+        "derivation": "Quantity(数量) + Supplied → 在 1.6 中和需求量配对判断市场状态",
+        "mnemonic": "供给量 < 需求量 → 短缺 → 价格上升 → 直到二者相等",
+        "example": "If the quantity supplied falls short of demand, expect prices to rise.",
+        "example_zh": "如果供给量达不到需求，价格预计会上涨。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "shortage",
+        "breakdown": "Short(短缺的) + age(状态) → 短缺",
+        "meaning_en": "a situation in which the quantity demanded of a good exceeds the quantity supplied at a given price, resulting in insufficient supply to meet consumer demand",
+        "meaning_zh": "短缺：在某个价格下，需求量超过供给量。常发生在价格被人为压低时（如价格上限），市场会通过涨价来消除短缺",
+        "derivation": "Short(短少) + age → 不够卖 → 排长队",
+        "mnemonic": "短缺 = 「想买买不到」——疫情时口罩、油荒时汽油都是经典例子",
+        "example": "Rent control often creates a long-term shortage of affordable apartments.",
+        "example_zh": "房租管制往往造成长期的廉价公寓短缺。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "supply",
+        "breakdown": "Supply(供给)",
+        "meaning_en": "the quantity of a good or service that producers are willing and able to offer for sale at various price levels",
+        "meaning_zh": "供给：在各种价格下生产者愿意出售的数量。在均衡分析中是与需求相对的一边，二者相交决定均衡",
+        "derivation": "Supply(供给) → 1.6 中和 demand 共同决定均衡",
+        "mnemonic": "供给和需求像两个拉绳子的人——绳子上的结就是均衡",
+        "example": "Strong supply lowers the equilibrium price.",
+        "example_zh": "充裕的供给会降低均衡价格。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "surplus",
+        "breakdown": "Sur(超过) + plus(加) → 过剩",
+        "meaning_en": "a situation in which the quantity supplied of a good exceeds the quantity demanded at a given price, resulting in excess inventory in the market",
+        "meaning_zh": "过剩：在某个价格下，供给量超过需求量。常发生在价格被人为抬高时（如价格下限），市场会通过降价来消除过剩",
+        "derivation": "Sur(超过) + plus(加) → 多出来 → 卖不完",
+        "mnemonic": "过剩 = 「卖不出去堆仓库」——农产品最低收购价、最低工资经常造成 surplus",
+        "example": "Minimum wage laws can create a surplus of unskilled labor.",
+        "example_zh": "最低工资法可能造成低技能劳动力过剩。",
+        "toefl_frequency": "high"
+      }
+    ]
+  }
+]

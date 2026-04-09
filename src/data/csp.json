@@ -824,5 +824,699 @@
         "toefl_frequency": "low"
       }
     ]
+  },
+  {
+    "root": "Intro to Big Idea 2",
+    "type": "root",
+    "meaning_en": "how computers represent data using bits, binary, abstraction, and number bases",
+    "meaning_zh": "大概念2导论：计算机如何用位（bit）和二进制表示所有数据。核心概念包括抽象（隐藏复杂细节）、固定位数（导致溢出和近似）、模拟与数字数据的转换。一切信息——文字、图片、声音——最终都是 0 和 1",
+    "origin": "Unit 2: 2.1 Intro to Big Idea 2",
+    "related": [
+      "Data Compression",
+      "Extracting Information from Data",
+      "Using Programs with Data"
+    ],
+    "words": [
+      {
+        "word": "abstraction",
+        "breakdown": "Abstract(抽象的) + ion(名词后缀)",
+        "meaning_en": "the process of reducing complexity by focusing on main ideas and hiding irrelevant details to allow focus on the essential concept",
+        "meaning_zh": "抽象：只关注最重要的部分，隐藏无关细节——AP CSP 核心概念！例如「数字」就是对真实数量的抽象，不在乎你数的是苹果还是星星",
+        "derivation": "Abstract(抽离) → 把复杂的东西简化 → 开车不需要懂发动机原理",
+        "mnemonic": "地铁线路图就是抽象：隐藏了真实地理位置，只显示站点和连接关系",
+        "example": "Abstraction allows programmers to use functions without knowing their implementation.",
+        "example_zh": "抽象让程序员可以使用函数而不需要知道其实现细节。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "analog data",
+        "breakdown": "Analog(模拟的) + Data(数据)",
+        "meaning_en": "data that have values changing smoothly and continuously over time, such as pitch, volume, or position",
+        "meaning_zh": "模拟数据：连续测量的数据，随时间平滑变化——如温度计的水银柱、唱片的音轨、自然界的声波",
+        "derivation": "Analog(类比/模拟) → 像现实世界一样连续变化 → 无限精度",
+        "mnemonic": "时钟指针平滑转动 = 模拟；数字时钟跳动显示 = 数字",
+        "example": "Sound waves in nature are analog data.",
+        "example_zh": "自然界中的声波是模拟数据。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "binary",
+        "breakdown": "Bi(二) + nary(进制)",
+        "meaning_en": "a base-2 number system that uses only the digits 0 and 1 to represent data",
+        "meaning_zh": "二进制：只用 0 和 1 的计数系统（基数 2），计算机用它存储和处理所有数据",
+        "derivation": "Bi(二) + -nary(进制) → 逢二进一 → 每一位只能是 0 或 1",
+        "mnemonic": "电灯泡只有开(1)和关(0)两种状态，计算机就是用无数个「开关」工作",
+        "example": "The binary number 1010 equals 10 in decimal.",
+        "example_zh": "二进制数 1010 等于十进制的 10。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "bit",
+        "breakdown": "Bit = Binary digit(二进制数字)",
+        "meaning_en": "shorthand for binary digit; the smallest unit of data in computing, represented as either 0 or 1",
+        "meaning_zh": "位：binary digit 的缩写——计算机中最小的数据单位，只能是 0 或 1。所有数字、文字、图片都是由位组成的",
+        "derivation": "BInary digiT → 取首尾两字母 → bit",
+        "mnemonic": "1 bit = 1 个开关（开或关），是信息世界的「原子」",
+        "example": "A single bit can represent yes (1) or no (0).",
+        "example_zh": "单个位可以表示 yes(1) 或 no(0)。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "byte",
+        "breakdown": "Byte(字节) — 8 bits",
+        "meaning_en": "a unit of digital data consisting of 8 bits",
+        "meaning_zh": "字节：由 8 位组成的数字数据单位。8 个 bit 可以表示 2⁸ = 256 种不同的值——足够表示一个 ASCII 字符",
+        "derivation": "Byte 由 Bit 演变 → 故意拼成 byte 避免和 bite 混淆 → 「一口」数据",
+        "mnemonic": "1 byte = 8 bits = 256 种组合，刚好能装一个英文字符",
+        "example": "A single character in ASCII takes 1 byte (8 bits) of storage.",
+        "example_zh": "ASCII 中的一个字符占用 1 字节（8 位）的存储空间。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "constants",
+        "breakdown": "Const(不变) + ant + s",
+        "meaning_en": "fixed data values that do not change during program execution",
+        "meaning_zh": "常量：程序运行期间不会改变的固定数据值。例如 PI = 3.14159——你不会想让圆周率中途变化",
+        "derivation": "Constant(恒定的) → 始终如一 → 一旦定义就不能改",
+        "mnemonic": "常量像刻在石头上的字 → 写下去就不能改；变量像写在白板上 → 随时擦",
+        "example": "The constant PI is used in formulas for circle area.",
+        "example_zh": "常量 PI 用于计算圆面积的公式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "data",
+        "breakdown": "Data(数据) — 拉丁语「给予的东西」复数形式",
+        "meaning_en": "information represented in a form that can be processed by a program, such as numbers, text, or records",
+        "meaning_zh": "数据：以程序可处理的形式表示的信息——可以是数字、文本或记录。计算机的「原料」",
+        "derivation": "源自拉丁语 datum(给予的事物) → 复数 data → 提供给程序处理的素材",
+        "example": "The program reads weather data from a sensor every minute.",
+        "example_zh": "程序每分钟从传感器读取一次天气数据。",
+        "toefl_frequency": "high",
+        "mnemonic": "data 是程序的「食物」，没数据程序就「饿」着没事干"
+      },
+      {
+        "word": "decimal",
+        "breakdown": "Deci(十) + mal(进制)",
+        "meaning_en": "a base-10 number system that uses the digits 0-9 to represent data",
+        "meaning_zh": "十进制：使用数字 0-9 的计数系统（基数 10）。这是人类日常使用的计数方式——可能是因为我们有 10 根手指",
+        "derivation": "Deci(十) → 拉丁语 decem(十) → 逢十进一",
+        "mnemonic": "我们有 10 根手指 → 自然就发展出十进制；如果章鱼有文明，可能就是八进制",
+        "example": "The number 255 in decimal is 11111111 in binary.",
+        "example_zh": "十进制的 255 在二进制中是 11111111。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "fixed number of bits",
+        "breakdown": "Fixed(固定的) + Number(数量) + Bits(位)",
+        "meaning_en": "a predetermined, limited quantity of bits allocated to represent a data value in programming languages, which constrains the range of representable values",
+        "meaning_zh": "固定位数：编程语言为表示数据值预分配的固定位数，限制了可表示的数值范围。例如 8 位无符号整数最多只能表示 0-255——超过就溢出",
+        "derivation": "Fixed(固定) + Bits(位数) → 房间大小固定 → 装不下太多东西",
+        "mnemonic": "像信封大小固定：只能装一定厚度的信，多了就塞不进去",
+        "example": "Using a fixed number of bits means very large numbers cannot be stored exactly.",
+        "example_zh": "使用固定位数意味着非常大的数字无法被精确存储。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "integers",
+        "breakdown": "Integer(整数) + s",
+        "meaning_en": "whole numbers (positive, negative, or zero) that are represented in programming languages using a fixed number of bits",
+        "meaning_zh": "整数：用固定位数表示的整数（正、负、零都算）。没有小数部分——5、-3、0 都是整数，但 3.14 不是",
+        "derivation": "Integer(完整的) → 拉丁语 integer(完整) → 没有「碎片」（小数）的数",
+        "example": "The integers 1, 2, and -7 can all be stored in a single byte.",
+        "example_zh": "整数 1、2 和 -7 都可以存储在一个字节中。",
+        "toefl_frequency": "high",
+        "mnemonic": "整数 = 「完整的数」——3 是整数，3.5 不是（一半被切了）"
+      },
+      {
+        "word": "number bases",
+        "breakdown": "Number(数字) + Bases(基数)",
+        "meaning_en": "different systems for representing numerical values, such as binary (base 2) and decimal (base 10)",
+        "meaning_zh": "数字基数：表示数值的不同系统——如二进制（基数 2）、十进制（基数 10）、十六进制（基数 16）。同一个数字在不同基数下写法不同但值相同",
+        "derivation": "Base(基数) → 进位的「门槛」 → 基数越大，每一位能表示的值越多",
+        "example": "Number bases include binary, octal, decimal, and hexadecimal.",
+        "example_zh": "数字基数包括二进制、八进制、十进制和十六进制。",
+        "toefl_frequency": "medium",
+        "mnemonic": "10 在二进制是 \"10\"，十进制是 \"10\"，十六进制也是 \"10\"——但值完全不同！"
+      },
+      {
+        "word": "overflow",
+        "breakdown": "Over(超过) + flow(流)",
+        "meaning_en": "an error that occurs when a computed value exceeds the maximum value that can be represented by a fixed number of bits",
+        "meaning_zh": "溢出：计算结果超过固定位数能表示的最大值时发生的错误。例如 8 位整数最大 255，再加 1 就溢出",
+        "derivation": "Over(超过) + flow(流) → 水从杯子里溢出来 → 数字大到装不下",
+        "mnemonic": "Y2K 问题、Boeing 787 每 248 天必须重启——都是 overflow 的真实案例",
+        "example": "Overflow caused the score counter to wrap from 32767 to -32768.",
+        "example_zh": "溢出导致计分器从 32767 翻转到 -32768。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "place value",
+        "breakdown": "Place(位置) + Value(值)",
+        "meaning_en": "the numeric value assigned to a digit's position in a number, determined by the base raised to the power of the position",
+        "meaning_zh": "位值：数字中某位置上的位所代表的数值，由「基数的位置次方」决定。例如十进制 235 中，2 的位值是 200（即 2 × 10²）",
+        "derivation": "Place(位置) + Value(值) → 数字的位置决定它的真实大小 → 万位上的 1 是 10000",
+        "example": "In the binary number 1010, the place value of the leftmost 1 is 8.",
+        "example_zh": "在二进制数 1010 中，最左边的 1 的位值是 8。",
+        "toefl_frequency": "medium",
+        "mnemonic": "同一个数字 5 写在个位是 5，写在百位就是 500——位置决定身价"
+      },
+      {
+        "word": "real numbers",
+        "breakdown": "Real(实数) + Numbers(数字)",
+        "meaning_en": "numbers that include both integers and decimal values, represented in programming languages with a fixed number of bits as approximations",
+        "meaning_zh": "实数：包括整数和小数的数字——在编程语言中用固定位数表示，是原始值的近似（因此会有 roundoff error）",
+        "derivation": "Real(真实的) → 数学上「真实存在」的数 → 包含分数、无理数等",
+        "example": "Real numbers like 3.14 and -0.5 are stored as approximations in computers.",
+        "example_zh": "像 3.14 和 -0.5 这样的实数在计算机中以近似值存储。",
+        "toefl_frequency": "medium",
+        "mnemonic": "实数 ⊃ 整数 → 整数是实数的子集，所有整数都是实数"
+      },
+      {
+        "word": "roundoff error",
+        "breakdown": "Roundoff(四舍五入) + Error(错误)",
+        "meaning_en": "an error that occurs when real numbers are approximated in computer storage due to limitations in the fixed number of bits used to represent them",
+        "meaning_zh": "舍入误差：实数在计算机中以近似值存储而产生的误差。例如 0.1 + 0.2 在很多语言里不等于 0.3，而是 0.30000000000000004",
+        "derivation": "Round off(四舍五入) + Error(误差) → 凑整凑出来的偏差",
+        "mnemonic": "试试 Python: 0.1 + 0.2 == 0.3 → 结果是 False！这就是 roundoff error",
+        "example": "Roundoff error caused the bank to lose pennies on millions of transactions.",
+        "example_zh": "舍入误差导致银行在数百万笔交易上损失了零钱。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "sampling",
+        "breakdown": "Sample(样本) + ing",
+        "meaning_en": "a technique for approximating analog data digitally by measuring values of an analog signal at regular intervals",
+        "meaning_zh": "采样：通过定时测量模拟信号的值来数字化逼近模拟数据的技术。例如 CD 每秒采样 44100 次声音——采样率越高，还原越真实",
+        "derivation": "Sample(样本) → 取样 → 不录全部，只录关键时刻 → 拼起来近似还原",
+        "mnemonic": "采样像拍连拍：每秒拍 30 张照片就感觉像视频——但不是真正的连续运动",
+        "example": "Sampling at 44.1 kHz captures CD-quality audio.",
+        "example_zh": "以 44.1 kHz 采样可以捕捉 CD 音质的音频。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "variable",
+        "breakdown": "Vari(变化) + able(可以)",
+        "meaning_en": "a named container in a program that stores a value which can be changed through assignment",
+        "meaning_zh": "变量：程序中存储值的命名容器，值可以通过赋值改变。例如 score = 10 之后 score = 20——同一个名字装不同的值",
+        "derivation": "Vari(变化) + able(可以) → 可变的 → 存的值可以变",
+        "mnemonic": "变量像贴了标签的盒子：盒子（名字）不变，里面的东西（值）可以换",
+        "example": "The variable score holds the player's current points.",
+        "example_zh": "变量 score 存储玩家当前的分数。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Data Compression",
+    "type": "root",
+    "meaning_en": "reducing the number of bits needed to store or transmit data",
+    "meaning_zh": "数据压缩：减少存储或传输数据所需位数的技术。无损压缩可完全还原原始数据（如 ZIP、PNG），有损压缩牺牲质量换更小体积（如 JPEG、MP3）",
+    "origin": "Unit 2: 2.2 Data Compression",
+    "related": [
+      "Intro to Big Idea 2",
+      "Extracting Information from Data",
+      "Using Programs with Data"
+    ],
+    "words": [
+      {
+        "word": "bit",
+        "breakdown": "Bit = Binary digit(二进制数字)",
+        "meaning_en": "shorthand for binary digit; the smallest unit of data in computing, represented as either 0 or 1",
+        "meaning_zh": "位：计算机中最小的数据单位，只能是 0 或 1。压缩的目标就是减少表示同样信息所需的位数",
+        "derivation": "BInary digiT → 取首尾两字母 → bit",
+        "mnemonic": "1 bit = 1 个开关——压缩 = 用更少的开关表达同样的信息",
+        "example": "Compression reduces the number of bits needed to store the file.",
+        "example_zh": "压缩减少了存储文件所需的位数。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "data compression algorithms",
+        "breakdown": "Data(数据) + Compression(压缩) + Algorithms(算法)",
+        "meaning_en": "methods or procedures used to reduce the number of bits needed to represent data while maintaining or approximating the original information",
+        "meaning_zh": "数据压缩算法：用于减少表示数据所需位数的方法或步骤，同时保留或近似原始信息。例如 Huffman 编码、LZ77、JPEG 算法",
+        "derivation": "Compression(压缩) + Algorithm(算法) → 压缩的「配方」 → 不同算法适合不同数据",
+        "example": "ZIP uses lossless data compression algorithms to shrink files.",
+        "example_zh": "ZIP 使用无损数据压缩算法来缩小文件。",
+        "toefl_frequency": "medium",
+        "mnemonic": "压缩算法像打包旅行：折衣服 vs 真空袋抽气，方法不同效果不同"
+      },
+      {
+        "word": "lossless data compression",
+        "breakdown": "Loss(损失) + less(没有) + Data + Compression",
+        "meaning_en": "a compression algorithm that reduces the number of bits stored or transmitted while guaranteeing complete reconstruction of the original data",
+        "meaning_zh": "无损数据压缩：减少位数同时保证原始数据可完全还原的压缩算法。例如 ZIP、PNG——解压后和原文件一模一样",
+        "derivation": "Loss(损失) + less(没有) → 没有损失 → 数据一点不丢 → 像把衣服叠好放行李箱",
+        "mnemonic": "ZIP 文件解压后和原文件一模一样——无损 = 完美还原",
+        "example": "PNG uses lossless compression to preserve image quality.",
+        "example_zh": "PNG 使用无损压缩来保持图片质量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "lossy data compression",
+        "breakdown": "Loss(损失) + y(有的) + Data + Compression",
+        "meaning_en": "a compression algorithm that significantly reduces the number of bits stored or transmitted but only allows reconstruction of an approximation of the original data",
+        "meaning_zh": "有损数据压缩：大幅减少位数但只能还原原始数据的近似值的压缩算法。例如 JPEG、MP3——丢掉一些细节换更小体积",
+        "derivation": "Loss(损失) + y(有的) → 有损失 → 丢掉不重要的数据换更小体积",
+        "mnemonic": "MP3 音乐听起来差不多但文件小很多——因为扔掉了人耳听不到的频率",
+        "example": "JPEG uses lossy compression, which is why images may look blurry.",
+        "example_zh": "JPEG 使用有损压缩，所以图片可能看起来模糊。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "redundancy",
+        "breakdown": "Redundant(多余的) + cy(名词后缀)",
+        "meaning_en": "repetition or unnecessary duplication in data representation that can be reduced through compression",
+        "meaning_zh": "冗余：数据表示中可以通过压缩消除的重复或不必要的复制。例如「AAAAA」可以压缩成「5A」——重复就是冗余",
+        "derivation": "Redundant(多余的) → 重复出现 → 删掉重复就压缩了",
+        "mnemonic": "「啦啦啦啦啦」5 个字 vs 「啦×5」3 个字——压缩就是消除冗余",
+        "example": "Compression algorithms exploit redundancy by replacing repeated patterns with shorter codes.",
+        "example_zh": "压缩算法利用冗余，将重复模式替换为更短的代码。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Extracting Information from Data",
+    "type": "root",
+    "meaning_en": "finding patterns, trends, and meaningful information in raw data",
+    "meaning_zh": "从数据中提取信息：在原始数据中寻找模式、趋势和有意义的信息。包括数据清洗、识别相关性vs因果关系、警惕偏见。Netflix 推荐你看什么、医生诊断疾病——都靠从数据提取信息",
+    "origin": "Unit 2: 2.3 Extracting Information from Data",
+    "related": [
+      "Intro to Big Idea 2",
+      "Data Compression",
+      "Using Programs with Data"
+    ],
+    "words": [
+      {
+        "word": "bias",
+        "breakdown": "Bias(偏见) — 系统性偏差",
+        "meaning_en": "prejudice or systematic error in computing innovations that can result from algorithms or data, reflecting existing human prejudices",
+        "meaning_zh": "偏见：计算创新中的成见或系统性错误，可能源于算法或数据。在数据分析中尤其要警惕——历史数据带偏见，分析出的结论也带偏见",
+        "derivation": "Bias(倾斜) → 数据采样不均匀 → 结论自然偏 → 像只问大学生「你支持谁」",
+        "mnemonic": "如果只统计 iPhone 用户的偏好，结论不能代表所有手机用户——这就是采样偏差",
+        "example": "Sampling bias caused the survey to overrepresent young voters.",
+        "example_zh": "采样偏差导致这次调查过度代表了年轻选民。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "causal relationship",
+        "breakdown": "Causal(因果的) + Relationship(关系)",
+        "meaning_en": "a relationship where one variable directly causes changes in another variable, as opposed to merely being correlated",
+        "meaning_zh": "因果关系：一个变量直接导致另一个变量变化的关系，不只是相关。例如「吸烟导致肺癌」是因果，但「冰淇淋销量和溺水率同时上升」只是相关（都受夏天影响）",
+        "derivation": "Causal(原因的) → 一个变化「引起」另一个变化 → 必须有直接作用机制",
+        "mnemonic": "因果 = 推倒第一块多米诺导致后面的全倒；相关 = 两块多米诺同时被风吹倒，但互不影响",
+        "example": "Studies established a causal relationship between smoking and lung cancer.",
+        "example_zh": "研究确立了吸烟与肺癌之间的因果关系。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "conclusion",
+        "breakdown": "Con(共同) + clude(关闭) + sion",
+        "meaning_en": "a judgment or decision reached by analyzing and interpreting data from one or more sources",
+        "meaning_zh": "结论：通过分析和解释来自一个或多个来源的数据得出的判断或决定。结论必须基于数据——「我觉得」不算结论",
+        "derivation": "Con(完全) + clude(关闭) → 把分析过程「关闭」 → 得出最终判断",
+        "example": "The research conclusion was based on data from over 5000 patients.",
+        "example_zh": "研究结论基于来自 5000 多名患者的数据。",
+        "toefl_frequency": "high",
+        "mnemonic": "结论像菜炒完出锅——前面的所有步骤都为这一刻"
+      },
+      {
+        "word": "correlation",
+        "breakdown": "Co(共同) + relation(关系) + ation",
+        "meaning_en": "a relationship between two variables in data where changes in one variable are associated with changes in another",
+        "meaning_zh": "相关性：数据中两个变量间的关系，一个变化时另一个也跟着变。但相关 ≠ 因果！冰淇淋销量和鲨鱼袭击数同时上升，但前者并不导致后者",
+        "derivation": "Co(共同) + relate(关联) → 共同关联 → 一起变化但不一定有因果",
+        "mnemonic": "相关性陷阱：日历上的页数和你的年龄正相关 → 但翻日历不会让你变老",
+        "example": "There is a correlation between hours studied and exam scores.",
+        "example_zh": "学习时间和考试分数之间存在相关性。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "data",
+        "breakdown": "Data(数据) — 拉丁语「给予的东西」复数形式",
+        "meaning_en": "information represented in a form that can be processed by a program, such as numbers, text, or records",
+        "meaning_zh": "数据：以程序可处理的形式表示的信息。在 2.3 中专指可以被分析以提取信息的「原料」",
+        "derivation": "源自拉丁语 datum(给予的事物) → 复数 data → 提供给程序处理的素材",
+        "example": "The hospital collects patient data to identify health trends.",
+        "example_zh": "医院收集患者数据以识别健康趋势。",
+        "toefl_frequency": "high",
+        "mnemonic": "原始数据像未加工的食材，提取信息就是把它做成菜"
+      },
+      {
+        "word": "data cleaning",
+        "breakdown": "Data(数据) + Cleaning(清洗)",
+        "meaning_en": "the process of making data uniform and consistent without changing their meaning, such as standardizing abbreviations, spellings, and capitalizations",
+        "meaning_zh": "数据清洗：在不改变含义的前提下让数据统一一致——如规范缩写、拼写、大小写。例如把「N.Y.」、「NY」、「new york」统一成「New York」",
+        "derivation": "Clean(清洁) → 清理数据中的「脏东西」 → 统一格式让数据干净整齐",
+        "mnemonic": "像整理书架：把倒着的书摆正、把错位的书归位，但不增减书",
+        "example": "Data cleaning fixed inconsistent date formats across the spreadsheet.",
+        "example_zh": "数据清洗修正了电子表格中不一致的日期格式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "data set",
+        "breakdown": "Data(数据) + Set(集合)",
+        "meaning_en": "a collection of related data values organized for processing and analysis",
+        "meaning_zh": "数据集：为处理和分析而组织起来的相关数据值的集合。例如「2024 年所有奥运会成绩」就是一个数据集",
+        "derivation": "Data(数据) + Set(集合) → 一组相关的数据 → 像一本相册而不是单张照片",
+        "example": "The data set contains weather records for the past 50 years.",
+        "example_zh": "该数据集包含过去 50 年的天气记录。",
+        "toefl_frequency": "high",
+        "mnemonic": "Kaggle 上有上万个 data sets 供机器学习研究——每个都是一座「数据矿山」"
+      },
+      {
+        "word": "data sources",
+        "breakdown": "Data(数据) + Sources(来源)",
+        "meaning_en": "origins or locations from which data are collected or obtained",
+        "meaning_zh": "数据来源：数据被收集或获取的源头或位置。例如政府公开数据、用户行为日志、传感器读数——来源不同，数据可信度也不同",
+        "derivation": "Source(源) → 数据从哪里来 → 知道来源才能判断数据是否可信",
+        "example": "The study combined data sources from hospitals, schools, and surveys.",
+        "example_zh": "这项研究结合了来自医院、学校和调查的数据来源。",
+        "toefl_frequency": "medium",
+        "mnemonic": "「来源不明的数据」像「来源不明的食品」——别轻易吃"
+      },
+      {
+        "word": "facts",
+        "breakdown": "Fact(事实) + s",
+        "meaning_en": "specific pieces of information or observations that form the basis of data",
+        "meaning_zh": "事实：构成数据基础的具体信息或观察。事实是客观可验证的——「今天最高温度 25°C」是事实，「今天很热」是观点",
+        "derivation": "Fact(事实) → 拉丁语 factum(已做的事) → 已经发生、可观察的",
+        "example": "The report listed only verified facts, not opinions.",
+        "example_zh": "该报告只列出了经过验证的事实，而非观点。",
+        "toefl_frequency": "high",
+        "mnemonic": "事实可以被反驳但不会变；观点会变 → 数据应该建立在事实之上"
+      },
+      {
+        "word": "incomplete data",
+        "breakdown": "Incomplete(不完整的) + Data(数据)",
+        "meaning_en": "data sets that are missing required information or values",
+        "meaning_zh": "不完整数据：缺失必需信息或值的数据集。例如调查问卷有人没填年龄——分析时要决定是丢弃这些行还是用平均值填补",
+        "derivation": "Incomplete(不完整) → 缺东西 → 「半成品」数据",
+        "example": "Incomplete data forced the team to discard 200 survey responses.",
+        "example_zh": "不完整数据迫使团队丢弃了 200 份调查回复。",
+        "toefl_frequency": "medium",
+        "mnemonic": "不完整数据像缺角的拼图——少一块整幅画就看不清"
+      },
+      {
+        "word": "information",
+        "breakdown": "Inform(告知) + ation(名词后缀)",
+        "meaning_en": "the collection of facts and patterns extracted from data that provides meaning and insight",
+        "meaning_zh": "信息：从数据中提取的事实和模式的集合，提供意义和洞察。数据是原料，信息是成品——「100 万次销售记录」是数据，「夏天卖冰淇淋最赚钱」是信息",
+        "derivation": "Inform(告知) → 让人「知道」 → 数据经处理后变成有用的知识",
+        "mnemonic": "数据 + 分析 = 信息；信息 + 经验 = 知识；知识 + 洞察 = 智慧",
+        "example": "The team extracted useful information from millions of customer records.",
+        "example_zh": "团队从数百万条客户记录中提取了有用的信息。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "invalid data",
+        "breakdown": "In(否定) + valid(有效) + Data(数据)",
+        "meaning_en": "data that does not meet required standards or formats and cannot be properly processed",
+        "meaning_zh": "无效数据：不符合要求的标准或格式、无法被正确处理的数据。例如年龄字段填了「我不告诉你」、邮箱字段没有 @——程序处理不了",
+        "derivation": "In(不) + valid(有效) → 不有效 → 程序的「废品」",
+        "example": "The script rejected invalid data such as negative ages and future birthdays.",
+        "example_zh": "脚本拒绝了无效数据，例如负数年龄和未来的生日。",
+        "toefl_frequency": "medium",
+        "mnemonic": "无效数据 ≠ 不完整数据：前者是格式错，后者是缺失"
+      },
+      {
+        "word": "metadata",
+        "breakdown": "Meta(关于) + Data(数据)",
+        "meaning_en": "data that describes other data, such as the date of creation or file size of an image, used for finding, organizing, and managing information",
+        "meaning_zh": "元数据：描述数据的数据——如照片的拍摄时间、地点、相机型号都是元数据",
+        "derivation": "Meta(关于/超越) + Data(数据) → 关于数据的数据 → 数据的「身份证」",
+        "mnemonic": "图书馆的索引卡就是元数据：记录书名、作者、位置，但不是书的内容本身",
+        "example": "The metadata of a photo includes the date, location, and camera model.",
+        "example_zh": "照片的元数据包括日期、位置和相机型号。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "parallel systems",
+        "breakdown": "Parallel(并行的) + Systems(系统)",
+        "meaning_en": "computing systems that process data simultaneously across multiple processors or computers to handle large data sets efficiently",
+        "meaning_zh": "并行系统：跨多个处理器或计算机同时处理数据的计算系统，用于高效处理大型数据集。Google 搜索全网用的就是大型并行系统",
+        "derivation": "Parallel(平行) → 多条线同时工作 → 拆分大任务给多人 → 总时间大大缩短",
+        "example": "Parallel systems analyze terabytes of weather data in minutes.",
+        "example_zh": "并行系统在几分钟内分析数 TB 的天气数据。",
+        "toefl_frequency": "medium",
+        "mnemonic": "一个人扫操场要 1 小时，100 人同时扫只要 36 秒——这就是并行的威力"
+      },
+      {
+        "word": "pattern",
+        "breakdown": "Pattern(模式)",
+        "meaning_en": "regularities or recurring structures that emerge from data when processed and analyzed using programs",
+        "meaning_zh": "模式：通过程序处理和分析数据时出现的规律或重复结构。例如「周五晚上 7 点订餐高峰」就是一种模式",
+        "derivation": "Pattern(图案) → 重复出现的规律 → 像墙纸的花纹",
+        "mnemonic": "找模式 = 找规律 = 数据分析的核心目标",
+        "example": "The team noticed a pattern: sales peaked every Friday evening.",
+        "example_zh": "团队注意到一个模式：销售在每个周五晚上达到高峰。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "primary data",
+        "breakdown": "Primary(主要的) + Data(数据)",
+        "meaning_en": "the main data itself, which remains unchanged even if its associated metadata is modified or deleted",
+        "meaning_zh": "主数据：数据本身，即使相关的元数据被修改或删除也保持不变。例如照片的像素是主数据，拍摄时间是元数据",
+        "derivation": "Primary(主要) → 数据的「主体」 → 元数据是「附加说明」",
+        "example": "Even after editing the file's metadata, the primary data remained intact.",
+        "example_zh": "即使编辑了文件的元数据，主数据仍然完好无损。",
+        "toefl_frequency": "low",
+        "mnemonic": "Primary data 是「书的内容」，metadata 是「书的封面和目录」"
+      },
+      {
+        "word": "scalability",
+        "breakdown": "Scale(规模) + ability(能力)",
+        "meaning_en": "the ability of a solution to maintain or improve performance as the problem size or computational resources increase",
+        "meaning_zh": "可扩展性：解决方案在问题规模或计算资源增加时保持或提升性能的能力。例如能处理 100 行数据的算法，能不能处理 10 亿行？",
+        "derivation": "Scale(规模) + -able(能够) → 能伸能缩 → 用户从 100 到 100 万都能正常运行",
+        "mnemonic": "自助餐厅：来 10 人加一桌，来 100 人加十桌——这就是可扩展性",
+        "example": "Scalability is crucial when processing data sets that grow exponentially.",
+        "example_zh": "在处理指数级增长的数据集时，可扩展性至关重要。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "trends",
+        "breakdown": "Trend(趋势) + s",
+        "meaning_en": "general directions or tendencies in data over time or across categories",
+        "meaning_zh": "趋势：数据随时间或跨类别变化的总体方向或倾向。例如「过去 10 年人均寿命逐年上升」就是趋势",
+        "derivation": "Trend(趋势) → 数据的「方向」 → 不看单点看整体走向",
+        "mnemonic": "趋势是「森林」，单个数据点是「树」——看趋势别被一两个点带偏",
+        "example": "The data revealed an upward trend in renewable energy adoption.",
+        "example_zh": "数据揭示了可再生能源采用的上升趋势。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "variable",
+        "breakdown": "Vari(变化) + able(可以)",
+        "meaning_en": "a named container in a program that stores a value which can be changed through assignment",
+        "meaning_zh": "变量：程序中存储值的命名容器。在数据分析中也指「被测量的属性」——如年龄、收入、温度都是变量",
+        "derivation": "Vari(变化) + able(可以) → 可变的 → 存的值可以变",
+        "mnemonic": "在统计中，「自变量」和「因变量」分别是原因和结果——和编程的变量是同一个词",
+        "example": "The two variables age and income showed strong correlation.",
+        "example_zh": "年龄和收入这两个变量显示出强相关性。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Using Programs with Data",
+    "type": "root",
+    "meaning_en": "techniques for processing data with programs: filtering, transforming, classifying, and visualizing",
+    "meaning_zh": "用程序处理数据：用程序对数据进行过滤、转换、分类和可视化的技术。Excel 排序、Spotify 推荐算法、Google 地图的交通颜色——都是程序在处理数据",
+    "origin": "Unit 2: 2.4 Using Programs with Data",
+    "related": [
+      "Intro to Big Idea 2",
+      "Data Compression",
+      "Extracting Information from Data"
+    ],
+    "words": [
+      {
+        "word": "classifying",
+        "breakdown": "Classify(分类) + ing",
+        "meaning_en": "a data processing technique that organizes data into categories or groups based on shared characteristics",
+        "meaning_zh": "分类：基于共同特征将数据组织成类别或组的数据处理技术。例如把邮件分为「重要」「广告」「垃圾」——这就是分类",
+        "derivation": "Class(类) + ify(化) → 「类别化」 → 把相似的东西放一起",
+        "mnemonic": "Gmail 自动把邮件分到「主要」「社交」「促销」——这就是 classifying",
+        "example": "The script began by classifying emails into spam and non-spam.",
+        "example_zh": "脚本首先将邮件分类为垃圾邮件和非垃圾邮件。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "clean",
+        "breakdown": "Clean(清洁/清洗)",
+        "meaning_en": "to process digital data by removing errors, inconsistencies, or irrelevant information to improve data quality",
+        "meaning_zh": "清洗：通过去除错误、不一致或无关信息来处理数字数据以提升数据质量。是数据分析前的「洗菜」步骤",
+        "derivation": "Clean(清洁) → 去除杂质 → 让数据「干净」可用",
+        "example": "The team had to clean the survey data before analysis.",
+        "example_zh": "团队必须在分析前清洗调查数据。",
+        "toefl_frequency": "medium",
+        "mnemonic": "数据科学家 80% 时间在 clean 数据，20% 时间在「真正分析」"
+      },
+      {
+        "word": "clustering",
+        "breakdown": "Cluster(簇) + ing",
+        "meaning_en": "a data processing technique that groups similar data points together to identify patterns and relationships",
+        "meaning_zh": "聚类：将相似的数据点分组以识别模式和关系的数据处理技术。和分类不同，聚类不需要预先知道类别——算法自己发现「物以类聚」",
+        "derivation": "Cluster(簇) → 自然形成的小群 → 把相似数据自动归为一团",
+        "mnemonic": "聚类像在操场上让人按身高自由分组——没人指定分几组，结果自然分出高矮中三堆",
+        "example": "Clustering revealed three distinct customer groups in the data.",
+        "example_zh": "聚类揭示了数据中三个不同的客户群体。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "combining data",
+        "breakdown": "Combine(合并) + Data(数据)",
+        "meaning_en": "the process of merging or aggregating multiple data elements, such as adding up values or comparing records to find patterns",
+        "meaning_zh": "合并数据：合并或聚合多个数据元素的过程，如汇总数值或比较记录以发现模式。例如把每个学生的 6 门成绩加起来求平均",
+        "derivation": "Combine(合并) → 把分散的数据集合起来 → 1+1>2 的洞察",
+        "example": "Combining data from multiple stores revealed regional trends.",
+        "example_zh": "合并多家门店的数据揭示了地区趋势。",
+        "toefl_frequency": "medium",
+        "mnemonic": "单店数据像一颗树，combining data 让你看见整片森林"
+      },
+      {
+        "word": "data",
+        "breakdown": "Data(数据)",
+        "meaning_en": "information represented in a form that can be processed by a program, such as numbers, text, or records",
+        "meaning_zh": "数据：以程序可处理的形式表示的信息。在 2.4 中是程序操作的对象——程序的「原料」",
+        "derivation": "源自拉丁语 datum(给予的事物) → 复数 data → 提供给程序处理的素材",
+        "example": "The program reads the data, processes it, and writes the results.",
+        "example_zh": "程序读取数据、处理数据并写入结果。",
+        "toefl_frequency": "high",
+        "mnemonic": "数据 → 程序 → 信息 ：程序是把数据变成信息的「机器」"
+      },
+      {
+        "word": "data filtering",
+        "breakdown": "Data(数据) + Filter(过滤) + ing",
+        "meaning_en": "the process of selecting specific elements from a data set based on defined criteria to find information and recognize patterns",
+        "meaning_zh": "数据过滤：基于定义的标准从数据集中选择特定元素以查找信息和识别模式的过程。例如「只看分数 > 90 的学生」就是过滤",
+        "derivation": "Filter(过滤) → 像筛子 → 留下符合条件的，去掉其他",
+        "mnemonic": "Amazon 搜索「价格 < 100 元」就是 data filtering——只显示符合的商品",
+        "example": "Data filtering returned only orders placed in the last 30 days.",
+        "example_zh": "数据过滤只返回了最近 30 天内的订单。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "filter",
+        "breakdown": "Filter(过滤)",
+        "meaning_en": "to process digital data by selecting or removing specific elements based on criteria to gain insight and knowledge",
+        "meaning_zh": "过滤：基于标准选择或移除特定元素来处理数字数据以获得洞察和知识。和「过滤数据」是同一概念的动词形式",
+        "derivation": "Filter(滤网) → 通过的留下，不通过的去掉",
+        "example": "Use a filter to show only the users who logged in this week.",
+        "example_zh": "使用过滤器只显示本周登录的用户。",
+        "toefl_frequency": "medium",
+        "mnemonic": "Excel 的「筛选」按钮就是 filter——勾选要保留的项"
+      },
+      {
+        "word": "filtering a data set",
+        "breakdown": "Filtering(过滤) + Data Set(数据集)",
+        "meaning_en": "the process of keeping only the elements in a data set that meet specific conditions, such as selecting only positive numbers or records matching certain criteria",
+        "meaning_zh": "过滤数据集：只保留数据集中满足特定条件的元素的过程。例如「从所有订单中只保留金额 > 100 元的」",
+        "derivation": "Filter + a data set → 对整个数据集执行过滤操作",
+        "example": "Filtering a data set of 1 million tweets to those mentioning the brand.",
+        "example_zh": "过滤一个包含 100 万条推文的数据集，只保留提到该品牌的内容。",
+        "toefl_frequency": "medium",
+        "mnemonic": "1 million tweets → filter → 1000 relevant ones → 这就是过滤的威力"
+      },
+      {
+        "word": "information",
+        "breakdown": "Inform(告知) + ation(名词后缀)",
+        "meaning_en": "the collection of facts and patterns extracted from data that provides meaning and insight",
+        "meaning_zh": "信息：从数据中提取的事实和模式的集合，提供意义和洞察。处理数据的目标就是把数据变成信息",
+        "derivation": "Inform(告知) → 让人「知道」 → 数据经处理后变成有用的知识",
+        "mnemonic": "数据 + 分析 = 信息；信息 + 经验 = 知识；知识 + 洞察 = 智慧",
+        "example": "Visualizing the data made the information much easier to understand.",
+        "example_zh": "可视化数据让信息更容易理解。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "insight",
+        "breakdown": "In(向内) + sight(看)",
+        "meaning_en": "understanding or knowledge gained from analyzing and processing data using programs",
+        "meaning_zh": "洞察：通过用程序分析和处理数据而获得的理解或知识。比信息更进一步——是「啊哈！原来如此」的瞬间",
+        "derivation": "In(向内) + sight(看见) → 「看进去」 → 看到表面下的本质",
+        "mnemonic": "数据告诉你「是什么」，信息告诉你「发生了什么」，洞察告诉你「为什么和怎么办」",
+        "example": "The analysis gave the company insight into why customers were leaving.",
+        "example_zh": "这次分析让公司洞察到客户流失的原因。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "pattern",
+        "breakdown": "Pattern(模式)",
+        "meaning_en": "regularities or recurring structures that emerge from data when processed and analyzed using programs",
+        "meaning_zh": "模式：通过程序处理和分析数据时出现的规律或重复结构。在 2.4 中通过过滤、转换、聚类等程序操作来发现",
+        "derivation": "Pattern(图案) → 重复出现的规律 → 像墙纸的花纹",
+        "mnemonic": "找模式 = 找规律 = 数据处理的核心目标",
+        "example": "The clustering algorithm revealed a hidden pattern in the data.",
+        "example_zh": "聚类算法揭示了数据中的隐藏模式。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "search tools",
+        "breakdown": "Search(搜索) + Tools(工具)",
+        "meaning_en": "programs or features that efficiently locate specific information within a data set",
+        "meaning_zh": "搜索工具：能在数据集中高效定位特定信息的程序或功能。例如 Google、Ctrl+F、SQL 的 SELECT 语句——都是搜索工具",
+        "derivation": "Search(搜索) + Tools(工具) → 帮你「找东西」的程序",
+        "example": "Modern search tools can scan terabytes of data in seconds.",
+        "example_zh": "现代搜索工具能在几秒内扫描数 TB 的数据。",
+        "toefl_frequency": "medium",
+        "mnemonic": "没有搜索工具的数据 = 没有目录的图书馆——找一本书要走断腿"
+      },
+      {
+        "word": "spreadsheets",
+        "breakdown": "Spread(铺开) + sheet(纸) + s",
+        "meaning_en": "programs that organize data in rows and columns to efficiently manage, analyze, and identify trends in information",
+        "meaning_zh": "电子表格：以行和列组织数据的程序，用于高效管理、分析和识别信息趋势。例如 Excel、Google Sheets——商业世界的「瑞士军刀」",
+        "derivation": "Spread(摊开) + sheet(表格) → 摊开成大表 → 一眼能看全",
+        "mnemonic": "全世界最普及的「数据库」不是 SQL，而是 Excel 电子表格",
+        "example": "Spreadsheets let teachers calculate grades automatically with formulas.",
+        "example_zh": "电子表格让教师能用公式自动计算成绩。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "transforming",
+        "breakdown": "Trans(跨越) + form(形态) + ing",
+        "meaning_en": "modifying or restructuring digitally represented information using programs to reveal patterns and insights",
+        "meaning_zh": "转换：使用程序修改或重构数字化表示的信息以揭示模式和洞察。例如把日期格式从「2026/04/09」转成「Apr 9, 2026」",
+        "derivation": "Trans(跨越) + form(形态) → 改变形态 → 数据从一种样子变成另一种",
+        "example": "Transforming the raw logs made the patterns immediately visible.",
+        "example_zh": "转换原始日志后，模式立刻一目了然。",
+        "toefl_frequency": "medium",
+        "mnemonic": "Transform 不改变数据「是什么」，只改变「长什么样」"
+      },
+      {
+        "word": "transforming data",
+        "breakdown": "Transform(转换) + Data(数据)",
+        "meaning_en": "the process of modifying every element in a data set according to a rule, such as doubling values or adding information to records",
+        "meaning_zh": "数据转换：根据规则修改数据集中每个元素的过程——如把所有数值翻倍、给每条记录添加字段。例如把华氏温度全部转成摄氏温度",
+        "derivation": "Transform(变形) → 改变数据的呈现方式 → 让数据更有用",
+        "example": "Transforming temperature data from Fahrenheit to Celsius.",
+        "example_zh": "将温度数据从华氏度转换为摄氏度。",
+        "toefl_frequency": "medium",
+        "mnemonic": "数据转换 = 给整个数据集「换衣服」，每个元素都换"
+      },
+      {
+        "word": "translating",
+        "breakdown": "Trans(跨越) + late(传递) + ing",
+        "meaning_en": "converting digitally represented information from one format or representation to another to gain insight",
+        "meaning_zh": "翻译/转换：将数字化表示的信息从一种格式或表示方式转换为另一种以获得洞察。例如把 JSON 数据转成 CSV——内容不变但格式变了",
+        "derivation": "Trans(跨越) + late(传递) → 跨格式传递 → 把信息从一种「语言」搬到另一种",
+        "example": "Translating XML data to JSON made it easier for the API to consume.",
+        "example_zh": "将 XML 数据翻译成 JSON 让 API 更容易使用。",
+        "toefl_frequency": "medium",
+        "mnemonic": "Translating ≈ 「翻译数据」：意思不变，表达方式变"
+      },
+      {
+        "word": "visualizing data",
+        "breakdown": "Visual(视觉) + ize(化) + Data(数据)",
+        "meaning_en": "the process of representing data through charts, graphs, or other visual representations to communicate insights and patterns",
+        "meaning_zh": "数据可视化：通过图表、图形等视觉表示来传达洞察和模式的过程。一张折线图比一千行数据更能让人一秒看懂趋势",
+        "derivation": "Visual(视觉) + ize(化) → 把数据「画」出来 → 一图胜千数",
+        "mnemonic": "John Snow 用霍乱地图（visualizing data）找到了水井是疾病源头——可视化救人命",
+        "example": "Visualizing data with a bar chart made the comparison instantly clear.",
+        "example_zh": "用柱状图可视化数据让比较一目了然。",
+        "toefl_frequency": "medium"
+      }
+    ]
   }
 ]

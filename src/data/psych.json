@@ -1697,212 +1697,6 @@
     ]
   },
   {
-    "root": "Attribution Theory",
-    "type": "root",
-    "meaning_en": "how we explain the causes of behavior",
-    "meaning_zh": "归因理论：我们如何解释行为的原因。内部归因=性格导致；外部归因=环境导致。我们对自己和他人的归因方式不同",
-    "origin": "Unit 4: Social Psychology",
-    "related": [
-      "Social Influence",
-      "Person Perception",
-      "Cultural Influences"
-    ],
-    "words": [
-      {
-        "word": "Fundamental Attribution Error",
-        "breakdown": "Fundamental(基本的) + Attribution(归因) + Error(错误)",
-        "meaning_en": "overestimating personality and underestimating situational factors in explaining others' behavior",
-        "meaning_zh": "基本归因错误：解释别人的行为时，高估性格因素、低估情境因素。「他迟到了=他这人不守时」而非「可能路上堵车了」",
-        "derivation": "对别人：归因于性格（他就是这样的人）。对自己：归因于情境（我是有原因的）",
-        "mnemonic": "别人考差了=笨；自己考差了=题太难。这就是基本归因错误",
-        "example": "The fundamental attribution error leads us to blame people rather than situations.",
-        "example_zh": "基本归因错误导致我们责怪人而非情境。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Self-serving Bias",
-        "breakdown": "Self-serving(自利的) + Bias(偏见)",
-        "meaning_en": "attributing successes to internal factors and failures to external factors",
-        "meaning_zh": "自利偏差：成功归因于自己（我聪明），失败归因于外部（老师出题太偏）。保护自尊的心理机制",
-        "derivation": "Self-serving(服务自己的) → 怎么解释都对自己有利 → 保护自尊心",
-        "mnemonic": "考好了=我努力了；考差了=题太难了——永远不是自己的问题",
-        "example": "Self-serving bias protects our self-esteem.",
-        "example_zh": "自利偏差保护我们的自尊。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Actor-Observer Bias",
-        "breakdown": "Actor(行动者) + Observer(观察者) + Bias(偏见)",
-        "meaning_en": "actors attribute behavior to situations; observers attribute it to personality",
-        "meaning_zh": "行动者-观察者偏差：自己做事时归因于情境，看别人做事时归因于性格。角度不同，归因就不同",
-        "derivation": "Actor(自己)=看到环境因素；Observer(旁观)=只看到人→归因于性格",
-        "mnemonic": "你摔倒了=地太滑（情境）；别人摔倒了=太不小心了（性格）",
-        "example": "The actor-observer bias explains different perspectives on the same behavior.",
-        "example_zh": "行动者-观察者偏差解释了对同一行为的不同看法。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Locus of Control",
-        "breakdown": "Locus(位置) + of + Control(控制)",
-        "meaning_en": "internal (self determines outcomes) vs external (outside forces determine outcomes)",
-        "meaning_zh": "控制点：内控=相信自己决定命运（努力就能成功）；外控=相信外部力量决定命运（成功靠运气）",
-        "derivation": "Locus(位置) + Control(控制) → 控制权在哪里？在你内部还是外部？",
-        "mnemonic": "内控型：「命运掌握在自己手中」；外控型：「都是命」",
-        "example": "People with an internal locus of control take more responsibility for outcomes.",
-        "example_zh": "内控型的人对结果承担更多责任。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Explanatory Style",
-        "breakdown": "Explanatory(解释的) + Style(风格)",
-        "meaning_en": "optimistic vs pessimistic patterns in explaining events",
-        "meaning_zh": "解释风格：乐观型=坏事是暂时的、局部的、外部的；悲观型=坏事是永久的、全面的、内部的",
-        "derivation": "Optimistic(乐观)=这次没考好而已；Pessimistic(悲观)=我什么都学不好",
-        "mnemonic": "悲观者：「我总是失败」（永久+全面+内部）→ 容易抑郁",
-        "example": "Pessimistic explanatory style is linked to depression.",
-        "example_zh": "悲观的解释风格与抑郁症有关。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Social Influence",
-    "type": "root",
-    "meaning_en": "how others affect our thoughts, feelings, and behaviors",
-    "meaning_zh": "社会影响：他人如何影响我们的想法、感受和行为。包括从众、服从和群体效应",
-    "origin": "Unit 4: Social Psychology",
-    "related": [
-      "Attribution Theory",
-      "Person Perception"
-    ],
-    "words": [
-      {
-        "word": "Conformity",
-        "breakdown": "Con(一起) + Form(形式) + -ity",
-        "meaning_en": "adjusting behavior to match group norms",
-        "meaning_zh": "从众：调整自己的行为以符合群体规范。阿希实验：明知答案错误，但因为其他人都选了错的，自己也跟着选错",
-        "derivation": "Con(一起) + Form(形式) → 和大家保持一致的形式 → 随大流",
-        "mnemonic": "阿希的线段实验：明明看得出哪条线一样长，但别人都说B，你也说B",
-        "example": "Asch's experiments demonstrated the power of conformity.",
-        "example_zh": "阿希的实验展示了从众的力量。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Obedience",
-        "breakdown": "Ob(向) + edi(听) + -ence",
-        "meaning_en": "following direct commands from authority figures",
-        "meaning_zh": "服从：听从权威人物的直接命令。米尔格拉姆实验：65%的人在实验者的命令下给出了最大电击（450V）",
-        "derivation": "服从权威 → 即使觉得不对也会执行 → 因为「他是专家/上级」",
-        "mnemonic": "米尔格拉姆电击实验：穿白大褂的人说「继续」，大多数人就真的继续了",
-        "example": "Milgram's experiment showed surprising levels of obedience to authority.",
-        "example_zh": "米尔格拉姆的实验显示了令人惊讶的对权威的服从程度。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Groupthink",
-        "breakdown": "Group(群体) + Think(思考)",
-        "meaning_en": "desire for group harmony overrides realistic evaluation",
-        "meaning_zh": "群体思维：为了群体和谐而压制不同意见，导致糟糕的决策。没人敢说「皇帝没穿衣服」",
-        "derivation": "Group(群体) + Think(思维) → 群体的思维 → 大家都同意=一定是对的（其实不一定）",
-        "mnemonic": "开会时没人反对→不是因为方案完美，而是没人敢说不同意见",
-        "example": "Groupthink contributed to several historical policy disasters.",
-        "example_zh": "群体思维导致了多次历史性的决策灾难。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Social Loafing",
-        "breakdown": "Social(社会的) + Loafing(偷懒)",
-        "meaning_en": "exerting less effort when working in a group",
-        "meaning_zh": "社会懈怠：在群体中工作时不那么努力。人越多，每个人的努力程度越低。「反正有别人做」",
-        "derivation": "Social(群体中) + Loaf(偷懒) → 群体中偷懒 → 因为责任被分散了",
-        "mnemonic": "小组作业时总有人划水——因为「反正有人会做的」",
-        "example": "Social loafing increases as group size grows.",
-        "example_zh": "随着群体规模增大，社会懈怠也增加。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Bystander Effect",
-        "breakdown": "Bystander(旁观者) + Effect(效应)",
-        "meaning_en": "less likely to help when others are present; diffusion of responsibility",
-        "meaning_zh": "旁观者效应：在场的人越多，每个人帮忙的可能性越小。因为责任扩散——「别人会帮的」",
-        "derivation": "Bystander(旁观者) → 大家都在旁观 → 没人行动 → 责任扩散(diffusion of responsibility)",
-        "mnemonic": "有人倒在路边：只有你一个人时你会帮忙，但如果有100个人路过，你可能就走了",
-        "example": "The bystander effect shows people are less likely to help in crowds.",
-        "example_zh": "旁观者效应表明人们在人群中不太可能伸出援手。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Personality Theories",
-    "type": "root",
-    "meaning_en": "major perspectives on what makes each person unique",
-    "meaning_zh": "人格理论：解释每个人为什么不同的主要理论视角。包括精神分析、人本主义、社会认知和特质理论",
-    "origin": "Unit 4: Social Psychology",
-    "related": [
-      "Social-Emotional Development",
-      "Psychological Disorders",
-      "Cultural Influences"
-    ],
-    "words": [
-      {
-        "word": "Psychodynamic",
-        "breakdown": "Psycho(心理) + Dynamic(动力的)",
-        "meaning_en": "Freud's theory: id, ego, superego; unconscious conflicts drive behavior",
-        "meaning_zh": "精神动力学（弗洛伊德）：本我(id)=本能欲望；自我(ego)=现实调节；超我(superego)=道德标准。潜意识冲突驱动行为",
-        "derivation": "Id(本我)=我想要；Superego(超我)=你不应该；Ego(自我)=折中一下",
-        "mnemonic": "想吃蛋糕(本我) vs 减肥不能吃(超我) → 只吃一小块(自我的妥协)",
-        "example": "Freud believed unconscious conflicts shape personality.",
-        "example_zh": "弗洛伊德认为潜意识冲突塑造人格。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Humanistic",
-        "breakdown": "Human(人) + -istic(…主义的)",
-        "meaning_en": "Maslow & Rogers: focus on growth, self-actualization, unconditional positive regard",
-        "meaning_zh": "人本主义（马斯洛&罗杰斯）：强调人的成长潜力。马斯洛需求层次=生理→安全→归属→尊重→自我实现",
-        "derivation": "以人为本 → 每个人都有成长和自我实现的潜力 → 无条件积极关注帮助成长",
-        "mnemonic": "马斯洛金字塔：先吃饱穿暖（底层），才能追求人生意义（顶层自我实现）",
-        "example": "Maslow's hierarchy places self-actualization at the top.",
-        "example_zh": "马斯洛的需求层次将自我实现放在最顶端。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Big Five (OCEAN)",
-        "breakdown": "五大人格特质",
-        "meaning_en": "openness, conscientiousness, extraversion, agreeableness, neuroticism",
-        "meaning_zh": "大五人格(OCEAN)：开放性(O)=爱尝试新事物；尽责性(C)=自律可靠；外向性(E)=社交活跃；宜人性(A)=友善合作；神经质(N)=情绪不稳定",
-        "derivation": "O-C-E-A-N → 五个维度描述人格 → 每个人在每个维度上都有高低之分",
-        "mnemonic": "OCEAN = 海洋，人格像海洋一样有五个维度，每个人的「海洋」形状不同",
-        "example": "The Big Five model is the most widely accepted trait theory.",
-        "example_zh": "大五人格模型是最被广泛接受的特质理论。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Self-efficacy",
-        "breakdown": "Self(自我) + Efficacy(效能)",
-        "meaning_en": "belief in one's ability to succeed in specific situations (Bandura)",
-        "meaning_zh": "自我效能感（班杜拉）：相信自己能在特定情境中成功的信念。自我效能感高→更努力→更可能成功→效能感更高（良性循环）",
-        "derivation": "Self(自己) + Efficacy(效力) → 相信自己有效力 → 「我能做到」的信念",
-        "mnemonic": "「我觉得我能学好AP心理」→ 高自我效能感 → 真的学得更好",
-        "example": "High self-efficacy leads to greater persistence and effort.",
-        "example_zh": "高自我效能感带来更强的坚持和努力。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Defense Mechanisms",
-        "breakdown": "Defense(防御) + Mechanisms(机制)",
-        "meaning_en": "unconscious strategies to reduce anxiety (repression, projection, denial, etc.)",
-        "meaning_zh": "防御机制（弗洛伊德）：潜意识中减少焦虑的策略。压抑=遗忘痛苦记忆；投射=把自己的想法归给别人；否认=拒绝接受现实",
-        "derivation": "自我(ego)保护自己的方式 → 潜意识自动启动 → 不是故意的",
-        "mnemonic": "不喜欢某人但说「他不喜欢我」——投射（把自己的感受投到别人身上）",
-        "example": "Defense mechanisms operate unconsciously to protect the ego.",
-        "example_zh": "防御机制在潜意识中运作，保护自我。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
     "root": "Stress & Coping",
     "type": "root",
     "meaning_en": "how stress affects health and how people cope",
@@ -2112,145 +1906,6 @@
     ]
   },
   {
-    "root": "Person Perception",
-    "type": "root",
-    "meaning_en": "how we form impressions of and make judgments about others",
-    "meaning_zh": "人际知觉：我们如何形成对他人的印象和判断。包括第一印象、偏见、自证预言等影响我们看待他人的因素",
-    "origin": "Unit 4: Social Psychology",
-    "related": [
-      "Attribution Theory",
-      "Social Influence",
-      "Cultural Influences"
-    ],
-    "words": [
-      {
-        "word": "Mere Exposure Effect",
-        "breakdown": "Mere(仅仅) + Exposure(暴露) + Effect(效应)",
-        "meaning_en": "repeated exposure to a stimulus increases liking for it",
-        "meaning_zh": "单纯曝光效应：反复接触某个刺激会增加对它的好感。看到某人越多次，越觉得他/她顺眼——即使从未交谈过",
-        "derivation": "Mere(仅仅) + Exposure(接触) → 仅仅是接触就够了 → 不需要任何互动，熟悉感自动产生好感",
-        "mnemonic": "一首歌第一次听觉得一般，听了几遍就觉得好听了——单纯曝光效应",
-        "example": "Advertisers use the mere exposure effect by repeating brand messages.",
-        "example_zh": "广告商利用单纯曝光效应反复展示品牌信息。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Self-fulfilling Prophecy",
-        "breakdown": "Self-fulfilling(自我实现的) + Prophecy(预言)",
-        "meaning_en": "a belief that causes itself to become true through behavioral confirmation",
-        "meaning_zh": "自证预言：一个信念通过影响行为而使自己变成现实。老师觉得某学生聪明→给更多关注→学生真的表现更好",
-        "derivation": "Self(自己) + Fulfill(实现) + Prophecy(预言) → 预言自己实现了自己",
-        "mnemonic": "Rosenthal效应：老师被告知「这些学生很聪明」（其实随机选的）→ 学期末这些学生真的进步最大",
-        "example": "A teacher's high expectations can create a self-fulfilling prophecy.",
-        "example_zh": "老师的高期望可以创造一个自证预言。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Social Comparison",
-        "breakdown": "Social(社会的) + Comparison(比较)",
-        "meaning_en": "evaluating ourselves by comparing with others (upward and downward)",
-        "meaning_zh": "社会比较：通过与他人比较来评价自己。向上比较=和比自己好的人比（激励或沮丧）；向下比较=和比自己差的人比（自我安慰）",
-        "derivation": "Social(社会) + Compare(比较) → 在社会中和别人比 → 人天生就会比较",
-        "mnemonic": "刷朋友圈觉得别人生活都很好（向上比较→焦虑）；看到更惨的新闻觉得自己还行（向下比较→安慰）",
-        "example": "Social media intensifies social comparison among teenagers.",
-        "example_zh": "社交媒体加剧了青少年之间的社会比较。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Implicit Bias",
-        "breakdown": "Implicit(内隐的) + Bias(偏见)",
-        "meaning_en": "unconscious attitudes that affect judgments outside of awareness",
-        "meaning_zh": "内隐偏见：无意识中影响判断的态度。即使你认为自己没有偏见，内隐联想测试(IAT)可能揭示潜意识中的偏好",
-        "derivation": "Implicit(隐含的) + Bias(偏差) → 隐藏在意识之下的偏见 → 自己都不知道自己有",
-        "mnemonic": "你觉得自己没有偏见，但看到不同种族的人时反应速度不同——这就是内隐偏见在「暗中操作」",
-        "example": "The Implicit Association Test (IAT) measures unconscious biases.",
-        "example_zh": "内隐联想测试(IAT)测量无意识的偏见。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Belief Perseverance",
-        "breakdown": "Belief(信念) + Perseverance(坚持)",
-        "meaning_en": "clinging to beliefs even after the evidence has been discredited",
-        "meaning_zh": "信念固着：即使支持某信念的证据已被否定，仍然坚持该信念。一旦形成了看法，很难改变——即使面对相反的证据",
-        "derivation": "Belief(信念) + Persevere(坚持) → 信念顽固地坚持 → 即使证据说你错了，你还是相信",
-        "mnemonic": "有人告诉你「一个坏消息」后说「我说错了，那不是真的」——但你心里已经信了",
-        "example": "Belief perseverance makes it hard to change first impressions.",
-        "example_zh": "信念固着使得改变第一印象很困难。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Cultural Influences",
-    "type": "root",
-    "meaning_en": "how culture shapes behavior, perception, and social norms",
-    "meaning_zh": "文化影响：文化如何塑造行为、认知和社会规范。个体主义vs集体主义文化在自我概念、情绪表达、服从行为上都有显著差异",
-    "origin": "Unit 4: Social Psychology",
-    "related": [
-      "Social Influence",
-      "Attribution Theory",
-      "Person Perception",
-      "Personality Theories"
-    ],
-    "words": [
-      {
-        "word": "Individualism vs Collectivism",
-        "breakdown": "Individualism(个人主义) vs Collectivism(集体主义)",
-        "meaning_en": "cultures prioritizing personal goals vs group harmony",
-        "meaning_zh": "个人主义vs集体主义：个人主义文化（美国、西欧）强调个人成就和独立；集体主义文化（东亚、拉美）强调群体和谐和家庭责任",
-        "derivation": "Individual(个人) → 重视「我」；Collective(集体) → 重视「我们」",
-        "mnemonic": "美国人说「追随你的心」（个人主义）；中国人说「光宗耀祖」（集体主义）——文化塑造价值观",
-        "example": "Collectivist cultures tend to prioritize family obligations over personal desires.",
-        "example_zh": "集体主义文化倾向于将家庭义务置于个人愿望之上。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Cultural Display Rules",
-        "breakdown": "Cultural(文化的) + Display(表现) + Rules(规则)",
-        "meaning_en": "cultural norms dictating when and how to express emotions",
-        "meaning_zh": "文化表达规则：文化规范决定何时、如何表达情绪。如日本文化中在公共场合抑制负面情绪；美国文化鼓励公开表达感受",
-        "derivation": "Display(展示) + Rules(规则) → 情绪的「展示规则」→ 不同文化对情绪表达有不同的期望",
-        "mnemonic": "同样是输了比赛：美国运动员可能大哭；日本运动员可能微笑鞠躬——不同的文化表达规则",
-        "example": "Japanese culture emphasizes restraining negative emotional displays in public.",
-        "example_zh": "日本文化强调在公共场合抑制负面情绪表达。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Gender & Culture",
-        "breakdown": "Gender(性别) + Culture(文化)",
-        "meaning_en": "how cultural norms shape gender roles, expectations, and behaviors",
-        "meaning_zh": "性别与文化：文化规范塑造性别角色和行为期望。生物性别(sex)是生理的；社会性别(gender)是文化建构的。不同文化的性别角色差异很大",
-        "derivation": "Sex(生物性别)=染色体决定；Gender(社会性别)=文化和社会塑造的角色期望",
-        "mnemonic": "「男孩不能哭」「女孩要文静」——这些不是天生的，是文化教的（性别角色社会化）",
-        "example": "Gender roles vary significantly across different cultures.",
-        "example_zh": "不同文化中的性别角色差异显著。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Superordinate Goals",
-        "breakdown": "Super(超越) + Ordinate(等级) + Goals(目标)",
-        "meaning_en": "shared goals that require cooperation between conflicting groups",
-        "meaning_zh": "超级目标：需要对立群体合作才能实现的共同目标。谢里夫的罗伯斯洞穴实验证明：共同目标能减少群际冲突",
-        "derivation": "Super(超越) + Ordinate(普通的) → 超越普通的、更高层次的目标 → 大到一个群体搞不定",
-        "mnemonic": "两个吵架的班级一起参加拔河比赛（对外）→ 必须合作 → 矛盾减少",
-        "example": "Sherif's Robbers Cave experiment used superordinate goals to reduce intergroup conflict.",
-        "example_zh": "谢里夫的罗伯斯洞穴实验用超级目标减少了群际冲突。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Social Traps",
-        "breakdown": "Social(社会的) + Traps(陷阱)",
-        "meaning_en": "situations where individuals pursuing self-interest harm the collective",
-        "meaning_zh": "社会陷阱：个人追求自身利益反而损害集体利益的情境。如公地悲剧：每个牧羊人都多放几只羊→草地被过度放牧→所有人受损",
-        "derivation": "Social(社会) + Trap(陷阱) → 社会中的陷阱 → 每个人都「理性」选择，结果所有人都输了",
-        "mnemonic": "堵车时每个人都想插队→所有人都更堵——社会陷阱的日常版本",
-        "example": "Climate change is a social trap where individual convenience harms everyone.",
-        "example_zh": "气候变化是一种社会陷阱，个人的便利损害了所有人。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
     "root": "Health Psychology",
     "type": "root",
     "meaning_en": "how psychological and behavioral factors affect health and illness",
@@ -2396,7 +2051,7 @@
     "related": [
       "Psychological Disorders",
       "Treatment Approaches",
-      "Personality Theories"
+      "Social-Cognitive & Trait"
     ],
     "words": [
       {
@@ -4614,7 +4269,7 @@
     "related": [
       "Cognitive Development",
       "Physical Development",
-      "Personality Theories"
+      "Social-Cognitive & Trait"
     ],
     "words": [
       {
@@ -5369,6 +5024,1276 @@
         "mnemonic": "脑中的「地图」→ 认知地图 → 导航不是靠记路线",
         "example": "A cognitive map helps us navigate familiar places.",
         "example_zh": "认知地图帮助我们在熟悉的地方导航。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Attribution & Person Perception",
+    "type": "root",
+    "meaning_en": "how we explain others' behavior and form impressions of people",
+    "meaning_zh": "归因与人知觉：我们如何解释他人的行为（内因还是外因），以及如何形成对他人的印象。包括基本归因错误、自利偏差、自我实现预言等核心社会认知概念",
+    "origin": "Unit 4: 4.1 Attribution Theory and Person Perception",
+    "related": [
+      "Attitude Formation",
+      "Social Influence"
+    ],
+    "words": [
+      {
+        "word": "Dispositional Attribution",
+        "breakdown": "Dispositional(性情的) + Attribution",
+        "meaning_en": "explaining behavior as due to internal traits or personality",
+        "meaning_zh": "个性归因（内归因）：把行为归因于人的内在特质、性格或能力。「他迟到是因为他懒」——认为原因在人身上",
+        "derivation": "Disposition(性情) → 认为行为源于内在性格 → 内归因",
+        "mnemonic": "「他就是这种人」→ 个性归因 → 怪性格",
+        "example": "Saying someone failed because they're lazy is a dispositional attribution.",
+        "example_zh": "说某人失败是因为懒是个性归因。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Situational Attribution",
+        "breakdown": "Situational(情境的) + Attribution",
+        "meaning_en": "explaining behavior as due to external circumstances",
+        "meaning_zh": "情境归因（外归因）：把行为归因于外部环境或情境因素。「他迟到是因为堵车」——认为原因在环境",
+        "derivation": "Situation(情境) → 行为源于外部环境 → 外归因",
+        "mnemonic": "「环境逼的」→ 情境归因 → 怪环境",
+        "example": "Blaming a late arrival on traffic is a situational attribution.",
+        "example_zh": "把迟到归咎于交通是情境归因。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fundamental Attribution Error",
+        "breakdown": "Fundamental(基本) + Attribution + Error",
+        "meaning_en": "FAE: tendency to overemphasize personal traits and underestimate situation when judging others",
+        "meaning_zh": "基本归因错误（FAE）：解释他人行为时，过度强调内在性格而低估情境影响。看到路人对我们大喊「粗鲁」——其实他可能刚发生了紧急事故。对他人犯，对自己不犯",
+        "derivation": "看别人 → 只看到人，看不到情境 → 把行为归结于性格 → 系统性错误",
+        "mnemonic": "「这人真差劲」→ 其实可能是情境造成的 → 基本归因错误",
+        "example": "Assuming a rude driver is just mean is the fundamental attribution error.",
+        "example_zh": "认为粗鲁的司机就是坏人是基本归因错误。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Actor-Observer Bias",
+        "breakdown": "Actor(行动者) + Observer(观察者) + Bias",
+        "meaning_en": "tendency to attribute own behavior to situation and others' to disposition",
+        "meaning_zh": "行动者-观察者偏差：解释自己的行为时偏向情境归因（「我迟到是堵车」），解释别人的行为时偏向性情归因（「他迟到是懒」）。是FAE的扩展",
+        "derivation": "自己：看得到情境；他人：只看到行为 → 双重标准",
+        "mnemonic": "「我是情境被害者，你就是性格问题」→ 行动者-观察者偏差",
+        "example": "You blame traffic for your lateness but think others are just irresponsible.",
+        "example_zh": "你把自己的迟到怪罪于交通却认为别人就是不负责任。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-Serving Bias",
+        "breakdown": "Self-Serving(自利的) + Bias",
+        "meaning_en": "taking credit for successes but blaming failures on external factors",
+        "meaning_zh": "自利偏差：成功归因于自己（能力、努力），失败归因于环境（运气、别人）。保护自尊的常见心理机制，几乎每个人都会有",
+        "derivation": "保护自尊的需要 → 好事揽，坏事推 → 系统性偏差",
+        "mnemonic": "「我赢是靠实力，我输是运气差」→ 自利偏差",
+        "example": "Students often credit good grades to hard work but blame bad grades on unfair tests.",
+        "example_zh": "学生通常把好成绩归功于努力，把坏成绩归咎于考试不公。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Optimistic Explanatory Style",
+        "breakdown": "Optimistic(乐观的) + Explanatory Style",
+        "meaning_en": "tendency to attribute failures to external, temporary, specific causes",
+        "meaning_zh": "乐观解释风格：把失败归因于外部的、暂时的、特定的原因（「这次题太难了」），把成功归因于内部的、稳定的、全面的原因（「我很有能力」）。和心理韧性相关",
+        "derivation": "塞利格曼提出 → 解释风格影响心理韧性 → 乐观风格更健康",
+        "mnemonic": "「失败只是暂时的」→ 乐观解释风格 → 容易振作",
+        "example": "Optimistic explanatory style predicts resilience after setbacks.",
+        "example_zh": "乐观解释风格预示着挫折后的心理韧性。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Pessimistic Explanatory Style",
+        "breakdown": "Pessimistic(悲观的) + Explanatory Style",
+        "meaning_en": "tendency to attribute failures to internal, stable, global causes",
+        "meaning_zh": "悲观解释风格：把失败归因于内部的、稳定的、全面的原因（「我就是不行」），把成功归因于外部的、偶然的原因（「只是运气」）。与抑郁和习得性无助相关",
+        "derivation": "失败 → 「我的错」+「永远」+「一切都是」→ 悲观风格 → 抑郁风险",
+        "mnemonic": "「我全完了」→ 悲观解释风格 → 抑郁的认知基础",
+        "example": "Pessimistic explanatory style is linked to depression.",
+        "example_zh": "悲观解释风格与抑郁相关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Internal Locus of Control",
+        "breakdown": "Internal(内部) + Locus(位置) + Control",
+        "meaning_en": "belief that you control your own outcomes",
+        "meaning_zh": "内控点：相信自己的努力和行动决定人生结果。「命运在我手中」。和更好的学业表现、健康行为、幸福感相关",
+        "derivation": "罗特提出 → 认为控制权在自己 → 更主动",
+        "mnemonic": "「我能掌控」→ 内控点 → 主动型人格",
+        "example": "People with internal locus of control take responsibility for outcomes.",
+        "example_zh": "有内控点的人为结果负责。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "External Locus of Control",
+        "breakdown": "External(外部) + Locus + Control",
+        "meaning_en": "belief that outcomes are determined by luck, fate, or powerful others",
+        "meaning_zh": "外控点：相信人生结果由运气、命运或外部力量决定，自己无能为力。和焦虑、习得性无助、被动行为相关",
+        "derivation": "认为控制权在外部 → 觉得努力无用 → 被动",
+        "mnemonic": "「命该如此」→ 外控点 → 被动型",
+        "example": "External locus of control may lead to feelings of helplessness.",
+        "example_zh": "外控点可能导致无助感。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mere Exposure Effect",
+        "breakdown": "Mere(仅仅) + Exposure(接触)",
+        "meaning_en": "tendency to prefer things that are familiar",
+        "meaning_zh": "单纯接触效应：反复接触某物会让人更喜欢它——即使没有明显理由。广告原理之一。也解释为什么人会喜欢和自己长得像的人——看着熟悉",
+        "derivation": "熟悉 → 不陌生 → 不威胁 → 被偏好",
+        "mnemonic": "「看多了就习惯了，习惯了就喜欢了」→ 单纯接触效应",
+        "example": "The mere exposure effect explains why we like familiar songs.",
+        "example_zh": "单纯接触效应解释了为什么我们喜欢熟悉的歌曲。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-Fulfilling Prophecy",
+        "breakdown": "Self-Fulfilling(自我实现) + Prophecy(预言)",
+        "meaning_en": "expectations about someone that cause those expectations to come true",
+        "meaning_zh": "自我实现预言：对某人的预期影响了对待他的方式，反过来让预期成真。老师以为某学生聪明→多给关注→学生真的进步。罗森塔尔的皮格马利翁效应",
+        "derivation": "预期 → 改变行为 → 影响对方 → 预期成真",
+        "mnemonic": "「我以为你行，我对你好，你真的行了」→ 自我实现预言",
+        "example": "Teachers' expectations can create self-fulfilling prophecies for students.",
+        "example_zh": "教师的期望可以为学生创造自我实现预言。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Comparison",
+        "breakdown": "Social(社会的) + Comparison",
+        "meaning_en": "evaluating oneself by comparison with others",
+        "meaning_zh": "社会比较：通过和他人对比来评价自己。向上比较（和比自己好的人比）激励但也可能沮丧；向下比较（和差的人比）提升自尊。社交媒体放大了社会比较",
+        "derivation": "费斯廷格提出 → 没有客观标准时 → 通过他人评估自己",
+        "mnemonic": "「别人都那么好我怎么办」→ 社会比较 → 社交媒体时代的痛",
+        "example": "Social media encourages constant social comparison.",
+        "example_zh": "社交媒体鼓励持续的社会比较。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Relative Deprivation",
+        "breakdown": "Relative(相对的) + Deprivation(剥夺)",
+        "meaning_en": "feeling worse off when comparing yourself to those who have more",
+        "meaning_zh": "相对剥夺感：当和条件更好的人比较时，即使客观上并不匮乏也会感到不满。和富邻居比，中产阶级也觉得自己穷。不绝对贫困但感到被剥夺",
+        "derivation": "向上比较 → 感到「不如」→ 即使客观条件不差",
+        "mnemonic": "「别人都有，我没有」→ 相对剥夺感 → 不是真没，而是感觉没",
+        "example": "Relative deprivation can cause unrest even in wealthy societies.",
+        "example_zh": "相对剥夺感即使在富裕社会也可能引发不满。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Attitude Formation",
+    "type": "root",
+    "meaning_en": "how attitudes, stereotypes, and biases form and change",
+    "meaning_zh": "态度形成与改变：刻板印象、偏见、群体偏差如何形成，以及认知失调如何驱动态度改变。是社会心理学的核心主题",
+    "origin": "Unit 4: 4.2 Attitude Formation and Change",
+    "related": [
+      "Attribution & Person Perception",
+      "Social Influence"
+    ],
+    "words": [
+      {
+        "word": "Stereotype",
+        "breakdown": "Stereo(刻板) + type",
+        "meaning_en": "generalized belief about a group of people",
+        "meaning_zh": "刻板印象：对某群体的概括性信念，把群体成员视为都具有某些特征。可以是正面也可以是负面的——「亚洲人数学好」也是刻板印象。即使是「好的」也是简化和失真",
+        "derivation": "分类思维 → 类别+特征的关联 → 刻板化的印象",
+        "mnemonic": "「这群人都是...」→ 刻板印象 → 方便但失真",
+        "example": "Stereotypes can lead to unfair judgments.",
+        "example_zh": "刻板印象会导致不公平的判断。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Implicit Attitudes",
+        "breakdown": "Implicit(内隐的) + Attitudes",
+        "meaning_en": "unconscious attitudes that influence judgments and behavior",
+        "meaning_zh": "内隐态度：我们不知道自己持有的态度，但会无意识地影响判断和行为。即使声称没有偏见的人，内隐联想测验（IAT）常显示潜在偏见",
+        "derivation": "意识之外的评价 → 影响行为但自己不知 → 内隐",
+        "mnemonic": "「嘴上说没偏见，心里可能有」→ 内隐态度",
+        "example": "Implicit attitudes can be measured with the Implicit Association Test.",
+        "example_zh": "内隐态度可以用内隐联想测验来测量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Just-World Phenomenon",
+        "breakdown": "Just(公正的) + World + Phenomenon",
+        "meaning_en": "tendency to believe the world is fair and people get what they deserve",
+        "meaning_zh": "公正世界谬误：相信世界是公平的，好人有好报，坏事发生在应得的人身上。导致「受害者有罪论」——强奸受害者被怪「穿着不当」。保护我们相信世界可预测，代价是伤害受害者",
+        "derivation": "希望世界可控 → 「所有事都有理由」→ 受害者必定有过",
+        "mnemonic": "「苍蝇不叮无缝蛋」→ 公正世界谬误 → 怪受害者",
+        "example": "The just-world phenomenon can lead to victim-blaming.",
+        "example_zh": "公正世界谬误会导致责怪受害者。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Out-Group Homogeneity Bias",
+        "breakdown": "Out-Group(外群体) + Homogeneity(同质)",
+        "meaning_en": "tendency to see members of other groups as all alike",
+        "meaning_zh": "外群体同质性偏差：觉得「他们都一样」，但自己群体内的人「各有不同」。实际上外群体内部和内群体一样多样化，只是我们不熟悉",
+        "derivation": "对内群体了解多 → 看到差异；对外群体了解少 → 只看到共性",
+        "mnemonic": "「他们都差不多」「我们各有各的」→ 外群体同质性偏差",
+        "example": "Out-group homogeneity bias makes us think \"they all look alike\".",
+        "example_zh": "外群体同质性偏差让我们觉得「他们长得都差不多」。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "In-Group Bias",
+        "breakdown": "In-Group(内群体) + Bias",
+        "meaning_en": "tendency to favor members of one's own group",
+        "meaning_zh": "内群体偏袒：偏爱自己所属群体的成员，对外群体较为冷淡或敌对。即使是任意分组（按扔硬币）也会立刻产生——「最小群体范式」实验证明",
+        "derivation": "进化的群体本能 → 「我们」自动优于「他们」→ 偏袒",
+        "mnemonic": "「自己人」→ 内群体偏袒 → 进化的「部落本能」",
+        "example": "In-group bias appears even with arbitrary group assignments.",
+        "example_zh": "即使是任意分组也会出现内群体偏袒。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Ethnocentrism",
+        "breakdown": "Ethno(种族) + centrism(中心)",
+        "meaning_en": "belief that one's own culture is superior to others",
+        "meaning_zh": "种族中心主义：认为自己的文化、种族或民族优越于其他。用自己文化的标准评判其他文化——把不同视为「落后」或「野蛮」。跨文化研究的重要陷阱",
+        "derivation": "Ethno(民族) + centrism(中心) → 以自己民族为中心 → 种族中心主义",
+        "mnemonic": "「我们的才对，其他都怪」→ 种族中心主义",
+        "example": "Ethnocentrism can hinder cross-cultural understanding.",
+        "example_zh": "种族中心主义会阻碍跨文化理解。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Belief Perseverance",
+        "breakdown": "Belief + Perseverance(坚持)",
+        "meaning_en": "clinging to beliefs even when contradictory evidence appears",
+        "meaning_zh": "信念固守：即使有相反的证据，人们仍坚持原有信念。一旦形成观点，推翻它极为困难。是假新闻难以纠正的心理基础",
+        "derivation": "已有信念 → 成为认知锚点 → 新证据被忽视或扭曲 → 信念不变",
+        "mnemonic": "「死不认错」的认知原因 → 信念固守",
+        "example": "Belief perseverance makes it hard to correct misinformation.",
+        "example_zh": "信念固守使纠正错误信息变得困难。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Confirmation Bias",
+        "breakdown": "Confirmation(确认) + Bias",
+        "meaning_en": "tendency to seek and remember information confirming existing beliefs",
+        "meaning_zh": "确认偏差：倾向于寻找、注意和记住支持自己已有信念的信息，忽视或低估相反的信息。回音室效应的心理基础——我们更愿意看到支持自己的新闻",
+        "derivation": "已有信念 → 主动过滤信息 → 只收集支持证据 → 信念强化",
+        "mnemonic": "「我只看支持我观点的新闻」→ 确认偏差",
+        "example": "Confirmation bias is why we prefer news that agrees with us.",
+        "example_zh": "确认偏差是我们偏好与己一致的新闻的原因。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cognitive Dissonance",
+        "breakdown": "Cognitive(认知的) + Dissonance(不一致)",
+        "meaning_en": "uncomfortable tension when holding conflicting attitudes or beliefs",
+        "meaning_zh": "认知失调（费斯廷格）：当行为和态度不一致时产生的心理不适。为缓解失调，人们会改变态度使其与行为一致——「我做了这件事，所以我一定相信它」。解释了为什么小奖励反而能改变态度",
+        "derivation": "行为 vs 态度冲突 → 心理不适 → 调整态度 → 恢复一致",
+        "mnemonic": "「我做都做了，那我肯定是认同的」→ 认知失调驱动态度改变",
+        "example": "Cognitive dissonance motivates people to justify their choices.",
+        "example_zh": "认知失调驱使人们为自己的选择辩护。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Social Influence",
+    "type": "root",
+    "meaning_en": "how social situations shape behavior through persuasion, conformity, and group dynamics",
+    "meaning_zh": "社会影响：社会情境如何通过说服、从众、群体动力等方式塑造个体行为。包括经典的米尔格拉姆、阿希实验以及群体效应如群体思维、旁观者效应",
+    "origin": "Unit 4: 4.3 Psychology of Social Situations",
+    "related": [
+      "Attribution & Person Perception",
+      "Attitude Formation"
+    ],
+    "words": [
+      {
+        "word": "Social Norms",
+        "breakdown": "Social(社会的) + Norms(规范)",
+        "meaning_en": "unwritten rules about acceptable behavior in a society or group",
+        "meaning_zh": "社会规范：群体或社会中关于可接受行为的不成文规则。排队、不在电梯里说话——没人教过你，但你知道。违反规范会引起社交尴尬",
+        "derivation": "群体共识 → 默认的行为标准 → 成员遵守 → 社会规范",
+        "mnemonic": "「大家都这样做」→ 社会规范 → 不成文的规则",
+        "example": "Standing in line is a common social norm.",
+        "example_zh": "排队是常见的社会规范。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Normative Social Influence",
+        "breakdown": "Normative(规范性) + Social Influence",
+        "meaning_en": "conformity to fit in and be liked",
+        "meaning_zh": "规范性社会影响：为了被接纳、避免被排斥而从众。「别人都穿西装我也穿」——不是真的觉得西装更合适，而是不想格格不入",
+        "derivation": "归属需要 → 害怕被拒 → 表面上遵从群体 → 规范性影响",
+        "mnemonic": "「不想被孤立」→ 规范性社会影响 → 为了合群",
+        "example": "Teens conforming to fashion trends shows normative influence.",
+        "example_zh": "青少年追随时尚潮流体现了规范性影响。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Informational Social Influence",
+        "breakdown": "Informational(信息性) + Social Influence",
+        "meaning_en": "conformity based on accepting others' information as accurate",
+        "meaning_zh": "信息性社会影响：相信别人掌握的信息比自己准确而从众。在陌生餐厅，大家都吃某道菜——你想「大家都点必是好吃的」。情况不明时尤其容易发生",
+        "derivation": "不确定时 → 别人必定知道 → 跟着做 → 信息性影响",
+        "mnemonic": "「他们肯定知道」→ 信息性社会影响 → 不是跟风是信任",
+        "example": "Following the crowd during a fire reflects informational influence.",
+        "example_zh": "火灾时跟随人群反映了信息性影响。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Elaboration Likelihood Model",
+        "breakdown": "Elaboration(加工) + Likelihood(可能性) + Model",
+        "meaning_en": "persuasion theory with two routes: central (logic) and peripheral (cues)",
+        "meaning_zh": "精细加工可能性模型：说服有两条路径——中心路径（仔细思考论据）和外周路径（靠简单线索如明星代言）。受众的动机和能力决定走哪条路径",
+        "derivation": "动机+能力高 → 走中心路径（理性）；低 → 走外周路径（感性）",
+        "mnemonic": "两种说服方式 → 走脑子 vs 走情感 → ELM",
+        "example": "Persuasive ads use central or peripheral routes based on the audience.",
+        "example_zh": "说服性广告根据受众使用中心或外周路径。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Central Route to Persuasion",
+        "breakdown": "Central(中心) + Route(路径) + Persuasion",
+        "meaning_en": "persuasion through careful examination of arguments",
+        "meaning_zh": "中心说服路径：通过仔细思考和评估论据来说服。受众必须有动机和能力去深入思考。产生的态度变化更持久、更抗反驳",
+        "derivation": "强论据 + 受众投入 → 深入加工 → 态度改变更持久",
+        "mnemonic": "走脑子 → 理性被说服 → 中心路径 → 更稳定",
+        "example": "The central route works best when the audience is motivated.",
+        "example_zh": "中心路径在受众有动机时最有效。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Peripheral Route to Persuasion",
+        "breakdown": "Peripheral(外围) + Route + Persuasion",
+        "meaning_en": "persuasion through superficial cues like attractiveness or emotion",
+        "meaning_zh": "外周说服路径：靠简单线索（明星代言、外表吸引力、情绪）而非论据来说服。产生的态度变化较浅、容易被推翻",
+        "derivation": "弱动机 → 不深入想 → 靠表面线索 → 态度改变但不持久",
+        "mnemonic": "走情绪 → 外周路径 → 「这人好看所以信他」",
+        "example": "Celebrity endorsements use the peripheral route.",
+        "example_zh": "明星代言使用外周路径。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Halo Effect",
+        "breakdown": "Halo(光环) + Effect",
+        "meaning_en": "tendency for a positive impression in one area to influence opinions of other areas",
+        "meaning_zh": "光环效应：对一个人某方面的好印象（如长得好看）影响了对其他方面的判断（聪明、善良）。外表吸引的人经常被假设更聪明、更可信",
+        "derivation": "一个正面特征 → 像光环一样罩住整个人 → 其他特征也被正面评价",
+        "mnemonic": "长得好看的人「什么都好」→ 光环效应",
+        "example": "Attractive people often benefit from the halo effect.",
+        "example_zh": "有吸引力的人常常受益于光环效应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Foot-in-the-Door Technique",
+        "breakdown": "Foot-in-the-Door(脚进门)",
+        "meaning_en": "persuasion strategy: agreeing to small request first makes you more likely to agree to a bigger one",
+        "meaning_zh": "得寸进尺技术：先让对方同意一个小请求，再提出大请求——成功率大增。因为同意了小的就形成了承诺一致性。销售和募捐常用",
+        "derivation": "先小后大 → 一致性原理 → 不好意思拒绝第二个",
+        "mnemonic": "「先让你点头一次，后面更容易答应」→ 脚进门",
+        "example": "Asking for a small favor first uses the foot-in-the-door technique.",
+        "example_zh": "先提小要求使用了得寸进尺技术。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Door-in-the-Face Effect",
+        "breakdown": "Door-in-the-Face(门当面关)",
+        "meaning_en": "persuasion strategy: large request rejected first makes smaller one more likely accepted",
+        "meaning_zh": "留面子技术：先提一个很大的、肯定被拒的请求，然后提实际想要的小请求——对方更可能答应。让对方感觉「你已经让步了」，他也该让步",
+        "derivation": "先大后小 → 互惠让步原理 → 第二个显得合理",
+        "mnemonic": "「先狮子大开口，被拒后正常要」→ 留面子",
+        "example": "Asking for $100 before asking for $20 uses the door-in-the-face technique.",
+        "example_zh": "先要100元再要20元使用了留面子技术。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Conformity",
+        "breakdown": "Conformity(从众)",
+        "meaning_en": "adjusting behavior or thinking to match group standards",
+        "meaning_zh": "从众：调整自己的行为或观点以符合群体。阿希的线段实验——即使答案明显错误，75%的人至少有一次跟着群体一起说错。群体压力的强大证明",
+        "derivation": "群体压力 → 害怕孤立 + 怀疑自己 → 改变行为符合群体",
+        "mnemonic": "随大流 → 从众 → 阿希实验经典",
+        "example": "Asch's line experiment demonstrated conformity.",
+        "example_zh": "阿希的线段实验证明了从众现象。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Obedience",
+        "breakdown": "Obedience(服从)",
+        "meaning_en": "following direct orders from an authority figure",
+        "meaning_zh": "服从：听从权威人物的直接命令。米尔格拉姆电击实验——普通人在「科学家」命令下，对陌生人施加（以为的）致命电击。65%的人服从到底。解释了大屠杀如何可能",
+        "derivation": "权威命令 → 责任感转移 → 执行即使是残忍的命令 → 服从",
+        "mnemonic": "米尔格拉姆电击实验 → 服从的黑暗力量",
+        "example": "Milgram's shock experiment showed the power of obedience.",
+        "example_zh": "米尔格拉姆的电击实验显示了服从的力量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Individualism",
+        "breakdown": "Individualism(个人主义)",
+        "meaning_en": "cultural emphasis on personal goals and individual autonomy",
+        "meaning_zh": "个人主义：强调个人目标、独立、自主的文化价值观。个人利益优先于群体。美国、西欧等文化偏个人主义。个人成就、隐私、「做自己」被高度重视",
+        "derivation": "文化价值观 → 强调「我」→ 个人优先于群体",
+        "mnemonic": "「我的人生我做主」→ 个人主义 → 西方文化典型",
+        "example": "American culture emphasizes individualism.",
+        "example_zh": "美国文化强调个人主义。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Collectivism",
+        "breakdown": "Collect(集合) + ivism",
+        "meaning_en": "cultural emphasis on group goals and harmony over individual ones",
+        "meaning_zh": "集体主义：强调群体目标、和谐、相互依赖的文化价值观。群体利益优先于个人。东亚、拉美、非洲许多文化偏集体主义。家庭、面子、社会责任被重视",
+        "derivation": "文化价值观 → 强调「我们」→ 群体优先于个人",
+        "mnemonic": "「为了大家，我可以」→ 集体主义 → 东方文化典型",
+        "example": "Collectivism is common in East Asian cultures.",
+        "example_zh": "集体主义在东亚文化中很常见。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Multiculturalism",
+        "breakdown": "Multi(多) + culturalism",
+        "meaning_en": "presence of, and support for, multiple cultural traditions within one society",
+        "meaning_zh": "多元文化主义：一个社会内多种文化传统共存并被支持的理念。强调文化差异值得保留而非同化。和「大熔炉」（同化）相对",
+        "derivation": "多种文化 + 彼此尊重 → 多元文化主义",
+        "mnemonic": "「大家各有各的文化也很好」→ 多元文化主义",
+        "example": "Canada promotes multiculturalism as a national value.",
+        "example_zh": "加拿大把多元文化主义当作国家价值观。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Group Polarization",
+        "breakdown": "Group + Polarization(极化)",
+        "meaning_en": "tendency for group discussion to strengthen members' initial opinions",
+        "meaning_zh": "群体极化：群体讨论后，成员的意见比原先更极端。一群本来就偏支持某观点的人讨论后，变得更支持。不是「折中」而是「变极端」。社交媒体回音室的机制",
+        "derivation": "同类人讨论 → 互相强化 → 观点越来越极端",
+        "mnemonic": "「讨论不是中和，而是加码」→ 群体极化",
+        "example": "Online echo chambers can cause group polarization.",
+        "example_zh": "网络回音室会导致群体极化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Groupthink",
+        "breakdown": "Group + think",
+        "meaning_en": "desire for group harmony overrides realistic decision-making",
+        "meaning_zh": "群体思维（詹尼斯）：为了维护群体和谐，成员压制异议、不批评地接受多数意见，导致糟糕决策。猪湾事件、挑战者号灾难都被归因于此。高凝聚力群体尤其容易",
+        "derivation": "和谐压力 → 压制质疑 → 一致性幻觉 → 糟糕决策",
+        "mnemonic": "「为了不闹矛盾，坏主意大家都说好」→ 群体思维",
+        "example": "Groupthink contributed to the Bay of Pigs disaster.",
+        "example_zh": "群体思维促成了猪湾事件的灾难。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Diffusion of Responsibility",
+        "breakdown": "Diffusion(扩散) + Responsibility",
+        "meaning_en": "reduced personal responsibility when others are present",
+        "meaning_zh": "责任分散：当别人在场时，每个人感到的个人责任都变小——「总会有人做吧」。是旁观者效应的核心机制",
+        "derivation": "人多 → 责任被稀释 → 每人都觉得「不是我」→ 没人行动",
+        "mnemonic": "「这么多人，不差我一个」→ 责任分散",
+        "example": "Diffusion of responsibility explains why no one called 911.",
+        "example_zh": "责任分散解释了为什么没人报警。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Bystander Effect",
+        "breakdown": "Bystander(旁观者) + Effect",
+        "meaning_en": "tendency for individuals to be less likely to help when others are present",
+        "meaning_zh": "旁观者效应：旁观者越多，任何单个人出手相助的可能性越小。基蒂·吉诺维斯案启发了这项研究。反直觉——按理人多应该更安全，但实际相反",
+        "derivation": "旁观者多 → 责任分散 + 情境模糊（别人没动） → 没人行动",
+        "mnemonic": "「人越多越没人帮」→ 旁观者效应 → 反直觉",
+        "example": "The bystander effect is why crowds sometimes fail to help.",
+        "example_zh": "旁观者效应解释了为什么人群有时不出手相助。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Loafing",
+        "breakdown": "Social + Loafing(偷懒)",
+        "meaning_en": "tendency to exert less effort on group tasks than individual tasks",
+        "meaning_zh": "社会懈怠：在群体任务中，每个人付出的努力比单独做时少。拔河比赛——人多时每个人没使全力。因为个人贡献被「稀释」，责任感降低",
+        "derivation": "群体任务 → 贡献不可见 → 责任分散 → 每人少出力",
+        "mnemonic": "「人多力量小」→ 社会懈怠 → 和「人多力量大」相反",
+        "example": "Social loafing happens in group projects when contributions aren't tracked.",
+        "example_zh": "在贡献未被追踪的小组项目中会发生社会懈怠。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Deindividuation",
+        "breakdown": "De(去) + individuation(个体化)",
+        "meaning_en": "loss of self-awareness and individual responsibility in a group",
+        "meaning_zh": "去个体化：在群体中（尤其匿名时）失去自我意识和个人责任感，做出平时不会做的事。网络暴力、足球流氓、暴动都涉及去个体化",
+        "derivation": "匿名 + 群体 → 自我意识降低 → 解除约束 → 极端行为",
+        "mnemonic": "「在人群里我就不是我了」→ 去个体化 → 人群中的暴力",
+        "example": "Rioting crowds show deindividuation.",
+        "example_zh": "暴动的人群显示出去个体化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Facilitation",
+        "breakdown": "Social + Facilitation(促进)",
+        "meaning_en": "improved performance on simple tasks when others are watching",
+        "meaning_zh": "社会促进：他人在场时，对简单或熟练的任务表现更好，对困难或陌生任务表现更差。观众提高唤醒水平，对已会的事有帮助，对难学的事反而不利",
+        "derivation": "他人在场 → 生理唤醒提高 → 简单任务更快，难任务更糟",
+        "mnemonic": "熟练动作有观众更好，生疏动作有观众更糟 → 社会促进",
+        "example": "Skilled athletes often perform better in front of crowds.",
+        "example_zh": "熟练的运动员在观众面前往往表现更好。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "False Consensus Effect",
+        "breakdown": "False(错误的) + Consensus(共识) + Effect",
+        "meaning_en": "tendency to overestimate how much others share our beliefs",
+        "meaning_zh": "虚假共识效应：高估别人和自己持有相同观点的比例。「大家都这么想吧？」——其实没有。是确认偏差和社会投射的结果",
+        "derivation": "自己的观点 → 以为普遍 → 高估他人的同意程度",
+        "mnemonic": "「大家都这么认为」→ 其实只有你这么认为 → 虚假共识",
+        "example": "The false consensus effect makes us think our views are normal.",
+        "example_zh": "虚假共识效应让我们以为自己的观点是普遍的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Superordinate Goals",
+        "breakdown": "Super(超) + ordinate + Goals",
+        "meaning_en": "shared goals that require cooperation between groups",
+        "meaning_zh": "共同上位目标：需要不同群体合作才能达到的共同目标。谢里夫的罗伯斯山洞实验——敌对的两组男孩通过共同解决问题（修水管、推卡车）化解了冲突。减少偏见的有效方法",
+        "derivation": "共同目标 → 必须合作 → 原来的对立消解",
+        "mnemonic": "「共同敌人」或「共同目标」→ 让对立群体团结 → 上位目标",
+        "example": "Sherif used superordinate goals to reduce conflict in Robbers Cave.",
+        "example_zh": "谢里夫用上位目标化解了罗伯斯山洞的冲突。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Trap",
+        "breakdown": "Social + Trap(陷阱)",
+        "meaning_en": "situation where individual self-interest leads to collective disaster",
+        "meaning_zh": "社会陷阱：每个人追求个人利益导致集体灾难的情境。公地悲剧是典型——每个牧民都想多放几只羊，结果草场毁掉所有人都没了。气候变化也是社会陷阱",
+        "derivation": "个人理性 + 共享资源 → 过度使用 → 集体崩溃",
+        "mnemonic": "「每人都想占便宜，结果大家都输」→ 社会陷阱",
+        "example": "Overfishing is a classic social trap.",
+        "example_zh": "过度捕捞是典型的社会陷阱。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Industrial-Organizational Psychology",
+        "breakdown": "Industrial(工业的) + Organizational + Psychology",
+        "meaning_en": "I/O psychology: applying psychology to workplace behavior and management",
+        "meaning_zh": "工业与组织心理学（I/O）：把心理学应用于工作场所——招聘选拔、培训、员工动机、领导力、组织文化等。是心理学应用最广的分支之一",
+        "derivation": "工业心理学 + 组织行为 → 应用心理学子领域",
+        "mnemonic": "「上班的心理学」→ I/O心理学",
+        "example": "I/O psychologists help design better workplaces.",
+        "example_zh": "工业与组织心理学家帮助设计更好的工作场所。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Altruism",
+        "breakdown": "Altruism(利他主义)",
+        "meaning_en": "unselfish concern for the welfare of others",
+        "meaning_zh": "利他主义：不考虑自身利益地关心他人福祉。真正的利他是否存在是心理学争论——有人认为所有「利他」行为最终都有自私动机。包括同理心、同情和助人行为",
+        "derivation": "alter(他人) + ism → 以他人为中心 → 利他主义",
+        "mnemonic": "alter = 他人 → 利他主义 → 为他人考虑",
+        "example": "Donating anonymously is an example of altruism.",
+        "example_zh": "匿名捐赠是利他主义的例子。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Responsibility Norm",
+        "breakdown": "Social Responsibility(社会责任) + Norm",
+        "meaning_en": "expectation that people should help those who need help",
+        "meaning_zh": "社会责任规范：社会期望我们帮助需要帮助的人，不问回报。看到老人跌倒扶起——不期待回报但觉得「应该这样」。驱动很多助人行为",
+        "derivation": "文化规范 → 应帮助弱者 → 社会责任",
+        "mnemonic": "「看到弱者该帮」→ 社会责任规范",
+        "example": "The social responsibility norm motivates helping children.",
+        "example_zh": "社会责任规范促使人们帮助儿童。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Reciprocity Norm",
+        "breakdown": "Social Reciprocity(互惠) + Norm",
+        "meaning_en": "expectation that people will help those who have helped them",
+        "meaning_zh": "互惠规范：别人帮了你，你也应该帮回去的社会期望。是人类合作的基础。送礼、请客吃饭等互惠行为都是这个规范的体现",
+        "derivation": "文化规范 → 收人恩惠必还 → 互惠",
+        "mnemonic": "「礼尚往来」→ 互惠规范",
+        "example": "The reciprocity norm drives gift exchanges.",
+        "example_zh": "互惠规范驱动礼物交换。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Psychoanalytic & Humanistic Theories",
+    "type": "root",
+    "meaning_en": "Freud's psychodynamic theory and humanistic theories of personality",
+    "meaning_zh": "心理动力学与人本主义人格理论：弗洛伊德的潜意识、防御机制理论，以及罗杰斯和马斯洛的人本主义理论——强调自我实现和无条件积极关注",
+    "origin": "Unit 4: 4.4 Psychoanalytic and Humanistic Theories of Personality",
+    "related": [
+      "Social-Cognitive & Trait",
+      "Treatment Approaches"
+    ],
+    "words": [
+      {
+        "word": "Psychodynamic Perspective",
+        "breakdown": "Psycho(心理) + dynamic(动力) + Perspective",
+        "meaning_en": "view emphasizing unconscious drives and childhood experiences shape personality",
+        "meaning_zh": "心理动力学观点：强调潜意识冲动和童年经历塑造人格。源于弗洛伊德。现代心理动力学仍保留潜意识的核心概念，但抛弃了很多弗洛伊德的具体理论",
+        "derivation": "弗洛伊德派传统 → 潜意识+童年 → 现代延续",
+        "mnemonic": "「冰山下面才是真的你」→ 心理动力学观点",
+        "example": "The psychodynamic perspective emphasizes unconscious motives.",
+        "example_zh": "心理动力学观点强调潜意识动机。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Unconscious Processes",
+        "breakdown": "Unconscious(潜意识) + Processes",
+        "meaning_en": "mental activity happening outside conscious awareness",
+        "meaning_zh": "潜意识过程：在意识之外发生的心理活动。弗洛伊德认为潜意识藏着被压抑的冲动和记忆。现代心理学确认潜意识存在，但不完全如弗洛伊德所描述",
+        "derivation": "意识之外的心理活动 → 影响行为但我们不知 → 潜意识",
+        "mnemonic": "「你不知道自己在想什么」→ 潜意识过程",
+        "example": "Freud believed unconscious processes drive much of behavior.",
+        "example_zh": "弗洛伊德认为潜意识过程驱动大部分行为。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Ego Defense Mechanisms",
+        "breakdown": "Ego(自我) + Defense + Mechanisms",
+        "meaning_en": "unconscious strategies the ego uses to reduce anxiety from conflict",
+        "meaning_zh": "自我防御机制：自我用来减轻焦虑的无意识心理策略。当本我冲动和超我要求冲突时，防御机制介入缓解心理压力。弗洛伊德的女儿安娜·弗洛伊德系统化了这个概念",
+        "derivation": "本我-超我冲突 → 焦虑 → 防御机制介入 → 缓解焦虑",
+        "mnemonic": "心理「安全气囊」→ 防御机制 → 保护自我不崩溃",
+        "example": "Defense mechanisms protect the ego from unwanted thoughts.",
+        "example_zh": "防御机制保护自我不受不想要的想法困扰。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Denial",
+        "breakdown": "Denial(否认)",
+        "meaning_en": "refusing to accept reality or acknowledge a painful fact",
+        "meaning_zh": "否认：拒绝承认令人痛苦的事实。「我没有酗酒」——而事实显然相反。是最原始的防御机制之一，保护心理不被现实冲垮",
+        "derivation": "痛苦事实 → 自我无法承受 → 直接拒绝承认 → 否认",
+        "mnemonic": "「这不是真的」→ 否认 → 拒绝现实",
+        "example": "Denial is refusing to accept a serious diagnosis.",
+        "example_zh": "否认是拒绝接受严重的诊断。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Displacement",
+        "breakdown": "Displacement(置换)",
+        "meaning_en": "redirecting impulses from a threatening target to a safer one",
+        "meaning_zh": "置换：把对威胁性目标的冲动（通常是愤怒）转移到安全的目标。被老板骂了不敢顶回去，回家对家人发火——愤怒被置换到安全对象",
+        "derivation": "原目标不能碰 → 转向替代目标 → 安全地发泄",
+        "mnemonic": "「被老板气到回家踢狗」→ 置换",
+        "example": "Yelling at family after a bad day at work is displacement.",
+        "example_zh": "工作不顺后对家人发火是置换。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Projection",
+        "breakdown": "Projection(投射)",
+        "meaning_en": "attributing one's own unacceptable thoughts to others",
+        "meaning_zh": "投射：把自己不能接受的想法或冲动归咎于他人。「他讨厌我」——其实是我讨厌他。通过「不是我」来减轻内疚",
+        "derivation": "自己的「坏想法」无法接受 → 投射到别人 → 变成「是他不是我」",
+        "mnemonic": "「是你不是我」→ 投射 → 把锅甩给别人",
+        "example": "Accusing others of dishonesty when you're lying is projection.",
+        "example_zh": "当自己撒谎时指责别人不诚实是投射。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Rationalization",
+        "breakdown": "Rational(理性) + ization",
+        "meaning_en": "creating logical-seeming reasons to justify unacceptable behavior",
+        "meaning_zh": "合理化：给不可接受的行为或决定编造看起来合理的理由。买了昂贵的东西后「它会用很久」——理由是后加的，为了让自己心安",
+        "derivation": "行为已发生 → 需要辩护 → 编造合理解释 → 自我欺骗",
+        "mnemonic": "「是有原因的啦」→ 合理化 → 事后找理由",
+        "example": "Saying you didn't want the job you didn't get is rationalization.",
+        "example_zh": "说自己本来就不想要得不到的工作是合理化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Reaction Formation",
+        "breakdown": "Reaction(反向) + Formation",
+        "meaning_en": "acting in a way opposite to one's unacceptable impulses",
+        "meaning_zh": "反向形成：表现出和真实（不可接受的）冲动完全相反的行为。恨一个人却对他过度友好。反同性恋分子后来被发现自己就是同性恋的案例，常被解释为反向形成",
+        "derivation": "不可接受的冲动 → 完全相反的表达 → 掩盖真实感受",
+        "mnemonic": "「外表很爱，其实是恨」→ 反向形成 → 反着来",
+        "example": "Being overly kind to someone you dislike can be reaction formation.",
+        "example_zh": "对你不喜欢的人过度友好可能是反向形成。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Regression",
+        "breakdown": "Re(向后) + gression(行进)",
+        "meaning_en": "reverting to behaviors from an earlier developmental stage under stress",
+        "meaning_zh": "退行：在压力下退回到早期发展阶段的行为模式。成年人压力大时抱着毛绒玩具睡，或开始吸拇指——都是退行。大孩子在弟弟妹妹出生后尿床也是",
+        "derivation": "当下无法应对 → 退回到更早、更简单的应对方式 → 退行",
+        "mnemonic": "压力大 → 「退回小时候」→ 退行",
+        "example": "A stressed adult sucking their thumb is regression.",
+        "example_zh": "压力大的成人吸拇指是退行。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sublimation",
+        "breakdown": "Sublimation(升华)",
+        "meaning_en": "channeling unacceptable impulses into socially acceptable activities",
+        "meaning_zh": "升华：把不可接受的冲动转化为社会认可的活动。攻击冲动→体育运动；性冲动→艺术创作。弗洛伊德认为升华是最成熟的防御机制——把破坏性能量转化为建设性",
+        "derivation": "不可接受的能量 → 转化为艺术、运动等 → 社会认可的出口",
+        "mnemonic": "「化干戈为玉帛」→ 升华 → 最健康的防御机制",
+        "example": "Channeling anger into exercise is sublimation.",
+        "example_zh": "把愤怒转化为锻炼是升华。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Projective Tests",
+        "breakdown": "Projective(投射的) + Tests",
+        "meaning_en": "personality tests that use ambiguous stimuli to reveal unconscious content",
+        "meaning_zh": "投射测验：呈现模糊刺激（墨迹、模糊图片），让受测者解读，假设他们会「投射」潜意识内容。罗夏墨迹测验和TAT（主题统觉测验）是典型。信效度争议很大",
+        "derivation": "模糊刺激 → 没有「对」的答案 → 反应反映内心 → 投射",
+        "mnemonic": "「你看到什么」→ 其实说的是你自己 → 投射测验",
+        "example": "The Rorschach inkblot test is a classic projective test.",
+        "example_zh": "罗夏墨迹测验是典型的投射测验。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Humanistic Perspective",
+        "breakdown": "Humanistic(人本的) + Perspective",
+        "meaning_en": "view emphasizing human potential, self-actualization, and free will",
+        "meaning_zh": "人本主义观点：强调人的潜能、自我实现和自由意志的心理学流派。反对弗洛伊德的悲观决定论和行为主义的机械论。马斯洛和罗杰斯是代表人物",
+        "derivation": "反对弗洛伊德+行为主义 → 强调人的潜能 → 第三势力",
+        "mnemonic": "「人有向善的潜能」→ 人本主义 → 心理学的「第三势力」",
+        "example": "The humanistic perspective focuses on personal growth.",
+        "example_zh": "人本主义观点专注于个人成长。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-Actualizing Tendency",
+        "breakdown": "Self-Actualizing(自我实现的) + Tendency",
+        "meaning_en": "innate drive to reach one's full potential",
+        "meaning_zh": "自我实现倾向：天生追求发挥自己最大潜能的驱力。马斯洛认为这是人最高的需求，要在基本需求满足后才出现。罗杰斯也认为这是人格发展的核心动力",
+        "derivation": "马斯洛需求层次的最高层 → 追求成为「最好的自己」",
+        "mnemonic": "「成为最好的自己」→ 自我实现倾向",
+        "example": "Self-actualizing tendency drives personal growth.",
+        "example_zh": "自我实现倾向驱动个人成长。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Unconditional Positive Regard",
+        "breakdown": "Unconditional(无条件的) + Positive Regard",
+        "meaning_en": "Rogers' concept: complete acceptance of a person regardless of behavior",
+        "meaning_zh": "无条件积极关注（罗杰斯）：不带评判地完全接受一个人，不论其行为。罗杰斯认为这是心理健康成长的必要条件。父母给孩子有条件的爱会阻碍自我实现",
+        "derivation": "完全接纳 → 没有「但是」→ 让人敢于做真实的自己",
+        "mnemonic": "「无论你做什么我都爱你」→ 无条件积极关注",
+        "example": "Rogers believed unconditional positive regard is essential for growth.",
+        "example_zh": "罗杰斯认为无条件积极关注对成长至关重要。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Social-Cognitive & Trait",
+    "type": "root",
+    "meaning_en": "personality theories emphasizing environment interaction and stable traits",
+    "meaning_zh": "社会认知与特质理论：班杜拉的社会认知理论强调个人、行为、环境的相互作用；特质理论尝试用稳定的人格维度（如大五人格OCEAN）描述人格",
+    "origin": "Unit 4: 4.5 Social-Cognitive and Trait Theories",
+    "related": [
+      "Psychoanalytic & Humanistic Theories",
+      "Attribution & Person Perception"
+    ],
+    "words": [
+      {
+        "word": "Social-Cognitive Theory",
+        "breakdown": "Social(社会) + Cognitive(认知) + Theory",
+        "meaning_en": "Bandura's theory that personality emerges from interaction of person, behavior, and environment",
+        "meaning_zh": "社会认知理论（班杜拉）：人格由个人因素、行为和环境的相互作用塑造。强调观察学习、自我效能感和认知在人格中的作用",
+        "derivation": "班杜拉提出 → 反对纯行为主义 → 加入认知和自我调节 → 社会认知理论",
+        "mnemonic": "「看别人、想自己、做出来」→ 社会认知理论",
+        "example": "Social-cognitive theory highlights how we learn behavior by observing others.",
+        "example_zh": "社会认知理论强调我们通过观察他人学习行为。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Reciprocal Determinism",
+        "breakdown": "Reciprocal(相互的) + Determinism(决定论)",
+        "meaning_en": "Bandura's idea that person, behavior, and environment mutually influence each other",
+        "meaning_zh": "交互决定论（班杜拉）：个人（思想、特质）、行为和环境三者相互影响、相互决定。不是单向的环境决定人，而是三角形的双向关系",
+        "derivation": "反对单向因果 → 提出三角相互影响 → 交互决定论",
+        "mnemonic": "「人←→行为←→环境」三角形相互影响 → 交互决定论",
+        "example": "Reciprocal determinism means your personality shapes your environment as much as it shapes you.",
+        "example_zh": "交互决定论意味着你的人格塑造环境的程度和环境塑造你的程度一样。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-Efficacy",
+        "breakdown": "Self(自我) + Efficacy(效能)",
+        "meaning_en": "belief in one's ability to succeed at a specific task",
+        "meaning_zh": "自我效能感（班杜拉）：相信自己能够成功完成特定任务的信念。不是笼统的自信，而是针对具体情境的——可能在数学上自我效能感高，在运动上低",
+        "derivation": "班杜拉的核心概念 → 「我能做到」的信念 → 影响努力和坚持",
+        "mnemonic": "「这事我能行」→ 自我效能感 → 特定情境的自信",
+        "example": "High self-efficacy predicts academic persistence.",
+        "example_zh": "高自我效能感预示着学业坚持性。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-Esteem",
+        "breakdown": "Self(自我) + Esteem(尊重)",
+        "meaning_en": "overall evaluation of one's own worth",
+        "meaning_zh": "自尊：对自己整体价值的评价。和自我效能感不同——自尊是「我值不值得」，自我效能感是「我能不能做到」。高自尊和心理健康相关",
+        "derivation": "对自我的整体评价 → 我好不好 → 自尊",
+        "mnemonic": "「我值不值」→ 自尊 → 整体的自我价值感",
+        "example": "Self-esteem affects how we respond to criticism.",
+        "example_zh": "自尊影响我们对批评的反应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-Concept",
+        "breakdown": "Self(自我) + Concept(概念)",
+        "meaning_en": "one's perception and beliefs about oneself",
+        "meaning_zh": "自我概念：关于「我是谁」的认知和信念集合。包括自我形象、价值观、角色认同等。罗杰斯认为理想自我与现实自我越接近，心理越健康",
+        "derivation": "「我是什么样的人」的所有观念 → 自我概念",
+        "mnemonic": "「我是谁」的答案 → 自我概念",
+        "example": "Our self-concept changes over the course of development.",
+        "example_zh": "我们的自我概念会随着发展而改变。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Trait Theories",
+        "breakdown": "Trait(特质) + Theories",
+        "meaning_en": "theories describing personality as stable patterns of traits",
+        "meaning_zh": "特质理论：用稳定的、可测量的特质维度（如外向性、神经质）描述人格。不关心原因，专注于描述和分类。大五人格是现代特质理论的标杆",
+        "derivation": "描述性的人格理论 → 找到稳定维度 → 特质理论",
+        "mnemonic": "「用几个维度给人打分」→ 特质理论",
+        "example": "Trait theories identify stable personality dimensions.",
+        "example_zh": "特质理论识别稳定的人格维度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Big Five (OCEAN)",
+        "breakdown": "Big Five / O-C-E-A-N",
+        "meaning_en": "five-factor model: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism",
+        "meaning_zh": "大五人格（OCEAN）：开放性（Openness）、尽责性（Conscientiousness）、外向性（Extraversion）、宜人性（Agreeableness）、神经质（Neuroticism）。跨文化验证过的五维度人格模型，现代人格心理学的标准",
+        "derivation": "因素分析发现 → 五个稳定维度 → OCEAN",
+        "mnemonic": "OCEAN = 海洋 → 五大特质构成人格的「海洋」",
+        "example": "The Big Five model is widely used in personality research.",
+        "example_zh": "大五模型在人格研究中被广泛使用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Personality Inventories",
+        "breakdown": "Personality + Inventories(清单)",
+        "meaning_en": "self-report questionnaires that assess personality traits",
+        "meaning_zh": "人格量表：通过自陈式问卷评估人格特质。典型如MMPI（明尼苏达多项人格测验）、NEO-PI-R（测大五人格）。比投射测验信效度高",
+        "derivation": "结构化问卷 → 量化人格特质 → 人格量表",
+        "mnemonic": "「选择题式的人格测验」→ 人格量表",
+        "example": "Personality inventories are more reliable than projective tests.",
+        "example_zh": "人格量表比投射测验信度更高。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Factor Analysis",
+        "breakdown": "Factor(因素) + Analysis",
+        "meaning_en": "statistical technique identifying clusters of correlated items",
+        "meaning_zh": "因素分析：一种统计方法，用于识别一组项目中相互关联的簇（因素）。卡特尔和后来的研究者用它找出大五人格。也用于智力研究（如g因素）",
+        "derivation": "大量测量项 → 找出共同模式 → 提取少数因素 → 因素分析",
+        "mnemonic": "「把相关的题分成一组」→ 因素分析 → 发现人格维度",
+        "example": "Factor analysis helped identify the Big Five personality dimensions.",
+        "example_zh": "因素分析帮助识别了大五人格维度。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Motivation",
+    "type": "root",
+    "meaning_en": "theories explaining what drives and directs behavior",
+    "meaning_zh": "动机理论：解释是什么驱动和引导行为的理论。从生物驱力到认知目标的多种视角，包括驱力减少理论、唤醒理论、自我决定论等",
+    "origin": "Unit 4: 4.6 Motivation",
+    "related": [
+      "Emotion",
+      "Chemical Messengers",
+      "Brain Structure"
+    ],
+    "words": [
+      {
+        "word": "Drive-Reduction Theory",
+        "breakdown": "Drive(驱力) + Reduction + Theory",
+        "meaning_en": "biological needs create drives that motivate behavior to restore homeostasis",
+        "meaning_zh": "驱力减少理论：生理需求（食物、水）产生内部驱力，行为的目的是减少驱力、恢复内稳态。「饿了找吃的」是典型例子。但解释不了好奇心、追求刺激等",
+        "derivation": "生理失衡 → 产生驱力 → 行为减少驱力 → 恢复平衡",
+        "mnemonic": "「饿了吃，渴了喝」→ 驱力减少 → 动机最基础的理论",
+        "example": "Drive-reduction theory explains hunger motivating eating.",
+        "example_zh": "驱力减少理论解释饥饿驱动进食。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Homeostasis",
+        "breakdown": "Homeo(相同) + stasis(稳定)",
+        "meaning_en": "body's tendency to maintain a stable internal state",
+        "meaning_zh": "内稳态：身体维持内部环境稳定（体温、血糖、水分等）的倾向。驱力减少理论的生物学基础——偏离平衡就产生驱力",
+        "derivation": "Homeo(相同) + stasis(稳定) → 维持内部平衡 → 内稳态",
+        "mnemonic": "「身体的自动调节」→ 内稳态",
+        "example": "Sweating when hot helps maintain homeostasis.",
+        "example_zh": "热时出汗有助于维持内稳态。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Arousal Theory",
+        "breakdown": "Arousal(唤醒) + Theory",
+        "meaning_en": "theory that people seek an optimal level of stimulation",
+        "meaning_zh": "唤醒理论：人寻求最佳唤醒水平——不是越低越好。太无聊会主动找刺激（蹦极、恐怖电影）。解释了驱力减少理论说不通的行为",
+        "derivation": "不只是减少驱力 → 还寻找最佳刺激水平 → 唤醒理论",
+        "mnemonic": "「太无聊要找刺激」→ 唤醒理论",
+        "example": "Arousal theory explains why people seek thrill-seeking activities.",
+        "example_zh": "唤醒理论解释了为什么人们追求刺激性活动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Yerkes-Dodson Law",
+        "breakdown": "Yerkes-Dodson + Law",
+        "meaning_en": "performance peaks at moderate arousal, lower for very easy or very hard tasks",
+        "meaning_zh": "耶克斯-多德森定律：表现在中等唤醒水平最佳——太低（困倦）或太高（焦虑）都会损害表现。难的任务需要更低的最佳唤醒水平，简单任务需要更高",
+        "derivation": "唤醒 vs 表现 → 倒U型关系 → 耶克斯-多德森定律",
+        "mnemonic": "「紧张一点有助发挥，太紧张就失常」→ 倒U型曲线",
+        "example": "The Yerkes-Dodson Law predicts test performance peaks at moderate anxiety.",
+        "example_zh": "耶克斯-多德森定律预测考试表现在中等焦虑下最好。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Self-Determination Theory",
+        "breakdown": "Self-Determination(自我决定) + Theory",
+        "meaning_en": "Deci and Ryan's theory that people need autonomy, competence, and relatedness",
+        "meaning_zh": "自我决定论（德西和瑞安）：人有三个基本心理需求——自主性（autonomy）、胜任感（competence）和归属感（relatedness）。满足这些需求产生内在动机，剥夺它们则破坏内在动机",
+        "derivation": "三个基本心理需求被满足 → 内在动机生长 → 自我决定论",
+        "mnemonic": "「自主+胜任+归属」→ 三合一 → 自我决定论",
+        "example": "Self-determination theory highlights autonomy as key to motivation.",
+        "example_zh": "自我决定论强调自主性是动机的关键。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Intrinsic Motivation",
+        "breakdown": "Intrinsic(内在的) + Motivation",
+        "meaning_en": "doing something for its own sake, because it's inherently rewarding",
+        "meaning_zh": "内在动机：为了活动本身的乐趣或满足感而做的动机——不需要外部奖励。因为「想做」而做，不是因为「要得到什么」而做。孩子玩耍是典型内在动机",
+        "derivation": "行动的目的在活动本身 → 不需要外部奖励 → 内在动机",
+        "mnemonic": "「我就是喜欢」→ 内在动机",
+        "example": "Reading for pleasure is intrinsic motivation.",
+        "example_zh": "因为乐趣而阅读是内在动机。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Extrinsic Motivation",
+        "breakdown": "Extrinsic(外在的) + Motivation",
+        "meaning_en": "doing something for external rewards or to avoid punishment",
+        "meaning_zh": "外在动机：为了获得外部奖励（钱、赞美、分数）或避免惩罚而做的动机。过度依赖外在动机会削弱内在动机——「过度辩护效应」",
+        "derivation": "行动的目的在外部奖励 → 非活动本身 → 外在动机",
+        "mnemonic": "「为了奖励而做」→ 外在动机",
+        "example": "Studying only for grades is extrinsic motivation.",
+        "example_zh": "只为分数学习是外在动机。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Incentive Theory",
+        "breakdown": "Incentive(激励) + Theory",
+        "meaning_en": "theory that external rewards pull behavior toward goals",
+        "meaning_zh": "激励理论：外部刺激（诱因）「拉」行为朝向目标。与驱力减少理论的「推」模式互补——不只是生理需求推动，外部诱因也会吸引我们去追求",
+        "derivation": "外部诱因 → 拉力 → 行为朝向诱因 → 激励理论",
+        "mnemonic": "「胡萝卜拉着走」→ 激励理论",
+        "example": "Incentive theory explains how rewards shape our choices.",
+        "example_zh": "激励理论解释了奖励如何塑造我们的选择。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Instincts",
+        "breakdown": "Instincts(本能)",
+        "meaning_en": "fixed innate behavioral patterns shared across a species",
+        "meaning_zh": "本能：物种先天的、固定的行为模式，不需要学习。早期心理学（如麦克杜格尔）用本能解释一切动机——但列举没有解释，后来被抛弃。现代只保留部分反射",
+        "derivation": "先天固定 → 不学就会 → 本能",
+        "mnemonic": "「生来就会」→ 本能 → 早期动机理论",
+        "example": "Migrating birds follow instincts.",
+        "example_zh": "迁徙的鸟类遵循本能。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Lewin's Motivational Conflicts",
+        "breakdown": "Lewin + Motivational + Conflicts",
+        "meaning_en": "Lewin's classification of goal conflicts in decision-making",
+        "meaning_zh": "勒温的动机冲突理论：将目标选择中的冲突分类——趋-趋冲突、避-避冲突、趋-避冲突。帮助理解人们面对选择时的心理挣扎",
+        "derivation": "勒温分析 → 冲突的三种类型 → 动机冲突理论",
+        "mnemonic": "「两种目标同时出现，心里拉扯」→ 动机冲突",
+        "example": "Lewin identified three main types of motivational conflict.",
+        "example_zh": "勒温识别了动机冲突的三种主要类型。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Approach-Approach Conflict",
+        "breakdown": "Approach(趋近) + Approach + Conflict",
+        "meaning_en": "choosing between two attractive options",
+        "meaning_zh": "趋-趋冲突：在两个都有吸引力的目标之间选择。「选A还是选B，两个都想要」。通常是最容易解决的冲突类型",
+        "derivation": "两个好选择 → 必须放弃一个 → 趋-趋冲突",
+        "mnemonic": "「两个都想要，只能选一个」→ 趋-趋冲突",
+        "example": "Deciding between two job offers is an approach-approach conflict.",
+        "example_zh": "在两个工作offer之间选择是趋-趋冲突。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Approach-Avoidance Conflict",
+        "breakdown": "Approach + Avoidance(回避) + Conflict",
+        "meaning_en": "one option has both attractive and unattractive features",
+        "meaning_zh": "趋-避冲突：同一个目标既有吸引力也有令人排斥的方面。「想要但也害怕」——想要晋升但要承担压力。最容易引起焦虑的冲突类型",
+        "derivation": "一个选择 + 好坏兼有 → 既想又怕 → 趋-避冲突",
+        "mnemonic": "「又想要又害怕」→ 趋-避冲突",
+        "example": "Wanting a promotion but fearing the responsibility is approach-avoidance.",
+        "example_zh": "想要晋升又害怕责任是趋-避冲突。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Avoidance-Avoidance Conflict",
+        "breakdown": "Avoidance + Avoidance + Conflict",
+        "meaning_en": "choosing between two unattractive options",
+        "meaning_zh": "避-避冲突：在两个都不吸引人的选择中被迫选一个。「两害相权取其轻」——考试还是挂科？没有好选项",
+        "derivation": "两个坏选择 → 无法全部回避 → 避-避冲突",
+        "mnemonic": "「两个都不想要但必须选一个」→ 避-避冲突",
+        "example": "Choosing between root canal or tooth extraction is avoidance-avoidance.",
+        "example_zh": "在根管治疗和拔牙之间选择是避-避冲突。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sensation Seeking",
+        "breakdown": "Sensation(感觉) + Seeking",
+        "meaning_en": "tendency to seek novel, intense, or risky experiences",
+        "meaning_zh": "感觉寻求：追求新奇、强烈或冒险体验的人格倾向。由马文·朱克曼提出，和外向性、冒险行为相关。有生物学基础，部分由基因决定",
+        "derivation": "朱克曼提出 → 追求强烈刺激的倾向 → 感觉寻求",
+        "mnemonic": "「就爱刺激」→ 感觉寻求",
+        "example": "High sensation seeking is linked to risk-taking behavior.",
+        "example_zh": "高感觉寻求与冒险行为相关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Eating Motivation",
+        "breakdown": "Eating + Motivation",
+        "meaning_en": "biological and psychological factors that drive eating behavior",
+        "meaning_zh": "进食动机：由生物（血糖、激素、下丘脑）和心理（情绪、习惯、社交）因素共同驱动。不只是饿——看到美食、压力、社交都会引发进食",
+        "derivation": "多重因素 → 饿或不饿都会吃 → 进食动机",
+        "mnemonic": "「为什么吃？饿只是原因之一」→ 进食动机",
+        "example": "Eating motivation involves hunger, habit, and emotion.",
+        "example_zh": "进食动机涉及饥饿、习惯和情绪。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "External Hunger Factors",
+        "breakdown": "External(外部) + Hunger + Factors",
+        "meaning_en": "environmental cues that trigger eating independent of biological need",
+        "meaning_zh": "外部饥饿因素：环境线索（食物的样子、气味、时间、社交场合）触发进食——即使不饿。解释为什么聚餐时能吃更多，为什么广告让人想吃",
+        "derivation": "环境刺激 → 触发进食 → 不依赖生理饥饿 → 外部因素",
+        "mnemonic": "「看到就想吃」→ 外部饥饿因素",
+        "example": "External hunger factors like food ads can make us eat when not hungry.",
+        "example_zh": "像食品广告这样的外部饥饿因素会让我们在不饿时也进食。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Emotion",
+    "type": "root",
+    "meaning_en": "physiological and cognitive components of emotional experience",
+    "meaning_zh": "情绪理论：情绪体验的生理和认知成分。包括面部反馈假说、认知评估理论、广泛建构理论，以及关于跨文化普适性的研究",
+    "origin": "Unit 4: 4.7 Emotion",
+    "related": [
+      "Motivation",
+      "Chemical Messengers",
+      "Stress & Coping"
+    ],
+    "words": [
+      {
+        "word": "Internal/External Emotional Factors",
+        "breakdown": "Internal + External + Factors",
+        "meaning_en": "internal physiological and external situational sources of emotion",
+        "meaning_zh": "影响情绪的内外因素：内部（身体变化、生理唤醒、激素）和外部（情境、他人反应、环境）共同塑造情绪体验",
+        "derivation": "身体里发生的 + 环境中发生的 → 共同决定情绪",
+        "mnemonic": "「身体+环境」→ 情绪的内外来源",
+        "example": "Both internal arousal and external context shape how we feel.",
+        "example_zh": "内部唤醒和外部情境共同塑造我们的感受。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Physiological & Cognitive Emotion",
+        "breakdown": "Physiological + Cognitive + Emotion",
+        "meaning_en": "the body-plus-mind components that combine to produce felt emotion",
+        "meaning_zh": "情绪的生理和认知体验：情绪既包含身体变化（心跳加速、出汗）也包含认知解释（「我在害怕」）。两者结合才是完整的情绪体验",
+        "derivation": "詹姆斯-兰格理论的身体优先 → 加上认知评估 → 完整情绪",
+        "mnemonic": "「身体反应+解读」→ 完整情绪",
+        "example": "Physiological and cognitive experiences together form emotion.",
+        "example_zh": "生理和认知体验共同构成情绪。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cognitive Label",
+        "breakdown": "Cognitive(认知) + Label(标签)",
+        "meaning_en": "Schachter-Singer: the mental interpretation that turns arousal into a specific emotion",
+        "meaning_zh": "认知标签（沙赫特-辛格二因素论）：情绪=生理唤醒+认知标签。同样的心跳加速，解释为「兴奋」或「害怕」决定了情绪。吊桥实验证明了这一点",
+        "derivation": "沙赫特-辛格实验 → 唤醒+标签=情绪 → 认知标签",
+        "mnemonic": "「心跳加速怎么解读」→ 决定情绪 → 认知标签",
+        "example": "We apply cognitive labels to arousal to name our emotions.",
+        "example_zh": "我们给生理唤醒贴上认知标签来命名情绪。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Facial-Feedback Hypothesis",
+        "breakdown": "Facial(面部的) + Feedback(反馈)",
+        "meaning_en": "the idea that facial expressions influence the emotions we feel",
+        "meaning_zh": "面部反馈假说：我们的面部表情不只是表达情绪，也会影响情绪本身。强迫笑会让你更开心，强迫皱眉会让你更不爽。笔叼实验（pen-in-mouth）是经典验证",
+        "derivation": "表情 → 身体反馈 → 放大或产生情绪",
+        "mnemonic": "「假笑也会变开心」→ 面部反馈假说",
+        "example": "Forcing a smile can actually make you feel happier—facial-feedback effect.",
+        "example_zh": "强迫微笑实际上可以让你感觉更开心——面部反馈效应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Facial Expressions",
+        "breakdown": "Facial + Expressions",
+        "meaning_en": "configurations of facial muscles that communicate emotion",
+        "meaning_zh": "面部表情：传达情绪的面部肌肉配置。艾克曼的研究发现六种基本情绪的面部表情跨文化通用——快乐、悲伤、愤怒、恐惧、惊讶、厌恶",
+        "derivation": "达尔文提出表情的进化功能 → 艾克曼证明跨文化通用 → 基本表情",
+        "mnemonic": "「全人类都认识的表情」→ 通用面部表情",
+        "example": "Darwin argued facial expressions evolved for communication.",
+        "example_zh": "达尔文认为面部表情是为了交流而进化的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cognitive Appraisal",
+        "breakdown": "Cognitive + Appraisal(评估)",
+        "meaning_en": "Lazarus's idea that emotion depends on how we interpret a situation",
+        "meaning_zh": "认知评估（拉扎鲁斯）：情绪取决于我们如何解释情境。「这是威胁吗？我能应对吗？」同一件事，不同评估产生不同情绪。是认知理论的核心",
+        "derivation": "拉扎鲁斯提出 → 评估先于情绪 → 情绪不是自动的",
+        "mnemonic": "「怎么看决定怎么感」→ 认知评估",
+        "example": "Cognitive appraisal explains why the same event causes different emotions in different people.",
+        "example_zh": "认知评估解释了为什么同一事件对不同人引起不同的情绪。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Broaden-and-Build Theory",
+        "breakdown": "Broaden(扩展) + Build(建立) + Theory",
+        "meaning_en": "Fredrickson's theory: positive emotions broaden thinking and build lasting resources",
+        "meaning_zh": "广泛建构理论（弗雷德里克森）：正面情绪的功能不只是短期让你快乐，还能扩展思维和行动的范围，长期建立身体、社交、认知资源。是积极心理学的基石理论",
+        "derivation": "弗雷德里克森提出 → 正面情绪的长期功能 → 扩展+建立资源",
+        "mnemonic": "「正面情绪让视野变宽，资源变多」→ 广泛建构",
+        "example": "Broaden-and-build theory explains why positive emotions are adaptive.",
+        "example_zh": "广泛建构理论解释了为什么正面情绪有适应价值。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Negative Emotions",
+        "breakdown": "Negative + Emotions",
+        "meaning_en": "unpleasant feelings that typically narrow attention and motivate avoidance",
+        "meaning_zh": "负面情绪：不愉快的情绪（恐惧、愤怒、悲伤），典型功能是缩窄注意力、促使回避或对抗。进化上有生存价值——恐惧让我们避免危险",
+        "derivation": "进化功能 → 发现威胁 → 狭窄注意并行动 → 负面情绪",
+        "mnemonic": "「难受的情绪」→ 负面情绪 → 但有功能",
+        "example": "Negative emotions narrow focus to respond to threats.",
+        "example_zh": "负面情绪缩窄注意力以应对威胁。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Universal Emotions",
+        "breakdown": "Universal(普适的) + Emotions",
+        "meaning_en": "emotions recognized across all cultures (Ekman's basic emotions)",
+        "meaning_zh": "普适情绪：跨所有文化都能识别的基本情绪。艾克曼确定六种：快乐、悲伤、愤怒、恐惧、惊讶、厌恶。即使是从未接触现代文化的部落也能识别",
+        "derivation": "艾克曼跨文化研究 → 六种表情全人类共通 → 普适情绪",
+        "mnemonic": "「全世界都懂的表情」→ 普适情绪",
+        "example": "Ekman identified universal emotions recognized across cultures.",
+        "example_zh": "艾克曼识别了跨文化通用的普适情绪。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Anger",
+        "breakdown": "Anger(愤怒)",
+        "meaning_en": "emotional response to perceived injustice, frustration, or threat",
+        "meaning_zh": "愤怒：对不公、挫折或威胁的情绪反应。六种基本情绪之一。演化上促使个体对抗威胁或维护资源。长期愤怒对心血管健康有害",
+        "derivation": "挫折或威胁 → 愤怒 → 反击或维护",
+        "mnemonic": "「不公平」→ 愤怒",
+        "example": "Anger is one of Ekman's basic universal emotions.",
+        "example_zh": "愤怒是艾克曼的基本普适情绪之一。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Disgust",
+        "breakdown": "Disgust(厌恶)",
+        "meaning_en": "emotional response that rejects contamination or disease",
+        "meaning_zh": "厌恶：对可能污染或疾病源的排斥反应。起源于避免吃有毒食物，后延伸到道德厌恶（「这太恶心了」）。面部表情以皱鼻为特征",
+        "derivation": "避免污染源 → 厌恶 → 演化为保护机制",
+        "mnemonic": "「不要碰」→ 厌恶 → 防止污染",
+        "example": "Disgust helps us avoid harmful substances.",
+        "example_zh": "厌恶帮助我们避开有害物质。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sadness",
+        "breakdown": "Sadness(悲伤)",
+        "meaning_en": "emotional response to loss or separation",
+        "meaning_zh": "悲伤：对失去或分离的情绪反应。功能是引发社会支持（哭泣让他人过来安慰）并促使反思。与抑郁不同——悲伤是对具体事件的正常反应",
+        "derivation": "失去 → 悲伤 → 唤起帮助或反思",
+        "mnemonic": "「失去」→ 悲伤",
+        "example": "Sadness signals loss and elicits support from others.",
+        "example_zh": "悲伤标志着失去并引发他人的支持。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Happiness",
+        "breakdown": "Happiness(快乐)",
+        "meaning_en": "positive emotional state linked to well-being and satisfaction",
+        "meaning_zh": "快乐：积极的情绪状态，与满足感、幸福感相关。正面情绪的典型代表。和反应性（享受）与判断性（整体幸福）两方面都有关",
+        "derivation": "好事发生 → 快乐 → 强化追求",
+        "mnemonic": "「开心」→ 快乐 → 正面情绪",
+        "example": "Happiness promotes social connection and creativity.",
+        "example_zh": "快乐促进社交联系和创造力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Surprise",
+        "breakdown": "Surprise(惊讶)",
+        "meaning_en": "brief emotional response to unexpected events",
+        "meaning_zh": "惊讶：对意外事件的短暂情绪反应。功能是引起注意并让大脑准备处理新信息。所有基本情绪中持续时间最短——通常几秒内就转化为其他情绪",
+        "derivation": "出乎意料 → 惊讶 → 注意力聚焦",
+        "mnemonic": "「啊？！」→ 惊讶 → 短暂的",
+        "example": "Surprise directs attention to unexpected events.",
+        "example_zh": "惊讶将注意力引向意外事件。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fear",
+        "breakdown": "Fear(恐惧)",
+        "meaning_en": "emotional response to perceived danger, activating fight-or-flight",
+        "meaning_zh": "恐惧：对感知到的危险的情绪反应，激活战逃反应。由杏仁核驱动，是最有生存价值的情绪之一。过度的恐惧变成焦虑障碍或恐惧症",
+        "derivation": "威胁 → 杏仁核激活 → 恐惧 → 战或逃",
+        "mnemonic": "「危险」→ 恐惧 → 战逃反应",
+        "example": "Fear activates the fight-or-flight response.",
+        "example_zh": "恐惧激活战逃反应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Universality of Emotions",
+        "breakdown": "Universality(普遍性) + Emotions",
+        "meaning_en": "the cross-cultural recognition and expression of basic emotions",
+        "meaning_zh": "情绪的普遍性：基本情绪及其面部表情在所有人类文化中都能被识别和表达。支持达尔文的观点：情绪是生物性的、进化而来的。艾克曼的跨文化研究是主要证据",
+        "derivation": "达尔文假设 → 艾克曼证实 → 情绪是人类共通的",
+        "mnemonic": "「全人类都有的情绪」→ 情绪普遍性",
+        "example": "The universality of emotions supports evolutionary theories.",
+        "example_zh": "情绪的普遍性支持进化论观点。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Display Rules",
+        "breakdown": "Display(显示) + Rules",
+        "meaning_en": "cultural norms governing when and how emotions should be expressed",
+        "meaning_zh": "展示规则：文化规定何时、如何表达情绪的规则。虽然基本情绪通用，但不同文化决定什么场合可以哭、男性是否该表达悲伤等。艾克曼的重要发现",
+        "derivation": "基本情绪通用 + 文化规则 → 表达方式不同 → 展示规则",
+        "mnemonic": "「文化教你什么时候能哭」→ 展示规则",
+        "example": "Display rules explain cultural differences in emotional expression.",
+        "example_zh": "展示规则解释了情绪表达的文化差异。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Emotion Elicitors",
+        "breakdown": "Emotion + Elicitors(诱发物)",
+        "meaning_en": "events or stimuli that trigger specific emotional responses",
+        "meaning_zh": "情绪诱发物：引发特定情绪反应的事件或刺激。可以是外部（听到好消息）或内部（回忆）。不同文化和个人对同样诱发物的情绪反应可能不同",
+        "derivation": "刺激 → 触发情绪 → 情绪诱发物",
+        "mnemonic": "「什么东西让你有情绪」→ 情绪诱发物",
+        "example": "Cultural differences shape which events serve as emotion elicitors.",
+        "example_zh": "文化差异塑造了哪些事件成为情绪诱发物。",
         "toefl_frequency": "medium"
       }
     ]

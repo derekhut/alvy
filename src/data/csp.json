@@ -1518,5 +1518,539 @@
         "toefl_frequency": "medium"
       }
     ]
+  },
+  {
+    "root": "Variables and Assignments",
+    "type": "root",
+    "meaning_en": "variables are abstractions that hold values, and assignment statements give them values",
+    "meaning_zh": "变量与赋值：变量是程序中给数据起的名字（像贴在盒子上的标签），赋值语句把值放进盒子里。例如 `age ← 18` 把数字18放进名为age的盒子",
+    "origin": "Unit 3: 3.1 Variables and Assignments",
+    "related": ["Data Abstraction", "Mathematical Expressions", "Strings", "Boolean Expressions"],
+    "words": [
+      {
+        "word": "assignment operator",
+        "breakdown": "Assignment(分配) + Operator(运算符)",
+        "meaning_en": "an operator (such as ← or =) used to assign a value to a variable",
+        "meaning_zh": "赋值运算符：把右边的值放到左边变量里的符号。CSP 伪代码用 `←`，Python 用 `=`，例如 `score ← 100` 表示让 score 变量等于100",
+        "derivation": "Assign(分配) → Operator(运算符) → 把值「分配」给变量的工具",
+        "mnemonic": "想象 `←` 是一个箭头：右边的值「飞」进左边的盒子里",
+        "example": "The assignment operator places the result of the calculation into the variable total.",
+        "example_zh": "赋值运算符把计算结果放入变量 total 中。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Boolean",
+        "breakdown": "Boolean(布尔) — named after George Boole",
+        "meaning_en": "a data type that can have only two values: true or false",
+        "meaning_zh": "布尔型：只有两个值——true（真）或 false（假）的数据类型。例如 `isLoggedIn = true` 表示用户已登录",
+        "derivation": "George Boole(数学家姓氏) → Boolean Algebra(布尔代数) → 真/假二值逻辑",
+        "mnemonic": "Boolean = 灯泡：要么开（true），要么关（false），没有中间状态",
+        "example": "The Boolean variable isReady was set to true after the data loaded.",
+        "example_zh": "数据加载后，布尔变量 isReady 被设为 true。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "collection",
+        "breakdown": "Collect(收集) + ion(名词后缀)",
+        "meaning_en": "a group of related data values stored together, such as a list",
+        "meaning_zh": "集合：把多个相关数据存在一起的结构。例如一个班级所有学生的姓名可以放在一个 collection 里，而不是用30个独立变量",
+        "derivation": "Collect(收集) → ion(名词) → 收集起来的一堆东西",
+        "mnemonic": "想象一个收纳盒（collection），里面装着同类的小物件，比一堆散落在桌上的东西好管理",
+        "example": "The collection of student grades was stored in a single list.",
+        "example_zh": "学生成绩的集合被存放在一个列表中。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "data storage",
+        "breakdown": "Data(数据) + Storage(存储)",
+        "meaning_en": "the act of storing values in variables or other structures for later use in a program",
+        "meaning_zh": "数据存储：把值保存在变量或其他结构中以便后续使用。例如把用户输入的姓名存到变量里，下次问候时就能用",
+        "derivation": "Data(数据) + Storage(存储) → 程序的「记忆」",
+        "mnemonic": "变量是程序的短期记忆——没有 data storage，程序就像金鱼，三秒就忘",
+        "example": "Variables provide temporary data storage during program execution.",
+        "example_zh": "变量在程序执行期间提供临时的数据存储。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "data type",
+        "breakdown": "Data(数据) + Type(类型)",
+        "meaning_en": "a classification that determines the kind of value a variable can hold (e.g., number, string, Boolean)",
+        "meaning_zh": "数据类型：决定变量能装什么样的值的分类。例如 number 类型只能装数字，string 类型只能装文本，Boolean 类型只能装 true/false",
+        "derivation": "Data(数据) + Type(类型) → 数据的「品种」",
+        "mnemonic": "想象不同形状的容器：圆形装液体（number），方形装固体（string）——data type 决定能装什么",
+        "example": "The data type of the variable age is number, so it cannot hold text.",
+        "example_zh": "变量 age 的数据类型是 number，所以不能存放文本。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expression",
+        "breakdown": "Express(表达) + ion(名词后缀)",
+        "meaning_en": "a combination of values, variables, and operators that evaluates to a single value",
+        "meaning_zh": "表达式：由值、变量和运算符组合而成、最终计算出一个值的式子。例如 `2 + 3 * x` 是一个表达式，结果取决于 x",
+        "derivation": "Express(表达) → ion(名词) → 用符号「表达」一个值",
+        "mnemonic": "expression = 数学题：写出来是符号，算出来是答案",
+        "example": "The expression length * width evaluates to the area of the rectangle.",
+        "example_zh": "表达式 length * width 计算出矩形的面积。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "list",
+        "breakdown": "List(列表)",
+        "meaning_en": "an ordered collection of elements that can be accessed by index",
+        "meaning_zh": "列表：一种有序的元素集合，可以用索引访问每个元素。例如 `[apple, banana, cherry]` 是一个有3个元素的列表，第一个元素是 apple",
+        "derivation": "List(清单) → 编号的清单 → 按序号取东西",
+        "mnemonic": "list = 餐厅菜单：每道菜都有编号，想吃第3道说「3号」就行",
+        "example": "The list scores contained the test results of all students.",
+        "example_zh": "列表 scores 包含了所有学生的考试成绩。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "number",
+        "breakdown": "Number(数字)",
+        "meaning_en": "a data type that represents numeric values, including integers and decimals",
+        "meaning_zh": "数字：表示数值的数据类型，包括整数（如 5）和小数（如 3.14）。可以进行加减乘除等数学运算",
+        "derivation": "Number(数字) → 可以参与数学运算的数据类型",
+        "mnemonic": "number 是程序的算盘：能加能减，但不能拼接成句子（那是 string 的活）",
+        "example": "The variable price stores a number representing the cost in dollars.",
+        "example_zh": "变量 price 存储一个数字，表示以美元为单位的价格。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "string",
+        "breakdown": "String(字符串)",
+        "meaning_en": "a data type that represents a sequence of characters, such as letters, digits, or symbols",
+        "meaning_zh": "字符串：表示一串字符的数据类型，可以包含字母、数字、符号。例如 \"Hello World\" 或 \"alvy123\" 都是字符串，通常用引号括起来",
+        "derivation": "String(线、串) → 把字符像珠子一样串起来",
+        "mnemonic": "string 像一串珠子：每个字符是一颗珠子，按顺序串起来",
+        "example": "The string \"Hello, World!\" is the classic first program output.",
+        "example_zh": "字符串 \"Hello, World!\" 是经典的第一个程序输出。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "variable",
+        "breakdown": "Vari(变化) + able(可以的)",
+        "meaning_en": "an abstraction inside a program that can hold a value, with a name used to reference it",
+        "meaning_zh": "变量：程序中能存放值的命名抽象，像贴了标签的盒子。例如 `name ← \"Derek\"` 创建了一个叫 name 的变量，里面装着字符串 \"Derek\"",
+        "derivation": "Vari(变化) + able(可以) → 值可以变化的存储位置",
+        "mnemonic": "变量 = 贴了标签的盒子：标签是变量名，盒子里的东西可以随时换",
+        "example": "The variable count was incremented every time the loop ran.",
+        "example_zh": "每次循环运行时，变量 count 都会增加。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Data Abstraction",
+    "type": "root",
+    "meaning_en": "the use of data structures like lists to manage complexity by grouping related values",
+    "meaning_zh": "数据抽象：用列表等数据结构把相关的值组织在一起，从而隐藏复杂性。例如不用30个变量存30个学生分数，而用一个 scores 列表",
+    "origin": "Unit 3: 3.2 Data Abstraction",
+    "related": ["Variables and Assignments", "Mathematical Expressions"],
+    "words": [
+      {
+        "word": "complexity",
+        "breakdown": "Complex(复杂) + ity(名词后缀)",
+        "meaning_en": "the degree to which a system or program is difficult to understand or manage",
+        "meaning_zh": "复杂度：系统或程序难以理解或管理的程度。变量越多、逻辑越绕，complexity 越高，bug 越容易躲在缝隙里",
+        "derivation": "Complex(复杂的) + ity(性质) → 难以理解的程度",
+        "mnemonic": "想象拼一个10块拼图 vs 1000块拼图——块数越多，complexity 越高",
+        "example": "Using a list reduces the complexity of managing many related variables.",
+        "example_zh": "使用列表降低了管理许多相关变量的复杂度。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "data abstraction",
+        "breakdown": "Data(数据) + Abstract(抽象) + ion(名词后缀)",
+        "meaning_en": "managing complexity in programs by giving a collection of data a name without referencing the specific details",
+        "meaning_zh": "数据抽象：通过给一组数据起一个名字（如列表名）来管理复杂性，无需关心内部细节。例如用 `students` 代替30个独立的学生姓名变量",
+        "derivation": "Data(数据) + Abstract(抽象) → 把细节藏起来，只看大局",
+        "mnemonic": "数据抽象 = 把30个抽屉合并成一个柜子：你只需要记住「柜子」，而不是每个抽屉",
+        "example": "Data abstraction lets us treat a list of grades as a single object.",
+        "example_zh": "数据抽象让我们把成绩列表视为单一对象。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "element",
+        "breakdown": "Element(元素)",
+        "meaning_en": "an individual value stored in a list or other collection",
+        "meaning_zh": "元素：列表或集合中的单个值。例如列表 `[10, 20, 30]` 有三个元素：10、20 和 30",
+        "derivation": "Element(单元) → 集合中的最小单位",
+        "mnemonic": "element 是列表的「砖块」：列表是墙，每个 element 是一块砖",
+        "example": "The first element of the list scores is 95.",
+        "example_zh": "列表 scores 的第一个元素是 95。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "index",
+        "breakdown": "Index(索引)",
+        "meaning_en": "the position of an element within a list, used to access that element",
+        "meaning_zh": "索引：元素在列表中的位置编号，用来访问该元素。AP CSP 伪代码从1开始计数，例如 `list[1]` 是第一个元素",
+        "derivation": "Index(指引、目录) → 指向元素位置的「书签」",
+        "mnemonic": "index 是图书馆的书架编号：知道编号才能找到那本书",
+        "example": "The element at index 3 in the list is the third item.",
+        "example_zh": "列表中索引为 3 的元素是第三个项目。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "list",
+        "breakdown": "List(列表)",
+        "meaning_en": "an ordered sequence of elements, allowing related values to be grouped under a single name",
+        "meaning_zh": "列表：把多个相关值组织在一个名字下的有序序列。是 CSP 中最重要的数据抽象工具，例如 `grades ← [85, 92, 78]`",
+        "derivation": "List(清单) → 数据抽象的核心容器",
+        "mnemonic": "list = 数据抽象的瑞士军刀：一个名字管一堆值",
+        "example": "The list temperatures stored daily readings for a month.",
+        "example_zh": "列表 temperatures 存储了一个月的每日读数。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "string",
+        "breakdown": "String(字符串)",
+        "meaning_en": "an ordered sequence of characters, treated as a single data abstraction",
+        "meaning_zh": "字符串：一串有序字符的集合，本身就是一种数据抽象——把许多字符当作一个整体来处理",
+        "derivation": "String(串) → 把字符串成一个整体 → 数据抽象的一种形式",
+        "mnemonic": "字符串就是「字符的列表」：本质上是一种特殊的 list，但只装字符",
+        "example": "The string \"Hello\" is treated as a single value, even though it has five characters.",
+        "example_zh": "字符串 \"Hello\" 被视为单一值，尽管它有五个字符。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Mathematical Expressions",
+    "type": "root",
+    "meaning_en": "expressions that use arithmetic operators to compute numeric values",
+    "meaning_zh": "数学表达式：使用算术运算符（加减乘除等）计算数值的表达式。是程序中最常见的「算账」方式，例如 `total ← price * quantity + tax`",
+    "origin": "Unit 3: 3.3 Mathematical Expressions",
+    "related": ["Variables and Assignments", "Data Abstraction", "Strings", "Boolean Expressions"],
+    "words": [
+      {
+        "word": "addition",
+        "breakdown": "Add(加) + ition(名词后缀)",
+        "meaning_en": "an arithmetic operation that combines two numbers to produce their sum",
+        "meaning_zh": "加法：把两个数相加得到和的算术运算。在大多数语言中用 `+` 符号，例如 `5 + 3` 等于 8",
+        "derivation": "Add(加上) → ition(名词) → 最基本的算术运算",
+        "mnemonic": "addition 是数学的入门——幼儿园就会的运算，但程序里照样要用",
+        "example": "The addition of x and y produces their sum.",
+        "example_zh": "x 和 y 的加法产生它们的和。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "algorithm",
+        "breakdown": "Algorithm(算法) — from al-Khwarizmi (波斯数学家)",
+        "meaning_en": "a finite set of instructions to accomplish a task, often involving mathematical computation",
+        "meaning_zh": "算法：完成一个任务的有限步骤集合。在数学表达式的语境下，算法常常包含一连串的算术运算来得出结果",
+        "derivation": "al-Khwarizmi(9世纪波斯数学家) → Algorithm(算法) → 解决问题的步骤",
+        "mnemonic": "算法不是高深魔法——菜谱也是算法：先放油，再放葱花，最后下蛋",
+        "example": "The algorithm for computing average involves summing values and dividing by the count.",
+        "example_zh": "计算平均值的算法包括对值求和并除以数量。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "arithmetic operators",
+        "breakdown": "Arithmetic(算术) + Operator(运算符)",
+        "meaning_en": "symbols (+, -, *, /, mod) that perform mathematical operations on numeric values",
+        "meaning_zh": "算术运算符：对数值执行数学运算的符号，包括 `+`（加）、`-`（减）、`*`（乘）、`/`（除）、`mod`（取余）",
+        "derivation": "Arithmetic(算术) + Operator(运算符) → 算账用的工具",
+        "mnemonic": "算术运算符 = 数学符号家族：加减乘除都是它的成员",
+        "example": "Arithmetic operators like + and * are used in mathematical expressions.",
+        "example_zh": "像 + 和 * 这样的算术运算符用于数学表达式中。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "code statement",
+        "breakdown": "Code(代码) + Statement(语句)",
+        "meaning_en": "a single instruction in a program that performs an action",
+        "meaning_zh": "代码语句：程序中执行单一动作的一行指令。例如 `x ← 5` 是一条赋值语句，`DISPLAY(x)` 是一条输出语句",
+        "derivation": "Code(代码) + Statement(陈述) → 代码中的一句话",
+        "mnemonic": "代码语句 = 程序的句子：一句话做一件事，标点是分号或换行",
+        "example": "Each code statement performs one specific action in the program.",
+        "example_zh": "每条代码语句在程序中执行一个特定动作。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "division",
+        "breakdown": "Divid(分) + ion(名词后缀)",
+        "meaning_en": "an arithmetic operation that splits one number by another to produce a quotient",
+        "meaning_zh": "除法：把一个数除以另一个数得到商的算术运算。在大多数语言中用 `/` 符号，例如 `10 / 2` 等于 5",
+        "derivation": "Divide(分开) → ion(名词) → 把一个数分成几等份",
+        "mnemonic": "除法 = 分蛋糕：10块蛋糕分给2个人，每人 10/2 = 5 块",
+        "example": "The division of total by count gives the average.",
+        "example_zh": "总和除以数量的结果是平均值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expression",
+        "breakdown": "Express(表达) + ion(名词后缀)",
+        "meaning_en": "a combination of values, variables, and operators that produces a single value",
+        "meaning_zh": "表达式：值、变量和运算符的组合，最终算出一个值。例如 `(price + tax) * quantity` 是一个数学表达式",
+        "derivation": "Express(表达) → ion(名词) → 用符号表达计算",
+        "mnemonic": "表达式像数学题：等号左边是题，右边是答案",
+        "example": "The expression a * b + c is evaluated using order of operations.",
+        "example_zh": "表达式 a * b + c 按照运算顺序求值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "iteration",
+        "breakdown": "Iter(再次) + ation(名词后缀)",
+        "meaning_en": "the repetition of a process or set of instructions, often used to process numeric data",
+        "meaning_zh": "迭代：重复执行一个过程或一组指令的行为。例如循环10次累加一个变量，就是用 iteration 来计算总和",
+        "derivation": "Iter(再次) + ation(名词) → 一次又一次地做",
+        "mnemonic": "iteration 是程序的「循环往复」：像跑步圈，每圈都做同样的动作",
+        "example": "Iteration is used to compute the sum of all numbers in a list.",
+        "example_zh": "迭代用于计算列表中所有数字的总和。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "modulus operator",
+        "breakdown": "Modulus(模) + Operator(运算符)",
+        "meaning_en": "an operator (often MOD or %) that returns the remainder of integer division",
+        "meaning_zh": "取余运算符：返回整数除法余数的运算符，常用 `MOD` 或 `%`。例如 `7 MOD 3` 等于 1，因为 7 除以 3 余 1",
+        "derivation": "Modulus(模) + Operator(运算符) → 求余数的工具",
+        "mnemonic": "判断奇偶：`n MOD 2 == 0` 就是偶数——modulus 是奇偶判断的法宝",
+        "example": "The modulus operator returns 1 when 7 is divided by 3.",
+        "example_zh": "当 7 除以 3 时，取余运算符返回 1。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "multiplication",
+        "breakdown": "Multipli(多倍) + ation(名词后缀)",
+        "meaning_en": "an arithmetic operation that produces the product of two numbers",
+        "meaning_zh": "乘法：产生两个数乘积的算术运算。在大多数语言中用 `*` 符号，例如 `4 * 5` 等于 20",
+        "derivation": "Multiply(增多) → cation(名词) → 把一个数变多倍",
+        "mnemonic": "乘法是「快速加法」：4 * 5 = 4+4+4+4+4，但乘号写起来更省事",
+        "example": "The multiplication of length and width gives the area.",
+        "example_zh": "长度和宽度相乘得到面积。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "operator",
+        "breakdown": "Operate(操作) + or(者)",
+        "meaning_en": "a symbol that performs an operation on one or more operands",
+        "meaning_zh": "运算符：对一个或多个操作数执行运算的符号。例如 `+`、`-`、`*`、`/` 都是运算符，作用于左右两边的值",
+        "derivation": "Operate(操作) + or(者) → 执行操作的符号",
+        "mnemonic": "operator 是「干活的符号」：自己不是数，但能让数变身",
+        "example": "An operator like + combines two values into a new one.",
+        "example_zh": "像 + 这样的运算符把两个值合并成一个新值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "order of operations",
+        "breakdown": "Order(顺序) + Operations(运算)",
+        "meaning_en": "the rules that determine the sequence in which operations are performed in an expression",
+        "meaning_zh": "运算顺序：决定表达式中运算执行先后的规则。先算括号 → 再算乘除 → 最后加减。例如 `2 + 3 * 4 = 14`，不是 20",
+        "derivation": "Order(顺序) + Operations(运算) → 算式的「优先级」",
+        "mnemonic": "PEMDAS 口诀：Parentheses → Exponents → Multiply/Divide → Add/Subtract",
+        "example": "The order of operations means 2 + 3 * 4 evaluates to 14, not 20.",
+        "example_zh": "运算顺序意味着 2 + 3 * 4 等于 14，而不是 20。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "procedure call",
+        "breakdown": "Procedure(过程) + Call(调用)",
+        "meaning_en": "a statement that invokes a procedure to execute its instructions, often within an expression",
+        "meaning_zh": "过程调用：触发一个过程执行其指令的语句。在数学表达式中，常常调用 sqrt(x) 或 abs(x) 这样的过程来获取计算结果",
+        "derivation": "Procedure(过程) + Call(调用) → 「叫」一个函数来干活",
+        "mnemonic": "过程调用 = 打电话叫人：「喂，sqrt 吗？帮我算下 16 的平方根」",
+        "example": "The procedure call sqrt(16) returns 4.",
+        "example_zh": "过程调用 sqrt(16) 返回 4。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "pseudocode",
+        "breakdown": "Pseudo(伪) + Code(代码)",
+        "meaning_en": "a notation that represents algorithms in a structured way without using a specific programming language",
+        "meaning_zh": "伪代码：用结构化的方式表示算法，不依赖具体编程语言。AP CSP 考试用伪代码写题目，看起来像代码但不能真正运行",
+        "derivation": "Pseudo(假的) + Code(代码) → 「假装是代码」的算法描述",
+        "mnemonic": "pseudocode = 算法的草稿：人能看懂，电脑看不懂",
+        "example": "The pseudocode describes the algorithm in plain steps.",
+        "example_zh": "伪代码用简单的步骤描述算法。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "selection",
+        "breakdown": "Select(选择) + ion(名词后缀)",
+        "meaning_en": "the use of conditional statements to choose which instructions to execute",
+        "meaning_zh": "选择结构：用条件语句决定执行哪些指令的程序结构。例如 `IF score >= 60 THEN DISPLAY(\"及格\") ELSE DISPLAY(\"不及格\")`",
+        "derivation": "Select(选择) → ion(名词) → 让程序「做选择」的能力",
+        "mnemonic": "选择结构 = 程序的岔路口：往左走还是往右走，看条件",
+        "example": "Selection allows the algorithm to take different paths based on input.",
+        "example_zh": "选择结构允许算法根据输入采取不同路径。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "sequencing",
+        "breakdown": "Sequence(顺序) + ing(动名词)",
+        "meaning_en": "the execution of code statements in the order they appear",
+        "meaning_zh": "顺序结构：按照代码语句出现的先后顺序依次执行。是程序最基本的执行方式——从上到下，一行接一行",
+        "derivation": "Sequence(顺序) → ing(动作) → 一个接一个地执行",
+        "mnemonic": "sequencing = 流水线：第一道工序做完才能做第二道",
+        "example": "Sequencing executes statements one after another from top to bottom.",
+        "example_zh": "顺序结构从上到下依次执行语句。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "sequential code statements",
+        "breakdown": "Sequential(顺序的) + Code(代码) + Statements(语句)",
+        "meaning_en": "code statements that execute one after another in the order they appear",
+        "meaning_zh": "顺序代码语句：按照编写顺序一条接一条执行的代码语句。这是最简单的程序结构，没有跳转或循环",
+        "derivation": "Sequential(顺序的) + Code Statements(代码语句) → 一字排开的指令",
+        "mnemonic": "想象排队买票：一个接一个，没人插队——这就是 sequential",
+        "example": "The sequential code statements set up the variables before the loop begins.",
+        "example_zh": "顺序代码语句在循环开始前设置变量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "subtraction",
+        "breakdown": "Sub(下) + tract(拉) + ion(名词后缀)",
+        "meaning_en": "an arithmetic operation that finds the difference between two numbers",
+        "meaning_zh": "减法：求两个数之差的算术运算。在大多数语言中用 `-` 符号，例如 `10 - 3` 等于 7",
+        "derivation": "Sub(下) + tract(拉) → 把一个数从另一个数里「拉走」",
+        "mnemonic": "subtraction 字面意思「拉走」：从总数里拉走一部分，剩下的就是差",
+        "example": "The subtraction of cost from revenue gives the profit.",
+        "example_zh": "收入减去成本得到利润。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "variable",
+        "breakdown": "Vari(变化) + able(可以的)",
+        "meaning_en": "a named storage location used to hold a value that can be referenced in expressions",
+        "meaning_zh": "变量：在数学表达式中代表一个值的命名存储位置。例如 `area ← length * width` 中，length 和 width 都是变量",
+        "derivation": "Vari(变化) + able(可以) → 在表达式中代替具体数值的符号",
+        "mnemonic": "变量在表达式里就是数学课的 x 和 y——不知道值，但参与计算",
+        "example": "The variable radius is used in the expression to compute the circle's area.",
+        "example_zh": "变量 radius 在表达式中用于计算圆的面积。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Strings",
+    "type": "root",
+    "meaning_en": "string operations like concatenation and substring extraction",
+    "meaning_zh": "字符串操作：处理文本数据的方法，包括拼接（concatenation）和取子串（substring）。例如把 \"Hello\" 和 \"World\" 拼成 \"HelloWorld\"",
+    "origin": "Unit 3: 3.4 Strings",
+    "related": ["Variables and Assignments", "Data Abstraction", "Mathematical Expressions"],
+    "words": [
+      {
+        "word": "string concatenation",
+        "breakdown": "Concat(共同) + en + ate(动词后缀) → 串联",
+        "meaning_en": "the operation of joining two or more strings together to form a single string",
+        "meaning_zh": "字符串拼接：把两个或多个字符串连接成一个的操作。例如 `\"Hello \" + \"World\"` 得到 `\"Hello World\"`",
+        "derivation": "Concat(共同) + en + ate(动作) → 把多个字符串「共同串起来」",
+        "mnemonic": "concatenation 像缝纫：把两块布（字符串）的两端缝在一起，变成一块大布",
+        "example": "String concatenation joins \"Hello \" and \"World\" to make \"Hello World\".",
+        "example_zh": "字符串拼接把 \"Hello \" 和 \"World\" 连成 \"Hello World\"。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "substring",
+        "breakdown": "Sub(部分) + String(字符串)",
+        "meaning_en": "a contiguous sequence of characters extracted from a larger string",
+        "meaning_zh": "子串：从较大字符串中提取出来的一段连续字符。例如 `\"computer\"` 的子串可以是 `\"comp\"`、`\"put\"` 或 `\"ter\"`",
+        "derivation": "Sub(部分) + String(字符串) → 字符串的「一段」",
+        "mnemonic": "substring 像火车的车厢——从一列火车里抽出几节相邻的车厢，依然是火车的一部分",
+        "example": "The substring \"world\" was extracted from \"hello world\".",
+        "example_zh": "从 \"hello world\" 中提取出子串 \"world\"。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Boolean Expressions",
+    "type": "root",
+    "meaning_en": "expressions that evaluate to true or false using logical and relational operators",
+    "meaning_zh": "布尔表达式：返回 true 或 false 的表达式，由条件和逻辑运算符（AND/OR/NOT）组合而成。是控制程序流程的核心，例如 `age >= 18 AND hasLicense`",
+    "origin": "Unit 3: 3.5 Boolean Expressions",
+    "related": ["Variables and Assignments", "Mathematical Expressions", "Strings"],
+    "words": [
+      {
+        "word": "AND",
+        "breakdown": "AND(且) — logical operator",
+        "meaning_en": "a logical operator that evaluates to true only if both operands are true",
+        "meaning_zh": "逻辑与：两个操作数都为 true 时结果才为 true，任一为 false 则结果为 false。例如 `age >= 18 AND hasLicense` 必须两个条件都满足才能开车",
+        "derivation": "日常「且」的数学化 → 两个条件同时满足 → 严苛的门槛",
+        "mnemonic": "想象两把锁的房门：AND 就是两把钥匙都要有才能进",
+        "example": "If age >= 18 AND hasLicense THEN allowDrive.",
+        "example_zh": "如果 年龄>=18 AND 有驾照 则 允许开车。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Boolean expression",
+        "breakdown": "Boolean(布尔) + Expression(表达式)",
+        "meaning_en": "an expression that evaluates to either true or false",
+        "meaning_zh": "布尔表达式：求值结果为 true 或 false 的表达式。例如 `score > 60` 或 `name == \"Derek\"` 都是布尔表达式",
+        "derivation": "Boolean(布尔) + Expression(表达式) → 结果非真即假的式子",
+        "mnemonic": "布尔表达式 = 是非题：答案只有「对」或「错」",
+        "example": "The Boolean expression x > 0 is true when x is positive.",
+        "example_zh": "当 x 为正数时，布尔表达式 x > 0 为真。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Boolean value",
+        "breakdown": "Boolean(布尔) + Value(值)",
+        "meaning_en": "a value that is either true or false",
+        "meaning_zh": "布尔值：只能是 true 或 false 的值。是 Boolean 数据类型的具体取值，例如 `isOpen = true` 中的 true 就是布尔值",
+        "derivation": "Boolean(布尔) + Value(值) → 真或假的值",
+        "mnemonic": "Boolean value 只有两面：硬币的正反面，没有立着的可能",
+        "example": "The Boolean value of the comparison 5 > 3 is true.",
+        "example_zh": "比较 5 > 3 的布尔值为真。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "logical operators",
+        "breakdown": "Logical(逻辑的) + Operators(运算符)",
+        "meaning_en": "operators (AND, OR, NOT) that combine or modify Boolean values",
+        "meaning_zh": "逻辑运算符：组合或修改布尔值的运算符，包括 AND（与）、OR（或）、NOT（非）。它们让程序能表达复杂的判断条件",
+        "derivation": "Logical(逻辑的) + Operators(运算符) → 处理真假的工具",
+        "mnemonic": "三剑客：AND 严格、OR 宽松、NOT 反转",
+        "example": "Logical operators like AND and OR combine multiple conditions.",
+        "example_zh": "像 AND 和 OR 这样的逻辑运算符组合多个条件。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "NOT",
+        "breakdown": "NOT(非) — logical operator",
+        "meaning_en": "a logical operator that reverses the Boolean value of its operand",
+        "meaning_zh": "逻辑非：反转布尔值的运算符。`NOT true` 变 false，`NOT false` 变 true。例如 `NOT isLoggedIn` 表示「未登录」",
+        "derivation": "NOT(否定) → 翻转真假 → 反义操作",
+        "mnemonic": "NOT 是真假的镜子：照一下，true 变 false，false 变 true",
+        "example": "If NOT isAdmin THEN denyAccess.",
+        "example_zh": "如果 NOT 是管理员 则 拒绝访问。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "operand",
+        "breakdown": "Operand(操作数)",
+        "meaning_en": "a value or variable that an operator acts upon",
+        "meaning_zh": "操作数：运算符作用的值或变量。例如在 `5 + 3` 中，5 和 3 是 + 运算符的两个操作数",
+        "derivation": "Oper(操作) + and(被…的) → 「被操作」的对象",
+        "mnemonic": "operand 是运算符的「食物」：运算符吃下操作数，吐出结果",
+        "example": "In the expression 5 + 3, both 5 and 3 are operands.",
+        "example_zh": "在表达式 5 + 3 中，5 和 3 都是操作数。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "OR",
+        "breakdown": "OR(或) — logical operator",
+        "meaning_en": "a logical operator that evaluates to true if at least one operand is true",
+        "meaning_zh": "逻辑或：只要有一个操作数为 true 结果就为 true，两个都 false 才为 false。例如 `isWeekend OR isHoliday` 周末或节假日都算休息",
+        "derivation": "日常「或」的数学化 → 任一条件满足即可 → 宽松的门槛",
+        "mnemonic": "OR 像有两个备用钥匙的房门：随便用哪个都能开",
+        "example": "If isWeekend OR isHoliday THEN sleepIn.",
+        "example_zh": "如果 是周末 OR 是节假日 则 睡懒觉。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "relational operators",
+        "breakdown": "Relational(关系的) + Operators(运算符)",
+        "meaning_en": "operators (=, ≠, <, >, ≤, ≥) that compare two values and return a Boolean result",
+        "meaning_zh": "关系运算符：比较两个值并返回布尔结果的运算符，包括 `=`、`≠`、`<`、`>`、`≤`、`≥`。例如 `age >= 18` 的结果是 true 或 false",
+        "derivation": "Relational(关系的) + Operators(运算符) → 比较两个值「关系」的工具",
+        "mnemonic": "关系运算符像天平：比一比谁大谁小，结果非真即假",
+        "example": "The relational operator >= checks if one value is at least as large as another.",
+        "example_zh": "关系运算符 >= 检查一个值是否至少和另一个一样大。",
+        "toefl_frequency": "medium"
+      }
+    ]
   }
 ]

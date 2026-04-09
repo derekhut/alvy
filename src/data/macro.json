@@ -817,5 +817,790 @@
         "toefl_frequency": "high"
       }
     ]
+  },
+  {
+    "root": "Circular Flow and GDP",
+    "type": "root",
+    "meaning_en": "the circular flow of income/spending and the three approaches to measuring GDP",
+    "meaning_zh": "循环流量与 GDP：经济中钱和资源在家庭、企业和政府之间循环流动。GDP 是这种流动的总价值，可以用三种等价方法计算：支出法、收入法、价值增值法",
+    "origin": "Unit 2: 2.1 Circular Flow and GDP",
+    "related": ["Limitations of GDP", "Real vs Nominal GDP"],
+    "words": [
+      {
+        "word": "circular flow diagram",
+        "breakdown": "Circular(循环的) + Flow(流动) + Diagram(图)",
+        "meaning_en": "a model that illustrates how income and expenditure flow between households, businesses, and the government in an economy",
+        "meaning_zh": "循环流量图：用箭头描绘家庭、企业和政府之间收入和支出如何循环流动的模型。家庭把劳动卖给企业换工资，再把工资花掉买企业的产品——闭环循环",
+        "derivation": "Circular(圆形) + Flow(流) → 钱在经济中转圈圈 → 永不停止",
+        "mnemonic": "经济像血液循环：家庭是心脏，企业是肺，钱就是血——一旦停止循环，经济就死了",
+        "example": "The circular flow diagram shows wages flowing from firms to households and consumption flowing back.",
+        "example_zh": "循环流量图展示工资从企业流向家庭，消费再流回企业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expenditures approach",
+        "breakdown": "Expenditures(支出) + Approach(方法)",
+        "meaning_en": "a method of measuring GDP by summing all spending on final goods and services: consumption, investment, government spending, and net exports",
+        "meaning_zh": "支出法：通过把所有人对最终商品和服务的支出加总来衡量 GDP。公式 GDP = C + I + G + (X-M)，是 AP 宏观最常考的算法",
+        "derivation": "Expenditures(支出) + Approach → 看大家花了多少 → 加起来就是 GDP",
+        "mnemonic": "记住公式 \"C + I + G + NX\"——这是 AP 宏观考试的口令",
+        "example": "Using the expenditures approach, GDP equals consumer spending plus business investment plus government purchases plus net exports.",
+        "example_zh": "用支出法计算，GDP 等于消费 + 投资 + 政府支出 + 净出口。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "final output",
+        "breakdown": "Final(最终的) + Output(产出)",
+        "meaning_en": "goods and services that are ready for consumption or investment, not intermediate goods used in production",
+        "meaning_zh": "最终产出：可以直接被消费者使用或被企业当作投资品的商品和服务，不包括用于进一步加工的中间品。算 GDP 时只算 final output 才能避免重复计算",
+        "derivation": "Final(最终) + Output → 终点站 → 不再被加工",
+        "mnemonic": "面包 = final output（消费者吃），面粉 = intermediate（要拿去做面包）——只算前者免得重复",
+        "example": "A loaf of bread is final output, but the flour used to bake it is not.",
+        "example_zh": "一条面包是最终产出，而用来烤它的面粉不是。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Gross Domestic Product",
+        "breakdown": "Gross(总的) + Domestic(国内的) + Product(产出)",
+        "meaning_en": "the total monetary value of all final goods and services produced within a country during a specific period",
+        "meaning_zh": "国内生产总值（GDP）：一国境内一段时期内生产的所有最终商品和服务的总市场价值。注意是「境内」（包括外资工厂），不是「国民」（GNP 才看国民）",
+        "derivation": "Gross(总的) + Domestic(国内的) + Product(产品) → 国境内造的全部最终产品",
+        "mnemonic": "GDP 看「地」不看「人」——苹果在中国造的 iPhone 算中国 GDP，不算美国 GDP",
+        "example": "China's GDP surpassed Japan's in 2010.",
+        "example_zh": "2010 年中国的 GDP 超过了日本。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "income approach",
+        "breakdown": "Income(收入) + Approach(方法)",
+        "meaning_en": "a method of measuring GDP by summing all incomes earned in the production of goods and services, including wages, profits, and rent",
+        "meaning_zh": "收入法：通过把生产过程中所有人赚到的收入加总来衡量 GDP，包括工资、利润、租金、利息。理论上等于支出法的结果，因为你的支出就是别人的收入",
+        "derivation": "Income(收入) + Approach → 看大家赚了多少 → 加起来等于 GDP",
+        "mnemonic": "支出 = 收入 = GDP——「你花的钱就是别人的工资」",
+        "example": "Using the income approach, GDP equals wages plus rent plus interest plus profit.",
+        "example_zh": "用收入法计算，GDP 等于工资 + 租金 + 利息 + 利润。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "nominal GDP",
+        "breakdown": "Nominal(名义的) + GDP",
+        "meaning_en": "the total monetary value of all final goods and services produced in an economy during a specific period, measured using current prices without adjustment for inflation",
+        "meaning_zh": "名义 GDP：用「当年的市场价」计算的 GDP，没有剔除通胀。看起来涨了可能只是物价涨了，不一定是真的多生产了",
+        "derivation": "Nominal(名义) → 表面数字 → 没扣除通胀",
+        "mnemonic": "名义 GDP 像没修过图的合影——所有人都能看到，但身高有水分（通胀）",
+        "example": "Nominal GDP can rise even when real production stays flat, simply because prices increased.",
+        "example_zh": "即使实际产量不变，仅因为价格上涨，名义 GDP 也会上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "value-added approach",
+        "breakdown": "Value-added(增加的价值) + Approach(方法)",
+        "meaning_en": "a method of measuring GDP by summing the value added at each stage of production to avoid double-counting",
+        "meaning_zh": "价值增值法：在每个生产环节只计算「新增加」的价值（卖价 - 投入价），把所有环节的增值加总。完美避免了中间品被重复计算的问题",
+        "derivation": "Value(价值) + Added(增加的) → 每一步增加多少 → 加起来 = GDP",
+        "mnemonic": "面粉厂 +5、面包房 +10、商店 +5 → 总增值 20 = 面包零售价——这就是价值增值法",
+        "example": "The value-added approach prevents counting the flour twice when measuring bread's contribution to GDP.",
+        "example_zh": "价值增值法防止在衡量面包对 GDP 的贡献时把面粉算两次。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Limitations of GDP",
+    "type": "root",
+    "meaning_en": "what GDP fails to capture about welfare and economic activity",
+    "meaning_zh": "GDP 的局限性：GDP 是衡量产出最常用的指标，但它忽略了非市场活动（家务、志愿者）、地下经济、收入分配、环境成本和幸福感。一个国家 GDP 高不代表生活就好",
+    "origin": "Unit 2: 2.2 Limitations of GDP",
+    "related": ["Circular Flow and GDP"],
+    "words": [
+      {
+        "word": "economic performance",
+        "breakdown": "Economic(经济的) + Performance(表现)",
+        "meaning_en": "the overall health and productivity of an economy, typically measured through indicators such as GDP, inflation, and unemployment",
+        "meaning_zh": "经济表现：一国经济的整体健康和产出水平，常通过 GDP、通胀率和失业率等指标衡量。GDP 只是其中一个维度，不能孤立地评判",
+        "derivation": "Economic(经济) + Performance → 经济考试得几分 → 多个指标综合",
+        "mnemonic": "评判经济好坏不能只看 GDP——还要看通胀、失业、贫富差距，像体检要看多项指标",
+        "example": "Strong GDP growth, low inflation, and falling unemployment all signal good economic performance.",
+        "example_zh": "强劲的 GDP 增长、低通胀和失业率下降都意味着良好的经济表现。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gross Domestic Product",
+        "breakdown": "Gross(总的) + Domestic(国内的) + Product(产出)",
+        "meaning_en": "the total monetary value of all final goods and services produced within a country during a specific period",
+        "meaning_zh": "国内生产总值：在 2.2 中重点讨论 GDP「衡量不到」的东西——家务劳动、地下经济、环境破坏、幸福感都没算进 GDP，所以 GDP 高不等于生活好",
+        "derivation": "GDP → 在 2.2 中是被批判的对象 → 不是经济的全部",
+        "mnemonic": "GDP 不计算「妈妈做饭」但计算「外卖跑腿」——同一顿饭，市场化了 GDP 才算它",
+        "example": "GDP doesn't count volunteer work, even though it benefits society.",
+        "example_zh": "GDP 不计算志愿者工作，尽管它有益于社会。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflation rate",
+        "breakdown": "Inflation(通货膨胀) + Rate(率)",
+        "meaning_en": "the percentage change in the general price level of goods and services in an economy over a specific time period",
+        "meaning_zh": "通胀率：一段时间内一般物价水平的百分比变化。是衡量经济表现的重要指标之一，与 GDP 增长率并列",
+        "derivation": "Inflation(通胀) + Rate → 物价涨多快 → 用百分比表示",
+        "mnemonic": "通胀率 2-3% 一般认为健康；超过 5% 让人焦虑；超过 10% 接近危险",
+        "example": "When the inflation rate is high, household savings lose purchasing power.",
+        "example_zh": "通胀率高时，家庭储蓄的购买力会下降。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "nonmarket transactions",
+        "breakdown": "Non(非) + market(市场) + transactions(交易)",
+        "meaning_en": "economic activities that are not bought or sold in markets, such as household production, volunteer work, or informal economy activities, and therefore are not captured in GDP",
+        "meaning_zh": "非市场交易：没有在市场上买卖的经济活动，例如家务、自家种菜、志愿者服务、邻里互助。它们创造价值但不计入 GDP，是 GDP 的重要盲区",
+        "derivation": "Non(非) + Market(市场) → 没价格 → GDP 看不见",
+        "mnemonic": "妈妈做饭 vs 妈妈开餐厅——同样的劳动，前者不算 GDP，后者算",
+        "example": "Caring for children at home is a nonmarket transaction that GDP misses.",
+        "example_zh": "在家照顾孩子是 GDP 漏掉的一种非市场交易。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "unemployment rate",
+        "breakdown": "Unemployment(失业) + Rate(率)",
+        "meaning_en": "the percentage of the labor force that is actively seeking employment but currently unemployed, calculated as (number of unemployed / labor force) × 100",
+        "meaning_zh": "失业率：劳动力中正在积极找工作但还没找到的比例。是衡量经济表现的另一关键指标，和 GDP 增长率配合使用",
+        "derivation": "Unemployment(失业) + Rate → 失业的人占劳动力的比例",
+        "mnemonic": "失业率 4-5% 一般是「自然失业率」（健康水平），超过 10% 是经济危机信号",
+        "example": "GDP can grow even when the unemployment rate stays high, in a 'jobless recovery'.",
+        "example_zh": "在「无就业复苏」中，GDP 可以增长而失业率仍然很高。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Unemployment",
+    "type": "root",
+    "meaning_en": "how unemployment is measured and the three types (frictional, structural, cyclical)",
+    "meaning_zh": "失业：通过劳动力调查衡量。失业分三类：摩擦性（在找工作之间）、结构性（技能不匹配）、周期性（经济衰退引起）。前两类的总和叫\"自然失业率\"",
+    "origin": "Unit 2: 2.3 Unemployment",
+    "related": ["Limitations of GDP", "Business Cycles"],
+    "words": [
+      {
+        "word": "cyclical unemployment",
+        "breakdown": "Cyclical(周期性的) + Unemployment(失业)",
+        "meaning_en": "unemployment that fluctuates with the business cycle, increasing during recessions and decreasing during expansions due to changes in aggregate demand",
+        "meaning_zh": "周期性失业：随经济周期波动的失业。衰退时高，扩张时低，由总需求变化引起。这是政府最担心的一种失业，因为它意味着经济运转出问题",
+        "derivation": "Cyclical(周期) + Unemployment → 跟着经济周期起伏 → 衰退时暴增",
+        "mnemonic": "周期性失业 = 「不是我不努力，是经济不行」——衰退时所有行业都在裁员",
+        "example": "The 2008 recession caused a sharp rise in cyclical unemployment.",
+        "example_zh": "2008 年的衰退导致周期性失业急剧上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "discouraged workers",
+        "breakdown": "Discouraged(灰心的) + Workers(工人)",
+        "meaning_en": "individuals who have stopped actively seeking employment due to repeated job search failures and are therefore not counted in the official unemployment rate",
+        "meaning_zh": "灰心工人：因屡次找工作失败而放弃找的人。因为不再「积极找」，所以官方失业率不算他们——这是失业率的一个隐藏盲点",
+        "derivation": "Discouraged(灰心) + Workers → 找工找烦了 → 干脆不找 → 失业率漏掉",
+        "mnemonic": "失业率好看的秘密之一：只算「在找的」，灰心工人「躺平」了反而拉低数据",
+        "example": "The official unemployment rate misses discouraged workers who have given up looking.",
+        "example_zh": "官方失业率漏掉了那些已经放弃找工作的灰心工人。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "employment",
+        "breakdown": "Employ(雇用) + ment(名词)",
+        "meaning_en": "the state of having a paid job or being engaged in work for compensation",
+        "meaning_zh": "就业：有有偿工作的状态。在劳动力调查中，每周工作至少 1 小时获得报酬就算就业",
+        "derivation": "Employ(雇用) + ment → 被雇 → 有薪水可领",
+        "mnemonic": "就业的门槛低得惊人：每周哪怕只赚 1 小时钱也算 employed",
+        "example": "Reaching full employment is a major goal of macroeconomic policy.",
+        "example_zh": "实现充分就业是宏观经济政策的主要目标。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "frictional unemployment",
+        "breakdown": "Frictional(摩擦性的) + Unemployment(失业)",
+        "meaning_en": "unemployment that occurs when workers are between jobs or entering the labor force, resulting from the time it takes to search for and match with available positions",
+        "meaning_zh": "摩擦性失业：人们在换工作之间或刚进入劳动力市场时的短期失业。是经济中正常存在的，无法消除，也不算坏事——它意味着大家在找更合适的工作",
+        "derivation": "Frictional(摩擦) + Unemployment → 换工作的「摩擦」 → 短暂的找工时间",
+        "mnemonic": "摩擦性失业 = 「我刚辞了上一份工，正在面试下一份」——是健康经济的标配",
+        "example": "Recent college graduates often experience frictional unemployment.",
+        "example_zh": "应届毕业生常会经历摩擦性失业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "full employment",
+        "breakdown": "Full(完全的) + Employment(就业)",
+        "meaning_en": "an economic condition where all available labor resources are being used efficiently and unemployment is at its natural rate",
+        "meaning_zh": "充分就业：经济中只剩自然失业率（摩擦+结构性失业）的状态，没有周期性失业。注意——「充分就业」不是 0% 失业，而是约 4-5%",
+        "derivation": "Full(满) + Employment → 满载状态 → 但仍有一点摩擦/结构性失业",
+        "mnemonic": "充分就业 ≠ 0 失业；4-5% 的失业率才叫充分就业——这是 AP 宏观必考点",
+        "example": "Most economists consider an unemployment rate of around 4% to be full employment.",
+        "example_zh": "大多数经济学家认为约 4% 的失业率是充分就业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "joblessness",
+        "breakdown": "Job(工作) + less(无) + ness(名词)",
+        "meaning_en": "the state of being without employment, including both those officially counted as unemployed and those not captured by the unemployment rate",
+        "meaning_zh": "失业状态：没有工作的状态，比官方失业率覆盖更广——也包括灰心工人和兼职但想要全职的人",
+        "derivation": "Jobless(无工作) + ness → 无工作的状态 → 比官方口径更宽",
+        "mnemonic": "Joblessness 比 unemployment rate 更真实——前者把灰心工人也算进去了",
+        "example": "Joblessness in the rust belt remained high even when the official rate fell.",
+        "example_zh": "即使官方失业率下降，铁锈带的失业状态仍然严重。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "labor force",
+        "breakdown": "Labor(劳动) + Force(队伍)",
+        "meaning_en": "the total number of people in an economy who are either employed or actively seeking employment",
+        "meaning_zh": "劳动力：经济中所有在工作或正在积极找工作的人。注意——不包括退休的、上学的、家庭主妇/主夫，以及灰心工人。失业率的分母就是它",
+        "derivation": "Labor(劳动) + Force(队伍) → 工作大军 → 包括上岗和正找工的",
+        "mnemonic": "劳动力 = 在工作 + 在找工；不在劳动力 = 退休、学生、灰心工人——别搞混分类",
+        "example": "Retirees are not counted as part of the labor force.",
+        "example_zh": "退休人员不算在劳动力之内。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "labor force participation rate",
+        "breakdown": "Labor force(劳动力) + Participation(参与) + Rate(率)",
+        "meaning_en": "the percentage of the working-age population that is either employed or actively seeking employment, calculated as (labor force / working-age population) × 100",
+        "meaning_zh": "劳动力参与率：劳动力占工作年龄人口的比例。如果这个比例下降，可能意味着很多人放弃了找工作——这也会让失业率「假性」改善",
+        "derivation": "Labor force(劳动力) + Participation(参与) → 工作年龄人口里有多少在找/已工作",
+        "mnemonic": "失业率降了，参与率也降了 → 说明很多人「躺平」，经济其实不一定好",
+        "example": "Falling labor force participation can mask a weak job market.",
+        "example_zh": "劳动力参与率下降可能掩盖疲软的就业市场。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "labor market",
+        "breakdown": "Labor(劳动) + Market(市场)",
+        "meaning_en": "the market where labor services are bought and sold, involving the interaction between workers seeking employment and employers seeking workers",
+        "meaning_zh": "劳动力市场：买卖劳动服务的市场。供方是工人，需方是雇主，价格是工资。和商品市场一样有供求曲线和均衡",
+        "derivation": "Labor(劳动) + Market(市场) → 找工作和招工的地方",
+        "mnemonic": "劳动力市场和商品市场一样有供求曲线，只是商品换成「劳动小时」",
+        "example": "A tight labor market makes it easier for workers to negotiate higher wages.",
+        "example_zh": "紧俏的劳动力市场让工人更容易争取到更高的工资。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "natural rate of unemployment",
+        "breakdown": "Natural(自然的) + Rate(率) + Unemployment(失业)",
+        "meaning_en": "the unemployment rate that exists when the economy produces full-employment real output, equal to the sum of frictional and structural unemployment",
+        "meaning_zh": "自然失业率：经济达到充分就业时仍然存在的失业率，等于摩擦性 + 结构性失业。约 4-5%。低于它叫\"过热\"，高于它叫\"萧条\"",
+        "derivation": "Natural(自然) + Rate(率) → 经济正常时的失业率 → 不可能为零",
+        "mnemonic": "自然失业率 = 摩擦性 + 结构性 = 大约 4-5%——记住这条公式",
+        "example": "When unemployment falls below the natural rate, inflation usually starts rising.",
+        "example_zh": "当失业率低于自然失业率时，通胀往往开始上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "part-time workers",
+        "breakdown": "Part-time(兼职) + Workers(工人)",
+        "meaning_en": "individuals employed for fewer hours than a full-time position, who may be underemployed or seeking additional work but are counted as employed in unemployment statistics",
+        "meaning_zh": "兼职工人：工作时长比全职少的人。即使他们想要全职却找不到，统计上仍算「就业」——这是失业率另一个盲点",
+        "derivation": "Part(部分) + time → 半天工 → 但仍算 employed",
+        "mnemonic": "兼职 vs 全职 = 失业率的「灰色地带」：很多人「被迫兼职」，但不算失业",
+        "example": "Many part-time workers would prefer full-time jobs but cannot find them.",
+        "example_zh": "许多兼职工人希望找到全职工作，但是无法如愿。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "structural unemployment",
+        "breakdown": "Structural(结构性的) + Unemployment(失业)",
+        "meaning_en": "unemployment resulting from a mismatch between workers' skills and job requirements, or from geographic mismatches between workers and available jobs",
+        "meaning_zh": "结构性失业：因技能不匹配或地理位置不匹配引起的失业。例如煤矿工人想转 AI 工程师，技能跟不上。这种失业要靠再培训和搬迁来缓解",
+        "derivation": "Structural(结构) + Unemployment → 经济结构变了 → 老技能没用了",
+        "mnemonic": "结构性失业 = 「我会的没人要，要的我不会」——AI 时代的新常态",
+        "example": "Structural unemployment rises when factories close and workers lack new tech skills.",
+        "example_zh": "工厂关闭、工人缺乏新技术技能时，结构性失业会上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "types of unemployment",
+        "breakdown": "Types(类型) + of + Unemployment(失业)",
+        "meaning_en": "different categories of unemployment based on the underlying causes, including frictional, structural, and cyclical unemployment",
+        "meaning_zh": "失业类型：根据成因分类的失业，包括摩擦性、结构性和周期性。前两类构成自然失业率，第三类是政策最关心的目标",
+        "derivation": "Types(类型) + Unemployment → 失业的三种「身份证」",
+        "mnemonic": "三类失业一句话记住：摩擦=换工，结构=不会，周期=没活——靠不同政策解决",
+        "example": "Distinguishing the types of unemployment helps target the right policy.",
+        "example_zh": "区分失业类型有助于制定正确的政策。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "unemployment rate",
+        "breakdown": "Unemployment(失业) + Rate(率)",
+        "meaning_en": "the percentage of the labor force that is actively seeking employment but currently unemployed, calculated as (number of unemployed / labor force) × 100",
+        "meaning_zh": "失业率：在 2.3 中是核心计算指标。公式：失业人数 ÷ 劳动力 × 100%。注意分母是「劳动力」不是「总人口」",
+        "derivation": "Unemployment(失业) + Rate → 公式 = 失业人数 / 劳动力",
+        "mnemonic": "失业率分母 = 劳动力（不是人口）——这是 AP 计算题最常见的陷阱",
+        "example": "If the labor force is 100 million and 5 million are unemployed, the unemployment rate is 5%.",
+        "example_zh": "如果劳动力是 1 亿、有 500 万人失业，那么失业率是 5%。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Price Indices and Inflation",
+    "type": "root",
+    "meaning_en": "how price indices like CPI measure inflation",
+    "meaning_zh": "价格指数与通胀：通胀通过价格指数衡量。最常见的是 CPI（消费者价格指数），记录一篮子商品价格随时间的变化。CPI 把名义变量变成可比较的真实变量",
+    "origin": "Unit 2: 2.4 Price Indices and Inflation",
+    "related": ["Real vs Nominal GDP", "Costs of Inflation"],
+    "words": [
+      {
+        "word": "base year",
+        "breakdown": "Base(基准) + Year(年)",
+        "meaning_en": "a reference year used to standardize prices when calculating real GDP, allowing for comparison of economic output across different time periods",
+        "meaning_zh": "基年：计算实际 GDP 或价格指数时选定的参照年。所有其他年份的价格都和它比较，基年的价格指数被定为 100",
+        "derivation": "Base(基础) + Year → 比较的起点 → 指数 = 100",
+        "mnemonic": "基年 = 「时间机器的原点」——所有比较都从这里出发",
+        "example": "If 2010 is the base year, then 2020 prices are compared to 2010 prices.",
+        "example_zh": "如果 2010 年是基年，那么 2020 年的价格就和 2010 年比较。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Consumer Price Index",
+        "breakdown": "Consumer(消费者) + Price(价格) + Index(指数)",
+        "meaning_en": "a measure of the average change in prices paid by consumers for goods and services over time",
+        "meaning_zh": "消费者价格指数（CPI）：跟踪一篮子典型消费品价格变化的指数。是衡量通胀最常用的工具，也是工资和退休金调整的依据",
+        "derivation": "Consumer(消费者) + Price(价格) + Index(指数) → 消费者花的钱涨了多少",
+        "mnemonic": "CPI 像「物价天气预报」——每月公布一次，告诉你你的钱越来越不值钱了多少",
+        "example": "The CPI rose 3% last year, meaning prices are 3% higher than a year ago.",
+        "example_zh": "去年 CPI 上升了 3%，意味着物价比一年前高了 3%。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "deflation",
+        "breakdown": "De(去掉) + flation(膨胀) → 通货紧缩",
+        "meaning_en": "a sustained decrease in the general price level of goods and services in an economy over time",
+        "meaning_zh": "通货紧缩：物价持续下跌的现象。看似好事（东西更便宜）实则可怕——大家会延后消费等更便宜，导致需求萎缩，经济陷入恶性循环",
+        "derivation": "De(去) + flation(膨胀) → 反向膨胀 → 物价下跌",
+        "mnemonic": "通缩比通胀更可怕：日本失去的 30 年就是通缩的真实代价",
+        "example": "Deflation discourages spending because consumers wait for prices to fall further.",
+        "example_zh": "通缩抑制消费，因为消费者等着价格继续下跌。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "disinflation",
+        "breakdown": "Dis(降低) + inflation(通胀) → 通胀放缓",
+        "meaning_en": "a decrease in the rate of inflation, where prices are still rising but at a slower pace than before",
+        "meaning_zh": "通胀放缓：通胀率下降但仍为正——物价还在涨，只是涨得慢了。和「通缩」（物价下跌）截然不同",
+        "derivation": "Dis(减) + inflation → 通胀变小 → 但仍 > 0",
+        "mnemonic": "Disinflation ≠ Deflation：前者是「涨价但慢」，后者是「物价跌」——别搞混",
+        "example": "From 8% to 3% inflation is disinflation, not deflation.",
+        "example_zh": "通胀率从 8% 降到 3% 是通胀放缓，而不是通缩。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "GDP deflator",
+        "breakdown": "GDP + Deflator(平减指数)",
+        "meaning_en": "a price index that measures the ratio of nominal GDP to real GDP, used to convert nominal GDP to real GDP by adjusting for inflation",
+        "meaning_zh": "GDP 平减指数：名义 GDP / 实际 GDP × 100。用来把含通胀的名义 GDP「打折」回真实 GDP。比 CPI 范围更广——涵盖经济中所有产品和服务",
+        "derivation": "GDP + Deflate(放气) → 把通胀「放掉」 → 看到真实 GDP",
+        "mnemonic": "GDP 平减指数像「降压药」——把名义 GDP 的高血压（通胀）降下来",
+        "example": "Real GDP = Nominal GDP ÷ GDP deflator × 100.",
+        "example_zh": "实际 GDP = 名义 GDP ÷ GDP 平减指数 × 100。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflation",
+        "breakdown": "Inflation(通货膨胀)",
+        "meaning_en": "a sustained increase in the general price level of goods and services in an economy over time",
+        "meaning_zh": "通货膨胀：物价水平持续上升的现象。少量稳定的通胀（2-3%）是健康经济的标志；过高（>5%）会侵蚀购买力；恶性通胀（hyperinflation）会摧毁货币",
+        "derivation": "Inflation(膨胀) → 物价像气球一样越涨越大",
+        "mnemonic": "通胀 2% 健康，5% 警惕，10% 危险，1000% 灾难——津巴布韦曾达数百万 %",
+        "example": "Mild inflation around 2% is considered healthy for the economy.",
+        "example_zh": "约 2% 的温和通胀被认为对经济是健康的。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflation rate",
+        "breakdown": "Inflation(通胀) + Rate(率)",
+        "meaning_en": "the percentage change in the general price level of goods and services in an economy over a specific time period",
+        "meaning_zh": "通胀率：在 2.4 中是用价格指数计算的。公式：(今年 CPI - 去年 CPI) / 去年 CPI × 100%",
+        "derivation": "通胀率 → 用 CPI 算 → 一年涨了百分之几",
+        "mnemonic": "公式记住：(新 CPI - 旧 CPI) / 旧 CPI × 100%——和涨价幅度一样的算法",
+        "example": "If CPI rose from 100 to 103, the inflation rate is 3%.",
+        "example_zh": "如果 CPI 从 100 升到 103，通胀率就是 3%。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "nominal variables",
+        "breakdown": "Nominal(名义的) + Variables(变量)",
+        "meaning_en": "economic variables measured in current dollars without adjustment for changes in the price level",
+        "meaning_zh": "名义变量：用当年货币计量、未剔除通胀影响的经济变量。例如名义工资、名义 GDP、名义利率。看起来涨了可能只是通胀的功劳",
+        "derivation": "Nominal(名义) + Variable → 表面数字 → 含通胀水分",
+        "mnemonic": "名义变量 = 「钱面」数字；真实变量 = 「购买力」数字——后者才告诉你生活到底好没好",
+        "example": "A nominal wage increase doesn't help if inflation is just as fast.",
+        "example_zh": "如果通胀同样快速，名义工资上涨也没有意义。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price indices",
+        "breakdown": "Price(价格) + Indices(指数复数)",
+        "meaning_en": "statistical measures that track the average change in prices paid by consumers for a basket of goods and services over time",
+        "meaning_zh": "价格指数：统计工具，跟踪一篮子商品和服务价格的平均变化。CPI 是最常见的一种，PPI（生产者价格指数）和 GDP 平减指数也属于此类",
+        "derivation": "Price(价格) + Index(指数) → 把多样商品的价格压成一个数 → 方便比较",
+        "mnemonic": "价格指数像「物价体重计」——把成千上万商品的价格综合成一个数",
+        "example": "Price indices like CPI and PPI track changes in the general price level.",
+        "example_zh": "CPI 和 PPI 等价格指数跟踪一般物价水平的变化。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：一国经济中所有商品和服务价格的平均值，通常用 CPI 等价格指数衡量。Y 轴上的「价格水平」就是它",
+        "derivation": "Price(价格) + Level(水平) → 整体物价的高度",
+        "mnemonic": "价格水平是「整体物价的海拔」——指数升 = 物价整体爬高",
+        "example": "A rising price level means the average cost of living is going up.",
+        "example_zh": "价格水平上升意味着平均生活成本在上涨。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "real variables",
+        "breakdown": "Real(真实的) + Variables(变量)",
+        "meaning_en": "economic variables that have been adjusted for inflation by deflating nominal values by the price level, such as real wages",
+        "meaning_zh": "真实变量：剔除通胀影响后的经济变量，反映真实购买力。真实工资 = 名义工资 / 价格水平 × 100。这才告诉你生活水平是否真的提高了",
+        "derivation": "Real(真实) + Variable → 剔除通胀 → 看真正的购买力",
+        "mnemonic": "工资涨 5% 但物价涨 8% → 真实工资其实跌了 3%——别被名义数字骗了",
+        "example": "Real wages tell you whether your purchasing power has actually grown.",
+        "example_zh": "真实工资告诉你购买力是否真的提升了。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "substitution bias",
+        "breakdown": "Substitution(替代) + Bias(偏差)",
+        "meaning_en": "a shortcoming of the CPI where it fails to account for consumers' ability to substitute more expensive goods with cheaper alternatives, causing the CPI to overstate true inflation",
+        "meaning_zh": "替代偏差：CPI 的一个缺陷——它假设消费者总买同一篮子商品，没考虑大家会用便宜的替代贵的（牛肉贵了改吃鸡肉）。结果 CPI 倾向于高估通胀",
+        "derivation": "Substitution(替代) + Bias(偏差) → CPI 没考虑消费者灵活换菜",
+        "mnemonic": "牛肉贵了你会改吃鸡 → CPI 假装你还在吃牛 → 高估了你的「通胀」",
+        "example": "Substitution bias is one reason CPI tends to overstate the true inflation rate.",
+        "example_zh": "替代偏差是 CPI 倾向于高估真实通胀率的原因之一。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Costs of Inflation",
+    "type": "root",
+    "meaning_en": "who wins and who loses from unexpected inflation",
+    "meaning_zh": "通胀的成本：通胀本身不可怕，可怕的是「未预期」的通胀——它会随机重新分配财富。借款人在意外通胀中得利，贷款人受损；持现金的人受损，持实物资产的人获益",
+    "origin": "Unit 2: 2.5 Costs of Inflation",
+    "related": ["Price Indices and Inflation"],
+    "words": [
+      {
+        "word": "borrowers",
+        "breakdown": "Borrow(借入) + ers(人)",
+        "meaning_en": "individuals or entities that demand loanable funds by taking loans in the loanable funds market",
+        "meaning_zh": "借款人：从可贷资金市场借钱的人或机构。在意外通胀发生时，借款人是赢家——因为他们用「贬值后的钱」还债，实际还款负担减轻",
+        "derivation": "Borrow(借) + er → 借钱的人 → 通胀时占便宜",
+        "mnemonic": "借款人在通胀中赚的：今天借 100 万，明天通胀让 100 万只值 90 万 → 你少还 10 万",
+        "example": "Borrowers benefit when inflation turns out to be higher than expected.",
+        "example_zh": "当通胀高于预期时，借款人会获益。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "deflation",
+        "breakdown": "De(去) + flation(膨胀)",
+        "meaning_en": "a sustained decrease in the general price level of goods and services in an economy over time",
+        "meaning_zh": "通货紧缩：在 2.5 语境中，通缩对借款人是灾难——你借的钱「升值」了，还款负担反而加重。这是通缩让经济恶化的一个原因",
+        "derivation": "Deflation → 在 2.5 中重新分配财富：贷款人占便宜",
+        "mnemonic": "通缩时借款人是输家：欠的钱「越来越值钱」，越还越穷",
+        "example": "Deflation hurts borrowers because their debts grow in real value.",
+        "example_zh": "通缩伤害借款人，因为他们的债务在真实价值上变大。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "lenders",
+        "breakdown": "Lend(借出) + ers(人)",
+        "meaning_en": "individuals or institutions that provide money or credit to borrowers with the expectation of repayment, often with interest",
+        "meaning_zh": "贷款人：向借款人提供资金的人或机构。在意外通胀中，贷款人是输家——他们收回的钱购买力下降，相当于被偷偷「打了折」",
+        "derivation": "Lend(借出) + er → 借出钱的人 → 通胀时吃亏",
+        "mnemonic": "贷款人在通胀中亏的：你借出 100 万，收回 100 万但只值 90 万 → 净亏 10 万",
+        "example": "Lenders lose when inflation eats away at the real value of repayments.",
+        "example_zh": "通胀侵蚀还款的真实价值时，贷款人受损。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "unexpected inflation",
+        "breakdown": "Unexpected(未预期的) + Inflation(通胀)",
+        "meaning_en": "a rise in the general price level of goods and services that occurs contrary to what individuals and businesses anticipated, causing economic disruption",
+        "meaning_zh": "未预期通胀：超出预期的通胀。它是真正有害的通胀——因为合同（贷款利率、工资）已经按低通胀签好，结果让借款人占便宜、贷款人吃亏，造成财富的随机重分配",
+        "derivation": "Unexpected(意外) + Inflation → 突然涨价 → 合同跟不上",
+        "mnemonic": "「预期通胀」大家有准备，「未预期通胀」才搅乱一切——经济学的关键区分",
+        "example": "Unexpected inflation in the 1970s shocked savers and rewarded borrowers.",
+        "example_zh": "1970 年代的意外通胀让储户震惊，也让借款人受益。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "wealth redistribution",
+        "breakdown": "Wealth(财富) + Redistribution(再分配)",
+        "meaning_en": "the transfer of economic resources or purchasing power from one group of individuals to another, often as an unintended consequence of economic changes",
+        "meaning_zh": "财富再分配：经济资源或购买力从一群人转移到另一群人。在通胀的语境下，这种转移是\"无声\"的——没人投票，但财富已经从贷款人转到了借款人",
+        "derivation": "Wealth(财富) + Redistribute(再分) → 偷偷把财富从 A 转到 B",
+        "mnemonic": "通胀是「最隐形的税」——没人投票通过，但财富已经被洗牌",
+        "example": "Wealth redistribution from lenders to borrowers is one cost of unexpected inflation.",
+        "example_zh": "财富从贷款人到借款人的再分配是意外通胀的代价之一。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Real vs Nominal GDP",
+    "type": "root",
+    "meaning_en": "how real GDP strips out inflation to allow comparison across years",
+    "meaning_zh": "实际 GDP vs 名义 GDP：名义 GDP 用当年价格算，含通胀水分；实际 GDP 用基年价格算，剔除通胀。只有实际 GDP 才能告诉你产出是不是真的增加了",
+    "origin": "Unit 2: 2.6 Real vs Nominal GDP",
+    "related": ["Circular Flow and GDP", "Price Indices and Inflation"],
+    "words": [
+      {
+        "word": "aggregate output",
+        "breakdown": "Aggregate(总的) + Output(产出)",
+        "meaning_en": "the total quantity of goods and services produced in an economy, typically measured as real GDP",
+        "meaning_zh": "总产出：经济中生产的所有商品和服务的总量，通常用实际 GDP 衡量。「实际」是关键——只有剔除通胀的产出才能跨年比较",
+        "derivation": "Aggregate(总) + Output(产出) → 全经济造的所有东西",
+        "mnemonic": "总产出 = 实际 GDP——它是宏观分析的「主要指标」",
+        "example": "Aggregate output rises when factories and farms produce more.",
+        "example_zh": "工厂和农场生产更多时，总产出上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "base year",
+        "breakdown": "Base(基准) + Year(年)",
+        "meaning_en": "a reference year used to standardize prices when calculating real GDP, allowing for comparison of economic output across different time periods",
+        "meaning_zh": "基年：在计算实际 GDP 时，用基年的价格去乘其他年份的产量，这样不同年份的 GDP 都用同一套价格计量，可以直接比较产量变化",
+        "derivation": "Base(基础) + Year → 在 2.6 中是「价格冻结点」",
+        "mnemonic": "基年价格冻结：所有年的产量都用 2010 年的价格算 → 数字差异完全来自产量",
+        "example": "Real GDP in 2020 uses base-year prices, not 2020 prices.",
+        "example_zh": "2020 年的实际 GDP 用的是基年价格而不是 2020 年的价格。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "constant prices",
+        "breakdown": "Constant(不变的) + Prices(价格)",
+        "meaning_en": "prices from a fixed base year used to measure output across different time periods while removing the effect of inflation",
+        "meaning_zh": "不变价格：来自基年的固定价格，用来衡量不同时期的产出。用不变价格计算的 GDP 就是实际 GDP",
+        "derivation": "Constant(不变) + Prices → 价格不动 → 看真正的产量变化",
+        "mnemonic": "「不变价格」= 实际 GDP 的灵魂——价格静止不动，只看数量",
+        "example": "Real GDP is calculated using constant prices from a base year.",
+        "example_zh": "实际 GDP 使用基年的不变价格计算。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "current prices",
+        "breakdown": "Current(当前的) + Prices(价格)",
+        "meaning_en": "the market prices of goods and services in the time period being measured",
+        "meaning_zh": "当期价格：被测量时期的市场价格。用当期价格计算的 GDP 就是名义 GDP——含通胀，跨年比较会失真",
+        "derivation": "Current(当前) + Prices → 今年的价格 → 含通胀",
+        "mnemonic": "当期价格 = 名义 GDP；不变价格 = 实际 GDP——区分这两个，理解 GDP 就一半了",
+        "example": "Nominal GDP is the value of all final goods at current prices.",
+        "example_zh": "名义 GDP 是所有最终商品按当期价格计算的价值。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "final goods and services",
+        "breakdown": "Final(最终的) + goods and services(商品与服务)",
+        "meaning_en": "products and services produced for end consumers rather than for further processing or resale in the production chain",
+        "meaning_zh": "最终商品和服务：为终端用户生产的产品和服务，而不是用于进一步加工或转卖的中间品。GDP 只算最终品才避免重复计算",
+        "derivation": "Final(终点) + Goods(商品) → 走到终点的产品 → GDP 只算它们",
+        "mnemonic": "GDP 不算「半成品」——只数走到「终点站」的商品和服务",
+        "example": "A loaf of bread is a final good; the wheat that made it is intermediate.",
+        "example_zh": "一条面包是最终商品；做它的小麦是中间品。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "GDP deflator",
+        "breakdown": "GDP + Deflator(平减指数)",
+        "meaning_en": "a price index that measures the ratio of nominal GDP to real GDP, used to convert nominal GDP to real GDP by adjusting for inflation",
+        "meaning_zh": "GDP 平减指数：在 2.6 中是把名义 GDP 转成实际 GDP 的「转换器」。公式：名义 GDP / 实际 GDP × 100",
+        "derivation": "GDP Deflator → 在 2.6 中是连接名义和实际 GDP 的桥梁",
+        "mnemonic": "GDP 平减指数 = 名义/实际 × 100——记住公式就能在两者之间换算",
+        "example": "Real GDP = Nominal GDP / GDP deflator × 100.",
+        "example_zh": "实际 GDP = 名义 GDP / GDP 平减指数 × 100。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "nominal GDP",
+        "breakdown": "Nominal(名义的) + GDP",
+        "meaning_en": "the total monetary value of all final goods and services produced in an economy during a specific period, measured using current prices without adjustment for inflation",
+        "meaning_zh": "名义 GDP：在 2.6 中明确——用当期价格计算，含通胀。如果今年比去年名义 GDP 涨 5%，可能 3% 是物价涨、2% 才是真生产多了",
+        "derivation": "Nominal GDP → 在 2.6 中和实际 GDP 配对 → 含通胀",
+        "mnemonic": "名义 GDP 是「未滤镜」的产出 → 真实 GDP 才是「照片本人」",
+        "example": "Nominal GDP doubled in 10 years partly because prices rose.",
+        "example_zh": "名义 GDP 10 年翻倍部分是因为价格上涨。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：在 2.6 中，价格水平的变化决定了名义 GDP 和实际 GDP 之间的差距。价格水平涨得越快，二者差距越大",
+        "derivation": "价格水平 → 在 2.6 中决定名义/实际 GDP 的差距",
+        "mnemonic": "价格水平涨 → 名义 GDP 和实际 GDP 拉开距离",
+        "example": "If the price level doubles, nominal GDP can double without any real growth.",
+        "example_zh": "如果价格水平翻倍，名义 GDP 可以翻倍而没有任何真实增长。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "real GDP",
+        "breakdown": "Real(真实的) + GDP",
+        "meaning_en": "the total monetary value of all final goods and services produced by an economy, adjusted for inflation to reflect actual changes in production",
+        "meaning_zh": "实际 GDP：剔除通胀后的 GDP，能跨年比较真实的产量变化。所有「经济增长」的统计都用实际 GDP，因为只有它能反映真实产能的提升",
+        "derivation": "Real(真实) + GDP → 剔除通胀 → 看真正的产量",
+        "mnemonic": "实际 GDP 才是「真本事」——名义 GDP 含通胀水分，跨年没法比",
+        "example": "Real GDP grew 2% last year, meaning actual production rose 2% after stripping out inflation.",
+        "example_zh": "去年实际 GDP 增长 2%，意味着剔除通胀后真实产量增长了 2%。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Business Cycles",
+    "type": "root",
+    "meaning_en": "the four phases of the business cycle and the role of output gaps",
+    "meaning_zh": "经济周期：经济围绕长期增长趋势上下波动，分为扩张、顶点、衰退、谷底四个阶段。当实际产出偏离潜在产出时形成「产出缺口」，这是政策干预的依据",
+    "origin": "Unit 2: 2.7 Business Cycles",
+    "related": ["Unemployment", "Real vs Nominal GDP"],
+    "words": [
+      {
+        "word": "aggregate demand",
+        "breakdown": "Aggregate(总的) + Demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求：在不同价格水平下，整个经济对所有商品和服务的需求总量。和单一市场的需求不同——这是「全经济」的需求曲线",
+        "derivation": "Aggregate(全部) + Demand → 整个经济的需求 → 不是单一商品",
+        "mnemonic": "总需求 = C + I + G + NX——和支出法 GDP 长得一模一样",
+        "example": "Lower interest rates often boost aggregate demand.",
+        "example_zh": "较低的利率通常会刺激总需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "aggregate output",
+        "breakdown": "Aggregate(总的) + Output(产出)",
+        "meaning_en": "the total quantity of goods and services produced in an economy, typically measured as real GDP",
+        "meaning_zh": "总产出：在 2.7 中，总产出在经济周期中波动——扩张时上升，衰退时下降。它是周期分析的核心变量",
+        "derivation": "总产出 → 在 2.7 中随周期上下波动",
+        "mnemonic": "经济周期 = 总产出像心电图一样上下跳",
+        "example": "Aggregate output peaks before each recession.",
+        "example_zh": "在每次衰退前总产出会达到顶点。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "aggregate supply",
+        "breakdown": "Aggregate(总的) + Supply(供给)",
+        "meaning_en": "the total quantity of goods and services that producers are willing and able to supply at various price levels",
+        "meaning_zh": "总供给：在不同价格水平下，全经济生产者愿意供给的商品和服务总量。和总需求配对，二者交点决定经济的均衡产出和价格水平",
+        "derivation": "Aggregate(全部) + Supply → 整个经济的供给 → 也分短期和长期",
+        "mnemonic": "AS 和 AD 是宏观「供求图」的两条主曲线——理解 AD-AS 模型就懂宏观",
+        "example": "Aggregate supply rises when productivity grows.",
+        "example_zh": "生产率提升时总供给上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "business cycle",
+        "breakdown": "Business(商业) + Cycle(周期)",
+        "meaning_en": "fluctuations in aggregate output and employment caused by changes in aggregate supply and/or aggregate demand",
+        "meaning_zh": "经济周期：经济产出和就业围绕长期趋势的起伏波动，由总供给或总需求的变化引起。一个周期一般 5-10 年，包含扩张-顶点-衰退-谷底",
+        "derivation": "Business(商业) + Cycle(周期) → 经济的潮起潮落",
+        "mnemonic": "经济周期像心跳：上下波动是常态，但持续平直反而才是死亡",
+        "example": "Every business cycle includes expansion, peak, recession, and trough.",
+        "example_zh": "每个经济周期都包含扩张、顶点、衰退和谷底。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expansion",
+        "breakdown": "Ex(向外) + pand(展开) + sion → 扩张",
+        "meaning_en": "a phase of the business cycle characterized by an increase in aggregate output and employment",
+        "meaning_zh": "扩张期：经济周期的一个阶段，总产出和就业都在上升。是经济最繁荣的时段——失业率下降，工资上升，企业利润增加",
+        "derivation": "Ex(向外) + pand(展开) → 经济变大 → 上行阶段",
+        "mnemonic": "扩张期 = 「鸡犬升天」——招聘旺、股市涨、人人乐观",
+        "example": "The U.S. expansion from 2009 to 2020 was the longest in history.",
+        "example_zh": "美国 2009-2020 年的扩张是历史上最长的。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "full employment",
+        "breakdown": "Full(完全的) + Employment(就业)",
+        "meaning_en": "an economic condition where all available labor resources are being used efficiently and unemployment is at its natural rate",
+        "meaning_zh": "充分就业：在 2.7 中，充分就业对应「潜在产出」——经济没有产出缺口的状态。低于它意味着衰退，高于它意味着过热",
+        "derivation": "充分就业 → 在 2.7 中对应「无产出缺口」状态",
+        "mnemonic": "充分就业 = 长期均衡 = 实际产出 = 潜在产出",
+        "example": "At full employment, the output gap equals zero.",
+        "example_zh": "在充分就业状态下，产出缺口为零。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "natural rate of unemployment",
+        "breakdown": "Natural(自然的) + Rate(率) + Unemployment(失业)",
+        "meaning_en": "the unemployment rate that exists when the economy produces full-employment real output, equal to the sum of frictional and structural unemployment",
+        "meaning_zh": "自然失业率：在 2.7 经济周期分析中，是「充分就业」对应的失业率。当实际失业率高于它时是衰退，低于它时是过热",
+        "derivation": "自然失业率 → 在 2.7 中是周期分析的「中轴线」",
+        "mnemonic": "实际失业率 vs 自然失业率：差就是周期波动——这是 AP 宏观的关键比较",
+        "example": "Unemployment above the natural rate signals a recession.",
+        "example_zh": "失业率高于自然失业率意味着衰退。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "output gap",
+        "breakdown": "Output(产出) + Gap(缺口)",
+        "meaning_en": "the difference between actual output and potential output in an economy",
+        "meaning_zh": "产出缺口：实际 GDP 和潜在 GDP 之差。负缺口（实际 < 潜在）= 衰退；正缺口（实际 > 潜在）= 过热。是政府决定是否干预的关键指标",
+        "derivation": "Output(产出) + Gap(差距) → 现实 vs 应有",
+        "mnemonic": "产出缺口 < 0 → 萧条，政府要刺激；缺口 > 0 → 过热，政府要降温",
+        "example": "A large negative output gap is a sign of a deep recession.",
+        "example_zh": "大幅的负产出缺口是深度衰退的标志。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "peak",
+        "breakdown": "Peak(顶点)",
+        "meaning_en": "a turning point in the business cycle where aggregate output reaches its highest level before declining",
+        "meaning_zh": "顶点：经济周期中总产出的最高点，下一步就要进入衰退。在顶点时经济往往「过热」——失业率极低、通胀压力大、资产泡沫多",
+        "derivation": "Peak(顶峰) → 经济到了最高点 → 接下来要下坡",
+        "mnemonic": "顶点是经济的「最高点」也是「危险点」——爬得越高摔得越疼",
+        "example": "The economy reached a peak in late 2007 just before the Great Recession.",
+        "example_zh": "经济在 2007 年底大衰退前达到了顶点。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "potential output",
+        "breakdown": "Potential(潜在的) + Output(产出)",
+        "meaning_en": "the maximum level of real GDP an economy can produce when all resources are fully and efficiently utilized",
+        "meaning_zh": "潜在产出：经济在充分就业、所有资源高效利用时能产生的实际 GDP 最大值。它对应 PPC 上的点，决定了产出缺口",
+        "derivation": "Potential(潜在) + Output → 完全发挥时的产能 → 长期增长趋势",
+        "mnemonic": "潜在产出 = 经济的「身高」——超过它是踮脚（过热），低于它是蹲着（衰退）",
+        "example": "When real GDP equals potential output, the economy is at full employment.",
+        "example_zh": "当实际 GDP 等于潜在产出时，经济处于充分就业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "recession",
+        "breakdown": "Re(向后) + cess(走) + ion → 衰退",
+        "meaning_en": "a period of economic contraction characterized by declining GDP and reduced economic activity",
+        "meaning_zh": "衰退：经济活动萎缩的时期，GDP 下降、失业上升。技术定义：实际 GDP 连续两个季度下降。是经济周期最痛的阶段",
+        "derivation": "Recession → 经济退步 → 实际 GDP 下降",
+        "mnemonic": "衰退的官方定义：连续两个季度 GDP 下降——这是判断衰退的「教科书标准」",
+        "example": "The 2008 recession was triggered by the financial crisis.",
+        "example_zh": "2008 年的衰退由金融危机引发。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "trough",
+        "breakdown": "Trough(谷底)",
+        "meaning_en": "a turning point in the business cycle where aggregate output reaches its lowest level before increasing",
+        "meaning_zh": "谷底：经济周期中总产出的最低点，下一步就要进入扩张。在谷底时经济通常\"哀鸿遍野\"——失业率高、企业大量倒闭，但也是「触底反弹」的前夜",
+        "derivation": "Trough(低谷) → 经济到了最低点 → 接下来要回升",
+        "mnemonic": "谷底是黎明前的黑暗——再痛也意味着「快到头了」",
+        "example": "The trough of the Great Depression was reached in 1933.",
+        "example_zh": "大萧条的谷底在 1933 年到达。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "turning points",
+        "breakdown": "Turning(转折) + Points(点)",
+        "meaning_en": "the moments in the business cycle where the direction of economic activity changes, specifically peaks and troughs",
+        "meaning_zh": "转折点：经济周期中方向发生变化的时刻——具体指顶点和谷底。顶点是\"由升转降\"，谷底是\"由降转升\"",
+        "derivation": "Turning(转) + Points(点) → 方向变化的瞬间 → 顶点和谷底",
+        "mnemonic": "转折点很难提前预测——经济学家事后才能确认「啊，那时候是顶点」",
+        "example": "Identifying turning points is one of the hardest tasks in economic forecasting.",
+        "example_zh": "识别转折点是经济预测中最难的任务之一。",
+        "toefl_frequency": "medium"
+      }
+    ]
   }
 ]

@@ -46,7 +46,7 @@ export default function ReviewSession() {
   }, [state.phase, state.quizResult, actions]);
 
   useInput((input, key) => {
-    if (key.escape) {
+    if (key.escape || input === "q") {
       actions.quit();
       return;
     }
@@ -101,7 +101,7 @@ export default function ReviewSession() {
         </Text>
         <Text>先运行 alvy 学习新词根吧！</Text>
         <Box marginTop={1} justifyContent="flex-end">
-          <Text dimColor>esc</Text>
+          <Text dimColor>esc/q</Text>
         </Box>
       </Box>
     );
@@ -134,7 +134,7 @@ export default function ReviewSession() {
           </Box>
           <Box marginTop={1} justifyContent="space-between">
             <Text dimColor>→</Text>
-            <Text dimColor>esc</Text>
+            <Text dimColor>esc/q</Text>
           </Box>
         </Box>
       );

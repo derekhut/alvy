@@ -18,9 +18,10 @@ interface SubjectOption {
 interface SubjectPickerProps {
   data: UserData;
   onSelect: (subject: Subject) => void;
+  onEditProfile?: () => void;
 }
 
-export default function SubjectPicker({ data, onSelect }: SubjectPickerProps) {
+export default function SubjectPicker({ data, onSelect, onEditProfile }: SubjectPickerProps) {
   const { exit } = useApp();
 
   const subjects: SubjectOption[] = [
@@ -64,7 +65,9 @@ export default function SubjectPicker({ data, onSelect }: SubjectPickerProps) {
       setCursor((prev) => (prev < subjects.length - 1 ? prev + 1 : 0));
     } else if (key.return) {
       onSelect(subjects[cursor]!.key);
-    } else if (key.escape) {
+    } else if (input === "p" && data.profile && onEditProfile) {
+      onEditProfile();
+    } else if (key.escape || input === "q") {
       exit();
     }
   });
@@ -122,7 +125,8 @@ export default function SubjectPicker({ data, onSelect }: SubjectPickerProps) {
 
       <Box marginTop={1} justifyContent="space-between">
         <Text dimColor>↑ ↓</Text>
-        <Text dimColor>esc</Text>
+        {data.profile && <Text dimColor>p 修改资料</Text>}
+        <Text dimColor>esc/q</Text>
       </Box>
     </Box>
   );

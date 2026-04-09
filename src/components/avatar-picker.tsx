@@ -6,16 +6,18 @@ import { AVATARS, AVATAR_IDS } from "../lib/avatars.js";
 interface AvatarPickerProps {
   onSelect: (avatar: AvatarId) => void;
   onEsc?: () => void;
+  initialAvatar?: AvatarId;
 }
 
 const COLS = 3;
 
-export default function AvatarPicker({ onSelect, onEsc }: AvatarPickerProps) {
-  const [cursor, setCursor] = useState(0);
+export default function AvatarPicker({ onSelect, onEsc, initialAvatar }: AvatarPickerProps) {
+  const initialIdx = initialAvatar ? AVATAR_IDS.indexOf(initialAvatar) : 0;
+  const [cursor, setCursor] = useState(Math.max(0, initialIdx));
   const rows = Math.ceil(AVATAR_IDS.length / COLS);
 
-  useInput((_input, key) => {
-    if (key.escape && onEsc) {
+  useInput((input, key) => {
+    if ((key.escape || input === "q") && onEsc) {
       onEsc();
       return;
     }

@@ -83,7 +83,7 @@ export default function RootLesson({
 
       <Box marginTop={1} justifyContent="space-between">
         <Text dimColor>← →</Text>
-        <Text dimColor>esc</Text>
+        <Text dimColor>esc/q</Text>
       </Box>
     </Box>
   );

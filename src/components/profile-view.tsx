@@ -28,12 +28,12 @@ export default function ProfileView() {
         paddingX={2}
         paddingY={1}
       >
-        <Box flexDirection="column">
+        <Box flexDirection="column" alignItems="center">
           {avatar.art.map((line, i) => (
             <Text key={i} color="#AF5FFF">{line}</Text>
           ))}
+          <Text color="#AF5FFF">{displayName}</Text>
         </Box>
-        <Text bold color="#AF5FFF">{displayName}</Text>
 
         <Box marginTop={1} flexDirection="column">
           <Text>

@@ -7,11 +7,13 @@ type Step = "name" | "avatar";
 
 interface ProfileSetupProps {
   onComplete: (profile: UserProfile) => void;
+  initialName?: string;
+  initialAvatar?: AvatarId;
 }
 
-export default function ProfileSetup({ onComplete }: ProfileSetupProps) {
+export default function ProfileSetup({ onComplete, initialName, initialAvatar }: ProfileSetupProps) {
   const [step, setStep] = useState<Step>("name");
-  const [name, setName] = useState("");
+  const [name, setName] = useState(initialName ?? "");
 
   const handleEscDefault = () => {
     onComplete({
@@ -31,6 +33,7 @@ export default function ProfileSetup({ onComplete }: ProfileSetupProps) {
           setStep("avatar");
         }}
         onEsc={handleEscDefault}
+        isEditing={!!initialName}
       />
     );
   }
@@ -45,6 +48,7 @@ export default function ProfileSetup({ onComplete }: ProfileSetupProps) {
         });
       }}
       onEsc={handleEscDefault}
+      initialAvatar={initialAvatar}
     />
   );
 }
@@ -54,9 +58,10 @@ interface NameInputProps {
   onChange: (v: string) => void;
   onSubmit: (v: string) => void;
   onEsc: () => void;
+  isEditing?: boolean;
 }
 
-function NameInput({ value, onChange, onSubmit, onEsc }: NameInputProps) {
+function NameInput({ value, onChange, onSubmit, onEsc, isEditing }: NameInputProps) {
   useInput((input, key) => {
     if (key.escape) {
       onEsc();
@@ -88,7 +93,7 @@ function NameInput({ value, onChange, onSubmit, onEsc }: NameInputProps) {
         <Text>
           <Text bold color="#AF5FFF">alvy</Text>
         </Text>
-        <Text>欢迎! 先来设置你的个人资料</Text>
+        <Text>{isEditing ? "修改昵称" : "欢迎! 先来设置你的个人资料"}</Text>
 
         <Box marginTop={1} flexDirection="column">
           <Text>输入你的昵称 (最多 8 个字符):</Text>

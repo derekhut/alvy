@@ -54,7 +54,7 @@ export default function CspSession() {
   }, [state.phase, state.quizResult, actions]);
 
   useInput((input, key) => {
-    if (key.escape) {
+    if (key.escape || input === "q") {
       if (state.phase === "continue-prompt") {
         actions.goToSummary();
         return;

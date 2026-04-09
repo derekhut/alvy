@@ -51,7 +51,7 @@ export default function CspReview() {
   }, [state.phase, state.quizResult, actions]);
 
   useInput((input, key) => {
-    if (key.escape) {
+    if (key.escape || input === "q") {
       actions.quit();
       return;
     }
@@ -105,7 +105,7 @@ export default function CspReview() {
         </Text>
         <Text>先运行 alvy csp 学习新概念吧！</Text>
         <Box marginTop={1} justifyContent="flex-end">
-          <Text dimColor>esc</Text>
+          <Text dimColor>esc/q</Text>
         </Box>
       </Box>
     );
@@ -138,7 +138,7 @@ export default function CspReview() {
           </Box>
           <Box marginTop={1} justifyContent="space-between">
             <Text dimColor>→</Text>
-            <Text dimColor>esc</Text>
+            <Text dimColor>esc/q</Text>
           </Box>
         </Box>
       );

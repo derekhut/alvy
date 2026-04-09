@@ -31,7 +31,7 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
     }
   }, [phase, result]);
 
-  useInput((_, key) => {
+  useInput((input, key) => {
     if (phase === "done") {
       if (result?.success) {
         relaunchAlvy();
@@ -58,7 +58,7 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
       } else {
         onSkip();
       }
-    } else if (key.escape) {
+    } else if (key.escape || input === "q") {
       onSkip();
     }
   });
@@ -115,7 +115,7 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
       {phase === "prompt" && (
         <Box marginTop={1} justifyContent="space-between">
           <Text dimColor>↑ ↓</Text>
-          <Text dimColor>esc 跳过</Text>
+          <Text dimColor>esc/q 跳过</Text>
         </Box>
       )}
 

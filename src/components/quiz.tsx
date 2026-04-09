@@ -72,7 +72,7 @@ export default function Quiz({
       {!result && (
         <Box marginTop={1} justifyContent="space-between">
           <Text dimColor>1  2</Text>
-          <Text dimColor>esc</Text>
+          <Text dimColor>esc/q</Text>
         </Box>
       )}
     </Box>

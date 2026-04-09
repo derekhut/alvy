@@ -57,7 +57,7 @@ export default function SessionSummary({
 
       <Box marginTop={1} justifyContent="space-between">
         <Text dimColor>🌙 今日目标已完成，明天继续加油！</Text>
-        <Text dimColor>esc</Text>
+        <Text dimColor>esc/q</Text>
       </Box>
     </Box>
   );

@@ -51,7 +51,7 @@ export default function Celebration({ data, totalRoots }: CelebrationProps) {
       </Box>
 
       <Box marginTop={1} justifyContent="flex-end">
-        <Text dimColor>esc</Text>
+        <Text dimColor>esc/q</Text>
       </Box>
     </Box>
   );

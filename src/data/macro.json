@@ -2087,5 +2087,424 @@
         "toefl_frequency": "medium"
       }
     ]
+  },
+  {
+    "root": "Long-Run Aggregate Supply (LRAS)",
+    "type": "root",
+    "meaning_en": "the vertical curve representing an economy's maximum sustainable output when all prices and wages are flexible",
+    "meaning_zh": "长期总供给（LRAS）：表示在所有价格和工资都能充分调整后，经济能持续生产的最大产出水平。画在图上是一条垂直线，位于「充分就业产出」处，例如美国的潜在 GDP 大约就是这条线",
+    "origin": "Unit 3: 3.4 Long-Run Aggregate Supply (LRAS)",
+    "related": [
+      "Equilibrium in Aggregate Demand-Aggregate Supply (AD-AS) Model",
+      "Changes in the AD-AS Model in the Short Run",
+      "Unemployment",
+      "Business Cycles"
+    ],
+    "words": [
+      {
+        "word": "employment",
+        "breakdown": "Employ(雇佣) + ment(名词后缀) → 就业",
+        "meaning_en": "the state of having a paid job or being engaged in work for compensation",
+        "meaning_zh": "就业：有一份带薪工作或从事有报酬的劳动的状态。例如你在星巴克每小时赚 15 美元就算就业人口",
+        "derivation": "Employ(雇佣) + ment(状态) → 被雇佣的状态 → 有工作",
+        "mnemonic": "「Employment = 有人给你发工资」，失业就是反过来——没人付钱让你干活",
+        "example": "Employment rose steadily as factories reopened after the recession.",
+        "example_zh": "经济衰退后工厂重新开工，就业水平稳步上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "fixed input prices",
+        "breakdown": "Fixed(固定的) + Input(投入) + Prices(价格)",
+        "meaning_en": "input prices, such as wages, that cannot adjust immediately and remain constant in the short run",
+        "meaning_zh": "固定投入价格：工资、租金等投入要素的价格短期内无法立即调整、保持不变。例如劳动合同签了一年，老板即使想降工资也降不了",
+        "derivation": "Fixed(卡住) + Input(投入) → 短期内改不了 → 典型例子是一年期工资合同",
+        "mnemonic": "签了合同的工资 = fixed input price：老板想降也降不了，所以短期 SRAS 才会向上倾斜",
+        "example": "Fixed input prices are the main reason the short-run aggregate supply curve slopes upward.",
+        "example_zh": "固定投入价格是短期总供给曲线向上倾斜的主要原因。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "flexible prices",
+        "breakdown": "Flexible(灵活的) + Prices(价格)",
+        "meaning_en": "prices that can adjust freely in response to changes in supply and demand, characteristic of the long run",
+        "meaning_zh": "灵活价格：能随供求变化自由调整的价格，是长期的典型特征。例如菜市场的白菜价格每天都在变——短期是 sticky，长期就会趋于 flexible",
+        "derivation": "Flexible(灵活) → 可以上下变动 → 长期所有价格都能调整 → LRAS 是垂直线",
+        "mnemonic": "想象价格是橡皮筋：短期被固定合同拉住不动，长期回弹 → flexible prices 决定了 LRAS 为什么垂直",
+        "example": "In the long run, flexible prices allow the economy to return to full-employment output.",
+        "example_zh": "长期来看，灵活的价格让经济回到充分就业的产出水平。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "flexible wages",
+        "breakdown": "Flexible(灵活的) + Wages(工资)",
+        "meaning_en": "wages that can adjust freely in response to changes in labor market conditions, characteristic of the long run",
+        "meaning_zh": "灵活工资：能随劳动市场状况自由调整的工资，是长期的典型特征。例如长期来看，合同到期、新工人进入，工资总能随行情调整",
+        "derivation": "Flexible(灵活) + Wages(工资) → 合同到期、重新谈判 → 长期可调 → 长期劳动市场出清",
+        "mnemonic": "短期工资「钉」在合同上（sticky wages），长期工资「弹」起来（flexible wages）",
+        "example": "Flexible wages in the long run help eliminate any gap between actual and potential output.",
+        "example_zh": "长期中灵活的工资有助于消除实际产出与潜在产出之间的缺口。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "full employment",
+        "breakdown": "Full(充分的) + Employment(就业)",
+        "meaning_en": "an economic condition where all available labor resources are being used efficiently and unemployment is at its natural rate",
+        "meaning_zh": "充分就业：所有可用劳动力资源都被有效利用、失业率处于自然率的经济状态。注意不是 0% 失业——摩擦性和结构性失业仍然存在",
+        "derivation": "Full(满额) + Employment(就业) → 该干活的人都在干活 → 只剩「自然失业」",
+        "mnemonic": "Full employment ≠ 0% 失业！即使全员干活的时代也有人在换工作（摩擦性失业）",
+        "example": "When the economy reaches full employment, the unemployment rate equals the natural rate.",
+        "example_zh": "当经济达到充分就业时，失业率等于自然失业率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflation",
+        "breakdown": "In(向内) + flate(膨胀) → 通货膨胀",
+        "meaning_en": "a sustained increase in the general price level of goods and services in an economy over time",
+        "meaning_zh": "通货膨胀：一段时间内商品和服务的整体价格水平持续上涨。例如 2022 年美国通胀一度冲到 9%，超市牛奶从 3 美元涨到 4 美元",
+        "derivation": "In(进入) + flate(吹气) → 像气球一样「吹大」物价 → 钱越来越不值钱",
+        "mnemonic": "Inflation = in(进) + flate(吹气)：物价像气球一样被吹大，口袋里的钱被「漏气」",
+        "example": "High inflation eroded consumers' purchasing power throughout 2022.",
+        "example_zh": "整个 2022 年，高通胀侵蚀了消费者的购买力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "long run",
+        "breakdown": "Long(长) + run(时段)",
+        "meaning_en": "a time period in macroeconomics where all factors of production are variable and prices fully adjust to changes in supply and demand",
+        "meaning_zh": "长期：在宏观经济学中指所有生产要素都可以变动、价格能充分调整到供求变化的时间段。长期没有固定合同，工资价格全部灵活",
+        "derivation": "Long(长) + run(时段) → 时间够长 → 合同都到期 → 所有变量都能调整",
+        "mnemonic": "凯恩斯名言「长期来看我们都死了」——但在经济学图里，「长期」就是所有价格工资都自由了的那一刻",
+        "example": "In the long run, the economy always returns to potential output along the LRAS curve.",
+        "example_zh": "长期来看，经济总会沿着 LRAS 曲线回到潜在产出。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Long-Run Aggregate Supply curve",
+        "breakdown": "Long-Run(长期) + Aggregate(总) + Supply(供给) + curve(曲线)",
+        "meaning_en": "a vertical line on a graph representing the maximum sustainable output an economy can produce when all resources are fully employed and wages and prices have fully adjusted",
+        "meaning_zh": "长期总供给曲线（LRAS）：一条垂直线，代表当所有资源充分就业、工资和价格已充分调整后，经济可以持续生产的最大产出。位置由生产能力决定，与价格水平无关",
+        "derivation": "长期价格灵活 → 价格水平高低不影响产出 → 曲线变成垂直 → 位置 = 潜在 GDP",
+        "mnemonic": "LRAS 是一根「立柱」——不管物价涨跌，经济长期产出就这么多，撼不动这根柱子",
+        "example": "The Long-Run Aggregate Supply curve is drawn as a vertical line at full-employment output.",
+        "example_zh": "长期总供给曲线被画成一条位于充分就业产出处的垂直线。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "long-run trade-off",
+        "breakdown": "Long-Run(长期) + Trade-off(取舍)",
+        "meaning_en": "the absence of a permanent relationship between inflation and unemployment in the long run, as all prices and wages fully adjust",
+        "meaning_zh": "长期权衡关系：长期来看，通胀和失业之间并不存在永久的取舍关系——因为所有价格和工资都会充分调整，经济最终回到自然失业率",
+        "derivation": "短期菲利普斯曲线倾斜 → 长期变垂直 → 长期「无永久 trade-off」",
+        "mnemonic": "短期你可以「用通胀换就业」，长期你换不到——这就是为什么印钞票救不了长期失业",
+        "example": "The long-run trade-off between inflation and unemployment does not exist, according to the classical view.",
+        "example_zh": "根据古典学派观点，通胀和失业之间的长期权衡关系并不存在。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "maximum sustainable capacity",
+        "breakdown": "Maximum(最大) + Sustainable(可持续的) + Capacity(产能)",
+        "meaning_en": "the total output an economic system will produce over a set period of time if all resources are fully employed",
+        "meaning_zh": "最大可持续产能：如果所有资源都得到充分利用，一个经济系统在一段时间内能生产的总产出。也就是 LRAS 所在的产出水平，又叫潜在 GDP",
+        "derivation": "最大(max) + 可持续(能长期维持，不是爆产能) + 产能 → 潜在 GDP",
+        "mnemonic": "「最大可持续产能」≠「极限爆产能」：工厂 24 小时不停工能爆更多产出，但那不是「可持续」",
+        "example": "An economy operating at its maximum sustainable capacity is on its LRAS curve.",
+        "example_zh": "处于最大可持续产能的经济正位于其 LRAS 曲线上。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "Production Possibilities Curve",
+        "breakdown": "Production(生产) + Possibilities(可能性) + Curve(曲线)",
+        "meaning_en": "a graph showing the maximum combinations of two goods that can be produced with available resources and technology",
+        "meaning_zh": "生产可能性曲线（PPC）：用一条曲线表达在现有资源和技术下，两种商品能生产的最大组合。PPC 向外移对应 LRAS 向右移——都是长期生产能力提高",
+        "derivation": "PPC 外移 → 生产能力提升 → LRAS 右移 → 潜在 GDP 提高",
+        "mnemonic": "PPC 和 LRAS 是「同一枚硬币的两面」：PPC 画两种商品的最大组合，LRAS 把这个总产能画成一根立柱",
+        "example": "Both the Production Possibilities Curve and the LRAS curve shift outward when an economy grows.",
+        "example_zh": "当经济增长时，生产可能性曲线和 LRAS 曲线都会向外移动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "short run",
+        "breakdown": "Short(短) + run(时段)",
+        "meaning_en": "a time period in macroeconomics where at least one factor of production is fixed and prices may not fully adjust to changes in demand",
+        "meaning_zh": "短期：在宏观经济学中指至少有一个生产要素固定、价格不能完全随需求变化调整的时间段。短期工资被合同卡住，所以 SRAS 向上倾斜",
+        "derivation": "Short(短) + run(时段) → 时间不够长 → 合同还没到期 → 工资价格粘性",
+        "mnemonic": "短期「合同还没到期」，长期「合同都到期了」——这就是宏观里 short run 和 long run 的区别",
+        "example": "In the short run, sticky wages keep the economy from immediately returning to full employment.",
+        "example_zh": "短期内，粘性工资阻碍了经济立即回到充分就业水平。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Equilibrium in Aggregate Demand-Aggregate Supply (AD-AS) Model",
+    "type": "root",
+    "meaning_en": "how aggregate demand and aggregate supply interact to determine output and price level in short-run and long-run equilibrium",
+    "meaning_zh": "AD-AS 模型中的均衡：总需求和总供给相交决定整个经济的产出和价格水平。短期看 AD 和 SRAS 的交点，长期看 AD、SRAS、LRAS 三线交于一点——这是宏观分析的基本舞台",
+    "origin": "Unit 3: 3.5 Equilibrium in Aggregate Demand-Aggregate Supply (AD-AS) Model",
+    "related": [
+      "Long-Run Aggregate Supply (LRAS)",
+      "Changes in the AD-AS Model in the Short Run",
+      "Business Cycles",
+      "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"
+    ],
+    "words": [
+      {
+        "word": "Aggregate Demand curve",
+        "breakdown": "Aggregate(总的) + Demand(需求) + curve(曲线)",
+        "meaning_en": "a graph showing the relationship between the price level and the quantity of goods and services demanded in an economy at all price levels",
+        "meaning_zh": "总需求曲线（AD）：显示整个经济中价格水平和商品服务需求量之间关系的曲线。向下倾斜——价格越低，总需求量越大",
+        "derivation": "Aggregate(总体) + Demand(需求) → 全社会的需求加总 → 横轴是 real GDP，纵轴是 price level",
+        "mnemonic": "AD 向下倾斜原因：财富效应 + 利率效应 + 汇率效应——物价降了，大家口袋里的钱更值钱，买得更多",
+        "example": "The Aggregate Demand curve slopes downward because of the wealth, interest rate, and exchange rate effects.",
+        "example_zh": "由于财富效应、利率效应和汇率效应，总需求曲线向下倾斜。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "aggregate quantity of output demanded",
+        "breakdown": "Aggregate(总) + Quantity(数量) + Output(产出) + Demanded(被需求的)",
+        "meaning_en": "the total amount of real output that all buyers in an economy are willing and able to purchase at different price levels",
+        "meaning_zh": "总需求产出量：经济中所有买家在不同价格水平下愿意并能够购买的实际产出总量。就是 AD 曲线上对应某个价格水平的那个点",
+        "derivation": "家庭+企业+政府+净出口 → 各自的需求 → 加总 → 总需求产出量",
+        "mnemonic": "「总需求产出量」= AD 曲线上任何一个点的横坐标，代表「大家愿意买多少 GDP」",
+        "example": "At a lower price level, the aggregate quantity of output demanded rises.",
+        "example_zh": "在较低的价格水平下，总需求产出量会上升。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "aggregate quantity of output supplied",
+        "breakdown": "Aggregate(总) + Quantity(数量) + Output(产出) + Supplied(被供给的)",
+        "meaning_en": "the total amount of real output that all producers in an economy are willing and able to supply at different price levels",
+        "meaning_zh": "总供给产出量：经济中所有生产者在不同价格水平下愿意并能够提供的实际产出总量。对应 SRAS 或 LRAS 曲线上的某个点",
+        "derivation": "所有企业的供给加总 → 总供给产出量 → 随价格水平变化（短期 SRAS 向上倾斜）",
+        "mnemonic": "总需求 vs 总供给产出量就像集市里「全体买家 vs 全体卖家愿意交易的总量」",
+        "example": "In the short run, the aggregate quantity of output supplied increases as the price level rises.",
+        "example_zh": "短期内，随着价格水平上升，总供给产出量增加。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "equilibrium output level",
+        "breakdown": "Equilibrium(均衡) + Output Level(产出水平)",
+        "meaning_en": "the level of real output at which the quantity demanded equals the quantity supplied in the economy",
+        "meaning_zh": "均衡产出水平：经济中需求量等于供给量时的实际产出水平。在 AD-AS 图上就是 AD 和 AS 曲线交点对应的横坐标",
+        "derivation": "AD = AS → 交点 → 横坐标就是均衡产出水平（Y*）",
+        "mnemonic": "Y* = AD 和 AS 的「见面处」——这就是这一瞬间经济实际产出多少",
+        "example": "The equilibrium output level occurs where AD intersects SRAS.",
+        "example_zh": "均衡产出水平出现在 AD 和 SRAS 相交的地方。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "equilibrium price level",
+        "breakdown": "Equilibrium(均衡) + Price Level(价格水平)",
+        "meaning_en": "the price level at which the quantity of real output demanded equals the quantity of real output supplied",
+        "meaning_zh": "均衡价格水平：总需求产出量等于总供给产出量时的整体价格水平。在 AD-AS 图上就是 AD 和 AS 交点对应的纵坐标（PL*）",
+        "derivation": "AD = AS → 交点 → 纵坐标就是均衡价格水平 → 整个经济的「平均物价」",
+        "mnemonic": "均衡产出 Y* 和均衡价格 PL* 是同一个交点的「横纵坐标」双胞胎",
+        "example": "A rightward shift of AD raises the equilibrium price level in the short run.",
+        "example_zh": "AD 右移在短期内提高了均衡价格水平。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "full employment",
+        "breakdown": "Full(充分) + Employment(就业)",
+        "meaning_en": "an economic condition where all available labor resources are being used efficiently and unemployment is at its natural rate",
+        "meaning_zh": "充分就业：经济处于所有可用劳动力被高效利用、失业率等于自然失业率的状态。AD-AS 模型中，长期均衡正好对应充分就业产出",
+        "derivation": "长期均衡 → AD、SRAS、LRAS 三线交于一点 → 产出 = 充分就业产出",
+        "mnemonic": "「长期均衡 = 充分就业」是 AD-AS 模型的默认归宿：不管 AD 怎么冲击，长期都会回到 LRAS 那条线",
+        "example": "Long-run equilibrium in the AD-AS model occurs at full employment.",
+        "example_zh": "AD-AS 模型中的长期均衡发生在充分就业水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflationary output gap",
+        "breakdown": "Inflationary(通胀的) + Output Gap(产出缺口)",
+        "meaning_en": "a positive output gap occurring when actual real output exceeds the full-employment level of output, putting upward pressure on prices",
+        "meaning_zh": "通胀性产出缺口：实际产出高于充分就业产出时出现的正缺口。经济「过热」了，资源被过度使用，价格面临上涨压力",
+        "derivation": "实际 Y > 潜在 Y → 经济过热 → 工人加班、工厂赶工 → 物价上涨压力",
+        "mnemonic": "通胀性缺口 = 经济「发烧」了，产出超过了可持续水平——短期爽，长期必调",
+        "example": "An inflationary output gap puts upward pressure on wages and prices.",
+        "example_zh": "通胀性产出缺口对工资和价格产生向上的压力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Long-Run Aggregate Supply curve",
+        "breakdown": "Long-Run(长期) + Aggregate Supply(总供给) + curve(曲线)",
+        "meaning_en": "a vertical line on a graph representing the maximum sustainable output an economy can produce when all resources are fully employed and wages and prices have fully adjusted",
+        "meaning_zh": "长期总供给曲线（LRAS）：一条位于充分就业产出处的垂直线，代表长期经济能持续生产的最大产出。在 AD-AS 均衡分析中决定了长期产出的「终点」",
+        "derivation": "长期价格和工资灵活 → 产出不受价格水平影响 → 垂直于潜在 GDP 位置",
+        "mnemonic": "AD-AS 图里 LRAS 就是那根「立柱」——不管短期怎么晃，长期一定回到这根柱子上",
+        "example": "In long-run equilibrium, AD, SRAS, and the LRAS curve all intersect at the same point.",
+        "example_zh": "在长期均衡中，AD、SRAS 和 LRAS 曲线都相交于同一点。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "long-run equilibrium",
+        "breakdown": "Long-Run(长期) + Equilibrium(均衡)",
+        "meaning_en": "the state where AD, SRAS, and LRAS all intersect at the same point, representing full-employment output and a stable price level",
+        "meaning_zh": "长期均衡：AD、SRAS、LRAS 三条曲线相交于同一点的状态，此时产出等于充分就业水平、价格已充分调整。是 AD-AS 模型的「平衡归宿」",
+        "derivation": "所有价格工资都调整完毕 → AD = SRAS = LRAS → 产出 = 潜在 GDP",
+        "mnemonic": "长期均衡 = 「三线合一」：AD、SRAS、LRAS 在充分就业产出处开会",
+        "example": "At long-run equilibrium, the economy produces at its full-employment output level.",
+        "example_zh": "在长期均衡下，经济在充分就业产出水平上运行。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "output gap",
+        "breakdown": "Output(产出) + Gap(缺口)",
+        "meaning_en": "the difference between actual output and potential output in an economy",
+        "meaning_zh": "产出缺口：经济中实际产出与潜在产出之间的差距。正缺口代表过热（通胀压力），负缺口代表衰退（失业压力）",
+        "derivation": "Actual Y - Potential Y → 差值 → 正负决定经济冷热 → 政策依据",
+        "mnemonic": "产出缺口 = 「实际体温」和「正常体温」的差：高了发烧（通胀），低了着凉（衰退）",
+        "example": "A negative output gap signals that the economy is producing below its potential.",
+        "example_zh": "负产出缺口意味着经济的产出低于其潜力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Short-Run Aggregate Supply curve",
+        "breakdown": "Short-Run(短期) + Aggregate Supply(总供给) + curve(曲线)",
+        "meaning_en": "a graph showing the relationship between the price level and the quantity of goods and services supplied in an economy in the short run",
+        "meaning_zh": "短期总供给曲线（SRAS）：显示短期内价格水平和经济总产出之间关系的曲线。向上倾斜——因为短期工资被合同卡住，物价上涨让企业利润增加，愿意多产",
+        "derivation": "短期工资粘性 → 物价涨而工资没涨 → 企业利润增加 → 愿意多产 → SRAS 向上倾斜",
+        "mnemonic": "SRAS 向上倾斜的秘密 = 「工资还没来得及涨」：老板赚到物价上涨的利润，所以想多生产",
+        "example": "The Short-Run Aggregate Supply curve slopes upward because wages are sticky in the short run.",
+        "example_zh": "由于短期内工资具有粘性，短期总供给曲线向上倾斜。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "short-run equilibrium",
+        "breakdown": "Short-Run(短期) + Equilibrium(均衡)",
+        "meaning_en": "the point where aggregate demand and short-run aggregate supply intersect, determining the current price level and output",
+        "meaning_zh": "短期均衡：AD 和 SRAS 曲线相交的点，决定当前的价格水平和产出。这个点可能偏离 LRAS——就形成了通胀缺口或衰退缺口",
+        "derivation": "AD ∩ SRAS → 短期均衡点 → 位置相对 LRAS 决定缺口类型",
+        "mnemonic": "短期均衡是「临时住所」，长期均衡是「永久家园」——短期可能在潜在产出之上或之下",
+        "example": "Short-run equilibrium can occur above, below, or at full-employment output.",
+        "example_zh": "短期均衡可以发生在高于、低于或等于充分就业产出的水平上。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Changes in the AD-AS Model in the Short Run",
+    "type": "root",
+    "meaning_en": "how shocks to aggregate demand or aggregate supply shift the curves and change short-run output, employment, and price level",
+    "meaning_zh": "AD-AS 模型的短期变动：总需求或总供给受到冲击时，曲线如何移动、产出和价格水平如何变化。正向冲击推动 AD 或 AS 右移，负向冲击则左移——这是分析经济波动的核心工具",
+    "origin": "Unit 3: 3.6 Changes in the AD-AS Model in the Short Run",
+    "related": [
+      "Long-Run Aggregate Supply (LRAS)",
+      "Equilibrium in Aggregate Demand-Aggregate Supply (AD-AS) Model",
+      "Business Cycles",
+      "Price Indices and Inflation"
+    ],
+    "words": [
+      {
+        "word": "aggregate demand shock",
+        "breakdown": "Aggregate Demand(总需求) + Shock(冲击)",
+        "meaning_en": "a sudden, unexpected change in the total demand for goods and services in an economy, causing shifts in the AD curve",
+        "meaning_zh": "总需求冲击：经济中商品和服务总需求的突然、意外变化，导致 AD 曲线整体移动。例如 2020 年疫情封城让消费骤降，就是负向 AD 冲击",
+        "derivation": "突发事件 → C、I、G 或 NX 骤变 → AD 曲线整体左移或右移",
+        "mnemonic": "「9/11」事件后美国消费者信心暴跌 = 负向 AD 冲击；减税和发钱 = 正向 AD 冲击",
+        "example": "The 2008 financial crisis caused a negative aggregate demand shock that shifted AD sharply left.",
+        "example_zh": "2008 年金融危机造成了负向总需求冲击，使 AD 曲线大幅左移。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "aggregate output",
+        "breakdown": "Aggregate(总) + Output(产出)",
+        "meaning_en": "the total quantity of goods and services produced in an economy, typically measured as real GDP",
+        "meaning_zh": "总产出：经济中生产的商品和服务的总数量，通常用真实 GDP 衡量。AD-AS 图的横轴就是它",
+        "derivation": "所有企业和部门的产出加总 → 宏观上的总产出 → = 真实 GDP",
+        "mnemonic": "总产出 = real GDP = AD-AS 图的「横轴」：整个经济的「蛋糕总大小」",
+        "example": "A negative supply shock reduces aggregate output in the short run.",
+        "example_zh": "负向供给冲击在短期内减少了总产出。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "aggregate supply shock",
+        "breakdown": "Aggregate Supply(总供给) + Shock(冲击)",
+        "meaning_en": "an unexpected event that causes a sudden shift in the aggregate supply curve, affecting the economy's ability to produce goods and services",
+        "meaning_zh": "总供给冲击：导致 SRAS 曲线突然移动的意外事件，影响经济的生产能力。例如 1973 年石油禁运让能源成本暴涨，是经典的负向供给冲击",
+        "derivation": "原材料、能源、工资或技术突变 → SRAS 左移（负冲击）或右移（正冲击）",
+        "mnemonic": "1970 年代「石油危机」是教科书级的负向 AS 冲击——油价暴涨，SRAS 左移，滞胀爆发",
+        "example": "The oil embargo of 1973 is a classic example of a negative aggregate supply shock.",
+        "example_zh": "1973 年的石油禁运是负向总供给冲击的经典例子。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "cost-push inflation",
+        "breakdown": "Cost(成本) + push(推) + Inflation(通胀)",
+        "meaning_en": "inflation caused by a decrease in aggregate supply due to rising production costs, pushing prices upward",
+        "meaning_zh": "成本推动型通胀：由于生产成本上涨，总供给减少，价格被「推」上去而产生的通胀。经典例子是油价飞涨导致所有商品都变贵",
+        "derivation": "投入成本上涨 → SRAS 左移 → 价格水平上升 + 产出下降 → 滞胀",
+        "mnemonic": "「成本推」= 「从后面推」：油价、工资像大手一样把 SRAS 往左推，物价被「推」上天",
+        "example": "Rising oil prices caused cost-push inflation in the 1970s.",
+        "example_zh": "1970 年代油价上涨引发了成本推动型通胀。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "demand-pull inflation",
+        "breakdown": "Demand(需求) + pull(拉) + Inflation(通胀)",
+        "meaning_en": "inflation caused by an increase in aggregate demand that pulls prices upward when the economy is near full capacity",
+        "meaning_zh": "需求拉动型通胀：总需求上升，把价格「拉」上去而产生的通胀，尤其当经济接近充分就业时最明显。例如疫情期间发钱 + 刺激计划，AD 右移拉高物价",
+        "derivation": "C、I、G 或 NX 上升 → AD 右移 → 接近 LRAS → 产出小涨但价格大涨",
+        "mnemonic": "「需求拉」= 「从前面拉」：太多钱追逐太少商品，把物价一把「拉」上去",
+        "example": "Stimulus checks and pent-up demand created demand-pull inflation after the pandemic.",
+        "example_zh": "刺激支票和被压抑的需求在疫情后引发了需求拉动型通胀。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "employment",
+        "breakdown": "Employ(雇佣) + ment(名词) → 就业",
+        "meaning_en": "the state of having a paid job or being engaged in work for compensation",
+        "meaning_zh": "就业：拥有带薪工作或从事有报酬劳动的状态。在 AD-AS 短期变动中，总产出和就业同向变化——产出涨则就业涨",
+        "derivation": "AD 或 SRAS 右移 → 总产出上升 → 企业多雇人 → 就业增加",
+        "mnemonic": "短期里「产出和就业手拉手」：产出增加意味着企业需要更多工人",
+        "example": "A positive demand shock increases both output and employment in the short run.",
+        "example_zh": "正向需求冲击在短期内同时增加产出和就业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "negative shock",
+        "breakdown": "Negative(负面的) + Shock(冲击)",
+        "meaning_en": "an unexpected event that decreases aggregate demand or aggregate supply, leading to decreases in output and employment",
+        "meaning_zh": "负向冲击：导致总需求或总供给减少的意外事件，引起产出和就业下降。例如疫情封城是负向需求冲击，油价暴涨是负向供给冲击",
+        "derivation": "意外事件 → AD 或 SRAS 左移 → 产出下降 + 就业下降 → 衰退",
+        "mnemonic": "负向冲击 = 「经济被打了一拳」：不管是从需求侧还是供给侧，结果都是产出和就业缩水",
+        "example": "The 2020 pandemic was a massive negative shock to both AD and AS.",
+        "example_zh": "2020 年的疫情是对 AD 和 AS 的一次巨大负向冲击。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "positive shock",
+        "breakdown": "Positive(积极的) + Shock(冲击)",
+        "meaning_en": "an unexpected event that increases aggregate demand or aggregate supply, leading to increases in output and employment",
+        "meaning_zh": "正向冲击：导致总需求或总供给增加的意外事件，带来产出和就业的上升。例如重大科技突破让 SRAS 右移，就是正向供给冲击",
+        "derivation": "意外事件 → AD 或 SRAS 右移 → 产出增加 + 就业增加 → 扩张",
+        "mnemonic": "正向冲击 = 「经济吃了营养餐」：需求冲击推高价格，供给冲击压低价格，但都让产出上升",
+        "example": "A breakthrough in AI productivity could act as a positive supply shock.",
+        "example_zh": "AI 生产力的突破可能成为一次正向供给冲击。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：一个经济中所有商品和服务价格的平均值，通常用 CPI 等价格指数衡量。AD-AS 图的纵轴就是它",
+        "derivation": "所有商品价格加权平均 → 价格水平（PL） → 宏观上的「平均物价」",
+        "mnemonic": "价格水平 = AD-AS 图的「纵轴」：不是单个商品的价格，而是「全社会物价的平均分」",
+        "example": "A rightward shift of AD raises the price level in the short run.",
+        "example_zh": "AD 曲线右移会在短期内抬高价格水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "short run",
+        "breakdown": "Short(短) + run(时段)",
+        "meaning_en": "a time period in macroeconomics where at least one factor of production is fixed and prices may not fully adjust to changes in demand",
+        "meaning_zh": "短期：宏观经济学中指至少有一个生产要素固定、价格不能完全调整到需求变化的时间段。在 AD-AS 分析中，短期看 AD 和 SRAS 的互动",
+        "derivation": "合同还没到期 → 工资价格粘性 → 短期 SRAS 向上倾斜 → 冲击有实际产出效应",
+        "mnemonic": "短期 = 「价格和工资还没来得及反应」的时段——所以 AD 冲击能真的改变产出",
+        "example": "In the short run, a negative AD shock reduces both output and the price level.",
+        "example_zh": "短期内，一个负向 AD 冲击会同时减少产出和价格水平。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

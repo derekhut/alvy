@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Text, useInput, useApp } from "ink";
-import { runUpdate } from "../lib/update-check.js";
+import { runUpdate, relaunchAlvy } from "../lib/update-check.js";
 import type { UpdateInfo } from "../lib/update-check.js";
 
 interface UpdatePromptProps {
@@ -21,9 +21,23 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
 
   const options = ["立即更新", "跳过"];
 
+  // Auto-relaunch after successful update
+  useEffect(() => {
+    if (phase === "done" && result?.success) {
+      const timer = setTimeout(() => {
+        relaunchAlvy();
+      }, 800);
+      return () => clearTimeout(timer);
+    }
+  }, [phase, result]);
+
   useInput((_, key) => {
     if (phase === "done") {
-      exit();
+      if (result?.success) {
+        relaunchAlvy();
+      } else {
+        exit();
+      }
       return;
     }
     if (phase !== "prompt") return;
@@ -92,7 +106,7 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
         {phase === "done" && result && (
           <Text color={result.success ? "#5FD7FF" : "#FF5F87"}>
             {result.success
-              ? `更新成功！已更新至 ${info.latest}，请重新运行 alvy`
+              ? `更新成功！正在重启...`
               : `更新失败：${result.message}`}
           </Text>
         )}
@@ -105,7 +119,7 @@ export default function UpdatePrompt({ info, onSkip }: UpdatePromptProps) {
         </Box>
       )}
 
-      {phase === "done" && (
+      {phase === "done" && result && !result.success && (
         <Box marginTop={1}>
           <Text dimColor>按任意键退出</Text>
         </Box>

@@ -1,4 +1,4 @@
-import { execSync } from "node:child_process";
+import { execSync, spawn } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
@@ -68,4 +68,15 @@ export function runUpdate(): { success: boolean; message: string } {
       err instanceof Error ? err.message : "未知错误";
     return { success: false, message: msg };
   }
+}
+
+/** Relaunch alvy after update — spawns new process and exits current one */
+export function relaunchAlvy(): void {
+  const child = spawn("alvy", [], {
+    stdio: "inherit",
+    detached: true,
+    shell: true,
+  });
+  child.unref();
+  process.exit(0);
 }

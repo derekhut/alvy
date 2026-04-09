@@ -10,7 +10,7 @@ alvy supports multiple subjects. `alvy` (no args) shows a subject picker with ar
 
 - **Subject picker at launch** with remember-last (`settings.lastSubject` persisted)
 - **Shared streak and XP** across all subjects (study any subject, streak continues)
-- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (36 concepts / 607 terms, full CED coverage), AP CSP (20 concepts / 72 terms), AP World History (19 concepts / 255 terms)
+- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (36 concepts / 607 terms, full CED coverage), AP CSP (CED rewrite in progress: Big Idea 1+2 complete locally = 8 concepts / 128 terms; npm 1.6.9 ships BI1 only), AP World History (19 concepts / 255 terms)
 - **Generalized `useSessionFlow`** hook (Approach A: refactor to be content-agnostic, not parallel duplication)
 - **Planned:** Namespaced `wordsStudied` array (`vocab:benefit`, `psych:adaptation`) to prevent collisions
 
@@ -20,8 +20,8 @@ See `handoff.md` "AP Subject Expansion" section for full decision log.
 
 ```
 index.tsx          CLI entry point (meow parses args, default → "pick")
-  └─ app.tsx       Command router (state-based: "pick" → UpdatePrompt? → ProfileSetup? → SubjectPicker, then resolved command)
-       ├─ update-prompt.tsx     Update available prompt (checks npm registry, skip or update)
+  └─ app.tsx       Command router (state-based: "pick" → ProfileSetup? → SubjectPicker, with opt-in UpdatePrompt overlay)
+       ├─ update-prompt.tsx     Update prompt — opt-in (user presses `u` from picker). Async spawn() update with cancel + watchdog. No auto-relaunch (v1.6.9): user re-runs `alvy` manually after success.
        ├─ profile-setup.tsx     First-launch profile setup (name input + avatar picker)
        │    └─ avatar-picker.tsx    3×6 grid arrow-key ASCII art avatar selector (18 avatars)
        ├─ subject-picker.tsx    Arrow-key subject menu (TOEFL/AP Psych/AP CSP/AP WHAP, remember-last)
@@ -122,7 +122,7 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | File | Purpose |
 |------|---------|
 | `src/index.tsx` | CLI entry point. Parses commands with `meow`, defaults to `"pick"`, renders `<App>`. |
-| `src/app.tsx` | Routes command to the correct top-level component. `"pick"` → UpdatePrompt (if update available) → SubjectPicker → resolved command. |
+| `src/app.tsx` | Routes command to the correct top-level component. `"pick"` → SubjectPicker → resolved command. Update check runs in background; SubjectPicker shows "📦 按 u 更新" hint if a new version is available, opening UpdatePrompt on demand. |
 | `src/components/subject-picker.tsx` | Arrow-key subject menu. Shows full ASCII art avatar + name/level, per-subject progress, remembers last choice. |
 | `src/components/daily-session.tsx` | State machine for the main learning flow. Manages phases, word/root indices, XP tracking. |
 | `src/components/review-session.tsx` | Like daily-session but selects weak roots (fewest `wordsStudied`, already `seen`). |
@@ -146,8 +146,8 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/lib/psych-db.ts` | Query layer over `psych.json`: `getAllConcepts()`, `getConceptByKey()`, etc. |
 | `src/lib/csp-db.ts` | Query layer over `csp.json`: `getAllTopics()`, `getTopicByKey()`, etc. |
 | `src/lib/whap-db.ts` | Query layer over `whap.json`: `getAllTopics()`, `getTopicByKey()`, etc. |
-| `src/lib/update-check.ts` | Version check against npm registry (2s timeout) + `runUpdate()` via `npm install -g`. |
-| `src/components/update-prompt.tsx` | Update available prompt: arrow-key menu (立即更新/跳过), three phases (prompt/updating/done). |
+| `src/lib/update-check.ts` | Version check against npm registry (2s timeout) + async `runUpdate()` via `spawn("npm install -g")`. Returns a `ChildProcess` handle for cancellation. 60s SIGTERM/5s SIGKILL watchdog, line-buffered stdout, stderr ring buffer. `onDone` fires exactly once. Covered by 11 vitest tests. |
+| `src/components/update-prompt.tsx` | Opt-in update prompt: arrow-key menu (立即更新/跳过), three phases (prompt/updating/done). User can press esc/q/ctrl+c to cancel mid-update. After success, instructs user to re-run `alvy` manually (no auto-relaunch — see Gotcha #6). |
 | `src/lib/ai.ts` | V2 stub (OpenAI client placeholder). |
 | `src/lib/__tests__/levels.test.ts` | Vitest level system tests (10 cases: xpForLevel, computeLevel, xpToNextLevel, compositeScore, checkLevelUp). |
 | `src/lib/__tests__/store.test.ts` | Vitest migration tests (10 cases: migrate, already migrated, fresh start, V1→V3, V2→V3, V3 no re-migration, XP→level, old avatar ID remap, corrupt source). |

@@ -1,6 +1,6 @@
 # TODOS — alvy
 
-Last updated: 2026-04-09 — v1.6.5 mastered removal + rotation fix
+Last updated: 2026-04-09 — v1.6.9 update flow rewrite + CSP BI1 CED rewrite
 
 ## P0: BLOCKER
 

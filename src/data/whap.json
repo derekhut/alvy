@@ -2103,5 +2103,697 @@
         "toefl_frequency": "medium"
       }
     ]
+  },
+  {
+    "root": "Global Trade Networks & Labor Systems",
+    "type": "root",
+    "meaning_en": "The interconnected systems of long-distance commerce and organized labor structures that linked Europe, Africa, and Asia from 1450-1750",
+    "meaning_zh": "全球贸易网络与劳动体系：1450-1750年间连接欧洲、非洲和亚洲的远距离贸易网络，以及殖民扩张中形成的各种劳动组织制度",
+    "origin": "Unit 4: 1450-1750 全球贸易与劳动体系",
+    "related": [
+      "Atlantic Trading System & Silver Economy",
+      "Resistance & State Expansion"
+    ],
+    "words": [
+      {
+        "word": "Gujaratis",
+        "breakdown": "Gujarat(古吉拉特邦) + -i(人)",
+        "meaning_en": "Merchants from Gujarat in India who participated in Indian Ocean trade networks.",
+        "meaning_zh": "古吉拉特商人：来自印度古吉拉特邦的商人，活跃于印度洋贸易网络，是连接南亚与中东、东非贸易的重要力量",
+        "derivation": "Gujarat(印度西部邦) → 地理优势临阿拉伯海 → 经营纺织品和香料 → 印度洋贸易网络的核心参与者",
+        "example": "Gujaratis were among the most prominent merchant communities in the Indian Ocean trade, dealing in textiles and spices.",
+        "example_zh": "古吉拉特商人是印度洋贸易中最著名的商人群体之一，经营纺织品和香料。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "indentured servitude",
+        "breakdown": "Indentured(契约束缚的) + Servitude(劳役)",
+        "meaning_en": "A labor system in which workers, particularly Chinese and Indian migrants, were bound by contract to work for a specified period in exchange for passage and subsistence.",
+        "meaning_zh": "契约劳工制：一种劳动制度，劳工（尤其是中国和印度移民）通过签订契约，在约定期限内从事劳动以换取旅费和生活保障",
+        "derivation": "Indenture(契约) + Servitude(劳役) → 签约卖身若干年 → 换取船票和食宿 → 期满后获自由 → 实质上半强制劳动",
+        "example": "Indentured servitude provided cheap labor for plantation economies after the decline of the Atlantic slave trade.",
+        "example_zh": "在大西洋奴隶贸易衰落后，契约劳工制为种植园经济提供了廉价劳动力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Indian Ocean",
+        "breakdown": "Indian(印度的) + Ocean(大洋)",
+        "meaning_en": "The ocean region connecting Africa, Asia, and the Middle East where enslaved persons were exported and trade networks operated.",
+        "meaning_zh": "印度洋：连接非洲、亚洲和中东的海洋区域，是奴隶输出和贸易网络运作的重要水域",
+        "derivation": "Indian Ocean(印度洋) → 季风驱动的航海通道 → 连接东非、阿拉伯、南亚、东南亚 → 千年贸易枢纽",
+        "example": "The Indian Ocean served as a major corridor for trade in goods, ideas, and enslaved persons between Africa and Asia.",
+        "example_zh": "印度洋是非洲与亚洲之间商品、思想和被奴役者贸易的重要通道。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Indian Ocean trade",
+        "breakdown": "Indian Ocean(印度洋) + Trade(贸易)",
+        "meaning_en": "Maritime commerce and exchange networks connecting Africa, Asia, and the Middle East through the Indian Ocean, a major route for goods and ideas from 1450-1750.",
+        "meaning_zh": "印度洋贸易：通过印度洋连接非洲、亚洲和中东的海上商业交换网络，1450-1750年间商品和思想流通的重要路线",
+        "derivation": "Indian Ocean(印度洋) + Trade(贸易) → 季风航路 → 香料、纺织品、瓷器 → 阿拉伯、印度、东南亚商人主导 → 欧洲人后来加入",
+        "example": "Indian Ocean trade networks facilitated the exchange of spices, textiles, and precious metals across three continents.",
+        "example_zh": "印度洋贸易网络促进了三大洲之间香料、纺织品和贵金属的交换。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "intra-Asian trade",
+        "breakdown": "Intra-(内部的) + Asian(亚洲的) + Trade(贸易)",
+        "meaning_en": "Commercial exchange of goods and services between different regions and peoples within Asia.",
+        "meaning_zh": "亚洲内部贸易：亚洲不同地区和民族之间的商品和服务交换，如中国丝瓷出口东南亚、印度纺织品销往各地",
+        "derivation": "Intra-(内部) + Asia(亚洲) → 中国↔东南亚↔印度↔中东 → 丝绸、瓷器、香料、纺织品 → 不依赖欧洲的自主贸易体系",
+        "example": "Intra-Asian trade in silk, porcelain, and spices flourished independently of European commercial networks.",
+        "example_zh": "亚洲内部的丝绸、瓷器和香料贸易独立于欧洲商业网络而蓬勃发展。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "isolationist trade policies",
+        "breakdown": "Isolationist(孤立主义的) + Trade(贸易) + Policies(政策)",
+        "meaning_en": "Restrictive governmental strategies adopted by some Asian states to limit foreign economic and cultural influence by controlling or reducing participation in long-distance trade.",
+        "meaning_zh": "闭关锁国贸易政策：部分亚洲国家采取的限制性策略，通过控制或减少远距离贸易参与来抵制外国经济和文化影响",
+        "derivation": "Isolate(隔离) + -ist(主义者) → 限制对外贸易 → 如明朝海禁、日本锁国令 → 防范外来威胁但也错失发展机遇",
+        "example": "Isolationist trade policies adopted by Ming China and Tokugawa Japan restricted foreign merchants' access to domestic markets.",
+        "example_zh": "明朝和德川日本采取的闭关锁国政策限制了外国商人进入国内市场。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Javanese",
+        "breakdown": "Java(爪哇岛) + -ese(人/的)",
+        "meaning_en": "Merchants and traders from Java in Southeast Asia who engaged in Indian Ocean commerce.",
+        "meaning_zh": "爪哇商人：来自东南亚爪哇岛的商人和贸易者，积极参与印度洋商业活动",
+        "derivation": "Java(爪哇) → 东南亚群岛中心 → 控制马六甲海峡关键航路 → 香料贸易的重要中转站和参与者",
+        "example": "Javanese merchants served as key intermediaries in the spice trade between the Maluku Islands and Indian Ocean markets.",
+        "example_zh": "爪哇商人是马鲁古群岛与印度洋市场之间香料贸易的关键中间商。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "Kingdom of the Kongo",
+        "breakdown": "Kingdom(王国) + of the + Kongo(刚果)",
+        "meaning_en": "A Central African state that increased its influence and power through involvement in European-dominated trading networks during the early modern period.",
+        "meaning_zh": "刚果王国：中部非洲国家，在近代早期通过参与欧洲主导的贸易网络扩大了自身影响力和权力",
+        "derivation": "Kongo(刚果) → 中部非洲强大王国 → 与葡萄牙建立贸易关系 → 接受基督教 → 被卷入奴隶贸易 → 国力渐衰",
+        "example": "The Kingdom of the Kongo initially benefited from trade with Portugal but was ultimately weakened by the expanding slave trade.",
+        "example_zh": "刚果王国最初从与葡萄牙的贸易中获益，但最终被不断扩大的奴隶贸易所削弱。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "labor systems",
+        "breakdown": "Labor(劳动) + Systems(体系)",
+        "meaning_en": "The organized methods and structures through which societies organize work and the relationships between workers and those who control production.",
+        "meaning_zh": "劳动体系：社会组织劳动的方式和结构，规定劳动者与生产控制者之间的关系，如奴隶制、农奴制、契约劳工制等",
+        "derivation": "Labor(劳动) + System(体系) → 谁干活 + 为谁干 + 如何报酬 → 奴隶制/农奴制/契约制/自由雇佣 → 反映社会权力结构",
+        "example": "Labor systems such as slavery, serfdom, and indentured servitude shaped economies across the early modern world.",
+        "example_zh": "奴隶制、农奴制和契约劳工制等劳动体系塑造了近代早期世界各地的经济。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "maritime empires",
+        "breakdown": "Maritime(海洋的) + Empires(帝国)",
+        "meaning_en": "Empires that expanded and maintained control through naval power and overseas colonial possessions rather than contiguous territorial expansion.",
+        "meaning_zh": "海洋帝国：通过海军力量和海外殖民地而非连续领土扩张来扩展和维持控制的帝国，如葡萄牙、西班牙、荷兰、英国",
+        "derivation": "Maritime(海洋) + Empire(帝国) → 强大海军 + 远洋航行 → 建立海外殖民地 → 控制贸易航路 → 全球霸权",
+        "example": "Maritime empires such as Portugal, Spain, and the Netherlands built global trade networks through naval dominance.",
+        "example_zh": "葡萄牙、西班牙和荷兰等海洋帝国通过海上霸权建立了全球贸易网络。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Mediterranean",
+        "breakdown": "Medi-(中间的) + Terranean(陆地的)",
+        "meaning_en": "The sea region between Europe, Africa, and Asia where enslaved persons were exported during this period.",
+        "meaning_zh": "地中海：位于欧洲、非洲和亚洲之间的海域，该时期也是被奴役者输出的区域之一",
+        "derivation": "Medi(中间) + Terra(陆地) → 陆地之间的海 → 古代文明摇篮 → 奥斯曼与欧洲争夺 → 奴隶贸易路线之一",
+        "example": "The Mediterranean remained a significant zone of commerce and conflict, with enslaved persons traded across its waters.",
+        "example_zh": "地中海仍然是重要的商业和冲突区域，被奴役者在其水域间被贩运。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "mit'a",
+        "breakdown": "Mit'a(米塔/劳役制)",
+        "meaning_en": "An Incan labor system requiring subjects to provide labor service to the state for public works and military service.",
+        "meaning_zh": "米塔制：印加帝国的强制劳役制度，要求臣民为国家提供劳动力，用于公共工程和军事服务",
+        "derivation": "Mit'a(盖丘亚语：轮流/服役) → 印加帝国征发劳役 → 修建道路、神庙、梯田 → 西班牙殖民者沿用并加重剥削",
+        "example": "The mit'a system was adapted by Spanish colonizers to force indigenous labor in silver mines at Potosí.",
+        "example_zh": "米塔制被西班牙殖民者改造利用，强迫原住民在波托西银矿中劳动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Omanis",
+        "breakdown": "Oman(阿曼) + -i(人)",
+        "meaning_en": "Merchants from Oman in the Arabian Peninsula who were active traders in the Indian Ocean region.",
+        "meaning_zh": "阿曼商人：来自阿拉伯半岛阿曼的商人，在印度洋地区积极从事贸易活动",
+        "derivation": "Oman(阿曼) → 波斯湾入海口 → 掌控航海传统 → 东非沿岸贸易据点 → 桑给巴尔等地的商业霸主",
+        "example": "Omanis established trading outposts along the East African coast and dominated commerce in the western Indian Ocean.",
+        "example_zh": "阿曼商人沿东非海岸建立贸易据点，主导了西印度洋的商业活动。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "plantation economy",
+        "breakdown": "Plantation(种植园) + Economy(经济)",
+        "meaning_en": "An economic system based on large-scale agricultural estates that produced cash crops for export, typically relying on enslaved labor.",
+        "meaning_zh": "种植园经济：以大规模农业庄园为基础的经济体系，生产出口经济作物，通常依赖被奴役劳动力",
+        "derivation": "Plantation(种植园) + Economy(经济) → 大片土地种单一作物(糖、烟草、棉花) → 奴隶劳动 → 利润输回欧洲 → 殖民经济支柱",
+        "example": "The plantation economy of the Caribbean relied heavily on enslaved African labor to produce sugar for European markets.",
+        "example_zh": "加勒比地区的种植园经济严重依赖被奴役的非洲劳动力为欧洲市场生产糖。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "slavery",
+        "breakdown": "Slave(奴隶) + -ry(制度/状态)",
+        "meaning_en": "The system of forced labor in which people are treated as property and compelled to work without freedom or compensation.",
+        "meaning_zh": "奴隶制：一种强制劳动制度，人被视为财产，被迫在没有自由和报酬的情况下劳动",
+        "derivation": "Slave(奴隶) → 被剥夺人身自由 → 作为财产买卖 → 强制劳动无偿付 → 跨大西洋奴隶贸易达到顶峰",
+        "example": "Slavery was central to the economies of European colonies in the Americas, providing the labor force for plantations.",
+        "example_zh": "奴隶制是欧洲在美洲殖民地经济的核心，为种植园提供了劳动力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Swahili Arabs",
+        "breakdown": "Swahili(斯瓦希里) + Arabs(阿拉伯人)",
+        "meaning_en": "Arab merchants and traders active in the Indian Ocean region who participated in trade networks including the slave trade.",
+        "meaning_zh": "斯瓦希里-阿拉伯商人：活跃于印度洋地区的阿拉伯商人和贸易者，参与包括奴隶贸易在内的贸易网络",
+        "derivation": "Swahili(海岸) + Arab(阿拉伯) → 非洲东海岸 + 阿拉伯文化融合 → 城邦贸易网络 → 象牙、黄金、奴隶贸易",
+        "example": "Swahili Arabs facilitated the trade of ivory, gold, and enslaved persons between the African interior and Indian Ocean markets.",
+        "example_zh": "斯瓦希里-阿拉伯商人促进了非洲内陆与印度洋市场之间的象牙、黄金和被奴役者贸易。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "trading posts",
+        "breakdown": "Trading(贸易的) + Posts(据点/站)",
+        "meaning_en": "Fortified settlements established by European powers in Africa and Asia to facilitate commercial exchange and control regional trade networks.",
+        "meaning_zh": "贸易据点：欧洲列强在非洲和亚洲建立的设防定居点，用于促进商业交换和控制区域贸易网络",
+        "derivation": "Trading(贸易) + Post(据点) → 沿海建立堡垒 → 收购当地商品 → 控制贸易航路 → 殖民扩张的前哨站",
+        "example": "European trading posts along the West African coast served as collection points for goods and enslaved persons.",
+        "example_zh": "欧洲人沿西非海岸建立的贸易据点充当了商品和被奴役者的集散地。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "global trade networks",
+        "breakdown": "Global(全球的) + Trade(贸易) + Networks(网络)",
+        "meaning_en": "Interconnected systems of long-distance commerce linking Europe, Africa, and Asia that expanded significantly after 1450.",
+        "meaning_zh": "全球贸易网络：连接欧洲、非洲和亚洲的远距离商业互联体系，1450年后显著扩展",
+        "derivation": "Global(全球) + Trade(贸易) + Network(网络) → 大航海时代开启 → 欧亚非美四大洲连通 → 商品、白银、劳动力全球流动",
+        "example": "Global trade networks after 1450 connected the Americas to Afro-Eurasian markets through silver, sugar, and enslaved labor.",
+        "example_zh": "1450年后的全球贸易网络通过白银、蔗糖和被奴役劳动力将美洲与亚非欧市场连接起来。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Atlantic Trading System & Silver Economy",
+    "type": "root",
+    "meaning_en": "The complex network of transatlantic trade routes and the global flow of silver that transformed economies and societies from 1450-1750",
+    "meaning_zh": "大西洋贸易体系与白银经济：1450-1750年间跨大西洋贸易路线和白银全球流通的复杂网络，深刻改变了世界各地的经济和社会结构",
+    "origin": "Unit 4: 1450-1750 大西洋贸易与白银经济",
+    "related": [
+      "Global Trade Networks & Labor Systems",
+      "Social Hierarchies & Economic Change"
+    ],
+    "words": [
+      {
+        "word": "artisan labor",
+        "breakdown": "Artisan(工匠) + Labor(劳动)",
+        "meaning_en": "Skilled craft work by specialized producers whose output increased to supply consumer goods demanded by growing global trade networks.",
+        "meaning_zh": "工匠劳动：由专业生产者从事的熟练手工技艺，其产出随全球贸易网络扩张对消费品需求的增长而增加",
+        "derivation": "Artisan(工匠) + Labor(劳动) → 专业技艺 → 手工制品供应全球市场 → 纺织、陶瓷、金属制品需求激增",
+        "example": "Artisan labor in India and China produced textiles and porcelain that were highly valued in Atlantic and European markets.",
+        "example_zh": "印度和中国的工匠劳动生产出的纺织品和瓷器在大西洋和欧洲市场上备受珍视。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Asian goods",
+        "breakdown": "Asian(亚洲的) + Goods(商品)",
+        "meaning_en": "Luxury and commercial products from Asia, including spices, silk, porcelain, and tea, that were highly sought after in Atlantic markets.",
+        "meaning_zh": "亚洲商品：来自亚洲的奢侈品和商业产品，包括香料、丝绸、瓷器和茶叶，在大西洋市场上备受追捧",
+        "derivation": "Asian(亚洲) + Goods(商品) → 香料、丝绸、瓷器、茶叶 → 欧洲人梦寐以求 → 用美洲白银购买 → 推动全球贸易循环",
+        "example": "European demand for Asian goods such as spices and silk was a primary driver of transoceanic exploration and trade.",
+        "example_zh": "欧洲人对香料和丝绸等亚洲商品的需求是推动跨洋探险和贸易的主要动力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Atlantic trading system",
+        "breakdown": "Atlantic(大西洋的) + Trading(贸易的) + System(体系)",
+        "meaning_en": "A complex network of trade routes and economic exchanges between Africa, Europe, and the Americas from the 15th to 18th centuries, involving the movement of goods, enslaved persons, and cultural practices.",
+        "meaning_zh": "大西洋贸易体系：15至18世纪非洲、欧洲和美洲之间的复杂贸易路线和经济交换网络，涉及商品、被奴役者和文化习俗的流动",
+        "derivation": "Atlantic(大西洋) + Trading System(贸易体系) → 三角贸易 → 欧洲制成品→非洲奴隶→美洲原材料 → 三大洲经济深度绑定",
+        "example": "The Atlantic trading system connected three continents through the exchange of manufactured goods, enslaved Africans, and raw materials.",
+        "example_zh": "大西洋贸易体系通过制成品、被奴役非洲人和原材料的交换将三大洲连接起来。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "chartered monopoly companies",
+        "breakdown": "Chartered(特许的) + Monopoly(垄断) + Companies(公司)",
+        "meaning_en": "European trading companies granted exclusive rights by their governments to conduct commerce in specific regions, controlling trade networks and colonial enterprises.",
+        "meaning_zh": "特许垄断公司：欧洲各国政府授予特定区域独家贸易权的贸易公司，控制贸易网络和殖民事业，如东印度公司",
+        "derivation": "Charter(特许状) + Monopoly(垄断) → 国王授权 → 独占某区域贸易 → 拥有军队和外交权 → 东印度公司、荷兰东印度公司",
+        "example": "Chartered monopoly companies like the British East India Company wielded enormous economic and political power in Asia.",
+        "example_zh": "英国东印度公司等特许垄断公司在亚洲拥有巨大的经济和政治权力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "cultural synthesis",
+        "breakdown": "Cultural(文化的) + Synthesis(综合/融合)",
+        "meaning_en": "The blending and integration of African, American, and European cultures, beliefs, and practices resulting from contact and interaction through the Atlantic trading system.",
+        "meaning_zh": "文化融合：非洲、美洲和欧洲文化、信仰和习俗因大西洋贸易体系的接触和互动而产生的混合与整合",
+        "derivation": "Culture(文化) + Synthesis(合成) → 不同文明碰撞 → 语言、宗教、音乐、饮食交融 → 克里奥尔文化等新文化形态诞生",
+        "example": "Cultural synthesis in the Caribbean produced new languages, religious practices, and musical traditions blending African and European elements.",
+        "example_zh": "加勒比地区的文化融合产生了融合非洲和欧洲元素的新语言、宗教习俗和音乐传统。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "demographic changes",
+        "breakdown": "Demographic(人口的) + Changes(变化)",
+        "meaning_en": "Significant shifts in population size, distribution, and composition, such as those experienced in Africa due to the trade in enslaved persons.",
+        "meaning_zh": "人口变迁：人口规模、分布和构成的重大变化，例如非洲因奴隶贸易而经历的人口锐减和结构失衡",
+        "derivation": "Demo(人民) + Graph(记录) + Change(变化) → 奴隶贸易 → 非洲青壮年大量流失 → 人口结构失衡 → 社会发展受阻",
+        "example": "Demographic changes in West Africa caused by the slave trade included population decline and gender imbalances in affected communities.",
+        "example_zh": "奴隶贸易在西非造成的人口变迁包括受影响社区的人口下降和性别失衡。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "economic strategies",
+        "breakdown": "Economic(经济的) + Strategies(策略)",
+        "meaning_en": "Deliberate policies and approaches used by states and empires to manage production, trade, and resource allocation.",
+        "meaning_zh": "经济策略：国家和帝国用来管理生产、贸易和资源分配的有意识的政策和方法",
+        "derivation": "Economic(经济) + Strategy(策略) → 重商主义/自由贸易/垄断特许 → 国家调控经济 → 争夺全球市场份额",
+        "example": "Economic strategies such as mercantilism guided European states in their competition for global trade dominance.",
+        "example_zh": "重商主义等经济策略指导着欧洲国家争夺全球贸易霸权的竞争。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "enslaved persons",
+        "breakdown": "Enslaved(被奴役的) + Persons(人)",
+        "meaning_en": "Individuals forcibly removed from their homes and forced into servitude, primarily Africans transported across the Atlantic to the Americas during the period 1450-1750.",
+        "meaning_zh": "被奴役者：被强制从家园带走并被迫为奴的人，主要指1450-1750年间被跨大西洋运往美洲的非洲人",
+        "derivation": "Enslave(使为奴) + Person(人) → 被暴力掳掠 → 中间航路的非人条件 → 美洲种植园的强制劳动 → 人类历史的惨痛教训",
+        "example": "Millions of enslaved persons were forcibly transported from Africa to the Americas to labor on plantations and in mines.",
+        "example_zh": "数百万被奴役者被强行从非洲运往美洲，在种植园和矿山中劳动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "gender and family restructuring",
+        "breakdown": "Gender(性别) + and + Family(家庭) + Restructuring(重组)",
+        "meaning_en": "Changes in family structures, gender roles, and social relationships that occurred in societies affected by the Atlantic trading system and the trade in enslaved persons.",
+        "meaning_zh": "性别与家庭重组：受大西洋贸易体系和奴隶贸易影响的社会中发生的家庭结构、性别角色和社会关系的变化",
+        "derivation": "Gender(性别) + Family(家庭) + Restructure(重组) → 男性被掳为奴 → 女性承担更多社会角色 → 家庭结构瓦解重组 → 新的社会关系形成",
+        "example": "Gender and family restructuring in West Africa resulted from the loss of males to the slave trade, increasing women's economic roles.",
+        "example_zh": "西非因奴隶贸易失去大量男性劳动力，导致性别与家庭重组，女性的经济角色日益增强。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "global circulation of goods",
+        "breakdown": "Global(全球的) + Circulation(流通) + of + Goods(商品)",
+        "meaning_en": "The worldwide movement and exchange of commodities facilitated by maritime trade routes and commercial networks between continents.",
+        "meaning_zh": "商品全球流通：通过海上贸易路线和各大洲间商业网络促成的世界范围内商品的流动和交换",
+        "derivation": "Global(全球) + Circulate(流通) + Goods(商品) → 大航海打通航路 → 美洲白银→亚洲商品→欧洲消费 → 全球经济一体化雏形",
+        "example": "The global circulation of goods linked American silver mines to Chinese silk workshops through a complex chain of maritime trade.",
+        "example_zh": "商品全球流通通过复杂的海上贸易链将美洲银矿与中国丝绸作坊连接起来。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "global flow of silver",
+        "breakdown": "Global(全球的) + Flow(流动) + of + Silver(白银)",
+        "meaning_en": "The large-scale movement of silver from Spanish American colonies to Europe and Asia, used as currency to purchase goods and satisfy demand in global markets.",
+        "meaning_zh": "白银全球流动：白银从西属美洲殖民地大规模流向欧洲和亚洲，用作货币购买商品并满足全球市场需求",
+        "derivation": "Silver(白银) + Global Flow(全球流动) → 波托西和墨西哥银矿 → 马尼拉大帆船跨太平洋 → 流入中国换取丝瓷 → 世界货币体系形成",
+        "example": "The global flow of silver from Potosí and Mexico to China via Manila galleons was a defining feature of early modern trade.",
+        "example_zh": "白银从波托西和墨西哥经马尼拉大帆船流入中国，是近代早期贸易的标志性特征。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "global trade",
+        "breakdown": "Global(全球的) + Trade(贸易)",
+        "meaning_en": "International commercial exchange of goods and services between different regions and states during the early modern period.",
+        "meaning_zh": "全球贸易：近代早期不同地区和国家之间的国际商业交换活动",
+        "derivation": "Global(全球) + Trade(贸易) → 地理大发现 → 四大洲连通 → 商品、劳动力、资本跨洲流动 → 世界市场初步形成",
+        "example": "Global trade expanded dramatically after 1450 as new maritime routes connected previously isolated regions.",
+        "example_zh": "1450年后，随着新的海上航路将此前隔绝的地区连接起来，全球贸易急剧扩张。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "joint-stock companies",
+        "breakdown": "Joint(联合的) + Stock(股份) + Companies(公司)",
+        "meaning_en": "Business enterprises in which multiple investors pooled capital to finance exploration and trade, used by rulers and merchants to compete in global commerce.",
+        "meaning_zh": "股份公司：多个投资者集资用于资助探险和贸易的商业企业，被统治者和商人用来参与全球商业竞争",
+        "derivation": "Joint(联合) + Stock(股份) → 多人合资 → 分散风险 → 集中大量资本 → 资助远洋贸易和殖民扩张 → 现代公司制的雏形",
+        "example": "Joint-stock companies such as the Dutch East India Company allowed investors to share both profits and risks of overseas ventures.",
+        "example_zh": "荷兰东印度公司等股份公司使投资者能够分享海外事业的利润和风险。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "mercantilist policies",
+        "breakdown": "Mercantilist(重商主义的) + Policies(政策)",
+        "meaning_en": "Economic strategies employed by European rulers to expand state control over economies and acquire overseas territories through trade regulation and colonial expansion.",
+        "meaning_zh": "重商主义政策：欧洲统治者采用的经济策略，通过贸易管制和殖民扩张来扩大国家对经济的控制并获取海外领地",
+        "derivation": "Mercantile(商业的) + -ist(主义) → 金银即国富 → 出口大于进口 → 殖民地提供原材料和市场 → 国家严控贸易",
+        "example": "Mercantilist policies led European states to establish colonies that provided raw materials and served as captive markets.",
+        "example_zh": "重商主义政策促使欧洲国家建立殖民地，提供原材料并充当受控市场。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "regional markets",
+        "breakdown": "Regional(区域的) + Markets(市场)",
+        "meaning_en": "Local and continental trading networks in Afro-Eurasia that continued to operate using established commercial practices alongside new global trade routes.",
+        "meaning_zh": "区域市场：亚非欧地区继续使用既有商业惯例运作的地方和洲际贸易网络，与新的全球贸易路线并行存在",
+        "derivation": "Region(区域) + Market(市场) → 本地集市 + 区域商路 → 传统贸易惯例延续 → 与全球贸易网络并存互动",
+        "example": "Regional markets in Southeast Asia and the Indian Ocean continued to thrive even as European traders entered the scene.",
+        "example_zh": "东南亚和印度洋的区域市场即使在欧洲商人介入后仍继续繁荣。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "religious conflicts",
+        "breakdown": "Religious(宗教的) + Conflicts(冲突)",
+        "meaning_en": "Tensions, disputes, or violence arising from differences in religious beliefs, practices, or institutional interests between groups.",
+        "meaning_zh": "宗教冲突：因不同群体之间的宗教信仰、习俗或制度利益差异而引发的紧张、争端或暴力",
+        "derivation": "Religion(宗教) + Conflict(冲突) → 新教vs天主教 → 三十年战争 → 奥斯曼vs基督教欧洲 → 信仰差异引发政治军事对抗",
+        "example": "Religious conflicts between Catholics and Protestants erupted into devastating wars across Europe in the 16th and 17th centuries.",
+        "example_zh": "天主教徒与新教徒之间的宗教冲突在16和17世纪爆发为席卷欧洲的毁灭性战争。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Spanish colonies in the Americas",
+        "breakdown": "Spanish(西班牙的) + Colonies(殖民地) + in the + Americas(美洲)",
+        "meaning_en": "European colonial territories established by Spain in the Western Hemisphere, which produced significant quantities of silver for global trade.",
+        "meaning_zh": "西属美洲殖民地：西班牙在西半球建立的殖民地，生产了大量白银供全球贸易使用",
+        "derivation": "Spanish(西班牙) + Colony(殖民地) + Americas(美洲) → 征服阿兹特克和印加 → 波托西和墨西哥银矿 → 白银涌入全球市场",
+        "example": "Spanish colonies in the Americas, especially in Peru and Mexico, produced vast quantities of silver that fueled global commerce.",
+        "example_zh": "西属美洲殖民地，尤其是秘鲁和墨西哥，生产了大量白银推动了全球商业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "transoceanic shipping",
+        "breakdown": "Trans-(跨越的) + Oceanic(海洋的) + Shipping(航运)",
+        "meaning_en": "Maritime transport services that crossed oceans, developed by European merchants to connect distant regions and facilitate long-distance trade.",
+        "meaning_zh": "跨洋航运：欧洲商人发展的跨越海洋的海上运输服务，用于连接遥远地区和促进远距离贸易",
+        "derivation": "Trans(跨越) + Ocean(海洋) + Ship(船) → 卡拉维尔帆船等新船型 → 跨大西洋和太平洋 → 大宗货物远距离运输 → 全球化的物质基础",
+        "example": "Transoceanic shipping routes connected Europe, Africa, the Americas, and Asia, enabling the exchange of goods on an unprecedented scale.",
+        "example_zh": "跨洋航运路线连接了欧洲、非洲、美洲和亚洲，使商品交换达到了前所未有的规模。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Resistance & State Expansion",
+    "type": "root",
+    "meaning_en": "The dynamics of state consolidation and territorial expansion alongside organized resistance by local communities and marginalized groups from 1450-1750",
+    "meaning_zh": "抵抗与国家扩张：1450-1750年间国家巩固和领土扩张的进程，以及地方社区和边缘化群体有组织的反抗运动",
+    "origin": "Unit 3: 1450-1750 抵抗与国家扩张",
+    "related": [
+      "Social Hierarchies & Economic Change",
+      "Global Trade Networks & Labor Systems"
+    ],
+    "words": [
+      {
+        "word": "Ana Nzinga",
+        "breakdown": "Ana(安娜) + Nzinga(恩津加)",
+        "meaning_en": "A 17th-century ruler of Ndongo and Matamba in Central Africa who resisted Portuguese colonial expansion and the slave trade.",
+        "meaning_zh": "安娜·恩津加：17世纪中部非洲恩东戈和马坦巴的女王，抵抗葡萄牙殖民扩张和奴隶贸易",
+        "derivation": "Ana Nzinga(恩津加女王) → 中非恩东戈王国 → 联合荷兰人对抗葡萄牙 → 建立马坦巴王国 → 非洲抵抗殖民的象征",
+        "example": "Ana Nzinga led military and diplomatic resistance against Portuguese slave traders in Central Africa for decades.",
+        "example_zh": "安娜·恩津加数十年来领导军事和外交斗争，抵抗中部非洲的葡萄牙奴隶贩子。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "centralization",
+        "breakdown": "Central(中央的) + -ize(使…化) + -ation(过程)",
+        "meaning_en": "The concentration of political authority and administrative power in a central government rather than in local or regional authorities.",
+        "meaning_zh": "中央集权化：将政治权力和行政权力集中于中央政府而非地方或区域当局的过程",
+        "derivation": "Center(中心) + -ize(使…化) → 权力向中央集中 → 削弱地方贵族 → 建立常备军和官僚体系 → 强化国家控制力",
+        "example": "Centralization of power under absolute monarchs like Louis XIV reduced the influence of regional nobles and strengthened the state.",
+        "example_zh": "路易十四等专制君主的中央集权削弱了地方贵族的影响力，加强了国家实力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Cossack revolts",
+        "breakdown": "Cossack(哥萨克) + Revolts(起义)",
+        "meaning_en": "Uprisings by Cossack communities against Russian state authority and expansion, particularly in the 17th century.",
+        "meaning_zh": "哥萨克起义：哥萨克群体反抗俄罗斯国家权威和扩张的起义，尤其集中在17世纪",
+        "derivation": "Cossack(哥萨克：草原自由民) + Revolt(起义) → 抗拒沙皇中央集权 → 斯捷潘·拉辛起义等 → 边疆自治权的抗争",
+        "example": "Cossack revolts, such as the uprising led by Stenka Razin, challenged the expanding authority of the Russian tsar.",
+        "example_zh": "哥萨克起义，如斯捷潘·拉辛领导的叛乱，挑战了俄国沙皇不断扩大的权威。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fronde",
+        "breakdown": "Fronde(投石党之乱)",
+        "meaning_en": "A series of civil wars in France during the 17th century involving nobility and the Paris Parlement resisting royal centralization.",
+        "meaning_zh": "投石党之乱：17世纪法国的一系列内战，贵族和巴黎高等法院反抗王室的中央集权化",
+        "derivation": "Fronde(法语：投石弹弓) → 贵族和市民反抗马扎然摄政 → 对抗王权集中 → 最终失败 → 路易十四更加坚定集权",
+        "example": "The Fronde rebellions in France ultimately failed, strengthening Louis XIV's resolve to centralize royal authority.",
+        "example_zh": "法国的投石党叛乱最终失败，坚定了路易十四加强王权集中的决心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "local resistance",
+        "breakdown": "Local(地方的) + Resistance(抵抗)",
+        "meaning_en": "Opposition to state authority and expansion by communities, groups, and populations at the local or regional level.",
+        "meaning_zh": "地方抵抗：地方社区、群体和民众对国家权威和扩张的反抗",
+        "derivation": "Local(地方) + Resist(抵抗) → 底层民众和地方势力 → 反对外来统治/赋税/征兵 → 起义、暴动、消极抵制等多种形式",
+        "example": "Local resistance to Spanish rule in the Americas took many forms, from armed rebellion to passive noncompliance.",
+        "example_zh": "美洲对西班牙统治的地方抵抗采取了多种形式，从武装叛乱到消极不合作。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Maratha conflict with Mughals",
+        "breakdown": "Maratha(马拉塔) + Conflict(冲突) + with + Mughals(莫卧儿)",
+        "meaning_en": "Military and political resistance by the Maratha Confederacy against Mughal imperial expansion in India.",
+        "meaning_zh": "马拉塔与莫卧儿的冲突：马拉塔联盟对印度莫卧儿帝国扩张的军事和政治抵抗",
+        "derivation": "Maratha(马拉塔) + Mughal(莫卧儿) → 印度教势力vs伊斯兰帝国 → 希瓦吉建立马拉塔王国 → 游击战削弱莫卧儿 → 帝国衰落的重要因素",
+        "example": "The Maratha conflict with the Mughals weakened central imperial authority and contributed to the eventual decline of the Mughal Empire.",
+        "example_zh": "马拉塔与莫卧儿的冲突削弱了帝国中央权威，促成了莫卧儿帝国的最终衰落。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Maroon societies",
+        "breakdown": "Maroon(逃亡奴隶) + Societies(社会/社区)",
+        "meaning_en": "Communities of formerly enslaved persons who escaped and established independent settlements in the Caribbean and Brazil.",
+        "meaning_zh": "马龙社区：由逃亡的被奴役者在加勒比地区和巴西建立的独立定居社区",
+        "derivation": "Maroon(西班牙语cimarrón：逃跑者) → 奴隶逃入山林 → 建立自治社区 → 发展独特文化 → 对殖民奴隶制的有力抵抗",
+        "example": "Maroon societies in Jamaica and Brazil maintained their independence through guerrilla warfare and strategic alliances.",
+        "example_zh": "牙买加和巴西的马龙社区通过游击战和战略联盟维持了自身的独立。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Metacom's War",
+        "breakdown": "Metacom(梅塔科姆) + War(战争)",
+        "meaning_en": "A conflict (1675-1678) between Native American forces led by Metacom and English colonists in New England, also known as King Philip's War.",
+        "meaning_zh": "梅塔科姆战争：1675-1678年间梅塔科姆领导的北美原住民军队与新英格兰英国殖民者之间的冲突，又称菲利普王之战",
+        "derivation": "Metacom(万帕诺亚格首领) + War(战争) → 原住民联合抗英 → 新英格兰殖民地遭重创 → 原住民最终战败 → 殖民扩张加速",
+        "example": "Metacom's War was one of the deadliest conflicts in colonial New England, devastating both Native American and English communities.",
+        "example_zh": "梅塔科姆战争是殖民时期新英格兰最惨烈的冲突之一，给原住民和英国殖民社区都造成了巨大破坏。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "organized resistance",
+        "breakdown": "Organized(有组织的) + Resistance(抵抗)",
+        "meaning_en": "Coordinated and deliberate opposition by groups to challenge existing authorities and state power.",
+        "meaning_zh": "有组织的抵抗：群体为挑战现有当局和国家权力而进行的有协调、有目的的反抗行动",
+        "derivation": "Organize(组织) + Resist(抵抗) → 有领袖 + 有计划 + 有纲领 → 起义、叛乱、独立运动 → 挑战既有权力结构",
+        "example": "Organized resistance by enslaved Africans and indigenous peoples challenged European colonial authority across the Americas.",
+        "example_zh": "被奴役非洲人和原住民有组织的抵抗挑战了欧洲在美洲各地的殖民统治。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Pueblo Revolts",
+        "breakdown": "Pueblo(普韦布洛) + Revolts(起义)",
+        "meaning_en": "A series of uprisings by Pueblo peoples against Spanish colonial rule in New Mexico, most notably in 1680.",
+        "meaning_zh": "普韦布洛起义：普韦布洛原住民反抗新墨西哥西班牙殖民统治的一系列起义，以1680年的大起义最为著名",
+        "derivation": "Pueblo(西班牙语：村庄/原住民部落) + Revolt(起义) → 波佩领导 → 驱逐西班牙人12年 → 美洲原住民抵抗殖民的重大胜利",
+        "example": "The Pueblo Revolt of 1680 successfully expelled Spanish colonizers from New Mexico for over a decade.",
+        "example_zh": "1680年的普韦布洛起义成功地将西班牙殖民者逐出新墨西哥长达十余年。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "state expansion",
+        "breakdown": "State(国家) + Expansion(扩张)",
+        "meaning_en": "The process by which a state increases its territorial control and political authority over larger areas and populations.",
+        "meaning_zh": "国家扩张：国家增加其对更大地区和人口的领土控制和政治权威的过程",
+        "derivation": "State(国家) + Expand(扩展) → 军事征服 + 殖民开拓 + 行政渗透 → 领土扩大 → 引发地方抵抗",
+        "example": "State expansion by the Russian, Ottoman, and Mughal empires brought vast new territories under centralized control.",
+        "example_zh": "俄罗斯、奥斯曼和莫卧儿帝国的国家扩张将大片新领土纳入了中央集权控制。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "state power",
+        "breakdown": "State(国家) + Power(权力)",
+        "meaning_en": "The authority and capacity of a centralized government to control territory, enforce laws, and mobilize resources.",
+        "meaning_zh": "国家权力：中央政府控制领土、执行法律和调动资源的权威和能力",
+        "derivation": "State(国家) + Power(权力) → 军队 + 官僚 + 税收 + 法律 → 统治合法性 → 权力过度集中则引发抵抗",
+        "example": "The growth of state power under absolute monarchs provoked resistance from nobles, peasants, and religious minorities.",
+        "example_zh": "专制君主统治下国家权力的增长引发了贵族、农民和宗教少数群体的抵抗。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Social Hierarchies & Economic Change",
+    "type": "root",
+    "meaning_en": "The social classification systems, elite power structures, and economic transformations that shaped societies from 1450-1750",
+    "meaning_zh": "社会等级与经济变革：1450-1750年间塑造各社会的社会分类体系、精英权力结构和经济转型",
+    "origin": "Unit 4: 1450-1750 社会等级与经济变革",
+    "related": [
+      "Atlantic Trading System & Silver Economy",
+      "Resistance & State Expansion"
+    ],
+    "words": [
+      {
+        "word": "Casta system",
+        "breakdown": "Casta(种姓/种族等级) + System(制度)",
+        "meaning_en": "A hierarchical racial and social classification system in the Americas that categorized people by ethnic and racial ancestry.",
+        "meaning_zh": "卡斯塔制度：美洲的等级种族和社会分类体系，按民族和种族血统对人进行分类",
+        "derivation": "Casta(西班牙语：种姓/血统) → 殖民者按血统分等 → 西班牙人→克里奥尔人→梅斯蒂索→原住民→非洲人 → 种族决定社会地位",
+        "example": "The Casta system in Spanish America created a rigid social hierarchy based on racial ancestry and ethnic mixing.",
+        "example_zh": "西属美洲的卡斯塔制度基于种族血统和民族混合建立了严格的社会等级制度。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "economic elites",
+        "breakdown": "Economic(经济的) + Elites(精英)",
+        "meaning_en": "Groups holding wealth, resources, and influence over economic systems and opportunities.",
+        "meaning_zh": "经济精英：掌握财富、资源和对经济体系及机会拥有影响力的群体",
+        "derivation": "Economy(经济) + Elite(精英) → 控制土地和贸易 → 积累巨额财富 → 影响政策制定 → 维护自身特权地位",
+        "example": "Economic elites in colonial Latin America controlled land, mines, and trade, wielding enormous social and political influence.",
+        "example_zh": "殖民时期拉丁美洲的经济精英控制着土地、矿山和贸易，拥有巨大的社会和政治影响力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "European nobility",
+        "breakdown": "European(欧洲的) + Nobility(贵族阶层)",
+        "meaning_en": "The hereditary aristocratic class in Europe that held political power, land ownership, and social status.",
+        "meaning_zh": "欧洲贵族：欧洲的世袭贵族阶层，掌握政治权力、土地所有权和社会地位",
+        "derivation": "Europe(欧洲) + Noble(高贵的) → 世袭封地 + 政治特权 → 与王权既合作又博弈 → 中央集权下地位受挑战",
+        "example": "European nobility derived their power from hereditary land ownership and often competed with centralizing monarchs for political influence.",
+        "example_zh": "欧洲贵族的权力来源于世袭的土地所有权，经常与推行中央集权的君主争夺政治影响力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Ottoman timars",
+        "breakdown": "Ottoman(奥斯曼的) + Timars(蒂马尔/封地)",
+        "meaning_en": "Land grants given to Ottoman military officials and administrators as a form of compensation and control.",
+        "meaning_zh": "奥斯曼蒂马尔制：授予奥斯曼军事官员和行政人员的封地，作为报酬和控制手段",
+        "derivation": "Timar(蒂马尔：封地) → 苏丹授予军功者土地 → 受封者征收赋税 + 提供骑兵 → 维系帝国军事和行政体系",
+        "example": "Ottoman timars provided land revenue to military elites in exchange for their service, supporting the empire's cavalry forces.",
+        "example_zh": "奥斯曼蒂马尔制以土地收入回报军事精英的服役，维持了帝国的骑兵力量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "political elites",
+        "breakdown": "Political(政治的) + Elites(精英)",
+        "meaning_en": "Groups holding power and influence in government and political decision-making.",
+        "meaning_zh": "政治精英：在政府和政治决策中掌握权力和影响力的群体",
+        "derivation": "Political(政治) + Elite(精英) → 统治阶层 → 制定法律和政策 → 控制军队和官僚 → 维护权力结构",
+        "example": "Political elites in early modern Europe included monarchs, high clergy, and powerful noble families who shaped state policies.",
+        "example_zh": "近代早期欧洲的政治精英包括君主、高级神职人员和有权势的贵族家族，他们塑造了国家政策。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Qing Dynasty",
+        "breakdown": "Qing(清) + Dynasty(朝代)",
+        "meaning_en": "The final imperial dynasty of China (1644-1912) that marked a transition in political and economic elites in China.",
+        "meaning_zh": "清朝：中国最后一个帝制王朝（1644-1912），标志着中国政治和经济精英的重大转变",
+        "derivation": "Qing(清) + Dynasty(王朝) → 满族入关取代明朝 → 八旗制度 + 科举延续 → 满汉精英并立 → 版图达到历史最大",
+        "example": "The Qing Dynasty replaced the Ming and established Manchu elites at the top of China's political hierarchy.",
+        "example_zh": "清朝取代明朝，将满族精英置于中国政治等级的顶端。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Russian boyars",
+        "breakdown": "Russian(俄罗斯的) + Boyars(波雅尔/贵族)",
+        "meaning_en": "Members of the old Russian aristocracy who held significant political and economic power before centralization under the monarchy.",
+        "meaning_zh": "俄罗斯波雅尔贵族：在沙皇中央集权之前掌握重大政治和经济权力的旧俄贵族阶层",
+        "derivation": "Boyar(波雅尔) → 俄罗斯传统贵族 → 拥有大量土地和农奴 → 参与杜马议政 → 彼得大帝改革削弱其权力",
+        "example": "Russian boyars resisted the centralizing reforms of Peter the Great, who sought to reduce their traditional political influence.",
+        "example_zh": "俄罗斯波雅尔贵族抵制彼得大帝的中央集权改革，沙皇力图削弱他们的传统政治影响力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "social categories",
+        "breakdown": "Social(社会的) + Categories(类别)",
+        "meaning_en": "Divisions of society based on characteristics such as race, class, gender, and religion that organize social structures and relationships.",
+        "meaning_zh": "社会类别：基于种族、阶级、性别和宗教等特征对社会进行的划分，组织社会结构和人际关系",
+        "derivation": "Social(社会) + Category(类别) → 种族/阶级/性别/宗教 → 划分人群 → 决定权利和机会 → 维护或挑战社会秩序",
+        "example": "Social categories based on race and ethnicity became increasingly rigid in colonial societies during the early modern period.",
+        "example_zh": "在近代早期殖民社会中，基于种族和民族的社会类别变得日益僵化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "agricultural labor",
+        "breakdown": "Agricultural(农业的) + Labor(劳动)",
+        "meaning_en": "Work performed in farming and food production, including changes in how laborers were organized and compensated.",
+        "meaning_zh": "农业劳动：在农业和食品生产中从事的劳动，包括劳动者组织方式和报酬的变化",
+        "derivation": "Agriculture(农业) + Labor(劳动) → 农奴/佃农/自由农 → 种植园奴隶劳动 → 劳动制度变革反映权力转移",
+        "example": "Agricultural labor in the Americas was increasingly performed by enslaved Africans as colonial plantation economies expanded.",
+        "example_zh": "随着殖民地种植园经济的扩张，美洲的农业劳动越来越多地由被奴役的非洲人承担。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Atlantic slave trade",
+        "breakdown": "Atlantic(大西洋的) + Slave(奴隶) + Trade(贸易)",
+        "meaning_en": "The forced migration of millions of Africans across the Atlantic Ocean to the Americas to provide labor for colonial economies.",
+        "meaning_zh": "大西洋奴隶贸易：数百万非洲人被强制跨大西洋迁移至美洲，为殖民经济提供劳动力",
+        "derivation": "Atlantic(大西洋) + Slave Trade(奴隶贸易) → 非洲被掳 → 中间航路 → 美洲种植园 → 持续四百年 → 人类史上最大规模强制迁移",
+        "example": "The Atlantic slave trade forcibly transported an estimated 12 million Africans to the Americas between the 16th and 19th centuries.",
+        "example_zh": "大西洋奴隶贸易在16至19世纪间强制运送了约1200万非洲人到美洲。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "economic developments",
+        "breakdown": "Economic(经济的) + Developments(发展)",
+        "meaning_en": "Changes in production, trade, labor systems, and commercial practices that transformed societies between 1450 and 1750.",
+        "meaning_zh": "经济发展变革：1450至1750年间生产、贸易、劳动制度和商业实践的变化，深刻改变了各个社会",
+        "derivation": "Economy(经济) + Develop(发展) → 全球贸易兴起 + 新劳动制度 + 商业资本主义萌芽 → 社会结构随之变革",
+        "example": "Economic developments such as the growth of global trade and new labor systems transformed social structures worldwide.",
+        "example_zh": "全球贸易增长和新劳动制度等经济发展变革改变了世界各地的社会结构。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "finished products",
+        "breakdown": "Finished(成品的) + Products(产品)",
+        "meaning_en": "Manufactured goods that have been processed and are ready for trade or consumption.",
+        "meaning_zh": "制成品：经过加工处理、可供贸易或消费的制造商品",
+        "derivation": "Finish(完成) + Product(产品) → 原材料经加工 → 成为可出售商品 → 欧洲制成品换取殖民地原材料 → 不平等贸易结构",
+        "example": "European nations exported finished products to colonies while importing raw materials, reinforcing mercantilist economic structures.",
+        "example_zh": "欧洲国家向殖民地出口制成品，同时进口原材料，强化了重商主义经济结构。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "gender structures",
+        "breakdown": "Gender(性别) + Structures(结构)",
+        "meaning_en": "The social roles, responsibilities, and hierarchies assigned to men and women in society.",
+        "meaning_zh": "性别结构：社会中分配给男性和女性的社会角色、责任和等级",
+        "derivation": "Gender(性别) + Structure(结构) → 男女分工 → 公共/私人领域划分 → 经济变革改变性别角色 → 殖民接触重塑性别关系",
+        "example": "Gender structures in many societies were transformed by colonialism, which imposed European patriarchal norms on indigenous communities.",
+        "example_zh": "许多社会的性别结构因殖民主义而发生转变，欧洲的父权制规范被强加于原住民社区。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "manufacturing systems",
+        "breakdown": "Manufacturing(制造业) + Systems(体系)",
+        "meaning_en": "The organization and methods of producing goods, including changes in location, technology, and labor arrangements.",
+        "meaning_zh": "制造业体系：生产商品的组织和方法，包括生产地点、技术和劳动安排的变化",
+        "derivation": "Manufacture(制造) + System(体系) → 手工作坊→包买商制→工厂初期 → 生产方式变革 → 为工业革命奠基",
+        "example": "Manufacturing systems evolved from small artisan workshops to larger-scale production as demand for trade goods increased.",
+        "example_zh": "随着贸易商品需求的增加，制造业体系从小型手工作坊发展为更大规模的生产。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "peasant agriculture",
+        "breakdown": "Peasant(农民的) + Agriculture(农业)",
+        "meaning_en": "Farming systems based on small-scale production by rural laborers, often tied to land ownership or feudal obligations.",
+        "meaning_zh": "小农农业：以农村劳动者小规模生产为基础的耕作体系，通常与土地所有权或封建义务相关联",
+        "derivation": "Peasant(农民) + Agriculture(农业) → 自给自足为主 → 受制于地主/领主 → 全球贸易冲击传统农业 → 商品化转型",
+        "example": "Peasant agriculture in Europe and Asia was increasingly affected by global trade patterns that shifted demand toward cash crops.",
+        "example_zh": "欧洲和亚洲的小农农业日益受到全球贸易模式的影响，需求转向经济作物。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "raw materials",
+        "breakdown": "Raw(未加工的) + Materials(材料)",
+        "meaning_en": "Unprocessed natural resources extracted from the environment, such as cotton, rubber, and metals, used as inputs for factory production.",
+        "meaning_zh": "原材料：从自然环境中提取的未加工自然资源，如棉花、橡胶和金属，用作工厂生产的投入",
+        "derivation": "Raw(原始的) + Material(材料) → 殖民地提供 → 运回欧洲加工 → 制成品再卖回殖民地 → 不平等贸易循环",
+        "example": "Raw materials such as sugar, cotton, and silver flowed from the Americas to Europe, fueling economic growth and industrialization.",
+        "example_zh": "糖、棉花和白银等原材料从美洲流向欧洲，推动了经济增长和工业化进程。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

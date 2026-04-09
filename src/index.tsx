@@ -13,6 +13,8 @@ const cli = meow(
     $ alvy review       复习已学词根
     $ alvy psych        AP 心理学每日学习
     $ alvy psych review AP 心理学复习
+    $ alvy csp          AP 计算机科学原理每日学习
+    $ alvy csp review   AP 计算机科学原理复习
     $ alvy stats        导出学习进度
     $ alvy doctor       检查运行环境
 
@@ -50,12 +52,15 @@ if (cli.flags.goal !== undefined) {
   process.exit(0);
 }
 
-const validCommands = new Set<Command>(["daily", "review", "stats", "doctor", "psych", "psych-review", "pick"]);
+const validCommands = new Set<Command>(["daily", "review", "stats", "doctor", "psych", "psych-review", "csp", "csp-review", "pick"]);
 const input = cli.input[0] as string | undefined;
 const input2 = cli.input[1] as string | undefined;
 
-// Handle "alvy psych review" as "psych-review"
-const resolvedInput = input === "psych" && input2 === "review" ? "psych-review" : input;
+// Handle "alvy psych review" / "alvy csp review" as compound commands
+const resolvedInput =
+  input === "psych" && input2 === "review" ? "psych-review" :
+  input === "csp" && input2 === "review" ? "csp-review" :
+  input;
 
 const command: Command = resolvedInput && validCommands.has(resolvedInput as Command)
   ? (resolvedInput as Command)

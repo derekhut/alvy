@@ -2,7 +2,7 @@
 
 ## Summary
 
-alvy is an interactive CLI study tool built with **Ink** (React for terminal) + **TypeScript**. It teaches through walkthrough-then-quiz sessions: students walk through learning material, then get quizzed for active recall. Currently supports TOEFL word roots (新东方-style derivation chains). AP Psychology is planned as the second subject. Progress is persisted as JSON at `~/.alvy/data.json`.
+alvy is an interactive CLI study tool built with **Ink** (React for terminal) + **TypeScript**. It teaches through walkthrough-then-quiz sessions: students walk through learning material, then get quizzed for active recall. Supports three subjects: TOEFL word roots, AP Psychology, and AP Computer Science Principles. Progress is persisted as JSON at `~/.alvy/data.json`.
 
 ## Multi-Subject Support
 
@@ -10,7 +10,7 @@ alvy supports multiple subjects. `alvy` (no args) shows a subject picker with ar
 
 - **Subject picker at launch** with remember-last (`settings.lastSubject` persisted)
 - **Shared streak and XP** across all subjects (study any subject, streak continues)
-- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (16 concepts)
+- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (26 concepts / 130 terms), AP CSP (20 concepts / 72 terms)
 - **Generalized `useSessionFlow`** hook (Approach A: refactor to be content-agnostic, not parallel duplication)
 - **Planned:** Namespaced `wordsStudied` array (`vocab:benefit`, `psych:adaptation`) to prevent collisions
 
@@ -21,7 +21,7 @@ See `handoff.md` "AP Subject Expansion" section for full decision log.
 ```
 index.tsx          CLI entry point (meow parses args, default → "pick")
   └─ app.tsx       Command router (state-based: "pick" → SubjectPicker, then resolved command)
-       ├─ subject-picker.tsx    Arrow-key subject menu (TOEFL/AP Psych, remember-last)
+       ├─ subject-picker.tsx    Arrow-key subject menu (TOEFL/AP Psych/AP CSP, remember-last)
        ├─ daily-session.tsx     TOEFL learning flow (state machine)
        │    ├─ dashboard.tsx        Launch screen (mastered count, streak, XP)
        │    ├─ streak-header.tsx    Reusable progress bar
@@ -31,6 +31,8 @@ index.tsx          CLI entry point (meow parses args, default → "pick")
        │    └─ celebration.tsx      All 30 roots mastered
        ├─ psych-session.tsx     AP Psychology learning flow (same state machine)
        ├─ psych-review.tsx      AP Psychology review
+       ├─ csp-session.tsx       AP CSP learning flow (same state machine)
+       ├─ csp-review.tsx        AP CSP review
        ├─ review-session.tsx    Review weak roots (same components as daily)
        ├─ stats.tsx             Export markdown progress summary (both subjects)
        ├─ doctor.tsx            Environment health checks
@@ -129,9 +131,13 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/lib/store.ts` | Read/write `~/.alvy/data.json`. Auto-migrates from `~/.toefl-roots/`. Exports `DATA_DIR`, `DATA_FILE`. First-run init, corrupt-file backup, atomic writes. |
 | `src/lib/progress.ts` | Business logic: `masteredCount()`, `addXP()`, `updateStreak()`, `markRootSeen()`, `markWordStudied()`, `selectNextMorphemes()`. |
 | `src/lib/roots-db.ts` | Query layer over `roots.json`: `getAllRoots()`, `getRootByKey()`, `getRelatedMeanings()`. |
+| `src/lib/psych-db.ts` | Query layer over `psych.json`: `getAllConcepts()`, `getConceptByKey()`, etc. |
+| `src/lib/csp-db.ts` | Query layer over `csp.json`: `getAllTopics()`, `getTopicByKey()`, etc. |
 | `src/lib/ai.ts` | V2 stub (OpenAI client placeholder). |
 | `src/lib/__tests__/store.test.ts` | Vitest migration tests (4 cases: migrate, already migrated, fresh start, corrupt source). |
 | `src/data/roots.json` | 20 roots + 10 affixes = 30 entries × 5 words = 150 words. |
+| `src/data/psych.json` | AP Psychology: 26 concepts × ~5 terms = 130 terms. |
+| `src/data/csp.json` | AP CSP: 20 concepts × ~3-6 terms = 72 terms. |
 | `install.sh` | One-line installer for macOS/Linux. Installs Node.js via nvm if needed, configures npm prefix, installs alvy globally. |
 
 ## What Does NOT Exist (Yet)
@@ -152,8 +158,12 @@ Previously referenced in stale docs but now exist:
 | `subject-picker.tsx` | EXISTS. Arrow-key subject menu with remember-last. |
 | `psych-session.tsx` | EXISTS. AP Psychology daily session. |
 | `psych-review.tsx` | EXISTS. AP Psychology review session. |
-| `psych.json` | EXISTS. AP Psychology content (16 concepts). |
+| `psych.json` | EXISTS. AP Psychology content (26 concepts / 130 terms). |
 | `psych-db.ts` | EXISTS. Query layer over psych.json. |
+| `csp-session.tsx` | EXISTS. AP CSP daily session. |
+| `csp-review.tsx` | EXISTS. AP CSP review session. |
+| `csp.json` | EXISTS. AP CSP content (20 concepts / 72 terms). |
+| `csp-db.ts` | EXISTS. Query layer over csp.json. |
 | `quiz.tsx` | EXISTS. Binary-choice quiz (English word → two Chinese meanings). |
 | `quiz-intro.tsx` | EXISTS. Transition screen before quiz. |
 | `selectReviewMorphemes()` | EXISTS in progress.ts. Prioritizes lowest accuracy roots. |

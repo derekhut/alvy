@@ -7,7 +7,7 @@ import { getAllRoots } from "../lib/roots-db.js";
 interface DashboardProps {
   data: UserData;
   totalRoots: number;
-  subject?: "toefl" | "psych";
+  subject?: "toefl" | "psych" | "csp";
   getAllUnits?: () => RootEntry[];
 }
 
@@ -33,9 +33,9 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
       >
         <Text>
           <Text bold color="#AF5FFF">alvy</Text>
-          <Text color="#AF5FFF"> {subject === "psych" ? "AP 心理学" : "词根学习"}</Text>
+          <Text color="#AF5FFF"> {subject === "psych" ? "AP 心理学" : subject === "csp" ? "AP 计算机科学原理" : "词根学习"}</Text>
         </Text>
-        <Text dimColor>{subject === "psych" ? "用中文搞定AP心理" : "解锁英语的底层逻辑"}</Text>
+        <Text dimColor>{subject === "psych" ? "用中文搞定AP心理" : subject === "csp" ? "用中文搞定AP CSP" : "解锁英语的底层逻辑"}</Text>
 
         <Box marginTop={1} gap={3}>
           <Text>

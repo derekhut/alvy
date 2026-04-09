@@ -6,6 +6,8 @@ import DailySession from "./components/daily-session.js";
 import ReviewSession from "./components/review-session.js";
 import PsychSession from "./components/psych-session.js";
 import PsychReview from "./components/psych-review.js";
+import CspSession from "./components/csp-session.js";
+import CspReview from "./components/csp-review.js";
 import Stats from "./components/stats.js";
 import SubjectPicker from "./components/subject-picker.js";
 
@@ -28,7 +30,7 @@ export default function App({ command }: AppProps) {
       data.settings.lastSubject = subject;
       saveData(data);
     }
-    setResolved(subject === "psych" ? "psych" : "daily");
+    setResolved(subject === "psych" ? "psych" : subject === "csp" ? "csp" : "daily");
   }, [data]);
 
   if (resolved === null && data) {
@@ -44,6 +46,10 @@ export default function App({ command }: AppProps) {
       return <PsychSession />;
     case "psych-review":
       return <PsychReview />;
+    case "csp":
+      return <CspSession />;
+    case "csp-review":
+      return <CspReview />;
     case "stats":
       return <Stats />;
     case "doctor":

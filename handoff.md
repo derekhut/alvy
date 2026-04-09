@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-08
 Branch: main
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE (subject picker at launch, remember-last)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE (3 subjects in picker)
 
 ## V1 Summary
 
@@ -265,7 +265,7 @@ alvy/
     index.tsx              # Entry point, CLI routing, default → "pick", --goal N
     app.tsx                # Routes command: "pick" → SubjectPicker → resolved command
     components/
-      subject-picker.tsx   # ✅ Arrow-key subject menu (TOEFL/AP Psych, remember-last)
+      subject-picker.tsx   # ✅ Arrow-key subject menu (TOEFL/AP Psych/AP CSP, remember-last)
       daily-session.tsx    # ✅ Thin wrapper → useSessionFlow()
       review-session.tsx   # ✅ Thin wrapper → useSessionFlow() (filtered selection)
       quiz-intro.tsx       # ✅ NEW: transition screen before quiz
@@ -402,8 +402,10 @@ node dist/index.js doctor   # Environment check
 
 - Subject picker at launch (step 9) — `alvy` shows arrow-key menu, remembers last choice
 - AP Psychology session and review (`alvy psych`, `alvy psych review`) — reuses same state machine
-- `psych.json` content file (16 concepts), `psych-db.ts` query layer
-- `Subject` type, `"pick"` command, `lastSubject` in settings
+- `psych.json` content file (26 concepts / 130 terms), `psych-db.ts` query layer
+- AP CSP session and review (`alvy csp`, `alvy csp review`) — same pattern as AP Psych
+- `csp.json` content file (20 concepts / 72 terms), `csp-db.ts` query layer
+- `Subject` type (`"toefl" | "psych" | "csp"`), `"pick"` command, `lastSubject` in settings
 
 ### What's still open
 
@@ -426,11 +428,15 @@ Key refactoring needed:
 - `store.ts`: update `PersistedData` interface and `saveData()` field list
 
 Files built:
-- `src/data/psych.json` (16 concepts, content live)
-- `src/components/subject-picker.tsx` (arrow-key menu, remember-last)
+- `src/data/psych.json` (26 concepts, content live)
+- `src/data/csp.json` (20 concepts / 72 terms, content live)
+- `src/components/subject-picker.tsx` (arrow-key menu, remember-last, 3 subjects)
 - `src/components/psych-session.tsx` (AP Psych daily session)
 - `src/components/psych-review.tsx` (AP Psych review)
+- `src/components/csp-session.tsx` (AP CSP daily session)
+- `src/components/csp-review.tsx` (AP CSP review)
 - `src/lib/psych-db.ts` (query layer over psych.json)
+- `src/lib/csp-db.ts` (query layer over csp.json)
 
 Files still needed:
 - `src/components/concept-intro.tsx` (like `root-lesson.tsx` for concepts, if pedagogical model changes)

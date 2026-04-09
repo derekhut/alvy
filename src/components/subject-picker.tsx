@@ -4,6 +4,7 @@ import type { UserData, Subject } from "../lib/types.js";
 import { masteredCount } from "../lib/progress.js";
 import { getAllRoots, getRootCount } from "../lib/roots-db.js";
 import { getAllConcepts, getConceptCount } from "../lib/psych-db.js";
+import { getAllTopics, getTopicCount } from "../lib/csp-db.js";
 
 interface SubjectOption {
   key: Subject;
@@ -32,6 +33,12 @@ export default function SubjectPicker({ data, onSelect }: SubjectPickerProps) {
       label: "AP 心理学",
       mastered: masteredCount(data, getAllConcepts()),
       total: getConceptCount(),
+    },
+    {
+      key: "csp",
+      label: "AP 计算机科学原理",
+      mastered: masteredCount(data, getAllTopics()),
+      total: getTopicCount(),
     },
   ];
 

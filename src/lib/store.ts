@@ -1,8 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
-import type { UserData, UserProfile, LevelProgress } from "./types.js";
+import type { UserData, UserProfile, LevelProgress, AvatarId } from "./types.js";
 import { computeLevel, computeCompositeScore } from "./levels.js";
+import { AVATAR_IDS } from "./avatars.js";
 
 export const DATA_DIR = path.join(os.homedir(), ".alvy");
 export const DATA_FILE = path.join(DATA_DIR, "data.json");
@@ -129,6 +130,11 @@ export function loadData(): UserData {
       profile: parsed.profile,
       levelProgress,
     };
+
+    // Remap old avatar IDs to defaults
+    if (data.profile && !AVATAR_IDS.includes(data.profile.avatar as AvatarId)) {
+      data.profile.avatar = "robot" as AvatarId;
+    }
 
     // Compute composite score after data is assembled
     if (!parsed.levelProgress) {

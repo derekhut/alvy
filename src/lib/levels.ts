@@ -25,15 +25,6 @@ export function xpToNextLevel(totalXP: number): { current: number; needed: numbe
   return { current, needed, progress: needed > 0 ? current / needed : 1 };
 }
 
-/** Chinese level title */
-export function getLevelName(level: number): string {
-  if (level >= 20) return "大师";
-  if (level >= 15) return "学霸";
-  if (level >= 10) return "高手";
-  if (level >= 5) return "进阶者";
-  return "初学者";
-}
-
 /** Compute composite score (0-100) blending accuracy, consistency, volume */
 export function computeCompositeScore(data: UserData): number {
   const lp = data.levelProgress;

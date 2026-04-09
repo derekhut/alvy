@@ -2,17 +2,15 @@ import React from "react";
 import { Box, Text } from "ink";
 import type { UserData } from "../lib/types.js";
 import { loadData } from "../lib/store.js";
-import { getLevelName, xpToNextLevel } from "../lib/levels.js";
+import { xpToNextLevel } from "../lib/levels.js";
 import { AVATARS } from "../lib/avatars.js";
 
 export default function ProfileView() {
   const data = loadData();
   const profile = data.profile;
   const lp = data.levelProgress;
-  const avatar = profile ? AVATARS[profile.avatar] : AVATARS.scholar;
+  const avatar = profile ? AVATARS[profile.avatar] : AVATARS.robot;
   const displayName = profile?.displayName ?? "学生";
-
-  const levelName = getLevelName(lp.level);
   const { progress } = xpToNextLevel(data.xp.total);
 
   const barWidth = 20;
@@ -30,13 +28,16 @@ export default function ProfileView() {
         paddingX={2}
         paddingY={1}
       >
-        <Text>
-          {avatar.emoji} <Text bold color="#AF5FFF">{displayName}</Text>
-        </Text>
+        <Box flexDirection="column">
+          {avatar.art.map((line, i) => (
+            <Text key={i} color="#AF5FFF">{line}</Text>
+          ))}
+        </Box>
+        <Text bold color="#AF5FFF">{displayName}</Text>
 
         <Box marginTop={1} flexDirection="column">
           <Text>
-            Lv.<Text bold color="#FFAF00">{lp.level}</Text> {levelName}
+            Lv.<Text bold color="#FFAF00">{lp.level}</Text>
           </Text>
           <Box>
             <Text color="#AF5FFF">{bar}</Text>

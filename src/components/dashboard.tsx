@@ -3,7 +3,7 @@ import { Box, Text } from "ink";
 import type { UserData, RootEntry } from "../lib/types.js";
 import { masteredCount, seenCount } from "../lib/progress.js";
 import { getAllRoots } from "../lib/roots-db.js";
-import { getLevelName, xpToNextLevel } from "../lib/levels.js";
+import { xpToNextLevel } from "../lib/levels.js";
 import { AVATARS } from "../lib/avatars.js";
 
 interface DashboardProps {
@@ -29,7 +29,6 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
   const displayName = profile?.displayName;
 
   const lp = data.levelProgress;
-  const levelName = getLevelName(lp.level);
   const { progress: lvlProgress } = xpToNextLevel(data.xp.total);
   const lvlBarWidth = 10;
   const lvlFilled = Math.round(lvlProgress * lvlBarWidth);
@@ -48,7 +47,7 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
       >
         {avatar && displayName ? (
           <Text>
-            {avatar.emoji} {displayName}
+            {avatar.inline} {displayName}
           </Text>
         ) : null}
         <Text>
@@ -67,7 +66,7 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
 
         <Box>
           <Text>
-            Lv.<Text bold color="#FFAF00">{lp.level}</Text> {levelName} <Text color="#AF5FFF">{lvlBar}</Text> {lvlPct}%
+            Lv.<Text bold color="#FFAF00">{lp.level}</Text> <Text color="#AF5FFF">{lvlBar}</Text> {lvlPct}%
           </Text>
         </Box>
 

@@ -3,7 +3,6 @@ import {
   xpForLevel,
   computeLevel,
   xpToNextLevel,
-  getLevelName,
   computeCompositeScore,
   checkLevelUp,
 } from "../levels.js";
@@ -75,32 +74,6 @@ describe("xpToNextLevel", () => {
   it("at max level, progress is 1", () => {
     const result = xpToNextLevel(20000);
     expect(result.progress).toBe(1);
-  });
-});
-
-describe("getLevelName", () => {
-  it("levels 1-4 are 初学者", () => {
-    expect(getLevelName(1)).toBe("初学者");
-    expect(getLevelName(4)).toBe("初学者");
-  });
-
-  it("levels 5-9 are 进阶者", () => {
-    expect(getLevelName(5)).toBe("进阶者");
-    expect(getLevelName(9)).toBe("进阶者");
-  });
-
-  it("levels 10-14 are 高手", () => {
-    expect(getLevelName(10)).toBe("高手");
-    expect(getLevelName(14)).toBe("高手");
-  });
-
-  it("levels 15-19 are 学霸", () => {
-    expect(getLevelName(15)).toBe("学霸");
-    expect(getLevelName(19)).toBe("学霸");
-  });
-
-  it("level 20 is 大师", () => {
-    expect(getLevelName(20)).toBe("大师");
   });
 });
 

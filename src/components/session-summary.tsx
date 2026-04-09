@@ -1,7 +1,5 @@
 import React from "react";
 import { Box, Text } from "ink";
-import { getLevelName } from "../lib/levels.js";
-
 interface SessionSummaryProps {
   xpEarned: number;
   wordsLearned: number;
@@ -51,7 +49,7 @@ export default function SessionSummary({
         {levelUp && (
           <Box marginTop={1}>
             <Text color="#5FD7FF">
-              升级! Lv.{levelUp.oldLevel} → Lv.<Text bold color="#FFAF00">{levelUp.newLevel}</Text> {getLevelName(levelUp.newLevel)}
+              升级! Lv.{levelUp.oldLevel} → Lv.<Text bold color="#FFAF00">{levelUp.newLevel}</Text>
             </Text>
           </Box>
         )}

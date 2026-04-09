@@ -23,7 +23,7 @@ index.tsx          CLI entry point (meow parses args, default → "pick")
   └─ app.tsx       Command router (state-based: "pick" → UpdatePrompt? → ProfileSetup? → SubjectPicker, then resolved command)
        ├─ update-prompt.tsx     Update available prompt (checks npm registry, skip or update)
        ├─ profile-setup.tsx     First-launch profile setup (name input + avatar picker)
-       │    └─ avatar-picker.tsx    2×4 grid arrow-key avatar selector
+       │    └─ avatar-picker.tsx    3×6 grid arrow-key ASCII art avatar selector (18 avatars)
        ├─ subject-picker.tsx    Arrow-key subject menu (TOEFL/AP Psych/AP CSP/AP WHAP, remember-last)
        ├─ profile-view.tsx      `alvy profile` — avatar, level, composite score, stats
        ├─ daily-session.tsx     TOEFL learning flow (state machine)
@@ -63,8 +63,8 @@ roots.json ──(import at startup)──> roots-db.ts (in-memory array, query 
 - **roots-db.ts** loads `roots.json` once at import time. Read-only.
 - **store.ts** reads/writes `~/.alvy/data.json`. Creates dir + file on first run. Auto-migrates from `~/.toefl-roots/data.json` if present. V1→V2→V3 migration chain. Backs up corrupt files to `data.backup.json`. Exports `DATA_DIR` and `DATA_FILE` for use by other modules (e.g., doctor.tsx).
 - **progress.ts** contains all business logic. Operates on the in-memory `UserData` object. Never touches the filesystem directly.
-- **levels.ts** contains level system logic: XP curve, level computation, composite score, level-up detection. Pure functions.
-- **avatars.ts** contains avatar constants (8 avatars with emoji + Chinese label).
+- **levels.ts** contains level system logic: XP curve, level computation, composite score, level-up detection. Pure functions. No level names — numeric `Lv.N` only.
+- **avatars.ts** contains 18 ASCII art avatar constants. Each has `art` (3-line string array), `label` (Chinese name), and `inline` (compact single-line for headers).
 
 ## Session State Machine
 
@@ -138,11 +138,11 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/lib/types.ts` | TypeScript interfaces: `UserData` (V3), `RootProgress`, `RootEntry`, `RootWord`, `UserProfile`, `LevelProgress`, `AvatarId`, `Command`, `Subject`. |
 | `src/lib/store.ts` | Read/write `~/.alvy/data.json`. Auto-migrates from `~/.toefl-roots/`. V1→V2→V3 migration chain. Exports `DATA_DIR`, `DATA_FILE`. First-run init, corrupt-file backup, atomic writes. |
 | `src/lib/progress.ts` | Business logic: `masteredCount()`, `addXP()`, `updateStreak()`, `markRootSeen()`, `markWordStudied()`, `selectNextMorphemes()`. |
-| `src/lib/levels.ts` | Level system: `xpForLevel()`, `computeLevel()`, `xpToNextLevel()`, `getLevelName()`, `computeCompositeScore()`, `checkLevelUp()`. |
-| `src/lib/avatars.ts` | Avatar constants: 8 avatars (scholar, panda, rocket, cat, star, dragon, phoenix, owl). |
+| `src/lib/levels.ts` | Level system: `xpForLevel()`, `computeLevel()`, `xpToNextLevel()`, `computeCompositeScore()`, `checkLevelUp()`. |
+| `src/lib/avatars.ts` | 18 ASCII art avatar constants (duck, goose, blob, cat, dragon, octopus, owl, penguin, turtle, snail, ghost, axolotl, robot, cactus, rabbit, mushroom, bear, alien). |
 | `src/components/profile-setup.tsx` | First-launch profile setup (name input → avatar picker). |
-| `src/components/avatar-picker.tsx` | 2×4 grid arrow-key avatar selector. |
-| `src/components/profile-view.tsx` | `alvy profile` — shows avatar, level, composite score, stats. |
+| `src/components/avatar-picker.tsx` | 3×6 grid arrow-key ASCII art avatar selector (18 avatars). |
+| `src/components/profile-view.tsx` | `alvy profile` — shows full ASCII art, name, level, composite score, stats. |
 | `src/lib/roots-db.ts` | Query layer over `roots.json`: `getAllRoots()`, `getRootByKey()`, `getRelatedMeanings()`. |
 | `src/lib/psych-db.ts` | Query layer over `psych.json`: `getAllConcepts()`, `getConceptByKey()`, etc. |
 | `src/lib/csp-db.ts` | Query layer over `csp.json`: `getAllTopics()`, `getTopicByKey()`, etc. |
@@ -150,8 +150,8 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/lib/update-check.ts` | Version check against npm registry (2s timeout) + `runUpdate()` via `npm install -g`. |
 | `src/components/update-prompt.tsx` | Update available prompt: arrow-key menu (立即更新/跳过), three phases (prompt/updating/done). |
 | `src/lib/ai.ts` | V2 stub (OpenAI client placeholder). |
-| `src/lib/__tests__/levels.test.ts` | Vitest level system tests (15 cases: xpForLevel, computeLevel, xpToNextLevel, getLevelName, compositeScore, checkLevelUp). |
-| `src/lib/__tests__/store.test.ts` | Vitest migration tests (9 cases: migrate, already migrated, fresh start, V1→V3, V2→V3, V3 no re-migration, XP→level, corrupt source). |
+| `src/lib/__tests__/levels.test.ts` | Vitest level system tests (10 cases: xpForLevel, computeLevel, xpToNextLevel, compositeScore, checkLevelUp). |
+| `src/lib/__tests__/store.test.ts` | Vitest migration tests (10 cases: migrate, already migrated, fresh start, V1→V3, V2→V3, V3 no re-migration, XP→level, old avatar ID remap, corrupt source). |
 | `src/data/roots.json` | 20 roots + 10 affixes = 30 entries × 5 words = 150 words. |
 | `src/data/psych.json` | AP Psychology: 26 concepts × ~5 terms = 130 terms. |
 | `src/data/csp.json` | AP CSP: 20 concepts × ~3-6 terms = 72 terms. |

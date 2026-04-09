@@ -8,7 +8,7 @@ interface AvatarPickerProps {
   onEsc?: () => void;
 }
 
-const COLS = 2;
+const COLS = 3;
 
 export default function AvatarPicker({ onSelect, onEsc }: AvatarPickerProps) {
   const [cursor, setCursor] = useState(0);
@@ -44,20 +44,42 @@ export default function AvatarPicker({ onSelect, onEsc }: AvatarPickerProps) {
       <Text>选择你的形象:</Text>
       <Box flexDirection="column" marginTop={1}>
         {grid.map((row, rowIdx) => (
-          <Box key={rowIdx} gap={3}>
-            {row.map((id, colIdx) => {
-              const idx = rowIdx * COLS + colIdx;
-              const avatar = AVATARS[id];
-              const selected = idx === cursor;
-              return (
-                <Box key={id} width={16}>
-                  <Text color={selected ? "#AF5FFF" : undefined}>
-                    {selected ? "› " : "  "}
-                    {avatar.emoji} {avatar.label}
-                  </Text>
-                </Box>
-              );
-            })}
+          <Box key={rowIdx} flexDirection="column">
+            {/* ASCII art lines */}
+            {[0, 1, 2].map((artLine) => (
+              <Box key={artLine}>
+                {row.map((id, colIdx) => {
+                  const idx = rowIdx * COLS + colIdx;
+                  const avatar = AVATARS[id];
+                  const selected = idx === cursor;
+                  return (
+                    <Box key={id} width={20}>
+                      <Text color={selected ? "#AF5FFF" : undefined}>
+                        {artLine === 0 && selected ? "› " : "  "}
+                        {avatar.art[artLine] ?? ""}
+                      </Text>
+                    </Box>
+                  );
+                })}
+              </Box>
+            ))}
+            {/* Label line */}
+            <Box>
+              {row.map((id, colIdx) => {
+                const idx = rowIdx * COLS + colIdx;
+                const avatar = AVATARS[id];
+                const selected = idx === cursor;
+                return (
+                  <Box key={id} width={20}>
+                    <Text color={selected ? "#AF5FFF" : undefined} dimColor={!selected}>
+                      {"  "}{avatar.label}
+                    </Text>
+                  </Box>
+                );
+              })}
+            </Box>
+            {/* Spacer between rows */}
+            {rowIdx < grid.length - 1 && <Box height={1} />}
           </Box>
         ))}
       </Box>

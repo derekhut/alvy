@@ -1,4 +1,4 @@
-export type AvatarId = "scholar" | "panda" | "rocket" | "cat" | "star" | "dragon" | "phoenix" | "owl";
+export type AvatarId = "duck" | "goose" | "blob" | "cat" | "dragon" | "octopus" | "owl" | "penguin" | "turtle" | "snail" | "ghost" | "axolotl" | "robot" | "cactus" | "rabbit" | "mushroom" | "bear" | "alien";
 
 export interface UserProfile {
   displayName: string;

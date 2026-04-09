@@ -8,6 +8,7 @@ This is the process used to ship:
 - **AP Psychology** — 26/130 → 36 concepts / 607 terms (5 batches)
 - **AP CSP** — 20/72 → 35 concepts / 385 terms (10 batches)
 - **AP World History** — 0 → 19 concepts / 255 terms (4 batches)
+- **AP Microeconomics** — 0 → 36 concepts / 499 terms (6 parallel batches, one per Unit)
 
 It is designed for the next subjects already queued in the repo:
 - `ap_environment.md` (AP Environmental Science, 186 lines)
@@ -233,6 +234,7 @@ Cluster(簇) → 自然形成的小群 → 把相似数据自动归为一团
 |---|---|---|
 | `src/data/csp.json` | ✅ 0 problems | 35 concepts / 385 terms, full schema |
 | `src/data/psych.json` | ✅ 0 problems | 36 concepts / 607 terms, full schema |
+| `src/data/micro.json` | ✅ 0 problems | 36 concepts / 499 terms, full schema |
 | `src/data/whap.json` | ⚠️ 255 missing `mnemonic` | 19 concepts / 255 terms — shipped before mnemonic was added to the standard. Runtime is fine (mnemonic is opt-in at runtime), but the integrity check flags every entry. To fix: backfill mnemonic on each WHAP word. |
 
 The check is intentionally strict: it enforces all 9 word fields. If you ship a

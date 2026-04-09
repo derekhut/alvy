@@ -1,8 +1,8 @@
 # alvy — Implementation Handoff
 
-Last updated: 2026-04-09
+Last updated: 2026-04-10
 Branch: update_version
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych COMPLETE (36 concepts / 607 terms, all 5 batches done — full CED coverage) | **AP CSP COMPLETE (35 concepts / 385 terms, all 10 batches done — full CED coverage of Big Ideas 1-5)** | AP WHAP COMPLETE (19 concepts / 255 terms) | Update flow REWRITTEN (no auto-relaunch) | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score) | **v1.6.10 LOCAL** — CSP CED expansion COMPLETE (was 20/72 → 35/385)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych COMPLETE (36 concepts / 607 terms) | AP CSP COMPLETE (35 concepts / 385 terms, full CED coverage of Big Ideas 1-5) | AP WHAP COMPLETE (19 concepts / 255 terms) | **AP Micro COMPLETE (36 concepts / 499 terms, all 6 Units, authored in 6 parallel batches)** | Update flow REWRITTEN (no auto-relaunch) | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score) | **v1.7.0 LOCAL** — AP Microeconomics CED expansion COMPLETE
 
 ## V1 Summary
 
@@ -76,7 +76,7 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 
 ### Step 9: Subject picker at launch
 - `alvy` (no args) now shows arrow-key subject picker instead of going straight to TOEFL daily session
-- Two subjects initially: TOEFL 词根 (30 roots) and AP 心理学 (16 concepts); later expanded to AP CSP (20 concepts) and AP WHAP (19 concepts / 255 terms). Per-subject rows now show per-subject XP/studied counts (no mastered counter after v1.6.5).
+- Two subjects initially: TOEFL 词根 (30 roots) and AP 心理学 (16 concepts); later expanded to AP CSP (35/385), AP WHAP (19/255), and AP Micro (36/499). Per-subject rows now show per-subject XP/studied counts (no mastered counter after v1.6.5).
 - Remember-last: `settings.lastSubject` persisted, cursor pre-highlights previous choice
 - Direct commands still work: `alvy psych`, `alvy review`, etc. (no picker shown)
 - **types.ts**: Added `Subject` type, `"pick"` to `Command` union, `lastSubject?` to settings
@@ -487,18 +487,22 @@ Key refactoring needed:
 
 Files built:
 - `src/data/psych.json` (36 concepts / 607 terms, full CED coverage)
-- `src/data/csp.json` (20 concepts / 72 terms, content live)
+- `src/data/csp.json` (35 concepts / 385 terms, full CED coverage of Big Ideas 1-5)
 - `src/data/whap.json` (19 concepts / 255 terms, COMPLETE)
-- `src/components/subject-picker.tsx` (arrow-key menu, remember-last, 4 subjects)
+- `src/data/micro.json` (36 concepts / 499 terms, full CED coverage of Units 1-6)
+- `src/components/subject-picker.tsx` (arrow-key menu, remember-last, 5 subjects)
 - `src/components/psych-session.tsx` (AP Psych daily session)
 - `src/components/psych-review.tsx` (AP Psych review)
 - `src/components/csp-session.tsx` (AP CSP daily session)
 - `src/components/csp-review.tsx` (AP CSP review)
 - `src/components/whap-session.tsx` (AP World History daily session)
 - `src/components/whap-review.tsx` (AP World History review)
+- `src/components/micro-session.tsx` (AP Microeconomics daily session)
+- `src/components/micro-review.tsx` (AP Microeconomics review)
 - `src/lib/psych-db.ts` (query layer over psych.json)
 - `src/lib/csp-db.ts` (query layer over csp.json)
 - `src/lib/whap-db.ts` (query layer over whap.json)
+- `src/lib/micro-db.ts` (query layer over micro.json)
 
 Files still needed:
 - `src/components/concept-intro.tsx` (like `root-lesson.tsx` for concepts, if pedagogical model changes)

@@ -1,6 +1,6 @@
 {
   "name": "@derekhut/alvy",
-  "version": "1.6.10",
+  "version": "1.7.0",
   "description": "Terminal-based vocabulary tool — learn English word roots with Chinese translations",
   "type": "module",
   "bin": {

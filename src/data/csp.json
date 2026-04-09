@@ -3763,5 +3763,506 @@
         "toefl_frequency": "medium"
       }
     ]
+  },
+  {
+    "root": "Beneficial and Harmful Effects",
+    "type": "root",
+    "meaning_en": "the dual nature of computing innovations, which can produce both positive and negative consequences for individuals, society, and the environment",
+    "meaning_zh": "有益与有害影响：每个计算创新都同时具有正面和负面影响。例如社交媒体可以连接朋友（有益）也可能导致信息茧房（有害）；GPS 帮助导航（有益）也威胁隐私（有害）。计算机科学家必须同时考虑两面",
+    "origin": "Unit 5: 5.1 Beneficial and Harmful Effects",
+    "related": ["Digital Divide", "Computing Bias", "Crowdsourcing"],
+    "words": [
+      {
+        "word": "beneficial",
+        "breakdown": "Bene(好的) + fic(做) + ial(形容词) → 「做好事的」",
+        "meaning_en": "producing a positive or advantageous outcome or impact",
+        "meaning_zh": "有益的：产生积极或有利结果的。例如疫苗追踪 app 在疫情期间是 beneficial 的——帮助人们避开高风险区域",
+        "derivation": "Bene(好) + fic(做) → 做好事的 → 有益的",
+        "mnemonic": "Benefit 是名词「好处」，benefic-IAL 加 ial 变形容词「有好处的」",
+        "example": "The beneficial effects of vaccines saved millions of lives.",
+        "example_zh": "疫苗的有益影响拯救了数百万人的生命。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "beneficial effects",
+        "breakdown": "Beneficial(有益的) + Effects(影响)",
+        "meaning_en": "positive outcomes or advantages that result from the use of a computing innovation",
+        "meaning_zh": "有益影响：使用计算创新带来的正面结果。例如 Google Maps 的 beneficial effects 包括节省时间、减少迷路、找到最短路径",
+        "derivation": "Beneficial(有益的) + Effects(影响) → 「带来好的结果」",
+        "mnemonic": "想 iPhone：有益影响（连接、信息）和有害影响（成瘾、注意力分散）并存",
+        "example": "GPS has beneficial effects like efficient navigation and emergency response.",
+        "example_zh": "GPS 有许多有益影响，例如高效导航和紧急救援。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "computing innovation",
+        "breakdown": "Computing(计算的) + Innovation(创新)",
+        "meaning_en": "a new or improved computer-based product, service, or concept that includes a program as an integral part of its function",
+        "meaning_zh": "计算创新：以程序为核心的新产品、服务或概念。可以是物理的（如 Apple Watch）、非物理软件的（如 TikTok app）或非物理概念的（如比特币）。AP CSP 整门课围绕这个概念展开",
+        "derivation": "Compute(计算) + Innovation(创新) → 「以计算为核心的新事物」",
+        "mnemonic": "三种 computing innovation：物理（智能手表）、软件（Instagram）、概念（区块链）",
+        "example": "ChatGPT is a computing innovation that has changed how people write.",
+        "example_zh": "ChatGPT 是一项计算创新，改变了人们写作的方式。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "data mining",
+        "breakdown": "Data(数据) + Mining(挖掘)",
+        "meaning_en": "the process of analyzing large datasets to discover patterns, trends, and insights",
+        "meaning_zh": "数据挖掘：分析大型数据集以发现模式、趋势和洞察。例如 Netflix 用 data mining 分析用户观看记录，发现「看过《纸牌屋》的人也看《王冠》」从而做推荐",
+        "derivation": "Mining(挖矿) → 从大量数据中「挖出」有价值的信息",
+        "mnemonic": "想象数据是矿山，data mining 就是从中挖宝——挖出消费习惯、疾病模式、市场趋势",
+        "example": "Retailers use data mining to predict which products customers will buy.",
+        "example_zh": "零售商使用数据挖掘来预测顾客会购买哪些产品。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "effect",
+        "breakdown": "Ef(出) + fect(做) → 「做出来的结果」",
+        "meaning_en": "a consequence or result of a computing innovation that impacts people, society, or other fields",
+        "meaning_zh": "影响：计算创新对人、社会或其他领域产生的后果。例如智能手机的 effect 包括改变沟通方式、催生新职业、影响心理健康等",
+        "derivation": "Ef(=ex 出) + fect(做) → 做出来的东西 → 结果、影响",
+        "mnemonic": "Cause（原因）和 effect（结果）总是一对——计算创新是 cause，社会变化是 effect",
+        "example": "The effects of social media on teenage mental health are widely studied.",
+        "example_zh": "社交媒体对青少年心理健康的影响被广泛研究。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "harmful",
+        "breakdown": "Harm(伤害) + ful(充满) → 「充满伤害的」",
+        "meaning_en": "producing a negative or damaging outcome or impact",
+        "meaning_zh": "有害的：产生负面或破坏性结果的。例如深度伪造（deepfake）技术是 harmful 的——可被用于制造虚假视频损害他人声誉",
+        "derivation": "Harm(伤害) + ful(充满的) → 充满伤害",
+        "mnemonic": "Harm = 伤害；harm-FUL = 「有伤害」就是 harmful",
+        "example": "The harmful effects of deepfakes include spreading misinformation.",
+        "example_zh": "深度伪造的有害影响包括传播错误信息。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "harmful impact",
+        "breakdown": "Harmful(有害的) + Impact(冲击)",
+        "meaning_en": "negative consequences or damage that a computing innovation can cause",
+        "meaning_zh": "有害冲击：计算创新可能造成的负面后果或损害。例如算法推荐的 harmful impact 包括信息茧房、激进化、抑郁等",
+        "derivation": "Harmful(有害) + Impact(冲击) → 「带来伤害的撞击」",
+        "mnemonic": "Impact 比 effect 更强烈——是「冲击式」的伤害，例如比特币挖矿对环境的 harmful impact",
+        "example": "Cryptocurrency mining has a harmful impact on the environment due to high energy use.",
+        "example_zh": "加密货币挖矿因高耗能对环境产生有害冲击。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "intended purpose",
+        "breakdown": "Intended(原本设想的) + Purpose(目的)",
+        "meaning_en": "the original goal or function that a computing innovation was designed to accomplish",
+        "meaning_zh": "原定用途：计算创新最初被设计用来实现的目的。例如 Twitter 的 intended purpose 是让人发布短状态更新，但后来演变成新闻和政治讨论平台",
+        "derivation": "Intend(打算) + Purpose(目的) → 「原本打算做的事」",
+        "mnemonic": "Intended ≠ actual——很多创新的实际用途超出原定用途",
+        "example": "The intended purpose of GPS was military navigation, not civilian use.",
+        "example_zh": "GPS 的原定用途是军事导航，而非民用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "machine learning",
+        "breakdown": "Machine(机器) + Learning(学习)",
+        "meaning_en": "a computing technique that enables systems to learn and improve from data without being explicitly programmed for each task",
+        "meaning_zh": "机器学习：让计算机从数据中自动学习模式，而无需为每个任务显式编程。例如训练 ML 模型识别猫——不写「四条腿+尾巴」的规则，而是给它一万张猫图让它自己学",
+        "derivation": "Machine(机器) + Learning(学习) → 机器自己学",
+        "mnemonic": "传统编程：人写规则；机器学习：机器从数据中找规则。ChatGPT、人脸识别、推荐系统都是 ML",
+        "example": "Spotify uses machine learning to recommend songs based on listening history.",
+        "example_zh": "Spotify 使用机器学习根据听歌历史推荐歌曲。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "targeted advertising",
+        "breakdown": "Targeted(有针对性的) + Advertising(广告)",
+        "meaning_en": "a marketing technique that uses computing innovations to deliver specific advertisements based on data and behavior",
+        "meaning_zh": "定向广告：根据用户数据和行为投放特定广告。例如你在 Amazon 搜了「跑鞋」，之后 Instagram、YouTube 上都开始推送跑鞋广告——这就是 targeted advertising",
+        "derivation": "Target(目标) → Targeted(被瞄准的) → 「精准瞄准你的广告」",
+        "mnemonic": "Targeted ads 是双刃剑：方便（看到感兴趣的东西）但侵犯隐私（被追踪）",
+        "example": "Targeted advertising raises privacy concerns about how personal data is collected.",
+        "example_zh": "定向广告引发了关于个人数据如何被收集的隐私担忧。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "unintended beneficial effects",
+        "breakdown": "Unintended(未预期的) + Beneficial(有益的) + Effects(影响)",
+        "meaning_en": "positive consequences of a computing innovation that were not originally anticipated by its creators",
+        "meaning_zh": "未预期的有益影响：创造者最初没预料到的正面结果。例如 SMS 短信原本只是让工程师测试网络，结果催生了全球文字沟通革命",
+        "derivation": "Un(否定) + Intended(预期) → 没预期 + Beneficial(有益) → 「意外的好处」",
+        "mnemonic": "三个 unintended beneficial 例子：SMS 变成主流沟通；Twitter 成为新闻平台；Reddit 成为研究社区",
+        "example": "An unintended beneficial effect of email was the rise of remote collaboration.",
+        "example_zh": "电子邮件的一个未预期有益影响是远程协作的兴起。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "unintended purpose",
+        "breakdown": "Unintended(未预期的) + Purpose(用途)",
+        "meaning_en": "a use or application of a computing innovation that was not originally planned by its creators",
+        "meaning_zh": "未预期用途：创造者原本没计划的用法。例如 Facebook 原本是哈佛学生通讯录，被用作了政治竞选工具——这是 unintended purpose",
+        "derivation": "Un(没) + Intended(打算) + Purpose(目的) → 「没打算的用途」",
+        "mnemonic": "Reddit 原本是新闻聚合，结果变成了 GameStop 股票暴涨的策划地——unintended purpose 的典型",
+        "example": "An unintended purpose of TikTok is its use as a search engine by Gen Z.",
+        "example_zh": "TikTok 的一个未预期用途是被 Z 世代用作搜索引擎。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Digital Divide",
+    "type": "root",
+    "meaning_en": "the differing access to computing devices and the Internet based on socioeconomic, geographic, or demographic characteristics",
+    "meaning_zh": "数字鸿沟：不同人群因经济、地理、人口等因素在计算设备和互联网访问上的差异。例如美国农村宽带覆盖率远低于城市；非洲许多地区智能手机普及但缺少高速网络",
+    "origin": "Unit 5: 5.2 Digital Divide",
+    "related": ["Beneficial and Harmful Effects", "Computing Bias", "Legal and Ethical Concerns"],
+    "words": [
+      {
+        "word": "access",
+        "breakdown": "Ac(向) + cess(去) → 「能进去」",
+        "meaning_en": "the ability to obtain and use computing devices and Internet services",
+        "meaning_zh": "访问权：获取并使用计算设备和互联网服务的能力。例如疫情期间在线学习暴露了 access 不平等——有些学生没电脑、没 WiFi",
+        "derivation": "Ac(=ad 向) + cess(=cedere 去) → 能进去 → 访问",
+        "mnemonic": "Access 一词三义：物理访问（进门）、数据访问（读文件）、网络访问（上网）",
+        "example": "Many rural areas still lack reliable Internet access.",
+        "example_zh": "许多农村地区仍缺乏可靠的互联网访问。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "computing device",
+        "breakdown": "Computing(计算的) + Device(设备)",
+        "meaning_en": "a physical artifact that can run a program, such as computers, tablets, servers, routers, and smart sensors",
+        "meaning_zh": "计算设备：能运行程序的物理设备。包括台式机、笔记本、平板、手机、服务器、路由器、智能传感器等。注意：不只是电脑——智能冰箱也是 computing device",
+        "derivation": "Compute(计算) + Device(设备) → 「能算东西的设备」",
+        "mnemonic": "Computing devices ≠ computers——你的智能手表、Nest 温控器、特斯拉车机都算",
+        "example": "A smart thermostat is a computing device that adjusts temperature automatically.",
+        "example_zh": "智能温控器是一种能自动调节温度的计算设备。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "demographic characteristics",
+        "breakdown": "Demo(人民) + graphic(描述) → 描述人口的 + Characteristics(特征)",
+        "meaning_en": "population characteristics such as age, gender, education level, and other factors that affect access to technology",
+        "meaning_zh": "人口特征：年龄、性别、教育水平等影响技术访问的人口因素。例如 65 岁以上人群的 Internet 使用率明显低于 18-29 岁——这是 demographic 维度的 digital divide",
+        "derivation": "Demo(人) + graph(写) → 「关于人的描述」 → 人口学特征",
+        "mnemonic": "Demographics = 「人口学」；选举民调里常见的「按年龄/性别/族裔」分组",
+        "example": "Demographic characteristics like age strongly affect technology adoption rates.",
+        "example_zh": "年龄等人口特征显著影响技术采用率。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "digital divide",
+        "breakdown": "Digital(数字的) + Divide(分隔)",
+        "meaning_en": "the differing access to computing devices and the Internet based on socioeconomic, geographic, or demographic characteristics",
+        "meaning_zh": "数字鸿沟：不同群体在计算设备和互联网访问上的差距。三个维度：经济（贫富）、地理（城乡）、人口（年龄/教育）。例如疫情期间，没 WiFi 的学生只能去麦当劳停车场上网课",
+        "derivation": "Digital(数字) + Divide(分裂) → 「数字时代的分裂」",
+        "mnemonic": "Divide 既是名词「分隔」也是动词「分开」；the Great Divide 指美国大陆分水岭——digital divide 是数字时代的「分水岭」",
+        "example": "The digital divide became more visible when schools moved online during COVID.",
+        "example_zh": "新冠疫情期间学校转为线上教学时，数字鸿沟变得更加明显。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equity",
+        "breakdown": "Equ(平等) + ity(名词后缀) → 平等性",
+        "meaning_en": "fair and just access to resources and opportunities, particularly regarding technology and Internet access",
+        "meaning_zh": "公平：资源和机会的公正分配。注意 equity ≠ equality：equality 是「人人一样多」，equity 是「按需分配」。计算 equity 意味着帮助弱势群体获得网络访问",
+        "derivation": "Equ(等) + ity(名) → 平等的性质",
+        "mnemonic": "Equality 是「给每人同样的鞋」；Equity 是「给每人合脚的鞋」——后者更公平",
+        "example": "Digital equity programs aim to provide laptops to low-income students.",
+        "example_zh": "数字公平项目旨在为低收入学生提供笔记本电脑。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "geographic characteristics",
+        "breakdown": "Geo(地球) + graphic(描述) + Characteristics(特征)",
+        "meaning_en": "location-based factors that influence access to computing devices and Internet connectivity",
+        "meaning_zh": "地理特征：基于位置的因素，影响计算设备和互联网连接。例如山区铺光纤成本极高——所以阿拉斯加农村的 Internet 比纽约慢且贵",
+        "derivation": "Geo(地球) + graph(写) → 「描写地球」 → 地理的",
+        "mnemonic": "想 SpaceX Starlink：专门为偏远地区（geographic characteristics）提供卫星互联网",
+        "example": "Geographic characteristics make broadband expensive to deploy in mountain regions.",
+        "example_zh": "地理特征使得在山区部署宽带的成本很高。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "influence",
+        "breakdown": "In(进入) + flu(流) + ence → 「流入心里」",
+        "meaning_en": "the power to affect decisions, information, and opportunities through access to computing and digital resources",
+        "meaning_zh": "影响力：通过计算和数字资源访问来影响决策、信息和机会的能力。例如有 Internet 的孩子可以做研究、申请奖学金；没 Internet 的孩子失去这些 influence",
+        "derivation": "In(进入) + flu(流，源自 flow) → 「流入」 → 影响",
+        "mnemonic": "Influencer = 「影响者」——那些在社交媒体上影响别人的人",
+        "example": "Internet access has a huge influence on educational opportunities.",
+        "example_zh": "互联网访问对教育机会有巨大影响。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Internet access",
+        "breakdown": "Internet(互联网) + Access(访问)",
+        "meaning_en": "the ability to connect to and use the Internet, which varies based on socioeconomic, geographic, and demographic factors",
+        "meaning_zh": "互联网访问：连接和使用互联网的能力。在美国，约 7% 的家庭仍然没有 Internet access；在全球这个数字是 33%——三分之一的人不联网",
+        "derivation": "Internet(网络) + Access(进入) → 「能上网」",
+        "mnemonic": "区分 Internet access（能不能上）vs Internet speed（多快）——digital divide 既包括有无也包括快慢",
+        "example": "Free Internet access in libraries helps bridge the digital divide.",
+        "example_zh": "图书馆免费的互联网访问有助于弥合数字鸿沟。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "socioeconomic characteristics",
+        "breakdown": "Socio(社会的) + Economic(经济的) + Characteristics(特征)",
+        "meaning_en": "factors related to income level and social class that affect access to technology and the Internet",
+        "meaning_zh": "社会经济特征：与收入水平和社会阶层相关的因素。例如低收入家庭可能买不起电脑或付不起宽带费——这是 digital divide 最常见的维度",
+        "derivation": "Socio(社会) + Economic(经济) → 「社会与经济的」",
+        "mnemonic": "SES（Socioeconomic Status）是社会学常用缩写，包含收入、教育、职业三要素",
+        "example": "Socioeconomic characteristics are the strongest predictor of home Internet access.",
+        "example_zh": "社会经济特征是家庭互联网访问的最强预测指标。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Computing Bias",
+    "type": "root",
+    "meaning_en": "prejudice or systematic error in computing innovations that can result from algorithms or data, reflecting existing human prejudices",
+    "meaning_zh": "计算偏见：计算创新中的偏见或系统性错误，源自算法或数据，反映人类既有偏见。例如人脸识别对深肤色识别准确率显著低于浅肤色——这是因为训练数据中浅肤色样本太多",
+    "origin": "Unit 5: 5.3 Computing Bias",
+    "related": ["Beneficial and Harmful Effects", "Digital Divide", "Legal and Ethical Concerns"],
+    "words": [
+      {
+        "word": "algorithm",
+        "breakdown": "Algorithm(算法) — 解决问题的步骤",
+        "meaning_en": "step-by-step procedures or sets of rules designed to solve a problem or accomplish a task",
+        "meaning_zh": "算法：解决问题或完成任务的逐步过程。在 computing bias 语境中，算法是偏见的「载体」——例如简历筛选算法可能歧视女性，因为它从有偏见的历史数据中学到了「男性更适合工程师」",
+        "derivation": "源自波斯数学家 al-Khwarizmi 的拉丁化名字 → Algorithmi → algorithm",
+        "mnemonic": "算法本身没情感，但它学到的是有偏见的数据——garbage in, garbage out",
+        "example": "An algorithm trained on biased data will produce biased results.",
+        "example_zh": "用有偏见数据训练的算法会产生有偏见的结果。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "bias",
+        "breakdown": "Bias(偏见) — 系统性偏向",
+        "meaning_en": "prejudice or systematic error in computing innovations that can result from algorithms or data",
+        "meaning_zh": "偏见：计算创新中的系统性偏差。例如 Amazon 曾用 AI 筛简历，结果算法自动降低含「女子（women's）」的简历分数——因为历史数据中工程师大多是男性。Amazon 最终弃用了这个系统",
+        "derivation": "Bias(倾斜) → 计算机学习历史数据 → 历史有偏见 → 算法也有偏见",
+        "mnemonic": "Bias 三个来源：训练数据偏（历史不公）、设计者偏（盲点）、反馈循环偏（强化偏见）",
+        "example": "Computing bias led to facial recognition systems misidentifying minorities.",
+        "example_zh": "计算偏见导致人脸识别系统对少数族裔的误识别。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "computing innovation",
+        "breakdown": "Computing(计算的) + Innovation(创新)",
+        "meaning_en": "a new or improved computer-based product, service, or concept that includes a program as an integral part of its function",
+        "meaning_zh": "计算创新：以程序为核心的新产品、服务或概念。在 computing bias 的语境下，每个创新都可能携带偏见——COMPAS 累犯预测系统就是经典例子",
+        "derivation": "Compute(计算) + Innovation(创新) → 「以计算为核心的新事物」",
+        "mnemonic": "COMPAS 是美国法庭用的累犯预测算法，研究发现它对黑人被告的误判率是白人的两倍",
+        "example": "Every computing innovation should be tested for bias before deployment.",
+        "example_zh": "每个计算创新在部署前都应进行偏见测试。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "data",
+        "breakdown": "Data(数据) — 信息的原料",
+        "meaning_en": "information represented in a form that can be processed by a program, such as numbers, text, or records",
+        "meaning_zh": "数据：可被程序处理的信息。在 computing bias 的语境下，数据是偏见的根源——「garbage in, garbage out」：如果训练数据有偏，模型必然有偏",
+        "derivation": "拉丁语 datum「给定的事物」的复数 → 数据",
+        "mnemonic": "数据偏见三种：抽样偏（样本不代表总体）、标注偏（人工标注带主观）、历史偏（反映过去的不公）",
+        "example": "Bias in data leads directly to bias in machine learning models.",
+        "example_zh": "数据中的偏见会直接导致机器学习模型的偏见。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "software development",
+        "breakdown": "Software(软件) + Development(开发)",
+        "meaning_en": "the process of creating and improving software applications where biases can be embedded at multiple levels",
+        "meaning_zh": "软件开发：创建和改进软件应用的过程。偏见可以在多个层面被嵌入：需求定义、数据收集、模型选择、测试方式。例如开发者如果只用自己的脸测试人脸识别，就会忽略其他肤色",
+        "derivation": "Soft(软) + Ware(物件) → 软的东西 + Development(发展) → 软件开发",
+        "mnemonic": "偏见可以在 software development 的每个阶段进入——需求、设计、编码、测试、部署",
+        "example": "Bias can enter software development at any stage, from requirements to testing.",
+        "example_zh": "在软件开发的任何阶段——从需求到测试——偏见都可能渗入。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Crowdsourcing",
+    "type": "root",
+    "meaning_en": "the practice of obtaining input, information, or solutions from a large number of people via the Internet",
+    "meaning_zh": "众包：通过互联网从大量人群获取输入、信息或解决方案。例如 Wikipedia（百科众包）、reCAPTCHA（验证码众包标注图片）、Foldit（游戏众包蛋白质折叠研究）都是经典案例",
+    "origin": "Unit 5: 5.4 Crowdsourcing",
+    "related": ["Beneficial and Harmful Effects", "Digital Divide", "Legal and Ethical Concerns"],
+    "words": [
+      {
+        "word": "citizen science",
+        "breakdown": "Citizen(公民) + Science(科学)",
+        "meaning_en": "scientific research conducted wholly or partly by non-professional scientists who contribute data and observations using their own computing devices",
+        "meaning_zh": "公民科学：由非专业科学家参与的科学研究，他们用自己的设备贡献数据和观察。例如 eBird 让全球观鸟爱好者上报鸟类观察记录，已成为最大鸟类数据库之一",
+        "derivation": "Citizen(公民) + Science(科学) → 「公民参与的科学」",
+        "mnemonic": "三个 citizen science 例子：eBird（观鸟）、Zooniverse（星系分类）、iNaturalist（物种识别）",
+        "example": "Citizen science projects let amateurs contribute to climate change research.",
+        "example_zh": "公民科学项目让业余爱好者也能参与气候变化研究。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "collaboration",
+        "breakdown": "Co(一起) + labor(劳动) + ation(名词) → 「一起劳动」",
+        "meaning_en": "the process of working together with others to develop computing innovations that benefit from diverse talents and perspectives",
+        "meaning_zh": "协作：与他人合作开发计算创新的过程。在 crowdsourcing 中，collaboration 意味着不同地点、不同技能的人共同贡献——例如 Linux 内核由全球数千开发者协作维护",
+        "derivation": "Co(共同) + Labor(劳动) → 共同劳动 → 协作",
+        "mnemonic": "GitHub 是 collaboration 的圣殿——pull request、issue、code review 都是协作工具",
+        "example": "Open source software depends on global collaboration through platforms like GitHub.",
+        "example_zh": "开源软件依靠 GitHub 等平台上的全球协作。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "crowdsourcing",
+        "breakdown": "Crowd(人群) + Sourcing(获取来源)",
+        "meaning_en": "the practice of obtaining input, information, or solutions from a large number of people via the Internet",
+        "meaning_zh": "众包：通过互联网从大量人群获取输入、信息或解决方案。例如 Kickstarter 是「众筹」（funding 众包）；Waze 是路况众包；Duolingo 早期用用户翻译做训练数据",
+        "derivation": "Crowd(人群) + Source(来源) → 「以人群为来源」",
+        "mnemonic": "Out-source（外包）= 给一个公司；Crowd-source（众包）= 给一群人",
+        "example": "Wikipedia is the most famous example of successful crowdsourcing.",
+        "example_zh": "维基百科是众包成功的最著名案例。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "dissemination of results",
+        "breakdown": "Dis(分散) + semin(种子) + ation(名词) → 「撒种子」 + Results(结果)",
+        "meaning_en": "the process of sharing and distributing findings, solutions, or information widely to relevant audiences",
+        "meaning_zh": "结果传播：将发现、解决方案或信息广泛分享给相关受众的过程。互联网让 dissemination 变得即时——研究论文不再要等期刊出版，可以在 arXiv 上即刻分享",
+        "derivation": "Dis(撒) + Semin(种子) → 「像撒种子一样散播」",
+        "mnemonic": "Seminar（研讨会）也来自 semin（种子）——种下知识的种子",
+        "example": "Open access journals enable rapid dissemination of results.",
+        "example_zh": "开放访问期刊使研究结果能够快速传播。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "distributed individuals",
+        "breakdown": "Distributed(分散的) + Individuals(个人)",
+        "meaning_en": "people spread across different locations who contribute to a common goal or research project",
+        "meaning_zh": "分散个体：分布在不同地点、为共同目标贡献的人。例如 SETI@home 项目让全球志愿者用自己电脑空闲时间分析外星信号——这就是 distributed individuals",
+        "derivation": "Distribute(分发) → Distributed(被分散的) + Individuals(个体)",
+        "mnemonic": "Distributed individuals 是 distributed computing 的「人版」——人也可以像 CPU 一样并行工作",
+        "example": "Folding@home connects distributed individuals to research diseases.",
+        "example_zh": "Folding@home 把分散在世界各地的个体连接起来研究疾病。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "problem-solving processes",
+        "breakdown": "Problem(问题) + Solving(解决) + Processes(过程)",
+        "meaning_en": "methods and approaches used to identify, analyze, and develop solutions to challenges, often involving multiple participants",
+        "meaning_zh": "问题解决过程：识别、分析和开发挑战解决方案的方法。Crowdsourcing 改变了这个过程——以前一个团队闭门造车，现在可以邀请全世界的人一起想办法",
+        "derivation": "Problem(问题) + Solve(解决) + Process(过程) → 「解决问题的步骤」",
+        "mnemonic": "Kaggle 是数据科学的 problem-solving crowdsourcing——公司发布问题和数据，全球数据科学家比赛求解",
+        "example": "Crowdsourced problem-solving processes can find solutions faster than traditional teams.",
+        "example_zh": "众包式的问题解决过程可以比传统团队更快找到解决方案。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "public data",
+        "breakdown": "Public(公开的) + Data(数据)",
+        "meaning_en": "information that is openly accessible to the general public and can be used to identify problems and develop solutions",
+        "meaning_zh": "公开数据：对公众开放的信息，可用于识别问题和开发解决方案。例如 NOAA 的天气数据、census.gov 的人口普查数据、NASA 的卫星图像——任何人都能下载使用",
+        "derivation": "Public(公共) + Data(数据) → 「人人可用的数据」",
+        "mnemonic": "data.gov 是美国政府的 public data 门户——超过 30 万个数据集免费下载",
+        "example": "Public data from the census helps researchers study social trends.",
+        "example_zh": "来自人口普查的公开数据帮助研究人员研究社会趋势。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Legal and Ethical Concerns",
+    "type": "root",
+    "meaning_en": "issues involving copyright, intellectual property, privacy, and ethical use of computing innovations",
+    "meaning_zh": "法律与道德问题：涉及版权、知识产权、隐私和计算创新道德使用的议题。例如 GitHub Copilot 用开源代码训练 AI 是否侵权？人脸识别用于警务是否合乎道德？这些都是 legal and ethical concerns",
+    "origin": "Unit 5: 5.5 Legal and Ethical Concerns",
+    "related": ["Beneficial and Harmful Effects", "Digital Divide", "Computing Bias", "Crowdsourcing"],
+    "words": [
+      {
+        "word": "algorithm bias",
+        "breakdown": "Algorithm(算法) + Bias(偏见)",
+        "meaning_en": "prejudice or unfair treatment built into algorithms that can raise legal and ethical concerns",
+        "meaning_zh": "算法偏见：算法中内置的偏见或不公平处理。例如 COMPAS 累犯预测算法对黑人被告的「高风险」误判率是白人的两倍——这引发了重大法律和道德争议",
+        "derivation": "Algorithm(算法) + Bias(偏见) → 「写在算法里的偏见」",
+        "mnemonic": "Algorithm bias 不是 bug 而是 feature——偏见是从训练数据「学会」的",
+        "example": "Algorithm bias in hiring tools has led to lawsuits against tech companies.",
+        "example_zh": "招聘工具中的算法偏见已引发对科技公司的诉讼。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Creative Commons",
+        "breakdown": "Creative(创造性的) + Commons(公共资源)",
+        "meaning_en": "a public copyright license that enables the free distribution of otherwise copyrighted work",
+        "meaning_zh": "知识共享许可证：一种公共版权许可，允许免费分发原本受版权保护的作品。CC 提供多种许可（CC BY, CC BY-SA, CC0 等），创作者可以选择允许他人如何使用其作品",
+        "derivation": "Creative(创造) + Commons(公地) → 「创造的公地」",
+        "mnemonic": "Wikipedia 用 CC BY-SA；很多开源教科书也用 CC——CC 让知识可以被合法分享",
+        "example": "Photos on Wikipedia are usually licensed under Creative Commons.",
+        "example_zh": "维基百科上的照片通常采用知识共享许可证。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "data monitoring",
+        "breakdown": "Data(数据) + Monitoring(监视)",
+        "meaning_en": "the continuous collection and analysis of user activities through computing devices, which raises legal and ethical concerns",
+        "meaning_zh": "数据监控：通过计算设备持续收集和分析用户活动。例如 ISP 可以记录你访问的所有网站；雇主可以监控员工电脑活动——这些都引发隐私法律问题",
+        "derivation": "Data(数据) + Monitor(显示器→监视) → 「监视数据流」",
+        "mnemonic": "GDPR（欧盟通用数据保护条例）就是为限制 data monitoring 而生的法律",
+        "example": "Data monitoring by employers raises ethical questions about workplace privacy.",
+        "example_zh": "雇主的数据监控引发了关于工作场所隐私的道德问题。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "digital divide",
+        "breakdown": "Digital(数字的) + Divide(分隔)",
+        "meaning_en": "the differing access to computing devices and the Internet based on socioeconomic, geographic, or demographic characteristics",
+        "meaning_zh": "数字鸿沟：在 legal and ethical 语境中，digital divide 是一个道德议题——当政府服务、教育、医疗都数字化后，没有 Internet access 的人变得边缘化，这是否公平？",
+        "derivation": "Digital(数字) + Divide(分裂) → 「数字时代的分裂」",
+        "mnemonic": "Digital divide 不只是技术问题——是社会公平问题",
+        "example": "The digital divide raises ethical questions about equal access to government services.",
+        "example_zh": "数字鸿沟引发了关于平等获取政府服务的道德问题。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "intellectual property",
+        "breakdown": "Intellectual(智力的) + Property(财产)",
+        "meaning_en": "material created on a computer or by an individual that is legally owned by the creator or an organization",
+        "meaning_zh": "知识产权：由创造者或机构合法拥有的智力创造物。包括版权（著作权）、专利、商标、商业秘密。例如代码受版权保护——你不能直接复制 GitHub 上的代码，除非许可证允许",
+        "derivation": "Intellect(智力) + Property(财产) → 「智力的财产」",
+        "mnemonic": "IP 在科技圈有两个意思：Internet Protocol 和 Intellectual Property——根据上下文判断",
+        "example": "Software code is protected as intellectual property under copyright law.",
+        "example_zh": "软件代码作为知识产权受版权法保护。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "open access",
+        "breakdown": "Open(开放的) + Access(访问)",
+        "meaning_en": "online research output that is free of access restrictions and many usage restrictions, such as copyright or license limitations",
+        "meaning_zh": "开放访问：摆脱访问限制和许多使用限制（如版权或许可证限制）的在线研究成果。例如 arXiv、PubMed Central 上的论文都是 open access——任何人都能免费下载",
+        "derivation": "Open(开) + Access(进入) → 「开门进入」",
+        "mnemonic": "Open access 三层含义：免费读、可下载、可重用",
+        "example": "Open access journals make scientific research available to everyone.",
+        "example_zh": "开放访问期刊让所有人都能获取科学研究。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "open source",
+        "breakdown": "Open(开放的) + Source(源代码)",
+        "meaning_en": "programs that are made freely available and may be redistributed and modified by users",
+        "meaning_zh": "开源：源代码免费开放，可被用户重新分发和修改的程序。例如 Linux、Python、React、Blender 都是开源——任何人都能查看代码、修改、再分发",
+        "derivation": "Open(开) + Source(源代码) → 源代码公开",
+        "mnemonic": "开源 ≠ 免费——但绝大多数开源软件确实免费。重点是「自由」（freedom）而非「免费」（free）",
+        "example": "Linux is the most successful open source operating system.",
+        "example_zh": "Linux 是最成功的开源操作系统。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "plagiarism",
+        "breakdown": "Plagi(抄袭) + arism(主义) → 抄袭行为",
+        "meaning_en": "the use of material created by someone else without permission and presented as one's own, which may have legal consequences",
+        "meaning_zh": "剽窃：未经许可使用他人创作的材料并冒充为自己的，可能有法律后果。在 ChatGPT 时代，plagiarism 边界变得模糊——AI 生成的内容算谁的？这是新的伦理难题",
+        "derivation": "拉丁语 plagiarius「绑架者」→ 「绑架了别人的作品」",
+        "mnemonic": "Turnitin 是学校用的 plagiarism 检测工具——比对学生作业和已有论文",
+        "example": "Plagiarism is a serious academic offense that can result in expulsion.",
+        "example_zh": "剽窃是严重的学术违规行为，可能导致开除。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

@@ -1697,421 +1697,6 @@
     ]
   },
   {
-    "root": "Stress & Coping",
-    "type": "root",
-    "meaning_en": "how stress affects health and how people cope",
-    "meaning_zh": "压力与应对：压力如何影响身心健康，以及人们如何应对压力。应激反应、应对策略和心理韧性",
-    "origin": "Unit 5: Mental & Physical Health",
-    "related": [
-      "Psychological Disorders",
-      "Treatment Approaches",
-      "Health Psychology",
-      "Positive Psychology"
-    ],
-    "words": [
-      {
-        "word": "General Adaptation Syndrome",
-        "breakdown": "GAS: General(一般的) + Adaptation(适应) + Syndrome(综合征)",
-        "meaning_en": "Selye's three-stage stress response: alarm, resistance, exhaustion",
-        "meaning_zh": "一般适应综合征（塞利）：压力反应三阶段。警觉期=身体动员（战斗或逃跑）→抵抗期=持续应对→衰竭期=资源耗尽，免疫力下降",
-        "derivation": "Alarm(警报)→Resistance(抵抗)→Exhaustion(耗竭) → 压力持续太久身体就垮了",
-        "mnemonic": "像手机电池：警报=开始掉电；抵抗=省电模式；衰竭=关机",
-        "example": "Prolonged stress leads to the exhaustion stage of GAS.",
-        "example_zh": "长期压力导致一般适应综合征的衰竭阶段。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Fight-or-Flight",
-        "breakdown": "Fight(战斗) + or + Flight(逃跑)",
-        "meaning_en": "acute stress response activating the sympathetic nervous system",
-        "meaning_zh": "战斗或逃跑反应：面对威胁时，交感神经系统激活→心跳加速、肾上腺素释放、血液流向肌肉→准备战斗或逃跑",
-        "derivation": "遇到危险 → 身体自动准备 → 要么打（fight）要么跑（flight）",
-        "mnemonic": "路上遇到蛇：心跳狂飙、全身紧绷——你的身体在决定是打还是跑",
-        "example": "The fight-or-flight response prepares the body for immediate action.",
-        "example_zh": "战斗或逃跑反应让身体准备好立即行动。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Coping Strategies",
-        "breakdown": "Coping(应对) + Strategies(策略)",
-        "meaning_en": "problem-focused (change situation) vs emotion-focused (manage feelings)",
-        "meaning_zh": "应对策略：问题导向=改变造成压力的情境（如制定学习计划）；情绪导向=管理情绪反应（如找朋友倾诉、运动减压）",
-        "derivation": "Problem-focused(问题导向)=解决问题本身；Emotion-focused(情绪导向)=调节情绪",
-        "mnemonic": "考试焦虑：问题导向=好好复习；情绪导向=深呼吸放松。最好两者结合",
-        "example": "Problem-focused coping addresses the source of stress directly.",
-        "example_zh": "问题导向的应对策略直接解决压力来源。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Resilience",
-        "breakdown": "Re(回) + sili(弹) + -ence",
-        "meaning_en": "ability to recover from adversity and adapt well",
-        "meaning_zh": "心理韧性：从逆境中恢复和良好适应的能力。保护因素包括：社会支持、乐观、自我效能感和意义感",
-        "derivation": "Resilient(有弹性的) → 像弹簧一样被压下去还能弹回来 → 逆境后的恢复能力",
-        "mnemonic": "竹子被风吹弯但不会断——弯了还能回来，这就是韧性",
-        "example": "Resilience factors include social support and optimism.",
-        "example_zh": "心理韧性的保护因素包括社会支持和乐观。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Biopsychosocial Model",
-        "breakdown": "Bio(生物) + Psycho(心理) + Social(社会) + Model(模型)",
-        "meaning_en": "health is determined by biological, psychological, and social factors",
-        "meaning_zh": "生物心理社会模型：健康由生物因素（基因、大脑）+心理因素（压力、人格）+社会因素（文化、支持）共同决定",
-        "derivation": "Bio(生物)+Psycho(心理)+Social(社会) → 三个层面共同影响健康",
-        "mnemonic": "为什么有人抽烟不得癌？因为健康不只是生物问题——心态和社会环境都有影响",
-        "example": "The biopsychosocial model takes a holistic approach to health.",
-        "example_zh": "生物心理社会模型采用整体方法来看待健康。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Psychological Disorders",
-    "type": "root",
-    "meaning_en": "major categories of mental disorders and their symptoms",
-    "meaning_zh": "心理障碍：主要的心理疾病类别及其症状。判断标准：偏离常态(deviance)、痛苦(distress)、功能障碍(dysfunction)",
-    "origin": "Unit 5: Mental & Physical Health",
-    "related": [
-      "Stress & Coping",
-      "Treatment Approaches",
-      "Personality Disorders"
-    ],
-    "words": [
-      {
-        "word": "Anxiety Disorders",
-        "breakdown": "Anxiety(焦虑) + Disorders(障碍)",
-        "meaning_en": "excessive fear and worry: GAD, phobias, panic disorder, PTSD",
-        "meaning_zh": "焦虑障碍：过度的恐惧和担忧。广泛性焦虑=什么都担心；恐惧症=特定恐惧；恐慌症=突然的强烈恐惧发作；PTSD=创伤后应激障碍",
-        "derivation": "正常的焦虑是保护性的 → 过度的、持续的、影响生活的焦虑 = 焦虑障碍",
-        "mnemonic": "考试前紧张是正常的；但如果每天每件事都极度焦虑到无法正常生活→焦虑障碍",
-        "example": "Anxiety disorders are the most common type of mental disorder.",
-        "example_zh": "焦虑障碍是最常见的心理障碍类型。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Depression",
-        "breakdown": "De(向下) + Press(压) + -ion",
-        "meaning_en": "persistent sadness, loss of interest, changes in sleep/appetite",
-        "meaning_zh": "抑郁症：持续的悲伤、失去兴趣、睡眠/食欲改变。不是「心情不好」，而是持续两周以上的严重情绪低落+功能受损",
-        "derivation": "De(向下) + Press(压) → 被压到谷底 → 持续的、严重的情绪低落",
-        "mnemonic": "抑郁症≠心情不好。是大脑化学物质（血清素等）失调，需要专业帮助",
-        "example": "Major depression affects approximately 7% of the adult population.",
-        "example_zh": "重度抑郁症影响大约7%的成年人口。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Schizophrenia",
-        "breakdown": "Schizo(分裂) + Phrenia(心智)",
-        "meaning_en": "disorder with delusions, hallucinations, and disorganized thinking",
-        "meaning_zh": "精神分裂症：包括妄想（错误信念）、幻觉（虚假感知）和思维混乱。阳性症状=多出来的（幻觉）；阴性症状=缺少的（情感淡漠）",
-        "derivation": "Schizo(分裂) + Phrenia(心智) → 心智分裂 → 注意：不是「多重人格」！",
-        "mnemonic": "精神分裂症≠人格分裂！是思维和现实的「分裂」——分不清什么是真的什么是假的",
-        "example": "Schizophrenia typically emerges in late adolescence or early adulthood.",
-        "example_zh": "精神分裂症通常在青春期晚期或成年早期出现。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Bipolar Disorder",
-        "breakdown": "Bi(两) + Polar(极) + Disorder(障碍)",
-        "meaning_en": "alternating between manic episodes and depressive episodes",
-        "meaning_zh": "双相情感障碍：在躁狂发作（极度兴奋、精力充沛、冲动）和抑郁发作（极度低落）之间交替。不是普通的「情绪波动」",
-        "derivation": "Bi(两个) + Polar(极端) → 两个极端之间摆动 → 从极度亢奋到极度低落",
-        "mnemonic": "像坐过山车：躁狂=冲到最高点（感觉无所不能）→抑郁=跌到最低点",
-        "example": "Bipolar disorder involves dramatic shifts between mania and depression.",
-        "example_zh": "双相情感障碍涉及躁狂和抑郁之间的剧烈转变。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "ADHD",
-        "breakdown": "Attention-Deficit/Hyperactivity Disorder",
-        "meaning_en": "persistent inattention, hyperactivity, and impulsivity",
-        "meaning_zh": "注意缺陷多动障碍：持续的注意力不集中、多动和冲动。不是「不听话」，是大脑执行功能的发展性障碍",
-        "derivation": "Attention-Deficit(注意缺陷) + Hyperactivity(多动) → 注意力不够+太活跃",
-        "mnemonic": "课堂上坐不住、写作业走神、说话不过脑子——不是故意的，是ADHD",
-        "example": "ADHD is one of the most common neurodevelopmental disorders in children.",
-        "example_zh": "ADHD是儿童中最常见的神经发育障碍之一。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Treatment Approaches",
-    "type": "root",
-    "meaning_en": "methods for treating psychological disorders",
-    "meaning_zh": "治疗方法：治疗心理障碍的方法。包括心理治疗（谈话疗法）和生物医学治疗（药物、脑刺激）",
-    "origin": "Unit 5: Mental & Physical Health",
-    "related": [
-      "Psychological Disorders",
-      "Stress & Coping",
-      "Positive Psychology",
-      "Personality Disorders"
-    ],
-    "words": [
-      {
-        "word": "CBT",
-        "breakdown": "Cognitive-Behavioral Therapy",
-        "meaning_en": "therapy combining cognitive restructuring with behavioral techniques",
-        "meaning_zh": "认知行为疗法：结合认知重构（改变想法）和行为技术（改变行为）。目前最有循证支持的疗法之一",
-        "derivation": "Cognitive(认知=改变想法) + Behavioral(行为=改变行动) → 想法变了，行为就变了",
-        "mnemonic": "「我什么都做不好」→ CBT帮你发现这个想法不对 → 找到证据反驳 → 情绪改善",
-        "example": "CBT is effective for treating depression and anxiety.",
-        "example_zh": "认知行为疗法对治疗抑郁症和焦虑症有效。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Psychoanalysis",
-        "breakdown": "Psycho(心理) + Analysis(分析)",
-        "meaning_en": "Freud's therapy: uncovering unconscious conflicts through free association",
-        "meaning_zh": "精神分析（弗洛伊德）：通过自由联想、梦的解析等方法揭示潜意识冲突。让潜意识变成意识→问题就能解决",
-        "derivation": "Psycho(心理) + Analysis(分析) → 分析你的心理 → 挖掘潜意识中的冲突",
-        "mnemonic": "躺在沙发上，想到什么说什么（自由联想）→ 治疗师帮你找到隐藏的心理问题",
-        "example": "Psychoanalysis aims to bring unconscious conflicts to awareness.",
-        "example_zh": "精神分析旨在将潜意识冲突带到意识层面。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Exposure Therapy",
-        "breakdown": "Exposure(暴露) + Therapy(治疗)",
-        "meaning_en": "gradually exposing patients to feared stimuli to reduce anxiety",
-        "meaning_zh": "暴露疗法：让患者逐渐接触恐惧的事物，从而减少焦虑。基于经典条件反射的消退原理。对恐惧症特别有效",
-        "derivation": "Exposure(暴露/接触) → 反复接触害怕的东西 → 恐惧逐渐消退",
-        "mnemonic": "怕蜘蛛？先看蜘蛛图片→再看真蜘蛛→最后碰蜘蛛——逐步脱敏",
-        "example": "Exposure therapy is highly effective for treating phobias.",
-        "example_zh": "暴露疗法对治疗恐惧症非常有效。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "SSRIs",
-        "breakdown": "Selective Serotonin Reuptake Inhibitors",
-        "meaning_en": "antidepressant medications that increase serotonin levels",
-        "meaning_zh": "选择性血清素再摄取抑制剂：最常用的抗抑郁药。阻止血清素被回收→突触中血清素增多→情绪改善",
-        "derivation": "阻止(Inhibit)血清素(Serotonin)被再摄取(Reuptake) → 让更多血清素留在突触中发挥作用",
-        "mnemonic": "血清素=快乐分子。SSRI=不让快乐分子被回收，让它多待一会儿",
-        "example": "SSRIs like Prozac are commonly prescribed for depression.",
-        "example_zh": "像百忧解这样的SSRI类药物常被用于治疗抑郁症。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Group Therapy",
-        "breakdown": "Group(团体) + Therapy(治疗)",
-        "meaning_en": "therapy conducted with multiple clients simultaneously",
-        "meaning_zh": "团体治疗：多个来访者同时参与的治疗。优点：社会支持、发现「不只是我这样」、学习他人的应对方式、成本更低",
-        "derivation": "Group(团体) + Therapy(治疗) → 在团体中治疗 → 互相支持和学习",
-        "mnemonic": "匿名戒酒会(AA)就是一种团体治疗——「你不是一个人在战斗」",
-        "example": "Group therapy provides social support alongside treatment.",
-        "example_zh": "团体治疗在治疗的同时提供社会支持。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Health Psychology",
-    "type": "root",
-    "meaning_en": "how psychological and behavioral factors affect health and illness",
-    "meaning_zh": "健康心理学：心理和行为因素如何影响健康与疾病。运用生物心理社会模型来理解健康行为、医患关系和疾病预防",
-    "origin": "Unit 5: Mental & Physical Health",
-    "related": [
-      "Stress & Coping",
-      "Positive Psychology"
-    ],
-    "words": [
-      {
-        "word": "Health Behaviors",
-        "breakdown": "Health(健康) + Behaviors(行为)",
-        "meaning_en": "actions that promote or harm health: exercise, diet, sleep, substance use",
-        "meaning_zh": "健康行为：促进或损害健康的行为。运动、均衡饮食、充足睡眠=促进健康；吸烟、酗酒、久坐=损害健康。行为改变模型帮助理解为什么改变很难",
-        "derivation": "Health(健康) + Behavior(行为) → 影响健康的行为 → 知道≠做到（知行差距）",
-        "mnemonic": "每个人都知道要运动、少吃垃圾食品——但为什么做不到？这就是健康心理学研究的问题",
-        "example": "Regular exercise is one of the most impactful health behaviors.",
-        "example_zh": "规律运动是最有影响力的健康行为之一。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Doctor-Patient Communication",
-        "breakdown": "Doctor-Patient(医患) + Communication(沟通)",
-        "meaning_en": "how effective communication improves treatment outcomes and adherence",
-        "meaning_zh": "医患沟通：有效的沟通能提高治疗效果和依从性。好的医患沟通=倾听+解释+共同决策。沟通差→患者不信任→不遵医嘱",
-        "derivation": "Doctor(医生) + Patient(患者) → 双方的互动质量 → 直接影响治疗效果",
-        "mnemonic": "医生说了一堆术语你听不懂→你不敢问→回家不知道怎么吃药——沟通失败的典型案例",
-        "example": "Good doctor-patient communication increases medication adherence.",
-        "example_zh": "良好的医患沟通能提高用药依从性。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Adherence",
-        "breakdown": "Adherence(依从/遵从)",
-        "meaning_en": "the extent to which patients follow medical advice and treatment plans",
-        "meaning_zh": "治疗依从性：患者遵循医嘱和治疗方案的程度。约50%的慢性病患者不按时服药。影响因素：治疗复杂度、副作用、医患关系、信念",
-        "derivation": "Adhere(坚持/遵从) → 坚持执行治疗方案 → 不依从是全球性的医疗难题",
-        "mnemonic": "抗生素吃了两天好了就停药（不依从）→ 细菌没被完全消灭→产生耐药性",
-        "example": "Non-adherence to medication is a major challenge in healthcare.",
-        "example_zh": "不遵从用药是医疗保健中的主要挑战。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Acute vs Chronic Stress",
-        "breakdown": "Acute(急性的) vs Chronic(慢性的) + Stress(压力)",
-        "meaning_en": "short-term stress (adaptive) vs long-term stress (harmful to health)",
-        "meaning_zh": "急性压力vs慢性压力：急性=短期的（考试前紧张→考完就好，可能有益）；慢性=长期持续的（长期工作压力→损害免疫系统、增加疾病风险）",
-        "derivation": "Acute(急性)=来得快去得快；Chronic(慢性)=持续不断地消耗 → 慢性压力才是健康杀手",
-        "mnemonic": "急性压力像短跑冲刺（累但能恢复）；慢性压力像不停跑马拉松（身体迟早崩溃）",
-        "example": "Chronic stress is linked to cardiovascular disease and weakened immunity.",
-        "example_zh": "慢性压力与心血管疾病和免疫力下降有关。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Immune System & Stress",
-        "breakdown": "Immune(免疫的) + System(系统) + Stress(压力)",
-        "meaning_en": "psychoneuroimmunology: how stress suppresses immune function",
-        "meaning_zh": "免疫系统与压力：心理神经免疫学研究压力如何抑制免疫功能。慢性压力→皮质醇持续升高→免疫细胞减少→更容易生病",
-        "derivation": "Psycho(心理)+Neuro(神经)+Immunology(免疫学) → 心理状态通过神经系统影响免疫",
-        "mnemonic": "期末考试周总是容易感冒——因为压力让免疫系统「偷懒」了",
-        "example": "Students often get sick during finals because stress suppresses the immune system.",
-        "example_zh": "学生在期末考试期间经常生病，因为压力抑制了免疫系统。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Positive Psychology",
-    "type": "root",
-    "meaning_en": "scientific study of well-being, strengths, and optimal functioning",
-    "meaning_zh": "积极心理学：对幸福感、优势和最佳功能状态的科学研究。不仅关注治疗心理疾病，更关注如何让正常人活得更好",
-    "origin": "Unit 5: Mental & Physical Health",
-    "related": [
-      "Stress & Coping",
-      "Health Psychology",
-      "Treatment Approaches"
-    ],
-    "words": [
-      {
-        "word": "Gratitude Practice",
-        "breakdown": "Gratitude(感恩) + Practice(练习)",
-        "meaning_en": "deliberately noting things one is thankful for; linked to increased well-being",
-        "meaning_zh": "感恩练习：有意识地记录值得感谢的事物。研究证明：每天写三件感恩的事→幸福感提升、抑郁减少、睡眠改善",
-        "derivation": "Gratitude(感激) + Practice(练习) → 有意识地练习感恩 → 重新训练大脑关注好的事物",
-        "mnemonic": "大脑天生关注「坏事」（负面偏差）→ 感恩练习=有意训练大脑多看「好事」",
-        "example": "Keeping a gratitude journal is associated with improved sleep and mood.",
-        "example_zh": "写感恩日记与改善睡眠和情绪有关。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Flourishing",
-        "breakdown": "Flourishing(蓬勃发展)",
-        "meaning_en": "state of optimal well-being: positive emotions, engagement, meaning, and relationships",
-        "meaning_zh": "蓬勃发展（塞利格曼PERMA模型）：积极情绪(P)+投入(E)+人际关系(R)+意义(M)+成就(A)=完整的幸福",
-        "derivation": "Flourish(繁荣) → 不仅仅是「没有抑郁」→ 而是积极地蓬勃发展",
-        "mnemonic": "不生病≠健康，不抑郁≠幸福。蓬勃发展=不仅没病，还活力满满",
-        "example": "Seligman's PERMA model describes five pillars of flourishing.",
-        "example_zh": "塞利格曼的PERMA模型描述了蓬勃发展的五大支柱。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Post-traumatic Growth",
-        "breakdown": "Post(之后) + Traumatic(创伤的) + Growth(成长)",
-        "meaning_en": "positive personal transformation following a traumatic experience",
-        "meaning_zh": "创伤后成长：经历创伤后产生的积极个人转变。不是所有人都会PTSD——有些人经历磨难后变得更强大、更有同理心、更珍惜生活",
-        "derivation": "Post(之后) + Trauma(创伤) + Growth(成长) → 创伤之后的成长 → 逆境中开出的花",
-        "mnemonic": "「那些杀不死我的，使我更强大」（尼采）→ 创伤后成长的文学表达",
-        "example": "Cancer survivors often report post-traumatic growth in relationships and life priorities.",
-        "example_zh": "癌症幸存者经常报告在人际关系和生活优先事项上的创伤后成长。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Flow",
-        "breakdown": "Flow(心流)",
-        "meaning_en": "Csikszentmihalyi's concept of complete absorption in an optimally challenging task",
-        "meaning_zh": "心流（契克森米哈伊）：完全沉浸在一项最佳挑战的任务中的状态。特征：全神贯注、忘记时间、内在愉悦。任务难度和技能水平匹配时出现",
-        "derivation": "Flow(流动) → 意识像水一样顺畅流动 → 不会太难（焦虑）也不会太简单（无聊）",
-        "mnemonic": "打游戏忘了时间、写代码进入「心流」、运动员的「巅峰状态」——都是心流体验",
-        "example": "Musicians often experience flow during challenging performances.",
-        "example_zh": "音乐家在具有挑战性的演出中经常体验到心流。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Signature Strengths",
-        "breakdown": "Signature(标志性的) + Strengths(优势)",
-        "meaning_en": "top character strengths that define a person; using them boosts well-being",
-        "meaning_zh": "标志性优势：定义一个人的核心品格优势（如创造力、善良、幽默）。在日常生活中运用自己的标志性优势→幸福感和满意度提升",
-        "derivation": "Signature(标志性) + Strength(优势) → 你最突出的品格力量 → 像你的「个人签名」一样独特",
-        "mnemonic": "每个人都有自己的「超能力」——不是人人都要一样好，而是找到并发挥你最擅长的",
-        "example": "Using your signature strengths at work increases job satisfaction.",
-        "example_zh": "在工作中运用你的标志性优势会提高工作满意度。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Personality Disorders",
-    "type": "root",
-    "meaning_en": "enduring patterns of inner experience and behavior that deviate from cultural expectations",
-    "meaning_zh": "人格障碍：持久的内在体验和行为模式，显著偏离文化期望。通常在青春期或成年早期开始，导致痛苦或功能受损",
-    "origin": "Unit 5: Mental & Physical Health",
-    "related": [
-      "Psychological Disorders",
-      "Treatment Approaches",
-      "Social-Cognitive & Trait"
-    ],
-    "words": [
-      {
-        "word": "Antisocial PD",
-        "breakdown": "Anti(反) + Social(社会的) + Personality Disorder(人格障碍)",
-        "meaning_en": "pattern of disregard for and violation of others' rights; lack of empathy and remorse",
-        "meaning_zh": "反社会人格障碍：持续漠视和侵犯他人权利的模式。缺乏同理心和悔恨。不是「不爱社交」，而是不尊重社会规则和他人权利",
-        "derivation": "Anti(反对) + Social(社会) → 反社会 → 不是害羞，而是蔑视社会规范和他人权利",
-        "mnemonic": "反社会≠社恐。社恐=害怕社交；反社会=不在乎伤害别人，没有愧疚感",
-        "example": "Antisocial personality disorder is characterized by a lack of remorse.",
-        "example_zh": "反社会人格障碍的特征是缺乏悔恨。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Borderline PD",
-        "breakdown": "Borderline(边缘的) + Personality Disorder(人格障碍)",
-        "meaning_en": "instability in relationships, self-image, and emotions; fear of abandonment",
-        "meaning_zh": "边缘型人格障碍：人际关系、自我形象和情绪极度不稳定，强烈害怕被抛弃。情绪像坐过山车，对亲近的人忽爱忽恨",
-        "derivation": "Borderline(边缘) → 最初被认为处于神经症和精神病的「边缘」→ 现在指情绪和关系的不稳定",
-        "mnemonic": "情绪像过山车：上一秒觉得你是世界上最好的人，下一秒觉得你在抛弃我——极端的爱恨交替",
-        "example": "Borderline PD often involves intense fear of abandonment.",
-        "example_zh": "边缘型人格障碍通常涉及对被抛弃的强烈恐惧。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Narcissistic PD",
-        "breakdown": "Narcissistic(自恋的) + Personality Disorder(人格障碍)",
-        "meaning_en": "grandiose sense of self-importance, need for admiration, lack of empathy",
-        "meaning_zh": "自恋型人格障碍：夸大自我重要性、需要被崇拜、缺乏同理心。表面自信实际内心脆弱，无法接受批评",
-        "derivation": "Narcissus(纳西索斯)=希腊神话中爱上自己水中倒影的美少年 → 过度自我迷恋",
-        "mnemonic": "纳西索斯看水中的自己看到入迷——自恋型人格就是过度地「爱上自己」",
-        "example": "Narcissistic PD involves a need for constant admiration from others.",
-        "example_zh": "自恋型人格障碍包含对他人持续崇拜的需求。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "OCD",
-        "breakdown": "Obsessive-Compulsive Disorder",
-        "meaning_en": "unwanted repetitive thoughts (obsessions) and behaviors (compulsions)",
-        "meaning_zh": "强迫症：不想要的重复想法（强迫思维）和行为（强迫行为）。如反复洗手、检查门锁。知道不合理但停不下来，造成严重痛苦",
-        "derivation": "Obsession(强迫思维)=闯入性的反复想法；Compulsion(强迫行为)=为减少焦虑而做的重复行为",
-        "mnemonic": "「门锁了吗？」回去检查了→走了两步→「真的锁了吗？」又回去——这就是OCD的折磨",
-        "example": "People with OCD may wash their hands dozens of times a day.",
-        "example_zh": "患有强迫症的人可能一天洗手几十次。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Dissociative Identity Disorder",
-        "breakdown": "Dissociative(解离的) + Identity(身份) + Disorder(障碍)",
-        "meaning_en": "presence of two or more distinct personality states; formerly multiple personality disorder",
-        "meaning_zh": "解离性身份障碍（原称多重人格）：存在两个或更多不同的人格状态。通常与严重的童年创伤有关。争议：是真实的还是被暗示出来的？",
-        "derivation": "Dissociate(分离) + Identity(身份) → 身份被分离成多个 → 不同人格有不同的记忆和行为",
-        "mnemonic": "不是精神分裂症！精神分裂=现实和幻觉分不清；DID=一个人里住着多个「人格」",
-        "example": "DID is rare and often associated with severe childhood trauma.",
-        "example_zh": "解离性身份障碍很罕见，通常与严重的童年创伤有关。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
     "root": "Perception",
     "type": "root",
     "meaning_en": "organizing and interpreting sensory information to give it meaning",
@@ -6095,7 +5680,7 @@
     "related": [
       "Motivation",
       "Chemical Messengers",
-      "Stress & Coping"
+      "Health Psychology"
     ],
     "words": [
       {
@@ -6294,6 +5879,1299 @@
         "mnemonic": "「什么东西让你有情绪」→ 情绪诱发物",
         "example": "Cultural differences shape which events serve as emotion elicitors.",
         "example_zh": "文化差异塑造了哪些事件成为情绪诱发物。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Health Psychology",
+    "type": "root",
+    "meaning_en": "how psychological factors affect physical health, stress, and coping",
+    "meaning_zh": "健康心理学：研究心理因素如何影响身体健康。包括压力反应、应对方式、ACEs对健康的长期影响。是心理学与医学的交叉领域",
+    "origin": "Unit 5: 5.1 Introduction to Health Psychology",
+    "related": [
+      "Positive Psychology",
+      "Emotion",
+      "Psychological Disorders"
+    ],
+    "words": [
+      {
+        "word": "Clinical and Research Psychologists",
+        "breakdown": "Clinical(临床的) + Research(研究) + Psychologists",
+        "meaning_en": "psychologists who treat clients (clinical) or study psychological phenomena (research)",
+        "meaning_zh": "临床与研究心理学家：临床心理学家治疗来访者（心理障碍、困扰），研究心理学家在实验室或田野研究心理现象。角色不同但都有博士学位",
+        "derivation": "心理学两大职业方向 → 治疗 vs 研究",
+        "mnemonic": "「看病的 vs 研究的」→ 临床 vs 研究心理学家",
+        "example": "Clinical psychologists treat patients while research psychologists study behavior.",
+        "example_zh": "临床心理学家治疗患者，研究心理学家研究行为。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Wellness",
+        "breakdown": "Wellness(健康)",
+        "meaning_en": "state of complete physical, mental, and social well-being",
+        "meaning_zh": "健康（宽义）：不只是没有疾病，而是身体、心理和社会层面的完整良好状态。WHO对健康的定义。健康心理学追求的目标",
+        "derivation": "WHO定义的健康 → 身心社会皆良好 → 宽义健康",
+        "mnemonic": "「不只是不病，还要活得好」→ wellness",
+        "example": "Wellness includes physical, mental, and social health.",
+        "example_zh": "宽义健康包括身体、心理和社交健康。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stress",
+        "breakdown": "Stress(压力)",
+        "meaning_en": "physical and psychological response to challenging or threatening events",
+        "meaning_zh": "压力：对具有挑战性或威胁性事件的身心反应。塞利不是「压力大」这个口语，而是一个可测量的生理-心理反应系统。长期压力会损害健康",
+        "derivation": "应对需求 > 资源 → 压力反应 → 身心激活",
+        "mnemonic": "「事情超出能力」→ 压力",
+        "example": "Chronic stress contributes to physical and mental illness.",
+        "example_zh": "慢性压力导致身体和精神疾病。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hypertension",
+        "breakdown": "Hyper(过) + tension(张力)",
+        "meaning_en": "chronically high blood pressure, often linked to stress",
+        "meaning_zh": "高血压：慢性血压升高。是压力对身体的典型影响之一，长期压力让血压居高不下，增加心血管疾病风险",
+        "derivation": "Hyper(过) + tension(张力) → 血管张力过高 → 高血压",
+        "mnemonic": "「压力越大，血压越高」→ hypertension",
+        "example": "Stress can contribute to hypertension over time.",
+        "example_zh": "压力会在长期导致高血压。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stress Headaches",
+        "breakdown": "Stress + Headaches(头痛)",
+        "meaning_en": "headaches caused or worsened by psychological stress",
+        "meaning_zh": "压力性头痛：由心理压力引起或加重的头痛。肌肉紧张型头痛和偏头痛都可能由压力诱发。是压力最常见的身体症状之一",
+        "derivation": "压力 → 肌肉紧张或血管变化 → 头痛",
+        "mnemonic": "「一紧张就头痛」→ 压力性头痛",
+        "example": "Many people experience stress-induced headaches during exams.",
+        "example_zh": "许多人在考试期间会出现压力性头痛。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Immune Suppression",
+        "breakdown": "Immune(免疫) + Suppression(抑制)",
+        "meaning_en": "weakening of the immune system, often due to chronic stress",
+        "meaning_zh": "免疫抑制：免疫系统功能降低。长期压力通过皮质醇抑制免疫系统，让人更容易感冒、感染甚至患癌。是心理-免疫学（PNI）的核心发现",
+        "derivation": "慢性压力 → 皮质醇升高 → 抑制免疫细胞 → 免疫抑制",
+        "mnemonic": "「压力大就容易感冒」→ 免疫抑制",
+        "example": "Chronic stress causes immune suppression, increasing illness risk.",
+        "example_zh": "慢性压力导致免疫抑制，增加患病风险。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Eustress",
+        "breakdown": "Eu(好的) + stress",
+        "meaning_en": "positive, motivating stress from exciting challenges",
+        "meaning_zh": "良性压力：积极的、激励性的压力。来自让人兴奋的挑战（比赛、新工作、重要演讲）。适度的良性压力能提升表现，与表现下降的「痛苦压力」相对",
+        "derivation": "Eu(好的)+stress → 好的压力 → 良性压力",
+        "mnemonic": "「紧张但兴奋」→ eustress → 良性压力",
+        "example": "Starting a new job can be eustress—challenging but exciting.",
+        "example_zh": "开始新工作可能是良性压力——有挑战但令人兴奋。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Distress",
+        "breakdown": "Dis(坏的) + stress",
+        "meaning_en": "negative, harmful stress that impairs functioning",
+        "meaning_zh": "痛苦压力：负面的、有害的压力。损害表现和健康。与良性压力相对。慢性的痛苦压力是许多心理和身体疾病的风险因素",
+        "derivation": "Dis(坏)+stress → 坏的压力 → 痛苦压力",
+        "mnemonic": "「痛苦的紧张」→ distress",
+        "example": "Chronic distress can lead to burnout.",
+        "example_zh": "慢性痛苦压力会导致倦怠。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "ACEs",
+        "breakdown": "Adverse(不良) + Childhood + Experiences",
+        "meaning_en": "Adverse Childhood Experiences: trauma exposure in childhood linked to adult health problems",
+        "meaning_zh": "童年不良经历（ACEs）：童年期经历的创伤（虐待、忽视、家庭功能失调）。ACE得分越高，成年后身体和心理健康问题的风险越高。是发展与健康心理学的重要研究发现",
+        "derivation": "童年创伤 → 生理、心理长期影响 → 成人健康问题",
+        "mnemonic": "「童年的伤害影响一辈子」→ ACEs",
+        "example": "Higher ACE scores predict worse adult health outcomes.",
+        "example_zh": "较高的ACE得分预示着更差的成人健康结果。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stress Reactions",
+        "breakdown": "Stress + Reactions",
+        "meaning_en": "body's physiological and behavioral responses to a stressor",
+        "meaning_zh": "压力反应：身体对压力源的生理和行为反应。包括心跳加速、肌肉紧张、专注力变化等。塞利的GAS模型描述了反应随时间的典型变化",
+        "derivation": "压力源 → 激活身体系统 → 反应模式",
+        "mnemonic": "「身体对压力的反应链」→ 压力反应",
+        "example": "Common stress reactions include tension and difficulty sleeping.",
+        "example_zh": "常见的压力反应包括紧张和睡眠困难。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "General Adaptation Syndrome",
+        "breakdown": "General + Adaptation + Syndrome (GAS)",
+        "meaning_en": "Selye's three-stage stress response: alarm, resistance, exhaustion",
+        "meaning_zh": "一般适应综合征（GAS，塞利）：压力反应的三阶段模型——警觉期（战逃激活）、抗拒期（身体动员长期应对）、衰竭期（资源耗尽、健康崩溃）。是压力研究的经典框架",
+        "derivation": "塞利研究 → 压力反应的三阶段 → GAS",
+        "mnemonic": "「警觉→抗拒→衰竭」→ GAS三阶段",
+        "example": "The GAS model shows how prolonged stress leads to exhaustion.",
+        "example_zh": "GAS模型展示了长期压力如何导致衰竭。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fight-or-Flight Response",
+        "breakdown": "Fight(战) + Flight(逃)",
+        "meaning_en": "sympathetic nervous system activation preparing the body to confront or escape threats",
+        "meaning_zh": "战逃反应：面对威胁时交感神经系统激活，让身体准备对抗或逃跑。心跳加速、瞳孔放大、肾上腺素升高。坎农提出，是最古老的压力反应概念",
+        "derivation": "坎农提出 → 感知威胁 → 交感神经激活 → 战或逃",
+        "mnemonic": "「打还是逃」→ 战逃反应",
+        "example": "The fight-or-flight response prepares the body for emergency action.",
+        "example_zh": "战逃反应为紧急行动准备身体。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Tend-and-Befriend Theory",
+        "breakdown": "Tend(照顾) + Befriend(结交)",
+        "meaning_en": "Taylor's theory that women often respond to stress by nurturing and seeking social support",
+        "meaning_zh": "照顾与结交理论（泰勒）：对传统战逃反应的补充。在压力下，女性更常通过照顾他人（特别是孩子）和寻求社交支持来应对，而非对抗或逃跑。有进化依据",
+        "derivation": "泰勒发现 → 战逃理论的性别局限 → 加上照顾-结交反应",
+        "mnemonic": "「战逃」之外 →「照顾+结交」→ 泰勒理论",
+        "example": "Tend-and-befriend theory highlights nurturing as a stress response.",
+        "example_zh": "照顾与结交理论强调照顾是一种压力反应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Problem-Focused Coping",
+        "breakdown": "Problem(问题) + Focused + Coping",
+        "meaning_en": "actively addressing the source of stress to solve or change it",
+        "meaning_zh": "问题聚焦应对：主动采取行动解决或改变压力源。列清单、找方法、寻求建议。在可控情境下最有效——能改变的问题用问题聚焦",
+        "derivation": "拉扎鲁斯提出 → 可控情境下的应对策略 → 问题聚焦",
+        "mnemonic": "「解决问题」→ 问题聚焦应对",
+        "example": "Making a study plan is problem-focused coping with exam stress.",
+        "example_zh": "制定学习计划是对考试压力的问题聚焦应对。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Emotion-Focused Coping",
+        "breakdown": "Emotion + Focused + Coping",
+        "meaning_en": "managing emotional responses rather than changing the stressor",
+        "meaning_zh": "情绪聚焦应对：处理对压力源的情绪反应，而非改变压力源本身。冥想、寻求情感支持、调整认知。在不可控情境下最有效——改变不了的事用情绪聚焦",
+        "derivation": "拉扎鲁斯提出 → 不可控情境下的应对 → 情绪聚焦",
+        "mnemonic": "「改变自己的情绪」→ 情绪聚焦应对",
+        "example": "Meditation can be emotion-focused coping with chronic pain.",
+        "example_zh": "冥想可以是对慢性疼痛的情绪聚焦应对。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Positive Psychology",
+    "type": "root",
+    "meaning_en": "study of well-being, strengths, and what makes life meaningful",
+    "meaning_zh": "积极心理学：研究幸福感、优势和让生活有意义的因素。塞利格曼在1998年发起，反对传统心理学只关注疾病和问题的倾向，强调人类繁荣",
+    "origin": "Unit 5: 5.2 Positive Psychology",
+    "related": [
+      "Health Psychology",
+      "Emotion",
+      "Social-Cognitive & Trait"
+    ],
+    "words": [
+      {
+        "word": "Positive Psychology",
+        "breakdown": "Positive(积极的) + Psychology",
+        "meaning_en": "Seligman's scientific study of optimal human functioning and well-being",
+        "meaning_zh": "积极心理学：塞利格曼发起的分支，科学研究人类最佳功能和幸福。从「修理问题」转向「构建优势」的范式转变。三个支柱：积极情绪、积极特质、积极机构",
+        "derivation": "塞利格曼1998发起 → 转向研究繁荣 → 积极心理学",
+        "mnemonic": "「不只修问题，还要建优势」→ 积极心理学",
+        "example": "Positive psychology studies what makes life worth living.",
+        "example_zh": "积极心理学研究什么让生活值得过。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Well-Being",
+        "breakdown": "Well-Being(幸福感)",
+        "meaning_en": "overall state of happiness, satisfaction, and flourishing",
+        "meaning_zh": "幸福感：整体的快乐、满足和繁荣状态。积极心理学的核心研究对象。包括享乐的（快乐体验）和意义的（值得的生活）两个维度",
+        "derivation": "积极心理学的核心研究对象 → 整体的好状态 → 幸福感",
+        "mnemonic": "「整体活得好」→ 幸福感",
+        "example": "Well-being depends on more than just positive emotions.",
+        "example_zh": "幸福感不只取决于积极情绪。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Resilience",
+        "breakdown": "Resilience(韧性)",
+        "meaning_en": "ability to recover from adversity and bounce back from setbacks",
+        "meaning_zh": "心理韧性：从逆境中恢复、从挫折中反弹的能力。不是没有困难，而是能有效应对。可以通过社会支持、乐观解释风格、意义感培养",
+        "derivation": "遇到困难 → 恢复和反弹 → 心理韧性",
+        "mnemonic": "「跌倒了能爬起来」→ 心理韧性",
+        "example": "Resilience helps people recover from trauma.",
+        "example_zh": "心理韧性帮助人们从创伤中恢复。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Positive Emotions",
+        "breakdown": "Positive + Emotions",
+        "meaning_en": "pleasant feelings like joy, gratitude, love, and interest",
+        "meaning_zh": "积极情绪：愉悦的情绪，如喜悦、感激、爱、兴趣。弗雷德里克森的广泛建构理论认为，积极情绪不只是感觉好，还能扩展思维并建立长期资源",
+        "derivation": "弗雷德里克森研究 → 积极情绪的功能 → 超越感觉好",
+        "mnemonic": "「好的感觉」→ 积极情绪 → 有长期价值",
+        "example": "Positive emotions broaden thinking and build resources.",
+        "example_zh": "积极情绪扩展思维并建立资源。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gratitude",
+        "breakdown": "Gratitude(感激)",
+        "meaning_en": "appreciation for benefits received, linked to well-being",
+        "meaning_zh": "感激：对得到的好处的感谢感受。感激练习（感激日记）被证明能显著提升幸福感，是最有效的积极心理学干预之一",
+        "derivation": "注意到好事 → 感激 → 提升幸福感",
+        "mnemonic": "「数数自己拥有的」→ 感激 → 最有效的干预",
+        "example": "Gratitude journaling can improve well-being.",
+        "example_zh": "感激日记能改善幸福感。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Character Strengths",
+        "breakdown": "Character(性格) + Strengths(优势)",
+        "meaning_en": "positive traits that reflect one's core character",
+        "meaning_zh": "性格优势：反映一个人核心品格的积极特质。Peterson和塞利格曼建立了24种普适性格优势的分类系统（VIA），归于6大美德之下",
+        "derivation": "积极心理学的「人格手册」→ 24种优势 → 性格优势",
+        "mnemonic": "「你最好的几面」→ 性格优势",
+        "example": "Identifying your top character strengths can boost well-being.",
+        "example_zh": "识别你的顶尖性格优势能提升幸福感。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Six Virtues",
+        "breakdown": "Six + Virtues(美德)",
+        "meaning_en": "wisdom, courage, humanity, justice, temperance, transcendence",
+        "meaning_zh": "六大美德：Peterson和塞利格曼跨文化研究识别的六个普适美德类别——智慧、勇气、仁爱、正义、节制、超越。每个美德下有4-5个具体的性格优势",
+        "derivation": "跨文化分析宗教和哲学传统 → 发现共通美德 → 六大美德",
+        "mnemonic": "「智勇仁义节越」→ 六大美德",
+        "example": "The six virtues appear across cultures and religions.",
+        "example_zh": "六大美德跨文化和宗教都存在。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Post-Traumatic Growth",
+        "breakdown": "Post(之后) + Traumatic + Growth",
+        "meaning_en": "positive psychological change after a traumatic event",
+        "meaning_zh": "创伤后成长：经历创伤事件后的积极心理变化。不只是恢复到原点，而是在生命意义、人际关系、个人力量等方面有新的提升。与PTSD相对的方向",
+        "derivation": "创伤 → 重建世界观 → 可能产生正向改变 → 创伤后成长",
+        "mnemonic": "「经历创伤反而变更好」→ 创伤后成长",
+        "example": "Some survivors report post-traumatic growth after serious illness.",
+        "example_zh": "一些幸存者在严重疾病后报告创伤后成长。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Classifying Disorders",
+    "type": "root",
+    "meaning_en": "how psychological disorders are defined, classified, and explained",
+    "meaning_zh": "心理障碍的解释与分类：如何定义一个行为是否为心理障碍，各个理论视角如何解释障碍的成因，以及诊断系统（DSM、ICD）如何分类它们",
+    "origin": "Unit 5: 5.3 Explaining and Classifying Psychological Disorders",
+    "related": [
+      "Psychological Disorders",
+      "Treatment Approaches",
+      "Health Psychology"
+    ],
+    "words": [
+      {
+        "word": "Dysfunction",
+        "breakdown": "Dys(异常) + function(功能)",
+        "meaning_en": "behavior that interferes with daily functioning",
+        "meaning_zh": "功能失调：行为或情绪干扰日常生活（工作、学习、人际关系）。是心理障碍定义的三个核心标准之一——只是不寻常还不够，必须影响功能",
+        "derivation": "Dys(异常)+function → 功能异常 → 干扰日常生活",
+        "mnemonic": "「影响正常生活」→ 功能失调",
+        "example": "Dysfunction means a behavior disrupts daily life.",
+        "example_zh": "功能失调意味着行为扰乱日常生活。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Distress (Disorder)",
+        "breakdown": "Distress(痛苦)",
+        "meaning_en": "subjective suffering that signals a disorder may be present",
+        "meaning_zh": "痛苦（诊断标准）：主观感受到的痛苦或困扰。心理障碍的另一个核心标准。注意：没有痛苦不代表没有障碍（反社会人格可能不觉痛苦但仍是障碍）",
+        "derivation": "内心的主观痛苦 → 诊断的一个标准 → 但不是必需",
+        "mnemonic": "「主观的难受」→ 痛苦 → 诊断线索",
+        "example": "Distress is one criterion for diagnosing a psychological disorder.",
+        "example_zh": "痛苦是诊断心理障碍的一个标准。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Deviation from Social Norm",
+        "breakdown": "Deviation(偏离) + Social Norm",
+        "meaning_en": "behavior that differs significantly from cultural expectations",
+        "meaning_zh": "偏离社会规范：行为与文化规范有显著差异。是心理障碍的第三个标准，但需谨慎——不同文化的规范不同，曾经被当作障碍的（如同性恋）后来被移出DSM",
+        "derivation": "行为 vs 文化规范 → 明显不同 → 偏离社会规范",
+        "mnemonic": "「和别人都不一样」→ 偏离社会规范 → 诊断标准",
+        "example": "Deviation from social norms is one way to define abnormality.",
+        "example_zh": "偏离社会规范是定义异常的一种方式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Diagnosis",
+        "breakdown": "Dia(通过) + gnosis(认知)",
+        "meaning_en": "identification of a disorder based on symptoms and criteria",
+        "meaning_zh": "诊断：基于症状和标准识别某种障碍。通过面谈、观察、测验等方式做出。DSM或ICD是诊断的标准参考",
+        "derivation": "Dia(通过)+gnosis(认识) → 通过观察认识 → 诊断",
+        "mnemonic": "「识别是什么问题」→ 诊断",
+        "example": "Accurate diagnosis guides effective treatment.",
+        "example_zh": "准确的诊断指导有效的治疗。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stigma",
+        "breakdown": "Stigma(污名)",
+        "meaning_en": "negative social judgment attached to a disorder",
+        "meaning_zh": "污名：对心理障碍患者的负面社会评价和偏见。阻碍求助、加重痛苦，是心理健康领域最大的社会障碍之一。「精神病」的标签本身就有污名",
+        "derivation": "对障碍的负面偏见 → 患者被排斥 → 污名",
+        "mnemonic": "「有心理问题就是坏的」→ 污名 → 错误的",
+        "example": "Stigma prevents many people from seeking mental health care.",
+        "example_zh": "污名阻止了许多人寻求心理健康服务。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "DSM",
+        "breakdown": "Diagnostic + Statistical + Manual",
+        "meaning_en": "Diagnostic and Statistical Manual of Mental Disorders (APA's classification system)",
+        "meaning_zh": "精神疾病诊断与统计手册（DSM）：美国精神医学会出版的诊断标准。当前版本DSM-5-TR（2022）。北美的心理健康诊断标准，定期更新以反映研究进展",
+        "derivation": "APA编写 → 诊断标准的「圣经」→ DSM",
+        "mnemonic": "「诊断手册」→ DSM → 美国标准",
+        "example": "The DSM-5 is the current standard for psychiatric diagnosis in the U.S.",
+        "example_zh": "DSM-5是美国当前的精神病诊断标准。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "ICD",
+        "breakdown": "International + Classification + Diseases",
+        "meaning_en": "International Classification of Diseases (WHO's global classification)",
+        "meaning_zh": "国际疾病分类（ICD）：WHO出版的全球疾病分类系统，包括心理疾病。当前版本ICD-11（2022）。全球使用，与DSM大部分诊断对齐但有些区别",
+        "derivation": "WHO出版 → 国际标准 → ICD",
+        "mnemonic": "「全球通用的疾病分类」→ ICD",
+        "example": "The ICD is used globally for disease classification.",
+        "example_zh": "ICD在全球范围内用于疾病分类。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Eclectic Approach",
+        "breakdown": "Eclectic(折衷的) + Approach",
+        "meaning_en": "using methods from multiple theoretical perspectives",
+        "meaning_zh": "折衷取向：从多个理论视角和疗法中选择适合的方法。不固守一派。现代心理治疗师大多采用折衷取向——根据来访者的具体情况选择最合适的技术",
+        "derivation": "不单一使用 → 综合多种方法 → 折衷取向",
+        "mnemonic": "「多派方法都用」→ 折衷取向",
+        "example": "Most modern therapists use an eclectic approach.",
+        "example_zh": "大多数现代治疗师使用折衷取向。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Behavioral Perspective on Disorders",
+        "breakdown": "Behavioral + Perspective",
+        "meaning_en": "view that disorders are learned through conditioning and can be unlearned",
+        "meaning_zh": "行为主义视角：心理障碍是通过条件反射学习的不适应行为。恐惧症是习得的（经典条件反射），强迫行为是被强化的（操作性条件反射）。治疗通过再学习",
+        "derivation": "障碍是学来的 → 也可以通过学习解除 → 行为主义视角",
+        "mnemonic": "「学来的不适应行为」→ 行为主义视角",
+        "example": "The behavioral perspective sees phobias as conditioned responses.",
+        "example_zh": "行为主义视角把恐惧症看作条件反射。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cognitive Perspective",
+        "breakdown": "Cognitive + Perspective",
+        "meaning_en": "view that disorders stem from maladaptive thoughts and beliefs",
+        "meaning_zh": "认知视角：心理障碍源于不适应的思维模式和信念。抑郁的人有「认知三联征」——对自己、世界、未来的负面看法。贝克和艾利斯是代表",
+        "derivation": "认知革命 → 不适应思维导致障碍 → 认知视角",
+        "mnemonic": "「想法出了问题」→ 认知视角",
+        "example": "The cognitive perspective targets distorted thinking in therapy.",
+        "example_zh": "认知视角在治疗中针对扭曲的思维。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sociocultural Perspective",
+        "breakdown": "Socio(社会) + cultural + Perspective",
+        "meaning_en": "view that disorders arise from social and cultural contexts",
+        "meaning_zh": "社会文化视角：心理障碍产生于社会和文化背景。贫困、歧视、文化冲突都可能导致障碍。同一行为在不同文化可能被视为正常或异常",
+        "derivation": "社会和文化因素 → 塑造障碍的发生 → 社会文化视角",
+        "mnemonic": "「环境和文化的作用」→ 社会文化视角",
+        "example": "The sociocultural perspective highlights cultural context in mental illness.",
+        "example_zh": "社会文化视角强调精神疾病中的文化背景。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Biological Perspective",
+        "breakdown": "Biological + Perspective",
+        "meaning_en": "view that disorders result from genetic, neurochemical, or brain abnormalities",
+        "meaning_zh": "生物学视角：心理障碍源于遗传、神经化学或脑结构异常。抑郁可能涉及血清素水平，精神分裂症涉及多巴胺。治疗包括药物和生物干预",
+        "derivation": "障碍的身体基础 → 基因、神经化学、脑结构 → 生物学视角",
+        "mnemonic": "「身体原因」→ 生物学视角",
+        "example": "The biological perspective explains depression as a neurochemical imbalance.",
+        "example_zh": "生物学视角把抑郁解释为神经化学失衡。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Biopsychosocial Model",
+        "breakdown": "Bio + Psycho + Social + Model",
+        "meaning_en": "integrative model combining biological, psychological, and social factors",
+        "meaning_zh": "生物-心理-社会模型：综合三个层面解释心理障碍的整合模型。恩格尔1977年提出。现代心理健康的主流观点——没有一个单一原因，障碍是多层次互动的结果",
+        "derivation": "单一视角不够 → 三个层次整合 → 生物-心理-社会",
+        "mnemonic": "「三方面都考虑」→ 生物-心理-社会模型",
+        "example": "The biopsychosocial model provides a holistic view of mental illness.",
+        "example_zh": "生物-心理-社会模型提供了对精神疾病的整体看法。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Diathesis-Stress Model",
+        "breakdown": "Diathesis(素质) + Stress + Model",
+        "meaning_en": "disorders emerge from interaction between genetic vulnerability and stressful events",
+        "meaning_zh": "素质-压力模型：心理障碍源于先天易感性（diathesis）和后天压力事件的相互作用。只有易感性或只有压力都不够，两者共同作用才产生障碍。解释为什么同样的压力只有部分人发病",
+        "derivation": "先天易感 + 后天压力 → 障碍 → 素质-压力模型",
+        "mnemonic": "「基因装弹，环境扣扳机」→ 素质-压力模型",
+        "example": "The diathesis-stress model explains why only some people develop disorders under stress.",
+        "example_zh": "素质-压力模型解释了为什么只有部分人在压力下发展出障碍。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Psychological Disorders",
+    "type": "root",
+    "meaning_en": "major categories of mental disorders defined by the DSM",
+    "meaning_zh": "主要心理障碍类别：DSM定义的主要心理障碍类型，包括神经发育障碍、精神分裂症谱系、抑郁、双相、焦虑、强迫、分离、创伤、进食等障碍",
+    "origin": "Unit 5: 5.4 Selection of Categories of Psychological Disorders",
+    "related": [
+      "Classifying Disorders",
+      "Personality Disorders",
+      "Treatment Approaches"
+    ],
+    "words": [
+      {
+        "word": "Neurodevelopmental Disorders",
+        "breakdown": "Neuro(神经) + developmental + Disorders",
+        "meaning_en": "disorders originating in the developmental period that affect brain development",
+        "meaning_zh": "神经发育障碍：在发育期出现、影响脑发育的障碍。包括ADHD、自闭症谱系、智力障碍、学习障碍等。通常在儿童期被识别，但会持续影响成年生活",
+        "derivation": "发育期 + 脑发育受影响 → 神经发育障碍",
+        "mnemonic": "「从小就有的发育问题」→ 神经发育障碍",
+        "example": "Autism and ADHD are neurodevelopmental disorders.",
+        "example_zh": "自闭症和ADHD是神经发育障碍。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "ADHD",
+        "breakdown": "Attention-Deficit + Hyperactivity + Disorder",
+        "meaning_en": "disorder marked by inattention, hyperactivity, and impulsivity",
+        "meaning_zh": "注意缺陷多动障碍（ADHD）：以持续的注意力缺陷、多动和冲动为特征的神经发育障碍。在儿童期诊断，约半数持续到成年。兴奋剂类药物（如哌甲酯）是常见治疗",
+        "derivation": "注意力不集中+多动+冲动 → ADHD",
+        "mnemonic": "「坐不住+走神」→ ADHD",
+        "example": "ADHD affects concentration and impulse control.",
+        "example_zh": "ADHD影响专注力和冲动控制。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Autism Spectrum Disorder",
+        "breakdown": "Autism(自闭症) + Spectrum(谱系)",
+        "meaning_en": "disorder marked by social communication difficulties and restricted behaviors",
+        "meaning_zh": "自闭症谱系障碍（ASD）：以社交沟通困难和重复性、受限行为为特征的神经发育障碍。「谱系」强调症状严重程度差异很大——从需要大量支持到能独立生活",
+        "derivation": "从轻到重的连续谱 → 统一为谱系障碍 → ASD",
+        "mnemonic": "「谱系」→ 从轻到重的差异 → 自闭症谱系",
+        "example": "Autism spectrum disorder varies widely in severity.",
+        "example_zh": "自闭症谱系障碍的严重程度差异很大。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Schizophrenia Spectrum",
+        "breakdown": "Schizo(分裂) + phrenia(心智) + Spectrum",
+        "meaning_en": "group of disorders marked by psychotic symptoms like delusions and hallucinations",
+        "meaning_zh": "精神分裂症谱系：以精神病性症状（妄想、幻觉、思维紊乱）为特征的一组障碍。通常在青年期发病，是最严重的心理障碍之一。有强烈的遗传成分",
+        "derivation": "「心智分裂」→ 不是人格分裂，而是现实检验失败 → 精神分裂",
+        "mnemonic": "「现实感破裂」→ 精神分裂症 → 不是多重人格",
+        "example": "Schizophrenia spectrum disorders involve psychotic symptoms.",
+        "example_zh": "精神分裂症谱系障碍涉及精神病性症状。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Delusions",
+        "breakdown": "Delusions(妄想)",
+        "meaning_en": "false beliefs maintained despite contradictory evidence",
+        "meaning_zh": "妄想：与现实不符、即使有相反证据也坚信不疑的信念。精神分裂症的典型阳性症状。常见类型：被害妄想、夸大妄想、关系妄想",
+        "derivation": "错误信念 + 坚信不疑 → 妄想",
+        "mnemonic": "「错误但坚信」→ 妄想",
+        "example": "Paranoid delusions are common in schizophrenia.",
+        "example_zh": "被害妄想在精神分裂症中很常见。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hallucinations",
+        "breakdown": "Hallucinations(幻觉)",
+        "meaning_en": "perceptual experiences without external stimuli",
+        "meaning_zh": "幻觉：没有外界刺激却产生的感知体验。精神分裂症最常见的是幻听——「听到别人没听到的声音」。也可以是幻视、幻触、幻嗅",
+        "derivation": "没有刺激的感知 → 幻觉",
+        "mnemonic": "「看到/听到不存在的」→ 幻觉",
+        "example": "Auditory hallucinations are common in schizophrenia.",
+        "example_zh": "幻听在精神分裂症中很常见。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Disorganized Thinking",
+        "breakdown": "Disorganized(紊乱的) + Thinking",
+        "meaning_en": "fragmented speech and thoughts that don't follow logical connections",
+        "meaning_zh": "思维紊乱：言语和思维破碎、缺乏逻辑联系。精神分裂症的症状之一。表现为说话跳跃、答非所问、语无伦次",
+        "derivation": "思维碎片化 → 紊乱的言语 → 思维紊乱",
+        "mnemonic": "「说话没逻辑」→ 思维紊乱",
+        "example": "Disorganized thinking leads to incoherent speech.",
+        "example_zh": "思维紊乱导致语无伦次。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Word Salad",
+        "breakdown": "Word(词) + Salad(沙拉)",
+        "meaning_en": "incoherent mixture of words that makes no sense",
+        "meaning_zh": "词语沙拉：完全不连贯的词语混合，没有意义。思维紊乱的极端形式。句子结构正常但词与词之间没有联系——就像「打乱的沙拉」",
+        "derivation": "词语像沙拉一样混杂 → 无意义组合 → 词语沙拉",
+        "mnemonic": "「词被打乱像沙拉」→ 词语沙拉",
+        "example": "Word salad is an extreme symptom of disorganized thinking.",
+        "example_zh": "词语沙拉是思维紊乱的极端症状。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Catatonia",
+        "breakdown": "Catatonia(紧张症)",
+        "meaning_en": "extreme motor disturbance, from immobility to excessive movement",
+        "meaning_zh": "紧张症：极端的运动障碍，从完全不动（木僵）到过度、无目的的运动。精神分裂症的一种表现。可能长时间保持怪异姿势（蜡样屈曲）",
+        "derivation": "运动系统极端异常 → 紧张症",
+        "mnemonic": "「要么不动要么乱动」→ 紧张症",
+        "example": "Catatonia can involve prolonged immobility.",
+        "example_zh": "紧张症可能涉及长时间不动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Negative Symptoms",
+        "breakdown": "Negative(阴性) + Symptoms",
+        "meaning_en": "reductions in normal functioning, like flat affect and social withdrawal",
+        "meaning_zh": "阴性症状：正常功能的减退——情感平淡、言语贫乏、社交退缩、动力丧失。精神分裂症的阴性症状。「阴性」不是负面，而是「缺失」——缺少正常功能",
+        "derivation": "正常功能的「减法」→ 阴性症状",
+        "mnemonic": "「少了什么」→ 阴性症状 → 比阳性更难治",
+        "example": "Negative symptoms include reduced emotional expression.",
+        "example_zh": "阴性症状包括情感表达减少。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Positive Symptoms",
+        "breakdown": "Positive(阳性) + Symptoms",
+        "meaning_en": "added experiences not present in healthy people, like hallucinations and delusions",
+        "meaning_zh": "阳性症状：在正常人身上没有的「多出来」的体验——幻觉、妄想、思维紊乱、怪异行为。「阳性」不是好的意思，而是「增加」——额外出现的异常",
+        "derivation": "「加法」→ 多出来的症状 → 阳性症状",
+        "mnemonic": "「多出来的」→ 阳性症状 → 抗精神病药主要治这个",
+        "example": "Hallucinations and delusions are positive symptoms.",
+        "example_zh": "幻觉和妄想是阳性症状。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Flat Affect",
+        "breakdown": "Flat(平的) + Affect(情感)",
+        "meaning_en": "significantly reduced emotional expression",
+        "meaning_zh": "情感平淡：情绪表达显著减少——面部表情少、语调单调、缺乏情绪反应。精神分裂症的阴性症状之一，也见于严重抑郁",
+        "derivation": "情感表达「压扁」→ 情感平淡",
+        "mnemonic": "「面无表情」→ 情感平淡",
+        "example": "Flat affect is a negative symptom of schizophrenia.",
+        "example_zh": "情感平淡是精神分裂症的阴性症状。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Major Depressive Disorder",
+        "breakdown": "Major(严重) + Depressive + Disorder",
+        "meaning_en": "disorder with persistent low mood, loss of interest, and related symptoms",
+        "meaning_zh": "重性抑郁障碍（MDD）：以持续两周以上的低落情绪或兴趣丧失为核心，加上睡眠、食欲、精力、专注力、自我价值感、甚至自杀意念的症状群。最常见的心境障碍",
+        "derivation": "持续 + 严重 + 多症状 → 重性抑郁障碍",
+        "mnemonic": "「不只是难过，是整体崩溃」→ 重性抑郁",
+        "example": "Major depressive disorder is diagnosed with at least 2 weeks of symptoms.",
+        "example_zh": "重性抑郁障碍需要至少两周的症状才能诊断。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Persistent Depressive Disorder",
+        "breakdown": "Persistent(持续的) + Depressive + Disorder",
+        "meaning_en": "chronic low-grade depression lasting 2+ years",
+        "meaning_zh": "持续性抑郁障碍（恶劣心境）：较轻但持续至少两年的抑郁。没有MDD那么严重，但时间更长——有时被描述为「性格中的悲观底色」",
+        "derivation": "长期 + 轻度 → 持续性抑郁 → 旧称恶劣心境",
+        "mnemonic": "「低度但长期」→ 持续性抑郁",
+        "example": "Persistent depressive disorder is less severe but longer-lasting.",
+        "example_zh": "持续性抑郁障碍较轻但持续时间更长。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Bipolar Disorders",
+        "breakdown": "Bi(两) + polar(极) + Disorders",
+        "meaning_en": "disorders with alternating periods of mania and depression",
+        "meaning_zh": "双相障碍：抑郁期和躁狂/轻躁狂期交替的心境障碍。以前称「躁郁症」。分双相I型（有完整躁狂）和双相II型（只有轻躁狂）",
+        "derivation": "两个极端 → 抑郁 vs 躁狂 → 双相",
+        "mnemonic": "「情绪两极跳跃」→ 双相障碍",
+        "example": "Bipolar disorder involves alternating manic and depressive episodes.",
+        "example_zh": "双相障碍涉及躁狂和抑郁的交替发作。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mania",
+        "breakdown": "Mania(躁狂)",
+        "meaning_en": "elevated, expansive mood with increased energy and risky behavior",
+        "meaning_zh": "躁狂：情绪异常高涨或易激惹、精力过剩、睡眠需求减少、言语增多、判断力下降、冒险行为增加。持续一周以上。可能产生精神病性症状",
+        "derivation": "情绪极端高涨 + 行为失控 → 躁狂",
+        "mnemonic": "「嗨过头了」→ 躁狂",
+        "example": "Mania includes decreased need for sleep and impulsive spending.",
+        "example_zh": "躁狂包括睡眠需求减少和冲动消费。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Specific Phobia",
+        "breakdown": "Specific(特定的) + Phobia(恐惧症)",
+        "meaning_en": "intense fear of a specific object or situation",
+        "meaning_zh": "特定恐惧症：对特定物体或情境的强烈、非理性恐惧——蜘蛛、高度、飞行、针头等。治疗最有效的焦虑障碍——暴露疗法成功率很高",
+        "derivation": "对具体对象的极端恐惧 → 特定恐惧症",
+        "mnemonic": "「怕一个具体的东西」→ 特定恐惧症",
+        "example": "Fear of spiders is a common specific phobia.",
+        "example_zh": "对蜘蛛的恐惧是常见的特定恐惧症。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Agoraphobia",
+        "breakdown": "Agora(公共场所) + phobia",
+        "meaning_en": "fear of places where escape might be difficult, often causing avoidance of public spaces",
+        "meaning_zh": "广场恐惧症：害怕在逃脱困难的场合（公共场所、拥挤地方、公共交通）。严重时患者可能长期不出门。常与恐慌障碍共发",
+        "derivation": "Agora(古希腊集市) + phobia → 害怕公共场所 → 广场恐惧症",
+        "mnemonic": "「不敢出门」→ 广场恐惧症",
+        "example": "Agoraphobia can make leaving home feel impossible.",
+        "example_zh": "广场恐惧症会让出门感觉不可能。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Panic Disorder",
+        "breakdown": "Panic(恐慌) + Disorder",
+        "meaning_en": "recurrent unexpected panic attacks and fear of future attacks",
+        "meaning_zh": "恐慌障碍：反复出现意外的恐慌发作（几分钟内达到峰值的极度恐惧、心悸、胸闷、濒死感），并担心未来还会发作。「害怕恐慌本身」",
+        "derivation": "恐慌发作 + 对未来发作的恐惧 → 恐慌障碍",
+        "mnemonic": "「怕突然恐慌」→ 恐慌障碍",
+        "example": "Panic disorder includes fear of having more panic attacks.",
+        "example_zh": "恐慌障碍包括害怕再次发作恐慌。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Ataque de Nervios",
+        "breakdown": "Ataque(攻击) + de + Nervios(神经)",
+        "meaning_en": "culturally bound syndrome in Latino populations, resembling panic with dramatic symptoms",
+        "meaning_zh": "神经发作：拉美文化中的文化束缚综合征，类似恐慌发作但有更戏剧性的表现——哭喊、颤抖、晕倒感，常在家庭冲突或丧失后出现。文化决定如何体验和表达心理痛苦",
+        "derivation": "拉美文化中的压力反应模式 → 文化特定 → 神经发作",
+        "mnemonic": "「拉美文化的心理危机」→ 神经发作",
+        "example": "Ataque de nervios is a culture-bound syndrome in Latino cultures.",
+        "example_zh": "神经发作是拉美文化中的文化束缚综合征。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Social Anxiety Disorder",
+        "breakdown": "Social + Anxiety + Disorder",
+        "meaning_en": "intense fear of social situations and being judged by others",
+        "meaning_zh": "社交焦虑障碍：对社交情境和被他人评价的强烈恐惧。不只是害羞——严重时会避免所有社交场合。与普通的社交紧张不同，严重影响生活",
+        "derivation": "害怕被评价 + 避免社交 → 社交焦虑障碍",
+        "mnemonic": "「害怕被看」→ 社交焦虑",
+        "example": "Social anxiety disorder goes beyond normal shyness.",
+        "example_zh": "社交焦虑障碍超越了正常的害羞。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Taijin Kyofusho",
+        "breakdown": "Taijin Kyofusho(对人恐怖症)",
+        "meaning_en": "Japanese culture-bound syndrome: fear of offending or embarrassing others",
+        "meaning_zh": "对人恐怖症：日本的文化束缚综合征。与西方社交焦虑不同——患者不是怕自己被评价，而是怕让别人不舒服、冒犯他人。反映集体主义文化中的自我概念",
+        "derivation": "集体主义文化 → 担心冒犯他人 → 对人恐怖症",
+        "mnemonic": "「怕给别人添麻烦」→ 对人恐怖症",
+        "example": "Taijin kyofusho reflects collectivist cultural values.",
+        "example_zh": "对人恐怖症反映了集体主义文化价值观。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Generalized Anxiety Disorder",
+        "breakdown": "Generalized(广泛的) + Anxiety + Disorder (GAD)",
+        "meaning_en": "excessive worry about many things, most days for 6+ months",
+        "meaning_zh": "广泛性焦虑障碍（GAD）：对多种事情过度、难以控制的担忧，持续6个月以上。「什么都担心」——工作、健康、家人、未来。伴随躯体症状如肌肉紧张、疲劳",
+        "derivation": "持续 + 广泛 + 过度 → 广泛性焦虑",
+        "mnemonic": "「什么都担心」→ GAD",
+        "example": "GAD is marked by chronic, excessive worrying.",
+        "example_zh": "GAD的特征是慢性、过度的担忧。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Obsessive-Compulsive Disorder",
+        "breakdown": "Obsessive(强迫思维) + Compulsive(强迫行为)",
+        "meaning_en": "disorder with intrusive thoughts (obsessions) and repetitive behaviors (compulsions)",
+        "meaning_zh": "强迫障碍（OCD）：反复侵入的想法（强迫思维，如怕脏）和用来减少焦虑的仪式性行为（强迫行为，如反复洗手）。患者知道不合理但停不下来",
+        "derivation": "强迫思维 → 焦虑 → 强迫行为 → 焦虑暂时缓解 → 循环",
+        "mnemonic": "「想停停不下来」→ OCD",
+        "example": "OCD involves intrusive thoughts that drive ritual behaviors.",
+        "example_zh": "OCD涉及驱动仪式性行为的侵入性想法。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hoarding Disorder",
+        "breakdown": "Hoarding(囤积) + Disorder",
+        "meaning_en": "persistent difficulty discarding possessions, leading to cluttered living spaces",
+        "meaning_zh": "囤积障碍：难以丢弃物品，即使毫无价值。导致生活空间严重杂乱。以前被视为OCD的一种，DSM-5后独立分类。情感上对物品的依附是核心",
+        "derivation": "丢弃引发严重痛苦 → 不断囤积 → 囤积障碍",
+        "mnemonic": "「什么都舍不得扔」→ 囤积障碍",
+        "example": "Hoarding disorder causes dangerous clutter in the home.",
+        "example_zh": "囤积障碍导致家中危险的杂乱。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dissociative Amnesia",
+        "breakdown": "Dissociative(分离性) + Amnesia(失忆)",
+        "meaning_en": "inability to recall important personal information, usually after trauma",
+        "meaning_zh": "分离性失忆：无法回忆重要的个人信息，通常在创伤事件后发生。不是普通遗忘——涉及应有可回忆的信息。保护机制：大脑「封锁」难以承受的记忆",
+        "derivation": "创伤 → 记忆被「分离」→ 无法提取 → 分离性失忆",
+        "mnemonic": "「创伤后忘记」→ 分离性失忆",
+        "example": "Dissociative amnesia often follows severe trauma.",
+        "example_zh": "分离性失忆常在严重创伤后出现。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dissociative Identity Disorder",
+        "breakdown": "Dissociative + Identity + Disorder (DID)",
+        "meaning_en": "presence of two or more distinct personality states in one person",
+        "meaning_zh": "分离性身份障碍（DID）：一个人身上存在两个或多个不同的身份状态——旧称「多重人格障碍」。通常源于童年严重创伤。是最具争议的诊断之一",
+        "derivation": "严重创伤 → 自我分裂为多个部分 → DID",
+        "mnemonic": "「多重人格」的正式名 → DID",
+        "example": "Dissociative identity disorder usually stems from childhood trauma.",
+        "example_zh": "分离性身份障碍通常源于童年创伤。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Post-Traumatic Stress Disorder",
+        "breakdown": "Post(之后) + Traumatic + Stress + Disorder (PTSD)",
+        "meaning_en": "disorder following exposure to trauma, with flashbacks, avoidance, and hyperarousal",
+        "meaning_zh": "创伤后应激障碍（PTSD）：经历或目睹创伤事件后发展出的障碍。四大症状群：侵入（闪回、噩梦）、回避、负面认知情绪改变、过度警觉。退伍军人、性侵幸存者高发",
+        "derivation": "创伤暴露 → 持续性应激反应 → PTSD",
+        "mnemonic": "「创伤后的持续伤害」→ PTSD",
+        "example": "PTSD involves flashbacks and avoidance of trauma reminders.",
+        "example_zh": "PTSD涉及闪回和对创伤提醒物的回避。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Anorexia Nervosa",
+        "breakdown": "Anorexia(厌食) + Nervosa(神经性的)",
+        "meaning_en": "eating disorder marked by extreme food restriction and fear of weight gain",
+        "meaning_zh": "神经性厌食症：极端限制进食、对增重的强烈恐惧、体象扭曲。患者即使严重消瘦仍觉得自己胖。死亡率是所有心理障碍中最高之一",
+        "derivation": "对胖的极端恐惧 → 极端节食 → 神经性厌食",
+        "mnemonic": "「拼命不吃」→ 神经性厌食症",
+        "example": "Anorexia nervosa has one of the highest mortality rates among mental disorders.",
+        "example_zh": "神经性厌食症是心理障碍中死亡率最高的之一。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Bulimia Nervosa",
+        "breakdown": "Bulimia(贪食) + Nervosa",
+        "meaning_en": "eating disorder marked by binge eating followed by compensatory behaviors",
+        "meaning_zh": "神经性贪食症：暴食发作后使用补偿性行为（催吐、导泻、过度运动）防止增重。体重通常正常，更难被察觉。羞耻感重，反复的循环",
+        "derivation": "暴食 → 罪恶感 → 补偿行为 → 循环",
+        "mnemonic": "「暴食-清除」循环 → 神经性贪食症",
+        "example": "Bulimia nervosa cycles between binge eating and purging.",
+        "example_zh": "神经性贪食症在暴食和清除之间循环。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Personality Disorders",
+    "type": "root",
+    "meaning_en": "enduring personality patterns that cause distress or impairment",
+    "meaning_zh": "人格障碍：持久的、不灵活的人格模式，导致痛苦或功能损害。DSM-5分为三组（A、B、C），每组有共同特征。不同于一时的状态，是长期的人格问题",
+    "origin": "Unit 5: 5.4 Selection of Categories of Psychological Disorders",
+    "related": [
+      "Psychological Disorders",
+      "Treatment Approaches"
+    ],
+    "words": [
+      {
+        "word": "Cluster A Personality Disorders",
+        "breakdown": "Cluster A + Personality Disorders",
+        "meaning_en": "odd or eccentric disorders: paranoid, schizoid, schizotypal",
+        "meaning_zh": "A组人格障碍：「古怪或偏执」组。包括偏执型、分裂样型、分裂型。特征是社会脱离、不寻常的想法或感知。与精神分裂症谱系有遗传关联",
+        "derivation": "「古怪组」→ A组 → 偏执、分裂样、分裂型",
+        "mnemonic": "A = Abnormal（古怪）→ A组人格障碍",
+        "example": "Cluster A personality disorders are characterized by odd behavior.",
+        "example_zh": "A组人格障碍以古怪行为为特征。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Paranoid Personality Disorder",
+        "breakdown": "Paranoid(偏执的) + PD",
+        "meaning_en": "pervasive distrust and suspicion of others",
+        "meaning_zh": "偏执型人格障碍：对他人普遍的不信任和怀疑。认为别人想伤害、欺骗或利用自己，即使没有证据。不同于妄想——仍保持现实检验能力",
+        "derivation": "弥漫性不信任 → 偏执型人格障碍",
+        "mnemonic": "「所有人都想害我」→ 偏执型",
+        "example": "People with paranoid PD believe others are trying to harm them.",
+        "example_zh": "偏执型人格障碍患者相信别人要伤害他们。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Schizoid Personality Disorder",
+        "breakdown": "Schizoid(分裂样的) + PD",
+        "meaning_en": "detachment from social relationships and restricted emotional expression",
+        "meaning_zh": "分裂样人格障碍：从社交关系中脱离、情感表达受限。「独狼」——不是害怕社交，而是真的不想要。不同于社交焦虑——他们享受独处",
+        "derivation": "社交脱离 + 情感冷漠 → 分裂样人格障碍",
+        "mnemonic": "「独来独往，不在乎」→ 分裂样",
+        "example": "Schizoid PD involves preference for solitude over social contact.",
+        "example_zh": "分裂样人格障碍患者偏爱独处而非社交。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Schizotypal Personality Disorder",
+        "breakdown": "Schizotypal(分裂型的) + PD",
+        "meaning_en": "eccentric behavior with magical thinking and social discomfort",
+        "meaning_zh": "分裂型人格障碍：怪异的行为、奇特的信念（魔法思维）、不寻常的感知体验，加上严重的社交不适。与精神分裂症遗传相关，但症状较轻",
+        "derivation": "怪异思维和行为 → 分裂型 → 精神分裂症谱系",
+        "mnemonic": "「怪异但没到精神分裂」→ 分裂型",
+        "example": "Schizotypal PD includes odd beliefs and eccentric behavior.",
+        "example_zh": "分裂型人格障碍包括古怪信念和行为。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cluster B Personality Disorders",
+        "breakdown": "Cluster B + PD",
+        "meaning_en": "dramatic, emotional, or erratic disorders: antisocial, borderline, histrionic, narcissistic",
+        "meaning_zh": "B组人格障碍：「戏剧化、情绪化、反复无常」组。包括反社会型、边缘型、表演型、自恋型。特征是情绪失调和人际困难。是临床最常见求助的人格障碍",
+        "derivation": "「戏剧组」→ B组 → 反社会、边缘、表演、自恋",
+        "mnemonic": "B = 戏剧性（Dramatic）→ B组",
+        "example": "Cluster B disorders involve dramatic and erratic behavior.",
+        "example_zh": "B组障碍涉及戏剧化和反复无常的行为。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Antisocial Personality Disorder",
+        "breakdown": "Antisocial(反社会的) + PD",
+        "meaning_en": "disregard for rights of others, lying, manipulation, lack of remorse",
+        "meaning_zh": "反社会型人格障碍：对他人权利的漠视、欺骗、操纵、缺乏悔意。不是「反感社交」而是「反对社会规则」。俗称「精神变态」或「反社会」。早期有品行障碍病史",
+        "derivation": "违反社会规则 + 缺乏共情 → 反社会型",
+        "mnemonic": "「无良心无法律」→ 反社会型",
+        "example": "Antisocial PD involves a pattern of disregarding others' rights.",
+        "example_zh": "反社会型人格障碍涉及漠视他人权利的模式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Histrionic Personality Disorder",
+        "breakdown": "Histrionic(戏剧化的) + PD",
+        "meaning_en": "excessive emotion and attention-seeking behavior",
+        "meaning_zh": "表演型人格障碍：过度情绪化、强烈的注意寻求行为。需要成为关注焦点，情绪戏剧化但肤浅。与自恋型不同——自恋型需要「崇拜」，表演型只要「关注」",
+        "derivation": "戏剧化的情绪 + 注意寻求 → 表演型",
+        "mnemonic": "「要成为全场焦点」→ 表演型",
+        "example": "Histrionic PD involves excessive attention-seeking behaviors.",
+        "example_zh": "表演型人格障碍涉及过度的注意寻求行为。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Borderline Personality Disorder",
+        "breakdown": "Borderline(边缘的) + PD",
+        "meaning_en": "unstable relationships, self-image, emotions, and impulsivity",
+        "meaning_zh": "边缘型人格障碍（BPD）：不稳定的人际关系、自我形象和情绪，加上冲动行为。对被抛弃的极度恐惧，黑白分化思维。辩证行为疗法（DBT）是最有效的治疗",
+        "derivation": "情绪+关系+自我 全面不稳定 → 边缘型",
+        "mnemonic": "「一切都不稳定」→ 边缘型",
+        "example": "BPD involves intense fear of abandonment.",
+        "example_zh": "边缘型人格障碍涉及对被抛弃的强烈恐惧。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cluster C Personality Disorders",
+        "breakdown": "Cluster C + PD",
+        "meaning_en": "anxious, fearful disorders: avoidant, dependent, obsessive-compulsive",
+        "meaning_zh": "C组人格障碍：「焦虑、恐惧」组。包括回避型、依赖型、强迫型人格障碍。特征是焦虑和恐惧为核心的人格问题",
+        "derivation": "「焦虑组」→ C组 → 回避、依赖、强迫",
+        "mnemonic": "C = 焦虑（Cautious）→ C组",
+        "example": "Cluster C disorders are characterized by anxiety and fear.",
+        "example_zh": "C组障碍以焦虑和恐惧为特征。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Avoidant Personality Disorder",
+        "breakdown": "Avoidant(回避的) + PD",
+        "meaning_en": "social inhibition, feelings of inadequacy, hypersensitivity to criticism",
+        "meaning_zh": "回避型人格障碍：社交抑制、觉得自己不够好、对负面评价过度敏感。与社交焦虑障碍类似但更深入——影响整个人格。「想社交但不敢」",
+        "derivation": "害怕被拒绝 → 回避社交 → 回避型人格",
+        "mnemonic": "「想社交但不敢」→ 回避型",
+        "example": "Avoidant PD is linked to intense fear of criticism.",
+        "example_zh": "回避型人格障碍与对批评的强烈恐惧相关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dependent Personality Disorder",
+        "breakdown": "Dependent(依赖的) + PD",
+        "meaning_en": "excessive need to be taken care of, clinging behavior",
+        "meaning_zh": "依赖型人格障碍：过度需要被照顾，导致顺从和粘附行为。害怕分离和独立。即使受虐也难以离开——需要照顾超过自我尊严",
+        "derivation": "害怕独立 → 过度依附他人 → 依赖型",
+        "mnemonic": "「没人照顾活不下去」→ 依赖型",
+        "example": "Dependent PD involves excessive reliance on others for decisions.",
+        "example_zh": "依赖型人格障碍涉及在决策中过度依赖他人。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Obsessive-Compulsive Personality Disorder",
+        "breakdown": "Obsessive-Compulsive + PD (OCPD)",
+        "meaning_en": "preoccupation with orderliness, perfectionism, and control",
+        "meaning_zh": "强迫型人格障碍（OCPD）：专注于秩序、完美主义和控制。注意与OCD（强迫障碍）不同——OCPD患者认为自己的方式是对的，没有痛苦；OCD患者知道自己不合理但停不下来",
+        "derivation": "完美主义 + 控制欲 → OCPD → ≠ OCD",
+        "mnemonic": "「完美主义+控制欲」→ OCPD → 和OCD不同",
+        "example": "OCPD differs from OCD—it involves perfectionism without obsessions.",
+        "example_zh": "OCPD与OCD不同——涉及完美主义但没有强迫思维。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Treatment Approaches",
+    "type": "root",
+    "meaning_en": "therapeutic approaches for treating psychological disorders",
+    "meaning_zh": "心理障碍的治疗方法：从心理动力学到认知行为再到生物学干预的各种治疗方式。包括心理治疗技术、药物治疗和脑部干预",
+    "origin": "Unit 5: 5.5 Treatment of Psychological Disorders",
+    "related": [
+      "Psychological Disorders",
+      "Classifying Disorders",
+      "Psychoanalytic & Humanistic Theories"
+    ],
+    "words": [
+      {
+        "word": "Deinstitutionalization",
+        "breakdown": "De(去) + institution(机构) + alization",
+        "meaning_en": "movement to release mental patients from large institutions into community care",
+        "meaning_zh": "去机构化：20世纪中叶开始的运动，将精神病患者从大型精神病院释放到社区护理中。得益于抗精神病药物的出现。意图好，但社区支持不足导致许多患者流落街头",
+        "derivation": "大型精神病院 → 社区护理 → 去机构化",
+        "mnemonic": "「关闭精神病院」→ 去机构化",
+        "example": "Deinstitutionalization aimed to provide community-based care.",
+        "example_zh": "去机构化旨在提供社区为基础的护理。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Ethical Principles",
+        "breakdown": "Ethical(伦理的) + Principles",
+        "meaning_en": "standards guiding therapists' conduct, including confidentiality and informed consent",
+        "meaning_zh": "伦理原则：指导治疗师行为的标准——保密、知情同意、避免双重关系、能力范围内工作等。APA伦理守则是标准。违反伦理会导致执照吊销",
+        "derivation": "专业伦理标准 → 保护来访者 → 伦理原则",
+        "mnemonic": "「治疗师的职业守则」→ 伦理原则",
+        "example": "Confidentiality is a core ethical principle in therapy.",
+        "example_zh": "保密是治疗中的核心伦理原则。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Free Association",
+        "breakdown": "Free(自由) + Association(联想)",
+        "meaning_en": "Freudian technique where the patient says whatever comes to mind",
+        "meaning_zh": "自由联想：弗洛伊德的精神分析技术。让患者说出脑海中的任何想法，不加筛选或审查。认为能绕过自我防御、揭示潜意识内容。精神分析的核心技术",
+        "derivation": "弗洛伊德发展 → 绕过审查 → 接触潜意识 → 自由联想",
+        "mnemonic": "「想到什么说什么」→ 自由联想",
+        "example": "Free association is a classic psychoanalytic technique.",
+        "example_zh": "自由联想是经典的精神分析技术。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dream Analysis",
+        "breakdown": "Dream(梦) + Analysis",
+        "meaning_en": "Freudian interpretation of dreams to uncover unconscious wishes",
+        "meaning_zh": "梦的分析：弗洛伊德认为梦是「通往潜意识的皇家大道」。区分显梦（梦的表面内容）和隐梦（潜意识的真实含义）。通过分析找出被压抑的欲望",
+        "derivation": "弗洛伊德《梦的解析》→ 解读潜意识 → 梦的分析",
+        "mnemonic": "「解读梦的隐藏含义」→ 梦的分析",
+        "example": "Dream analysis was central to Freudian psychoanalysis.",
+        "example_zh": "梦的分析是弗洛伊德精神分析的核心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cognitive Restructuring",
+        "breakdown": "Cognitive + Restructuring(重构)",
+        "meaning_en": "identifying and changing distorted or unhelpful thoughts",
+        "meaning_zh": "认知重构：识别并改变扭曲或无益的思维模式。CBT的核心技术。来访者学会捕捉自动负面想法、质疑它们、用更现实的想法替代",
+        "derivation": "识别扭曲思维 → 挑战 → 替换 → 认知重构",
+        "mnemonic": "「重新搭建思维框架」→ 认知重构",
+        "example": "Cognitive restructuring is a key technique in CBT.",
+        "example_zh": "认知重构是CBT的关键技术。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fear Hierarchies",
+        "breakdown": "Fear + Hierarchies(等级)",
+        "meaning_en": "ordered list of feared situations from least to most frightening",
+        "meaning_zh": "恐惧等级表：系统脱敏的一部分。将引起恐惧的情境按强度从低到高排列。治疗时从最弱的开始，逐步进阶——确保每一步都能掌握再进行下一步",
+        "derivation": "系统脱敏的准备 → 按恐惧强度排序 → 恐惧等级表",
+        "mnemonic": "「恐惧的阶梯」→ 恐惧等级表",
+        "example": "Creating a fear hierarchy is the first step in systematic desensitization.",
+        "example_zh": "建立恐惧等级表是系统脱敏的第一步。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cognitive Triad",
+        "breakdown": "Cognitive + Triad(三联)",
+        "meaning_en": "Beck's three negative views in depression: self, world, future",
+        "meaning_zh": "认知三联征（贝克）：抑郁症患者的三种负面观点——对自己（「我没用」）、对世界（「一切都很糟」）、对未来（「不会好了」）。CBT治疗抑郁的核心目标",
+        "derivation": "贝克观察抑郁患者 → 三个方向的负面认知 → 认知三联征",
+        "mnemonic": "「自己、世界、未来全都不好」→ 认知三联征",
+        "example": "Beck's cognitive triad explains depressive thinking patterns.",
+        "example_zh": "贝克的认知三联征解释了抑郁性思维模式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Applied Behavior Analysis",
+        "breakdown": "Applied + Behavior + Analysis (ABA)",
+        "meaning_en": "using behavioral principles to change specific behaviors",
+        "meaning_zh": "应用行为分析（ABA）：将行为主义原理（强化、消退、塑造）应用于改变具体行为。广泛用于自闭症谱系干预。有争议——有效但有人批评过于机械",
+        "derivation": "行为主义原理 → 应用到临床 → ABA",
+        "mnemonic": "「用行为原理改变行为」→ ABA",
+        "example": "ABA is commonly used in autism intervention.",
+        "example_zh": "ABA常用于自闭症干预。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Exposure Therapy",
+        "breakdown": "Exposure(暴露) + Therapy",
+        "meaning_en": "gradually confronting feared stimuli to reduce anxiety through habituation",
+        "meaning_zh": "暴露疗法：让患者逐步面对所恐惧的刺激，通过习惯化减少焦虑反应。治疗恐惧症、强迫症、PTSD最有效的方法。关键是不回避——让恐惧反应自然消退",
+        "derivation": "恐惧的维持靠回避 → 不回避 → 恐惧消退 → 暴露疗法",
+        "mnemonic": "「不回避就不怕了」→ 暴露疗法",
+        "example": "Exposure therapy is highly effective for specific phobias.",
+        "example_zh": "暴露疗法对特定恐惧症高度有效。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Systematic Desensitization",
+        "breakdown": "Systematic + Desensitization(脱敏)",
+        "meaning_en": "gradual exposure paired with relaxation to replace fear with calm",
+        "meaning_zh": "系统脱敏（沃尔普）：暴露疗法的具体形式。将放松训练与恐惧等级表中的项目配对——从最弱恐惧开始，配合放松，逐步上升。原理是反条件反射",
+        "derivation": "沃尔普开发 → 放松+分级暴露 → 系统脱敏",
+        "mnemonic": "「放松+逐级暴露」→ 系统脱敏",
+        "example": "Systematic desensitization pairs relaxation with feared stimuli.",
+        "example_zh": "系统脱敏将放松与恐惧刺激配对。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Aversion Therapy",
+        "breakdown": "Aversion(厌恶) + Therapy",
+        "meaning_en": "pairing unwanted behavior with unpleasant stimulus to reduce it",
+        "meaning_zh": "厌恶疗法：将不想要的行为与不愉快的刺激配对，减少该行为。如治疗酗酒的药物让酒产生恶心反应。有效但有争议——涉及伦理问题",
+        "derivation": "条件反射原理 → 行为+负面刺激 → 厌恶疗法",
+        "mnemonic": "「让坏习惯变难受」→ 厌恶疗法",
+        "example": "Aversion therapy has been used to treat alcohol addiction.",
+        "example_zh": "厌恶疗法曾用于治疗酒精成瘾。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Token Economy",
+        "breakdown": "Token(代币) + Economy",
+        "meaning_en": "behavior modification system using tokens as rewards exchangeable for privileges",
+        "meaning_zh": "代币制：行为矫正系统。期望行为出现时给予代币，代币可兑换奖励或特权。常用于精神病院、特殊教育、儿童行为管理。是操作性条件反射的应用",
+        "derivation": "操作性条件反射 → 次级强化物 → 代币制",
+        "mnemonic": "「做好就有代币」→ 代币制",
+        "example": "Token economies are used in inpatient psychiatric settings.",
+        "example_zh": "代币制用于住院精神科环境。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Biofeedback",
+        "breakdown": "Bio(生物) + feedback(反馈)",
+        "meaning_en": "using electronic monitoring to help control physiological processes",
+        "meaning_zh": "生物反馈：用电子仪器监测通常不自觉的生理过程（心率、肌肉紧张、脑电波），让人学会有意识地控制它们。用于治疗高血压、头痛、焦虑等",
+        "derivation": "实时生理数据 → 反馈给患者 → 学会控制 → 生物反馈",
+        "mnemonic": "「让身体信号可见」→ 生物反馈",
+        "example": "Biofeedback helps patients control tension headaches.",
+        "example_zh": "生物反馈帮助患者控制紧张性头痛。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cognitive-Behavioral Therapy",
+        "breakdown": "Cognitive + Behavioral + Therapy (CBT)",
+        "meaning_en": "therapy combining cognitive restructuring with behavioral techniques",
+        "meaning_zh": "认知行为疗法（CBT）：结合认知重构（改变思维）和行为技术（改变行为）的短程心理治疗。当前证据最充分的心理治疗方法——对抑郁、焦虑、PTSD等都有效",
+        "derivation": "贝克开发 → 认知+行为 → CBT",
+        "mnemonic": "「想法+行为一起改」→ CBT",
+        "example": "CBT is the most researched form of psychotherapy.",
+        "example_zh": "CBT是研究最充分的心理治疗形式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dialectical Behavior Therapy",
+        "breakdown": "Dialectical(辩证的) + Behavior + Therapy (DBT)",
+        "meaning_en": "Linehan's therapy combining CBT with mindfulness and acceptance",
+        "meaning_zh": "辩证行为疗法（DBT）：林内翰开发，最初用于治疗边缘型人格障碍。结合CBT与正念和接纳。「辩证」指接纳与改变的辩证统一——既接纳现状又努力改变",
+        "derivation": "林内翰为BPD开发 → CBT+正念接纳 → DBT",
+        "mnemonic": "「既接纳又改变」→ DBT",
+        "example": "DBT was originally developed to treat borderline personality disorder.",
+        "example_zh": "DBT最初是为治疗边缘型人格障碍开发的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Rational-Emotive Behavior Therapy",
+        "breakdown": "Rational-Emotive + Behavior + Therapy (REBT)",
+        "meaning_en": "Ellis's therapy that challenges irrational beliefs causing emotional distress",
+        "meaning_zh": "理性情绪行为疗法（REBT）：艾利斯开发，认知疗法的先驱。认为情绪困扰源于不合理的信念（「必须完美」「必须被所有人喜欢」）。直接挑战这些信念",
+        "derivation": "艾利斯开发 → 挑战不合理信念 → REBT",
+        "mnemonic": "「挑战不合理的想法」→ REBT",
+        "example": "REBT confronts irrational beliefs directly.",
+        "example_zh": "REBT直接对抗不合理的信念。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Humanistic Therapy",
+        "breakdown": "Humanistic + Therapy",
+        "meaning_en": "therapy focused on personal growth, self-awareness, and self-actualization",
+        "meaning_zh": "人本主义治疗：专注于个人成长、自我觉察和自我实现的治疗方法。以罗杰斯的来访者中心疗法为代表。治疗师提供支持性环境，相信来访者有自我疗愈能力",
+        "derivation": "马斯洛/罗杰斯的人本心理学 → 治疗应用 → 人本治疗",
+        "mnemonic": "「相信人能自我成长」→ 人本治疗",
+        "example": "Humanistic therapy emphasizes self-actualization.",
+        "example_zh": "人本主义治疗强调自我实现。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Person-Centered Therapy",
+        "breakdown": "Person-Centered + Therapy",
+        "meaning_en": "Rogers' therapy using empathy, genuineness, and unconditional positive regard",
+        "meaning_zh": "来访者中心疗法（罗杰斯）：以来访者为主导的非指导性治疗。治疗师三个核心态度——共情、真诚、无条件积极关注。不给建议，创造接纳的空间让来访者自己成长",
+        "derivation": "罗杰斯开发 → 非指导性 → 来访者中心疗法",
+        "mnemonic": "「治疗师不指导，只陪伴」→ 来访者中心疗法",
+        "example": "Person-centered therapy relies on empathy and acceptance.",
+        "example_zh": "来访者中心疗法依赖共情和接纳。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Active Listening",
+        "breakdown": "Active(积极的) + Listening",
+        "meaning_en": "fully engaged listening with paraphrasing and reflection",
+        "meaning_zh": "积极倾听：罗杰斯提出的技术。不只是听，还通过复述、反映、总结让说话者感到被理解。是来访者中心疗法和许多治疗取向的基础技术",
+        "derivation": "罗杰斯的治疗技术 → 深度理解来访者 → 积极倾听",
+        "mnemonic": "「真正听见对方」→ 积极倾听",
+        "example": "Active listening is a foundational therapeutic skill.",
+        "example_zh": "积极倾听是基础的治疗技能。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Group Therapy",
+        "breakdown": "Group + Therapy",
+        "meaning_en": "psychotherapy where multiple clients meet together with a therapist",
+        "meaning_zh": "团体治疗：多个来访者一起与治疗师会面的治疗形式。优势：学习社交技能、感受被理解（普遍性）、获得多种视角。成本低，对社交问题特别有效",
+        "derivation": "一对多 → 团体动力 → 团体治疗",
+        "mnemonic": "「一群人一起治疗」→ 团体治疗",
+        "example": "Group therapy offers social learning and support.",
+        "example_zh": "团体治疗提供社交学习和支持。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hypnosis",
+        "breakdown": "Hypnosis(催眠)",
+        "meaning_en": "state of focused attention and heightened suggestibility used therapeutically",
+        "meaning_zh": "催眠：专注的意识状态，伴随增强的暗示感受性。在治疗中用于疼痛管理、戒烟、焦虑等。不是睡眠——脑电图显示是清醒的。对可暗示性高的人有效",
+        "derivation": "深度专注 + 高暗示性 → 催眠",
+        "mnemonic": "「高度专注+高度暗示」→ 催眠",
+        "example": "Hypnosis can be effective for pain management.",
+        "example_zh": "催眠对疼痛管理可能有效。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Psychoactive Medications",
+        "breakdown": "Psycho(心理) + active + Medications",
+        "meaning_en": "drugs that affect mental processes and behavior",
+        "meaning_zh": "精神药物：影响心理过程和行为的药物。包括抗抑郁药、抗焦虑药、抗精神病药、情绪稳定剂等。通过改变神经递质系统起作用",
+        "derivation": "作用于神经系统 → 影响心理 → 精神药物",
+        "mnemonic": "「治心理的药」→ 精神药物",
+        "example": "Psychoactive medications target brain neurotransmitters.",
+        "example_zh": "精神药物针对脑神经递质。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Antidepressants",
+        "breakdown": "Anti(抗) + depressants",
+        "meaning_en": "medications that treat depression, commonly SSRIs",
+        "meaning_zh": "抗抑郁药：治疗抑郁的药物。最常见的是SSRIs（选择性血清素再摄取抑制剂，如百忧解）。需要数周起效。也用于焦虑障碍和强迫症",
+        "derivation": "提升神经递质 → 缓解抑郁 → 抗抑郁药",
+        "mnemonic": "「治抑郁的药」→ 抗抑郁药",
+        "example": "SSRIs are the most commonly prescribed antidepressants.",
+        "example_zh": "SSRIs是最常处方的抗抑郁药。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Antianxiety Medications",
+        "breakdown": "Anti + anxiety + Medications",
+        "meaning_en": "medications that reduce anxiety, often benzodiazepines",
+        "meaning_zh": "抗焦虑药：缓解焦虑的药物。常见的苯二氮䓬类（如阿普唑仑）起效快但有依赖风险。SSRIs也用于长期焦虑治疗，起效慢但没有依赖问题",
+        "derivation": "增强GABA抑制 → 缓解焦虑 → 抗焦虑药",
+        "mnemonic": "「治焦虑的药」→ 抗焦虑药",
+        "example": "Benzodiazepines are common antianxiety medications.",
+        "example_zh": "苯二氮䓬类是常见的抗焦虑药。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Lithium",
+        "breakdown": "Lithium(锂)",
+        "meaning_en": "mood stabilizer used to treat bipolar disorder",
+        "meaning_zh": "锂盐：治疗双相障碍的情绪稳定剂。已使用60多年，仍是双相的金标准。能显著减少躁狂发作和自杀风险。治疗窗口狭窄，需要监测血药浓度",
+        "derivation": "化学元素锂 → 稳定情绪 → 双相治疗",
+        "mnemonic": "「双相的金标准药」→ 锂盐",
+        "example": "Lithium remains the gold standard for bipolar disorder.",
+        "example_zh": "锂盐仍是双相障碍的金标准。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Antipsychotic Medications",
+        "breakdown": "Anti + psychotic + Medications",
+        "meaning_en": "drugs used to treat schizophrenia and psychotic symptoms",
+        "meaning_zh": "抗精神病药：治疗精神分裂症和精神病性症状的药物。通过阻断多巴胺受体起作用。第一代（典型）和第二代（非典型）药物。对阳性症状最有效",
+        "derivation": "阻断多巴胺 → 减少精神病性症状 → 抗精神病药",
+        "mnemonic": "「治精神分裂的药」→ 抗精神病药",
+        "example": "Antipsychotics block dopamine receptors in the brain.",
+        "example_zh": "抗精神病药阻断大脑的多巴胺受体。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Tardive Dyskinesia",
+        "breakdown": "Tardive(迟发的) + Dyskinesia(运动障碍)",
+        "meaning_en": "involuntary movement disorder caused by long-term antipsychotic use",
+        "meaning_zh": "迟发性运动障碍：长期使用抗精神病药（尤其是第一代）引起的不自主运动障碍——面部抽动、咂嘴、肢体扭动。通常不可逆。是抗精神病药最严重的副作用之一",
+        "derivation": "Tardive(迟发)+Dyskinesia(运动异常) → 长期用药后的运动障碍",
+        "mnemonic": "「抗精神病药的严重副作用」→ 迟发性运动障碍",
+        "example": "Tardive dyskinesia is a serious side effect of antipsychotics.",
+        "example_zh": "迟发性运动障碍是抗精神病药的严重副作用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Psychosurgery",
+        "breakdown": "Psycho(心理) + surgery(外科)",
+        "meaning_en": "surgical intervention on brain tissue to treat severe mental disorder",
+        "meaning_zh": "精神外科手术：针对严重精神障碍的脑部外科干预。现代少用，仅作为其他方法无效时的最后选择。与历史上的「脑叶切除术」不同，现代手术精确、有针对性",
+        "derivation": "脑部手术 + 治疗精神疾病 → 精神外科手术",
+        "mnemonic": "「最后手段的脑手术」→ 精神外科",
+        "example": "Modern psychosurgery is rare and precise.",
+        "example_zh": "现代精神外科手术罕见且精确。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "TMS",
+        "breakdown": "Transcranial + Magnetic + Stimulation",
+        "meaning_en": "transcranial magnetic stimulation: non-invasive brain stimulation via magnetic pulses",
+        "meaning_zh": "经颅磁刺激（TMS）：非侵入性的脑刺激。通过磁脉冲刺激特定脑区，改变神经活动。用于治疗难治性抑郁和其他障碍。副作用小，门诊即可进行",
+        "derivation": "非侵入性 + 磁刺激 + 治疗抑郁 → TMS",
+        "mnemonic": "「磁铁治抑郁」→ TMS",
+        "example": "TMS is approved for treatment-resistant depression.",
+        "example_zh": "TMS被批准用于治疗抵抗性抑郁。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "ECT",
+        "breakdown": "Electro + Convulsive + Therapy",
+        "meaning_en": "electroconvulsive therapy: brief electrical stimulation inducing a controlled seizure",
+        "meaning_zh": "电休克疗法（ECT）：用短暂电刺激诱发受控癫痫发作来治疗严重精神障碍。现代ECT在麻醉下进行，安全。对严重、难治性抑郁最有效的治疗之一。有记忆副作用",
+        "derivation": "电流 → 受控癫痫 → 重置大脑 → ECT",
+        "mnemonic": "「电治疗」→ ECT → 最后手段但非常有效",
+        "example": "ECT is highly effective for severe, treatment-resistant depression.",
+        "example_zh": "ECT对严重、治疗抵抗性抑郁高度有效。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Lobotomy",
+        "breakdown": "Lobo(脑叶) + tomy(切开)",
+        "meaning_en": "historical psychosurgery that severed frontal lobe connections",
+        "meaning_zh": "脑叶切除术：20世纪中叶广泛使用的精神外科手术，切断前额叶与其他脑区的连接。让激动的患者「平静」但严重损害人格和认知。现代已废弃。莫尼斯因此获诺贝尔奖后来备受争议",
+        "derivation": "前额叶连接切断 → 减少激动症状 → 脑叶切除术 → 弃用",
+        "mnemonic": "「历史上的可怕手术」→ 脑叶切除术 → 已废弃",
+        "example": "Lobotomy was widely used in the mid-20th century but later abandoned.",
+        "example_zh": "脑叶切除术在20世纪中叶广泛使用但后来被废弃。",
         "toefl_frequency": "medium"
       }
     ]

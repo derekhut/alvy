@@ -1697,215 +1697,6 @@
     ]
   },
   {
-    "root": "Learning & Conditioning",
-    "type": "root",
-    "meaning_en": "how organisms learn through association and consequences",
-    "meaning_zh": "学习与条件反射：有机体如何通过联想和后果来学习。经典条件反射（巴甫洛夫）和操作性条件反射（斯金纳）",
-    "origin": "Unit 3: Development & Learning",
-    "related": [
-      "Social Learning",
-      "Cognitive Development",
-      "Language Development"
-    ],
-    "words": [
-      {
-        "word": "Classical Conditioning",
-        "breakdown": "Classical(经典的) + Conditioning(条件反射)",
-        "meaning_en": "learning through association; Pavlov's dogs",
-        "meaning_zh": "经典条件反射（巴甫洛夫）：通过联想学习。铃声(中性刺激)+食物(无条件刺激)反复配对→铃声单独就能引起流口水",
-        "derivation": "CS(条件刺激)+UCS(无条件刺激)→反复配对→CS单独产生CR(条件反应)",
-        "mnemonic": "巴甫洛夫的狗：铃声→流口水。你听到下课铃就想吃饭——也是经典条件反射",
-        "example": "Pavlov demonstrated classical conditioning with dogs salivating to a bell.",
-        "example_zh": "巴甫洛夫用狗听到铃声就流口水来演示了经典条件反射。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Operant Conditioning",
-        "breakdown": "Operant(操作性的) + Conditioning(条件反射)",
-        "meaning_en": "learning through consequences; reinforcement and punishment",
-        "meaning_zh": "操作性条件反射（斯金纳）：通过行为后果来学习。强化=增加行为（奖励）；惩罚=减少行为",
-        "derivation": "行为→后果→学习。正强化=给好的；负强化=去掉坏的；正惩罚=给坏的；负惩罚=去掉好的",
-        "mnemonic": "「正/负」不是好/坏，而是加/减。正强化=加奖励，负强化=减痛苦",
-        "example": "Skinner used operant conditioning to train pigeons.",
-        "example_zh": "斯金纳用操作性条件反射来训练鸽子。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Reinforcement",
-        "breakdown": "Re(再) + Inforce(加强) + -ment",
-        "meaning_en": "consequence that increases the likelihood of a behavior",
-        "meaning_zh": "强化：增加某行为再次发生概率的后果。正强化=给予奖励（发工资→继续工作）；负强化=移除不愉快（吃药→头不疼了→下次还吃药）",
-        "derivation": "Re(再次) + Inforce(加强) → 加强行为 → 让行为更可能重复",
-        "mnemonic": "强化≠奖励。负强化也是强化——系安全带让警报停止，你就学会了系安全带",
-        "example": "Positive reinforcement increases desired behaviors through rewards.",
-        "example_zh": "正强化通过奖励来增加期望的行为。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Extinction",
-        "breakdown": "Ex(出去) + tinct(灭) + -ion",
-        "meaning_en": "gradual disappearance of a conditioned response",
-        "meaning_zh": "消退：条件反应的逐渐消失。经典条件反射中：反复只给铃声不给食物→狗不再流口水。但可能自发恢复",
-        "derivation": "Ex(消除) → 条件反应被消除 → 但不是真正消失，可能自发恢复(spontaneous recovery)",
-        "mnemonic": "你不再喂流浪猫→它慢慢不来了（消退），但某天可能突然又来看看（自发恢复）",
-        "example": "Without reinforcement, the conditioned response undergoes extinction.",
-        "example_zh": "没有强化，条件反应会逐渐消退。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Reinforcement Schedules",
-        "breakdown": "Reinforcement(强化) + Schedule(方案/时间表)",
-        "meaning_en": "patterns of reinforcement: fixed/variable ratio/interval",
-        "meaning_zh": "强化程序：强化的模式。固定比率=每N次行为强化一次；可变比率=平均N次（如老虎机，最抗消退）；固定时距=每隔一段时间；可变时距=不定时间",
-        "derivation": "Fixed(固定)=可预测；Variable(可变)=不可预测→不可预测的强化最难消退",
-        "mnemonic": "老虎机(可变比率)最让人上瘾——因为你永远不知道下一次会不会中奖",
-        "example": "Variable ratio schedules produce the highest response rates.",
-        "example_zh": "可变比率强化程序产生最高的反应速率。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Cognitive Development",
-    "type": "root",
-    "meaning_en": "how thinking and reasoning develop from infancy through adulthood",
-    "meaning_zh": "认知发展：从婴儿到成人，思维和推理能力如何发展。皮亚杰的四阶段理论是核心考点",
-    "origin": "Unit 3: Development & Learning",
-    "related": [
-      "Social-Emotional Development",
-      "Learning & Conditioning",
-      "Physical Development",
-      "Language Development"
-    ],
-    "words": [
-      {
-        "word": "Piaget's Stages",
-        "breakdown": "Piaget(皮亚杰) + Stages(阶段)",
-        "meaning_en": "four stages of cognitive development: sensorimotor, preoperational, concrete operational, formal operational",
-        "meaning_zh": "皮亚杰认知发展四阶段：感觉运动期(0-2岁)→前运算期(2-7岁)→具体运算期(7-11岁)→形式运算期(12岁+)",
-        "derivation": "感觉运动=用感觉探索；前运算=有符号思维但不合逻辑；具体运算=逻辑但需要具体物品；形式运算=抽象思维",
-        "mnemonic": "S-P-C-F：Some People Can't Fly（有些人不会飞）→ 感觉、前运算、具体运算、形式运算",
-        "example": "Piaget proposed four stages of cognitive development.",
-        "example_zh": "皮亚杰提出了认知发展的四个阶段。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Object Permanence",
-        "breakdown": "Object(物体) + Permanence(永久性)",
-        "meaning_en": "understanding that objects continue to exist even when not seen",
-        "meaning_zh": "客体永久性：理解物体即使看不到也仍然存在。约8个月大时获得。感觉运动期的关键成就",
-        "derivation": "Object(物体) + Permanence(永久) → 物体永远在那里 → 即使被遮住也不会消失",
-        "mnemonic": "躲猫猫(peek-a-boo)：婴儿以为你遮住脸就消失了——还没获得客体永久性",
-        "example": "Babies develop object permanence around 8 months of age.",
-        "example_zh": "婴儿大约在8个月大时发展出客体永久性。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Conservation",
-        "breakdown": "Conservation(守恒)",
-        "meaning_en": "understanding that quantity remains the same despite changes in shape",
-        "meaning_zh": "守恒：理解数量不因外观改变而改变。如等量的水倒进高杯和矮杯，水量一样多。前运算期的孩子不理解这个概念",
-        "derivation": "Conserve(保持不变) → 物质的量保持不变 → 不管怎么变形",
-        "mnemonic": "把一个饼干掰成两半，小孩觉得变多了——不懂守恒",
-        "example": "Children in the preoperational stage struggle with conservation tasks.",
-        "example_zh": "前运算期的儿童难以完成守恒任务。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Egocentrism",
-        "breakdown": "Ego(自我) + Centrism(中心主义)",
-        "meaning_en": "inability to see the world from another's perspective",
-        "meaning_zh": "自我中心：无法从他人的角度看世界。前运算期的典型特征。不是自私，而是认知上做不到换位思考",
-        "derivation": "Ego(自我) + Center(中心) → 以自我为中心 → 以为别人看到的和自己一样",
-        "mnemonic": "小孩打电话给奶奶说「你看这个！」——以为奶奶能看到自己手里的东西",
-        "example": "Egocentric children assume others see what they see.",
-        "example_zh": "自我中心的儿童以为别人看到的和自己一样。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Scaffolding",
-        "breakdown": "Scaffold(脚手架) + -ing",
-        "meaning_en": "Vygotsky's concept: temporary support to help learners master new skills",
-        "meaning_zh": "脚手架教学（维果茨基）：给学习者提供临时支持，帮助他们掌握新技能，然后逐渐撤除支持。在「最近发展区」内最有效",
-        "derivation": "Scaffold(脚手架) → 盖房子的临时支撑 → 房子盖好了就拆掉",
-        "mnemonic": "教小孩骑自行车：先扶着→慢慢放手→完全放手——这就是脚手架",
-        "example": "Teachers use scaffolding to support students in their zone of proximal development.",
-        "example_zh": "教师使用脚手架教学来支持学生在最近发展区内的学习。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Social-Emotional Development",
-    "type": "root",
-    "meaning_en": "how social bonds and emotional regulation develop across the lifespan",
-    "meaning_zh": "社会情感发展：社会关系和情绪调节如何在一生中发展。关键理论：依恋理论（安斯沃斯）和心理社会发展理论（埃里克森）",
-    "origin": "Unit 3: Development & Learning",
-    "related": [
-      "Cognitive Development",
-      "Personality Theories",
-      "Physical Development",
-      "Language Development"
-    ],
-    "words": [
-      {
-        "word": "Attachment",
-        "breakdown": "Attach(依附) + -ment",
-        "meaning_en": "emotional bond between infant and caregiver",
-        "meaning_zh": "依恋：婴儿与照顾者之间的情感纽带。安全型=探索+回来找妈妈；回避型=不在意妈妈走不走；焦虑型=极度不安",
-        "derivation": "Attach(黏附) → 婴儿对照顾者的情感依附 → 影响一生的人际关系模式",
-        "mnemonic": "陌生情境实验：妈妈离开→婴儿的反应→判断依恋类型",
-        "example": "Secure attachment forms when caregivers are consistently responsive.",
-        "example_zh": "当照顾者持续回应时，安全型依恋就形成了。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Erikson's Stages",
-        "breakdown": "Erikson(埃里克森) + Stages(阶段)",
-        "meaning_en": "eight psychosocial stages from birth to death",
-        "meaning_zh": "埃里克森心理社会发展阶段：一生八个阶段，每个阶段有一个核心冲突。信任vs不信任→自主vs羞愧→…→完善vs绝望",
-        "derivation": "每个阶段的核心冲突：青少年期最重要的是 identity vs role confusion（同一性vs角色混乱）",
-        "mnemonic": "青春期的关键问题：「我是谁？」→ 同一性危机（identity crisis）",
-        "example": "Erikson believed identity formation is the key task of adolescence.",
-        "example_zh": "埃里克森认为同一性形成是青春期的关键任务。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Parenting Styles",
-        "breakdown": "Parenting(养育) + Styles(风格)",
-        "meaning_en": "authoritarian, authoritative, permissive parenting approaches",
-        "meaning_zh": "养育风格：专制型=严格+冷漠（我说了算）；权威型=严格+温暖（最佳）；放任型=宽松+温暖（溺爱）",
-        "derivation": "Authoritarian(专制)≠Authoritative(权威)！专制=只有规则；权威=规则+解释+温暖",
-        "mnemonic": "权威型(authoritative)最好——有规则也有爱，像好老师：严格但讲道理",
-        "example": "Authoritative parenting is associated with the best child outcomes.",
-        "example_zh": "权威型养育与最好的儿童发展结果相关。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Temperament",
-        "breakdown": "Temperament(气质)",
-        "meaning_en": "inborn behavioral style and emotional reactivity",
-        "meaning_zh": "气质：天生的行为风格和情绪反应性。有的婴儿天生好养（easy），有的难养（difficult），有的慢热（slow-to-warm-up）",
-        "derivation": "Temperament(气质) → 天生自带的性格基础 → 后天环境会塑造但不会完全改变",
-        "mnemonic": "有的婴儿天生爱笑，有的天生爱哭——这就是气质差异",
-        "example": "Temperament is largely influenced by genetics.",
-        "example_zh": "气质在很大程度上受遗传影响。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Social Learning",
-        "breakdown": "Social(社会的) + Learning(学习)",
-        "meaning_en": "learning by observing and imitating others (Bandura)",
-        "meaning_zh": "社会学习（班杜拉）：通过观察和模仿他人来学习。波波玩偶实验：儿童看到成人打玩偶→自己也打",
-        "derivation": "Observe(观察) → Model(模仿) → 不需要亲身强化也能学会新行为",
-        "mnemonic": "孩子模仿父母说脏话——没人教他，他看到就学了（观察学习）",
-        "example": "Bandura's Bobo doll experiment demonstrated social learning.",
-        "example_zh": "班杜拉的波波玩偶实验展示了社会学习。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
     "root": "Attribution Theory",
     "type": "root",
     "meaning_en": "how we explain the causes of behavior",
@@ -2316,143 +2107,6 @@
         "mnemonic": "匿名戒酒会(AA)就是一种团体治疗——「你不是一个人在战斗」",
         "example": "Group therapy provides social support alongside treatment.",
         "example_zh": "团体治疗在治疗的同时提供社会支持。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Physical Development",
-    "type": "root",
-    "meaning_en": "bodily growth and change across the lifespan",
-    "meaning_zh": "生理发展：从受孕到老年的身体变化。包括产前发展、运动技能、青春期和衰老过程",
-    "origin": "Unit 3: Development & Learning",
-    "related": [
-      "Cognitive Development",
-      "Social-Emotional Development"
-    ],
-    "words": [
-      {
-        "word": "Prenatal Development",
-        "breakdown": "Pre(之前) + Natal(出生的) + Development(发展)",
-        "meaning_en": "three stages before birth: germinal, embryonic, fetal",
-        "meaning_zh": "产前发展三阶段：胚种期(0-2周)=受精卵着床；胚胎期(3-8周)=器官形成（最易受损）；胎儿期(9周-出生)=快速生长和成熟",
-        "derivation": "Pre(之前) + Natal(出生) → 出生之前的发展 → 胚胎期是器官形成的关键期",
-        "mnemonic": "胚胎期=建房子打地基（最怕出问题）；胎儿期=装修（已经成型在完善）",
-        "example": "Most organ formation occurs during the embryonic period.",
-        "example_zh": "大部分器官形成发生在胚胎期。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Teratogens",
-        "breakdown": "Terato(畸形) + Gen(产生)",
-        "meaning_en": "substances that can cause birth defects: alcohol, drugs, viruses",
-        "meaning_zh": "致畸因子：能导致出生缺陷的物质。如酒精(胎儿酒精综合征)、某些药物、病毒(风疹)。胚胎期影响最严重",
-        "derivation": "Terato(怪物/畸形) + Gen(产生) → 产生畸形的因素 → 孕期接触这些物质可能伤害胎儿",
-        "mnemonic": "「Terato-怪兽-gen产生」→ 致畸因子就是能产生「怪兽效应」的东西——孕期一定要避免",
-        "example": "Fetal alcohol syndrome is caused by a mother's alcohol consumption during pregnancy.",
-        "example_zh": "胎儿酒精综合征是由母亲在孕期饮酒引起的。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Motor Development",
-        "breakdown": "Motor(运动的) + Development(发展)",
-        "meaning_en": "progression of movement abilities: rolling, sitting, crawling, walking",
-        "meaning_zh": "运动发展：从简单到复杂的运动能力发展。遵循两个方向：头尾方向（先控制头→再控制脚）和近远方向（先控制躯干→再控制手指）",
-        "derivation": "Cephalocaudal(头尾方向)=从头到脚；Proximodistal(近远方向)=从中心到四肢",
-        "mnemonic": "婴儿先抬头→再坐→再爬→最后走路——从上到下依次解锁",
-        "example": "Infants typically learn to walk between 9 and 15 months of age.",
-        "example_zh": "婴儿通常在9到15个月大时学会走路。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Puberty",
-        "breakdown": "Puberty(青春期)",
-        "meaning_en": "period of sexual maturation triggered by hormonal changes",
-        "meaning_zh": "青春期：由激素变化引发的性成熟时期。下丘脑→垂体→性腺轴激活。身体变化+情绪波动+同一性探索同时发生",
-        "derivation": "Puberty 来自拉丁语 pubertas(成年) → 从儿童过渡到成人的生理转变",
-        "mnemonic": "青春期=身体在「装修升级」：长个子、变声、长青春痘——一切都在剧烈变化",
-        "example": "Puberty typically begins earlier in girls than in boys.",
-        "example_zh": "青春期通常在女孩中比男孩更早开始。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Aging",
-        "breakdown": "Aging(衰老)",
-        "meaning_en": "physical and cognitive changes in late adulthood; fluid vs crystallized intelligence",
-        "meaning_zh": "衰老：晚年的身体和认知变化。流体智力(处理速度、工作记忆)随年龄下降；晶体智力(知识、词汇)保持稳定甚至增长",
-        "derivation": "Fluid intelligence(流体智力)=像水一样流动的思维能力→年老下降；Crystallized(晶体智力)=结晶的知识→越老越多",
-        "mnemonic": "老教授：解题速度变慢了（流体↓）但知识渊博、经验丰富（晶体↑）",
-        "example": "Crystallized intelligence tends to increase throughout adulthood.",
-        "example_zh": "晶体智力在整个成年期都倾向于增长。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Language Development",
-    "type": "root",
-    "meaning_en": "how children acquire and develop language abilities",
-    "meaning_zh": "语言发展：儿童如何获得和发展语言能力。从咿呀学语到完整句子的发展过程，以及先天语言能力的争论",
-    "origin": "Unit 3: Development & Learning",
-    "related": [
-      "Cognitive Development",
-      "Social-Emotional Development",
-      "Learning & Conditioning"
-    ],
-    "words": [
-      {
-        "word": "Babbling",
-        "breakdown": "Babbling(咿呀学语)",
-        "meaning_en": "infant speech-like sounds beginning around 4 months; includes all phonemes",
-        "meaning_zh": "咿呀学语：约4个月开始，婴儿发出类似语言的声音。初期包含所有语言的音素，后来逐渐只保留母语中的音素",
-        "derivation": "Babble(咿呀) → 婴儿随意发出声音 → 全世界的婴儿初期咿呀声都一样（不分语言）",
-        "mnemonic": "「ba-ba-ba, ma-ma-ma」→ 所有婴儿都这样开始，因为这些音最容易发",
-        "example": "Babbling begins around 4 months and includes sounds from all languages.",
-        "example_zh": "咿呀学语约4个月开始，包含所有语言的声音。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "One-word & Telegraphic Stage",
-        "breakdown": "One-word(单词) + Telegraphic(电报式的)",
-        "meaning_en": "holophrastic stage (~1 yr) then two-word telegraphic speech (~2 yrs)",
-        "meaning_zh": "单词期和电报式语言：单词期(约1岁)=一个词表达整句意思（「奶」=我要喝奶）；电报期(约2岁)=只用关键词（「妈妈抱」省略了「请」和「我」）",
-        "derivation": "Holophrastic(整句的)=一个词=整句话；Telegraphic(电报式)=像发电报一样省略不必要的词",
-        "mnemonic": "发电报按字收费→只写关键词：「妈妈 来 抱」→ 电报式语言",
-        "example": "In the telegraphic stage, a child might say 'want cookie' instead of a full sentence.",
-        "example_zh": "在电报式语言阶段，孩子可能说「要饼干」而不是完整的句子。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Chomsky's LAD",
-        "breakdown": "Language Acquisition Device(语言获得装置)",
-        "meaning_en": "Chomsky's theory that humans have an innate brain mechanism for learning language",
-        "meaning_zh": "乔姆斯基的语言获得装置：人类大脑天生内置学习语言的机制。解释了为什么所有儿童都能在短时间内学会复杂的语法",
-        "derivation": "Language(语言) + Acquisition(获得) + Device(装置) → 大脑里「出厂自带」的语言学习硬件",
-        "mnemonic": "没人教你语法规则，你3岁就能说出从没听过的正确句子——因为大脑自带语言学习软件(LAD)",
-        "example": "Chomsky argued that the LAD enables children to learn any human language.",
-        "example_zh": "乔姆斯基认为语言获得装置使儿童能够学习任何人类语言。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Critical Period",
-        "breakdown": "Critical(关键的) + Period(时期)",
-        "meaning_en": "optimal window for language acquisition, roughly before puberty",
-        "meaning_zh": "关键期：语言习得的最佳窗口期，大约在青春期之前。错过关键期，语言学习会极其困难（如野孩子Genie的案例）",
-        "derivation": "Critical(关键的) + Period(时期) → 错过这个时期就很难补回来 → 像种子的播种季节",
-        "mnemonic": "为什么小孩学外语比大人快？因为他们还在语言关键期内——大脑的「语言窗口」还开着",
-        "example": "The critical period hypothesis explains why children learn languages more easily than adults.",
-        "example_zh": "关键期假说解释了为什么儿童比成人更容易学习语言。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Bilingualism",
-        "breakdown": "Bi(两) + Lingual(语言的) + -ism",
-        "meaning_en": "ability to speak two languages; associated with cognitive advantages",
-        "meaning_zh": "双语：能使用两种语言。双语者在执行功能（注意力切换、抑制控制）上有优势。不会导致语言混乱或发展迟缓",
-        "derivation": "Bi(两) + Lingua(语言) → 两种语言 → 大脑不断在两种语言间切换，像锻炼肌肉",
-        "mnemonic": "双语大脑像「双核处理器」——经常在两种语言间切换，认知灵活性更强",
-        "example": "Bilingual children show enhanced executive function skills.",
-        "example_zh": "双语儿童表现出更强的执行功能技能。",
         "toefl_frequency": "medium"
       }
     ]
@@ -4365,6 +4019,1356 @@
         "mnemonic": "「只要努力就能变好」→ 成长心态 → 进步的发动机",
         "example": "A growth mindset helps students persist through academic challenges.",
         "example_zh": "成长心态帮助学生坚持应对学业挑战。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Developmental Themes & Methods",
+    "type": "root",
+    "meaning_en": "research methods and major debates in developmental psychology",
+    "meaning_zh": "发展心理学的研究方法和核心议题。包括横断研究vs纵向研究，以及先天vs后天、稳定vs变化、连续vs阶段三大经典争论",
+    "origin": "Unit 3: 3.1 Themes & Methods in Developmental Psychology",
+    "related": [
+      "Physical Development",
+      "Cognitive Development",
+      "Social-Emotional Development"
+    ],
+    "words": [
+      {
+        "word": "Developmental Psychologists",
+        "breakdown": "Developmental(发展的) + Psychologists",
+        "meaning_en": "psychologists who study physical, cognitive, and social changes across the lifespan",
+        "meaning_zh": "发展心理学家：研究人从出生到死亡的身体、认知和社会发展变化的心理学家。关注「人如何随时间变化」",
+        "derivation": "研究发展轨迹 → 各种年龄段的典型模式 → 影响发展的因素",
+        "mnemonic": "发展心理学家 = 「人生变化的研究者」",
+        "example": "Developmental psychologists study how infants learn to recognize faces.",
+        "example_zh": "发展心理学家研究婴儿如何学会识别面孔。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cross-Sectional Study",
+        "breakdown": "Cross(横) + Sectional(截面) + Study",
+        "meaning_en": "comparing people of different ages at the same time",
+        "meaning_zh": "横断研究：在同一时间比较不同年龄段的人。快但有代际差异问题——50岁的人和20岁的人成长环境不同，差异未必来自年龄",
+        "derivation": "同一时间 × 多个年龄组 → 「横切」一刀 → 看年龄差异",
+        "mnemonic": "一次取样多个年龄段 → 像切蛋糕「横切一刀」",
+        "example": "A cross-sectional study compares 20-, 40-, and 60-year-olds at one time.",
+        "example_zh": "横断研究在一个时间点比较20岁、40岁和60岁的人。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Longitudinal Study",
+        "breakdown": "Longitudinal(纵向的) + Study",
+        "meaning_en": "following the same people over a long period of time",
+        "meaning_zh": "纵向研究：追踪同一批人很长时间，观察他们的变化。能避免代际混淆，但贵、慢、被试容易流失",
+        "derivation": "同一批人 × 多个时间点 → 「纵向」追踪 → 看同个人的变化",
+        "mnemonic": "跟踪同一批人几十年 → 纵向研究 → 才能看到「真正的」年龄变化",
+        "example": "A longitudinal study follows the same children from age 5 to 50.",
+        "example_zh": "纵向研究追踪同一批儿童从5岁到50岁。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Lifespan Perspective",
+        "breakdown": "Lifespan(生命全程) + Perspective",
+        "meaning_en": "view that development continues throughout life, not just childhood",
+        "meaning_zh": "生命全程观：发展不是只发生在儿童期，而是贯穿整个生命。成年人、老年人也在持续发展变化。现代发展心理学的核心立场",
+        "derivation": "发展心理学早期只关注儿童 → 后来发现成年和老年也在变 → 扩展到生命全程",
+        "mnemonic": "从摇篮到坟墓都在发展 → 不是「长大了就停了」",
+        "example": "The lifespan perspective studies development from infancy to old age.",
+        "example_zh": "生命全程观研究从婴儿期到老年的发展。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stability vs Change",
+        "breakdown": "Stability(稳定) + Change(变化)",
+        "meaning_en": "debate on whether personality and traits remain stable or change over time",
+        "meaning_zh": "稳定vs变化之争：人格特质在生命中是保持稳定还是会改变？证据显示：核心特质相对稳定，但具体表现会随环境变化。「三岁看大」有一定道理但不绝对",
+        "derivation": "研究人格纵向变化 → 既有稳定成分也有变化成分 → 争论哪个主导",
+        "mnemonic": "「江山易改本性难移」vs「人是会变的」→ 稳定vs变化之争",
+        "example": "The stability vs change debate asks whether personality traits persist.",
+        "example_zh": "稳定与变化之争探讨人格特质是否持续存在。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Nature vs Nurture",
+        "breakdown": "Nature(天性) + Nurture(教养)",
+        "meaning_en": "debate on whether genes or environment has more influence on development",
+        "meaning_zh": "先天vs后天之争：发展更多由基因决定还是由环境决定？现代观点是两者交互作用——基因提供潜能，环境决定表达。心理学最古老的争论",
+        "derivation": "古老争论 → 双胞胎研究 + 表观遗传 → 最终共识：交互作用",
+        "mnemonic": "「天生的还是学来的」→ 答案通常是「两者都有」",
+        "example": "The nature vs nurture debate is central to developmental psychology.",
+        "example_zh": "先天与后天之争是发展心理学的核心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Continuous vs Discontinuous",
+        "breakdown": "Continuous(连续) + Discontinuous(不连续)",
+        "meaning_en": "debate on whether development is gradual or occurs in distinct stages",
+        "meaning_zh": "连续vs阶段之争：发展是像树慢慢长高那样渐进，还是像毛毛虫变蝴蝶那样有明显阶段？不同理论选择不同立场——皮亚杰是阶段论，行为主义偏连续",
+        "derivation": "连续派 → 渐进积累（行为主义）；阶段派 → 质变飞跃（皮亚杰、埃里克森）",
+        "mnemonic": "树苗渐长（连续）vs 毛毛虫变蝴蝶（阶段）→ 两种发展观",
+        "example": "Piaget's theory suggests discontinuous cognitive development.",
+        "example_zh": "皮亚杰的理论认为认知发展是阶段性的。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Physical Development",
+    "type": "root",
+    "meaning_en": "physical growth and maturation from prenatal development through adulthood",
+    "meaning_zh": "身体发展：从产前发育到成年的生理变化。包括胎儿期影响、婴儿反射、青春期变化、更年期等生命各阶段的身体发展",
+    "origin": "Unit 3: 3.2 Physical Development across the Lifespan",
+    "related": [
+      "Developmental Themes & Methods",
+      "Cognitive Development"
+    ],
+    "words": [
+      {
+        "word": "Teratogen",
+        "breakdown": "Terato(畸形) + gen(产生)",
+        "meaning_en": "substance that crosses the placenta and harms prenatal development",
+        "meaning_zh": "致畸物：能穿过胎盘并损害胎儿发育的物质。包括酒精、尼古丁、某些药物、病毒等。胎儿酒精综合征是典型例子",
+        "derivation": "Terato(畸形) + gen(产生) → 「产生畸形的东西」→ 致畸物",
+        "mnemonic": "孕妇戒酒戒烟 → 因为它们是致畸物 → 会「制造畸形」",
+        "example": "Alcohol is a teratogen that can cause fetal alcohol syndrome.",
+        "example_zh": "酒精是致畸物，可导致胎儿酒精综合征。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Rooting Reflex",
+        "breakdown": "Rooting(寻找) + Reflex(反射)",
+        "meaning_en": "newborn reflex of turning the head and opening mouth toward a touch on the cheek",
+        "meaning_zh": "觅食反射：轻触新生儿脸颊，他会转头张嘴寻找乳头。这是与生俱来的生存反射，帮助婴儿找到食物。几个月后会消失",
+        "derivation": "Rooting → 「寻根」→ 婴儿在「寻找」乳头 → 觅食反射",
+        "mnemonic": "摸婴儿脸蛋 → 他把头转过来张嘴 → 觅食反射 → 天生找奶吃",
+        "example": "The rooting reflex helps newborns find their mother's breast.",
+        "example_zh": "觅食反射帮助新生儿找到母亲的乳房。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Visual Cliff",
+        "breakdown": "Visual(视觉的) + Cliff(悬崖)",
+        "meaning_en": "apparatus used to test depth perception in infants (Gibson & Walk)",
+        "meaning_zh": "视觉悬崖：吉布森和沃克设计的装置，一侧是浅台面，另一侧下面是透明玻璃显示悬崖的视觉假象。多数6个月大的婴儿不愿爬过「悬崖」→ 证明深度知觉早早出现",
+        "derivation": "假悬崖 → 视觉暗示「危险」→ 看婴儿是否回避 → 测深度知觉",
+        "mnemonic": "婴儿不敢爬过玻璃「悬崖」→ 视觉悬崖实验 → 深度知觉是天生的",
+        "example": "The visual cliff experiment shows infants perceive depth.",
+        "example_zh": "视觉悬崖实验显示婴儿能感知深度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Critical Period",
+        "breakdown": "Critical(关键的) + Period",
+        "meaning_en": "specific time window when certain skills must be learned or they may never develop",
+        "meaning_zh": "关键期（敏感期）：某项能力必须在特定时间窗口内学会，否则可能永远学不会或学得差。语言习得有关键期——幼时没接触任何语言的孩子后来很难真正掌握语言",
+        "derivation": "大脑在特定发育窗口 → 对某类刺激高度敏感 → 错过就难补",
+        "mnemonic": "过了村就没这店 → 语言、视觉、依恋等都有关键期",
+        "example": "There is a critical period for language acquisition in early childhood.",
+        "example_zh": "语言习得在儿童早期有一个关键期。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Adolescent Growth Spurt",
+        "breakdown": "Adolescent(青少年) + Growth + Spurt(猛增)",
+        "meaning_en": "rapid physical growth during adolescence",
+        "meaning_zh": "青春期生长突增：青春期身高体重快速增长的时期。女孩通常比男孩早1-2年开始。是青春期最明显的身体变化之一",
+        "derivation": "荷尔蒙大量分泌 → 骨骼肌肉快速生长 → 短时间内身高猛增",
+        "mnemonic": "「一年长10厘米」→ 青春期生长突增",
+        "example": "Girls typically experience the adolescent growth spurt before boys.",
+        "example_zh": "女孩通常比男孩更早经历青春期生长突增。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Puberty",
+        "breakdown": "Puberty(青春期)",
+        "meaning_en": "period when a person becomes sexually mature",
+        "meaning_zh": "青春期：身体达到性成熟的时期。包括第一性征成熟（生殖器官）和第二性征出现（声音、毛发等）。由下丘脑-垂体-性腺轴驱动",
+        "derivation": "性激素水平激增 → 启动身体变化 → 从儿童过渡到成人",
+        "mnemonic": "「变声、长胡子、来月经」→ 都是青春期的标志",
+        "example": "Puberty typically begins between ages 10 and 14.",
+        "example_zh": "青春期通常在10-14岁开始。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Primary Sex Characteristics",
+        "breakdown": "Primary(主要的) + Sex(性的) + Characteristics",
+        "meaning_en": "reproductive organs necessary for reproduction",
+        "meaning_zh": "第一性征：直接参与生殖的器官——男性睾丸阴茎、女性卵巢子宫。在青春期成熟",
+        "derivation": "Primary → 「主要的」→ 直接和生殖相关 → 生殖器官",
+        "mnemonic": "第一性征 = 「生殖器官」→ 直接用于繁殖",
+        "example": "Primary sex characteristics include the ovaries and testes.",
+        "example_zh": "第一性征包括卵巢和睾丸。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Secondary Sex Characteristics",
+        "breakdown": "Secondary(次要的) + Sex + Characteristics",
+        "meaning_en": "non-reproductive sexual traits that emerge at puberty",
+        "meaning_zh": "第二性征：青春期出现的不直接参与生殖的性别特征。男性长胡子变声、女性乳房发育。是青春期荷尔蒙作用的外在表现",
+        "derivation": "Secondary → 「次要的」→ 不直接用于生殖但标志性别 → 如胡须、乳房",
+        "mnemonic": "第二性征 = 「看得出来的性别特征」→ 但不是生殖器官",
+        "example": "Facial hair is a secondary sex characteristic in males.",
+        "example_zh": "胡须是男性的第二性征。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Menarche",
+        "breakdown": "Men(月) + arche(开始)",
+        "meaning_en": "the first menstrual period in females",
+        "meaning_zh": "初潮：女性第一次月经，标志着生殖系统开始成熟。通常在12-13岁左右。是女孩青春期的重要里程碑",
+        "derivation": "Men(月) + arche(开始) → 月经的开始 → 初潮",
+        "mnemonic": "Men(月经) + 开始 → 月经的开始 → 初潮",
+        "example": "Menarche typically occurs around age 12 or 13.",
+        "example_zh": "初潮通常发生在12或13岁左右。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Spermarche",
+        "breakdown": "Sperm(精子) + arche(开始)",
+        "meaning_en": "the first ejaculation of sperm in males",
+        "meaning_zh": "首次射精：男性第一次射精，标志生殖能力的开始。通常在14岁左右。是男孩青春期的重要里程碑",
+        "derivation": "Sperm(精子) + arche(开始) → 精子的开始 → 首次射精",
+        "mnemonic": "Sperm + 开始 → 精子的开始 → 首次射精",
+        "example": "Spermarche marks the beginning of male reproductive capability.",
+        "example_zh": "首次射精标志男性生殖能力的开始。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Menopause",
+        "breakdown": "Meno(月经) + pause(停止)",
+        "meaning_en": "end of menstrual cycles in women, marking the end of fertility",
+        "meaning_zh": "更年期（绝经）：女性月经周期停止，生育能力终结的时期。通常在45-55岁之间。伴随荷尔蒙变化可能引起潮热、情绪波动等",
+        "derivation": "Meno(月经) + pause(停止) → 月经停止 → 更年期",
+        "mnemonic": "pause = 暂停 → 月经永久停止 → 更年期",
+        "example": "Menopause usually occurs between ages 45 and 55.",
+        "example_zh": "更年期通常发生在45-55岁之间。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Cognitive Development",
+    "type": "root",
+    "meaning_en": "Piaget, Vygotsky, and theories of how thinking develops across the lifespan",
+    "meaning_zh": "认知发展：思维能力如何随年龄变化。以皮亚杰的四阶段理论为核心，加上维果茨基的社会文化理论和成人后的流体vs晶体智力",
+    "origin": "Unit 3: 3.4 Cognitive Development across the Lifespan",
+    "related": [
+      "Physical Development",
+      "Social-Emotional Development",
+      "Intelligence"
+    ],
+    "words": [
+      {
+        "word": "Piaget",
+        "breakdown": "Piaget(皮亚杰，人名)",
+        "meaning_en": "Swiss psychologist who proposed the stage theory of cognitive development",
+        "meaning_zh": "皮亚杰：瑞士心理学家，提出了儿童认知发展的阶段理论。通过观察自己的孩子建立理论，认为儿童是「小科学家」，主动构建对世界的理解",
+        "derivation": "观察儿童错误 → 发现儿童思维质的不同 → 提出四阶段理论",
+        "mnemonic": "皮亚杰 = 儿童认知发展的「教父」→ 四阶段理论创始人",
+        "example": "Piaget believed children actively construct their understanding of the world.",
+        "example_zh": "皮亚杰认为儿童会主动建构他们对世界的理解。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Schema",
+        "breakdown": "Schema(图式)",
+        "meaning_en": "mental framework for organizing knowledge about a concept",
+        "meaning_zh": "图式：关于某事物的心理框架或知识结构。「狗」的图式包括四条腿、毛、吠叫等特征。新经验要么被同化进已有图式，要么导致图式调整",
+        "derivation": "经验积累 → 抽象出共同特征 → 形成心理模板 → 图式",
+        "mnemonic": "脑中关于某类事物的「模板」→ 图式",
+        "example": "Children develop schemas for familiar objects like toys.",
+        "example_zh": "儿童为熟悉的物体如玩具建立图式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Assimilation",
+        "breakdown": "Assimilation(同化)",
+        "meaning_en": "incorporating new information into an existing schema",
+        "meaning_zh": "同化（皮亚杰）：把新信息纳入已有图式。孩子第一次见羊，可能说「狗狗」——用已有的「狗」图式来理解新动物",
+        "derivation": "新信息 + 旧图式 → 塞进已有框架 → 不改变图式本身",
+        "mnemonic": "「硬塞进去」→ 同化 → 用旧眼光看新事物",
+        "example": "A child calling a cow \"doggie\" is assimilating the animal into a dog schema.",
+        "example_zh": "孩子把牛叫做「狗狗」就是把它同化进狗的图式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Accommodation (Piaget)",
+        "breakdown": "Accommodation(顺应) — 皮亚杰理论",
+        "meaning_en": "adjusting existing schemas to incorporate new information",
+        "meaning_zh": "顺应（皮亚杰）：当同化失败时，调整已有图式以适应新信息。孩子发现羊和狗不一样之后，创建「羊」这个新图式——修改认知结构",
+        "derivation": "新信息不合 → 旧图式需要调整 → 创建新图式或修改旧图式",
+        "mnemonic": "「改变自己去适应」→ 顺应 → 图式更新",
+        "example": "Learning that a whale is a mammal, not a fish, requires accommodation.",
+        "example_zh": "知道鲸鱼是哺乳动物而不是鱼需要顺应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sensorimotor Stage",
+        "breakdown": "Sensori(感觉) + motor(运动) + Stage",
+        "meaning_en": "Piaget's first stage (birth-2): learning through senses and actions",
+        "meaning_zh": "感知运动阶段（0-2岁）：皮亚杰第一阶段，婴儿通过感官和动作探索世界。主要成就是客体永久性的发展",
+        "derivation": "感觉 + 运动 → 用感官和身体动作认识世界 → 皮亚杰第一阶段",
+        "mnemonic": "婴儿 = 用嘴尝、用手摸、用眼看 → 感知运动阶段",
+        "example": "In the sensorimotor stage, infants learn through touching and tasting.",
+        "example_zh": "在感知运动阶段，婴儿通过触摸和品尝来学习。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Object Permanence",
+        "breakdown": "Object(物体) + Permanence(永久)",
+        "meaning_en": "understanding that objects continue to exist when out of sight",
+        "meaning_zh": "客体永久性：理解物体即使看不见也依然存在。8个月前的婴儿看不见就是没有——你把玩具藏起来，他不找；客体永久性发展后才会找",
+        "derivation": "看不见的东西还在 → 需要内在表象 → 婴儿认知的重要里程碑",
+        "mnemonic": "「玩具藏起来了他就不找了」→ 还没有客体永久性",
+        "example": "Babies develop object permanence around 8 months old.",
+        "example_zh": "婴儿在大约8个月大时发展出客体永久性。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Preoperational Stage",
+        "breakdown": "Pre(前) + operational(运算) + Stage",
+        "meaning_en": "Piaget's second stage (2-7): language and symbols but illogical thinking",
+        "meaning_zh": "前运算阶段（2-7岁）：皮亚杰第二阶段，儿童能使用语言和符号，但思维还不符合逻辑。表现为自我中心、万物有灵、缺乏守恒概念",
+        "derivation": "Pre(前) + operational(运算) → 「还没学会运算」→ 还不能逻辑推理",
+        "mnemonic": "会说话但「逻辑还不上线」→ 前运算阶段",
+        "example": "In the preoperational stage, children engage in pretend play.",
+        "example_zh": "在前运算阶段，儿童会进行假装游戏。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Conservation",
+        "breakdown": "Conservation(守恒)",
+        "meaning_en": "understanding that quantity remains the same despite changes in shape",
+        "meaning_zh": "守恒：理解物体的量不因形状改变而变化。同样的水倒进细高杯子里「看起来」变多了——前运算期儿童会上当；具体运算期才能理解守恒",
+        "derivation": "外观变了 → 量没变 → 需要理解形状和量的独立性",
+        "mnemonic": "矮胖杯 vs 细高杯 → 水一样多但孩子觉得不一样 → 没有守恒",
+        "example": "Conservation develops in the concrete operational stage.",
+        "example_zh": "守恒概念在具体运算阶段发展出来。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Reversibility",
+        "breakdown": "Reversibility(可逆性)",
+        "meaning_en": "understanding that operations can be mentally reversed",
+        "meaning_zh": "可逆性：理解操作可以在心理上逆转回原样。知道8-3=5还可以5+3=8。是具体运算阶段的关键能力，支持守恒理解",
+        "derivation": "一个动作可以反过来 → 心理上能模拟逆转 → 理解可逆性",
+        "mnemonic": "「倒回去」的能力 → 可逆性",
+        "example": "Reversibility helps children understand mathematical operations.",
+        "example_zh": "可逆性帮助儿童理解数学运算。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Animism",
+        "breakdown": "Anim(灵魂) + ism",
+        "meaning_en": "belief that inanimate objects have feelings and intentions",
+        "meaning_zh": "万物有灵：认为无生命的物体也有感觉、想法和意图。孩子会说「月亮跟着我走」「椅子摔疼了」。是前运算期的典型特征",
+        "derivation": "以自己为模板 → 把自己的感受投射到一切事物 → 万物有灵",
+        "mnemonic": "「椅子摔疼了」→ 孩子觉得椅子会痛 → 万物有灵",
+        "example": "Animism is common in preoperational children.",
+        "example_zh": "万物有灵在前运算期儿童中很常见。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Egocentrism",
+        "breakdown": "Ego(自我) + centrism(中心)",
+        "meaning_en": "inability to see things from another's perspective",
+        "meaning_zh": "自我中心：无法从他人视角看问题，认为别人看到的、想的和自己一样。不是自私——而是真的不具备换位思考的能力。前运算期的典型特征",
+        "derivation": "认知能力限制 → 无法在心理上切换视角 → 默认别人和自己一样",
+        "mnemonic": "「捂住自己眼睛就以为别人也看不见」→ 自我中心",
+        "example": "A 3-year-old's egocentrism makes it hard to understand others' views.",
+        "example_zh": "3岁孩子的自我中心使他难以理解他人的观点。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Theory of Mind",
+        "breakdown": "Theory + of + Mind(心理)",
+        "meaning_en": "ability to understand that others have different mental states",
+        "meaning_zh": "心理理论：理解他人有和自己不同的信念、欲望和意图的能力。大约4岁发展出来——之前无法通过「错误信念任务」（Sally-Anne test）。自闭症儿童常发展迟缓",
+        "derivation": "认识到「他人是另一个心灵」→ 有自己的想法 → 可能和我不同",
+        "mnemonic": "「我知道你不知道」→ 心理理论 → 4岁的飞跃",
+        "example": "Theory of mind allows children to understand deception.",
+        "example_zh": "心理理论使儿童能理解欺骗。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Concrete Operational Stage",
+        "breakdown": "Concrete(具体的) + Operational + Stage",
+        "meaning_en": "Piaget's third stage (7-11): logical thinking about concrete events",
+        "meaning_zh": "具体运算阶段（7-11岁）：皮亚杰第三阶段，儿童能对具体事物进行逻辑推理，掌握守恒、可逆性、分类等概念。但还不能处理抽象假设",
+        "derivation": "具体事物 → 可以逻辑操作 → 但抽象思维还不行 → 具体运算",
+        "mnemonic": "「看得见的东西能逻辑思考」→ 但抽象的还不行 → 具体运算",
+        "example": "Children in the concrete operational stage can understand conservation.",
+        "example_zh": "具体运算阶段的儿童能理解守恒概念。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Formal Operational Stage",
+        "breakdown": "Formal(形式的) + Operational + Stage",
+        "meaning_en": "Piaget's fourth stage (12+): abstract and hypothetical reasoning",
+        "meaning_zh": "形式运算阶段（12岁起）：皮亚杰第四阶段，青少年能进行抽象思考、假设推理、系统解决问题。「如果...那么...」的假设思维开始成熟",
+        "derivation": "抽象思维 → 处理可能性而不只是现实 → 假设演绎",
+        "mnemonic": "「如果世界没有重力会怎样」→ 能思考这种问题 → 形式运算",
+        "example": "Abstract algebra requires formal operational thinking.",
+        "example_zh": "抽象代数需要形式运算思维。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Vygotsky",
+        "breakdown": "Vygotsky(维果茨基，人名)",
+        "meaning_en": "Russian psychologist who emphasized social and cultural influences on development",
+        "meaning_zh": "维果茨基：俄国心理学家，强调社会文化和他人互动在认知发展中的核心作用。和皮亚杰（强调内在建构）形成对比——维果茨基更强调外部帮助",
+        "derivation": "认知不是独立发展 → 是在社会互动中「被教出来的」→ 强调文化工具",
+        "mnemonic": "维果茨基 = 「社交派」认知发展 → 强调他人和文化",
+        "example": "Vygotsky emphasized the role of social interaction in learning.",
+        "example_zh": "维果茨基强调社会互动在学习中的作用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Zone of Proximal Development",
+        "breakdown": "Zone + Proximal(近侧的) + Development",
+        "meaning_en": "Vygotsky's gap between what a child can do alone vs with help",
+        "meaning_zh": "最近发展区（ZPD）：维果茨基概念——儿童独立能做到的和在他人指导下能做到的之间的差距。教学的最佳切入点就在这个区域——太简单无挑战，太难做不到",
+        "derivation": "独立能力 ← ZPD → 他人指导下能力 → 教学的「甜蜜点」",
+        "mnemonic": "「差一点点就会」的区域 → 最近发展区 → 最好教",
+        "example": "Teachers should work within a child's zone of proximal development.",
+        "example_zh": "教师应在儿童的最近发展区内进行教学。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Scaffolding",
+        "breakdown": "Scaffolding(脚手架)",
+        "meaning_en": "temporary support adults provide to help children learn new skills",
+        "meaning_zh": "支架作用：成人或更有经验者在儿童学习新技能时提供的临时帮助。随着儿童能力提高，支架逐渐撤除。是最近发展区教学的具体方法",
+        "derivation": "建筑脚手架的隐喻 → 暂时的支持结构 → 建好后拆掉",
+        "mnemonic": "像建楼时的脚手架 → 用完拆掉 → 留下学生自己的能力",
+        "example": "A parent scaffolds learning by asking guiding questions.",
+        "example_zh": "家长通过提问引导来提供学习支架。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Crystallized Intelligence",
+        "breakdown": "Crystallized(结晶的) + Intelligence",
+        "meaning_en": "accumulated knowledge and verbal skills, increases with age",
+        "meaning_zh": "晶体智力：积累的知识和经验，包括词汇、常识、专业技能。随年龄增长——老年人知识量通常高于年轻人。和流体智力相对",
+        "derivation": "像「结晶」一样积累 → 学到的知识 → 不会流失",
+        "mnemonic": "老教授的智慧 → 晶体智力 → 越老越多",
+        "example": "Crystallized intelligence, like vocabulary, increases with age.",
+        "example_zh": "晶体智力如词汇量会随年龄增长。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fluid Intelligence",
+        "breakdown": "Fluid(流动的) + Intelligence",
+        "meaning_en": "ability to reason quickly and solve novel problems, declines with age",
+        "meaning_zh": "流体智力：快速推理和解决新问题的能力，不依赖已有知识。随年龄增长而下降——年轻人学新东西快、反应快。和晶体智力相对",
+        "derivation": "像流水一样灵活 → 处理陌生问题的能力 → 反应速度",
+        "mnemonic": "年轻人玩新游戏学得快 → 流体智力 → 年轻时最好",
+        "example": "Fluid intelligence peaks in early adulthood.",
+        "example_zh": "流体智力在成年早期达到顶峰。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dementia",
+        "breakdown": "De(去) + ment(心智) + ia",
+        "meaning_en": "progressive cognitive decline affecting memory and reasoning",
+        "meaning_zh": "痴呆：进行性认知功能下降，影响记忆、推理、判断和日常生活能力。最常见原因是阿尔兹海默病。不是正常老化——很多老人一辈子都不会得",
+        "derivation": "De(去) + ment(心智) → 「心智消退」→ 痴呆",
+        "mnemonic": "ment = 心智 → de-ment = 失去心智 → 痴呆",
+        "example": "Dementia is not a normal part of aging.",
+        "example_zh": "痴呆不是老化的正常部分。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Language Development",
+    "type": "root",
+    "meaning_en": "building blocks of language and stages of language acquisition",
+    "meaning_zh": "语言发展：语言的基本构成（音素、语素、语法等）和儿童习得语言的阶段顺序。从咿呀学语到完整句子的过程",
+    "origin": "Unit 3: 3.5 Communication and Language Development",
+    "related": [
+      "Cognitive Development",
+      "Social-Emotional Development"
+    ],
+    "words": [
+      {
+        "word": "Phonemes",
+        "breakdown": "Phon(声音) + emes",
+        "meaning_en": "smallest units of sound in a language",
+        "meaning_zh": "音素：语言中最小的声音单位。英语有约44个音素——/b/、/p/、/i/等。不同语言的音素不同，所以中国人难区分英语的L和R",
+        "derivation": "Phon(声音) → 最小的声音片段 → 组合成词",
+        "mnemonic": "Phone = 电话/声音 → phoneme = 最小的声音 → 音素",
+        "example": "The word \"cat\" has three phonemes: /k/, /a/, /t/.",
+        "example_zh": "单词「cat」有三个音素：/k/、/a/、/t/。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Morphemes",
+        "breakdown": "Morph(形态) + emes",
+        "meaning_en": "smallest meaningful units of language",
+        "meaning_zh": "语素：语言中最小的有意义单位。可以是词（「狗」）或词缀（「-s」表复数、「un-」表否定）。比音素高一级——音素只是声音，语素有意义",
+        "derivation": "Morph(形态) → 最小的意义单位 → 不能再拆还保留意义",
+        "mnemonic": "「un-happy-s」= 3个语素 → 每个都有含义",
+        "example": "The word \"unhappy\" contains two morphemes: \"un\" and \"happy\".",
+        "example_zh": "单词「unhappy」包含两个语素：「un」和「happy」。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Semantics",
+        "breakdown": "Semantics(语义学)",
+        "meaning_en": "the meaning of words and sentences",
+        "meaning_zh": "语义学：研究语言的意义。包括词的意义以及词组合后产生的整体意义。理解「The cat sat on the mat」不只要识字，还要把意义组合起来",
+        "derivation": "词和句子的含义 → 语义层面",
+        "mnemonic": "semantic = 「意思」层面 → 不是声音不是语法 → 是意义",
+        "example": "Semantics is the study of how language conveys meaning.",
+        "example_zh": "语义学研究语言如何传达意义。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Grammar",
+        "breakdown": "Grammar(语法)",
+        "meaning_en": "the system of rules governing language structure",
+        "meaning_zh": "语法：一种语言的结构规则系统，规定单词如何组合成有效的句子。包括语义（意义）和句法（结构）",
+        "derivation": "语言结构的规则 → 告诉你什么组合合法 → 语法",
+        "mnemonic": "语法 = 语言的「交通规则」→ 不遵守就「语句不通」",
+        "example": "Grammar determines which word orders are acceptable.",
+        "example_zh": "语法决定哪些词序是可以接受的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Syntax",
+        "breakdown": "Syn(一起) + tax(排列)",
+        "meaning_en": "rules for combining words into grammatical sentences",
+        "meaning_zh": "句法：把词组合成合法句子的规则。英语是「主谓宾」顺序——「我吃苹果」合法，「吃我苹果」就不合。和语义学（意义）相对",
+        "derivation": "Syn(一起) + tax(排列) → 「如何一起排列」→ 词的组合规则",
+        "mnemonic": "句法 = 「词序规则」→ 同样的词不同顺序意思不同",
+        "example": "English syntax requires subject-verb-object order.",
+        "example_zh": "英语句法要求主谓宾的语序。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cooing Stage",
+        "breakdown": "Cooing(咕咕声) + Stage",
+        "meaning_en": "infant sounds of vowel-like noises around 2 months",
+        "meaning_zh": "咕咕声阶段（约2个月）：婴儿开始发出类似元音的声音，像「啊-」「哦-」。还不是真正的语言，但是在练习发声器官",
+        "derivation": "婴儿最早的发声练习 → 元音为主 → 咕咕声",
+        "mnemonic": "像鸽子「咕咕」→ 婴儿的早期声音",
+        "example": "Babies begin cooing around 2 months old.",
+        "example_zh": "婴儿在2个月大左右开始发咕咕声。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Babbling Stage",
+        "breakdown": "Babbling(咿呀学语) + Stage",
+        "meaning_en": "infant production of consonant-vowel sounds around 4-6 months",
+        "meaning_zh": "咿呀学语阶段（约4-6个月）：婴儿开始发出辅音+元音的组合，如「ba-ba」「ma-ma」。有趣的是全世界婴儿咿呀声相似——不限于母语的音素",
+        "derivation": "从咕咕声进阶 → 加入辅音 → 开始模拟语言的音节结构",
+        "mnemonic": "「ba-ba、da-da」→ 咿呀学语 → 不一定是在叫爸爸",
+        "example": "Babbling includes sounds from many languages initially.",
+        "example_zh": "咿呀学语最初包含多种语言的声音。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "One-Word Stage",
+        "breakdown": "One-Word + Stage",
+        "meaning_en": "single-word utterances around 12 months",
+        "meaning_zh": "单词阶段（约1岁）：婴儿开始说单个有意义的词——「奶」「妈妈」「狗狗」。一个词常代表整个句子——「奶」可能是「我要喝奶」",
+        "derivation": "一岁左右 → 单词爆发 → 词等于句子",
+        "mnemonic": "一个词 = 一整个意思 → 一词句阶段",
+        "example": "The one-word stage begins around 12 months.",
+        "example_zh": "单词阶段约在12个月大时开始。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Telegraphic Speech",
+        "breakdown": "Telegraphic(电报式的) + Speech",
+        "meaning_en": "two-word speech with only essential content words",
+        "meaning_zh": "电报式语言（约2岁）：儿童说话像电报——只有关键词没有虚词和助词。「妈妈抱」「要饼干」，省略掉「请」「的」「了」等",
+        "derivation": "电报收费按字 → 只发必要词 → 儿童省虚词 → 电报式",
+        "mnemonic": "电报 = 省着发字 → 儿童说话省字 → 电报式",
+        "example": "A toddler saying \"want cookie\" uses telegraphic speech.",
+        "example_zh": "幼儿说「要饼干」就是电报式语言。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Overgeneralization",
+        "breakdown": "Over(过度) + generalization(概括)",
+        "meaning_en": "applying grammar rules too broadly, as in \"goed\" instead of \"went\"",
+        "meaning_zh": "过度概括：把学到的语法规则过度应用。「goed」「foots」「mouses」——儿童学会「加ed表过去」「加s表复数」后，对所有词都这样用，包括不规则词。是语言习得的正常阶段",
+        "derivation": "学到规则 → 应用到所有情况 → 忽略例外 → 过度概括",
+        "mnemonic": "「I goed」→ 学到规则后「一视同仁」→ 过度概括 → 其实是学习的证据",
+        "example": "\"I goed to the store\" is an example of overgeneralization.",
+        "example_zh": "「I goed to the store」是过度概括的例子。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Social-Emotional Development",
+    "type": "root",
+    "meaning_en": "social and emotional development from attachment through identity formation",
+    "meaning_zh": "社会情感发展：包括布朗芬布伦纳的生态系统、教养方式、依恋理论、埃里克森八阶段、青春期身份形成等。涵盖从婴儿到成年的情感和社会性发展",
+    "origin": "Unit 3: 3.6 Social-Emotional Developmental Across the Lifespan",
+    "related": [
+      "Cognitive Development",
+      "Physical Development",
+      "Personality Theories"
+    ],
+    "words": [
+      {
+        "word": "Ecological Systems Theory",
+        "breakdown": "Ecological(生态的) + Systems + Theory",
+        "meaning_en": "Bronfenbrenner's theory that development occurs within nested environmental systems",
+        "meaning_zh": "生态系统理论（布朗芬布伦纳）：发展发生在五层嵌套的环境系统中，从最贴近的家庭到最远的文化和历史背景。强调环境的层次性影响",
+        "derivation": "同心圆结构 → 从最近到最远 → 每层都影响发展",
+        "mnemonic": "像洋葱 → 从家庭到文化 → 层层环境都影响你",
+        "example": "Bronfenbrenner's ecological systems theory nests multiple environments.",
+        "example_zh": "布朗芬布伦纳的生态系统理论嵌套多个环境层次。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Microsystem",
+        "breakdown": "Micro(微) + system",
+        "meaning_en": "immediate environment like family, school, peers",
+        "meaning_zh": "微系统：最贴近个人的直接环境——家庭、学校、朋友、邻居。对发展影响最直接。是生态系统理论的最内层",
+        "derivation": "Micro(微小) → 最贴近的小圈子 → 直接环境",
+        "mnemonic": "家人 + 同学 + 好友 → 你的微系统",
+        "example": "A child's microsystem includes parents and classmates.",
+        "example_zh": "儿童的微系统包括父母和同学。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mesosystem",
+        "breakdown": "Meso(中) + system",
+        "meaning_en": "interactions between different microsystems",
+        "meaning_zh": "中系统：不同微系统之间的相互联系。比如「家庭」和「学校」之间的关系——家长参与学校活动，教师与家长沟通。是微系统的「交互层」",
+        "derivation": "Meso(中间) → 微系统之间的连接 → 中系统",
+        "mnemonic": "家校合作 → 中系统 → 两个微系统在对话",
+        "example": "A parent-teacher meeting is part of the mesosystem.",
+        "example_zh": "家长会是中系统的一部分。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Exosystem",
+        "breakdown": "Exo(外) + system",
+        "meaning_en": "settings that indirectly affect a person, like a parent's workplace",
+        "meaning_zh": "外系统：不直接接触但间接影响个人的环境。比如父母的工作单位——孩子不在那儿，但父母加班回家就可能影响孩子的情绪",
+        "derivation": "Exo(外) → 外部的 → 间接影响 → 外系统",
+        "mnemonic": "爸爸公司里的事影响爸爸心情，再影响你 → 外系统",
+        "example": "A parent's stressful job is part of a child's exosystem.",
+        "example_zh": "父母有压力的工作是儿童外系统的一部分。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Macrosystem",
+        "breakdown": "Macro(大) + system",
+        "meaning_en": "overarching culture, laws, and social values",
+        "meaning_zh": "宏系统：包含一切的文化、法律、社会价值观、经济条件。决定了其他系统运作的大背景——东方文化vs西方文化的孩子，整体成长环境大不相同",
+        "derivation": "Macro(宏大) → 最大的环境 → 文化和社会",
+        "mnemonic": "中国文化 vs 美国文化 → 宏系统 → 整个大背景",
+        "example": "Cultural values shape a child's macrosystem.",
+        "example_zh": "文化价值观塑造儿童的宏系统。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Chronosystem",
+        "breakdown": "Chrono(时间) + system",
+        "meaning_en": "dimension of time: historical events and life transitions",
+        "meaning_zh": "时间系统：环境随时间的变化——历史事件（疫情、战争、科技变革）和人生转变（上学、结婚、丧亲）。你出生的年代深刻影响你的成长",
+        "derivation": "Chrono(时间) → 时间维度 → 历史和变迁",
+        "mnemonic": "出生在疫情年 vs 和平年 → 时间系统不同",
+        "example": "Growing up during a pandemic is part of the chronosystem.",
+        "example_zh": "在疫情中成长是时间系统的一部分。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Authoritarian Parenting",
+        "breakdown": "Authoritarian(专制的) + Parenting",
+        "meaning_en": "strict parenting with high demands and low responsiveness",
+        "meaning_zh": "专制型教养：严格要求、期望很高，但缺乏情感回应。「我说了算，不要问为什么」。孩子往往缺乏自主性、自尊较低",
+        "derivation": "高要求 + 低回应 → 只下命令不给解释 → 专制",
+        "mnemonic": "「必须听我的」→ 专制型 → 压制但不沟通",
+        "example": "Authoritarian parents enforce strict rules without explanation.",
+        "example_zh": "专制型父母强制执行规则而不做解释。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Authoritative Parenting",
+        "breakdown": "Authoritative(权威的) + Parenting",
+        "meaning_en": "balanced parenting with high demands and high responsiveness",
+        "meaning_zh": "权威型教养：既有明确要求和规则，也对孩子的需求温暖回应。会解释原因，鼓励讨论。被认为是最理想的教养方式——培养自信、独立、合作的孩子",
+        "derivation": "高要求 + 高回应 → 规则+温暖 → 权威但不专制",
+        "mnemonic": "「我有规则但也听你说」→ 权威型 → 最好的类型",
+        "example": "Authoritative parenting produces confident, well-adjusted children.",
+        "example_zh": "权威型教养培养出自信、适应良好的儿童。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Permissive Parenting",
+        "breakdown": "Permissive(放任的) + Parenting",
+        "meaning_en": "lenient parenting with few demands and high responsiveness",
+        "meaning_zh": "放任型教养：温暖回应但很少规则和要求。「做什么都可以」。孩子可能自由但也缺乏自控力和责任感",
+        "derivation": "低要求 + 高回应 → 温暖但没规矩 → 放任",
+        "mnemonic": "「想干啥干啥」→ 放任型 → 宠溺",
+        "example": "Permissive parents rarely enforce rules.",
+        "example_zh": "放任型父母很少执行规则。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Secure Attachment",
+        "breakdown": "Secure(安全的) + Attachment",
+        "meaning_en": "confident attachment: distressed when caregiver leaves, comforted on return",
+        "meaning_zh": "安全型依恋：爱因斯沃斯陌生情境中最常见类型。妈妈离开时焦虑，妈妈回来后很快被安抚。照料者一贯敏感回应的结果，预测后来良好的人际关系",
+        "derivation": "照料者敏感回应 → 孩子学会「妈妈可靠」→ 安全基地",
+        "mnemonic": "安全型 = 「有把握的依恋」→ 走了会哭，回来能哄好",
+        "example": "Securely attached infants use their parent as a safe base.",
+        "example_zh": "安全依恋的婴儿把父母当作安全基地。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Insecure Attachment",
+        "breakdown": "Insecure(不安全的) + Attachment",
+        "meaning_en": "general term for non-secure attachment styles (avoidant, anxious, disorganized)",
+        "meaning_zh": "不安全依恋：包括回避型、焦虑型、混乱型。通常来自照料者不一致或无回应的抚养。可能影响后来的亲密关系模式",
+        "derivation": "照料者回应不一致 → 孩子无法建立可靠感 → 不安全依恋",
+        "mnemonic": "不安全依恋 = 「不确定爱不爱我」→ 各种应对策略",
+        "example": "Insecure attachment can result from inconsistent caregiving.",
+        "example_zh": "不安全依恋可能源于不一致的抚养。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Avoidant Attachment",
+        "breakdown": "Avoidant(回避的) + Attachment",
+        "meaning_en": "insecure style: infant avoids caregiver and seems indifferent",
+        "meaning_zh": "回避型依恋：婴儿在陌生情境中不关心妈妈的离开和回来。表面不焦虑，但心跳等生理指标显示内在仍有压力。源于长期被忽视",
+        "derivation": "反复寻求安慰被拒 → 学会「不指望」→ 防御性回避",
+        "mnemonic": "「我不要你」→ 其实是受伤后的自我保护",
+        "example": "Avoidantly attached children seem indifferent to caregiver absence.",
+        "example_zh": "回避型依恋的儿童对照料者的离开显得漠不关心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Anxious Attachment",
+        "breakdown": "Anxious(焦虑的) + Attachment",
+        "meaning_en": "insecure style: infant is clingy and hard to soothe",
+        "meaning_zh": "焦虑型依恋（矛盾型）：婴儿对照料者离开极度焦虑，回来后又难以被安抚，可能同时寻求和拒绝接触。源于照料者反应不一致",
+        "derivation": "时而响应时而不响应 → 孩子无法预测 → 一直警觉",
+        "mnemonic": "「又要又不要」→ 矛盾焦虑 → 源于不确定",
+        "example": "Anxiously attached children cling desperately to caregivers.",
+        "example_zh": "焦虑依恋的儿童会急切地依附照料者。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Disorganized Attachment",
+        "breakdown": "Disorganized(混乱的) + Attachment",
+        "meaning_en": "insecure style: infant shows contradictory, confused behaviors",
+        "meaning_zh": "混乱型依恋：婴儿表现出矛盾、怪异的行为——接近又逃跑、表情呆滞。通常与虐待或严重忽视有关。是最令人担忧的依恋类型",
+        "derivation": "照料者是恐惧来源 → 「既想靠近又想逃」→ 行为崩溃",
+        "mnemonic": "既想靠近又害怕 → 混乱型 → 通常和创伤有关",
+        "example": "Disorganized attachment is often linked to abuse or trauma.",
+        "example_zh": "混乱型依恋通常与虐待或创伤有关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Temperament",
+        "breakdown": "Temperament(气质)",
+        "meaning_en": "an infant's innate emotional reactivity and intensity",
+        "meaning_zh": "气质：婴儿先天的情绪反应方式，如「容易型」「困难型」「慢热型」。天生的——出生后几周就能看出差异。是人格发展的生物基础",
+        "derivation": "生物学基础 → 出生就有 → 决定情绪反应模式",
+        "mnemonic": "有些宝宝天生「好带」，有些「难带」→ 气质",
+        "example": "Temperament is relatively stable from infancy.",
+        "example_zh": "气质从婴儿期开始相对稳定。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Separation Anxiety",
+        "breakdown": "Separation(分离) + Anxiety",
+        "meaning_en": "distress when separated from primary caregiver, peaks around 14 months",
+        "meaning_zh": "分离焦虑：与主要照料者分开时的痛苦反应。大约8个月开始，14个月达到峰值。是正常的发展现象——说明孩子已经形成了依恋",
+        "derivation": "对照料者的依恋 + 客体永久性发展 → 意识到「妈妈不在」→ 焦虑",
+        "mnemonic": "妈妈一走就哭 → 分离焦虑 → 其实是依恋的健康证据",
+        "example": "Separation anxiety usually peaks around 14 months old.",
+        "example_zh": "分离焦虑通常在14个月大左右达到高峰。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Harlow's Monkey Studies",
+        "breakdown": "Harlow(人名) + Monkey Studies",
+        "meaning_en": "studies showing infant monkeys prefer comfort over food in attachment",
+        "meaning_zh": "哈洛的猴子实验：把幼猴和两个假「妈妈」放一起——铁丝妈妈提供食物，绒布妈妈提供触感。幼猴紧紧抱着绒布妈妈——证明依恋不只是因为食物，接触慰藉才是关键",
+        "derivation": "铁丝vs绒布妈妈 → 幼猴选绒布 → 推翻「依恋=食物」的旧观念",
+        "mnemonic": "宝宝抱绒布妈妈 → 哈洛实验 → 爱不只是奶",
+        "example": "Harlow's studies showed that contact comfort matters more than food.",
+        "example_zh": "哈洛的研究显示接触慰藉比食物更重要。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Attachment Theory",
+        "breakdown": "Attachment(依恋) + Theory",
+        "meaning_en": "Bowlby's theory that early caregiver bonds shape later relationships",
+        "meaning_zh": "依恋理论（鲍尔比）：婴儿天生倾向与照料者形成情感纽带，这种早期依恋塑造「内部工作模型」，影响一生的亲密关系",
+        "derivation": "进化角度 → 人类婴儿无法独立 → 必须依恋 → 存活",
+        "mnemonic": "小时候的依恋 → 一生的恋爱模板 → 依恋理论",
+        "example": "Attachment theory explains how early bonds influence adult relationships.",
+        "example_zh": "依恋理论解释了早期关系如何影响成年后的亲密关系。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Parallel Play",
+        "breakdown": "Parallel(平行的) + Play",
+        "meaning_en": "young children playing alongside but not with each other",
+        "meaning_zh": "平行游戏：幼儿（约2-3岁）喜欢在彼此旁边玩，但不真正互动。两个孩子各玩各的积木，看起来像一起玩其实是平行的",
+        "derivation": "社交能力还没到互动水平 → 但享受他人陪伴 → 平行游戏",
+        "mnemonic": "旁边有玩伴但各玩各的 → 平行游戏",
+        "example": "Toddlers often engage in parallel play rather than interactive play.",
+        "example_zh": "幼儿通常进行平行游戏而不是互动游戏。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Pretend Play",
+        "breakdown": "Pretend(假装) + Play",
+        "meaning_en": "imaginative play where children take on roles and use symbols",
+        "meaning_zh": "假装游戏：用想象力进行的角色扮演——把香蕉当电话、扮演医生护士。是前运算期的典型游戏，促进符号思维和心理理论的发展",
+        "derivation": "符号思维出现 → 能把一物代替另一物 → 假装游戏",
+        "mnemonic": "「过家家」→ 假装游戏 → 认知发展的重要一步",
+        "example": "Pretend play helps develop symbolic thinking.",
+        "example_zh": "假装游戏帮助发展符号思维。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Adolescent Egocentrism",
+        "breakdown": "Adolescent(青少年) + Egocentrism",
+        "meaning_en": "teens' belief that everyone is focused on them (imaginary audience, personal fable)",
+        "meaning_zh": "青少年自我中心：青少年特有的错觉——认为所有人都在关注他们（想象的观众），认为自己的经历独一无二别人都不懂（个人神话）。解释了青少年的羞怯和冒险行为",
+        "derivation": "形式运算思维 + 自我意识上升 → 想象观众 + 个人神话",
+        "mnemonic": "「别人都在看我」「没人懂我」→ 青少年自我中心",
+        "example": "Teens' belief that \"nobody understands me\" reflects adolescent egocentrism.",
+        "example_zh": "青少年「没人懂我」的想法反映了青少年自我中心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Emerging Adulthood",
+        "breakdown": "Emerging(出现的) + Adulthood",
+        "meaning_en": "transitional period between adolescence and full adulthood (18-25)",
+        "meaning_zh": "初显成年期（18-25岁）：现代社会新兴概念——18岁后还没完全承担成年责任的过渡阶段。探索身份、职业、恋爱。阿内特提出",
+        "derivation": "现代社会教育延长 → 青春期后不立即成人 → 新增的过渡阶段",
+        "mnemonic": "大学生阶段 = 「半大人」→ 初显成年期",
+        "example": "Emerging adulthood is a modern concept for the 18-25 age range.",
+        "example_zh": "初显成年期是指18-25岁年龄段的现代概念。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Erikson's Psychosocial Stages",
+        "breakdown": "Erikson(人名) + Psychosocial Stages",
+        "meaning_en": "8 stages across the lifespan, each with a psychosocial crisis",
+        "meaning_zh": "埃里克森八阶段：从婴儿期到老年期，每个阶段有一个核心心理社会危机需要解决（如信任vs不信任、身份vs角色混乱）。成功解决促进健康发展",
+        "derivation": "每个年龄段有核心挑战 → 成功解决 → 建立人格品质 → 否则留下问题",
+        "mnemonic": "埃里克森 = 「人生八关」→ 每一关都有一个挑战",
+        "example": "Erikson's stages include identity vs role confusion in adolescence.",
+        "example_zh": "埃里克森的阶段包括青少年期的身份vs角色混乱。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Adverse Childhood Experiences",
+        "breakdown": "Adverse(不良的) + Childhood + Experiences",
+        "meaning_en": "ACEs: traumatic experiences in childhood linked to adult health problems",
+        "meaning_zh": "童年不良经历（ACEs）：童年时期的创伤性经历——虐待、忽视、家庭功能失调等。经历越多，成年后身心健康问题风险越高。是公共卫生重要概念",
+        "derivation": "童年创伤 → 慢性压力 → 影响大脑发育和免疫 → 成年健康问题",
+        "mnemonic": "童年痛苦经历 → 长大后身心都「还债」→ ACEs",
+        "example": "Higher ACE scores correlate with poor adult health.",
+        "example_zh": "较高的ACE分数与成年后健康状况较差相关。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Identity Statuses",
+        "breakdown": "Identity(身份) + Statuses",
+        "meaning_en": "Marcia's 4 statuses of identity formation: achievement, diffusion, foreclosure, moratorium",
+        "meaning_zh": "身份状态（马西亚）：基于「是否探索过」和「是否做出承诺」分成4种——获得（探索+承诺）、扩散（没探索没承诺）、早闭（没探索就承诺）、延缓（正在探索）。用于描述青少年身份形成",
+        "derivation": "探索维度 × 承诺维度 → 2×2 → 4种状态",
+        "mnemonic": "有没有「找自己」× 有没有「做决定」→ 4种身份状态",
+        "example": "Marcia's identity statuses describe adolescent identity development.",
+        "example_zh": "马西亚的身份状态描述了青少年的身份发展。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Classical Conditioning",
+    "type": "root",
+    "meaning_en": "Pavlovian learning through association of stimuli",
+    "meaning_zh": "经典条件反射：巴甫洛夫发现的学习形式——通过刺激之间的关联学习。中性刺激+无条件刺激反复配对后，中性刺激单独也能引起反应",
+    "origin": "Unit 3: 3.7 Classical Conditioning",
+    "related": [
+      "Operant Conditioning",
+      "Social & Cognitive Learning"
+    ],
+    "words": [
+      {
+        "word": "Behavioral Perspective",
+        "breakdown": "Behavioral(行为的) + Perspective",
+        "meaning_en": "psychological approach focusing on observable behavior and learning",
+        "meaning_zh": "行为主义观点：只研究可观察的行为，不研究内心和意识。认为行为是通过学习（条件反射）获得的。华生、斯金纳是代表人物",
+        "derivation": "反对内省 → 只看得见摸得着才算科学 → 行为主义",
+        "mnemonic": "「你做什么不看你想什么」→ 行为主义",
+        "example": "The behavioral perspective emphasizes learning through experience.",
+        "example_zh": "行为主义观点强调通过经验学习。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Classical Conditioning",
+        "breakdown": "Classical(经典的) + Conditioning",
+        "meaning_en": "learning through association of a neutral stimulus with a meaningful one",
+        "meaning_zh": "经典条件反射：通过把中性刺激和能引起自然反应的刺激反复配对，使中性刺激也能引起反应。巴甫洛夫的狗：铃声（中性）+ 食物 → 铃声单独也能让狗流口水",
+        "derivation": "两个刺激反复一起出现 → 大脑建立关联 → 一个出现就能预期另一个",
+        "mnemonic": "铃声→狗流口水 → 经典条件反射 → 学「关联」",
+        "example": "Pavlov demonstrated classical conditioning with dogs and bells.",
+        "example_zh": "巴甫洛夫用狗和铃声证明了经典条件反射。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Acquisition",
+        "breakdown": "Acquisition(获得)",
+        "meaning_en": "initial stage of learning the association between stimuli",
+        "meaning_zh": "习得：经典条件反射建立的初始阶段——反复配对中性刺激和无条件刺激，直到中性刺激单独也能引起反应。所需次数因情况而异",
+        "derivation": "反复配对 → 关联逐渐建立 → 条件反应稳定出现 → 习得完成",
+        "mnemonic": "获得新的「条件反射」的过程 → 习得",
+        "example": "Acquisition is the learning phase of classical conditioning.",
+        "example_zh": "习得是经典条件反射的学习阶段。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Unconditioned Stimulus",
+        "breakdown": "Unconditioned(非条件的) + Stimulus",
+        "meaning_en": "UCS: stimulus that naturally triggers a response",
+        "meaning_zh": "无条件刺激（UCS）：天生就能引起某种反应的刺激，不需要学习。巴甫洛夫实验里是食物——狗看到食物就流口水，不需要学",
+        "derivation": "Unconditioned → 「不需要条件」→ 天生就引起反应",
+        "mnemonic": "un = 没有条件 → 天生就有反应的 → UCS",
+        "example": "Food is an unconditioned stimulus that naturally causes salivation.",
+        "example_zh": "食物是能自然引起流口水的无条件刺激。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Unconditioned Response",
+        "breakdown": "Unconditioned + Response",
+        "meaning_en": "UCR: natural, unlearned reaction to the UCS",
+        "meaning_zh": "无条件反应（UCR）：对无条件刺激的天生反应，不需要学习。狗看到食物流口水——流口水就是UCR",
+        "derivation": "天生反应 → 不需要学 → UCR",
+        "mnemonic": "UCR = 天生就会的反应 → 反射一样",
+        "example": "Salivating to food is an unconditioned response.",
+        "example_zh": "对食物流口水是无条件反应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Conditioned Stimulus",
+        "breakdown": "Conditioned(条件的) + Stimulus",
+        "meaning_en": "CS: originally neutral stimulus that comes to trigger a response after association",
+        "meaning_zh": "条件刺激（CS）：原本是中性的刺激，经过和UCS反复配对后，单独出现也能引起反应。巴甫洛夫实验里是铃声——铃声本来对狗没意义，配对后能让狗流口水",
+        "derivation": "Conditioned → 「需要条件」→ 通过学习才有反应",
+        "mnemonic": "CS = 「学出来的」触发器 → 条件刺激",
+        "example": "After conditioning, the bell becomes a conditioned stimulus.",
+        "example_zh": "经过条件反射后，铃声变成条件刺激。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Conditioned Response",
+        "breakdown": "Conditioned + Response",
+        "meaning_en": "CR: learned reaction to the CS alone",
+        "meaning_zh": "条件反应（CR）：对条件刺激单独出现时的学习后反应。狗听到铃声就流口水——这时的流口水是CR，虽然和UCR（看到食物流口水）看起来一样",
+        "derivation": "通过学习获得的反应 → 条件刺激引起 → CR",
+        "mnemonic": "CR = 学会的反应 → 靠条件刺激触发",
+        "example": "Salivating to a bell is a conditioned response.",
+        "example_zh": "对铃声流口水是条件反应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Extinction",
+        "breakdown": "Extinction(消退)",
+        "meaning_en": "weakening of conditioned response when CS is presented without UCS",
+        "meaning_zh": "消退：在经典条件反射中，如果反复只呈现CS而不呈现UCS（光响铃不给食物），条件反应会逐渐减弱直到消失。注意：不是遗忘，条件关联还在",
+        "derivation": "CS反复出现但没有UCS → 关联变弱 → 反应减少 → 消退",
+        "mnemonic": "光响铃不给饭 → 狗最后不流口水了 → 消退",
+        "example": "Extinction occurs when the bell no longer predicts food.",
+        "example_zh": "当铃声不再预示食物时会发生消退。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Spontaneous Recovery",
+        "breakdown": "Spontaneous(自发的) + Recovery",
+        "meaning_en": "reappearance of a previously extinguished CR after a rest period",
+        "meaning_zh": "自发恢复：消退后过一段时间，条件反应可能自发地重新出现。说明消退并没有擦除记忆——只是暂时抑制了。经常在经典条件反射中观察到",
+        "derivation": "消退后休息 → 关联记忆没丢 → 再遇CS → 反应重现",
+        "mnemonic": "「好像忘了」→ 过几天又冒出来 → 自发恢复",
+        "example": "Spontaneous recovery shows that extinction doesn't erase learning.",
+        "example_zh": "自发恢复表明消退并没有消除学习。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stimulus Discrimination",
+        "breakdown": "Stimulus + Discrimination(辨别)",
+        "meaning_en": "learning to distinguish between similar stimuli, responding only to the CS",
+        "meaning_zh": "刺激辨别：学会区分相似的刺激，只对特定的CS反应。狗学会只对高音铃反应而不对低音铃反应——实现了刺激辨别",
+        "derivation": "相似刺激中 → 只有一个可靠地预示UCS → 其他的不反应 → 辨别",
+        "mnemonic": "「只对你有反应」→ 刺激辨别 → 精准识别",
+        "example": "Stimulus discrimination means responding only to the exact CS.",
+        "example_zh": "刺激辨别意味着只对特定的CS作出反应。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Generalization",
+        "breakdown": "Generalization(泛化)",
+        "meaning_en": "responding to stimuli similar to the CS",
+        "meaning_zh": "泛化：对和CS相似的刺激也做出条件反应。被狗咬过的孩子可能害怕所有狗，甚至猫和其他毛茸茸的动物——害怕泛化了。和辨别相反",
+        "derivation": "条件刺激 → 相似的刺激 → 都会引发类似反应 → 泛化",
+        "mnemonic": "「一朝被蛇咬，十年怕井绳」→ 泛化的经典例子",
+        "example": "A child afraid of one dog may show generalization to all dogs.",
+        "example_zh": "怕一条狗的孩子可能会对所有狗泛化恐惧。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Higher-Order Conditioning",
+        "breakdown": "Higher-Order(高阶的) + Conditioning",
+        "meaning_en": "using an established CS as a UCS to condition a new CS",
+        "meaning_zh": "高阶条件反射：用已经建立的CS当作UCS，再去条件另一个新的中性刺激。铃→食物→流口水 建立后，再把灯和铃配对 → 灯也能让狗流口水",
+        "derivation": "第一层：铃→食物→口水；第二层：灯→铃→口水 → 间接关联",
+        "mnemonic": "条件反射「套娃」→ 高阶条件反射",
+        "example": "Higher-order conditioning builds new associations from existing ones.",
+        "example_zh": "高阶条件反射从已有关联建立新的关联。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Counterconditioning",
+        "breakdown": "Counter(反) + conditioning",
+        "meaning_en": "replacing an unwanted CR with a new, incompatible response",
+        "meaning_zh": "反条件作用：用新的、不相容的反应代替原有的条件反应。治疗恐惧症常用——让害怕的东西和放松的感觉配对，最终消除恐惧。系统脱敏法的基础",
+        "derivation": "原来的反应（恐惧）+ 对立反应（放松）→ 不能同时存在 → 新反应取代",
+        "mnemonic": "用「新反射」压「旧反射」→ 反条件作用",
+        "example": "Counterconditioning is used to treat phobias.",
+        "example_zh": "反条件作用被用来治疗恐惧症。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Taste Aversion",
+        "breakdown": "Taste(味觉) + Aversion(厌恶)",
+        "meaning_en": "strong dislike of a food paired with nausea, often after only one experience",
+        "meaning_zh": "味觉厌恶：吃某种食物后生病（即使原因与食物无关），之后就极度讨厌这种食物。只需一次配对就能建立——是生物准备好的强力学习，帮助避开有毒食物",
+        "derivation": "进化压力 → 避开有毒食物 → 大脑对食物-恶心关联极敏感",
+        "mnemonic": "吃海鲜吐了一次 → 再也不吃 → 味觉厌恶",
+        "example": "Getting sick after eating sushi can cause taste aversion.",
+        "example_zh": "吃寿司后生病会导致味觉厌恶。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Biological Preparedness",
+        "breakdown": "Biological(生物的) + Preparedness(准备)",
+        "meaning_en": "genetic predisposition to learn certain associations more easily",
+        "meaning_zh": "生物准备性：动物天生更容易学会某些联结（如对蛇恐惧、对食物味觉厌恶），因为这些关联在进化中对生存有帮助",
+        "derivation": "进化选择 → 某些关联更容易建立 → 生物准备好了学习",
+        "mnemonic": "「天生就容易学的东西」→ 生物准备性 → 进化遗产",
+        "example": "Biological preparedness explains why we easily fear snakes.",
+        "example_zh": "生物准备性解释了为什么我们容易害怕蛇。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "One-Trial Learning",
+        "breakdown": "One-Trial + Learning",
+        "meaning_en": "learning that occurs after just a single experience",
+        "meaning_zh": "一次试学习：只需一次经历就能建立持久的学习。味觉厌恶是典型——只吃一次让你难受的食物就够了。生物准备性的体现",
+        "derivation": "单次经历 → 强关联 → 持久学习 → 进化的保护机制",
+        "mnemonic": "「一次就会」→ 一次试学习 → 通常因为后果严重",
+        "example": "Taste aversion can occur with one-trial learning.",
+        "example_zh": "味觉厌恶可以通过一次试学习形成。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Habituation",
+        "breakdown": "Habituation(习惯化)",
+        "meaning_en": "decreased response to a repeated, unchanging stimulus",
+        "meaning_zh": "习惯化：对反复出现的、不变的刺激反应逐渐减弱。搬到高架桥旁，起初很吵，几周后就「听不到」了——习惯化。是最简单的学习形式",
+        "derivation": "重复刺激 → 没有新信息 → 大脑降低反应 → 节省资源",
+        "mnemonic": "「时间长了就不在意了」→ 习惯化 → 大脑省电",
+        "example": "Habituation explains why we stop noticing a clock's ticking.",
+        "example_zh": "习惯化解释了为什么我们不再注意时钟的滴答声。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Operant Conditioning",
+    "type": "root",
+    "meaning_en": "Skinnerian learning through consequences (reinforcement and punishment)",
+    "meaning_zh": "操作性条件反射：斯金纳发展的学习理论——行为的后果决定行为是否重复。获得奖励的行为会增加，受到惩罚的行为会减少",
+    "origin": "Unit 3: 3.8 Operant Conditioning",
+    "related": [
+      "Classical Conditioning",
+      "Social & Cognitive Learning"
+    ],
+    "words": [
+      {
+        "word": "Operant Conditioning",
+        "breakdown": "Operant(操作的) + Conditioning",
+        "meaning_en": "learning where voluntary behaviors are strengthened by reinforcement or weakened by punishment",
+        "meaning_zh": "操作性条件反射：通过强化和惩罚来塑造自愿行为的学习。和经典条件反射的区别：操作性涉及自愿行为+后果，经典涉及反射行为+刺激关联",
+        "derivation": "行为 → 后果 → 后果决定行为是否再现 → 操作性学习",
+        "mnemonic": "「你操作 → 有后果」→ 操作性条件反射 → 后果决定一切",
+        "example": "A rat pressing a lever for food is operant conditioning.",
+        "example_zh": "老鼠按杠杆获取食物是操作性条件反射。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Law of Effect",
+        "breakdown": "Law + of + Effect",
+        "meaning_en": "Thorndike's principle: behaviors followed by satisfying outcomes are more likely to recur",
+        "meaning_zh": "效果律（桑代克）：引起满意结果的行为更可能重复，引起不满意结果的行为不太可能重复。是操作性条件反射的理论基础——斯金纳在此基础上发展出系统理论",
+        "derivation": "桑代克观察猫从盒子逃脱 → 成功的动作被记住 → 总结出效果律",
+        "mnemonic": "「有效果的就留下来」→ 效果律 → 操作性条件反射的前身",
+        "example": "Thorndike's law of effect laid the foundation for operant conditioning.",
+        "example_zh": "桑代克的效果律为操作性条件反射奠定了基础。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Positive Reinforcement",
+        "breakdown": "Positive(正的/加) + Reinforcement",
+        "meaning_en": "adding a pleasant stimulus to increase a behavior",
+        "meaning_zh": "正强化：给予奖励来增加行为。孩子做作业后给糖——糖是正强化，让做作业行为增加。「正」意思是「添加」，不是「好」",
+        "derivation": "Positive(加) + Reinforcement(增强) → 加东西使行为增加",
+        "mnemonic": "加奖励 → 行为增多 → 正强化",
+        "example": "Giving praise for good grades is positive reinforcement.",
+        "example_zh": "因成绩好而表扬是正强化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Negative Reinforcement",
+        "breakdown": "Negative(负的/去) + Reinforcement",
+        "meaning_en": "removing an unpleasant stimulus to increase a behavior",
+        "meaning_zh": "负强化：移除令人不快的东西来增加行为。系安全带后警报声停止——「警报停止」是负强化，增加了系安全带的行为。常被误认为是惩罚，其实是强化",
+        "derivation": "Negative(去) + Reinforcement(增强) → 去掉厌恶物使行为增加",
+        "mnemonic": "「去」掉讨厌的 → 行为增加 → 负强化",
+        "example": "Buckling up to stop a car's beeping is negative reinforcement.",
+        "example_zh": "系安全带停止汽车警报声是负强化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Positive Punishment",
+        "breakdown": "Positive + Punishment",
+        "meaning_en": "adding an unpleasant stimulus to decrease a behavior",
+        "meaning_zh": "正惩罚：给予令人不快的东西来减少行为。孩子打人后被打手心——「给予」不愉快→减少打人行为。「正」=「添加」",
+        "derivation": "Positive(加) + Punishment → 加厌恶物 → 减少行为",
+        "mnemonic": "加「不好的」→ 行为减少 → 正惩罚",
+        "example": "Scolding a child for hitting is positive punishment.",
+        "example_zh": "因打人而训斥孩子是正惩罚。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Negative Punishment",
+        "breakdown": "Negative + Punishment",
+        "meaning_en": "removing a pleasant stimulus to decrease a behavior",
+        "meaning_zh": "负惩罚：移除令人愉快的东西来减少行为。孩子不听话被没收手机——「去掉」愉快的→减少不听话行为。也叫「剥夺」",
+        "derivation": "Negative(去) + Punishment → 去掉愉快物 → 减少行为",
+        "mnemonic": "「拿走奖励」→ 行为减少 → 负惩罚",
+        "example": "Taking away a phone for misbehavior is negative punishment.",
+        "example_zh": "因不良行为没收手机是负惩罚。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Primary Reinforcer",
+        "breakdown": "Primary(基本的) + Reinforcer",
+        "meaning_en": "naturally reinforcing stimulus like food, water, or warmth",
+        "meaning_zh": "原级强化物：天生就有强化作用的东西，满足基本生理需求——食物、水、温暖、性。不需要学习就能起作用",
+        "derivation": "基本生理需求 → 天生就想要 → 原级强化物",
+        "mnemonic": "吃的喝的 → 原级强化物 → 天生的奖励",
+        "example": "Food and water are primary reinforcers.",
+        "example_zh": "食物和水是原级强化物。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Secondary Reinforcer",
+        "breakdown": "Secondary(次级的) + Reinforcer",
+        "meaning_en": "learned reinforcer, such as money or praise",
+        "meaning_zh": "次级强化物（条件强化物）：通过和原级强化物关联而获得强化作用。钱本身不能吃不能喝，但能换食物和服务——所以成为强大的强化物。表扬、分数也属于次级",
+        "derivation": "次级 = 「通过学习才强化」→ 和原级建立关联",
+        "mnemonic": "钱不能吃 → 但能买吃的 → 次级强化物",
+        "example": "Money is a secondary reinforcer because it buys primary ones.",
+        "example_zh": "钱是次级强化物因为它能买到原级强化物。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Shaping",
+        "breakdown": "Shaping(塑造)",
+        "meaning_en": "gradually reinforcing successive approximations of a desired behavior",
+        "meaning_zh": "塑造：通过奖励逐步接近目标行为的过程。训练鸽子按按钮：先奖励它靠近按钮，再奖励它触碰，最后只奖励真正按下。一步步「塑造」出目标行为",
+        "derivation": "目标行为太复杂 → 分解成小步骤 → 每步都奖励接近的 → 逐步塑造",
+        "mnemonic": "像雕塑 → 一点点「塑造」成形 → 不是一步到位",
+        "example": "Shaping is used to train animals complex tricks.",
+        "example_zh": "塑造被用来训练动物复杂的把戏。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Instinctive Drift",
+        "breakdown": "Instinctive(本能的) + Drift(漂移)",
+        "meaning_en": "trained behaviors revert toward natural instinctive patterns",
+        "meaning_zh": "本能漂移：被训练的行为随时间回归到动物的本能行为。训练浣熊把硬币放进银行里，它最终会开始「洗」硬币——本能打败了训练。说明学习受生物限制",
+        "derivation": "训练出来的行为 → 与本能冲突 → 本能逐渐胜出 → 漂移回本能",
+        "mnemonic": "浣熊还是会「洗硬币」→ 本能漂移 → 训练拗不过天性",
+        "example": "Raccoons trained to drop coins would instead rub them—instinctive drift.",
+        "example_zh": "被训练投币的浣熊反而会搓硬币——本能漂移。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Superstitious Behavior",
+        "breakdown": "Superstitious(迷信的) + Behavior",
+        "meaning_en": "behavior accidentally paired with reinforcement, leading to false causal belief",
+        "meaning_zh": "迷信行为：行为偶然和强化物一起出现，动物（或人）错误地认为这个行为导致了奖励。斯金纳的鸽子曾表现出类似「舞蹈」的迷信行为——只因偶然和食物同时出现",
+        "derivation": "偶然同时发生 → 错误归因 → 重复这个行为 → 形成迷信",
+        "mnemonic": "考试前穿红袜子「能考好」→ 迷信行为",
+        "example": "Athletes' pre-game rituals can be superstitious behaviors.",
+        "example_zh": "运动员的赛前仪式可能是迷信行为。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Learned Helplessness",
+        "breakdown": "Learned + Helplessness(无助)",
+        "meaning_en": "giving up and passive behavior after repeated uncontrollable negative events",
+        "meaning_zh": "习得性无助：反复遭遇无法控制的负面事件后，即使情境改变也停止尝试逃避——「学会」了无助。塞利格曼的狗实验中发现，和抑郁症有关",
+        "derivation": "反复努力无效 → 形成「做什么都没用」的信念 → 放弃尝试",
+        "mnemonic": "「反正没用」→ 习得性无助 → 其实还能逃但不尝试",
+        "example": "Learned helplessness can contribute to depression.",
+        "example_zh": "习得性无助可能导致抑郁。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Continuous Reinforcement",
+        "breakdown": "Continuous(连续的) + Reinforcement",
+        "meaning_en": "reinforcing every correct response; fast learning but quick extinction",
+        "meaning_zh": "连续强化：每次正确反应都给强化。学习最快，但一停止强化就很快消退。适合新学习阶段，但不适合维持行为",
+        "derivation": "每次都奖 → 关联最快建立 → 但「没奖就不干」→ 容易消退",
+        "mnemonic": "每次都奖 → 学得快 → 但奖一停立刻散",
+        "example": "Continuous reinforcement leads to fast learning but quick extinction.",
+        "example_zh": "连续强化导致快速学习但也快速消退。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Partial Reinforcement",
+        "breakdown": "Partial(部分的) + Reinforcement",
+        "meaning_en": "reinforcing only some responses; slower learning but more resistant to extinction",
+        "meaning_zh": "部分强化：只奖励部分正确反应。学习慢，但建立后非常抗消退——这就是为什么赌博让人上瘾。分为比率和时间两类，每类又分固定和变动",
+        "derivation": "不是每次都奖 → 学习慢 → 但养成后不易消退 → 赌博原理",
+        "mnemonic": "不是每次都奖 → 但奖得更猛 → 部分强化 → 反而难戒",
+        "example": "Gambling relies on partial reinforcement.",
+        "example_zh": "赌博依赖部分强化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fixed Ratio Schedule",
+        "breakdown": "Fixed(固定) + Ratio(比率) + Schedule",
+        "meaning_en": "reinforcement after a set number of responses",
+        "meaning_zh": "固定比率（FR）：每做固定次数就奖励一次。按件计酬——做10件衣服奖励一次。行为率高，奖励后有短暂停顿",
+        "derivation": "Fixed + Ratio → 固定次数才给奖 → 快速做完好获奖",
+        "mnemonic": "「每N次奖一次」→ 固定比率 → 按件计酬",
+        "example": "A factory worker paid per 10 units uses a fixed ratio schedule.",
+        "example_zh": "按每10件计酬的工人使用固定比率方式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Variable Ratio Schedule",
+        "breakdown": "Variable(变动) + Ratio + Schedule",
+        "meaning_en": "reinforcement after an unpredictable number of responses",
+        "meaning_zh": "变动比率（VR）：平均N次奖励一次，但每次不定。老虎机就是典型——这是所有强化程序中最能维持高行为率且最抗消退的。赌博成瘾的心理学基础",
+        "derivation": "次数不定 → 「下次可能就中」→ 永远有期待 → 最难戒",
+        "mnemonic": "老虎机 → 变动比率 → 最强上瘾机制",
+        "example": "Slot machines use variable ratio reinforcement.",
+        "example_zh": "老虎机使用变动比率强化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fixed Interval Schedule",
+        "breakdown": "Fixed + Interval(间隔) + Schedule",
+        "meaning_en": "reinforcement for first response after a set time period",
+        "meaning_zh": "固定间隔（FI）：经过固定时间后的第一次反应获得奖励。月薪就是固定间隔——时间到才发钱。行为率在发奖前升高，发完后下降，呈扇形",
+        "derivation": "Fixed + Interval → 固定时间后才给奖 → 临近发奖时反应加快",
+        "mnemonic": "月底才发工资 → 固定间隔 → 「到点才有用」",
+        "example": "A monthly paycheck uses a fixed interval schedule.",
+        "example_zh": "月薪使用固定间隔方式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Variable Interval Schedule",
+        "breakdown": "Variable + Interval + Schedule",
+        "meaning_en": "reinforcement for first response after varying time periods",
+        "meaning_zh": "变动间隔（VI）：时间间隔不固定，反应率稳定但较低。老板随机来检查——你不知道什么时候，所以保持稳定的努力。钓鱼也类似",
+        "derivation": "不定时间 → 第一次反应获奖 → 持续稳定的反应",
+        "mnemonic": "老板随机抽查 → 变动间隔 → 保持稳定工作状态",
+        "example": "Checking for new emails reflects variable interval behavior.",
+        "example_zh": "检查新邮件反映了变动间隔行为。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Social & Cognitive Learning",
+    "type": "root",
+    "meaning_en": "learning through observation, insight, and cognitive processes",
+    "meaning_zh": "社会与认知学习：除了直接条件反射之外的学习形式——通过观察他人、顿悟、潜在学习和认知地图等方式学习。挑战纯行为主义观点",
+    "origin": "Unit 3: 3.9 Social, Cognitive, and Neurological Factors in Learning",
+    "related": [
+      "Classical Conditioning",
+      "Operant Conditioning"
+    ],
+    "words": [
+      {
+        "word": "Social Learning",
+        "breakdown": "Social(社会的) + Learning",
+        "meaning_en": "Bandura's theory: learning by observing and imitating others",
+        "meaning_zh": "社会学习（班杜拉）：通过观察他人的行为及其后果来学习。不需要亲身经历强化也能学会——这挑战了纯行为主义。Bobo娃娃实验证明儿童会模仿攻击行为",
+        "derivation": "观察模型的行为 → 看到后果 → 决定是否模仿 → 间接学习",
+        "mnemonic": "「看别人怎么做」→ 社会学习 → 不用亲自试",
+        "example": "Bandura's Bobo doll experiment demonstrated social learning.",
+        "example_zh": "班杜拉的Bobo娃娃实验证明了社会学习。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Vicarious Conditioning",
+        "breakdown": "Vicarious(替代的) + Conditioning",
+        "meaning_en": "learning from observing the rewards or punishments others receive",
+        "meaning_zh": "替代条件反射：看到别人因某行为被奖励或惩罚而学习。看到同学因作弊被罚，自己不会作弊——虽然没亲自经历。是社会学习的机制",
+        "derivation": "Vicarious(代替的) → 代替别人经历 → 替代条件作用",
+        "mnemonic": "「看别人被罚 → 自己不敢犯」→ 替代条件反射",
+        "example": "Seeing a classmate punished makes others avoid that behavior.",
+        "example_zh": "看到同学被惩罚让其他人避免该行为。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Insight Learning",
+        "breakdown": "Insight(顿悟) + Learning",
+        "meaning_en": "sudden realization of a problem's solution",
+        "meaning_zh": "顿悟学习：突然「灵光一闪」理解问题解决方法，而不是通过试错一步步找到。苛勒的黑猩猩实验——猩猩盯着香蕉和箱子想了一会儿，突然想到叠箱子",
+        "derivation": "思考 + 重组认知元素 → 突然看清关系 → 顿悟",
+        "mnemonic": "「啊，我懂了！」→ 顿悟学习 → 一下就会",
+        "example": "Kohler's chimpanzees showed insight learning with bananas.",
+        "example_zh": "苛勒的黑猩猩对香蕉问题展现了顿悟学习。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Latent Learning",
+        "breakdown": "Latent(潜在的) + Learning",
+        "meaning_en": "learning that occurs without immediate reinforcement and remains hidden until needed",
+        "meaning_zh": "潜在学习：没有明显强化时发生的学习，直到有动机时才表现出来。托尔曼的老鼠实验——没奖励时也在探索迷宫，但只有奖励出现后才「显示」它们学到了",
+        "derivation": "没有强化 → 学习仍然发生 → 但不表现 → 有动机时才显现",
+        "mnemonic": "「暗中学习」→ 没奖励也在学 → 潜在学习",
+        "example": "Tolman's rats showed latent learning in mazes.",
+        "example_zh": "托尔曼的老鼠在迷宫中展现了潜在学习。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cognitive Map",
+        "breakdown": "Cognitive(认知的) + Map",
+        "meaning_en": "mental representation of a spatial environment",
+        "meaning_zh": "认知地图：对空间环境的心理表征。托尔曼发现老鼠会形成迷宫的心理地图，而不只是机械的动作序列——证明学习涉及认知而非纯粹的刺激-反应",
+        "derivation": "反复探索环境 → 大脑形成空间表征 → 认知地图",
+        "mnemonic": "脑中的「地图」→ 认知地图 → 导航不是靠记路线",
+        "example": "A cognitive map helps us navigate familiar places.",
+        "example_zh": "认知地图帮助我们在熟悉的地方导航。",
         "toefl_frequency": "medium"
       }
     ]

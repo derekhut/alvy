@@ -1697,211 +1697,6 @@
     ]
   },
   {
-    "root": "Memory Systems",
-    "type": "root",
-    "meaning_en": "how we encode, store, and retrieve information",
-    "meaning_zh": "记忆系统：信息如何被编码、存储和提取。分为感觉记忆（极短）→短时记忆（7±2项）→长时记忆（无限）",
-    "origin": "Unit 2: Cognition",
-    "related": [
-      "Memory Processes",
-      "Thinking",
-      "Intelligence"
-    ],
-    "words": [
-      {
-        "word": "Sensory Memory",
-        "breakdown": "Sensory(感觉的) + Memory(记忆)",
-        "meaning_en": "brief storage of sensory information (< 1 second)",
-        "meaning_zh": "感觉记忆：对感觉信息的极短暂存储（不到1秒）。像照相机的闪光——瞬间记录但很快消失",
-        "derivation": "Sensory(感觉) + Memory(记忆) → 感觉器官的即时记录 → 极短暂",
-        "mnemonic": "闪电划过天空，你闭眼还能「看到」一瞬间——那就是感觉记忆",
-        "example": "Sensory memory holds visual information for less than a second.",
-        "example_zh": "感觉记忆保存视觉信息不到一秒钟。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Working Memory",
-        "breakdown": "Working(工作的) + Memory(记忆)",
-        "meaning_en": "active processing of information; 7±2 items; ~30 seconds",
-        "meaning_zh": "工作记忆（短时记忆）：正在处理的信息，容量7±2项，持续约30秒。像大脑的「工作台」",
-        "derivation": "Working(正在工作的) → 你现在正在使用的记忆 → 容量有限，需要复述来维持",
-        "mnemonic": "记电话号码时在心里默念——那就是工作记忆在运作",
-        "example": "Working memory can hold about 7 items at a time.",
-        "example_zh": "工作记忆一次大约能保持7个项目。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Long-term Memory",
-        "breakdown": "Long-term(长期的) + Memory(记忆)",
-        "meaning_en": "relatively permanent storage; explicit (semantic/episodic) vs implicit (procedural)",
-        "meaning_zh": "长时记忆：相对永久的存储。分为外显记忆（语义记忆=知识，情景记忆=经历）和内隐记忆（程序记忆=技能）",
-        "derivation": "外显(explicit) = 你能说出来的 → 内隐(implicit) = 你做得到但说不清的",
-        "mnemonic": "骑自行车（内隐）你不用想就会，但解释怎么骑（外显）却很难",
-        "example": "Long-term memory has virtually unlimited capacity.",
-        "example_zh": "长时记忆的容量几乎是无限的。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Encoding",
-        "breakdown": "Encoding(编码)",
-        "meaning_en": "process of converting information for memory storage",
-        "meaning_zh": "编码：把信息转换成记忆可以存储的形式。浅层加工（外观/声音）效果差，深层加工（意义）效果好",
-        "derivation": "像把文件保存到电脑 → 编码方式决定了以后能不能找到",
-        "mnemonic": "死记硬背（浅层）不如理解含义（深层）——这就是加工深度效应",
-        "example": "Deep encoding leads to better long-term retention.",
-        "example_zh": "深层编码能带来更好的长期记忆保持。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Retrieval",
-        "breakdown": "Retrieval(提取)",
-        "meaning_en": "process of accessing stored memories; recall vs recognition",
-        "meaning_zh": "提取：从记忆中找回信息的过程。回忆(recall)=自己想起来；再认(recognition)=看到就认出来",
-        "derivation": "像从图书馆找书 → 有线索（提取线索）就容易找到",
-        "mnemonic": "填空题靠回忆（难），选择题靠再认（简单）——提取方式不同，难度不同",
-        "example": "Retrieval cues help us access stored memories.",
-        "example_zh": "提取线索帮助我们找回存储的记忆。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Memory Processes",
-    "type": "root",
-    "meaning_en": "factors that enhance or distort memory",
-    "meaning_zh": "记忆加工：影响记忆效果的各种因素——编码策略（组块、助记术）、遗忘原因（干扰、衰退）、记忆扭曲",
-    "origin": "Unit 2: Cognition",
-    "related": [
-      "Memory Systems",
-      "Thinking"
-    ],
-    "words": [
-      {
-        "word": "Chunking",
-        "breakdown": "Chunk(块) + -ing",
-        "meaning_en": "organizing information into meaningful groups to improve memory",
-        "meaning_zh": "组块：把信息组织成有意义的单元来提高记忆容量。如把 149217761941 分成 1492-1776-1941 三个年份",
-        "derivation": "Chunk(一块) → 把零散信息打包成「块」→ 每块算一个记忆单元",
-        "mnemonic": "记电话号码分段记（138-0000-1234）就是组块策略",
-        "example": "Chunking helps us remember longer sequences of numbers.",
-        "example_zh": "组块帮助我们记住更长的数字序列。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Interference",
-        "breakdown": "Inter(之间) + ference(带来)",
-        "meaning_en": "forgetting caused by competing memories",
-        "meaning_zh": "干扰：竞争性记忆导致的遗忘。前摄干扰=旧记忆干扰新记忆；倒摄干扰=新记忆干扰旧记忆",
-        "derivation": "前摄(proactive)：学了法语→学西班牙语时老说法语；倒摄(retroactive)：学了新密码→忘了旧密码",
-        "mnemonic": "Pro(向前)=旧→新方向干扰；Retro(向后)=新→旧方向干扰",
-        "example": "Learning Spanish may interfere with previously learned French.",
-        "example_zh": "学习西班牙语可能会干扰之前学的法语。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Misinformation Effect",
-        "breakdown": "Mis(错误) + information(信息) + effect(效应)",
-        "meaning_en": "misleading post-event information distorts memory of the original event",
-        "meaning_zh": "错误信息效应：事后的误导性信息会扭曲对原始事件的记忆。由 Loftus 研究证实，对目击证词有重要影响",
-        "derivation": "Mis(错误) + Information(信息) → 错误信息混入记忆 → 以为自己真的看到了",
-        "mnemonic": "有人问「车撞碎时速度多快」vs「车碰到时速度多快」——用词不同，记忆就被改变了",
-        "example": "The misinformation effect explains why eyewitness testimony can be unreliable.",
-        "example_zh": "错误信息效应解释了为什么目击证词可能不可靠。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Serial Position Effect",
-        "breakdown": "Serial(序列的) + Position(位置) + Effect(效应)",
-        "meaning_en": "tendency to remember first (primacy) and last (recency) items best",
-        "meaning_zh": "序列位置效应：倾向于最好地记住列表的开头（首因效应）和结尾（近因效应），中间最容易忘",
-        "derivation": "Primacy(首因)=开头的有时间复述→进入长时记忆；Recency(近因)=结尾的还在工作记忆中",
-        "mnemonic": "背单词时，第一个和最后一个总是记得最牢——中间的最容易忘",
-        "example": "The serial position effect shows we recall the first and last items best.",
-        "example_zh": "序列位置效应表明我们最能记住第一个和最后一个项目。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Memory Distortion",
-        "breakdown": "Memory(记忆) + Distortion(扭曲)",
-        "meaning_en": "reconstruction errors in memory recall",
-        "meaning_zh": "记忆扭曲：记忆不是录像回放，而是每次都在重新建构。源头监控错误=记得内容但忘了从哪知道的",
-        "derivation": "记忆像拼图 → 每次回忆都在重新拼 → 可能拼错或加入不属于原图的碎片",
-        "mnemonic": "你确定小时候「亲眼看到」的事，可能只是听别人说了太多次",
-        "example": "Memories can be unconsciously altered each time they are recalled.",
-        "example_zh": "每次回忆时，记忆都可能被无意识地改变。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Thinking",
-    "type": "root",
-    "meaning_en": "cognitive processes including problem-solving and decision-making",
-    "meaning_zh": "思维：认知过程，包括概念形成、问题解决和决策判断。人类思维常走「捷径」（启发式），容易产生偏差",
-    "origin": "Unit 2: Cognition",
-    "related": [
-      "Memory Systems",
-      "Intelligence"
-    ],
-    "words": [
-      {
-        "word": "Schemas",
-        "breakdown": "Schema(图式) 复数",
-        "meaning_en": "mental frameworks that organize and interpret information",
-        "meaning_zh": "图式：组织和解释信息的心理框架。如你对「餐厅」的图式包括：坐下→看菜单→点餐→吃→付钱",
-        "derivation": "像大脑里的「模板」→ 帮你快速理解新情况 → 但也可能导致偏见",
-        "mnemonic": "你走进教室自动知道要坐下、听讲——因为你有「上课」的图式",
-        "example": "Children develop schemas to understand the world around them.",
-        "example_zh": "儿童发展图式来理解周围的世界。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Heuristics",
-        "breakdown": "Heuristic(启发式)",
-        "meaning_en": "mental shortcuts for quick decision-making",
-        "meaning_zh": "启发式：快速决策的心理捷径。虽然省时省力，但容易出错。包括可得性启发式和代表性启发式",
-        "derivation": "启发式 = 走捷径 → 不用仔细分析就能快速判断 → 但可能判断错误",
-        "mnemonic": "看到飞机失事新闻就觉得飞机很危险——可得性启发式（容易想到=觉得常见）",
-        "example": "Heuristics help us make quick decisions but can lead to errors.",
-        "example_zh": "启发式帮助我们快速决策，但可能导致错误。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Confirmation Bias",
-        "breakdown": "Confirmation(确认) + Bias(偏见)",
-        "meaning_en": "tendency to seek information that supports existing beliefs",
-        "meaning_zh": "确认偏误：倾向于寻找支持自己已有观点的信息，忽视反面证据。「我觉得他不好→只注意他的缺点」",
-        "derivation": "Confirm(确认) + Bias(偏差) → 只确认自己想相信的 → 形成思维泡泡",
-        "mnemonic": "你觉得某个牌子好，就只看好评——这就是确认偏误",
-        "example": "Confirmation bias leads people to ignore contradictory evidence.",
-        "example_zh": "确认偏误导致人们忽视矛盾的证据。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Overconfidence",
-        "breakdown": "Over(过度) + Confidence(自信)",
-        "meaning_en": "tendency to overestimate the accuracy of our beliefs and judgments",
-        "meaning_zh": "过度自信：高估自己的判断和知识准确性的倾向。考试觉得自己全对，结果错了很多",
-        "derivation": "Over(过度) + Confidence(自信) → 比实际能力更自信 → 导致判断失误",
-        "mnemonic": "90%的司机觉得自己驾驶水平「高于平均」——数学上不可能",
-        "example": "Overconfidence can lead to poor decision-making.",
-        "example_zh": "过度自信可能导致糟糕的决策。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Fixation",
-        "breakdown": "Fix(固定) + -ation(状态)",
-        "meaning_en": "inability to see a problem from a fresh perspective",
-        "meaning_zh": "思维定势：无法从新角度看问题。功能固着=只能想到物品的常规用途（螺丝刀只能拧螺丝？还能开罐头！）",
-        "derivation": "Fix(固定) → 思维被固定住了 → 跳不出既有框架",
-        "mnemonic": "功能固着：你不会想到用鞋子钉钉子——因为「鞋子就是穿的」",
-        "example": "Mental fixation prevents creative problem-solving.",
-        "example_zh": "思维定势阻碍创造性地解决问题。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
     "root": "Learning & Conditioning",
     "type": "root",
     "meaning_en": "how organisms learn through association and consequences",
@@ -2526,144 +2321,6 @@
     ]
   },
   {
-    "root": "Perception",
-    "type": "root",
-    "meaning_en": "how we organize and interpret sensory information",
-    "meaning_zh": "知觉：我们如何组织和解释感觉信息。感觉=接收原始数据；知觉=大脑赋予意义。自下而上 vs 自上而下加工",
-    "origin": "Unit 2: Cognition",
-    "related": [
-      "Sensation",
-      "Thinking",
-      "Intelligence"
-    ],
-    "words": [
-      {
-        "word": "Bottom-up Processing",
-        "breakdown": "Bottom-up(自下而上) + Processing(加工)",
-        "meaning_en": "perception driven by sensory input (data-driven)",
-        "meaning_zh": "自下而上加工：从感觉数据出发来构建知觉。先接收信息→再理解。如第一次看一幅抽象画，从细节慢慢理解",
-        "derivation": "Bottom(底部=感觉数据) → Up(上=知觉理解) → 从原始数据到理解",
-        "mnemonic": "拼拼图：从一块块碎片(感觉)拼出完整画面(知觉)=自下而上",
-        "example": "Bottom-up processing starts with sensory data.",
-        "example_zh": "自下而上加工从感觉数据开始。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Top-down Processing",
-        "breakdown": "Top-down(自上而下) + Processing(加工)",
-        "meaning_en": "perception driven by expectations and prior knowledge",
-        "meaning_zh": "自上而下加工：用已有知识和期望来解释感觉信息。先有预期→再感知。如在嘈杂环境中你能听懂朋友说话",
-        "derivation": "Top(上=已有知识) → Down(下=感觉数据) → 用经验指导理解",
-        "mnemonic": "你能读懂这句话：「研表究明，汉字的序顺不影响阅读」→ 大脑用经验自动纠正",
-        "example": "Top-down processing uses prior knowledge to interpret sensory input.",
-        "example_zh": "自上而下加工利用已有知识来解释感觉输入。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Gestalt Principles",
-        "breakdown": "Gestalt(格式塔/完形) + Principles(原则)",
-        "meaning_en": "rules of perceptual organization: proximity, similarity, closure",
-        "meaning_zh": "格式塔原则：知觉组织的规则。接近性=近的成一组；相似性=像的成一组；闭合性=自动补全不完整的图形",
-        "derivation": "Gestalt = 整体 → 整体大于部分之和 → 大脑自动把零散信息组织成有意义的整体",
-        "mnemonic": "看到 · · · · 和 ·  ·  ·  · 你会把间距近的分成一组——接近性原则",
-        "example": "Gestalt principles explain how we organize visual information.",
-        "example_zh": "格式塔原则解释了我们如何组织视觉信息。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Perceptual Constancy",
-        "breakdown": "Perceptual(知觉的) + Constancy(恒常性)",
-        "meaning_en": "perceiving objects as stable despite changing sensory input",
-        "meaning_zh": "知觉恒常性：尽管感觉输入变化，仍将物体感知为稳定的。如朋友走远了变小了，但你知道他没有真的缩小（大小恒常性）",
-        "derivation": "Constancy(恒常) → 保持不变 → 知道物体本身没变，只是视角/距离变了",
-        "mnemonic": "门从侧面看是平行四边形，但你的大脑知道它是长方形——形状恒常性",
-        "example": "Size constancy helps us perceive objects as the same size at different distances.",
-        "example_zh": "大小恒常性帮助我们在不同距离感知物体大小不变。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Depth Cues",
-        "breakdown": "Depth(深度) + Cues(线索)",
-        "meaning_en": "monocular and binocular cues for perceiving distance",
-        "meaning_zh": "深度线索：帮助感知距离的线索。双眼线索=两眼视差（立体视觉）；单眼线索=线性透视、遮挡、相对大小等",
-        "derivation": "Binocular(双眼)=两眼不同角度→立体感；Monocular(单眼)=一只眼也能判断远近",
-        "mnemonic": "闭上一只眼接东西变难了——因为失去了双眼线索（视网膜像差）",
-        "example": "Binocular cues require input from both eyes to judge distance.",
-        "example_zh": "双眼线索需要两只眼睛的输入来判断距离。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Intelligence",
-    "type": "root",
-    "meaning_en": "theories and measurement of cognitive ability",
-    "meaning_zh": "智力：认知能力的理论和测量。争论焦点：智力是单一能力(g因素)还是多元能力？先天还是后天？如何公平测量？",
-    "origin": "Unit 2: Cognition",
-    "related": [
-      "Thinking",
-      "Memory Systems",
-      "Perception"
-    ],
-    "words": [
-      {
-        "word": "g-factor",
-        "breakdown": "General(一般) + factor(因素)",
-        "meaning_en": "Spearman's concept of a single general intelligence underlying all cognitive abilities",
-        "meaning_zh": "一般智力因素（斯皮尔曼）：认为所有认知能力背后有一个共同的一般智力因素。擅长数学的人往往语言也不差",
-        "derivation": "g = general(一般的) → 一个人在不同认知任务上的表现是相关的 → 背后有共同因素",
-        "mnemonic": "g因素像CPU——CPU好的电脑，跑什么软件都快",
-        "example": "Spearman proposed that g-factor underlies performance on all cognitive tests.",
-        "example_zh": "斯皮尔曼提出g因素是所有认知测试表现的基础。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Sternberg's Triarchic Theory",
-        "breakdown": "Triarchic(三元的) + Theory(理论)",
-        "meaning_en": "intelligence as analytical, creative, and practical abilities",
-        "meaning_zh": "斯滕伯格三元智力理论：分析智力=解决学术问题；创造智力=新颖的解决方案；实践智力=适应日常生活（街头智慧）",
-        "derivation": "Tri(三) + Archic(统治) → 三种智力共同统治 → 不只是考试成绩好才算聪明",
-        "mnemonic": "学霸(分析智力)+发明家(创造智力)+生意人(实践智力)=三种不同的聪明",
-        "example": "Sternberg argued that street smarts are a form of practical intelligence.",
-        "example_zh": "斯滕伯格认为街头智慧是实践智力的一种形式。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "IQ Tests",
-        "breakdown": "Intelligence Quotient(智力商数) + Tests(测试)",
-        "meaning_en": "standardized measures of cognitive ability; mean of 100, SD of 15",
-        "meaning_zh": "智商测试：标准化的认知能力测量。平均分100，标准差15。68%的人在85-115之间。常用测试：韦氏智力量表",
-        "derivation": "IQ = 智力年龄/实际年龄 × 100（原始公式）→ 现在用标准分数。信度高但文化偏见争议大",
-        "mnemonic": "IQ 100 = 平均水平。记住「钟形曲线」：大多数人在中间，极高极低都很少",
-        "example": "Modern IQ tests use a normal distribution with a mean of 100.",
-        "example_zh": "现代智商测试使用平均分为100的正态分布。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Flynn Effect",
-        "breakdown": "Flynn(弗林) + Effect(效应)",
-        "meaning_en": "the observed rise in average IQ scores over generations",
-        "meaning_zh": "弗林效应：每一代人的平均智商分数都在上升（每十年约3分）。可能原因：更好的营养、教育、环境刺激和对测试的熟悉",
-        "derivation": "以研究者 James Flynn 命名 → 发现全世界的IQ分数都在逐代上升",
-        "mnemonic": "你爷爷那一代的「天才」IQ分数，放到今天可能只是平均水平——这就是弗林效应",
-        "example": "The Flynn effect shows that average IQ scores have risen about 3 points per decade.",
-        "example_zh": "弗林效应显示平均智商分数每十年上升约3分。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Growth Mindset",
-        "breakdown": "Growth(成长) + Mindset(心态)",
-        "meaning_en": "Dweck's concept that intelligence can be developed through effort and learning",
-        "meaning_zh": "成长型心态（德韦克）：相信智力可以通过努力和学习来发展。对比固定型心态=相信智力是天生不变的",
-        "derivation": "Growth(成长) + Mind(心智) + Set(设定) → 心智设定为「可以成长」→ 挑战是学习的机会",
-        "mnemonic": "固定型：「我数学不好」（放弃）；成长型：「我数学还不够好」（继续努力）——一个「还」字的区别",
-        "example": "Students with a growth mindset embrace challenges as learning opportunities.",
-        "example_zh": "有成长型心态的学生把挑战当作学习机会。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
     "root": "Physical Development",
     "type": "root",
     "meaning_en": "bodily growth and change across the lifespan",
@@ -3141,6 +2798,1573 @@
         "mnemonic": "不是精神分裂症！精神分裂=现实和幻觉分不清；DID=一个人里住着多个「人格」",
         "example": "DID is rare and often associated with severe childhood trauma.",
         "example_zh": "解离性身份障碍很罕见，通常与严重的童年创伤有关。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Perception",
+    "type": "root",
+    "meaning_en": "organizing and interpreting sensory information to give it meaning",
+    "meaning_zh": "知觉：组织和解释感觉信息以赋予其意义的过程。感觉给「原始数据」，知觉给「理解」。受自上而下和自下而上加工的共同影响",
+    "origin": "Unit 2: 2.1 Perception",
+    "related": [
+      "Sensation",
+      "Thinking",
+      "Memory Systems"
+    ],
+    "words": [
+      {
+        "word": "Perception",
+        "breakdown": "Perception(知觉)",
+        "meaning_en": "process of organizing and interpreting sensory input",
+        "meaning_zh": "知觉：大脑对感觉信息进行组织和解释的过程。不是简单的「接收」，而是「主动构建」看到的世界",
+        "derivation": "感觉(原始信号) → 知觉(有意义的体验) → 我们看到的不只是像素，而是物体",
+        "mnemonic": "感觉 = 拍照（像素），知觉 = 看图（「这是一只猫」）",
+        "example": "Perception goes beyond raw sensation to assign meaning.",
+        "example_zh": "知觉超越了原始感觉，赋予信息意义。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Top-Down Processing",
+        "breakdown": "Top(顶部) + Down(向下) + Processing",
+        "meaning_en": "perception guided by expectations, experience, and context",
+        "meaning_zh": "自上而下加工：从高层（经验、期望、背景知识）指导低层的知觉加工。你「期待」看到什么就更容易看到什么",
+        "derivation": "概念/期望 → 影响 → 对感觉信息的解释",
+        "mnemonic": "看到 THE C_T 会自动补成 CAT 或 CUP——大脑用已知填补未知",
+        "example": "Top-down processing lets us read messy handwriting.",
+        "example_zh": "自上而下加工让我们能读懂潦草的笔迹。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Bottom-Up Processing",
+        "breakdown": "Bottom(底部) + Up(向上) + Processing",
+        "meaning_en": "perception starting with sensory input and building up to complex perception",
+        "meaning_zh": "自下而上加工：从感觉受体接收的原始数据出发，逐步构建知觉。和自上而下相反，先有感觉再有解释",
+        "derivation": "感觉受体 → 特征检测 → 组合 → 识别物体 → 完整知觉",
+        "mnemonic": "看一幅从没见过的画——只能老老实实从线条颜色看起（自下而上）",
+        "example": "Bottom-up processing is used when we encounter a brand-new stimulus.",
+        "example_zh": "遇到全新刺激时我们使用自下而上加工。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Schemas",
+        "breakdown": "Schema(图式)",
+        "meaning_en": "mental frameworks that organize and interpret information",
+        "meaning_zh": "图式：组织和解释信息的心理框架。你对「餐厅」有一个图式（有菜单、服务员、付账），它指导你在陌生餐厅也知道怎么做",
+        "derivation": "反复的经验 → 形成套路 → 新情境中快速理解",
+        "mnemonic": "图式 = 脑中的「模板」→ 第一次进图书馆就知道要安静",
+        "example": "A restaurant schema includes ordering, eating, and paying.",
+        "example_zh": "餐厅图式包括点餐、吃饭和结账。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Perceptual Sets",
+        "breakdown": "Perceptual(知觉的) + Sets(定势)",
+        "meaning_en": "mental predisposition to perceive things in a particular way",
+        "meaning_zh": "知觉定势：以特定方式感知事物的心理倾向。先入为主的期望会塑造你看到的内容。「听说这部电影很烂」就真的觉得它烂",
+        "derivation": "经验/期望/动机 → 形成定势 → 偏向性地加工新信息",
+        "mnemonic": "被告知是水的杯子里装了汤——你一开始会觉得「水很咸」",
+        "example": "Perceptual sets can make us see what we expect to see.",
+        "example_zh": "知觉定势让我们倾向于看到自己期望看到的内容。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gestalt Psychology",
+        "breakdown": "Gestalt(完形) + Psychology",
+        "meaning_en": "approach emphasizing how we organize parts into meaningful wholes",
+        "meaning_zh": "格式塔心理学：强调我们如何把部分组织成有意义整体的学派。核心口号「整体大于部分之和」。提出了一系列知觉组织原则",
+        "derivation": "Gestalt 德语「形状/整体」→ 大脑倾向于把零散的信号组成完整的图像",
+        "mnemonic": "三个点排成三角形——你看到的是三角形（整体），不是三个孤立的点",
+        "example": "Gestalt psychology states the whole is greater than the sum of its parts.",
+        "example_zh": "格式塔心理学认为整体大于部分之和。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Closure",
+        "breakdown": "Closure(闭合)",
+        "meaning_en": "Gestalt principle: we fill in gaps to perceive complete objects",
+        "meaning_zh": "闭合律（格式塔原则）：我们倾向于把不完整的图形补全，感知为完整的物体。看到一个不完整的圆，大脑自动补成圆",
+        "derivation": "大脑不喜欢「未完成」→ 自动填补缺口 → 形成完整感知",
+        "mnemonic": "几条断线的圆圈→你看到的还是「圆」→那就是闭合律",
+        "example": "Closure lets us perceive a circle even when part is missing.",
+        "example_zh": "闭合律让我们即使在圆缺了一部分时也能感知到它。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Figure/Ground",
+        "breakdown": "Figure(图形) + Ground(背景)",
+        "meaning_en": "Gestalt: organizing a scene into a central figure and a background",
+        "meaning_zh": "图形-背景（格式塔）：把场景分成中心「图形」和周围「背景」的能力。经典的「鲁宾花瓶」图——既可以看成花瓶也可以看成两张脸",
+        "derivation": "大脑自动区分「前景物体」和「背景」→ 否则无法识别物体",
+        "mnemonic": "白纸上写黑字 → 字是图形，纸是背景 → 这个自动分离就是图形-背景",
+        "example": "The Rubin vase illusion demonstrates figure-ground reversal.",
+        "example_zh": "鲁宾花瓶错觉展示了图形-背景的反转。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Proximity",
+        "breakdown": "Proximity(接近)",
+        "meaning_en": "Gestalt: objects near each other are perceived as a group",
+        "meaning_zh": "接近律（格式塔）：距离近的元素被感知为同一组。三对点比六个独立的点更容易被看成「三组」",
+        "derivation": "空间接近 → 大脑自动归为一类",
+        "mnemonic": "排版时段落之间空行大一点——读者自动把「靠近的」看成一段",
+        "example": "In design, proximity groups related items together.",
+        "example_zh": "在设计中，接近原则把相关项目归为一组。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Similarity",
+        "breakdown": "Similarity(相似)",
+        "meaning_en": "Gestalt: similar-looking items are perceived as a group",
+        "meaning_zh": "相似律（格式塔）：外观相似的元素被感知为同一组。一堆点中间有红色点和蓝色点，你会自动把红色点归为一组",
+        "derivation": "颜色/形状/大小相似 → 大脑归为同类",
+        "mnemonic": "穿校服的一群人 → 即使互不认识，你也觉得他们是一组",
+        "example": "Similar colors form perceptual groups even when scattered.",
+        "example_zh": "即使散开，相似的颜色也会形成知觉组。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Selective Attention",
+        "breakdown": "Selective(选择性的) + Attention(注意)",
+        "meaning_en": "focusing conscious awareness on a particular stimulus",
+        "meaning_zh": "选择性注意：把意识集中在某个特定刺激上。因为大脑处理能力有限，必须选择——我们每时每刻都在「选」注意什么",
+        "derivation": "感官接收大量信息 → 大脑只能处理一部分 → 必须选择",
+        "mnemonic": "嘈杂教室里你只听老师讲课——选择性注意在过滤其他声音",
+        "example": "Selective attention lets you focus on one voice in a noisy room.",
+        "example_zh": "选择性注意让你在嘈杂的房间里专注于一个声音。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Cocktail Party Effect",
+        "breakdown": "Cocktail Party(鸡尾酒会) + Effect(效应)",
+        "meaning_en": "ability to focus on one voice in a noisy environment, but still catch your name",
+        "meaning_zh": "鸡尾酒会效应：在嘈杂环境中能专注于一段对话，同时潜意识仍在监控其他信息——所以别人提到你的名字你会立刻注意到",
+        "derivation": "选择性注意 + 潜意识监控 → 「忽略」的信号其实也在被扫描",
+        "mnemonic": "你以为自己没在听隔壁桌——但他们一说你名字你就转头了",
+        "example": "The cocktail party effect explains why your name catches your attention in a crowd.",
+        "example_zh": "鸡尾酒会效应解释了为什么在人群中你的名字会吸引注意。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Change Blindness",
+        "breakdown": "Change(变化) + Blindness(盲)",
+        "meaning_en": "failing to notice changes in a visual scene",
+        "meaning_zh": "变化盲视：即使场景中发生明显变化，我们也会注意不到。经典实验：问路中途换人，一半被试没察觉对方变了",
+        "derivation": "注意力有限 + 知觉依赖期望 → 未关注的变化会被忽略",
+        "mnemonic": "电影里的穿帮镜头——衣服颜色变了你没发现 → 变化盲视",
+        "example": "Change blindness shows how limited our attention really is.",
+        "example_zh": "变化盲视表明我们的注意力是多么有限。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Inattentional Blindness",
+        "breakdown": "In(无) + attentional(注意的) + Blindness",
+        "meaning_en": "failure to see visible objects when attention is focused elsewhere",
+        "meaning_zh": "非注意盲视：当注意力集中在别处时，看不到眼前明显存在的物体。经典「篮球大猩猩」实验：数传球次数，一半人没看到走过画面的大猩猩",
+        "derivation": "注意力 = 意识的「聚光灯」→ 灯外的东西视而不见",
+        "mnemonic": "看手机走路撞到柱子——你「看见」了却没「注意到」",
+        "example": "In the gorilla experiment, half of viewers missed the gorilla walking through.",
+        "example_zh": "在大猩猩实验中，一半观众没看到走过画面的大猩猩。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Binocular Depth Cues",
+        "breakdown": "Bi(二) + ocular(眼的) + Depth Cues",
+        "meaning_en": "depth cues that require both eyes",
+        "meaning_zh": "双眼深度线索：需要两只眼睛共同提供的深度信息。包括视网膜差异（retinal disparity）和辐合（convergence）。近距离物体最有效",
+        "derivation": "两眼位置不同 → 看到的画面略有差异 → 大脑合成 → 产生立体感",
+        "mnemonic": "闭一只眼穿针会变难——失去双眼深度线索",
+        "example": "3D movies work by exploiting binocular depth cues.",
+        "example_zh": "3D电影利用双眼深度线索起作用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Retinal Disparity",
+        "breakdown": "Retinal(视网膜的) + Disparity(差异)",
+        "meaning_en": "two eyes receive slightly different images; brain computes depth",
+        "meaning_zh": "视网膜差异：两只眼睛因为位置不同，看到的画面略有差异。大脑根据差异大小计算距离——差异越大，物体越近",
+        "derivation": "两眼距离（约6厘米）→ 视角差异 → 大脑计算深度",
+        "mnemonic": "用两根手指在眼前轮流看左右眼——画面不一样，这就是视网膜差异",
+        "example": "Retinal disparity is the main binocular depth cue.",
+        "example_zh": "视网膜差异是主要的双眼深度线索。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Convergence",
+        "breakdown": "Convergence(辐合)",
+        "meaning_en": "inward turning of eyes when focusing on near objects",
+        "meaning_zh": "辐合：看近距离物体时两眼向内转动。大脑根据眼睛转动的幅度判断距离——物体越近，眼睛越向内转",
+        "derivation": "近 → 眼睛向内聚 → 肌肉紧张 → 大脑用紧张程度估计距离",
+        "mnemonic": "看鼻尖时两眼往中间挤——那就是辐合",
+        "example": "Convergence helps judge distance for objects within a few feet.",
+        "example_zh": "辐合帮助判断几英尺内物体的距离。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Monocular Depth Cues",
+        "breakdown": "Mono(一) + ocular(眼的) + Depth Cues",
+        "meaning_en": "depth cues available to one eye alone",
+        "meaning_zh": "单眼深度线索：只用一只眼也能获得的深度信息。包括相对大小、相对清晰度、遮挡、线性透视、纹理梯度。画家用这些在2D画布上表现3D感",
+        "derivation": "用一只眼看画也能感觉到深度 → 因为画家用了单眼线索",
+        "mnemonic": "独眼海盗也能判断远近——因为单眼线索足够用",
+        "example": "Paintings create depth using only monocular cues.",
+        "example_zh": "绘画仅用单眼线索就能创造深度感。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Relative Clarity",
+        "breakdown": "Relative(相对的) + Clarity(清晰度)",
+        "meaning_en": "hazy objects are perceived as farther than clear ones",
+        "meaning_zh": "相对清晰度：越清晰的物体感知为越近，越模糊的越远。因为远处物体的光要穿过更多空气，被散射的更多",
+        "derivation": "远处的山因为空气散射看起来蓝灰色、模糊 → 大脑据此判断「远」",
+        "mnemonic": "雾天看远山很模糊——这种「模糊感」就是相对清晰度线索",
+        "example": "Mountains in the distance look hazy, signaling they are far away.",
+        "example_zh": "远处的山看起来模糊，表明它们很远。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Relative Size",
+        "breakdown": "Relative(相对的) + Size(大小)",
+        "meaning_en": "smaller images are perceived as farther away if objects are of known similar size",
+        "meaning_zh": "相对大小：当两个已知大小相同的物体呈现不同大小时，较小的被感知为较远。两辆汽车，图像中较小的那辆看起来更远",
+        "derivation": "物体实际大小已知 → 视网膜成像越小 → 距离越远",
+        "mnemonic": "远处的人看起来很小——你不是觉得「人变小了」而是「人在远处」",
+        "example": "In photos, distant people appear small, providing a depth cue.",
+        "example_zh": "在照片中，远处的人看起来很小，提供了深度线索。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Texture Gradient",
+        "breakdown": "Texture(纹理) + Gradient(梯度)",
+        "meaning_en": "closer textures appear coarse and distinct; distant ones appear fine and indistinct",
+        "meaning_zh": "纹理梯度：近处的纹理粗糙分明，远处的纹理细密模糊。看一片草地——脚下的草清晰可辨，远处的草汇成一片模糊的绿色",
+        "derivation": "空间远近 → 纹理密度和清晰度变化 → 大脑据此判断深度",
+        "mnemonic": "鹅卵石路：近处石头大且清晰，远处小且密集 → 纹理梯度",
+        "example": "A cobblestone street shows a clear texture gradient.",
+        "example_zh": "鹅卵石街道呈现出清晰的纹理梯度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Linear Perspective",
+        "breakdown": "Linear(线性的) + Perspective(透视)",
+        "meaning_en": "parallel lines appear to converge with distance",
+        "meaning_zh": "线性透视：平行线看起来在远处汇聚于一点。铁轨、公路在远处「合二为一」——这种汇聚程度告诉大脑距离有多远",
+        "derivation": "实际平行的线 → 透视下「相交」→ 相交越快，距离越远",
+        "mnemonic": "铁轨望向远方汇成一点 → 线性透视",
+        "example": "Train tracks appear to meet in the distance, creating a linear perspective.",
+        "example_zh": "铁轨看起来在远处汇合，产生线性透视。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Interposition",
+        "breakdown": "Inter(之间) + position(位置)",
+        "meaning_en": "an object blocking another is perceived as closer",
+        "meaning_zh": "遮挡（重叠）：当一个物体部分遮挡另一个物体时，遮挡的那个被感知为更近。这是最可靠的单眼深度线索",
+        "derivation": "A挡住B → A必然在B前面 → 这个判断几乎不会错",
+        "mnemonic": "近处的人挡住了远处的树——谁挡谁，谁就在前面",
+        "example": "When a person blocks a tree in a photo, we know the person is closer.",
+        "example_zh": "当一个人在照片中挡住一棵树时，我们知道这个人更近。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Perceptual Constancy",
+        "breakdown": "Perceptual(知觉的) + Constancy(恒常性)",
+        "meaning_en": "perceiving objects as unchanging despite changes in sensory input",
+        "meaning_zh": "知觉恒常性：即使感觉输入变化，我们仍把物体感知为不变。包括大小恒常性、形状恒常性、颜色恒常性。门开关时形状变了，但你知道它还是长方形",
+        "derivation": "视网膜图像变化 → 但物体本身没变 → 大脑「校正」成不变的物体",
+        "mnemonic": "白纸在阳光下和灯光下都「是白的」——颜色恒常性在起作用",
+        "example": "Perceptual constancy lets us recognize a door as the same shape from any angle.",
+        "example_zh": "知觉恒常性让我们从任何角度都能认出门的形状。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Apparent Motion",
+        "breakdown": "Apparent(表面的) + Motion(运动)",
+        "meaning_en": "illusion of movement when static stimuli are presented in sequence",
+        "meaning_zh": "表观运动（似动）：静态图片按顺序快速呈现时产生的运动错觉。电影、动画、霓虹灯走马灯都依赖这种知觉——大脑把连续的静态画面拼成运动",
+        "derivation": "静态画面快速切换 → 大脑填补中间 → 感觉有连续运动",
+        "mnemonic": "电影 = 一秒24张静态图 → 你看到的「运动」其实是表观运动",
+        "example": "Movies create apparent motion from 24 still frames per second.",
+        "example_zh": "电影用每秒24张静态画面创造表观运动。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Thinking",
+    "type": "root",
+    "meaning_en": "cognition, problem-solving, judgment, and decision-making",
+    "meaning_zh": "思维：认知、问题解决、判断和决策的过程。包括概念形成、推理策略和常见的思维偏差",
+    "origin": "Unit 2: 2.2 Thinking, Problem-Solving, Judgments, and Decision-Making",
+    "related": [
+      "Perception",
+      "Memory Systems",
+      "Intelligence"
+    ],
+    "words": [
+      {
+        "word": "Concepts",
+        "breakdown": "Concept(概念)",
+        "meaning_en": "mental groupings of similar objects, events, or ideas",
+        "meaning_zh": "概念：对相似物体、事件或想法的心理分类。让我们不必每次遇到新事物都从头学习——看到一只没见过的狗也能立刻归类为「狗」",
+        "derivation": "一堆具体事例 → 提取共同特征 → 形成抽象类别",
+        "mnemonic": "概念 = 大脑的「文件夹」→ 把相似的东西放一起",
+        "example": "The concept of \"chair\" includes wooden stools and armchairs alike.",
+        "example_zh": "「椅子」这个概念既包括木凳也包括扶手椅。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Prototypes",
+        "breakdown": "Proto(原始) + type(类型)",
+        "meaning_en": "best or most typical example of a concept",
+        "meaning_zh": "原型：一个概念中最典型的例子。「鸟」的原型是麻雀或鸽子，而不是企鹅或鸵鸟。我们根据新事物和原型的相似度来归类",
+        "derivation": "在众多例子中，某个最典型的变成了「标准样本」→ 判断时以它为参照",
+        "mnemonic": "说到「水果」你先想到苹果而不是榴莲——苹果是你的原型",
+        "example": "A robin is closer to the prototype of \"bird\" than a penguin is.",
+        "example_zh": "知更鸟比企鹅更接近「鸟」的原型。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Algorithms",
+        "breakdown": "Algorithm(算法)",
+        "meaning_en": "step-by-step procedures that guarantee a correct solution",
+        "meaning_zh": "算法：解决问题的逐步程序，能保证找到正确答案。但可能很慢。例如枚举所有可能的密码——100%能破解但太慢",
+        "derivation": "严格步骤 → 必然正确 → 但效率可能低",
+        "mnemonic": "数学公式就是算法 → 按步骤走一定对，但不一定快",
+        "example": "Multiplication follows an algorithm that always produces the correct answer.",
+        "example_zh": "乘法遵循一个总能得出正确答案的算法。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Heuristics",
+        "breakdown": "Heuristic(启发式)",
+        "meaning_en": "mental shortcuts that allow quick but sometimes flawed judgments",
+        "meaning_zh": "启发式：快速但可能出错的思维捷径。牺牲准确性换取速度。我们每天的决策大多用启发式",
+        "derivation": "经验/直觉 → 快速给出答案 → 大多数情况够用但会犯系统性错误",
+        "mnemonic": "算法 = 慢但准；启发式 = 快但可能错 → 生活用启发式，考试用算法",
+        "example": "Choosing the shortest checkout line uses a heuristic.",
+        "example_zh": "选最短结账队伍是用启发式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Representativeness Heuristic",
+        "breakdown": "Representativeness(代表性) + Heuristic",
+        "meaning_en": "judging likelihood by how much something resembles a prototype",
+        "meaning_zh": "代表性启发式：根据事物多像一个典型样本来判断概率。忽略了「基础比率」——一个戴眼镜爱读书的人更可能是图书管理员还是销售员？大多数人选前者，但实际销售员比图书管理员多得多",
+        "derivation": "看起来像X → 判断为X → 忽略统计学基础",
+        "mnemonic": "「看起来像教授的人」其实更可能是销售——因为销售员多得多",
+        "example": "Judging that a shy person is more likely a librarian than a salesperson is a representativeness bias.",
+        "example_zh": "判断一个害羞的人更可能是图书管理员而非销售员，是代表性偏差。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Availability Heuristic",
+        "breakdown": "Availability(可得性) + Heuristic",
+        "meaning_en": "judging likelihood by how easily examples come to mind",
+        "meaning_zh": "可得性启发式：根据例子在脑中多容易想起来判断概率。坐飞机比开车安全得多，但因为空难报道多，人们感觉飞机更危险",
+        "derivation": "容易想起来的事 → 感觉更常见 → 但记忆受媒体、情绪影响",
+        "mnemonic": "看完新闻报道的空难 → 不敢坐飞机 → 因为空难在脑中「太可得」",
+        "example": "People fear shark attacks more than car accidents because shark stories are vivid.",
+        "example_zh": "人们更怕鲨鱼袭击而非车祸，因为鲨鱼故事更生动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mental Set",
+        "breakdown": "Mental(心理的) + Set(定势)",
+        "meaning_en": "tendency to approach a problem with a mindset that worked before",
+        "meaning_zh": "心理定势：用以前奏效的方法处理新问题的倾向。即使旧方法在新情境中不适用，人们仍会坚持用——妨碍创造性解决",
+        "derivation": "成功经验 → 形成固定思路 → 新问题也用同样方法 → 可能卡住",
+        "mnemonic": "用熟悉的办法解不开题 → 非要换个思路才行 → 心理定势阻碍了你",
+        "example": "Mental set can prevent people from finding creative solutions.",
+        "example_zh": "心理定势可能妨碍人们找到创造性的解决方案。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Priming",
+        "breakdown": "Priming(启动)",
+        "meaning_en": "activation of certain associations, predisposing perception or response",
+        "meaning_zh": "启动效应：先前的刺激（即使没意识到）激活了某些联想，影响之后的加工。先看到「面包」再看「黄油」会识别更快",
+        "derivation": "先接触A → A相关的概念被「预激活」→ 相关刺激更快识别",
+        "mnemonic": "恐怖片之后独自走黑路——你觉得到处有鬼 → 恐怖片启动了「恐惧」概念",
+        "example": "Seeing the word \"yellow\" primes recognition of \"banana.\"",
+        "example_zh": "看到「黄色」会启动对「香蕉」的识别。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Framing",
+        "breakdown": "Framing(框架)",
+        "meaning_en": "the way an issue is posed can significantly affect decisions",
+        "meaning_zh": "框架效应：同一事实用不同方式表述会显著影响决策。手术「90%存活率」和「10%死亡率」客观一样，但前者更容易被接受",
+        "derivation": "表述方式 → 影响情感反应 → 改变决策",
+        "mnemonic": "「还剩半杯水」vs「已经喝了一半」——完全一样的事实，感觉完全不同",
+        "example": "Framing a tax as a \"surcharge\" vs a \"discount\" changes public opinion.",
+        "example_zh": "把税描述为「附加费」或「折扣」会改变公众看法。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gambler's Fallacy",
+        "breakdown": "Gambler(赌徒) + Fallacy(谬误)",
+        "meaning_en": "belief that past random events affect future random ones",
+        "meaning_zh": "赌徒谬误：错误地认为过去的随机事件会影响未来的随机事件。抛硬币连续5次正面后，觉得下次「应该」出反面——其实每次仍是50%",
+        "derivation": "随机事件相互独立 → 但人觉得「该换了」→ 认知偏差",
+        "mnemonic": "轮盘赌连续红10次，人们觉得「该出黑了」→ 但概率没变 → 赌徒谬误",
+        "example": "After five heads in a row, gamblers think tails \"must\" come next.",
+        "example_zh": "连续五次正面后，赌徒认为反面「必然」下一次出现。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sunk-Cost Fallacy",
+        "breakdown": "Sunk(沉没) + Cost(成本) + Fallacy",
+        "meaning_en": "continuing a bad investment because of already-spent resources",
+        "meaning_zh": "沉没成本谬误：因为已经投入了资源就继续一件不好的事情。「已经看了30分钟烂片，不看完浪费了」——其实无论看不看完，那30分钟都回不来",
+        "derivation": "已付出的无法收回 → 应该只看未来收益 → 但情感上难以「放弃」",
+        "mnemonic": "「都花这么多钱了不能退」→ 其实钱已经花了，退不退都回不来",
+        "example": "Sitting through a bad movie because you paid for the ticket is a sunk-cost fallacy.",
+        "example_zh": "因为买了票而坚持看完烂片是沉没成本谬误。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Executive Functions",
+        "breakdown": "Executive(执行的) + Functions",
+        "meaning_en": "higher-level cognitive skills: planning, switching, inhibiting, working memory",
+        "meaning_zh": "执行功能：高级认知能力的总称——计划、注意切换、抑制冲动、工作记忆。主要由前额叶负责。是「大脑的CEO」",
+        "derivation": "前额叶发育 → 执行功能成熟 → 能计划、自控、解决复杂问题",
+        "mnemonic": "执行功能 = 大脑的「总经理」→ 安排、管理、监督一切认知活动",
+        "example": "Executive functions develop slowly through adolescence.",
+        "example_zh": "执行功能在青春期内缓慢发育。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Creativity",
+        "breakdown": "Creativity(创造力)",
+        "meaning_en": "ability to produce novel and valuable ideas",
+        "meaning_zh": "创造力：产生新颖且有价值想法的能力。不只是「与众不同」，还要「有用」。需要专业知识、发散思维、内在动机等多种条件",
+        "derivation": "发散思维（多种可能）+ 聚合思维（筛选最佳）→ 创造",
+        "mnemonic": "创造力 = 既要「想得出」又要「想得好」→ 不是胡思乱想",
+        "example": "Creativity combines expertise with divergent thinking.",
+        "example_zh": "创造力结合了专业知识和发散思维。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Divergent Thinking",
+        "breakdown": "Diverge(发散) + nt + Thinking",
+        "meaning_en": "generating many possible solutions to a problem",
+        "meaning_zh": "发散思维：对同一个问题产生多种不同解决方案的思维。「一块砖能有多少种用途？」问的就是发散思维，不限标准答案",
+        "derivation": "Diverge(发散) → 从一个起点向多个方向想 → 创造力的核心",
+        "mnemonic": "发散 = 撒网 → 多个方向抛出想法 → 数量越多越好",
+        "example": "Listing 20 uses for a brick tests divergent thinking.",
+        "example_zh": "列出20种砖的用途测试的是发散思维。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Convergent Thinking",
+        "breakdown": "Converge(聚合) + nt + Thinking",
+        "meaning_en": "narrowing down possibilities to find the single best answer",
+        "meaning_zh": "聚合思维：从多个可能中找到唯一最佳答案的思维。考试的选择题用的就是聚合思维——排除错的，找正确的",
+        "derivation": "Converge(聚合) → 从多个方向收敛到一个点 → 找到标准答案",
+        "mnemonic": "聚合 = 收网 → 从多个想法中选出一个最好的",
+        "example": "Multiple-choice tests measure convergent thinking.",
+        "example_zh": "选择题测量的是聚合思维。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Functional Fixedness",
+        "breakdown": "Functional(功能的) + Fixedness(固着)",
+        "meaning_en": "inability to see an object being used in a new way",
+        "meaning_zh": "功能固着：只能想到物体的常见用途，想不到创造性的新用途。看到锤子只想到钉钉子，想不到可以当纸镇。妨碍问题解决",
+        "derivation": "物体的「惯用功能」印在脑中 → 难以跳出 → 阻碍创新",
+        "mnemonic": "锤子=钉钉子，但急用时可以敲开椰子——打破功能固着才能创新",
+        "example": "Functional fixedness prevents people from seeing a book as a doorstop.",
+        "example_zh": "功能固着让人看不到书可以当门挡。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Memory Systems",
+    "type": "root",
+    "meaning_en": "types of memory and the models that describe how they work",
+    "meaning_zh": "记忆系统：不同类型的记忆和描述它们工作方式的模型。涵盖外显/内隐记忆、多存储模型、工作记忆模型等",
+    "origin": "Unit 2: 2.3 Introduction to Memory",
+    "related": [
+      "Memory Encoding",
+      "Memory Storage",
+      "Memory Retrieval",
+      "Forgetting",
+      "Thinking"
+    ],
+    "words": [
+      {
+        "word": "Memory",
+        "breakdown": "Memory(记忆)",
+        "meaning_en": "persistence of learning over time; encoding, storage, retrieval",
+        "meaning_zh": "记忆：学习随时间保留的能力。包括三个基本过程——编码（输入）、存储（保留）、提取（读取）。任一环节出问题都会导致记忆失败",
+        "derivation": "经验 → 编码 → 存储 → 提取 → 使用（读出）",
+        "mnemonic": "记忆像硬盘：写入（编码）、保存（存储）、读取（提取）",
+        "example": "Memory involves encoding, storing, and retrieving information.",
+        "example_zh": "记忆涉及编码、存储和提取信息。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Explicit Memory",
+        "breakdown": "Explicit(外显的) + Memory",
+        "meaning_en": "conscious, declarative memory of facts and events",
+        "meaning_zh": "外显记忆（陈述性记忆）：能被意识提取并用语言描述的记忆。分为语义记忆（知识）和情景记忆（经历）。需要有意识地回忆",
+        "derivation": "Explicit(明确的) → 能「说出来」的记忆 → 和内隐记忆相对",
+        "mnemonic": "外显记忆 = 「能说清楚」的记忆 → 你学过什么、经历过什么",
+        "example": "Remembering what you ate yesterday is explicit memory.",
+        "example_zh": "记得昨天吃了什么是外显记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Episodic Memory",
+        "breakdown": "Episodic(情节的) + Memory",
+        "meaning_en": "personally experienced events with time and place",
+        "meaning_zh": "情景记忆：个人经历的具体事件，带有时间和地点。「我上周日在公园散步」是情景记忆。海马体损伤会严重影响它",
+        "derivation": "Episode(情节) → 生活中的「一段剧情」→ 个人经历的回忆",
+        "mnemonic": "情景记忆 = 人生的「回忆片段」→ 你的个人故事",
+        "example": "Remembering your first day of school is an episodic memory.",
+        "example_zh": "记得第一天上学是情景记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Semantic Memory",
+        "breakdown": "Semantic(语义的) + Memory",
+        "meaning_en": "general knowledge of facts and concepts",
+        "meaning_zh": "语义记忆：关于世界的一般知识和概念——不依赖具体经历。「巴黎是法国首都」、「水的化学式是H₂O」都是语义记忆",
+        "derivation": "Semantic(意义) → 「意义」的记忆 → 和个人经历脱钩的知识",
+        "mnemonic": "语义记忆 = 「常识和学到的知识」→ 你知道但不记得怎么学的",
+        "example": "Knowing that Paris is the capital of France is semantic memory.",
+        "example_zh": "知道巴黎是法国首都是语义记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Implicit Memory",
+        "breakdown": "Implicit(内隐的) + Memory",
+        "meaning_en": "unconscious, non-declarative memory such as skills and classical conditioning",
+        "meaning_zh": "内隐记忆（非陈述性记忆）：不需要有意识提取的记忆。包括程序记忆（技能）和经典条件反射。做得出来但说不清",
+        "derivation": "Implicit(内隐) → 不说出来但会影响行为 → 技能、习惯、条件反射",
+        "mnemonic": "内隐记忆 = 「说不出但做得到」→ 骑自行车你做得到，但解释起来很难",
+        "example": "Riding a bike uses implicit memory.",
+        "example_zh": "骑自行车依靠内隐记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Procedural Memory",
+        "breakdown": "Procedural(程序的) + Memory",
+        "meaning_en": "memory for skills and how to perform actions",
+        "meaning_zh": "程序记忆：关于「怎么做」的记忆——运动技能、习惯。一种内隐记忆。主要由小脑和基底神经节负责，海马体损伤不影响",
+        "derivation": "反复练习 → 动作变成自动化 → 不经思考就能执行",
+        "mnemonic": "程序记忆 = 肌肉记忆 → 一学会就忘不掉",
+        "example": "Typing on a keyboard is a procedural memory.",
+        "example_zh": "在键盘上打字是程序记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Prospective Memory",
+        "breakdown": "Prospective(前瞻的) + Memory",
+        "meaning_en": "remembering to do something in the future",
+        "meaning_zh": "前瞻性记忆：记住「将来要做某事」。不是回忆过去，而是未来要执行的意图。忘记带钥匙、忘记吃药都是前瞻性记忆失败",
+        "derivation": "Prospective(未来的) → 记住未来要做的事 → 需要在正确时机「触发」",
+        "mnemonic": "前瞻性记忆 = 脑中的「待办事项」→ 到时间要记得做",
+        "example": "Remembering to take your medication is prospective memory.",
+        "example_zh": "记得按时吃药是前瞻性记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Long-term Potentiation",
+        "breakdown": "Long-term(长期) + Potentiation(增强)",
+        "meaning_en": "persistent strengthening of synapses underlying learning and memory",
+        "meaning_zh": "长时程增强（LTP）：突触连接的持久增强——神经元之间反复放电后，它们之间的连接变得更强更快。被认为是学习和记忆的神经基础",
+        "derivation": "神经元A刺激神经元B → 反复激活 → 突触效率增强 → 「一起放电的神经元连在一起」",
+        "mnemonic": "LTP = 「重复路径变成高速公路」→ 反复学习的内容更容易提取",
+        "example": "Long-term potentiation is thought to be the cellular basis of memory.",
+        "example_zh": "长时程增强被认为是记忆的细胞基础。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Working Memory Model",
+        "breakdown": "Working Memory + Model",
+        "meaning_en": "Baddeley's model: central executive coordinating phonological loop and visuospatial sketchpad",
+        "meaning_zh": "工作记忆模型（Baddeley）：认为短时记忆不是单一存储，而是由中央执行系统协调多个子系统——语音回路和视空间画板",
+        "derivation": "短时记忆太简化 → Baddeley 提出更细的分工模型 → 解释多任务处理",
+        "mnemonic": "工作记忆 = 「大脑工作台」→ 有多个专门的抽屉和一个总指挥",
+        "example": "The working memory model replaced the simple short-term memory concept.",
+        "example_zh": "工作记忆模型取代了简单的短时记忆概念。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Working Memory",
+        "breakdown": "Working(工作) + Memory",
+        "meaning_en": "active processing of information; small capacity, short duration",
+        "meaning_zh": "工作记忆：正在被意识处理和操作的信息。容量7±2项，持续约30秒。和「短时记忆」相似但强调主动加工",
+        "derivation": "接收 → 保持 → 操作 → 输出——这些过程都在工作记忆中进行",
+        "mnemonic": "记电话号码时默念——那就是工作记忆在工作",
+        "example": "Working memory allows us to hold and manipulate information temporarily.",
+        "example_zh": "工作记忆让我们临时保持和处理信息。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Central Executive",
+        "breakdown": "Central(中央) + Executive(执行)",
+        "meaning_en": "attention-control component of working memory",
+        "meaning_zh": "中央执行系统：工作记忆的「指挥中心」。分配注意、协调子系统、连接长时记忆。不存储信息，只负责管理",
+        "derivation": "像CEO → 不自己做事，只指挥别的部门",
+        "mnemonic": "中央执行 = 大脑的「总指挥」→ 决定哪些信息被处理、怎么处理",
+        "example": "The central executive directs attention in working memory.",
+        "example_zh": "中央执行系统在工作记忆中调配注意。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Phonological Loop",
+        "breakdown": "Phonological(语音的) + Loop(回路)",
+        "meaning_en": "working memory subsystem for verbal and auditory information",
+        "meaning_zh": "语音回路：工作记忆中处理语言和声音信息的子系统。记电话号码、默念要买的东西都在这里进行。有「内耳」听到和「内声」复述两部分",
+        "derivation": "语言信息 → 内部复述 → 保持几秒钟 → 像声音在脑中回响",
+        "mnemonic": "你心里默念「牛奶、鸡蛋、面包」→ 那就是语音回路在运作",
+        "example": "The phonological loop helps you remember a phone number long enough to dial it.",
+        "example_zh": "语音回路帮助你记住电话号码足够长的时间以拨号。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Visuospatial Sketchpad",
+        "breakdown": "Visuo(视觉) + Spatial(空间) + Sketchpad(画板)",
+        "meaning_en": "working memory subsystem for visual and spatial information",
+        "meaning_zh": "视空间画板：工作记忆中处理视觉和空间信息的子系统。想象家里的布局、脑中「画图」解几何题——用的都是它",
+        "derivation": "视觉信息 → 在大脑中形成「心理图像」→ 可以被操作和扫描",
+        "mnemonic": "闭眼想象自己家的布局——那就是在视空间画板上「画画」",
+        "example": "Mental rotation of objects uses the visuospatial sketchpad.",
+        "example_zh": "在心中旋转物体时使用的是视空间画板。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Multi-Store Model",
+        "breakdown": "Multi(多) + Store(存储) + Model",
+        "meaning_en": "Atkinson-Shiffrin model: sensory memory → short-term → long-term",
+        "meaning_zh": "多存储模型（Atkinson-Shiffrin）：记忆分三个存储——感觉记忆（极短）→短时记忆（有限容量）→长时记忆（无限）。信息需要复述才能从短时进入长时",
+        "derivation": "信息 → 感觉存储(1秒内) → 注意 → 短时存储(30秒) → 复述 → 长时存储(持久)",
+        "mnemonic": "像接力赛：感觉记忆→短时记忆→长时记忆，中间需要「注意」和「复述」来传递",
+        "example": "The multi-store model sees memory as flowing through three stages.",
+        "example_zh": "多存储模型把记忆看作经过三个阶段流动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sensory Memory",
+        "breakdown": "Sensory(感觉的) + Memory",
+        "meaning_en": "brief storage of sensory information (< 1 second)",
+        "meaning_zh": "感觉记忆：感觉信息的极短暂存储（不到1秒）。容量很大但保留时间极短。分为图标记忆（视觉）和回声记忆（听觉）",
+        "derivation": "感觉器官 → 瞬间「缓存」→ 选择性注意 → 进入短时记忆",
+        "mnemonic": "闪电划过天空，你闭眼还能「看到」一瞬间——那就是感觉记忆",
+        "example": "Sensory memory holds visual information for less than a second.",
+        "example_zh": "感觉记忆保存视觉信息不到一秒。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Iconic Memory",
+        "breakdown": "Icon(图像) + ic + Memory",
+        "meaning_en": "momentary sensory memory of visual stimuli (~0.5 seconds)",
+        "meaning_zh": "图标记忆：视觉感觉记忆，保留约0.3-0.5秒。Sperling 的经典实验证明它存在——短暂闪现的字母表能被部分回忆",
+        "derivation": "看到的画面 → 像余像一样短暂保留 → 大部分瞬间消失",
+        "mnemonic": "Icon = 图标 → 视觉的「快照」→ 一闪而过",
+        "example": "Iconic memory explains why you can still \"see\" a picture flashed briefly.",
+        "example_zh": "图标记忆解释了为什么你还能「看到」刚刚闪现的图片。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Echoic Memory",
+        "breakdown": "Echo(回声) + ic + Memory",
+        "meaning_en": "momentary sensory memory of auditory stimuli (~3-4 seconds)",
+        "meaning_zh": "回声记忆：听觉感觉记忆，保留约3-4秒。所以别人讲话你没听清时，过一两秒还能「回放」听到的内容",
+        "derivation": "声音信号 → 听觉皮层「回响」几秒 → 大脑有时间重新解读",
+        "mnemonic": "别人问你话你没听清——「等等，你说什么？」过一会儿你自己听懂了 → 回声记忆",
+        "example": "Echoic memory lets you \"hear\" a sentence again briefly after it's spoken.",
+        "example_zh": "回声记忆让你在句子说完后还能短暂「再听」一遍。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Short-term Memory",
+        "breakdown": "Short-term(短时) + Memory",
+        "meaning_en": "memory active for 15-30 seconds with 7±2 item capacity",
+        "meaning_zh": "短时记忆：信息在被复述的情况下能保持15-30秒，容量约7±2个项目（Miller的魔术数字）。通过组块和复述可以扩展",
+        "derivation": "感觉记忆 → 注意 → 短时记忆 → 复述 → 长时记忆",
+        "mnemonic": "记电话号码前的一瞬间——你在短时记忆里「抓住」它",
+        "example": "Short-term memory typically holds 5-9 items for about 30 seconds.",
+        "example_zh": "短时记忆通常能保持5-9个项目约30秒。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Long-term Memory",
+        "breakdown": "Long-term(长期) + Memory",
+        "meaning_en": "relatively permanent storage with unlimited capacity",
+        "meaning_zh": "长时记忆：相对永久的存储，容量几乎无限。分为外显记忆（陈述性）和内隐记忆（非陈述性）。可以保持几分钟到终身",
+        "derivation": "短时记忆中反复加工/编码 → 转入长时存储 → 之后需要时再提取",
+        "mnemonic": "长时记忆像硬盘——容量大、保持久，但需要「查找」才能用",
+        "example": "Long-term memory has virtually unlimited capacity.",
+        "example_zh": "长时记忆的容量几乎是无限的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Automatic Processing",
+        "breakdown": "Automatic(自动的) + Processing",
+        "meaning_en": "unconscious encoding of incidental information like space, time, frequency",
+        "meaning_zh": "自动加工：无需有意识努力就完成的编码。空间（东西放哪）、时间（发生的先后）、频率（发生了几次）通常自动被记住",
+        "derivation": "不需要注意和努力 → 背景信息被自动记录 → 「你没刻意记但记住了」",
+        "mnemonic": "你昨天早餐吃了什么？——不用专门记也大致知道 → 自动加工",
+        "example": "You automatically remember where you parked without trying.",
+        "example_zh": "你不用刻意就能自动记住车停在哪。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Effortful Processing",
+        "breakdown": "Effortful(费力的) + Processing",
+        "meaning_en": "encoding that requires conscious attention and effort",
+        "meaning_zh": "费力加工：需要有意识努力和注意的编码。背单词、记公式、学名字——都需要刻意练习",
+        "derivation": "主动注意 + 有意识加工 → 信息进入长时记忆",
+        "mnemonic": "背课文很累 → 因为你在费力加工 → 自动加工不会累",
+        "example": "Memorizing vocabulary for an exam is effortful processing.",
+        "example_zh": "为考试背单词是费力加工。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Encoding",
+        "breakdown": "Encoding(编码)",
+        "meaning_en": "process of converting information into a form that can be stored",
+        "meaning_zh": "编码：把信息转换成记忆可以存储的形式。浅层编码（外观、声音）效果差，深层编码（意义、关联）效果好",
+        "derivation": "像把文件保存到电脑 → 编码方式决定了以后能不能找到",
+        "mnemonic": "死记硬背（浅层）不如理解含义（深层）——加工深度效应",
+        "example": "Deep encoding leads to better long-term retention.",
+        "example_zh": "深层编码能带来更好的长期记忆保持。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Storage",
+        "breakdown": "Storage(存储)",
+        "meaning_en": "maintaining encoded information over time",
+        "meaning_zh": "存储：把编码后的信息随时间保留下来。不同类型的记忆在大脑不同区域存储——事实和事件在海马体/皮层，技能在小脑和基底神经节",
+        "derivation": "编码 → 存储 → 提取——记忆的三步中间一步",
+        "mnemonic": "存储 = 「把记忆放进抽屉」→ 但抽屉不止一个",
+        "example": "Different types of memories are stored in different brain regions.",
+        "example_zh": "不同类型的记忆存储在不同的大脑区域。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Levels of Processing Model",
+        "breakdown": "Levels(层次) + Processing + Model",
+        "meaning_en": "Craik & Lockhart: deeper processing produces more durable memories",
+        "meaning_zh": "加工水平模型（Craik & Lockhart）：编码的「深度」决定记忆效果——越深层的加工（关注意义）记忆越持久。和结构「分层存储」相对",
+        "derivation": "不同加工深度 → 不同记忆持久度 → 不一定经过短时→长时的流程",
+        "mnemonic": "理解越深 → 记得越牢 → 不是靠「存在哪一层」而是靠「加工多深」",
+        "example": "The levels of processing model explains why understanding beats rote memorizing.",
+        "example_zh": "加工水平模型解释了为什么理解胜过死记硬背。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Structural Processing",
+        "breakdown": "Structural(结构的) + Processing",
+        "meaning_en": "shallow encoding based on physical appearance",
+        "meaning_zh": "结构加工：基于物理外观的浅层编码。关注字的大小写、字体。记忆效果最差——「这个字是大写还是小写？」帮不了你记住它",
+        "derivation": "只看「样子」→ 没触及意义 → 记得最浅",
+        "mnemonic": "结构加工 = 看「衣服」不看「内容」→ 记不住多少",
+        "example": "Noticing whether a word is in uppercase is structural processing.",
+        "example_zh": "注意一个单词是否大写是结构加工。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Phonemic Processing",
+        "breakdown": "Phonemic(音素的) + Processing",
+        "meaning_en": "middle level encoding based on the sound of a word",
+        "meaning_zh": "语音加工：基于单词声音的中层编码。关注发音、押韵。比结构加工深，但比语义加工浅。「cat和rat押韵吗？」使用的是语音加工",
+        "derivation": "关注「怎么念」→ 比看样子更深 → 但还没到「意思」",
+        "mnemonic": "记歌词比记课文容易 → 语音加工加上旋律让它更深",
+        "example": "Asking if \"cat\" rhymes with \"hat\" is phonemic processing.",
+        "example_zh": "问「cat」是否和「hat」押韵是语音加工。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Semantic Processing",
+        "breakdown": "Semantic(语义的) + Processing",
+        "meaning_en": "deep encoding based on the meaning of information",
+        "meaning_zh": "语义加工：基于信息意义的深层编码。和已有知识产生联系，记忆效果最好。「这句话是什么意思？」「和我的生活有什么关系？」",
+        "derivation": "关注「意义」→ 和长时记忆中的知识关联 → 形成丰富的提取线索",
+        "mnemonic": "理解后写笔记 > 抄书 > 看书——因为语义加工最深",
+        "example": "Asking what a word means leads to deeper semantic processing.",
+        "example_zh": "问一个单词的意思会产生更深的语义加工。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Memory Encoding",
+    "type": "root",
+    "meaning_en": "strategies and effects in how we encode memories",
+    "meaning_zh": "记忆编码：把信息转化为记忆的策略和效应。包括记忆术、间隔效应、系列位置效应等，是提高记忆效率的核心技巧",
+    "origin": "Unit 2: 2.4 Encoding Memories",
+    "related": [
+      "Memory Systems",
+      "Memory Storage",
+      "Memory Retrieval"
+    ],
+    "words": [
+      {
+        "word": "Mnemonic Devices",
+        "breakdown": "Mnemonic(记忆术的)",
+        "meaning_en": "memory aids using vivid imagery, organization, or rhymes",
+        "meaning_zh": "记忆术：利用生动意象、组织或押韵来辅助记忆的技巧。把抽象信息转化为容易记住的形式，例如ROYGBIV记彩虹颜色",
+        "derivation": "抽象信息 → 通过意象/首字母/故事转换 → 变得容易记",
+        "mnemonic": "记忆术就是「给记忆加挂钩」→ 挂钩越生动越容易想起",
+        "example": "Mnemonic devices like \"ROYGBIV\" help remember the colors of the rainbow.",
+        "example_zh": "像「ROYGBIV」这样的记忆术帮助记忆彩虹的颜色。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Method of Loci",
+        "breakdown": "Method(方法) + Loci(地点)",
+        "meaning_en": "mnemonic placing items along a familiar mental route",
+        "meaning_zh": "位置记忆法：把要记的项目想象放在熟悉路线的不同位置（如家中各房间）。回忆时「走一遍」路线就能取回。古罗马演讲者常用",
+        "derivation": "空间记忆非常强 → 把项目「挂」在熟悉位置上 → 借助空间记忆提取",
+        "mnemonic": "记忆宫殿 → 在脑中「走」过家里每个房间 → 每个房间存一个要记的东西",
+        "example": "The method of loci is used by memory champions to recall long lists.",
+        "example_zh": "位置记忆法被记忆冠军用来回忆长清单。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Chunking",
+        "breakdown": "Chunk(块) + ing",
+        "meaning_en": "organizing information into meaningful units to expand memory capacity",
+        "meaning_zh": "组块：把信息组织成有意义的单元来扩大记忆容量。电话号码 1-800-555-1234 比 18005551234 好记——分成了4块",
+        "derivation": "短时记忆容量7±2「项」→ 但「项」可大可小 → 通过组块让每项容纳更多信息",
+        "mnemonic": "13611 → 记11个字符累，但组成「136-11」两块就轻松",
+        "example": "Phone numbers are chunked for easier recall.",
+        "example_zh": "电话号码通过分组更容易记住。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Categorization",
+        "breakdown": "Category(类别) + ization",
+        "meaning_en": "grouping related items together during encoding",
+        "meaning_zh": "分类：编码时把相关项目归为一类。比随机列表好记得多——购物清单按「蔬菜、水果、肉类」分类后更容易记住",
+        "derivation": "相关项目放一起 → 形成有意义的组 → 提取时互相激活",
+        "mnemonic": "记购物清单按类别分 → 想到一个类别所有的东西都涌现出来",
+        "example": "Organizing notes by category improves recall.",
+        "example_zh": "按类别整理笔记能提高回忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hierarchy",
+        "breakdown": "Hierarchy(层级)",
+        "meaning_en": "organizing information into nested categories from general to specific",
+        "meaning_zh": "层级：把信息组织成从一般到具体的嵌套类别。生物学分类（界-门-纲-目-科-属-种）就是层级。这种结构极大提高记忆效率",
+        "derivation": "上级类别包含下级 → 记住顶层就能推出底层 → 像树状图",
+        "mnemonic": "知识树 → 主干（概括）+ 枝干（子类别）+ 叶子（细节）→ 比零散罗列好记",
+        "example": "Outlining a chapter in a hierarchy aids memory.",
+        "example_zh": "用层级列章节提纲有助于记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Spacing Effect",
+        "breakdown": "Spacing(间隔) + Effect",
+        "meaning_en": "distributed practice yields better long-term retention than massed practice",
+        "meaning_zh": "间隔效应：分散学习（间隔一段时间复习）比集中学习（一次性学完）的长期记忆效果好得多。考前突击不如每天复习",
+        "derivation": "每次复习 → 记忆巩固一轮 → 多次巩固效果倍增 → 且遗忘曲线变缓",
+        "mnemonic": "每天学1小时 × 5天 > 一次学5小时 → 分散是记忆的捷径",
+        "example": "The spacing effect is why cramming is less effective than daily review.",
+        "example_zh": "间隔效应解释了为什么突击不如每天复习有效。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Memory Consolidation",
+        "breakdown": "Memory + Consolidation(巩固)",
+        "meaning_en": "process by which new memories become stable over time",
+        "meaning_zh": "记忆巩固：新记忆随时间变得稳定的过程。在睡眠中尤其明显——海马体把日间的记忆转移到大脑皮层长期存储",
+        "derivation": "学习后 → 大脑后续继续加工 → 记忆痕迹变稳定 → 抗干扰",
+        "mnemonic": "学完东西睡一觉 → 大脑在「备份」→ 第二天记得更牢",
+        "example": "Memory consolidation happens largely during sleep.",
+        "example_zh": "记忆巩固主要在睡眠中发生。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Massed Practice",
+        "breakdown": "Massed(集中的) + Practice",
+        "meaning_en": "cramming: learning all at once",
+        "meaning_zh": "集中练习：一次性集中学习全部内容（临时抱佛脚）。短期效果好但长期遗忘快。考前突击是典型",
+        "derivation": "短时间大量练习 → 一时半会儿记得 → 没时间巩固 → 很快忘",
+        "mnemonic": "考前熬夜 → 考完全忘 → 集中练习的典型下场",
+        "example": "Cramming for exams is massed practice.",
+        "example_zh": "临时抱佛斗是集中练习。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Distributed Practice",
+        "breakdown": "Distributed(分散的) + Practice",
+        "meaning_en": "spreading learning over time; produces better long-term retention",
+        "meaning_zh": "分散练习：把学习分散到较长时间，每次学一点。利用间隔效应，长期记忆效果远胜集中练习。考前两周每天学一点最有效",
+        "derivation": "每次学一部分 → 间隔让记忆巩固 → 多次复习让记忆变成长期",
+        "mnemonic": "每天背20个单词 × 30天 > 一天背600个 → 分散练习的威力",
+        "example": "Distributed practice is the most effective study strategy.",
+        "example_zh": "分散练习是最有效的学习策略。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Serial Position Effect",
+        "breakdown": "Serial(系列的) + Position(位置) + Effect",
+        "meaning_en": "tendency to recall items at the beginning and end of a list best",
+        "meaning_zh": "系列位置效应：回忆清单时，最前面和最后面的项目比中间的记得好。包括首因效应（前面）和近因效应（后面）。中间的最容易忘",
+        "derivation": "开头：有时间复述→进入长时记忆；结尾：还在短时记忆里；中间：两头不靠→容易忘",
+        "mnemonic": "听一串名字，第一个和最后一个记得住，中间的忘了 → 系列位置效应",
+        "example": "In a word list, you best remember the first and last words.",
+        "example_zh": "在一个单词列表中，你最能记住第一个和最后一个词。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Primacy Effect",
+        "breakdown": "Primacy(首因) + Effect",
+        "meaning_en": "better recall of items at the beginning of a list (into long-term memory)",
+        "meaning_zh": "首因效应：清单开头的项目因为有时间被复述而进入长时记忆，回忆时更容易记起。也指对人第一印象的强大影响",
+        "derivation": "前几项 → 有时间复述 → 进入长时记忆 → 提取容易",
+        "mnemonic": "第一印象的重要性 → 首因效应在社交中的应用",
+        "example": "You remember the first items in a list due to the primacy effect.",
+        "example_zh": "由于首因效应，你记得列表中最前面的项目。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Recency Effect",
+        "breakdown": "Recency(近因) + Effect",
+        "meaning_en": "better recall of items at the end of a list (still in short-term memory)",
+        "meaning_zh": "近因效应：清单末尾的项目因为仍在短时记忆中而更容易回忆。但如果过一段时间再测试，近因效应会消失，只剩首因效应",
+        "derivation": "最后几项 → 还没从短时记忆中消失 → 立刻回忆很容易",
+        "mnemonic": "「刚听过的更容易记」→ 但这种记忆很短暂",
+        "example": "The recency effect disappears if recall is delayed.",
+        "example_zh": "如果延迟回忆，近因效应会消失。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Memory Storage",
+    "type": "root",
+    "meaning_en": "how memories are maintained and the amnesias that disrupt storage",
+    "meaning_zh": "记忆存储：记忆如何被保持在大脑中，以及各种破坏记忆存储的失忆症。包括复述策略和不同类型的遗忘病症",
+    "origin": "Unit 2: 2.5 Storing Memories",
+    "related": [
+      "Memory Systems",
+      "Memory Encoding",
+      "Memory Retrieval",
+      "Forgetting"
+    ],
+    "words": [
+      {
+        "word": "Rehearsal",
+        "breakdown": "Rehearsal(复述)",
+        "meaning_en": "conscious repetition of information to keep it in memory",
+        "meaning_zh": "复述：有意识地重复信息以保持记忆。是从短时记忆进入长时记忆的桥梁。分为维持性复述和精细复述两种",
+        "derivation": "重复 → 防止信息从短时记忆中消失 → 给长时记忆编码争取时间",
+        "mnemonic": "记电话号码时一直默念——那就是复述",
+        "example": "Rehearsal can help move information into long-term memory.",
+        "example_zh": "复述可以帮助信息进入长时记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Maintenance Rehearsal",
+        "breakdown": "Maintenance(维持) + Rehearsal",
+        "meaning_en": "repeating information verbatim to keep it active in short-term memory",
+        "meaning_zh": "维持性复述：简单地逐字重复信息来保持短时记忆。记电话号码时反复默念是典型。效果有限——能保持但不一定能转入长时记忆",
+        "derivation": "单纯重复 → 只能保持 → 不能加工成有意义的关联",
+        "mnemonic": "像在原地踏步——没有前进，只是「不倒下」",
+        "example": "Repeating a phone number until you dial it is maintenance rehearsal.",
+        "example_zh": "反复默念电话号码直到拨号是维持性复述。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Elaborative Rehearsal",
+        "breakdown": "Elaborative(精细的) + Rehearsal",
+        "meaning_en": "connecting new information to existing knowledge for deeper encoding",
+        "meaning_zh": "精细复述：把新信息和已有知识建立联系来加深编码。比维持性复述有效得多，因为利用了语义加工。记新概念时想「这和我知道的什么有关？」",
+        "derivation": "新信息 + 已有知识 → 建立关联 → 多重提取路径",
+        "mnemonic": "精细复述 = 「添枝加叶」→ 把孤立的信息连成网",
+        "example": "Linking a new word to personal experience is elaborative rehearsal.",
+        "example_zh": "把新词和个人经历联系起来是精细复述。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Autobiographical Memory",
+        "breakdown": "Auto(自己) + biographical(传记的) + Memory",
+        "meaning_en": "memory of personal life events and experiences",
+        "meaning_zh": "自传体记忆：对自己生活事件和经历的记忆。构成个人身份的核心。以情景记忆为主，但也涉及对自己的一般知识（语义）",
+        "derivation": "自己的「人生传记」→ 记录了你是谁、经历过什么 → 身份感的基础",
+        "mnemonic": "自传体记忆 = 你心中的「个人故事」→ 构成「我是谁」",
+        "example": "Autobiographical memory shapes our sense of identity.",
+        "example_zh": "自传体记忆塑造我们的身份感。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Superior Autobiographical Memory",
+        "breakdown": "Superior(优越的) + Autobiographical Memory",
+        "meaning_en": "rare ability to recall daily life events in extreme detail",
+        "meaning_zh": "卓越自传体记忆（HSAM）：极少数人拥有的能力——能记起生命中几乎每一天的细节。听一个日期就能说出那天发生了什么。不等于智商高",
+        "derivation": "某些大脑区域（海马体、颞叶）结构异常 → 自传记忆极度增强",
+        "mnemonic": "问「2010年3月5日你做了什么」→ 他们真的能答出来 → HSAM",
+        "example": "People with superior autobiographical memory can recall specific dates perfectly.",
+        "example_zh": "拥有卓越自传体记忆的人能完美回忆起特定日期。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Retrograde Amnesia",
+        "breakdown": "Retro(向后) + grade + Amnesia(失忆)",
+        "meaning_en": "loss of memories formed before the onset of amnesia",
+        "meaning_zh": "逆行性失忆：丧失失忆症开始「之前」形成的记忆。头部外伤后常见——忘记事故前几天、几周甚至几年的事。越远的记忆越容易保留",
+        "derivation": "Retro(向后) → 往过去看 → 过去的记忆丢失",
+        "mnemonic": "Retro = 复古/往回 → 失去「以前」的记忆",
+        "example": "Retrograde amnesia causes people to forget events before an injury.",
+        "example_zh": "逆行性失忆导致人们忘记受伤前的事件。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Anterograde Amnesia",
+        "breakdown": "Antero(向前) + grade + Amnesia",
+        "meaning_en": "inability to form new long-term memories after onset",
+        "meaning_zh": "顺行性失忆：失忆症开始「之后」无法形成新的长时记忆。患者能回忆过去但不能学新东西。H.M. 病例就是典型——海马体被切除后再也记不住新事",
+        "derivation": "Antero(向前) → 往未来看 → 不能形成未来的记忆",
+        "mnemonic": "Antero = 向前 → 「向前看没有记忆」→ 新记忆形成不了",
+        "example": "Anterograde amnesia prevents the formation of new memories.",
+        "example_zh": "顺行性失忆阻止新记忆的形成。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Alzheimer's Disease",
+        "breakdown": "Alzheimer(人名) + Disease",
+        "meaning_en": "progressive neurodegenerative disease causing memory loss and cognitive decline",
+        "meaning_zh": "阿尔兹海默病：渐进性神经退行性疾病，主要症状是记忆丧失（最先是新记忆），最终影响所有认知功能。与大脑中淀粉样斑块和乙酰胆碱不足有关",
+        "derivation": "神经元死亡（尤其海马体）→ 先是新记忆丢失 → 逐渐扩展 → 最终人格消退",
+        "mnemonic": "阿尔兹海默 = 记忆的「橡皮擦」→ 从最近的记忆开始擦起",
+        "example": "Alzheimer's disease first affects recent memories and worsens progressively.",
+        "example_zh": "阿尔兹海默病首先影响近期记忆，并逐渐恶化。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Infantile Amnesia",
+        "breakdown": "Infantile(婴儿的) + Amnesia",
+        "meaning_en": "inability of most adults to recall events from before age 3-4",
+        "meaning_zh": "婴儿期失忆：大多数成年人无法回忆3-4岁前的事件。可能与海马体未发育完成、缺少语言标签和自我概念有关",
+        "derivation": "婴幼儿海马体未成熟 → 无法形成持久的外显记忆 → 长大后回忆不起",
+        "mnemonic": "为什么记不起1岁时的事？——海马体当时还没装好「记忆硬盘」",
+        "example": "Infantile amnesia explains why we can't remember being a toddler.",
+        "example_zh": "婴儿期失忆解释了为什么我们记不起当学步儿童时的事。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Memory Retrieval",
+    "type": "root",
+    "meaning_en": "how stored memories are accessed and the cues that facilitate retrieval",
+    "meaning_zh": "记忆提取：如何访问已存储的记忆，以及哪些线索能帮助提取。包括回忆vs再认、情境依赖和元认知",
+    "origin": "Unit 2: 2.6 Retrieving Memories",
+    "related": [
+      "Memory Systems",
+      "Memory Encoding",
+      "Memory Storage",
+      "Forgetting"
+    ],
+    "words": [
+      {
+        "word": "Recall",
+        "breakdown": "Recall(回忆)",
+        "meaning_en": "retrieving information with minimal external cues (fill-in-the-blank)",
+        "meaning_zh": "回忆：在很少外部线索的情况下提取信息。比再认难——「法国首都是？」（回忆）比「法国首都是：A.巴黎 B.伦敦 C.罗马」（再认）更难",
+        "derivation": "信息完全从内部提取 → 没有外部提示 → 依赖提取线索的完整性",
+        "mnemonic": "回忆 = 「从零生成答案」→ 考试的简答题",
+        "example": "Fill-in-the-blank questions test recall.",
+        "example_zh": "填空题测试的是回忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Recognition",
+        "breakdown": "Recognition(再认)",
+        "meaning_en": "identifying previously encountered information when presented",
+        "meaning_zh": "再认：识别之前接触过的信息。比回忆容易得多，因为有外部线索。选择题用的就是再认",
+        "derivation": "信息呈现在眼前 → 只需判断「以前见过吗」→ 有线索可用",
+        "mnemonic": "再认 = 「认出来」→ 看到脸就知道是谁，不用从零想起",
+        "example": "Multiple-choice questions test recognition.",
+        "example_zh": "选择题测试的是再认。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Retrieval",
+        "breakdown": "Retrieval(提取)",
+        "meaning_en": "process of getting information out of memory storage",
+        "meaning_zh": "提取：把信息从记忆存储中调出使用的过程。成功的提取取决于编码时建立的线索——线索越多越丰富，提取越容易",
+        "derivation": "提取线索激活相关记忆网络 → 扩散激活 → 找到目标记忆",
+        "mnemonic": "提取 = 在记忆「图书馆」里「找书」→ 线索越好找得越快",
+        "example": "Effective retrieval depends on the cues available.",
+        "example_zh": "有效的提取取决于可用的线索。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Context-Dependent Memory",
+        "breakdown": "Context(情境) + Dependent(依赖) + Memory",
+        "meaning_en": "recall is better in the same environment where learning occurred",
+        "meaning_zh": "情境依赖记忆：在学习时的同一环境中回忆效果更好。水下学的单词在水下记得最清，在教室学的知识在教室记得最清——因为环境本身成了提取线索",
+        "derivation": "学习时的环境细节和记忆一起编码 → 同样环境 → 环境线索激活记忆",
+        "mnemonic": "回到原地一下子想起来——情境依赖记忆在起作用",
+        "example": "Scuba divers recall words better underwater if they learned them underwater.",
+        "example_zh": "潜水员在水下学的单词在水下回忆得更好。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "State-Dependent Memory",
+        "breakdown": "State(状态) + Dependent + Memory",
+        "meaning_en": "recall is better when in the same internal state as during learning",
+        "meaning_zh": "状态依赖记忆：在和学习时相同的内部状态（情绪、药物、清醒度）下回忆更好。酒后学的东西在酒后更容易想起——不是好建议",
+        "derivation": "内部状态（而非环境）作为提取线索 → 相同状态 → 更好提取",
+        "mnemonic": "情绪低落时想起的都是伤心事 → 状态依赖记忆的副作用",
+        "example": "Information learned while tired may be easier to recall when tired.",
+        "example_zh": "疲劳时学的信息在疲劳时可能更容易回忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mood-Congruent Memory",
+        "breakdown": "Mood(情绪) + Congruent(一致的) + Memory",
+        "meaning_en": "tendency to recall memories matching one's current mood",
+        "meaning_zh": "情绪一致性记忆：当前情绪会偏向性地提取与之一致的记忆。高兴时想起开心事，伤心时想起悲伤事。抑郁症患者的负性思维循环部分源于此",
+        "derivation": "当前情绪 → 激活同类情绪的记忆网络 → 同类记忆更容易被提取",
+        "mnemonic": "心情不好时「什么都想不起好事」→ 情绪一致性记忆在扭曲你的视角",
+        "example": "When depressed, people more easily recall negative memories.",
+        "example_zh": "抑郁时人们更容易回忆负面记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Testing Effect",
+        "breakdown": "Testing(测试) + Effect",
+        "meaning_en": "enhanced memory after actively retrieving information (as in a test)",
+        "meaning_zh": "测试效应（提取练习效应）：主动提取（做测试、自问自答）比被动复习（看笔记）的记忆效果好得多。每次成功提取都强化记忆",
+        "derivation": "提取本身就是学习 → 强化了记忆痕迹 → 比重新读有用",
+        "mnemonic": "做模拟题 > 看参考答案 → 测试效应告诉你要「主动出击」",
+        "example": "The testing effect is why practice quizzes beat passive rereading.",
+        "example_zh": "测试效应解释了为什么做练习题胜过被动重读。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Metacognition",
+        "breakdown": "Meta(超/关于) + cognition(认知)",
+        "meaning_en": "thinking about one's own thinking; awareness of what one knows",
+        "meaning_zh": "元认知：对自己思维过程的思考和监控——「我知道什么？我学会了吗？我是怎么解决这个问题的？」。学习能力强的人通常元认知能力强",
+        "derivation": "Meta(关于) + cognition(认知) → 「关于认知的认知」→ 对自己思维的反思",
+        "mnemonic": "元认知 = 「我知道我知道/不知道」→ 监控自己的学习",
+        "example": "Metacognition helps you know when you've studied enough.",
+        "example_zh": "元认知帮助你知道什么时候学得够了。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Forgetting",
+    "type": "root",
+    "meaning_en": "why memories fail and how memory can be reconstructed or distorted",
+    "meaning_zh": "遗忘：记忆失败的原因，以及记忆如何被重构和扭曲。包括遗忘曲线、干扰、记忆失真和虚假记忆",
+    "origin": "Unit 2: 2.7 Forgetting and Other Memory Challenges",
+    "related": [
+      "Memory Systems",
+      "Memory Storage",
+      "Memory Retrieval"
+    ],
+    "words": [
+      {
+        "word": "Forgetting Curve",
+        "breakdown": "Forgetting(遗忘) + Curve(曲线)",
+        "meaning_en": "Ebbinghaus's finding that memory decays rapidly at first, then levels off",
+        "meaning_zh": "遗忘曲线（艾宾浩斯）：学完后遗忘最快，然后趋于平缓。第一天就会忘掉大半，之后遗忘速度变慢。这是间隔复习的理论依据",
+        "derivation": "时间 vs 保留率 → 下降曲线 → 初期陡降，之后平稳",
+        "mnemonic": "学完就忘一大半——不是你笨，是艾宾浩斯的遗忘曲线",
+        "example": "The forgetting curve shows memory loss is fastest right after learning.",
+        "example_zh": "遗忘曲线显示记忆丧失在学习后最快。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Proactive Interference",
+        "breakdown": "Pro(向前) + active + Interference(干扰)",
+        "meaning_en": "old information interferes with learning new information",
+        "meaning_zh": "前摄干扰：旧信息干扰对新信息的学习。学过西班牙语再学法语，西班牙语会干扰法语——旧知识「向前」影响新知识",
+        "derivation": "Pro(向前) → 过去的记忆向前（向未来）干扰 → 阻碍新学习",
+        "mnemonic": "Pro = 旧的「向前推」→ 旧记忆推着你记不住新东西",
+        "example": "Proactive interference makes learning new computer software harder after using an old one.",
+        "example_zh": "前摄干扰使得在用过旧软件后更难学习新软件。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Retroactive Interference",
+        "breakdown": "Retro(向后) + active + Interference",
+        "meaning_en": "new information interferes with recalling old information",
+        "meaning_zh": "倒摄干扰：新信息干扰对旧信息的回忆。搬家后记不起旧地址——新地址「向后」覆盖了旧地址的记忆",
+        "derivation": "Retro(向后) → 新的记忆「向后」干扰旧的 → 新覆盖旧",
+        "mnemonic": "Retro = 新的「向后推」→ 新记忆把旧记忆挤掉",
+        "example": "Retroactive interference explains why you forget old phone numbers after learning new ones.",
+        "example_zh": "倒摄干扰解释了为什么学了新电话号码后忘了旧的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Encoding Failure",
+        "breakdown": "Encoding(编码) + Failure",
+        "meaning_en": "information was never fully encoded into memory in the first place",
+        "meaning_zh": "编码失败：信息从一开始就没有被充分编码进记忆。不是「忘了」而是「根本没记住」。你能画出1元硬币的背面吗？多数人画不出——从没注意过",
+        "derivation": "没有注意 → 没有深层加工 → 根本没编码 → 「看过但没记住」",
+        "mnemonic": "「每天用的东西你都记不住细节」→ 因为编码失败",
+        "example": "Encoding failure explains why you can't remember the details of a penny.",
+        "example_zh": "编码失败解释了为什么你记不住一分硬币的细节。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Tip-of-the-Tongue Phenomenon",
+        "breakdown": "Tip(尖) + Tongue(舌头)",
+        "meaning_en": "temporary inability to retrieve a known word, feeling it's almost accessible",
+        "meaning_zh": "舌尖现象：某个词明明知道，却暂时想不起来，有「就在嘴边」的感觉。说明提取失败≠记忆丢失——信息还在，只是暂时找不到",
+        "derivation": "部分提取成功（知道首字母、音节）→ 但完整词未激活 → 强烈的「近乎触及」感",
+        "mnemonic": "「叫什么来着……就在嘴边」→ 舌尖现象",
+        "example": "The tip-of-the-tongue phenomenon is a retrieval failure, not memory loss.",
+        "example_zh": "舌尖现象是提取失败，不是记忆丢失。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Repression",
+        "breakdown": "Repression(压抑)",
+        "meaning_en": "Freud's concept of unconsciously blocking threatening memories",
+        "meaning_zh": "压抑（弗洛伊德）：把威胁性或痛苦的记忆无意识地阻挡在意识之外。虽是经典精神分析概念，但现代研究对其存在和频率有争议",
+        "derivation": "创伤记忆太痛苦 → 自我保护机制 → 把它推到潜意识 → 以为「忘了」",
+        "mnemonic": "「为什么我想不起童年的那段事？」→ 弗洛伊德说可能是压抑",
+        "example": "Repression is a Freudian defense mechanism.",
+        "example_zh": "压抑是弗洛伊德提出的一种防御机制。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Source Amnesia",
+        "breakdown": "Source(来源) + Amnesia",
+        "meaning_en": "remembering information but not where or how it was learned",
+        "meaning_zh": "来源失忆：记得某个信息但忘了是从哪里、怎么知道的。「听说过这个理论但不记得是在哪本书看的」。是记忆错误的重要来源——假新闻利用这一点",
+        "derivation": "记忆内容 vs 来源 → 由不同区域处理 → 来源更容易丢",
+        "mnemonic": "「不知道在哪听来的」→ 来源失忆 → 假消息就这么传开",
+        "example": "Source amnesia is why we confuse dreams with real events.",
+        "example_zh": "来源失忆解释了为什么我们会把梦和真实事件混淆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Misinformation Effect",
+        "breakdown": "Misinformation(错误信息) + Effect",
+        "meaning_en": "memory is altered by misleading information encountered after the event",
+        "meaning_zh": "错误信息效应（Loftus）：事件发生后接触到的错误信息会改变对原事件的记忆。目击者看到事故后，被问「车相撞时有多快」vs「车猛烈撞击时有多快」给出的速度明显不同",
+        "derivation": "原记忆 + 后续误导 → 记忆被重新写入 → 扭曲的新记忆",
+        "mnemonic": "目击者证词不可全信——可能被后来的问话带偏了",
+        "example": "Leading questions can create false memories through the misinformation effect.",
+        "example_zh": "诱导性问题可以通过错误信息效应制造虚假记忆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Constructive Memory",
+        "breakdown": "Constructive(建构的) + Memory",
+        "meaning_en": "memory is reconstructed, not replayed exactly as recorded",
+        "meaning_zh": "建构性记忆：记忆不是像录像一样精确回放，而是每次回忆时「重新构建」。这就是为什么记忆会扭曲——每次回忆都可能更新记忆本身",
+        "derivation": "记忆 = 部分原始信息 + 知识、期望、情绪填补 → 每次都可能「重写」",
+        "mnemonic": "记忆不是硬盘 → 更像每次都重画的「素描」",
+        "example": "Constructive memory is why eyewitness accounts are often unreliable.",
+        "example_zh": "建构性记忆是目击者证词经常不可靠的原因。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Imagination Inflation",
+        "breakdown": "Imagination(想象) + Inflation(膨胀)",
+        "meaning_en": "repeatedly imagining an event can create false memories of it having happened",
+        "meaning_zh": "想象膨胀：反复想象一个没发生的事件，会让人误以为它真的发生过。说明想象和记忆共用一些脑区——重复的想象留下了「记忆痕迹」",
+        "derivation": "反复想象 → 大脑留下加工痕迹 → 熟悉感增加 → 被误认为是真实记忆",
+        "mnemonic": "想得多了就「真的记得」了——虚假记忆的生成机制",
+        "example": "Imagination inflation can make people believe made-up childhood events really happened.",
+        "example_zh": "想象膨胀会让人相信虚构的童年事件真的发生过。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Intelligence",
+    "type": "root",
+    "meaning_en": "measurement, types, and controversies surrounding intelligence",
+    "meaning_zh": "智力：如何定义、测量智力，以及关于智力的各种理论和争议。包括一般智力、多重智能、IQ测试、信度效度和成长心态",
+    "origin": "Unit 2: 2.8 Intelligence and Achievement",
+    "related": [
+      "Thinking",
+      "Memory Systems"
+    ],
+    "words": [
+      {
+        "word": "Intelligence",
+        "breakdown": "Intelligence(智力)",
+        "meaning_en": "capacity to learn, reason, solve problems, and adapt to new situations",
+        "meaning_zh": "智力：学习、推理、解决问题和适应新情境的能力。定义随文化和理论而变——没有一个统一的定义",
+        "derivation": "综合性心理能力 → 包括抽象思维、问题解决、学习速度、适应能力",
+        "mnemonic": "智力不是单一的东西 → 而是一组能力的综合表现",
+        "example": "Intelligence involves both problem-solving and adaptation.",
+        "example_zh": "智力涉及解决问题和适应能力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "General Intelligence",
+        "breakdown": "General(一般的) + Intelligence",
+        "meaning_en": "Spearman's g-factor: a single underlying intelligence affecting all cognitive abilities",
+        "meaning_zh": "一般智力（斯皮尔曼的g因素）：认为所有认知能力背后都有一个共同的智力因素。在一个领域聪明的人通常在其他领域也表现较好——这就是g的证据",
+        "derivation": "各项认知测试之间有正相关 → 斯皮尔曼提出背后的共同因素 → 称为g",
+        "mnemonic": "g = general → 「万能智力」→ 支持所有具体能力",
+        "example": "Spearman proposed that general intelligence underlies all cognitive abilities.",
+        "example_zh": "斯皮尔曼提出一般智力是所有认知能力的基础。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Multiple Intelligences",
+        "breakdown": "Multiple(多重) + Intelligences",
+        "meaning_en": "Gardner's theory of 8 distinct intelligences (linguistic, musical, spatial, etc.)",
+        "meaning_zh": "多元智能（加德纳）：智力不是单一的，而是8种相对独立的智能——语言、逻辑数学、空间、音乐、身体动觉、人际、内省、自然观察。挑战了传统IQ的狭隘观念",
+        "derivation": "不同能力由不同脑区支持 → 某些人在一种能力上极强而其他能力普通（如自闭症学者）→ 支持多元理论",
+        "mnemonic": "不是「聪明vs不聪明」→ 而是「在哪方面聪明」→ 多元智能",
+        "example": "Gardner's multiple intelligences theory includes musical and interpersonal abilities.",
+        "example_zh": "加德纳的多元智能理论包括音乐和人际能力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Triarchic Theory",
+        "breakdown": "Tri(三) + archic(统治) + Theory",
+        "meaning_en": "Sternberg's theory of 3 types: analytical, creative, practical intelligence",
+        "meaning_zh": "三元智力理论（斯腾伯格）：智力分三类——分析智力（学业型，做题强）、创造智力（想出新点子）、实用智力（在现实生活中解决问题的「街头智慧」）",
+        "derivation": "Tri(三) + archic(统治) → 「三元理论」→ 三种智力共同构成",
+        "mnemonic": "斯腾伯格 = 「三分」智力 → 会考试、有创意、能实干",
+        "example": "Sternberg's triarchic theory distinguishes analytical, creative, and practical intelligence.",
+        "example_zh": "斯腾伯格的三元理论区分分析、创造和实用智力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Emotional Intelligence",
+        "breakdown": "Emotional(情绪的) + Intelligence",
+        "meaning_en": "ability to perceive, understand, manage, and use emotions effectively",
+        "meaning_zh": "情绪智力（EQ）：觉察、理解、管理和运用情绪的能力。包括自己的情绪和他人的情绪。在职场成功中往往比IQ更关键",
+        "derivation": "识别情绪 + 理解情绪 + 调节情绪 + 利用情绪 → 四个成分",
+        "mnemonic": "EQ > IQ? → 在人际关系中，情绪智力更关键",
+        "example": "Emotional intelligence is important for leadership and teamwork.",
+        "example_zh": "情绪智力对领导力和团队合作很重要。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Intelligence Quotient",
+        "breakdown": "Intelligence + Quotient(商数)",
+        "meaning_en": "IQ: a score from standardized intelligence tests, originally mental age/chronological age × 100",
+        "meaning_zh": "智商（IQ）：标准化智力测验得出的分数。原始公式是心理年龄÷实际年龄×100——10岁孩子的心理年龄如果是12岁，IQ就是120。现代用离差IQ",
+        "derivation": "Quotient(商) → 心理年龄与实际年龄的「商」→ 后改为离差IQ（相对群体平均）",
+        "mnemonic": "IQ = 「脑年龄/实际年龄」× 100 → 高于100就是超前",
+        "example": "An average IQ score is 100, with a standard deviation of 15.",
+        "example_zh": "平均IQ分数是100，标准差是15。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mental Age",
+        "breakdown": "Mental(心理的) + Age",
+        "meaning_en": "Binet's measure: the age at which most children could answer a given set of questions",
+        "meaning_zh": "心理年龄（比奈）：根据答题能力评估的「心智年龄」。8岁孩子能答对10岁孩子水平的题，心理年龄就是10。是原始IQ的基础",
+        "derivation": "比奈设计测题 → 找到不同年龄正常水平 → 用此评估儿童心智发展",
+        "mnemonic": "「这孩子答题像12岁的」→ 心理年龄12",
+        "example": "A child with a mental age of 10 answers questions like a typical 10-year-old.",
+        "example_zh": "心理年龄为10的孩子回答问题的水平像典型的10岁孩子。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Chronological Age",
+        "breakdown": "Chrono(时间) + logical + Age",
+        "meaning_en": "a person's actual age in years",
+        "meaning_zh": "实际年龄（生理年龄）：一个人实际活了多少年。和心理年龄对比来计算原始IQ",
+        "derivation": "Chrono(时间) → 字面「时间上的年龄」→ 不考虑发展程度",
+        "mnemonic": "身份证上的年龄 → 生理年龄",
+        "example": "IQ was originally mental age divided by chronological age times 100.",
+        "example_zh": "IQ原本是心理年龄除以实际年龄再乘以100。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stanford-Binet Test",
+        "breakdown": "Stanford(斯坦福) + Binet(人名)",
+        "meaning_en": "Terman's American revision of Binet's intelligence test at Stanford University",
+        "meaning_zh": "斯坦福-比奈测验：特曼在斯坦福大学改编自比奈测验的美国版IQ测试。第一个真正标准化的智力测验",
+        "derivation": "比奈原版（法国）→ 特曼（斯坦福）修订并标准化 → 成为美国主流",
+        "mnemonic": "Stanford + Binet → 美国版 + 法国原作者 → 智力测验的老祖宗",
+        "example": "The Stanford-Binet is a classic IQ test.",
+        "example_zh": "斯坦福-比奈是经典的IQ测验。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Wechsler Scales",
+        "breakdown": "Wechsler(人名) + Scales",
+        "meaning_en": "the most widely used modern IQ tests (WAIS for adults, WISC for children)",
+        "meaning_zh": "韦氏智力量表：当今最常用的智力测验。WAIS（成人）和WISC（儿童）。给出语言、知觉、工作记忆、加工速度等子分数，而不仅仅一个总IQ",
+        "derivation": "韦氏发展 → 比斯坦福-比奈更细致 → 分多个子测验 → 现代主流",
+        "mnemonic": "WAIS / WISC → 韦氏的成人版/儿童版 → 现代IQ测验的标准",
+        "example": "The Wechsler scales are the most commonly used IQ tests today.",
+        "example_zh": "韦氏量表是当今最常用的IQ测验。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Standardization",
+        "breakdown": "Standard(标准) + ization",
+        "meaning_en": "establishing uniform testing procedures and creating a norm group for score comparison",
+        "meaning_zh": "标准化：建立统一的测试程序并用大样本群体创建常模，以便个体分数可以与群体比较。没有标准化的IQ分数没有意义",
+        "derivation": "统一程序 + 大样本常模 → 分数可比较 → 形成正态分布曲线",
+        "mnemonic": "没有标准化就没有「平均100」 → 每个分数都失去意义",
+        "example": "Standardization ensures IQ tests give comparable scores.",
+        "example_zh": "标准化确保IQ测验给出可比较的分数。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Normal Distribution",
+        "breakdown": "Normal(正态) + Distribution",
+        "meaning_en": "bell-shaped curve: most scores cluster around the mean, fewer at extremes",
+        "meaning_zh": "正态分布：钟形曲线，大多数分数集中在平均数附近，越远离平均数人数越少。IQ分数就呈正态分布：68%在85-115之间，95%在70-130之间",
+        "derivation": "许多自然现象（身高、IQ）呈此分布 → 平均数、中位数、众数重合 → 左右对称",
+        "mnemonic": "钟形曲线 → 「中间胖，两头瘦」→ 正态分布",
+        "example": "IQ scores follow a normal distribution around a mean of 100.",
+        "example_zh": "IQ分数在平均数100附近呈正态分布。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Validity",
+        "breakdown": "Valid(有效的) + ity",
+        "meaning_en": "extent to which a test measures what it claims to measure",
+        "meaning_zh": "效度：测验是否真的在测量它声称测量的东西。体温计测不出体重——就是无效度。IQ测验是否真的在测「智力」是长期争议",
+        "derivation": "测验 vs 要测的构念 → 两者的一致程度 → 越高越有效",
+        "mnemonic": "效度 = 「测对了没」→ 问「这真的在测智力吗？」",
+        "example": "A valid IQ test actually measures intelligence, not just test-taking skills.",
+        "example_zh": "有效度的IQ测验真正测量智力，而不只是答题技巧。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Predictive Validity",
+        "breakdown": "Predictive(预测的) + Validity",
+        "meaning_en": "extent to which a test predicts future performance",
+        "meaning_zh": "预测效度：测验预测未来表现的能力。好的IQ测验应能预测学业或工作表现——如果完全不能预测，说明它没测到真东西",
+        "derivation": "现在测出的分数 → 预测未来表现 → 两者相关性 → 越高越有预测效度",
+        "mnemonic": "「现在分数高，未来真的好」→ 就是预测效度",
+        "example": "SAT scores have predictive validity for college performance.",
+        "example_zh": "SAT分数对大学表现有预测效度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Construct Validity",
+        "breakdown": "Construct(构念) + Validity",
+        "meaning_en": "extent to which a test measures the theoretical construct it's designed to measure",
+        "meaning_zh": "构念效度：测验是否真的在测量它想测的「抽象概念」（构念）。智力、焦虑、自尊都是看不见的构念——测验必须能真正捕捉到这些抽象概念",
+        "derivation": "抽象构念（如智力）无法直接观察 → 通过测验行为间接测 → 行为真的反映构念吗？",
+        "mnemonic": "「我们在测『智力』这个东西吗？」→ 构念效度的追问",
+        "example": "A depression scale has construct validity if it truly measures depression.",
+        "example_zh": "如果一个抑郁量表真正测量抑郁，它就有构念效度。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Reliability",
+        "breakdown": "Reliable(可靠) + ility",
+        "meaning_en": "consistency of test results across time or items",
+        "meaning_zh": "信度：测验结果的一致性。同一个人重复测应得到相似分数——不稳定的测验不可用。有效度的测验必须先有信度，但有信度不一定有效度",
+        "derivation": "同样情境 → 同样结果 → 说明测量稳定 → 有信度",
+        "mnemonic": "信度 = 「重复测量结果一致」→ 稳定才能用",
+        "example": "A reliable test gives similar scores when retaken.",
+        "example_zh": "可靠的测验在重考时给出相似的分数。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Test-Retest Reliability",
+        "breakdown": "Test-Retest(重测) + Reliability",
+        "meaning_en": "consistency of scores when the same test is taken twice",
+        "meaning_zh": "重测信度：同一个测验在不同时间再测一次，两次得分的相关性。相关高说明测验稳定——不是在测「当天心情」",
+        "derivation": "同一个人 + 同一个测验 + 不同时间 → 两次分数相关 → 越高越稳定",
+        "mnemonic": "今天考IQ 120，下个月还应接近120 → 重测信度",
+        "example": "A test with good test-retest reliability gives consistent scores over time.",
+        "example_zh": "具有良好重测信度的测验在不同时间给出一致的分数。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Split-Half Reliability",
+        "breakdown": "Split(分开) + Half + Reliability",
+        "meaning_en": "consistency between two halves of the same test",
+        "meaning_zh": "分半信度：把测验分成两半（如单数题vs双数题），比较两半的得分。两半相关高说明测验内部一致——各题在测同一个东西",
+        "derivation": "一份测验分两半 → 比较两半得分 → 相关高 → 题目一致性好",
+        "mnemonic": "单数题分和双数题分差不多 → 整个测验都在测同一东西",
+        "example": "Split-half reliability checks internal consistency of a test.",
+        "example_zh": "分半信度检验测验的内部一致性。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stereotype Threat",
+        "breakdown": "Stereotype(刻板印象) + Threat",
+        "meaning_en": "anxiety about confirming a negative stereotype impairs test performance",
+        "meaning_zh": "刻板印象威胁：担心自己的表现会印证对所属群体的负面刻板印象，结果这种焦虑本身损害了表现。女性做数学题前被提醒「女性数学差」，真的考得差——负面预言自我实现",
+        "derivation": "提醒负面刻板印象 → 焦虑 + 认知资源被占用 → 实际表现下降 → 印证了刻板印象",
+        "mnemonic": "「别搞砸，证明那群人确实差」→ 想这些就真的搞砸 → 刻板印象威胁",
+        "example": "Stereotype threat can lower test scores in stigmatized groups.",
+        "example_zh": "刻板印象威胁会降低被污名化群体的测验成绩。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Stereotype Lift",
+        "breakdown": "Stereotype + Lift(提升)",
+        "meaning_en": "improved performance when one's group has a positive stereotype",
+        "meaning_zh": "刻板印象提升：当自己所属群体有正面刻板印象时，表现反而提升。亚裔学生做数学题前被提醒「亚裔数学好」可能考得更好——和威胁效应相反",
+        "derivation": "正面刻板印象 → 信心提升 + 期望提升 → 表现更好",
+        "mnemonic": "「我们这群人这方面一向厉害」→ 真的考得更好 → 刻板印象提升",
+        "example": "Stereotype lift can boost test performance in positively stereotyped groups.",
+        "example_zh": "刻板印象提升会促进被正面刻板印象群体的测验表现。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Flynn Effect",
+        "breakdown": "Flynn(人名) + Effect",
+        "meaning_en": "steady rise in average IQ scores across generations in the 20th century",
+        "meaning_zh": "弗林效应：20世纪以来每代人的平均IQ持续上升，约每10年上升3分。可能与教育、营养、环境复杂度提高有关。不代表人类越来越聪明，但测验必须定期重新标准化",
+        "derivation": "历史数据显示代际IQ持续上升 → 弗林首先记录 → 营养+教育+技术环境改善",
+        "mnemonic": "你爷爷的IQ如果按今天标准算会很低 → 弗林效应让IQ「往上飘」",
+        "example": "The Flynn effect describes generational rises in IQ scores.",
+        "example_zh": "弗林效应描述了代际IQ分数的上升。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Achievement Test",
+        "breakdown": "Achievement(成就) + Test",
+        "meaning_en": "test measuring what someone has already learned",
+        "meaning_zh": "成就测验：测量已经学会的知识或技能。期末考试是典型——测你过去学了什么。和潜能测验相对",
+        "derivation": "已经达成的 → 过去学习的结果 → 成就测验",
+        "mnemonic": "「你学了什么」→ 成就测验",
+        "example": "Final exams are achievement tests.",
+        "example_zh": "期末考试是成就测验。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Aptitude Test",
+        "breakdown": "Aptitude(才能) + Test",
+        "meaning_en": "test designed to predict future performance or learning ability",
+        "meaning_zh": "潜能测验（性向测验）：旨在预测未来学习或工作潜力。SAT理论上是潜能测验——预测大学表现。但实际上潜能和成就很难完全分开",
+        "derivation": "潜在能力 → 预测未来 → 潜能测验",
+        "mnemonic": "「你能学什么」→ 潜能测验（vs 「你学了什么」= 成就）",
+        "example": "The SAT is often considered an aptitude test for college readiness.",
+        "example_zh": "SAT通常被视为大学准备的潜能测验。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Fixed Mindset",
+        "breakdown": "Fixed(固定的) + Mindset(心态)",
+        "meaning_en": "Dweck's concept: belief that abilities are innate and unchangeable",
+        "meaning_zh": "固定心态（德韦克）：相信能力是天生固定的，努力改变不了多少。有固定心态的人害怕失败，因为失败意味着「自己不行」。阻碍学习和成长",
+        "derivation": "「能力天生」→ 失败威胁自我 → 回避挑战 → 不进步",
+        "mnemonic": "「我数学就是不行」→ 固定心态 → 一开始就放弃",
+        "example": "A fixed mindset can discourage students from trying challenging tasks.",
+        "example_zh": "固定心态会阻止学生尝试有挑战性的任务。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Growth Mindset",
+        "breakdown": "Growth(成长) + Mindset",
+        "meaning_en": "Dweck's concept: belief that abilities can be developed through effort",
+        "meaning_zh": "成长心态（德韦克）：相信能力可以通过努力和学习发展提高。有成长心态的人把失败看作学习机会。和固定心态相对，预测更好的学业和事业成就",
+        "derivation": "「能力可发展」→ 失败是学习 → 接受挑战 → 持续进步",
+        "mnemonic": "「只要努力就能变好」→ 成长心态 → 进步的发动机",
+        "example": "A growth mindset helps students persist through academic challenges.",
+        "example_zh": "成长心态帮助学生坚持应对学业挑战。",
         "toefl_frequency": "medium"
       }
     ]

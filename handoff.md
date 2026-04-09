@@ -122,6 +122,8 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 
 2. **Quiz direction was initially wrong**: Original design doc said "Chinese meaning prominently, English choices". User corrected: English word is the question (you see the word, recall the meaning), Chinese meanings are the choices. This is standard vocabulary testing.
 
+3. **`selectNextMorphemes` picked mastered short concepts over partially-studied longer ones** (fixed 2026-04-09): The old "all seen" branch sorted by absolute `wordsStudied` ascending. For TOEFL (5 words per root, uniform) this was fine, but for CSP (1–6 terms per concept, uneven) a 1/1-mastered `Collaboration` always beat a 4/6-partial `The Internet`. Fix: three-tier selection in `progress.ts`. Tier 1 unseen (unchanged), Tier 2 seen-but-not-mastered sorted by **completion ratio** (`wordsStudied / words.length`) with lastStudied tie-break, Tier 3 all-mastered falls through to pure lastStudied review mode. Mastered concepts are filtered out of Tier 2 entirely. Added 3 regression tests.
+
 ## V2 Plan Overview
 
 **Source of truth:** `~/.gstack/projects/derekhut-alvy/ceo-plans/2026-04-02-alvy-v2-full-overhaul.md`
@@ -233,10 +235,10 @@ V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) �
 
 | File | Tests | Coverage |
 |------|-------|----------|
-| `progress.test.ts` | 44 cases | All 11 functions: masteredCount, seenCount, updateStreak, addXP, markRootSeen, markWordStudied, selectNextMorphemes, generateStatsSummary, recordQuizResult, needsReview, selectReviewMorphemes |
-| `store.test.ts` | 10 cases | Path migration, V1→V3 backfill, V2→V3 migration, V3 no re-migration, XP→level computation, old avatar ID remap, corrupt data, fresh start |
-| `levels.test.ts` | 10 cases | xpForLevel boundaries, computeLevel edges, xpToNextLevel progress, compositeScore blending, checkLevelUp detection |
-| **Total** | **75 pass** | |
+| `progress.test.ts` | 49 cases | All 11 functions: masteredCount, seenCount, updateStreak, addXP, markRootSeen, markWordStudied, selectNextMorphemes (incl. 3 regression tests for mastered-short-concept bug), generateStatsSummary, recordQuizResult, needsReview, selectReviewMorphemes |
+| `store.test.ts` | 9 cases | Path migration, V1→V3 backfill, V2→V3 migration, V3 no re-migration, XP→level computation, old avatar ID remap, corrupt data, fresh start |
+| `levels.test.ts` | 20 cases | xpForLevel boundaries, computeLevel edges, xpToNextLevel progress, compositeScore blending, checkLevelUp detection |
+| **Total** | **78 pass** | |
 
 Tests NOT yet written (from test plan):
 - Quiz distractor edge cases
@@ -416,7 +418,7 @@ If you're picking this up, read in this order:
 cd alvy
 npm run build          # Compile TypeScript
 npm run dev            # Watch mode
-npm test               # Run tests (Vitest, 75 passing)
+npm test               # Run tests (Vitest, 78 passing)
 node dist/index.js     # Subject picker → daily session
 node dist/index.js review   # Review weak roots
 node dist/index.js profile  # View profile (avatar, level, composite score)

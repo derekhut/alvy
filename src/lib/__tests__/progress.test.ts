@@ -351,6 +351,56 @@ describe("selectNextMorphemes", () => {
     const selected = selectNextMorphemes(data, roots, 2);
     expect(selected.map((r) => r.root)).toEqual(["pre-", "post-"]);
   });
+
+  it("skips mastered short concepts in favor of partially-studied longer ones", () => {
+    // Regression test for CSP bug: short concepts (1-2 words) that are 100%
+    // mastered should NOT be re-selected just because their absolute
+    // wordsStudied count is low.
+    const mixedRoots = [
+      makeRoot("short-a", 1),   // 1 word total
+      makeRoot("short-b", 2),   // 2 words total
+      makeRoot("long-a", 6),    // 6 words total
+      makeRoot("long-b", 5),    // 5 words total
+    ];
+    const data = makeData({
+      rootProgress: {
+        "short-a": { seen: true, wordsStudied: 1, lastStudied: "2026-04-09" }, // 100% mastered
+        "short-b": { seen: true, wordsStudied: 2, lastStudied: "2026-04-09" }, // 100% mastered
+        "long-a":  { seen: true, wordsStudied: 4, lastStudied: "2026-04-09" }, // 67% partial
+        "long-b":  { seen: true, wordsStudied: 4, lastStudied: "2026-04-09" }, // 80% partial
+      },
+    });
+    const selected = selectNextMorphemes(data, mixedRoots, 2);
+    expect(selected.map((r) => r.root)).toEqual(["long-a", "long-b"]);
+  });
+
+  it("uses completion ratio, not absolute count, for partial concepts", () => {
+    // A 2/10 root (20%) should be picked before a 4/5 root (80%)
+    // even though 4 > 2 in absolute terms.
+    const ratioRoots = [makeRoot("big-", 10), makeRoot("small-", 5)];
+    const data = makeData({
+      rootProgress: {
+        "big-":   { seen: true, wordsStudied: 2, lastStudied: "2026-04-01" },
+        "small-": { seen: true, wordsStudied: 4, lastStudied: "2026-04-01" },
+      },
+    });
+    const selected = selectNextMorphemes(data, ratioRoots, 2);
+    expect(selected.map((r) => r.root)).toEqual(["big-", "small-"]);
+  });
+
+  it("enters pure review mode when all roots are mastered", () => {
+    // Tier 3: all 100% mastered → sort by oldest lastStudied
+    const reviewRoots = [makeRoot("a-", 3), makeRoot("b-", 5), makeRoot("c-", 2)];
+    const data = makeData({
+      rootProgress: {
+        "a-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-05" },
+        "b-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
+        "c-": { seen: true, wordsStudied: 2, lastStudied: "2026-04-03" },
+      },
+    });
+    const selected = selectNextMorphemes(data, reviewRoots, 2);
+    expect(selected.map((r) => r.root)).toEqual(["b-", "c-"]);
+  });
 });
 
 // --- generateStatsSummary ---

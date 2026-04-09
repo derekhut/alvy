@@ -90,24 +90,38 @@ export function selectNextMorphemes(
   allRoots: RootEntry[],
   count: number = 3
 ): RootEntry[] {
-  // Unseen morphemes first (sequential order)
+  // Tier 1: Unseen morphemes first (sequential order, preserves current behavior)
   const unseen = allRoots.filter((r) => !data.rootProgress[r.root]?.seen);
   if (unseen.length > 0) {
     return unseen.slice(0, count);
   }
 
-  // All seen — pick least studied, tie-break by oldest lastStudied
+  // Tier 2: Seen but not yet mastered — sort by completion ratio ascending
+  // (least-complete first), tie-break by oldest lastStudied
+  const notMastered = allRoots.filter((r) => {
+    const p = data.rootProgress[r.root];
+    return (p?.wordsStudied ?? 0) < r.words.length;
+  });
+  if (notMastered.length > 0) {
+    const sorted = [...notMastered].sort((a, b) => {
+      const pA = data.rootProgress[a.root];
+      const pB = data.rootProgress[b.root];
+      const ratioA = (pA?.wordsStudied ?? 0) / a.words.length;
+      const ratioB = (pB?.wordsStudied ?? 0) / b.words.length;
+      if (ratioA !== ratioB) return ratioA - ratioB;
+      const dateA = pA?.lastStudied ?? "";
+      const dateB = pB?.lastStudied ?? "";
+      return dateA.localeCompare(dateB);
+    });
+    return sorted.slice(0, count);
+  }
+
+  // Tier 3: All mastered — pure review mode, oldest lastStudied first
   const sorted = [...allRoots].sort((a, b) => {
-    const pA = data.rootProgress[a.root];
-    const pB = data.rootProgress[b.root];
-    const studiedA = pA?.wordsStudied ?? 0;
-    const studiedB = pB?.wordsStudied ?? 0;
-    if (studiedA !== studiedB) return studiedA - studiedB;
-    const dateA = pA?.lastStudied ?? "";
-    const dateB = pB?.lastStudied ?? "";
+    const dateA = data.rootProgress[a.root]?.lastStudied ?? "";
+    const dateB = data.rootProgress[b.root]?.lastStudied ?? "";
     return dateA.localeCompare(dateB);
   });
-
   return sorted.slice(0, count);
 }
 

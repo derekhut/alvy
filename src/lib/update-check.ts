@@ -22,15 +22,18 @@ export async function checkForUpdate(): Promise<UpdateInfo | null> {
     const timeout = setTimeout(() => controller.abort(), 2000);
 
     const res = await fetch(
-      "https://registry.npmjs.org/@derekhut/alvy/latest",
+      "https://registry.npmjs.org/@derekhut/alvy",
       { signal: controller.signal },
     );
     clearTimeout(timeout);
 
     if (!res.ok) return null;
 
-    const data = (await res.json()) as { version: string };
-    const latest = data.version;
+    const data = (await res.json()) as { "dist-tags": Record<string, string>; versions: Record<string, unknown> };
+    // Prefer dist-tags.latest, fallback to highest version key
+    const latest = data["dist-tags"]?.latest
+      ?? Object.keys(data.versions ?? {}).sort().pop()
+      ?? "0.0.0";
     const current = getCurrentVersion();
 
     if (latest === current) return null;
@@ -55,7 +58,7 @@ export async function checkForUpdate(): Promise<UpdateInfo | null> {
 
 export function runUpdate(): { success: boolean; message: string } {
   try {
-    execSync("npm install -g @derekhut/alvy@latest", {
+    execSync("npm install -g @derekhut/alvy", {
       stdio: "pipe",
       timeout: 30000,
     });

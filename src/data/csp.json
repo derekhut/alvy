@@ -4264,5 +4264,356 @@
         "toefl_frequency": "high"
       }
     ]
+  },
+  {
+    "root": "Safe Computing",
+    "type": "root",
+    "meaning_en": "the practices, techniques, and considerations for protecting personal data, devices, and networks from unauthorized access, theft, and damage",
+    "meaning_zh": "安全计算：保护个人数据、设备和网络免受未经授权访问、盗窃和损害的实践、技术和考量。涵盖三大领域：身份认证（密码、MFA、生物识别）、数据保护（加密、digital certificate）、威胁防御（病毒/恶意软件/钓鱼）。这是 AP CSP 全课程最大的一个 topic（31 个术语）",
+    "origin": "Unit 5: 5.6 Safe Computing",
+    "related": ["Beneficial and Harmful Effects", "Computing Bias", "Legal and Ethical Concerns"],
+    "words": [
+      {
+        "word": "authentication measures",
+        "breakdown": "Authentication(身份验证) + Measures(措施)",
+        "meaning_en": "security methods used to verify the identity of a user and protect devices and information from unauthorized access",
+        "meaning_zh": "认证措施：验证用户身份、保护设备和信息免受未授权访问的安全方法。包括密码、PIN、指纹、面部识别、安全令牌、双因素认证等。强 authentication 通常组合多种方法",
+        "derivation": "Authentic(真实的) + ation(过程) → 「证明真实身份的过程」",
+        "mnemonic": "三类 authentication：知道的（密码）、拥有的（手机/钥匙）、是的（指纹/面部）",
+        "example": "Banks use multiple authentication measures to protect customer accounts.",
+        "example_zh": "银行使用多种认证措施来保护客户账户。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "biometric data",
+        "breakdown": "Bio(生物) + metric(测量) + Data(数据)",
+        "meaning_en": "personal information based on physical or behavioral characteristics, such as fingerprints or facial recognition",
+        "meaning_zh": "生物特征数据：基于身体或行为特征的个人信息，例如指纹、面部识别、虹膜、声纹。biometric data 不同于密码——密码可以改，但你不能换指纹，所以一旦泄露后果严重",
+        "derivation": "Bio(生命) + Metric(度量) → 「生命的度量」",
+        "mnemonic": "iPhone 的 Face ID、Touch ID 都是 biometric——「你」就是密码",
+        "example": "Biometric data like fingerprints cannot be changed if compromised.",
+        "example_zh": "指纹等生物特征数据一旦泄露便无法更改。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "browsing history",
+        "breakdown": "Browsing(浏览) + History(历史)",
+        "meaning_en": "a record of websites and pages an individual has viewed that can be collected and maintained by websites and networks",
+        "meaning_zh": "浏览历史：用户访问过的网站和页面的记录。可被浏览器、网站和 ISP 收集。结合 cookies 和 search history 可以画出完整的用户画像——隐私的重大隐患",
+        "derivation": "Browse(浏览) + History(历史) → 「浏览的历史」",
+        "mnemonic": "Incognito mode（隐身模式）只是不在本地存 browsing history——你的 ISP 和网站仍然能看到",
+        "example": "Browsing history can reveal sensitive information about a person's interests.",
+        "example_zh": "浏览历史可能揭示一个人的敏感兴趣信息。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "certificate authority",
+        "breakdown": "Certificate(证书) + Authority(权威机构)",
+        "meaning_en": "an organization that issues digital certificates to validate the ownership of encryption keys based on a trust model",
+        "meaning_zh": "证书颁发机构（CA）：颁发数字证书、验证加密密钥所有权的可信机构。例如 Let's Encrypt、DigiCert 都是 CA。HTTPS 网站的「绿色锁」就是来自 CA 的证书背书",
+        "derivation": "Certificate(证明书) + Authority(权威) → 「权威的证明发行方」",
+        "mnemonic": "CA 是互联网的「公证处」——它说这个网站是真的，你的浏览器就相信",
+        "example": "Browsers trust certificate authorities to verify the identity of websites.",
+        "example_zh": "浏览器依赖证书颁发机构来验证网站的身份。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "computer virus",
+        "breakdown": "Computer(电脑) + Virus(病毒)",
+        "meaning_en": "a malicious program that can copy itself and gain unauthorized access to a computer, often by attaching itself to legitimate programs",
+        "meaning_zh": "电脑病毒：能自我复制并未授权访问电脑的恶意程序，通常依附于合法程序。注意 virus ≠ malware——virus 是 malware 的一种，特点是「会自我复制」并需要「宿主程序」",
+        "derivation": "类比生物病毒 → 寄生在「健康程序」上 → 自我复制 → 传染",
+        "mnemonic": "Virus 需要宿主（像生物病毒），worm 自己跑（像蠕虫），trojan 伪装（像特洛伊木马）",
+        "example": "A computer virus can spread through email attachments and infected files.",
+        "example_zh": "电脑病毒可以通过电子邮件附件和被感染的文件传播。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "cookies",
+        "breakdown": "Cookies(小数据文件) — 浏览器存储",
+        "meaning_en": "data files stored on a user's device that track browsing behavior and can be aggregated with other personal data",
+        "meaning_zh": "Cookie：存储在用户设备上的小数据文件，用于追踪浏览行为，可与其他个人数据聚合。Cookies 既有用（保持登录、记住购物车）也危险（追踪用户）。GDPR 要求网站明确告知 cookies 用途",
+        "derivation": "据说源自 magic cookie（一个 Unix 术语），意为「神奇的小数据片」",
+        "mnemonic": "First-party cookies（你访问的网站）vs Third-party cookies（广告商）——后者是隐私大坑",
+        "example": "Websites use cookies to remember login information and shopping carts.",
+        "example_zh": "网站使用 cookie 来记住登录信息和购物车。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "data aggregation",
+        "breakdown": "Data(数据) + Aggregation(聚合)",
+        "meaning_en": "the process of combining disparate personal data from multiple sources to create comprehensive knowledge about an individual",
+        "meaning_zh": "数据聚合：将来自多个来源的零散个人数据组合，构建对个人的全面认知。例如把你的购物记录、地理位置、社交关系组合，可以推断你的政治倾向、健康状况、收入——这就是 data brokers 在做的事",
+        "derivation": "Aggregate(聚集) → 「把分散的数据聚到一起」",
+        "mnemonic": "单个数据无害（你买了什么），但 aggregation 后变成画像（你是什么样的人）",
+        "example": "Data aggregation can reveal patterns that individual data points cannot.",
+        "example_zh": "数据聚合可以揭示单个数据点无法显示的模式。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "decryption",
+        "breakdown": "De(去除) + cryption(加密) → 「去掉加密」",
+        "meaning_en": "the process of decoding encrypted data to make it readable",
+        "meaning_zh": "解密：将加密的数据解码使其可读的过程。是 encryption 的反向操作。需要正确的密钥——错误密钥得到的是乱码而不是错误信息",
+        "derivation": "De(去) + Crypt(隐藏) + ion(过程) → 「去除隐藏的过程」",
+        "mnemonic": "Encryption 上锁，decryption 开锁——两个过程都需要密钥",
+        "example": "Decryption requires the correct key to recover the original message.",
+        "example_zh": "解密需要正确的密钥才能恢复原始消息。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "digital certificate",
+        "breakdown": "Digital(数字的) + Certificate(证书)",
+        "meaning_en": "a credential issued by a certificate authority that validates the ownership of encryption keys used in secure communications",
+        "meaning_zh": "数字证书：由 CA 颁发的凭证，验证加密密钥的所有权。HTTPS 网站使用 digital certificate 来证明「我是真的 google.com，不是冒牌的」。包含网站身份和公钥",
+        "derivation": "Digital(数字) + Certificate(证书) → 「数字版的身份证」",
+        "mnemonic": "你点击浏览器地址栏的小锁图标，就能看到 digital certificate——颁发机构、有效期、加密算法",
+        "example": "Every HTTPS website uses a digital certificate to prove its identity.",
+        "example_zh": "每个 HTTPS 网站都使用数字证书来证明其身份。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "encryption",
+        "breakdown": "En(变成) + crypt(隐藏) + ion(过程) → 「变成隐藏的过程」",
+        "meaning_en": "the process of encoding data to prevent unauthorized access",
+        "meaning_zh": "加密：将数据编码以防止未授权访问的过程。例如 WhatsApp 用端到端加密（end-to-end encryption），即使 WhatsApp 服务器也读不到你的消息内容。加密是现代互联网安全的基石",
+        "derivation": "En(进入) + Crypt(密室) → 「锁进密室」",
+        "mnemonic": "Crypt 在英语里是「地下墓穴」——把数据「埋藏」起来。Crypto 货币也是这个词根",
+        "example": "Modern messaging apps use end-to-end encryption to protect privacy.",
+        "example_zh": "现代消息应用使用端到端加密来保护隐私。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "freeware",
+        "breakdown": "Free(免费的) + ware(软件)",
+        "meaning_en": "free software that can potentially contain malware if downloaded from untrustworthy sources",
+        "meaning_zh": "免费软件：免费的软件，但若从不可信来源下载可能含恶意软件。注意 freeware ≠ open source——freeware 通常是闭源的，只是免费使用。下载 freeware 一定要从官方渠道",
+        "derivation": "Free(免费) + Ware(软件，源自 software) → 「免费的软件」",
+        "mnemonic": "「天下没有免费的午餐」——freeware 可能用广告、追踪、捆绑软件来换取「免费」",
+        "example": "Be careful when installing freeware from unknown websites.",
+        "example_zh": "从未知网站安装免费软件时要小心。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "geolocation",
+        "breakdown": "Geo(地理) + location(位置)",
+        "meaning_en": "information about a user's physical location that can be collected by devices, websites, and networks",
+        "meaning_zh": "地理位置：用户物理位置的信息，可被设备、网站和网络收集。来源包括 GPS、WiFi 三角定位、IP 地址、手机基站。许多 app 不需要却要 geolocation 权限——这是隐私大坑",
+        "derivation": "Geo(地球) + Location(位置) → 「在地球上的位置」",
+        "mnemonic": "iOS 的 Location Services 设置可以选「使用 app 时」「始终」「从不」——选最严格的",
+        "example": "Geolocation data can reveal where you live, work, and travel.",
+        "example_zh": "地理位置数据可以揭示你的居所、工作地和出行路线。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "identity theft",
+        "breakdown": "Identity(身份) + Theft(盗窃)",
+        "meaning_en": "the unauthorized use of a person's PII to impersonate them or commit fraud",
+        "meaning_zh": "身份盗窃：未经授权使用他人 PII 来冒充其身份或实施欺诈。例如骗子用你的 SSN 申请信用卡、贷款、报税——你可能几年后才发现",
+        "derivation": "Identity(身份) + Theft(盗窃) → 「偷走你的身份」",
+        "mnemonic": "美国 FTC 数据：每年约 1500 万人成为 identity theft 的受害者",
+        "example": "Identity theft can take years to recover from financially.",
+        "example_zh": "从身份盗窃中恢复经济状况可能需要数年。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "keylogging",
+        "breakdown": "Key(键) + logging(记录)",
+        "meaning_en": "the use of a program to record every keystroke made by a computer user in order to gain fraudulent access to passwords and confidential information",
+        "meaning_zh": "键盘记录：用程序记录用户的每次按键，以欺诈方式获取密码和机密信息。Keylogger 可以是软件（被恶意安装）也可以是硬件（USB 键盘记录器）。再强的密码也防不住 keylogger",
+        "derivation": "Key(键) + Log(日志) → 「记录每个按键」",
+        "mnemonic": "防 keylogger 的招数：屏幕键盘（点击而不打字）、密码管理器（自动填充而不打字）",
+        "example": "Keylogging malware can steal passwords even from secure websites.",
+        "example_zh": "键盘记录恶意软件甚至可以从安全网站窃取密码。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "malicious link",
+        "breakdown": "Malicious(恶意的) + Link(链接)",
+        "meaning_en": "a link that can be disguised on a web page or in an email message to compromise computing security",
+        "meaning_zh": "恶意链接：在网页或邮件中伪装的链接，用于破坏计算安全。例如显示 paypal.com 但实际指向 paypa1.com（数字 1 替代字母 l）。点击前永远悬停查看真实 URL",
+        "derivation": "Mal(坏) + ic(形容词) → Malicious(恶意的) + Link(链接)",
+        "mnemonic": "鼠标悬停（hover）在链接上不点击，浏览器底栏会显示真实 URL——这是检测 malicious link 的简单方法",
+        "example": "Phishing emails often contain malicious links that look legitimate.",
+        "example_zh": "钓鱼邮件常含有看起来合法的恶意链接。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "malware",
+        "breakdown": "Mal(坏的) + ware(软件) → 「坏软件」",
+        "meaning_en": "software intended to damage a computing system or to take partial control over its operation",
+        "meaning_zh": "恶意软件：旨在损害计算系统或部分控制其运行的软件。是所有恶意程序的统称：包括 virus、worm、trojan、ransomware、spyware、adware 等。Malware 是 hostile + software 的合成词",
+        "derivation": "Malicious(恶意的) + Software(软件) → Malware",
+        "mnemonic": "Malware 是大类，virus 只是其中一种——就像「fruit」和「apple」",
+        "example": "Antivirus software protects against many types of malware.",
+        "example_zh": "杀毒软件保护设备免受多种恶意软件的侵害。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "malware scanning software",
+        "breakdown": "Malware(恶意软件) + Scanning(扫描) + Software(软件)",
+        "meaning_en": "software designed to detect and protect a computing system against infection from viruses and malware",
+        "meaning_zh": "恶意软件扫描软件：用于检测和保护计算系统免受病毒和恶意软件感染的软件。例如 Windows Defender、Malwarebytes、Norton。需要定期更新「病毒库」才能识别新威胁",
+        "derivation": "Malware + Scan(扫描) + Software → 「扫描恶意软件的软件」",
+        "mnemonic": "Antivirus 软件靠两种方法：signature-based（匹配已知病毒指纹）和 heuristic（识别可疑行为）",
+        "example": "Run malware scanning software regularly to keep your computer safe.",
+        "example_zh": "定期运行恶意软件扫描软件可确保电脑安全。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "multifactor authentication",
+        "breakdown": "Multi(多) + factor(因素) + Authentication(认证)",
+        "meaning_en": "a method of computer access control requiring a user to present at least two separate pieces of evidence from the categories of knowledge, possession, and inherence",
+        "meaning_zh": "多因素认证（MFA）：要求用户提供至少两类证据的访问控制方法。三类证据：知识（密码）、拥有（手机/令牌）、固有（指纹/面部）。例如登录 Gmail 需要密码 + 手机短信码",
+        "derivation": "Multi(多) + Factor(因素) → 「多种因素」",
+        "mnemonic": "MFA 的三个 something：something you KNOW (密码), something you HAVE (手机), something you ARE (指纹)",
+        "example": "Multifactor authentication makes account hacking much harder.",
+        "example_zh": "多因素认证让账户被黑变得困难得多。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "permissions",
+        "breakdown": "Permission(允许) + s(复数)",
+        "meaning_en": "settings that control what information programs are allowed to collect from users and how they can access user data",
+        "meaning_zh": "权限：控制程序可从用户收集哪些信息及如何访问用户数据的设置。例如 iOS app 要相册权限、相机权限、定位权限——你应该只授予 app 完成功能所必需的权限",
+        "derivation": "Permit(允许) + ssion(名词) → 「允许的事项」",
+        "mnemonic": "Principle of least privilege：只给 app 它必需的最小 permissions——一个手电筒 app 不需要 contacts 权限",
+        "example": "Always review app permissions before granting access to your data.",
+        "example_zh": "授予数据访问权限前，务必查看 app 的权限。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "personally identifiable information",
+        "breakdown": "Personal(个人的) + Identifiable(可识别的) + Information(信息)",
+        "meaning_en": "information about an individual that identifies, links, relates, or describes them, such as Social Security numbers, age, race, phone numbers, medical information, financial information, or biometric data",
+        "meaning_zh": "个人可识别信息（PII）：能识别、链接、关联或描述个人的信息。包括 SSN、姓名、地址、电话、邮箱、医疗、财务、生物特征数据等。PII 是隐私法律保护的核心概念——GDPR、CCPA 都围绕它",
+        "derivation": "Person(人) + Identifiable(可识别的) → 「能识别到具体人的信息」",
+        "mnemonic": "PII 是 AP CSP 5.6 的核心缩写——Privacy 法律的「保护对象」",
+        "example": "Companies must protect personally identifiable information from breaches.",
+        "example_zh": "公司必须保护个人可识别信息不被泄露。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "phishing",
+        "breakdown": "Phishing(钓鱼) — 类比 fishing",
+        "meaning_en": "a technique that attempts to trick a user into providing personal information that can be used to access sensitive online resources",
+        "meaning_zh": "钓鱼攻击：诱骗用户提供个人信息，以访问敏感在线资源的技术。例如假装银行发邮件「您的账户异常，请点击链接登录」——但链接指向假网站。Phishing 是最常见的网络攻击形式",
+        "derivation": "Fishing(钓鱼) → ph 替换 f（hacker 文化习惯，如 phreaking）→ Phishing",
+        "mnemonic": "Phishing 的「鱼饵」是诱人的故事（中奖、退款、警告），「鱼钩」是恶意链接",
+        "example": "Phishing emails often impersonate banks or popular services to steal credentials.",
+        "example_zh": "钓鱼邮件常伪装成银行或流行服务来窃取凭证。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "public key encryption",
+        "breakdown": "Public key(公钥) + Encryption(加密)",
+        "meaning_en": "an encryption approach that uses a public key for encryption and a private key for decryption, allowing secure communication without sharing the private key",
+        "meaning_zh": "公钥加密：用公钥加密、私钥解密的加密方法。公钥可公开（任何人都能用它加密给你），但只有你的私钥能解密。HTTPS、SSH、加密邮件都基于此。是 asymmetric encryption 的同义词",
+        "derivation": "Public(公开) + Key(钥匙) → 「公开的钥匙」",
+        "mnemonic": "想象一个邮箱：投信口大家都能用（public key），但只有你有钥匙开邮箱（private key）",
+        "example": "Public key encryption secures most modern Internet communications.",
+        "example_zh": "公钥加密保护着大多数现代互联网通信。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "rogue access point",
+        "breakdown": "Rogue(流氓的) + Access point(接入点)",
+        "meaning_en": "a wireless access point that gives unauthorized access to secure networks",
+        "meaning_zh": "流氓接入点：一种未经授权访问安全网络的无线接入点。例如咖啡馆里有人架了一个名为「Starbucks_Free_WiFi」的假 WiFi，连上后所有流量被攻击者监听——这就是 rogue access point",
+        "derivation": "Rogue(流氓) + Access point(接入点) → 「流氓 WiFi」",
+        "mnemonic": "公共 WiFi 的两大风险：rogue access point（假 WiFi）和未加密流量（被嗅探）",
+        "example": "Avoid connecting to suspicious WiFi to prevent rogue access point attacks.",
+        "example_zh": "避免连接可疑 WiFi 以防止流氓接入点攻击。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "search history",
+        "breakdown": "Search(搜索) + History(历史)",
+        "meaning_en": "a record of searches made by users on search engines that can be collected, maintained, and used for targeted marketing or other purposes",
+        "meaning_zh": "搜索历史：用户在搜索引擎上的搜索记录，可被收集、维护并用于定向营销等目的。Google 默认保存你的所有搜索——可以在 myactivity.google.com 查看和删除",
+        "derivation": "Search(搜索) + History(历史) → 「搜过什么」",
+        "mnemonic": "DuckDuckGo 的卖点就是「不记录 search history」——隐私优先的搜索引擎",
+        "example": "Search history can reveal personal interests, health concerns, and plans.",
+        "example_zh": "搜索历史可以揭示个人兴趣、健康问题和计划。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "shareware",
+        "breakdown": "Share(共享) + ware(软件)",
+        "meaning_en": "software available for free or low cost that can potentially contain malware if downloaded from untrustworthy sources",
+        "meaning_zh": "共享软件：免费或低价的软件，但若从不可信来源下载可能含恶意软件。Shareware 通常有「试用期」或「功能限制」——付费可解锁完整版。和 freeware 类似，要从可信来源下载",
+        "derivation": "Share(分享) + Ware(软件) → 「分享的软件」",
+        "mnemonic": "经典 shareware 例子：WinRAR——「试用 40 天」但实际上无限期使用",
+        "example": "Shareware often includes a trial period before requiring payment.",
+        "example_zh": "共享软件通常在收费前提供试用期。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "social media",
+        "breakdown": "Social(社交的) + Media(媒体)",
+        "meaning_en": "online platforms where individuals post information that can be viewed, shared, and used by others in ways not originally intended",
+        "meaning_zh": "社交媒体：用户发布信息的在线平台，发布后内容可能被他人查看、分享并以原本未预期的方式使用。例如发推时是开玩笑，几年后被截图当作严肃证据——这是 social media 的隐私陷阱",
+        "derivation": "Social(社会的) + Media(媒介) → 「社交媒介」",
+        "mnemonic": "「Internet never forgets」——社交媒体上发布的内容可能永远无法删除",
+        "example": "Information shared on social media can be archived forever.",
+        "example_zh": "在社交媒体上分享的信息可能会被永久存档。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "software updates",
+        "breakdown": "Software(软件) + Updates(更新)",
+        "meaning_en": "regular patches and improvements to software that fix errors and design flaws that could compromise a computing system",
+        "meaning_zh": "软件更新：定期发布的补丁和改进，修复可能破坏计算系统的错误和设计缺陷。延迟更新是被攻击的主要原因——例如 2017 年 WannaCry 勒索病毒就是利用了未更新的 Windows 漏洞",
+        "derivation": "Update(更新) → 「让它变新」",
+        "mnemonic": "Patch Tuesday——微软每月第二个星期二发布安全更新，这是黑客日历上的「红色标记」",
+        "example": "Always install software updates promptly to patch security vulnerabilities.",
+        "example_zh": "始终及时安装软件更新以修补安全漏洞。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "strong password",
+        "breakdown": "Strong(强的) + Password(密码)",
+        "meaning_en": "a password that is easy for the user to remember but difficult for others to guess based on knowledge of that user",
+        "meaning_zh": "强密码：用户容易记住但他人难以猜测的密码。特征：长（≥12 字符）、混合大小写/数字/符号、不用常见词、不用个人信息（生日、宠物名）。最好用 password manager 生成和管理",
+        "derivation": "Strong(强壮) + Password(密码) → 「强壮的密码」",
+        "mnemonic": "弱密码 Top 3：123456、password、qwerty——黑客字典攻击的第一击",
+        "example": "A strong password should be at least 12 characters with mixed types.",
+        "example_zh": "强密码应至少 12 个字符，包含多种字符类型。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "symmetric key encryption",
+        "breakdown": "Symmetric(对称的) + Key(钥匙) + Encryption(加密)",
+        "meaning_en": "an encryption approach that uses one key for both encrypting and decrypting data",
+        "meaning_zh": "对称密钥加密：用一个密钥同时加密和解密数据的加密方法。优点：快、效率高；缺点：必须安全地共享密钥（chicken-and-egg 问题）。AES 是最常见的 symmetric encryption 算法",
+        "derivation": "Symmetric(对称的) → 「两边一样」 → 加解密用同一把钥匙",
+        "mnemonic": "想保险柜：一把钥匙锁，同一把钥匙开——这就是 symmetric encryption",
+        "example": "AES is the most widely used symmetric key encryption algorithm.",
+        "example_zh": "AES 是使用最广泛的对称密钥加密算法。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "targeted advertising",
+        "breakdown": "Targeted(有针对性的) + Advertising(广告)",
+        "meaning_en": "a marketing technique that uses computing innovations to deliver specific advertisements to individuals or groups based on their data and behavior",
+        "meaning_zh": "定向广告：基于用户数据和行为投放特定广告。在 safe computing 语境中，targeted advertising 既是 cookies、browsing history、search history 的最大商业用途，也是隐私风险的核心——你的数据被卖给广告商",
+        "derivation": "Target(目标) → Targeted(被瞄准的) + Advertising(广告) → 「精准瞄准你的广告」",
+        "mnemonic": "广告越精准，你被追踪得越多——这是 targeted advertising 的隐私悖论",
+        "example": "Targeted advertising relies on collecting and aggregating user data.",
+        "example_zh": "定向广告依赖于收集和聚合用户数据。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "unauthorized access",
+        "breakdown": "Un(未) + authorized(授权的) + Access(访问)",
+        "meaning_en": "gaining access to computing resources without permission, often through techniques like phishing, keylogging, or rogue access points",
+        "meaning_zh": "未授权访问：未经许可访问计算资源。手段包括 phishing（钓鱼）、keylogging（键盘记录）、rogue access points（流氓 WiFi）、暴力破解密码、利用未修复的漏洞等。是几乎所有 cybersecurity 事件的核心",
+        "derivation": "Un(否定) + Authorize(授权) + Access(访问) → 「没获得允许的访问」",
+        "mnemonic": "Unauthorized access 是所有 cybercrime 的「门」——一旦进门，后续才有数据窃取、勒索、破坏",
+        "example": "Strong authentication prevents unauthorized access to accounts.",
+        "example_zh": "强认证可以防止账户被未授权访问。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

@@ -5209,5 +5209,788 @@
         "toefl_frequency": "high"
       }
     ]
+  },
+  {
+    "root": "Balance of Payments Accounts",
+    "type": "root",
+    "meaning_en": "a comprehensive accounting record of all economic transactions between a country and the rest of the world",
+    "meaning_zh": "国际收支账户：记录一个国家与世界其他地区所有经济交易的「总账本」。分为经常账户（货物/服务/收入）和资本与金融账户（资产买卖），两者加起来必须平衡——就像家庭收支表必须对得上",
+    "origin": "Unit 6: 6.1 Balance of Payments Accounts",
+    "related": [
+      "Exchange Rates",
+      "Foreign Exchange Market",
+      "Circular Flow and GDP",
+      "International Financial Capital Flows"
+    ],
+    "words": [
+      {
+        "word": "balance of payments",
+        "breakdown": "balance(平衡) + of + payments(支付)",
+        "meaning_en": "a comprehensive accounting record of all economic transactions between a country and the rest of the world, including the current account and capital and financial account",
+        "meaning_zh": "国际收支：一个国家与外国之间所有经济交易的完整账本，包括经常账户（贸易+收入+转移）和资本金融账户（资产买卖）。这两大账户合起来必定等于零——钱花出去一定会以某种方式回来",
+        "derivation": "balance(平衡) + payments(支付) → 收支平衡表 → 国家层面的「家庭账本」",
+        "mnemonic": "「国际收支 = 国家版的收支表；经常账户赤字必须由资本账户盈余来弥补，一个扣一个」",
+        "example": "The balance of payments records every dollar that crosses a country's borders.",
+        "example_zh": "国际收支记录了每一美元跨越国境的流动。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "balance of trade",
+        "breakdown": "balance(平衡) + of + trade(贸易)",
+        "meaning_en": "the difference between a country's exports and imports; the net exports component of the current account",
+        "meaning_zh": "贸易差额：一国出口减进口的差值，即经常账户中的净出口部分。出口 > 进口称为贸易顺差（盈余），出口 < 进口称为贸易逆差（赤字）。例如美国长期对中国有贸易逆差",
+        "derivation": "balance(差额) + trade(贸易) → 出口-进口 → 贸易顺差或逆差",
+        "mnemonic": "「贸易差额 = 卖出去的-买回来的；美国每年逆差几千亿，意味着美国人买外国货比外国人买美国货多」",
+        "example": "The U.S. balance of trade has been in deficit for decades.",
+        "example_zh": "美国的贸易差额已经赤字几十年了。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "capital and financial account",
+        "breakdown": "capital(资本) + and + financial(金融的) + account(账户)",
+        "meaning_en": "the component of the balance of payments that records transactions involving the purchase and sale of assets, including financial investments and capital transfers between a country and the rest of the world",
+        "meaning_zh": "资本与金融账户：国际收支中记录资产买卖的部分，包括外国人买美国股票债券、美国人在海外建工厂等。经常账户赤字通常由这个账户的盈余来抵消",
+        "derivation": "capital(资本) + financial(金融) → 资产流动账户 → 股票债券房产的跨国买卖",
+        "mnemonic": "「外国人买美国国债 → 美元流入资本账户 → 弥补经常账户的赤字。美国靠「卖资产」支撑着贸易逆差」",
+        "example": "Foreign purchases of U.S. Treasury bonds show up in the capital and financial account.",
+        "example_zh": "外国人购买美国国债会反映在资本与金融账户中。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "credit",
+        "breakdown": "credit(贷方/流入)",
+        "meaning_en": "a transaction in the balance of payments that causes money to flow into a country",
+        "meaning_zh": "贷项（流入）：国际收支中使资金流入本国的交易，记为正号。例如美国出口商品换来美元、外国人来美旅游花的钱，都是贷项",
+        "derivation": "credit(信用/入账) → 钱进来 → 国际收支的正向记录",
+        "mnemonic": "「Credit = 入账 = 钱进来了；出口、外国投资、海外汇款都算 credit」",
+        "example": "Exports are recorded as a credit in the current account.",
+        "example_zh": "出口在经常账户中记为贷项。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "current account",
+        "breakdown": "current(经常的/当期的) + account(账户)",
+        "meaning_en": "the component of the balance of payments that records transactions in goods, services, income, and current transfers between a country and the rest of the world",
+        "meaning_zh": "经常账户：国际收支中记录货物、服务、收入和经常性转移的部分。简单说就是「当期」的跨国交易，不涉及资产买卖。它的核心就是净出口（贸易差额）",
+        "derivation": "current(当期) + account(账户) → 现期交易账户 → 贸易+收入+转移",
+        "mnemonic": "「经常账户 = 本期的「流水账」；买卖商品、劳务费、工资汇款——都算 current」",
+        "example": "The current account includes exports, imports, and remittances from workers abroad.",
+        "example_zh": "经常账户包括出口、进口和海外工作者的汇款。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "current account deficit",
+        "breakdown": "current account(经常账户) + deficit(赤字)",
+        "meaning_en": "a situation where a country's current account debits exceed its credits, indicating more money flowing out than in from current account transactions",
+        "meaning_zh": "经常账户赤字：一国经常账户的借方（流出）大于贷方（流入），说明买的外国货比卖给外国的多。美国就是典型——长期经常账户赤字，靠外国人买美国资产来补",
+        "derivation": "current account(经常账户) + deficit(短缺) → 流出 > 流入 → 负值",
+        "mnemonic": "「经常账户赤字 ≈ 国家「刷信用卡」→ 钱花出去比挣回来的多，必须借钱（卖资产）来填」",
+        "example": "The United States has run a large current account deficit for over 40 years.",
+        "example_zh": "美国的经常账户赤字已经持续了超过40年。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "current account surplus",
+        "breakdown": "current account(经常账户) + surplus(盈余)",
+        "meaning_en": "a situation where a country's current account credits exceed its debits, indicating more money flowing in than out from current account transactions",
+        "meaning_zh": "经常账户盈余：一国经常账户的贷方大于借方，说明卖给外国的比买的多。中国和德国是典型的经常账户盈余国，每年积累大量外汇储备",
+        "derivation": "current account(经常账户) + surplus(盈余) → 流入 > 流出 → 正值",
+        "mnemonic": "「经常账户盈余 = 赚的比花的多；中国、德国、日本把赚来的美元拿去买美国国债——美国赤字、中国盈余，两个账户正好对冲」",
+        "example": "China's current account surplus has helped it accumulate trillions in foreign reserves.",
+        "example_zh": "中国的经常账户盈余帮助它积累了数万亿外汇储备。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "debit",
+        "breakdown": "debit(借方/流出)",
+        "meaning_en": "a transaction in the balance of payments that causes money to flow out of a country",
+        "meaning_zh": "借项（流出）：国际收支中使资金流出本国的交易，记为负号。例如美国进口商品、美国人去海外旅游、向海外亲戚汇款，都是 debit",
+        "derivation": "debit(出账) → 钱出去 → 国际收支的负向记录",
+        "mnemonic": "「Debit = 出账 = 钱出去了；进口、海外投资、出国花钱都算 debit」",
+        "example": "Imports are recorded as a debit in the current account.",
+        "example_zh": "进口在经常账户中记为借项。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "financial capital inflow",
+        "breakdown": "financial(金融的) + capital(资本) + inflow(流入)",
+        "meaning_en": "money flowing into a country from foreign investment and asset purchases, recorded as a surplus in the capital and financial account",
+        "meaning_zh": "金融资本流入：外国人买本国资产（股票、债券、房产、工厂）带来的资金流入，记为资本金融账户的盈余。资本流入通常意味着外国人看好该国的投资回报",
+        "derivation": "financial capital(金融资本) + inflow(流入) → 外资进入 → 资本账户 +",
+        "mnemonic": "「金融资本流入 = 外国人来投资；利率越高、越稳定，吸引的资本流入越多」",
+        "example": "Higher U.S. interest rates attract financial capital inflows from global investors.",
+        "example_zh": "美国更高的利率吸引了全球投资者的金融资本流入。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "financial capital outflow",
+        "breakdown": "financial(金融的) + capital(资本) + outflow(流出)",
+        "meaning_en": "money flowing out of a country for foreign investment and asset purchases, recorded as a deficit in the capital and financial account",
+        "meaning_zh": "金融资本流出：本国居民到海外买资产（股票、债券、公司）导致资金外流，记为资本金融账户的赤字。例如美国苹果在海外设厂、美国基金买欧洲股票，都是资本流出",
+        "derivation": "financial capital(金融资本) + outflow(流出) → 钱去海外 → 资本账户 -",
+        "mnemonic": "「金融资本流出 = 本国人去海外投资；国内利率太低时，资本往外跑找更高回报」",
+        "example": "When domestic interest rates fall, financial capital outflows tend to rise.",
+        "example_zh": "当国内利率下降时，金融资本流出往往会增加。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "net exports",
+        "breakdown": "net(净) + exports(出口)",
+        "meaning_en": "the difference between a country's total exports and total imports; a component of aggregate demand",
+        "meaning_zh": "净出口（NX）：出口减进口的差值，是总需求 AD = C + I + G + NX 的第四项。如果 NX > 0，贸易顺差，拉高 GDP；如果 NX < 0，贸易逆差，拖累 GDP",
+        "derivation": "net(净) + exports(出口) → 出口-进口 → GDP 的一部分",
+        "mnemonic": "「NX = X - M；汇率升值 → 出口变贵、进口变便宜 → NX 下降 → GDP 下降」",
+        "example": "Net exports contribute directly to a country's GDP.",
+        "example_zh": "净出口直接贡献了一个国家的 GDP。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "net income from abroad",
+        "breakdown": "net(净) + income(收入) + from abroad(来自海外)",
+        "meaning_en": "income earned by residents from foreign sources, recorded in the current account",
+        "meaning_zh": "海外净收入：本国居民从海外赚取的收入（工资、利息、股息）减去外国人从本国赚走的收入。属于经常账户的一部分。例如美国人持有日本公司股票收到的分红",
+        "derivation": "net income(净收入) + from abroad(海外) → 对外投资的回报差额",
+        "mnemonic": "「海外净收入 = 本国人在外赚的 - 外国人在本国赚的；海外投资多的国家，这一项通常是正」",
+        "example": "The U.S. still earns positive net income from abroad despite its trade deficit.",
+        "example_zh": "尽管存在贸易赤字，美国的海外净收入仍然为正。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "net unilateral transfers",
+        "breakdown": "net(净) + unilateral(单方面的) + transfers(转移)",
+        "meaning_en": "one-way transfers of money or goods between countries with no expectation of repayment, recorded in the current account",
+        "meaning_zh": "单方面净转移：跨国之间不需要回报的单向资金或物资转移，例如海外工作者汇款回家、外国援助、国际慈善捐款。记录在经常账户中",
+        "derivation": "unilateral(单方面) + transfers(转移) → 无偿给予 → 经常账户的一部分",
+        "mnemonic": "「单方面转移 = 白给的钱；墨西哥工人在美国赚钱汇回墨西哥、美国对非洲的援助都算」",
+        "example": "Remittances from immigrants are a major form of net unilateral transfers.",
+        "example_zh": "移民的汇款是单方面净转移的一种主要形式。",
+        "toefl_frequency": "low"
+      }
+    ]
+  },
+  {
+    "root": "Exchange Rates",
+    "type": "root",
+    "meaning_en": "the price of one currency expressed in terms of another",
+    "meaning_zh": "汇率：一种货币用另一种货币表示的「价格」。例如1美元=7元人民币，这就是美元对人民币的汇率。汇率变动直接影响出口竞争力和进口成本",
+    "origin": "Unit 6: 6.2 Exchange Rates",
+    "related": [
+      "Balance of Payments Accounts",
+      "Foreign Exchange Market",
+      "Effect of Changes in Policies on the Foreign Exchange Market",
+      "Changes in the Foreign Exchange Market and Net Exports"
+    ],
+    "words": [
+      {
+        "word": "currency",
+        "breakdown": "currency(流通货币)",
+        "meaning_en": "money issued by a country or economic union that serves as a medium of exchange for goods and services",
+        "meaning_zh": "货币：由一国或经济联盟发行、作为商品和服务交换媒介的钱。例如美元、欧元、人民币、日元都是主权货币，各国央行负责发行和管理",
+        "derivation": "currency(流通) → 在一国境内流通的钱 → 法定支付手段",
+        "mnemonic": "「Currency = current(流通) + cy → 「流通着的钱」；每个主权国家通常都有自己的货币」",
+        "example": "The euro became the official currency of 20 European Union countries.",
+        "example_zh": "欧元成为20个欧盟国家的官方货币。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "currency appreciation",
+        "breakdown": "currency(货币) + appreciation(升值)",
+        "meaning_en": "an increase in the value of a country's currency relative to other currencies, making exports more expensive and imports cheaper",
+        "meaning_zh": "货币升值：本国货币相对外币变得更值钱。例如1美元从7元涨到8元人民币——美元升值了。副作用：美国出口商品（对外国人）变贵，进口商品（对美国人）变便宜，贸易逆差加大",
+        "derivation": "currency(货币) + appreciation(升值) → 币值上升 → 1美元能换更多外币",
+        "mnemonic": "「美元升值 → 出国旅游变便宜（同样美元能换更多外币），但美国出口商品变贵 → 美国贸易逆差扩大」",
+        "example": "When the dollar appreciates, American tourists enjoy cheaper trips abroad.",
+        "example_zh": "当美元升值时，美国游客能享受更便宜的海外旅行。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "currency depreciation",
+        "breakdown": "currency(货币) + depreciation(贬值)",
+        "meaning_en": "a decrease in the value of a country's currency relative to other currencies, making exports cheaper and imports more expensive",
+        "meaning_zh": "货币贬值：本国货币相对外币变得更不值钱。例如1美元从7元跌到6元人民币——美元贬值了。副作用：美国出口（对外国人）变便宜，进口（对美国人）变贵，贸易逆差缩小",
+        "derivation": "currency(货币) + depreciation(贬值) → 币值下降 → 1美元换到的外币变少",
+        "mnemonic": "「美元贬值 → 外国人觉得美国货便宜 → 美国出口增加、贸易逆差缩小。但美国人进口日本车变贵了」",
+        "example": "A weaker dollar boosts U.S. exports but raises the price of imported goods.",
+        "example_zh": "美元走弱推动美国出口，但提高了进口商品的价格。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "currency valuation",
+        "breakdown": "currency(货币) + valuation(估值)",
+        "meaning_en": "the process by which the relative worth or price of one currency is determined compared to other currencies",
+        "meaning_zh": "货币估值：确定一国货币相对他国货币「值多少」的过程。在浮动汇率制下由外汇市场的供需决定；在固定汇率制下由央行干预维持",
+        "derivation": "currency(货币) + valuation(估值) → 给货币定价 → 汇率形成过程",
+        "mnemonic": "「Valuation = 估值；货币就像商品，要靠市场或央行来给它「标价」——这个价格就是汇率」",
+        "example": "Economists debate whether China's currency valuation is set too low.",
+        "example_zh": "经济学家争论中国的货币估值是否被人为压低。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "exchange rate",
+        "breakdown": "exchange(交换) + rate(比率)",
+        "meaning_en": "the price of one currency expressed in terms of another currency in the foreign exchange market",
+        "meaning_zh": "汇率：一种货币用另一种货币表示的价格，在外汇市场上形成。例如1美元=7元人民币就是美元/人民币的汇率。可以是浮动汇率（市场决定）或固定汇率（央行维持）",
+        "derivation": "exchange(交换) + rate(比率) → 货币之间的兑换比 → 在外汇市场上形成",
+        "mnemonic": "「汇率 = 一个货币的「标价」；它和股票一样每时每刻都在变，由供需决定」",
+        "example": "The dollar-yen exchange rate fluctuates constantly in the global market.",
+        "example_zh": "美元兑日元的汇率在全球市场上持续波动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "foreign exchange market",
+        "breakdown": "foreign(外国的) + exchange(交换) + market(市场)",
+        "meaning_en": "the global market where currencies are traded and exchange rates are determined by the supply and demand for different currencies",
+        "meaning_zh": "外汇市场（forex/FX）：全球最大的金融市场，每天交易量超过7万亿美元。货币在这里被买卖，汇率由供给和需求决定。24小时运行，跨越多个时区",
+        "derivation": "foreign exchange(外汇) + market(市场) → 货币交易所 → 汇率诞生地",
+        "mnemonic": "「外汇市场 = 全球最大的「货币超市」；每天成交7万亿美元，是股市的20倍」",
+        "example": "The foreign exchange market trades over $7 trillion per day.",
+        "example_zh": "外汇市场每天的交易量超过7万亿美元。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Foreign Exchange Market",
+    "type": "root",
+    "meaning_en": "the global market where currencies are traded and exchange rates are determined",
+    "meaning_zh": "外汇市场：用供需分析来研究汇率的形成。货币就像商品一样，有需求曲线（向下）、供给曲线（向上），交点就是均衡汇率。政策变化、经济条件都会让曲线移动",
+    "origin": "Unit 6: 6.3 Foreign Exchange Market",
+    "related": [
+      "Exchange Rates",
+      "Balance of Payments Accounts",
+      "Effect of Changes in Policies on the Foreign Exchange Market",
+      "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"
+    ],
+    "words": [
+      {
+        "word": "demand for currency",
+        "breakdown": "demand(需求) + for + currency(货币)",
+        "meaning_en": "the quantity of a currency that buyers are willing and able to purchase at various exchange rates, arising from demand for a country's goods, services, and financial assets",
+        "meaning_zh": "货币需求：买家在不同汇率下愿意并能够买入的货币数量。需求来源包括：买该国出口商品需要其货币、外国投资者想买该国股票债券、游客要去该国旅游。需求曲线向下倾斜",
+        "derivation": "demand(需求) + currency(货币) → 谁想要这种货币 → 外国买家买它的商品或资产",
+        "mnemonic": "「日本人想买美国国债 → 先要把日元换成美元 → 产生对美元的需求」",
+        "example": "Rising demand for U.S. goods increases the demand for the dollar.",
+        "example_zh": "对美国商品需求的上升会增加对美元的需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "disequilibrium",
+        "breakdown": "dis(不) + equilibrium(均衡)",
+        "meaning_en": "a market condition in which the quantity supplied does not equal the quantity demanded, causing imbalances that create surpluses or shortages",
+        "meaning_zh": "不均衡：市场上供给量和需求量不相等的状态，会出现过剩（供>需）或短缺（供<需）。价格会自动调整，推动市场回到均衡。在外汇市场上意味着当前汇率不稳定",
+        "derivation": "dis(不) + equilibrium(均衡) → 不平衡 → 价格会移动",
+        "mnemonic": "「不均衡 = 供需不匹配 → 价格像弹簧一样往均衡点弹；外汇市场上表现为汇率快速调整」",
+        "example": "Disequilibrium in the forex market leads to rapid exchange rate adjustments.",
+        "example_zh": "外汇市场的不均衡会导致汇率快速调整。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "equilibrium",
+        "breakdown": "equi(相等) + librium(平衡)",
+        "meaning_en": "a market condition in which the quantity supplied equals the quantity demanded at a particular price, with no tendency for change",
+        "meaning_zh": "均衡：供给量等于需求量的市场状态，此时价格稳定，没有改变的压力。外汇市场的均衡就是使货币供需相等的汇率",
+        "derivation": "equi(相等) + librium(天平) → 天平两边相等 → 供需相等",
+        "mnemonic": "「均衡 = 天平平衡；供给曲线和需求曲线的交点，是市场「休息」的地方」",
+        "example": "Markets naturally gravitate toward equilibrium over time.",
+        "example_zh": "市场随着时间推移会自然地趋向均衡。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equilibrium exchange rate",
+        "breakdown": "equilibrium(均衡的) + exchange rate(汇率)",
+        "meaning_en": "the exchange rate at which the quantity of currency demanded equals the quantity supplied, determined by shifts in currency demand and supply",
+        "meaning_zh": "均衡汇率：货币需求量等于供给量时的汇率，由供给曲线和需求曲线的交点决定。当需求或供给曲线移动时，均衡汇率也会随之变化",
+        "derivation": "equilibrium(均衡) + exchange rate(汇率) → 外汇市场出清的汇率",
+        "mnemonic": "「均衡汇率 = 两条曲线的交点；政策变了→曲线移动→新的均衡汇率，美元涨/跌」",
+        "example": "A shift in demand moves the equilibrium exchange rate up or down.",
+        "example_zh": "需求的变化会使均衡汇率上下移动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "exchange rate",
+        "breakdown": "exchange(交换) + rate(比率)",
+        "meaning_en": "the price of one currency expressed in terms of another currency in the foreign exchange market",
+        "meaning_zh": "汇率：在外汇市场上，一种货币用另一种货币表示的价格。在供需图中它是纵轴——取代了普通市场图中的 price",
+        "derivation": "exchange(交换) + rate(比率) → 外汇市场图的纵轴 → 货币的价格",
+        "mnemonic": "「外汇市场图：纵轴是汇率（不是价格），横轴是货币数量；其他和普通供需图一模一样」",
+        "example": "On a forex graph, the y-axis represents the exchange rate.",
+        "example_zh": "在外汇市场图上，纵轴代表的是汇率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "foreign exchange market",
+        "breakdown": "foreign(外国的) + exchange(交换) + market(市场)",
+        "meaning_en": "the global market where currencies are traded and exchange rates are determined by the supply and demand for different currencies",
+        "meaning_zh": "外汇市场：用供需模型来分析的货币市场。每种货币都有自己的外汇市场图——例如「美元的外汇市场图」就是分析美元的供求和美元汇率",
+        "derivation": "foreign exchange(外汇) + market(市场) → 供需分析的载体 → 每种货币一张图",
+        "mnemonic": "「画外汇市场图要注意：一次只画一种货币，纵轴是汇率、横轴是货币数量」",
+        "example": "In the foreign exchange market, you can draw a separate graph for each currency.",
+        "example_zh": "在外汇市场中，可以为每种货币单独画一张图。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity demanded",
+        "breakdown": "quantity(数量) + demanded(被需求的)",
+        "meaning_en": "the amount of a good or service that consumers are willing and able to purchase at a specific price",
+        "meaning_zh": "需求量：在某个特定价格下，消费者愿意并能够购买的商品或服务数量。是需求曲线上的一个点，不是整条曲线",
+        "derivation": "quantity(数量) + demanded(被需求) → 需求曲线上的点 → 特定价格对应的量",
+        "mnemonic": "「需求量 vs 需求：一个点 vs 一整条曲线；价格变 → 需求量沿线移动；非价格因素变 → 整条需求曲线移动」",
+        "example": "At a lower price, the quantity demanded of apples rises.",
+        "example_zh": "在更低的价格下，苹果的需求量会上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity demanded of a currency",
+        "breakdown": "quantity demanded(需求量) + of a currency(某货币的)",
+        "meaning_en": "the amount of a currency demanded at a specific exchange rate, which has an inverse relationship with the exchange rate",
+        "meaning_zh": "货币需求量：在某个特定汇率下被需求的货币数量。和汇率呈反向关系——汇率越高，该货币越贵，外国买家需求量越少",
+        "derivation": "quantity demanded(需求量) + currency(货币) → 特定汇率下的需求量 → 反向关系",
+        "mnemonic": "「美元汇率涨 → 美元变贵 → 外国人买美元的量减少 → 需求量下降。需求曲线向下倾斜」",
+        "example": "When the dollar is expensive, the quantity of dollars demanded falls.",
+        "example_zh": "当美元昂贵时，对美元的需求量会下降。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "quantity supplied",
+        "breakdown": "quantity(数量) + supplied(被供给的)",
+        "meaning_en": "the amount of a good or service that producers are willing and able to offer for sale at a given price",
+        "meaning_zh": "供给量：在某个特定价格下，生产者愿意并能够出售的商品或服务数量。是供给曲线上的一个点。和需求量类似——不是整条曲线，只是一个点",
+        "derivation": "quantity(数量) + supplied(被供给) → 供给曲线上的点 → 特定价格对应的量",
+        "mnemonic": "「供给量 vs 供给：一个点 vs 一整条曲线；区分「沿曲线移动」和「曲线移动」是经济学的核心」",
+        "example": "As the price of oil rises, the quantity supplied increases.",
+        "example_zh": "随着油价上涨，石油的供给量会增加。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity supplied of a currency",
+        "breakdown": "quantity supplied(供给量) + of a currency(某货币的)",
+        "meaning_en": "the amount of a currency supplied at a specific exchange rate, which has a positive relationship with the exchange rate",
+        "meaning_zh": "货币供给量：在某个特定汇率下被供给的货币数量。和汇率呈正向关系——汇率越高（本币越值钱），本国人越愿意把它换成外币去买进口商品，供给量越大",
+        "derivation": "quantity supplied(供给量) + currency(货币) → 特定汇率下的供给量 → 正向关系",
+        "mnemonic": "「美元升值 → 用美元能买更多外国货 → 美国人愿意把美元换成外币 → 美元供给量增加。供给曲线向上倾斜」",
+        "example": "When the dollar is strong, Americans supply more dollars to buy imports.",
+        "example_zh": "当美元强势时，美国人提供更多美元来购买进口商品。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "supply of currency",
+        "breakdown": "supply(供给) + of + currency(货币)",
+        "meaning_en": "the quantity of a currency that sellers are willing and able to offer at various exchange rates, arising from making payments in other currencies",
+        "meaning_zh": "货币供给：卖家在各种汇率下愿意并能够提供的货币数量。供给来源：本国人要进口外国商品、到海外投资、出国旅游——都需要把本币卖出换成外币",
+        "derivation": "supply(供给) + currency(货币) → 谁把货币卖出去 → 需要外币的本国人",
+        "mnemonic": "「美国人买日本车 → 把美元换成日元 → 这就是美元供给的来源；供给曲线向上倾斜」",
+        "example": "Higher U.S. imports raise the supply of dollars on the forex market.",
+        "example_zh": "美国进口增加会提高外汇市场上的美元供给。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "surpluses",
+        "breakdown": "surplus(过剩)",
+        "meaning_en": "a situation in the money market where the quantity of money supplied exceeds the quantity of money demanded at a given nominal interest rate",
+        "meaning_zh": "过剩：市场上供给量超过需求量的状态。在外汇市场中，若汇率高于均衡水平，货币供给 > 需求，出现货币过剩，推动汇率下跌回到均衡",
+        "derivation": "surplus(过剩) → 供 > 需 → 价格（汇率）下行压力",
+        "mnemonic": "「过剩 → 卖家找不到买家 → 价格往下调 → 回到均衡。汇率过高 → 美元过剩 → 汇率下跌」",
+        "example": "A surplus of dollars in the forex market pushes the exchange rate down.",
+        "example_zh": "外汇市场上美元的过剩会推动汇率下降。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Effect of Changes in Policies on the Foreign Exchange Market",
+    "type": "root",
+    "meaning_en": "how fiscal policy, monetary policy, and trade policy shift currency supply and demand",
+    "meaning_zh": "政策对外汇市场的影响：财政政策、货币政策和贸易政策如何移动货币的供给和需求曲线，从而改变均衡汇率。核心逻辑：利率↑→资本流入↑→货币需求↑→本币升值",
+    "origin": "Unit 6: 6.4 Effect of Changes in Policies & Economic Conditions on the Foreign Exchange Market",
+    "related": [
+      "Foreign Exchange Market",
+      "Exchange Rates",
+      "Balance of Payments Accounts",
+      "Changes in the Foreign Exchange Market and Net Exports"
+    ],
+    "words": [
+      {
+        "word": "aggregate demand",
+        "breakdown": "aggregate(总的) + demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求（AD）：整个经济在不同价格水平下对商品和服务的总需求量。公式 AD = C + I + G + NX。政策通过影响汇率 → NX → AD，间接影响宏观经济",
+        "derivation": "aggregate(总) + demand(需求) → 全经济总需求 → 含净出口 NX",
+        "mnemonic": "「美元贬值 → NX 上升 → AD 向右移动 → GDP 和价格水平上升。汇率是 AD 的隐藏开关」",
+        "example": "Changes in the exchange rate shift aggregate demand through net exports.",
+        "example_zh": "汇率的变化通过净出口来移动总需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "demand",
+        "breakdown": "demand(需求)",
+        "meaning_en": "the quantity of a good or service that consumers are willing and able to buy at various price levels",
+        "meaning_zh": "需求：消费者在各种价格水平下愿意并能够购买的商品或服务数量。整条需求曲线代表价格与需求量的关系。非价格因素会使整条曲线移动",
+        "derivation": "demand(需求) → 价量关系整条曲线 → 和「需求量」（点）区分",
+        "mnemonic": "「需求 = 整条曲线；需求量 = 曲线上的一个点。画图必须区分——这是选择题送分点」",
+        "example": "A change in income shifts the entire demand curve.",
+        "example_zh": "收入的变化会使整条需求曲线发生移动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "demand for currency",
+        "breakdown": "demand(需求) + for + currency(货币)",
+        "meaning_en": "the quantity of a currency that buyers are willing and able to purchase at various exchange rates, arising from demand for a country's goods, services, and financial assets",
+        "meaning_zh": "货币需求：该国货币在各种汇率下被外国买家需求的数量。政策影响：利率上升 → 外国人想买美国债券 → 美元需求增加 → 美元升值",
+        "derivation": "demand(需求) + currency(货币) → 外国人对本币的需求 → 受利率、经济增长影响",
+        "mnemonic": "「美联储加息 → 美债收益率高 → 外国人抢着买美债 → 美元需求右移 → 美元升值」",
+        "example": "Higher interest rates increase the demand for a country's currency.",
+        "example_zh": "更高的利率会增加对一国货币的需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equilibrium exchange rate",
+        "breakdown": "equilibrium(均衡的) + exchange rate(汇率)",
+        "meaning_en": "the exchange rate at which the quantity of currency demanded equals the quantity supplied, determined by shifts in currency demand and supply",
+        "meaning_zh": "均衡汇率：货币供给等于需求时的汇率。政策变化会让需求或供给曲线移动，产生新的均衡汇率。这是 6.4 分析题的核心结论",
+        "derivation": "equilibrium(均衡) + exchange rate(汇率) → 政策分析题的答案 → 新交点",
+        "mnemonic": "「政策题答题套路：找出哪条曲线移动、往哪移、新均衡汇率比原来高还是低」",
+        "example": "Expansionary monetary policy lowers the equilibrium exchange rate.",
+        "example_zh": "扩张性货币政策会降低均衡汇率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "exchange rate",
+        "breakdown": "exchange(交换) + rate(比率)",
+        "meaning_en": "the price of one currency expressed in terms of another currency in the foreign exchange market",
+        "meaning_zh": "汇率：受政策和经济条件共同影响的货币价格。在 6.4 中是分析的因变量：政策 → 供需 → 汇率 → 净出口 → AD → GDP",
+        "derivation": "exchange rate(汇率) → 政策传导链的中间环节 → 连接货币政策和实体经济",
+        "mnemonic": "「汇率是「政策 → GDP」之间的传送带；忽视汇率的政策分析都是不完整的」",
+        "example": "Interest rate changes affect the exchange rate through capital flows.",
+        "example_zh": "利率变化通过资本流动影响汇率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "fiscal policy",
+        "breakdown": "fiscal(财政的) + policy(政策)",
+        "meaning_en": "government spending and taxation decisions that influence aggregate demand, real output, price level, and exchange rates",
+        "meaning_zh": "财政政策：政府通过调整支出和税收来影响经济的政策。扩张性财政政策会推高利率（挤出效应）→ 吸引资本流入 → 本币升值 → 净出口下降",
+        "derivation": "fiscal(财政) + policy(政策) → 政府支出/税收 → 间接影响汇率",
+        "mnemonic": "「扩张性财政政策的副作用：政府借钱多 → 利率↑ → 资本流入 → 本币升值 → 出口受损。这就是「双赤字」现象」",
+        "example": "Expansionary fiscal policy can cause the dollar to appreciate.",
+        "example_zh": "扩张性财政政策可能导致美元升值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "flexible exchange market",
+        "breakdown": "flexible(浮动的) + exchange market(外汇市场)",
+        "meaning_en": "a foreign exchange market where the equilibrium exchange rate is determined freely by the interaction of supply and demand without government intervention",
+        "meaning_zh": "浮动汇率市场：汇率完全由市场供求决定、没有政府干预的外汇市场。大多数发达国家（美、日、欧）采用浮动汇率制。AP 宏观分析默认假设浮动汇率",
+        "derivation": "flexible(灵活) + exchange market(外汇市场) → 市场自由定价 → 无央行干预",
+        "mnemonic": "「浮动汇率 = 市场说了算；AP 题目默认是这种，除非明确说「固定汇率」或「钉住汇率」」",
+        "example": "The United States operates under a flexible exchange rate system.",
+        "example_zh": "美国采用浮动汇率制。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "foreign exchange market",
+        "breakdown": "foreign(外国的) + exchange(交换) + market(市场)",
+        "meaning_en": "the global market where currencies are traded and exchange rates are determined by the supply and demand for different currencies",
+        "meaning_zh": "外汇市场：政策传导的关键场所。财政、货币、贸易政策的效果都会先经过外汇市场，改变汇率后再影响净出口和总需求",
+        "derivation": "foreign exchange market(外汇市场) → 政策的「中转站」 → 汇率在这里变化",
+        "mnemonic": "「所有宏观政策的国际效应都要经过外汇市场；这是 Unit 6 最常考的图」",
+        "example": "Monetary policy changes are quickly reflected in the foreign exchange market.",
+        "example_zh": "货币政策的变化会迅速反映在外汇市场上。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "interest rates",
+        "breakdown": "interest(利息) + rates(利率)",
+        "meaning_en": "the cost of borrowing money, influenced by monetary policy and affecting exchange rates through changes in currency demand",
+        "meaning_zh": "利率：借钱的成本，由货币政策影响。利率是汇率的核心驱动力——高利率吸引外国投资者买本国债券，增加本币需求，使本币升值。反之亦然",
+        "derivation": "interest rate(利率) → 资本回报率 → 吸引或排斥外资 → 汇率",
+        "mnemonic": "「记住「利率-汇率」公式：美联储加息 → 美元升值；美联储降息 → 美元贬值。这是汇率的第一推动力」",
+        "example": "Rising U.S. interest rates attract foreign investors and strengthen the dollar.",
+        "example_zh": "美国利率上升会吸引外国投资者并强化美元。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "monetary policy",
+        "breakdown": "monetary(货币的) + policy(政策)",
+        "meaning_en": "central bank actions that influence the money supply, interest rates, aggregate demand, real output, price level, and exchange rates",
+        "meaning_zh": "货币政策：央行通过调整货币供给和利率来影响经济的政策。扩张性货币政策（降息）→ 资本外流 → 本币贬值 → 净出口增加。这是「货币政策的国际传导机制」",
+        "derivation": "monetary(货币) + policy(政策) → 央行工具 → 利率 → 汇率",
+        "mnemonic": "「美联储降息 → 美元贬值 → 美国出口更有竞争力。货币政策的国际溢出效应常被称为「货币战争」」",
+        "example": "Expansionary monetary policy weakens the domestic currency.",
+        "example_zh": "扩张性货币政策会使本国货币走弱。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "price(价格) + level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：一个经济体中所有商品和服务的平均价格，通常用 CPI 等价格指数衡量。一国通胀率高 → 出口商品对外国人变贵 → 货币需求下降 → 本币贬值",
+        "derivation": "price(价格) + level(水平) → 整体物价 → 通胀率",
+        "mnemonic": "「通胀高的国家货币会贬值：阿根廷、委内瑞拉就是经典案例。价格水平和汇率长期反向」",
+        "example": "A higher domestic price level tends to weaken a country's currency.",
+        "example_zh": "国内价格水平走高往往会削弱一国货币。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quotas",
+        "breakdown": "quota(配额)",
+        "meaning_en": "limits on the quantity of imported goods that affect the supply of foreign currency",
+        "meaning_zh": "配额：对进口商品数量的限制，属于贸易政策的一种。配额减少进口 → 减少本币供给（因为进口少了就不用那么多美元换外币）→ 本币升值",
+        "derivation": "quota(配额) → 进口数量上限 → 减少本币供给 → 本币升值",
+        "mnemonic": "「进口配额 → 美国人少买日本车 → 少卖美元 → 美元供给下降 → 美元升值。贸易保护的汇率副作用」",
+        "example": "Import quotas reduce the supply of domestic currency on the forex market.",
+        "example_zh": "进口配额会减少外汇市场上的本国货币供给。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "real output",
+        "breakdown": "real(实际的) + output(产出)",
+        "meaning_en": "the total production of goods and services in an economy adjusted for inflation, measured in constant dollars",
+        "meaning_zh": "实际产出：经过通胀调整后的经济总产出，即 Real GDP。一国实际产出增长快 → 进口需求增加 → 本币供给增加 → 本币贬值（反向效应：经济强劲也会吸引投资，推高货币，两力相抵）",
+        "derivation": "real(实际) + output(产出) → Real GDP → 经济增长的真实尺度",
+        "mnemonic": "「实际产出增长有两股力量影响汇率：进口↑（贬值压力） vs 投资流入↑（升值压力）。哪个主导取决于经济阶段」",
+        "example": "Rising real output can increase imports and put pressure on the currency.",
+        "example_zh": "实际产出上升会增加进口，并对货币施加压力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "supply",
+        "breakdown": "supply(供给)",
+        "meaning_en": "the quantity of a good or service that producers are willing and able to offer for sale at various price levels",
+        "meaning_zh": "供给：生产者在各种价格水平下愿意并能够出售的数量。整条供给曲线。在外汇市场上代表「愿意卖出本币的量」，向上倾斜",
+        "derivation": "supply(供给) → 价量关系整条曲线 → 外汇市场上的「本币卖盘」",
+        "mnemonic": "「需求 vs 供给，曲线 vs 曲线；政策变化要判断是影响需求曲线还是供给曲线，别弄混」",
+        "example": "A change in trade policy can shift the supply of a currency.",
+        "example_zh": "贸易政策的变化会移动某种货币的供给。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "supply of currency",
+        "breakdown": "supply(供给) + of + currency(货币)",
+        "meaning_en": "the quantity of a currency that sellers are willing and able to offer at various exchange rates, arising from making payments in other currencies",
+        "meaning_zh": "货币供给：本国人在各种汇率下愿意卖出本币的数量。政策影响：本国人想多买进口货、到海外投资 → 要把本币换成外币 → 供给右移 → 本币贬值",
+        "derivation": "supply(供给) + currency(货币) → 本国人卖本币 → 用来买外国东西",
+        "mnemonic": "「美国扩大进口 → 美元供给右移 → 美元贬值；美国减少进口 → 美元供给左移 → 美元升值」",
+        "example": "An import surge raises the supply of dollars in the forex market.",
+        "example_zh": "进口激增会提高外汇市场上的美元供给。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "tariffs",
+        "breakdown": "tariff(关税)",
+        "meaning_en": "taxes imposed on imported goods that affect the supply of foreign currency",
+        "meaning_zh": "关税：对进口商品征收的税，是贸易政策的主要工具。关税 → 进口减少 → 本币供给减少 → 本币升值。这和配额的汇率效应一致",
+        "derivation": "tariff(关税) → 进口税 → 抑制进口 → 减少本币供给 → 本币升值",
+        "mnemonic": "「特朗普加关税 → 美国进口减少 → 美元供给减少 → 美元升值。但反过来，其他国家报复 → 美国出口受损 → 美元需求下降 → 又反过来」",
+        "example": "Tariffs on Chinese goods reduced U.S. dollar supply on the forex market.",
+        "example_zh": "对中国商品征收关税减少了外汇市场上的美元供给。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Changes in the Foreign Exchange Market and Net Exports",
+    "type": "root",
+    "meaning_en": "how exchange rate changes flow through to affect a country's net exports and aggregate demand",
+    "meaning_zh": "汇率变动对净出口的影响：汇率→净出口→AD→GDP 的完整传导链。核心口诀：「本币升值伤出口，本币贬值利出口」——但要解释清楚为什么",
+    "origin": "Unit 6: 6.5 Changes in the Foreign Exchange Market and Net Exports",
+    "related": [
+      "Foreign Exchange Market",
+      "Exchange Rates",
+      "Effect of Changes in Policies on the Foreign Exchange Market",
+      "Balance of Payments Accounts"
+    ],
+    "words": [
+      {
+        "word": "aggregate demand",
+        "breakdown": "aggregate(总的) + demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求（AD）：AD = C + I + G + NX，汇率通过 NX 影响 AD。本币贬值 → NX 增加 → AD 右移 → GDP 上升；本币升值 → NX 减少 → AD 左移 → GDP 下降",
+        "derivation": "aggregate demand(总需求) → 含 NX 项 → 受汇率间接影响",
+        "mnemonic": "「记住：汇率的 AD 效应是通过 NX 这个「暗门」进入的；很多题目会考「为什么本币贬值会刺激经济」」",
+        "example": "A weaker dollar boosts net exports and shifts aggregate demand to the right.",
+        "example_zh": "美元走弱推动净出口，使总需求曲线向右移动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "currency appreciation",
+        "breakdown": "currency(货币) + appreciation(升值)",
+        "meaning_en": "an increase in the value of a country's currency relative to other currencies, making exports more expensive and imports cheaper",
+        "meaning_zh": "货币升值：本币相对外币变贵。效应：出口（对外国人）变贵 → 出口减少；进口（对本国人）变便宜 → 进口增加 → NX 减少 → AD 下降 → GDP 下降",
+        "derivation": "appreciation(升值) → 出口贵+进口便宜 → NX↓ → AD↓",
+        "mnemonic": "「美元升值 → 出国购物爽、但美国工厂哭（出口订单少）；对消费者好，对出口商坏」",
+        "example": "Dollar appreciation hurts U.S. manufacturers that depend on exports.",
+        "example_zh": "美元升值伤害了依赖出口的美国制造商。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "currency depreciation",
+        "breakdown": "currency(货币) + depreciation(贬值)",
+        "meaning_en": "a decrease in the value of a country's currency relative to other currencies, making exports cheaper and imports more expensive",
+        "meaning_zh": "货币贬值：本币相对外币变便宜。效应：出口（对外国人）变便宜 → 出口增加；进口（对本国人）变贵 → 进口减少 → NX 增加 → AD 上升 → GDP 上升。这就是「货币贬值刺激经济」的原理",
+        "derivation": "depreciation(贬值) → 出口便宜+进口贵 → NX↑ → AD↑",
+        "mnemonic": "「日元贬值 → 日本车在美国变便宜 → 丰田销量上涨 → 日本出口和 GDP 上升。这就是「汇率武器」」",
+        "example": "Japan's currency depreciation boosted Toyota exports to the U.S.",
+        "example_zh": "日元贬值推动了丰田对美国的出口。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "exchange rate",
+        "breakdown": "exchange(交换) + rate(比率)",
+        "meaning_en": "the price of one currency expressed in terms of another currency in the foreign exchange market",
+        "meaning_zh": "汇率：在 6.5 中汇率是自变量——它的变化引起 NX 的变化，进而改变总需求和 GDP。这是宏观经济「外部传导」的核心",
+        "derivation": "exchange rate(汇率) → 自变量 → 引发净出口变化",
+        "mnemonic": "「6.5 答题模板：汇率变 → 出口进口变 → 净出口变 → AD 变 → 实际 GDP 和价格水平变。一串因果链」",
+        "example": "Exchange rate movements feed through to the real economy via net exports.",
+        "example_zh": "汇率变动通过净出口传导到实体经济。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "exports",
+        "breakdown": "ex(向外) + ports(运)",
+        "meaning_en": "goods and services produced domestically and sold to foreign countries",
+        "meaning_zh": "出口：国内生产、卖到国外的商品和服务。是 GDP 的正向贡献。本币贬值使出口对外国人变便宜，出口量上升",
+        "derivation": "ex(外) + port(运送) → 往外运 → 卖给外国",
+        "mnemonic": "「Ex- = 出去；出口就是「出去的商品」。美国农产品、飞机、好莱坞电影都是出口大项」",
+        "example": "U.S. exports rose when the dollar weakened against major currencies.",
+        "example_zh": "当美元对主要货币走弱时，美国出口上升了。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "flexible exchange market",
+        "breakdown": "flexible(浮动的) + exchange market(外汇市场)",
+        "meaning_en": "a foreign exchange market where the equilibrium exchange rate is determined freely by the interaction of supply and demand without government intervention",
+        "meaning_zh": "浮动汇率市场：汇率自由浮动的外汇市场。在这种体制下，净出口会随市场供求自动调整——贸易逆差会让本币自动贬值，从而改善贸易平衡（自动稳定机制）",
+        "derivation": "flexible(浮动) + exchange market(外汇市场) → 汇率自由调整 → 贸易自动平衡",
+        "mnemonic": "「浮动汇率 = 贸易的「自动刹车」；贸易逆差 → 本币贬值 → 出口变有利 → 逆差缩小。这就是亚当斯密说的「看不见的手」国际版」",
+        "example": "Under a flexible exchange market, trade imbalances tend to self-correct.",
+        "example_zh": "在浮动汇率市场下，贸易失衡倾向于自我修正。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "imports",
+        "breakdown": "im(向内) + ports(运)",
+        "meaning_en": "goods and services produced in foreign countries and purchased domestically",
+        "meaning_zh": "进口：从外国买入、在国内消费的商品和服务。是 GDP 的负向贡献（因为 GDP 只计算本国生产）。本币贬值使进口对本国人变贵，进口量下降",
+        "derivation": "im(内) + port(运送) → 往里运 → 从外国买",
+        "mnemonic": "「Im- = 进来；进口就是「进来的商品」。iPhone 组装、石油、咖啡豆都是美国的重要进口」",
+        "example": "A weaker dollar raised the price of imports for American consumers.",
+        "example_zh": "美元走弱提高了美国消费者的进口商品价格。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "net exports",
+        "breakdown": "net(净) + exports(出口)",
+        "meaning_en": "the difference between a country's total exports and total imports; a component of aggregate demand",
+        "meaning_zh": "净出口（NX = X - M）：出口减进口，是总需求 AD 的第四项。在 6.5 中 NX 是关键变量——汇率先影响 X 和 M，再合成对 NX 的净效应，最终影响 AD 和 GDP",
+        "derivation": "net(净) + exports(出口) → X - M → AD 的一部分",
+        "mnemonic": "「NX 公式：本币升值 → NX↓ → AD↓ → GDP↓；本币贬值 → NX↑ → AD↑ → GDP↑。背下来，6.5 考试必考」",
+        "example": "Net exports are the main channel through which exchange rates affect GDP.",
+        "example_zh": "净出口是汇率影响 GDP 的主要渠道。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "International Financial Capital Flows",
+    "type": "root",
+    "meaning_en": "the movement of investment funds across borders between open economies, linking loanable funds markets globally",
+    "meaning_zh": "国际金融资本流动：投资资金跨国界流动，把全球各国的可贷资金市场连在一起。高实际利率的国家吸引资本流入，低利率国家资本外流。这是开放经济宏观分析的核心",
+    "origin": "Unit 6: 6.6 Multiple Choice Questions",
+    "related": [
+      "Balance of Payments Accounts",
+      "Foreign Exchange Market",
+      "Effect of Changes in Policies on the Foreign Exchange Market",
+      "Changes in the Foreign Exchange Market and Net Exports"
+    ],
+    "words": [
+      {
+        "word": "domestic assets",
+        "breakdown": "domestic(国内的) + assets(资产)",
+        "meaning_en": "financial investments and property located within a country's borders",
+        "meaning_zh": "国内资产：位于本国境内的金融投资和资产，例如美国国债、苹果股票、纽约写字楼。外国投资者购买美国国内资产 = 资本流入美国",
+        "derivation": "domestic(国内) + assets(资产) → 本国境内的股债房产 → 吸引外资",
+        "mnemonic": "「国内资产 = 「在家门口的东西」；外国央行买美国国债是最大规模的「国内资产被外国持有」案例」",
+        "example": "Foreign investors hold trillions in U.S. domestic assets.",
+        "example_zh": "外国投资者持有数万亿美元的美国国内资产。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "financial capital flows",
+        "breakdown": "financial(金融的) + capital(资本) + flows(流动)",
+        "meaning_en": "the movement of money and investment funds across countries in response to differences in returns and interest rates",
+        "meaning_zh": "金融资本流动：资金为了追求更高回报而在各国之间跨境流动。驱动力是各国实际利率差——资本从低利率国家流向高利率国家。全球化后这种流动规模巨大且快速",
+        "derivation": "financial capital(金融资本) + flows(流动) → 跨境资金流 → 追逐高回报",
+        "mnemonic": "「资本像水一样往「高处」流（回报率高的地方）；美联储加息时，全球资本都往美国跑，新兴市场货币暴跌」",
+        "example": "Financial capital flows respond quickly to changes in interest rates.",
+        "example_zh": "金融资本流动会对利率变化迅速作出反应。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "foreign assets",
+        "breakdown": "foreign(外国的) + assets(资产)",
+        "meaning_en": "financial investments and property located outside a country's borders",
+        "meaning_zh": "国外资产：位于本国境外的金融投资和资产。美国人持有丰田股票、在东京买房 = 持有国外资产。这些交易构成本国的资本外流",
+        "derivation": "foreign(外国) + assets(资产) → 境外的股债房产 → 资本外流",
+        "mnemonic": "「国外资产 = 「国门之外的东西」；美国苹果在爱尔兰的工厂、美国基金持有的欧洲股票都是」",
+        "example": "American mutual funds buy billions of dollars in foreign assets each year.",
+        "example_zh": "美国共同基金每年购买数十亿美元的国外资产。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "foreign exchange market",
+        "breakdown": "foreign(外国的) + exchange(交换) + market(市场)",
+        "meaning_en": "the global market where currencies are traded and exchange rates are determined by the supply and demand for different currencies",
+        "meaning_zh": "外汇市场：资本流动的必经之地。外国人想买美国资产，就得先到外汇市场把外币换成美元——从而推高美元需求，导致美元升值",
+        "derivation": "foreign exchange market(外汇市场) → 资本流动的「中转站」 → 货币兑换枢纽",
+        "mnemonic": "「所有跨国资本流动最终都落到外汇市场上：换汇 → 买资产。外汇市场因此和可贷资金市场紧密联动」",
+        "example": "Cross-border investment forces investors to transact in the foreign exchange market.",
+        "example_zh": "跨境投资迫使投资者在外汇市场上进行交易。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "loanable funds market",
+        "breakdown": "loanable(可贷的) + funds(资金) + market(市场)",
+        "meaning_en": "the market where savers supply funds available for borrowing and borrowers demand funds, with the real interest rate serving as the price",
+        "meaning_zh": "可贷资金市场：储蓄者（供给）和借款者（需求）交易的市场，实际利率是价格。开放经济下，供给包括国内储蓄+外国资本流入，需求包括国内投资+外国资本外流",
+        "derivation": "loanable funds(可贷资金) + market(市场) → 储蓄-投资市场 → 实际利率决定",
+        "mnemonic": "「可贷资金市场 + 资本流动 = 开放经济；国内利率比外国高 → 外资流入 → 供给右移 → 利率回落」",
+        "example": "In an open economy, the loanable funds market is connected globally.",
+        "example_zh": "在开放经济中，可贷资金市场与全球相连。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "net capital inflow",
+        "breakdown": "net(净) + capital(资本) + inflow(流入)",
+        "meaning_en": "the net flow of foreign investment into a country, representing the difference between foreign investment in the domestic economy and domestic investment abroad",
+        "meaning_zh": "净资本流入：外国流入本国的投资减去本国流向外国的投资。正值意味着该国是「资本净进口国」（如美国），负值意味着是「资本净出口国」（如日本、中国）",
+        "derivation": "net capital inflow(净资本流入) → 流入-流出 → 判断一国是资本进口还是出口",
+        "mnemonic": "「净资本流入和经常账户赤字是「孪生兄弟」：美国经常账户赤字 ≈ 美国净资本流入。国家花得多 = 借得多」",
+        "example": "The U.S. relies on net capital inflow to finance its current account deficit.",
+        "example_zh": "美国依靠净资本流入来为经常账户赤字融资。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "open economy",
+        "breakdown": "open(开放的) + economy(经济)",
+        "meaning_en": "an economy that engages in international trade and allows the free flow of goods, services, and financial capital across borders",
+        "meaning_zh": "开放经济：参与国际贸易、允许商品服务和金融资本跨境自由流动的经济体。AP 宏观 Unit 6 全部建立在开放经济假设上。与「封闭经济」（假想模型）形成对比",
+        "derivation": "open(开放) + economy(经济) → 对外开放 → 商品和资本自由跨境",
+        "mnemonic": "「开放经济 = 有「开门」的经济；商品进出、资金进出都不受限。绝大多数现代经济都是开放经济」",
+        "example": "Most modern economies are open economies integrated into global markets.",
+        "example_zh": "大多数现代经济都是融入全球市场的开放经济。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "real interest rate",
+        "breakdown": "real(实际的) + interest rate(利率)",
+        "meaning_en": "the interest rate adjusted for inflation, reflecting the true purchasing power gained or lost from lending or borrowing",
+        "meaning_zh": "实际利率：名义利率减去通胀率，反映真实购买力的变化。实际利率是驱动国际资本流动的真正价格——资本会从实际利率低的国家流向高的国家（不是名义利率）",
+        "derivation": "real(实际) + interest rate(利率) → 名义利率-通胀率 → 资本流动的真正推手",
+        "mnemonic": "「费雪方程：实际利率 = 名义利率 - 通胀率；阿根廷名义利率100% 但通胀120% → 实际利率 -20% → 资本逃离」",
+        "example": "Capital flows to countries offering the highest real interest rate.",
+        "example_zh": "资本流向实际利率最高的国家。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

@@ -56,6 +56,6 @@ export interface UserData {
   };
 }
 
-export type Subject = "toefl" | "psych" | "csp";
+export type Subject = "toefl" | "psych" | "csp" | "whap";
 
-export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review" | "csp" | "csp-review" | "pick";
+export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review" | "csp" | "csp-review" | "whap" | "whap-review" | "pick";

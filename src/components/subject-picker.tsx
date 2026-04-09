@@ -5,6 +5,7 @@ import { masteredCount } from "../lib/progress.js";
 import { getAllRoots, getRootCount } from "../lib/roots-db.js";
 import { getAllConcepts, getConceptCount } from "../lib/psych-db.js";
 import { getAllTopics, getTopicCount } from "../lib/csp-db.js";
+import { getAllTopics as getAllWhapTopics, getTopicCount as getWhapTopicCount } from "../lib/whap-db.js";
 
 interface SubjectOption {
   key: Subject;
@@ -39,6 +40,12 @@ export default function SubjectPicker({ data, onSelect }: SubjectPickerProps) {
       label: "AP 计算机科学原理",
       mastered: masteredCount(data, getAllTopics()),
       total: getTopicCount(),
+    },
+    {
+      key: "whap",
+      label: "AP 世界历史",
+      mastered: masteredCount(data, getAllWhapTopics()),
+      total: getWhapTopicCount(),
     },
   ];
 

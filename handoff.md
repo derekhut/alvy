@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-09
 Branch: update_version
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE (3 subjects in picker) | Update checker LIVE
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE | AP WHAP batch 1 LIVE (4 subjects in picker) | Update checker LIVE
 
 ## V1 Summary
 
@@ -415,7 +415,9 @@ node dist/index.js doctor   # Environment check
 - `psych.json` content file (26 concepts / 130 terms), `psych-db.ts` query layer
 - AP CSP session and review (`alvy csp`, `alvy csp review`) — same pattern as AP Psych
 - `csp.json` content file (20 concepts / 72 terms), `csp-db.ts` query layer
-- `Subject` type (`"toefl" | "psych" | "csp"`), `"pick"` command, `lastSubject` in settings
+- AP World History session and review (`alvy whap`, `alvy whap review`) — same pattern as AP CSP
+- `whap.json` content file (batch 1: 5 concepts / 68 terms), `whap-db.ts` query layer
+- `Subject` type (`"toefl" | "psych" | "csp" | "whap"`), `"pick"` command, `lastSubject` in settings
 
 ### What's still open
 
@@ -440,13 +442,17 @@ Key refactoring needed:
 Files built:
 - `src/data/psych.json` (26 concepts, content live)
 - `src/data/csp.json` (20 concepts / 72 terms, content live)
-- `src/components/subject-picker.tsx` (arrow-key menu, remember-last, 3 subjects)
+- `src/data/whap.json` (batch 1: 5 concepts / 68 terms, content live — ~260 terms total, 5-6 batches planned)
+- `src/components/subject-picker.tsx` (arrow-key menu, remember-last, 4 subjects)
 - `src/components/psych-session.tsx` (AP Psych daily session)
 - `src/components/psych-review.tsx` (AP Psych review)
 - `src/components/csp-session.tsx` (AP CSP daily session)
 - `src/components/csp-review.tsx` (AP CSP review)
+- `src/components/whap-session.tsx` (AP World History daily session)
+- `src/components/whap-review.tsx` (AP World History review)
 - `src/lib/psych-db.ts` (query layer over psych.json)
 - `src/lib/csp-db.ts` (query layer over csp.json)
+- `src/lib/whap-db.ts` (query layer over whap.json)
 
 Files still needed:
 - `src/components/concept-intro.tsx` (like `root-lesson.tsx` for concepts, if pedagogical model changes)

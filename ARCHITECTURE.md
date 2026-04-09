@@ -2,7 +2,7 @@
 
 ## Summary
 
-alvy is an interactive CLI study tool built with **Ink** (React for terminal) + **TypeScript**. It teaches through walkthrough-then-quiz sessions: students walk through learning material, then get quizzed for active recall. Supports three subjects: TOEFL word roots, AP Psychology, and AP Computer Science Principles. Progress is persisted as JSON at `~/.alvy/data.json`.
+alvy is an interactive CLI study tool built with **Ink** (React for terminal) + **TypeScript**. It teaches through walkthrough-then-quiz sessions: students walk through learning material, then get quizzed for active recall. Supports four subjects: TOEFL word roots, AP Psychology, AP Computer Science Principles, and AP World History. Progress is persisted as JSON at `~/.alvy/data.json`.
 
 ## Multi-Subject Support
 
@@ -10,7 +10,7 @@ alvy supports multiple subjects. `alvy` (no args) shows a subject picker with ar
 
 - **Subject picker at launch** with remember-last (`settings.lastSubject` persisted)
 - **Shared streak and XP** across all subjects (study any subject, streak continues)
-- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (26 concepts / 130 terms), AP CSP (20 concepts / 72 terms)
+- **Current subjects:** TOEFL word roots (30 roots × 5 words), AP Psychology (26 concepts / 130 terms), AP CSP (20 concepts / 72 terms), AP World History (batch 1: 5 concepts / 68 terms)
 - **Generalized `useSessionFlow`** hook (Approach A: refactor to be content-agnostic, not parallel duplication)
 - **Planned:** Namespaced `wordsStudied` array (`vocab:benefit`, `psych:adaptation`) to prevent collisions
 
@@ -22,7 +22,7 @@ See `handoff.md` "AP Subject Expansion" section for full decision log.
 index.tsx          CLI entry point (meow parses args, default → "pick")
   └─ app.tsx       Command router (state-based: "pick" → UpdatePrompt? → SubjectPicker, then resolved command)
        ├─ update-prompt.tsx     Update available prompt (checks npm registry, skip or update)
-       ├─ subject-picker.tsx    Arrow-key subject menu (TOEFL/AP Psych/AP CSP, remember-last)
+       ├─ subject-picker.tsx    Arrow-key subject menu (TOEFL/AP Psych/AP CSP/AP WHAP, remember-last)
        ├─ daily-session.tsx     TOEFL learning flow (state machine)
        │    ├─ dashboard.tsx        Launch screen (mastered count, streak, XP)
        │    ├─ streak-header.tsx    Reusable progress bar
@@ -34,6 +34,8 @@ index.tsx          CLI entry point (meow parses args, default → "pick")
        ├─ psych-review.tsx      AP Psychology review
        ├─ csp-session.tsx       AP CSP learning flow (same state machine)
        ├─ csp-review.tsx        AP CSP review
+       ├─ whap-session.tsx      AP World History learning flow (same state machine)
+       ├─ whap-review.tsx       AP World History review
        ├─ review-session.tsx    Review weak roots (same components as daily)
        ├─ stats.tsx             Export markdown progress summary (both subjects)
        ├─ doctor.tsx            Environment health checks
@@ -134,6 +136,7 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/lib/roots-db.ts` | Query layer over `roots.json`: `getAllRoots()`, `getRootByKey()`, `getRelatedMeanings()`. |
 | `src/lib/psych-db.ts` | Query layer over `psych.json`: `getAllConcepts()`, `getConceptByKey()`, etc. |
 | `src/lib/csp-db.ts` | Query layer over `csp.json`: `getAllTopics()`, `getTopicByKey()`, etc. |
+| `src/lib/whap-db.ts` | Query layer over `whap.json`: `getAllTopics()`, `getTopicByKey()`, etc. |
 | `src/lib/update-check.ts` | Version check against npm registry (2s timeout) + `runUpdate()` via `npm install -g`. |
 | `src/components/update-prompt.tsx` | Update available prompt: arrow-key menu (立即更新/跳过), three phases (prompt/updating/done). |
 | `src/lib/ai.ts` | V2 stub (OpenAI client placeholder). |
@@ -141,6 +144,7 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/data/roots.json` | 20 roots + 10 affixes = 30 entries × 5 words = 150 words. |
 | `src/data/psych.json` | AP Psychology: 26 concepts × ~5 terms = 130 terms. |
 | `src/data/csp.json` | AP CSP: 20 concepts × ~3-6 terms = 72 terms. |
+| `src/data/whap.json` | AP World History batch 1: 5 concepts × ~7-22 terms = 68 terms. |
 | `install.sh` | One-line installer for macOS/Linux. Installs Node.js via nvm if needed, configures npm prefix, installs alvy globally. |
 
 ## What Does NOT Exist (Yet)
@@ -167,6 +171,10 @@ Previously referenced in stale docs but now exist:
 | `csp-review.tsx` | EXISTS. AP CSP review session. |
 | `csp.json` | EXISTS. AP CSP content (20 concepts / 72 terms). |
 | `csp-db.ts` | EXISTS. Query layer over csp.json. |
+| `whap-session.tsx` | EXISTS. AP World History daily session. |
+| `whap-review.tsx` | EXISTS. AP World History review session. |
+| `whap.json` | EXISTS. AP World History content (batch 1: 5 concepts / 68 terms). |
+| `whap-db.ts` | EXISTS. Query layer over whap.json. |
 | `quiz.tsx` | EXISTS. Binary-choice quiz (English word → two Chinese meanings). |
 | `quiz-intro.tsx` | EXISTS. Transition screen before quiz. |
 | `selectReviewMorphemes()` | EXISTS in progress.ts. Prioritizes lowest accuracy roots. |

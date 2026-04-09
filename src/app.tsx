@@ -10,6 +10,8 @@ import PsychSession from "./components/psych-session.js";
 import PsychReview from "./components/psych-review.js";
 import CspSession from "./components/csp-session.js";
 import CspReview from "./components/csp-review.js";
+import WhapSession from "./components/whap-session.js";
+import WhapReview from "./components/whap-review.js";
 import Stats from "./components/stats.js";
 import SubjectPicker from "./components/subject-picker.js";
 import UpdatePrompt from "./components/update-prompt.js";
@@ -44,7 +46,7 @@ export default function App({ command }: AppProps) {
       data.settings.lastSubject = subject;
       saveData(data);
     }
-    setResolved(subject === "psych" ? "psych" : subject === "csp" ? "csp" : "daily");
+    setResolved(subject === "psych" ? "psych" : subject === "csp" ? "csp" : subject === "whap" ? "whap" : "daily");
   }, [data]);
 
   if (resolved === null && data && updateChecked) {
@@ -72,6 +74,10 @@ export default function App({ command }: AppProps) {
       return <CspSession />;
     case "csp-review":
       return <CspReview />;
+    case "whap":
+      return <WhapSession />;
+    case "whap-review":
+      return <WhapReview />;
     case "stats":
       return <Stats />;
     case "doctor":

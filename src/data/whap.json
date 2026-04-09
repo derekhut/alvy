@@ -1,0 +1,732 @@
+[
+  {
+    "root": "Song China & East Asian Trade",
+    "type": "root",
+    "meaning_en": "The economic, cultural, and political developments of Song Dynasty China and their impact on East Asian trade networks",
+    "meaning_zh": "宋朝中国与东亚贸易：宋代经济文化高度发达，儒学官僚体系成熟，推动了东亚贸易网络的繁荣与扩展",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Islamic Civilization & Scholarship", "Africa & Americas"],
+    "words": [
+      {
+        "word": "agricultural innovation",
+        "breakdown": "Agricultural(农业的) + Innovation(创新)",
+        "meaning_en": "New techniques, tools, or methods that improved farming productivity and output.",
+        "meaning_zh": "农业创新：提高农业生产力和产量的新技术、工具或方法，如占城稻的引进使宋朝粮食产量翻倍",
+        "derivation": "Agriculture(农业) + Innovate(革新) → 新型农具和耕作技术 → 粮食增产 → 人口增长 → 经济繁荣",
+        "example": "Agricultural innovation in Song China, such as the introduction of Champa rice, dramatically increased food production.",
+        "example_zh": "宋朝的农业创新，例如引进占城稻，极大地提高了粮食产量。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "artisanal labor",
+        "breakdown": "Artisanal(手工艺的) + Labor(劳动)",
+        "meaning_en": "Skilled manual work performed by craftspeople producing goods by hand.",
+        "meaning_zh": "手工艺劳动：由工匠手工制作商品的技术性劳动，如宋代的瓷器、丝绸和铁器制造",
+        "derivation": "Artisan(工匠) + Labor(劳动) → 能工巧匠精心制作 → 丝绸、瓷器、漆器等精品",
+        "example": "Artisanal labor in Chinese workshops produced silk and porcelain that were highly valued along trade routes.",
+        "example_zh": "中国作坊中的手工艺劳动生产出的丝绸和瓷器在贸易路线上备受珍视。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "branches of Buddhism",
+        "breakdown": "Branches(分支) + of + Buddhism(佛教)",
+        "meaning_en": "Different schools and interpretations of Buddhist teachings that developed and spread across Asia, such as Mahayana and Theravada Buddhism.",
+        "meaning_zh": "佛教分支：佛教发展出的不同学派和教义诠释，如大乘佛教（北传）和上座部佛教（南传），各有侧重",
+        "derivation": "Branch(分支) → 佛教在传播中分化 → 大乘(Mahayana)强调普度众生 + 上座部(Theravada)强调个人修行",
+        "example": "Different branches of Buddhism spread throughout East and Southeast Asia via merchant and missionary networks.",
+        "example_zh": "佛教的不同分支通过商人和传教士网络传播到了东亚和东南亚各地。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Buddhism",
+        "breakdown": "Buddha(佛陀) + -ism(主义/信仰)",
+        "meaning_en": "A major world religion and philosophical tradition that spread throughout Asia via trade networks.",
+        "meaning_zh": "佛教：世界主要宗教之一，起源于古印度，通过丝绸之路等贸易网络传遍亚洲，深刻影响东亚文化",
+        "derivation": "Buddha(觉悟者) + -ism(信仰体系) → 释迦牟尼创立 → 沿丝路传入中国 → 融合本土文化",
+        "example": "Buddhism spread from India to China, Korea, and Japan through trade routes and cultural exchanges.",
+        "example_zh": "佛教从印度经由贸易路线和文化交流传播到了中国、朝鲜和日本。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Chinese cultural traditions",
+        "breakdown": "Chinese(中国的) + Cultural(文化的) + Traditions(传统)",
+        "meaning_en": "The customs, beliefs, practices, and values that originated in China and were transmitted across generations and to neighboring regions.",
+        "meaning_zh": "中国文化传统：起源于中国并代代相传、影响周边地区的风俗、信仰和价值观，如儒学、科举、汉字文化圈",
+        "derivation": "Cultural(文化) + Tradition(传统) → 儒释道三教合一 + 科举取士 + 汉字书写 → 辐射朝鲜、日本、越南",
+        "example": "Chinese cultural traditions, including Confucianism and the civil service examination, influenced Korea and Japan.",
+        "example_zh": "中国文化传统，包括儒学和科举制度，深刻影响了朝鲜和日本。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "commercialized economy",
+        "breakdown": "Commercialized(商业化的) + Economy(经济)",
+        "meaning_en": "An economy increasingly based on buying and selling goods through markets and trade rather than subsistence or barter.",
+        "meaning_zh": "商业化经济：以市场买卖和贸易为主导的经济形态，取代了自给自足的自然经济，宋朝是典型代表",
+        "derivation": "Commerce(商业) + -ize(使…化) → 从自然经济到商品经济 → 纸币出现 + 城市繁荣 + 海上贸易兴盛",
+        "example": "Song China developed the world's first commercialized economy, with paper money and bustling urban markets.",
+        "example_zh": "宋朝发展出了世界上最早的商业化经济，出现了纸币和繁荣的城市市场。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Confucianism",
+        "breakdown": "Confucius(孔子) + -ism(主义/学说)",
+        "meaning_en": "A philosophical and ethical system based on the teachings of Confucius that emphasized social hierarchy, filial piety, and proper conduct, used by Chinese dynasties to justify their rule.",
+        "meaning_zh": "儒学/儒家思想：基于孔子教导的哲学伦理体系，强调社会等级、孝道和礼仪规范，被历代王朝用作治国根基",
+        "derivation": "Confucius(孔子) → 仁义礼智信 → 君臣父子等社会秩序 → 科举考儒经 → 官僚体系的思想基础",
+        "example": "Confucianism provided the ideological foundation for Song China's imperial bureaucracy and civil service exams.",
+        "example_zh": "儒学为宋朝的官僚体制和科举考试提供了思想基础。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "imperial bureaucracy",
+        "breakdown": "Imperial(帝国的) + Bureaucracy(官僚制度)",
+        "meaning_en": "A centralized system of government administration used by empires like the Song Dynasty to organize and control state functions.",
+        "meaning_zh": "帝国官僚体制：帝国用来组织和控制国家职能的中央集权行政体系，宋朝通过科举选拔文官，体制高度成熟",
+        "derivation": "Imperial(帝国) + Bureau(办公室) + -cracy(统治) → 皇帝 → 中央六部 → 地方官员 → 层层管理",
+        "example": "The Song Dynasty's imperial bureaucracy relied on merit-based civil service exams to select government officials.",
+        "example_zh": "宋朝的帝国官僚体制依靠以才取人的科举考试来选拔政府官员。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "manufacturing innovation",
+        "breakdown": "Manufacturing(制造业) + Innovation(创新)",
+        "meaning_en": "New techniques, tools, or methods that improved the production of goods and crafted items.",
+        "meaning_zh": "制造业创新：改进商品生产的新技术和新方法，如宋朝的活字印刷术、火药武器和先进的冶铁技术",
+        "derivation": "Manufacture(制造) + Innovate(革新) → 活字印刷 + 火药 + 指南针 → 宋代三大技术突破",
+        "example": "Manufacturing innovation in Song China led to advances in iron production and the invention of movable type printing.",
+        "example_zh": "宋朝的制造业创新推动了冶铁技术进步和活字印刷术的发明。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "networks of exchange",
+        "breakdown": "Networks(网络) + of + Exchange(交换)",
+        "meaning_en": "Interconnected systems of trade and cultural interaction spanning vast distances, developed during the period c. 1200 to c. 1450.",
+        "meaning_zh": "交换网络：跨越广阔距离的贸易和文化互动系统，如丝绸之路、印度洋贸易网和跨撒哈拉贸易路线",
+        "derivation": "Network(网络) + Exchange(交换) → 陆上丝绸之路 + 海上丝绸之路 + 跨撒哈拉商路 → 连接欧亚非",
+        "example": "Networks of exchange connected Song China to the Islamic world and beyond through overland and maritime routes.",
+        "example_zh": "交换网络通过陆路和海路将宋朝与伊斯兰世界及更远地区连接起来。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "peasant labor",
+        "breakdown": "Peasant(农民) + Labor(劳动)",
+        "meaning_en": "Work performed by rural agricultural workers whose labor intensified to meet increased demand for food and goods in expanding trade networks.",
+        "meaning_zh": "农民劳动：农村劳动者从事的农业生产，随着贸易扩张和需求增长，劳动强度不断加大",
+        "derivation": "Peasant(农民) + Labor(劳作) → 底层劳动力 → 供养城市和贸易 → 劳动强度随商品需求而增加",
+        "example": "Peasant labor intensified as Song China's commercialized economy demanded more agricultural surplus for trade.",
+        "example_zh": "随着宋朝商业化经济对贸易所需农业剩余的需求增加，农民劳动也随之加强。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "productive capacity",
+        "breakdown": "Productive(生产的) + Capacity(能力/产能)",
+        "meaning_en": "The ability of a society or region to produce goods, which increased due to expanded trade networks and technological innovations.",
+        "meaning_zh": "生产能力：一个社会或地区生产商品的能力，因贸易网络扩展和技术创新而显著提升",
+        "derivation": "Productive(高产的) + Capacity(容量) → 技术进步 + 劳动力增长 → 产出增加 → 可供贸易的商品更多",
+        "example": "Song China's productive capacity expanded through agricultural and manufacturing innovations.",
+        "example_zh": "宋朝通过农业和制造业创新扩大了生产能力。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Song China",
+        "breakdown": "Song(宋) + China(中国)",
+        "meaning_en": "A Chinese dynasty that ruled from 960-1279 CE and utilized Confucianism and imperial bureaucracy to maintain its authority.",
+        "meaning_zh": "宋朝：公元960-1279年统治中国的王朝，以儒学和官僚体制维系统治，经济文化高度发达，被称为「中国的文艺复兴」",
+        "derivation": "宋太祖赵匡胤建立 → 重文抑武 → 科举鼎盛 + 经济繁荣 + 技术领先 → 但军事较弱终亡于蒙古",
+        "example": "Song China was one of the most economically advanced civilizations of the medieval world.",
+        "example_zh": "宋朝是中世纪世界最经济发达的文明之一。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Islamic Civilization & Scholarship",
+    "type": "root",
+    "meaning_en": "The political, intellectual, and religious developments of the Islamic world from 1200-1450",
+    "meaning_zh": "伊斯兰文明与学术：1200-1450年间伊斯兰世界的政治演变、知识创新和宗教传播，是连接东西方的文化桥梁",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Song China & East Asian Trade", "South & Southeast Asian States"],
+    "words": [
+      {
+        "word": "Abbasid Caliphate",
+        "breakdown": "Abbasid(阿拔斯) + Caliphate(哈里发国)",
+        "meaning_en": "The Islamic empire that ruled from the 8th to 13th centuries; its fragmentation in the 12th-13th centuries led to the emergence of new Islamic political entities.",
+        "meaning_zh": "阿拔斯王朝：8至13世纪统治伊斯兰帝国的王朝，其碎片化催生了多个新的伊斯兰政治实体",
+        "derivation": "Abbasid(阿拔斯家族) + Caliph(哈里发/继承人) → 伊斯兰黄金时代 → 后期分裂 → 突厥人崛起",
+        "example": "The fragmentation of the Abbasid Caliphate allowed new Islamic states to emerge across the Middle East.",
+        "example_zh": "阿拔斯王朝的分裂使新的伊斯兰国家在中东各地涌现。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "advances in literature",
+        "breakdown": "Advances(进步) + in + Literature(文学)",
+        "meaning_en": "Literary innovations and creative works produced by Islamic scholars and writers.",
+        "meaning_zh": "文学进步：伊斯兰学者和作家创作的文学创新和作品，如《一千零一夜》和鲁米的诗歌",
+        "derivation": "Advance(推进) + Literature(文学) → 阿拉伯语文学黄金期 → 诗歌、散文、故事集蓬勃发展",
+        "example": "Advances in literature during the Islamic Golden Age produced enduring works like the tales of One Thousand and One Nights.",
+        "example_zh": "伊斯兰黄金时代的文学进步产生了《一千零一夜》等流传至今的经典作品。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "advances in mathematics",
+        "breakdown": "Advances(进步) + in + Mathematics(数学)",
+        "meaning_en": "Mathematical innovations and developments made by Islamic scholars that contributed to the advancement of the discipline.",
+        "meaning_zh": "数学进步：伊斯兰学者在数学领域的创新，如代数学的创立、阿拉伯数字的传播和三角学的发展",
+        "derivation": "Advance(推进) + Mathematics(数学) → 花拉子密创立代数(al-jabr) → 传入欧洲 → 现代数学基础",
+        "example": "Advances in mathematics by Muslim scholars, including the development of algebra, transformed the field.",
+        "example_zh": "穆斯林学者在数学方面的进步，包括代数学的发展，改变了这一领域。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "advances in medicine",
+        "breakdown": "Advances(进步) + in + Medicine(医学)",
+        "meaning_en": "Medical innovations and improvements in medical knowledge developed by Islamic physicians and scholars.",
+        "meaning_zh": "医学进步：伊斯兰医师和学者在医学知识上的创新，如伊本·西那的《医典》成为欧洲医学教材数百年",
+        "derivation": "Advance(推进) + Medicine(医学) → 伊本·西那(Avicenna)《医典》→ 系统化诊断和治疗 → 影响欧洲数世纪",
+        "example": "Advances in medicine by scholars like Ibn Sina set the standard for medical practice across Eurasia.",
+        "example_zh": "伊本·西那等学者在医学方面的进步为整个欧亚大陆的医学实践树立了标准。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "belief systems",
+        "breakdown": "Belief(信仰) + Systems(体系)",
+        "meaning_en": "Organized sets of religious and philosophical ideas that shape the values, practices, and social structures of societies.",
+        "meaning_zh": "信仰体系：塑造社会价值观、习俗和社会结构的有组织的宗教和哲学思想体系",
+        "derivation": "Belief(信念) + System(体系) → 宗教+哲学+伦理 → 影响法律、教育、社会组织 → 文明的精神根基",
+        "example": "Belief systems such as Islam, Christianity, and Hinduism shaped political and social structures across Afro-Eurasia.",
+        "example_zh": "伊斯兰教、基督教和印度教等信仰体系塑造了整个亚非欧的政治和社会结构。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Christianity",
+        "breakdown": "Christ(基督) + -ianity(信仰/教义)",
+        "meaning_en": "A monotheistic religion whose core beliefs and practices shaped societies in Africa and Asia during the period from 1200-1450.",
+        "meaning_zh": "基督教：一神教，其核心信仰和实践在1200-1450年间深刻影响了非洲和亚洲的社会，如埃塞俄比亚的基督教王国",
+        "derivation": "Christ(基督/救世主) + -ianity(信仰) → 耶稣基督的教导 → 传播至欧洲、非洲、亚洲",
+        "example": "Christianity continued to influence societies in Ethiopia and parts of Asia during the medieval period.",
+        "example_zh": "基督教在中世纪时期持续影响着埃塞俄比亚和亚洲部分地区的社会。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Dar al-Islam",
+        "breakdown": "Dar(领域/家园) + al-Islam(伊斯兰)",
+        "meaning_en": "The Islamic world or the lands under Islamic rule and cultural influence.",
+        "meaning_zh": "伊斯兰世界：伊斯兰统治和文化影响下的广大地区，从西班牙到东南亚横跨三大洲",
+        "derivation": "Dar(家/领域) + al-Islam(伊斯兰) → 伊斯兰的家园 → 从伊比利亚半岛到东南亚的广袤区域",
+        "example": "Dar al-Islam stretched from Spain to Southeast Asia, creating a vast zone of shared culture and commerce.",
+        "example_zh": "伊斯兰世界从西班牙延伸至东南亚，创造了一个广阔的文化和商业共享区域。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Delhi sultanates",
+        "breakdown": "Delhi(德里) + Sultanates(苏丹国)",
+        "meaning_en": "Muslim sultanates that ruled parts of the Indian subcontinent, establishing Islamic political authority in South Asia.",
+        "meaning_zh": "德里苏丹国：统治印度次大陆部分地区的穆斯林政权，在南亚建立了伊斯兰政治权威",
+        "derivation": "Delhi(德里) + Sultan(苏丹/统治者) → 穆斯林征服北印度 → 五个王朝相继统治 → 伊斯兰与印度文化交融",
+        "example": "The Delhi sultanates introduced Islamic governance and culture to the Indian subcontinent.",
+        "example_zh": "德里苏丹国将伊斯兰治理方式和文化引入了印度次大陆。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Greek moral and natural philosophy",
+        "breakdown": "Greek(希腊的) + Moral(道德) + and + Natural(自然) + Philosophy(哲学)",
+        "meaning_en": "Ancient Greek philosophical traditions concerning ethics and the study of the natural world that were preserved and commented upon by Muslim scholars.",
+        "meaning_zh": "希腊道德与自然哲学：古希腊关于伦理和自然世界研究的哲学传统，被穆斯林学者翻译、保存和注解",
+        "derivation": "Greek(希腊) + Philosophy(哲学) → 亚里士多德+柏拉图 → 穆斯林翻译保存 → 后传回欧洲 → 文艺复兴的种子",
+        "example": "Muslim scholars preserved and expanded upon Greek moral and natural philosophy, which later influenced the European Renaissance.",
+        "example_zh": "穆斯林学者保存并发展了希腊道德与自然哲学，后来影响了欧洲文艺复兴。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "House of Wisdom",
+        "breakdown": "House(殿堂) + of + Wisdom(智慧)",
+        "meaning_en": "An intellectual center in Abbasid Baghdad where scholars translated, preserved, and advanced knowledge in mathematics, astronomy, medicine, and philosophy.",
+        "meaning_zh": "智慧之家：阿拔斯王朝巴格达的学术中心，学者在此翻译、保存并推进数学、天文、医学和哲学知识",
+        "derivation": "House(殿堂) + Wisdom(智慧) → 巴格达的学术殿堂 → 翻译希腊/波斯/印度典籍 → 知识熔炉",
+        "example": "The House of Wisdom in Baghdad became the intellectual center of the Islamic Golden Age.",
+        "example_zh": "巴格达的智慧之家成为伊斯兰黄金时代的学术中心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "intellectual innovation",
+        "breakdown": "Intellectual(知识的/智力的) + Innovation(创新)",
+        "meaning_en": "The development of new ideas, discoveries, and advances in knowledge within Islamic civilization during this period.",
+        "meaning_zh": "知识创新：伊斯兰文明在这一时期发展出的新思想、新发现和知识进步",
+        "derivation": "Intellect(智力) + Innovate(革新) → 翻译运动 + 原创研究 → 数学/医学/天文/光学全面突破",
+        "example": "Intellectual innovation in the Islamic world laid the groundwork for many modern scientific disciplines.",
+        "example_zh": "伊斯兰世界的知识创新为许多现代科学学科奠定了基础。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Islam",
+        "breakdown": "Islam(伊斯兰/顺从)",
+        "meaning_en": "A monotheistic religion founded in the 7th century based on the teachings of the Prophet Muhammad and the Quran.",
+        "meaning_zh": "伊斯兰教：7世纪创立的一神教，基于先知穆罕默德的教导和《古兰经》，信徒称为穆斯林",
+        "derivation": "Islam(顺从真主) → 五功：念/礼/斋/课/朝 → 从阿拉伯半岛迅速扩展至三大洲",
+        "example": "Islam spread rapidly across Afro-Eurasia through trade, military expansion, and the efforts of Sufi missionaries.",
+        "example_zh": "伊斯兰教通过贸易、军事扩张和苏菲派传教士的努力迅速传遍亚非欧。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Islamic states",
+        "breakdown": "Islamic(伊斯兰的) + States(国家)",
+        "meaning_en": "Political entities governed by Islamic rulers that emerged as the Abbasid Caliphate fragmented, often dominated by Turkic peoples.",
+        "meaning_zh": "伊斯兰国家：阿拔斯王朝碎片化后出现的由伊斯兰统治者治理的政治实体，多由突厥人主导",
+        "derivation": "Islamic(伊斯兰的) + State(国家) → 阿拔斯分裂 → 突厥人建立多个苏丹国 → 各自独立统治",
+        "example": "New Islamic states emerged across the Middle East and Central Asia after the Abbasid Caliphate's decline.",
+        "example_zh": "阿拔斯王朝衰落后，新的伊斯兰国家在中东和中亚各地涌现。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Judaism",
+        "breakdown": "Judah(犹大) + -ism(信仰/教义)",
+        "meaning_en": "An ancient monotheistic religion whose beliefs and practices continued to influence societies in Africa and Asia from 1200-1450.",
+        "meaning_zh": "犹太教：古老的一神教，其信仰和实践在1200-1450年间继续影响非洲和亚洲社会",
+        "derivation": "Judah(犹大部落) + -ism(信仰) → 最早的一神教之一 → 《托拉》为经典 → 基督教和伊斯兰教的共同源头",
+        "example": "Judaism, alongside Christianity and Islam, continued to shape communities across Afro-Eurasia during this period.",
+        "example_zh": "犹太教与基督教和伊斯兰教一起，在这一时期继续塑造着亚非欧的社区。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mamluk sultanate",
+        "breakdown": "Mamluk(马穆鲁克/奴隶兵) + Sultanate(苏丹国)",
+        "meaning_en": "A military state in Egypt ruled by the Mamluks, a slave-soldier class that became a dominant political force in the Islamic world.",
+        "meaning_zh": "马穆鲁克苏丹国：由马穆鲁克（奴隶出身的军人阶层）统治的埃及军事政权，成功抵御蒙古入侵和十字军东征",
+        "derivation": "Mamluk(被拥有者/奴隶兵) + Sultan(苏丹) → 奴隶出身的军人夺权建国 → 击退蒙古军 → 控制埃及和叙利亚",
+        "example": "The Mamluk sultanate in Egypt successfully repelled the Mongol invasion at the Battle of Ain Jalut in 1260.",
+        "example_zh": "埃及的马穆鲁克苏丹国在1260年的艾因贾鲁特战役中成功击退了蒙古入侵。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "military expansion",
+        "breakdown": "Military(军事的) + Expansion(扩张)",
+        "meaning_en": "The process of extending territorial control and political authority through military conquest and warfare.",
+        "meaning_zh": "军事扩张：通过军事征服和战争扩展领土控制和政治权威的过程",
+        "derivation": "Military(军队) + Expand(扩展) → 武力征服新领土 → 建立统治 → 传播文化和宗教",
+        "example": "Military expansion by Islamic states spread Muslim rule across large parts of Afro-Eurasia.",
+        "example_zh": "伊斯兰国家的军事扩张将穆斯林统治扩展到亚非欧大片地区。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Muslim rule",
+        "breakdown": "Muslim(穆斯林) + Rule(统治)",
+        "meaning_en": "The political authority and governance exercised by Islamic states and leaders over territories in Afro-Eurasia.",
+        "meaning_zh": "穆斯林统治：伊斯兰国家和领袖在亚非欧领土上行使的政治权威和治理",
+        "derivation": "Muslim(穆斯林) + Rule(统治) → 伊斯兰法(Sharia)治国 → 宗教宽容政策 → 多元文化共存",
+        "example": "Under Muslim rule, diverse religious communities often coexisted through policies of relative tolerance.",
+        "example_zh": "在穆斯林统治下，不同宗教社区通常通过相对宽容的政策实现共存。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "religious practices",
+        "breakdown": "Religious(宗教的) + Practices(实践/仪式)",
+        "meaning_en": "The rituals, customs, and observances through which believers express and live out their faith traditions.",
+        "meaning_zh": "宗教实践：信徒表达和践行其信仰传统的仪式、习俗和宗教活动",
+        "derivation": "Religion(宗教) + Practice(实践) → 祈祷、斋戒、朝圣等具体行为 → 信仰的日常化表达",
+        "example": "Religious practices such as prayer, pilgrimage, and fasting were central to daily life in Dar al-Islam.",
+        "example_zh": "祈祷、朝圣和斋戒等宗教实践是伊斯兰世界日常生活的核心。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Seljuk Empire",
+        "breakdown": "Seljuk(塞尔柱) + Empire(帝国)",
+        "meaning_en": "A major Muslim state and empire that ruled parts of Asia Minor, the Levant, and Persia during the medieval period.",
+        "meaning_zh": "塞尔柱帝国：中世纪统治小亚细亚、黎凡特和波斯部分地区的主要穆斯林帝国，是突厥人建立的政权",
+        "derivation": "Seljuk(塞尔柱家族) + Empire(帝国) → 突厥人西迁 → 击败拜占庭 → 控制中东核心区域",
+        "example": "The Seljuk Empire's victory at the Battle of Manzikert in 1071 opened Asia Minor to Turkic settlement.",
+        "example_zh": "塞尔柱帝国在1071年曼齐刻尔特战役中的胜利打开了小亚细亚的突厥人定居之门。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sufis",
+        "breakdown": "Sufi(苏菲派/神秘主义者)",
+        "meaning_en": "Islamic mystics and spiritual teachers who played a key role in spreading Islam through personal devotion and missionary activities.",
+        "meaning_zh": "苏菲派：伊斯兰神秘主义者和精神导师，通过个人虔修和传教活动在传播伊斯兰教中发挥关键作用",
+        "derivation": "Sufi(源自suf/羊毛衣) → 追求与真主的灵性合一 → 以音乐、诗歌、旋转舞表达信仰 → 深入民间传教",
+        "example": "Sufis played a crucial role in spreading Islam to South and Southeast Asia through peaceful missionary work.",
+        "example_zh": "苏菲派通过和平的传教活动在将伊斯兰教传播到南亚和东南亚方面发挥了关键作用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "translation movement",
+        "breakdown": "Translation(翻译) + Movement(运动)",
+        "meaning_en": "The systematic effort by Muslim scholars to translate and preserve Greek, Persian, and other texts into Arabic.",
+        "meaning_zh": "翻译运动：穆斯林学者系统性地将希腊、波斯和其他文本翻译为阿拉伯语的学术运动",
+        "derivation": "Translate(翻译) + Movement(运动) → 大规模翻译希腊/波斯/印度典籍 → 知识保存 → 为文艺复兴播种",
+        "example": "The translation movement preserved classical Greek texts that would later spark the European Renaissance.",
+        "example_zh": "翻译运动保存了古典希腊文献，后来这些文献点燃了欧洲文艺复兴。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Turkic peoples",
+        "breakdown": "Turkic(突厥的) + Peoples(民族)",
+        "meaning_en": "Central Asian ethnic groups who came to dominate many of the new Islamic political entities that emerged after the Abbasid Caliphate's fragmentation.",
+        "meaning_zh": "突厥民族：中亚游牧民族，在阿拔斯王朝碎片化后主导了许多新兴伊斯兰政治实体",
+        "derivation": "Turkic(突厥) + Peoples(民族) → 中亚草原骑兵 → 皈依伊斯兰 → 建立塞尔柱、德里苏丹国等政权",
+        "example": "Turkic peoples migrated from Central Asia and established powerful Islamic states across the Middle East.",
+        "example_zh": "突厥民族从中亚迁徙并在中东各地建立了强大的伊斯兰国家。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "South & Southeast Asian States",
+    "type": "root",
+    "meaning_en": "The diverse political entities, religious traditions, and state-building processes in South and Southeast Asia from 1200-1450",
+    "meaning_zh": "南亚与东南亚国家：1200-1450年间南亚和东南亚多元的政治实体、宗教传统和国家构建过程",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Islamic Civilization & Scholarship", "Song China & East Asian Trade"],
+    "words": [
+      {
+        "word": "Bhakti movement",
+        "breakdown": "Bhakti(虔信/奉爱) + Movement(运动)",
+        "meaning_en": "A Hindu religious movement emphasizing devotion to a personal deity and emotional connection to the divine, influential in South Asia during this period.",
+        "meaning_zh": "虔信运动：印度教的一场宗教运动，强调对个人神灵的虔诚崇拜和与神的情感联系，打破种姓壁垒",
+        "derivation": "Bhakti(虔诚奉爱) + Movement(运动) → 不需祭司中介 → 直接与神沟通 → 挑战种姓制度的平民化信仰",
+        "example": "The Bhakti movement challenged caste boundaries by teaching that devotion to God was open to all people.",
+        "example_zh": "虔信运动通过宣扬对神的虔诚向所有人开放来挑战种姓界限。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Buddhist monasticism",
+        "breakdown": "Buddhist(佛教的) + Monasticism(修道制度)",
+        "meaning_en": "The religious practice of Buddhist monks and nuns living in monastic communities devoted to spiritual discipline and the study of Buddhist teachings.",
+        "meaning_zh": "佛教修道制度：佛教僧尼在寺院社区中生活、修行和研习佛法的宗教实践",
+        "derivation": "Buddhist(佛教) + Monastery(寺院) → 僧侣出家修行 → 持戒/禅修/弘法 → 寺院也是教育和文化中心",
+        "example": "Buddhist monasticism supported the preservation of texts and the spread of literacy across South and Southeast Asia.",
+        "example_zh": "佛教修道制度促进了文本保存和识字能力在南亚和东南亚的传播。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "core beliefs and practices",
+        "breakdown": "Core(核心的) + Beliefs(信仰) + and + Practices(实践)",
+        "meaning_en": "The fundamental doctrines and rituals that define and are central to a particular religion or belief system.",
+        "meaning_zh": "核心信仰与实践：定义一种宗教或信仰体系的基本教义和仪式，是该信仰的根本特征",
+        "derivation": "Core(核心) + Belief(信仰) + Practice(实践) → 每种宗教最根本的教义和仪式 → 信徒身份认同的基础",
+        "example": "The core beliefs and practices of Hinduism, Buddhism, and Islam shaped state formation in South and Southeast Asia.",
+        "example_zh": "印度教、佛教和伊斯兰教的核心信仰与实践塑造了南亚和东南亚的国家形成。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hinduism",
+        "breakdown": "Hindu(印度的) + -ism(信仰/教义)",
+        "meaning_en": "A major world religion originating in South Asia, characterized by diverse beliefs, practices, and a complex pantheon of deities.",
+        "meaning_zh": "印度教：起源于南亚的世界主要宗教，以多元信仰、复杂神灵体系和种姓制度为特征",
+        "derivation": "Hindu(印度河流域) + -ism(信仰) → 多神崇拜 + 轮回转世 + 种姓制度 → 深刻塑造南亚社会结构",
+        "example": "Hinduism provided the religious and social framework for the Vijayanagara Empire and Rajput kingdoms.",
+        "example_zh": "印度教为维贾亚纳加尔帝国和拉杰普特王国提供了宗教和社会框架。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Khmer Empire",
+        "breakdown": "Khmer(高棉) + Empire(帝国)",
+        "meaning_en": "A major Southeast Asian state centered in Cambodia that maintained power through agricultural innovation, religious patronage, and administrative systems.",
+        "meaning_zh": "高棉帝国：以柬埔寨为中心的东南亚大国，通过农业创新、宗教赞助和行政体系维持统治，建造了吴哥窟",
+        "derivation": "Khmer(高棉民族) + Empire(帝国) → 修建精密水利系统 → 农业繁荣 → 建造吴哥窟 → 东南亚最辉煌的文明",
+        "example": "The Khmer Empire built the magnificent temple complex of Angkor Wat, reflecting Hindu and Buddhist influences.",
+        "example_zh": "高棉帝国建造了宏伟的吴哥窟寺庙群，体现了印度教和佛教的影响。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Majapahit",
+        "breakdown": "Majapahit(满者伯夷)",
+        "meaning_en": "A maritime empire in Southeast Asia (13th-15th centuries) that maintained power through naval control and tributary relationships with neighboring states.",
+        "meaning_zh": "满者伯夷：东南亚海上帝国（13-15世纪），通过海军控制和朝贡体系维持权力，统治今印度尼西亚大部",
+        "derivation": "Majapahit(满者伯夷) → 爪哇岛崛起 → 控制马六甲海峡贸易 → 东南亚最大海上帝国",
+        "example": "The Majapahit Empire controlled much of the Indonesian archipelago through its powerful navy and tributary system.",
+        "example_zh": "满者伯夷帝国通过其强大的海军和朝贡体系控制了印度尼西亚群岛的大部分地区。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Rajput kingdoms",
+        "breakdown": "Rajput(拉杰普特/王族之子) + Kingdoms(王国)",
+        "meaning_en": "Hindu warrior states in North and Central India that maintained power through military prowess and feudal political structures.",
+        "meaning_zh": "拉杰普特王国：印度北部和中部的印度教武士政权，以军事实力和封建政治结构维系统治",
+        "derivation": "Raj(王) + Put(子) → 王族之子 → 以武勇著称的印度教武士贵族 → 封建割据抵抗外来入侵",
+        "example": "The Rajput kingdoms fiercely resisted Muslim incursions into northern India for centuries.",
+        "example_zh": "拉杰普特王国数百年来激烈抵抗穆斯林对北印度的入侵。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sinhala dynasties",
+        "breakdown": "Sinhala(僧伽罗) + Dynasties(王朝)",
+        "meaning_en": "Ruling families in Sri Lanka that maintained power through control of the island's resources and Buddhist religious authority.",
+        "meaning_zh": "僧伽罗王朝：斯里兰卡的统治家族，通过控制岛屿资源和佛教宗教权威维持统治",
+        "derivation": "Sinhala(僧伽罗/狮子族) + Dynasty(王朝) → 斯里兰卡的佛教统治者 → 以佛教正统性巩固政权",
+        "example": "The Sinhala dynasties promoted Theravada Buddhism as the official religion of Sri Lanka.",
+        "example_zh": "僧伽罗王朝将上座部佛教推广为斯里兰卡的官方宗教。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Srivijaya Empire",
+        "breakdown": "Srivijaya(室利佛逝/三佛齐)",
+        "meaning_en": "A maritime Buddhist empire in Southeast Asia (7th-13th centuries) that controlled trade routes and maintained power through naval dominance.",
+        "meaning_zh": "室利佛逝帝国：东南亚海上佛教帝国（7-13世纪），通过海军优势控制贸易路线，中国史书称「三佛齐」",
+        "derivation": "Sri(吉祥) + Vijaya(胜利) → 苏门答腊岛崛起 → 控制马六甲海峡 → 海上丝绸之路的关键节点",
+        "example": "The Srivijaya Empire dominated maritime trade routes between China and India for several centuries.",
+        "example_zh": "室利佛逝帝国数个世纪以来主导着中国和印度之间的海上贸易路线。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "state building",
+        "breakdown": "State(国家) + Building(构建)",
+        "meaning_en": "The process by which political entities establish and strengthen their governmental institutions, territorial control, and administrative systems.",
+        "meaning_zh": "国家构建：政治实体建立和加强政府机构、领土控制和行政体系的过程",
+        "derivation": "State(国家) + Build(建设) → 建立军队 + 设立官僚机构 + 制定法律 + 征税 → 国家的系统化建设",
+        "example": "State building in South and Southeast Asia drew on Hindu, Buddhist, and Islamic traditions of governance.",
+        "example_zh": "南亚和东南亚的国家构建借鉴了印度教、佛教和伊斯兰教的治理传统。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sufism",
+        "breakdown": "Sufi(苏菲) + -ism(主义/信仰)",
+        "meaning_en": "A mystical branch of Islam emphasizing spiritual experience and personal connection to God, which spread through South and Southeast Asia.",
+        "meaning_zh": "苏菲主义：伊斯兰教的神秘主义分支，强调灵性体验和与真主的个人联系，在南亚和东南亚广泛传播",
+        "derivation": "Sufi(苏菲) + -ism(主义) → 追求内心灵性体验 → 通过音乐、诗歌、冥想接近真主 → 以温和方式传播伊斯兰",
+        "example": "Sufism attracted converts in South and Southeast Asia through its emphasis on personal spiritual experience.",
+        "example_zh": "苏菲主义通过强调个人灵性体验在南亚和东南亚吸引了大量皈依者。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Sukhothai kingdom",
+        "breakdown": "Sukhothai(素可泰) + Kingdom(王国)",
+        "meaning_en": "A Thai state in Southeast Asia (13th-15th centuries) that developed power through administrative organization and cultural patronage.",
+        "meaning_zh": "素可泰王国：东南亚的泰族政权（13-15世纪），通过行政组织和文化赞助发展国力，被视为泰国历史起源",
+        "derivation": "Sukhothai(幸福的黎明) → 泰族第一个独立王国 → 创制泰文 + 弘扬上座部佛教 → 泰国文明的摇篮",
+        "example": "The Sukhothai kingdom is considered the cradle of Thai civilization and the birthplace of the Thai script.",
+        "example_zh": "素可泰王国被认为是泰国文明的摇篮和泰文的诞生地。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Vijayanagara Empire",
+        "breakdown": "Vijayanagara(维贾亚纳加尔/胜利之城) + Empire(帝国)",
+        "meaning_en": "A major Hindu state in South India (1336-1646) that maintained power through military strength and administrative organization.",
+        "meaning_zh": "维贾亚纳加尔帝国：南印度的印度教大国（1336-1646），以军事力量和行政组织维持统治，抵抗北方穆斯林政权",
+        "derivation": "Vijaya(胜利) + Nagara(城市) → 胜利之城 → 南印度最后的印度教帝国 → 对抗德里苏丹国的屏障",
+        "example": "The Vijayanagara Empire served as a bulwark of Hindu culture against the expanding Delhi sultanates.",
+        "example_zh": "维贾亚纳加尔帝国是抵抗德里苏丹国扩张的印度教文化堡垒。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Africa & Americas",
+    "type": "root",
+    "meaning_en": "The diverse state systems and civilizations that developed in Africa and the Americas from 1200-1450",
+    "meaning_zh": "非洲与美洲：1200-1450年间非洲和美洲发展出的多元国家体系和文明，展现了不同环境下的政治创新",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Song China & East Asian Trade", "Medieval Europe"],
+    "words": [
+      {
+        "word": "Aztec Empire",
+        "breakdown": "Aztec(阿兹特克) + Empire(帝国)",
+        "meaning_en": "A major Mesoamerican state system that dominated central Mexico from the 14th to 16th centuries, known for its military expansion and complex administrative structure.",
+        "meaning_zh": "阿兹特克帝国：14至16世纪主导中美洲的大国，以军事扩张、人祭仪式和复杂行政结构闻名",
+        "derivation": "Aztec(阿兹特克人) + Empire(帝国) → 特诺奇蒂特兰建城 → 三城同盟 → 军事征服 → 朝贡体系控制中墨西哥",
+        "example": "The Aztec Empire controlled central Mexico through military conquest and a vast tributary system.",
+        "example_zh": "阿兹特克帝国通过军事征服和庞大的朝贡体系控制了墨西哥中部。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Inca Empire",
+        "breakdown": "Inca(印加) + Empire(帝国)",
+        "meaning_en": "A large South American state system that expanded across the Andes region from the 13th century onward, characterized by centralized control and sophisticated infrastructure.",
+        "meaning_zh": "印加帝国：13世纪起扩张至安第斯地区的南美大国，以高度中央集权和精密基础设施著称",
+        "derivation": "Inca(印加/太阳之子) → 库斯科为首都 → 修建道路网络 + 梯田农业 + 结绳记事(quipu) → 无文字却管理千万人口",
+        "example": "The Inca Empire built an extensive road network spanning over 25,000 miles across the Andes Mountains.",
+        "example_zh": "印加帝国在安第斯山脉修建了绵延超过25000英里的庞大道路网络。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Mississippi culture",
+        "breakdown": "Mississippi(密西西比) + Culture(文化)",
+        "meaning_en": "A complex chiefdom-based society in North America (circa 1000-1500 CE) centered in the Mississippi River valley, known for its hierarchical political organization and monumental architecture.",
+        "meaning_zh": "密西西比文化：北美洲的复杂酋邦社会（约1000-1500年），以等级制政治组织和大型土丘建筑闻名",
+        "derivation": "Mississippi(密西西比河) + Culture(文化) → 卡霍基亚城(Cahokia)为中心 → 建造巨型土丘 → 北美最大的前哥伦布时代城市",
+        "example": "Mississippi culture's center at Cahokia may have had a population of 20,000 at its peak.",
+        "example_zh": "密西西比文化的中心卡霍基亚在鼎盛时期可能拥有两万人口。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "state systems",
+        "breakdown": "State(国家) + Systems(体系)",
+        "meaning_en": "Networks of organized political entities within regions that demonstrated expansion in scope and reach during this period.",
+        "meaning_zh": "国家体系：区域内有组织的政治实体网络，在这一时期展现出范围和影响力的扩展",
+        "derivation": "State(国家) + System(体系) → 不同地区各自发展出国家组织形式 → 从酋邦到帝国的多种政治形态",
+        "example": "State systems in Africa and the Americas expanded in scope and complexity during the period 1200-1450.",
+        "example_zh": "非洲和美洲的国家体系在1200-1450年间在规模和复杂性上都有所扩展。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Ethiopia",
+        "breakdown": "Ethiopia(埃塞俄比亚)",
+        "meaning_en": "An African state that maintained political independence and developed a unique Christian kingdom in the Horn of Africa during this period.",
+        "meaning_zh": "埃塞俄比亚：非洲之角的独立政治实体，发展出独特的基督教王国，是非洲少数未被殖民的古老文明",
+        "derivation": "Ethiopia(埃塞俄比亚) → 所罗门王朝 → 独特的东正教传统 → 岩石教堂(拉利贝拉) → 非洲唯一的古老基督教王国",
+        "example": "Ethiopia maintained its independence as a Christian kingdom while surrounded by Islamic states in East Africa.",
+        "example_zh": "埃塞俄比亚在被东非伊斯兰国家包围的情况下仍保持着基督教王国的独立。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Great Zimbabwe",
+        "breakdown": "Great(大/伟大的) + Zimbabwe(津巴布韦/石头房子)",
+        "meaning_en": "A major African state and civilization in southern Africa (1100-1450) known for its stone architecture and control of regional trade.",
+        "meaning_zh": "大津巴布韦：南部非洲的主要国家和文明（1100-1450），以石砌建筑和区域贸易控制闻名",
+        "derivation": "Great(伟大的) + Zimbabwe(石头房子) → 不用灰浆的精密石墙 → 控制黄金贸易 → 连接内陆与印度洋贸易网",
+        "example": "Great Zimbabwe's massive stone walls were built without mortar and demonstrate advanced engineering skills.",
+        "example_zh": "大津巴布韦的巨大石墙不用灰浆砌成，展示了先进的工程技术。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hausa kingdoms",
+        "breakdown": "Hausa(豪萨) + Kingdoms(王国)",
+        "meaning_en": "A collection of city-states in West Africa (present-day Nigeria) that developed as centers of trade and political power.",
+        "meaning_zh": "豪萨城邦：西非（今尼日利亚）的一组城市国家，发展为贸易和政治权力中心",
+        "derivation": "Hausa(豪萨民族) + Kingdom(王国) → 七个城邦各有专长 → 卡诺(Kano)以贸易闻名 → 跨撒哈拉贸易的南端节点",
+        "example": "The Hausa kingdoms, particularly Kano, became major centers of trans-Saharan trade in West Africa.",
+        "example_zh": "豪萨城邦，尤其是卡诺，成为西非跨撒哈拉贸易的主要中心。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Medieval Europe",
+    "type": "root",
+    "meaning_en": "The political, economic, and social structures of European civilization from 1200-1450, and comparative concepts in state formation",
+    "meaning_zh": "中世纪欧洲：1200-1450年间欧洲文明的政治、经济和社会结构，以及国家形成的比较概念",
+    "origin": "Unit 1: 1200-1450 交流网络",
+    "related": ["Islamic Civilization & Scholarship", "Africa & Americas"],
+    "words": [
+      {
+        "word": "agriculture",
+        "breakdown": "Agri(土地/田地) + Culture(耕作/培养)",
+        "meaning_en": "The practice of cultivating crops and raising livestock, which formed the economic foundation of European society from 1200 to 1450.",
+        "meaning_zh": "农业：种植作物和畜牧的实践，是1200-1450年间欧洲社会的经济基础",
+        "derivation": "Agri(田地) + Culture(耕种) → 三圃制轮作 + 重犁技术 → 庄园经济的基础 → 养活封建社会",
+        "example": "Agriculture in medieval Europe was organized around the manorial system, with peasants working the lord's land.",
+        "example_zh": "中世纪欧洲的农业围绕庄园制组织，农民在领主的土地上劳作。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "coerced labor",
+        "breakdown": "Coerced(被强制的) + Labor(劳动)",
+        "meaning_en": "Forced labor systems in which workers are compelled to work against their will, including serfdom and other forms of unfree labor.",
+        "meaning_zh": "强制劳动：劳动者被迫违背意愿工作的制度，包括农奴制和其他形式的不自由劳动",
+        "derivation": "Coerce(强迫) + Labor(劳动) → 非自愿劳动 → 农奴制/债务劳工/奴隶制 → 统治阶层剥削劳动力的手段",
+        "example": "Coerced labor, including serfdom, was a defining feature of medieval European economic life.",
+        "example_zh": "包括农奴制在内的强制劳动是中世纪欧洲经济生活的显著特征。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "decentralized monarchies",
+        "breakdown": "Decentralized(分权的) + Monarchies(君主制)",
+        "meaning_en": "Kingdoms where royal power was limited and shared with regional nobles and lords rather than concentrated in a single central authority.",
+        "meaning_zh": "分权君主制：王权受限并与地方贵族和领主共享的王国形态，而非集中于单一中央权威",
+        "derivation": "De-(去除) + Central(中心) + Monarchy(君主制) → 国王权力有限 → 贵族各自为政 → 封建割据的政治格局",
+        "example": "Medieval European decentralized monarchies relied on feudal relationships between kings and their vassals.",
+        "example_zh": "中世纪欧洲的分权君主制依赖于国王与封臣之间的封建关系。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "feudalism",
+        "breakdown": "Feudal(封建的) + -ism(制度/主义)",
+        "meaning_en": "A political and economic system based on the relationship between lords and vassals, where land was exchanged for military service and loyalty.",
+        "meaning_zh": "封建制度：以领主和封臣关系为基础的政治经济制度，以土地换取军事服务和效忠",
+        "derivation": "Feudal(封地) + -ism(制度) → 国王分封土地给贵族 → 贵族提供军事服务 → 层层分封的金字塔结构",
+        "example": "Feudalism in medieval Europe created a hierarchical society of kings, lords, knights, and peasants.",
+        "example_zh": "中世纪欧洲的封建制度创造了由国王、领主、骑士和农民组成的等级社会。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "manorial system",
+        "breakdown": "Manorial(庄园的) + System(制度)",
+        "meaning_en": "An economic and social organization of medieval Europe in which peasants worked on a lord's estate (manor) in exchange for protection and the right to cultivate their own plots of land.",
+        "meaning_zh": "庄园制：中世纪欧洲的经济和社会组织，农民在领主的庄园上劳作以换取保护和耕种自己地块的权利",
+        "derivation": "Manor(庄园) + System(制度) → 领主拥有土地 → 农民提供劳动 → 换取保护和自留地 → 自给自足的小世界",
+        "example": "Under the manorial system, serfs were bound to the land and owed labor obligations to their lord.",
+        "example_zh": "在庄园制下，农奴被束缚在土地上并欠领主劳役义务。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "political decentralization",
+        "breakdown": "Political(政治的) + Decentralization(分权化)",
+        "meaning_en": "The distribution of political power and authority away from a central government to regional or local rulers, characteristic of medieval Europe.",
+        "meaning_zh": "政治分权化：政治权力和权威从中央政府分散到地方统治者，是中世纪欧洲的典型特征",
+        "derivation": "Political(政治) + De-(去) + Central(中心) → 没有强大中央集权 → 地方贵族各自掌权 → 与中国的中央集权形成鲜明对比",
+        "example": "Political decentralization in medieval Europe contrasted sharply with the centralized empires of China and the Islamic world.",
+        "example_zh": "中世纪欧洲的政治分权化与中国和伊斯兰世界的中央集权帝国形成鲜明对比。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "serfdom",
+        "breakdown": "Serf(农奴) + -dom(状态/制度)",
+        "meaning_en": "A feudal system in which peasants were bound to the land and owed labor and obligations to a lord.",
+        "meaning_zh": "农奴制：农民被束缚在土地上并对领主负有劳役义务的封建制度",
+        "derivation": "Serf(农奴/仆人) + -dom(状态) → 不是奴隶但不自由 → 不能离开土地 → 向领主提供劳役和一部分收获",
+        "example": "Serfdom bound peasants to the land, preventing them from leaving without the lord's permission.",
+        "example_zh": "农奴制将农民束缚在土地上，未经领主许可不得离开。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "social organization",
+        "breakdown": "Social(社会的) + Organization(组织)",
+        "meaning_en": "The hierarchical structure and relationships that define how society is arranged and functions, including roles, classes, and institutions.",
+        "meaning_zh": "社会组织：定义社会如何安排和运作的等级结构和关系，包括角色、阶级和制度",
+        "derivation": "Social(社会) + Organize(组织) → 谁在上谁在下 → 国王-贵族-骑士-农民的等级秩序",
+        "example": "The social organization of medieval Europe was defined by the feudal hierarchy of lords, vassals, and serfs.",
+        "example_zh": "中世纪欧洲的社会组织由领主、封臣和农奴的封建等级制度来定义。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Buddhist states",
+        "breakdown": "Buddhist(佛教的) + States(国家)",
+        "meaning_en": "Political entities in South and Southeast Asia that emerged during this period and were based on Buddhist religious and cultural traditions.",
+        "meaning_zh": "佛教国家：这一时期在南亚和东南亚出现的基于佛教宗教和文化传统的政治实体",
+        "derivation": "Buddhist(佛教) + State(国家) → 以佛教为立国之本 → 国王是佛法的护持者 → 如室利佛逝、素可泰等",
+        "example": "Buddhist states in Southeast Asia, such as the Khmer Empire, built monumental temples to legitimize their rule.",
+        "example_zh": "东南亚的佛教国家，如高棉帝国，建造宏伟寺庙以巩固其统治的合法性。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "continuity",
+        "breakdown": "Continuity(连续性/延续)",
+        "meaning_en": "The persistence of established practices, institutions, and traditions in state formation and development across regions.",
+        "meaning_zh": "延续性：既有实践、制度和传统在各地区国家形成和发展中的持续存在",
+        "derivation": "Continue(继续) + -ity(性质) → 旧制度和传统的延续 → 如封建制度延续数百年 → 历史的惯性力量",
+        "example": "Continuity in Chinese governance can be seen in the persistence of Confucian-based civil service exams across dynasties.",
+        "example_zh": "中国治理的延续性体现在儒学科举考试跨越多个朝代的持续存在。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "diversity",
+        "breakdown": "Diversity(多样性)",
+        "meaning_en": "The variety of different approaches, structures, and characteristics demonstrated by states across various regions during this period.",
+        "meaning_zh": "多样性：这一时期各地区国家展现的多种不同治理方式、结构和特征",
+        "derivation": "Diverse(多样的) + -ity(性质) → 同一时期全球各地发展出截然不同的国家形态 → 集权vs分权、海洋vs内陆",
+        "example": "The diversity of state systems from 1200-1450 ranged from centralized empires to decentralized feudal kingdoms.",
+        "example_zh": "1200-1450年间国家体系的多样性从中央集权帝国到分权封建王国各不相同。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Hindu states",
+        "breakdown": "Hindu(印度教的) + States(国家)",
+        "meaning_en": "Political entities in South and Southeast Asia that emerged during this period and were based on Hindu religious and cultural traditions.",
+        "meaning_zh": "印度教国家：这一时期在南亚和东南亚出现的基于印度教宗教和文化传统的政治实体",
+        "derivation": "Hindu(印度教) + State(国家) → 以印度教为立国之本 → 种姓制度维系社会秩序 → 如维贾亚纳加尔、拉杰普特",
+        "example": "Hindu states like the Vijayanagara Empire used religious authority to legitimize their political power.",
+        "example_zh": "维贾亚纳加尔帝国等印度教国家利用宗教权威来巩固其政治权力的合法性。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "innovation",
+        "breakdown": "Innovation(创新)",
+        "meaning_en": "New methods, institutions, and approaches to state formation and governance that emerged during this period.",
+        "meaning_zh": "创新：这一时期出现的国家形成和治理的新方法、新制度和新途径",
+        "derivation": "In-(进入) + Nov(新) + -ation(行为) → 引入新事物 → 制度创新+技术创新+治理创新 → 推动文明进步",
+        "example": "Innovation in governance, such as China's civil service exam system, influenced state formation across Eurasia.",
+        "example_zh": "治理创新，如中国的科举制度，影响了整个欧亚大陆的国家形成。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  }
+]

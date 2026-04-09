@@ -3341,5 +3341,619 @@
         "toefl_frequency": "high"
       }
     ]
+  },
+  {
+    "root": "Banking and the Expansion of the Money Supply",
+    "type": "root",
+    "meaning_en": "how fractional reserve banking lets the banking system create money through lending",
+    "meaning_zh": "银行体系与货币扩张：商业银行在「部分准备金」制度下，通过放贷把存款变成新的存款，从而把基础货币放大成更大的货币供给。这是理解 4.6 货币政策的前提——央行改变基础货币，银行体系把这个变化放大成货币供给的变化",
+    "origin": "Unit 4: 4.4 Banking and the Expansion of the Money Supply",
+    "related": [
+      "The Money Market",
+      "Monetary Policy"
+    ],
+    "words": [
+      {
+        "word": "balance sheets",
+        "breakdown": "Balance(平衡) + Sheet(表) → 资产负债表",
+        "meaning_en": "financial statements showing a bank's assets, liabilities, and equity at a specific point in time, used to analyze banking system changes",
+        "meaning_zh": "资产负债表（T-account）：展示某时点银行「资产（贷款+准备金）= 负债（存款）+ 所有者权益」的报表。AP 宏观里最常用 T 型账户分析一笔存款如何引发连锁放贷",
+        "derivation": "Balance(平衡) + Sheet(表) → 左右必须相等的表 → 资产=负债+权益",
+        "mnemonic": "「T 型账户左边写资产（准备金+贷款），右边写负债（存款）——央行一动基础货币，整张 T 就跟着变」",
+        "example": "On the bank's balance sheet, a new $1,000 deposit appears as both an asset and a liability.",
+        "example_zh": "在银行的资产负债表上，1000 美元的新存款同时记为资产和负债。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "bank reserves",
+        "breakdown": "Bank(银行) + Reserves(储备)",
+        "meaning_en": "money held by banks that is not loaned out, including required reserves and excess reserves",
+        "meaning_zh": "银行准备金：银行没有贷出去的那部分钱，既包括央行规定必须留的「法定准备金」，也包括银行自愿多留的「超额准备金」。准备金放在金库或存在央行账户里",
+        "derivation": "存款进来 → 一部分放贷 → 剩下的留作准备金 → 应付取款和监管要求",
+        "mnemonic": "「准备金 = 银行留着以防你来取钱的那部分——就像水坝必须留一点水，不能全放光」",
+        "example": "The bank held $100,000 in bank reserves out of $1 million in deposits.",
+        "example_zh": "该银行在 100 万美元存款中持有 10 万美元的银行准备金。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "banking system",
+        "breakdown": "Banking(银行业) + System(系统)",
+        "meaning_en": "the network of commercial banks and central banks that create and circulate money in an economy",
+        "meaning_zh": "银行体系：由商业银行和央行组成的金融网络，共同决定货币的创造和流通。单家银行只能贷出超额准备金，但整个「体系」通过连锁存贷可以把钱放大数倍",
+        "derivation": "单家银行 → 多家银行互相存贷 → 连锁反应 → 货币被放大",
+        "mnemonic": "「银行体系像传话游戏：第一家银行贷出 90%，第二家又贷出 90%... 原始 1000 最后变成 10000」",
+        "example": "The entire banking system, not just a single bank, determines the money multiplier.",
+        "example_zh": "决定货币乘数的是整个银行体系，而不是单家银行。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "depository institutions",
+        "breakdown": "Deposit(存款) + ory(场所) → 吸收存款的机构",
+        "meaning_en": "financial institutions such as commercial banks that accept deposits from the public and use those funds to make loans",
+        "meaning_zh": "吸收存款的机构：接受公众存款并用这些资金发放贷款的金融机构，主要指商业银行、储蓄机构和信用合作社。它们是货币创造链条的直接参与者",
+        "derivation": "Depository(存放处) → 收存款的地方 → 把存款变贷款 → 创造货币",
+        "mnemonic": "「你家门口的 Chase、Bank of America 都是 depository institutions——它们收你的钱，转手贷给别人」",
+        "example": "Only depository institutions can directly expand the money supply through lending.",
+        "example_zh": "只有吸收存款的机构才能通过放贷直接扩张货币供给。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "excess reserves",
+        "breakdown": "Excess(超出的) + Reserves(准备金)",
+        "meaning_en": "reserves held by banks beyond the required minimum, which can be loaned out to expand the money supply",
+        "meaning_zh": "超额准备金：银行超过法定要求多留的准备金部分。这部分是「可以贷出去」的钱——货币扩张的燃料。超额准备金越多，银行体系就能创造越多货币",
+        "derivation": "总准备金 - 法定准备金 = 超额准备金 → 这是银行能放贷的余量",
+        "mnemonic": "「超额准备金 = 银行的弹药库——央行通过 QE 把弹药塞得满满的，银行放贷就能拉动经济」",
+        "example": "When excess reserves are high, banks have more capacity to make new loans.",
+        "example_zh": "当超额准备金较高时，银行有更多能力发放新贷款。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "fractional reserve banking",
+        "breakdown": "Fractional(部分的) + Reserve(准备金) + Banking(银行业)",
+        "meaning_en": "a banking system in which depository institutions hold only a fraction of their deposits in reserve and lend out the remainder",
+        "meaning_zh": "部分准备金银行制度：银行只留存款的一部分作准备金，其余贷出去。这是现代银行体系的根本——也是「银行能凭空创造货币」这一魔术的机制来源",
+        "derivation": "Fractional(只留一部分) → 其余放贷 → 贷出的钱又变成新存款 → 货币被放大",
+        "mnemonic": "「部分准备金 = 你存 100 元，银行只留 10 元，把 90 元贷出去——表面上你账户还有 100，但系统里多出来 90 元」",
+        "example": "Fractional reserve banking allows a $1,000 deposit to support thousands in new loans system-wide.",
+        "example_zh": "部分准备金制度让 1000 美元的存款在整个体系中支撑数千美元的新贷款。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "monetary base",
+        "breakdown": "Monetary(货币的) + Base(基础)",
+        "meaning_en": "the total amount of money created by a central bank, consisting of currency in circulation and bank reserves",
+        "meaning_zh": "基础货币（MB，又称 M0）：央行直接创造的货币，等于「流通中的现金 + 银行准备金」。在 4.4 里它是货币乘数的「本金」——央行每增加 1 美元基础货币，货币供给会放大好几倍",
+        "derivation": "央行印钞 → 流通中现金 + 银行准备金 → 基础货币 → 货币乘数 → 货币供给",
+        "mnemonic": "「基础货币 = 央行的「种子钱」——种下去，银行体系长出一整片货币森林」",
+        "example": "Quantitative easing expanded the U.S. monetary base dramatically after 2008.",
+        "example_zh": "2008 年后量化宽松大幅扩张了美国的基础货币。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "money multiplier",
+        "breakdown": "Money(货币) + Multiplier(乘数)",
+        "meaning_en": "the factor by which the money supply increases relative to an increase in the monetary base through the lending activities of commercial banks",
+        "meaning_zh": "货币乘数：基础货币每增加 1 美元，货币供给最终增加多少美元。简化公式为「1 / 法定准备金率」——比如准备金率 10%，乘数最大 = 10 倍",
+        "derivation": "基础货币 × 货币乘数 = 货币供给 → 乘数 ≈ 1 / 准备金率",
+        "mnemonic": "「准备金率 10% → 乘数 10；准备金率 20% → 乘数 5。准备金率越低，创造货币越凶猛」",
+        "example": "With a 10% required reserve ratio, the maximum money multiplier is 10.",
+        "example_zh": "在法定准备金率为 10% 时，货币乘数的最大值为 10。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "money supply",
+        "breakdown": "Money(货币) + Supply(供给)",
+        "meaning_en": "the total amount of money available in an economy at a given time, including currency in circulation and deposits in financial institutions",
+        "meaning_zh": "货币供给（MS）：某时点经济中流通的货币总量，包括现金和银行存款（M1、M2）。央行通过改变基础货币间接控制货币供给",
+        "derivation": "基础货币 × 货币乘数 = 货币供给 → 最终衡量「经济里有多少钱」",
+        "mnemonic": "「货币供给不是央行印多少钱，而是「流通里有多少钱」——包括你钱包里的现金和银行账户里的存款」",
+        "example": "The Federal Reserve tracks the U.S. money supply using the M1 and M2 measures.",
+        "example_zh": "美联储使用 M1 和 M2 指标来跟踪美国的货币供给。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "money supply expansion",
+        "breakdown": "Money Supply + Expansion(扩张)",
+        "meaning_en": "the process by which the banking system increases the total amount of money in circulation through lending based on excess reserves",
+        "meaning_zh": "货币供给扩张：银行体系通过用超额准备金连续放贷，把货币供给逐步放大的过程。一笔新贷款变成借款人的存款 → 再次被贷出 → 如此循环",
+        "derivation": "新存款 → 留一部分准备金 → 其余贷出 → 变成新存款 → 再次循环 → 货币供给不断扩张",
+        "mnemonic": "「货币扩张像滚雪球：1000 → 900 → 810 → 729... 最后雪球比原始那团大好几倍」",
+        "example": "Money supply expansion slows when banks choose to hold more excess reserves.",
+        "example_zh": "当银行选择持有更多超额准备金时，货币供给扩张会放缓。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "required reserve ratio",
+        "breakdown": "Required(必须的) + Reserve(准备金) + Ratio(比率)",
+        "meaning_en": "the percentage of deposits that commercial banks are required to hold in reserve rather than lend out, used as a monetary policy tool",
+        "meaning_zh": "法定准备金率（rrr）：央行规定银行必须留作准备金的存款比例。它是央行最直接的货币政策工具之一——rrr 越低，货币乘数越大，货币创造能力越强",
+        "derivation": "央行设定 rrr → 银行必须留 rrr × 存款 → 剩下的才能贷 → rrr 决定乘数",
+        "mnemonic": "「rrr 从 10% 降到 5% → 货币乘数从 10 翻倍到 20 → 理论货币供给翻倍，央行这一招很猛」",
+        "example": "A lower required reserve ratio gives banks more capacity to create money through lending.",
+        "example_zh": "较低的法定准备金率让银行通过放贷创造货币的能力更强。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "required reserves",
+        "breakdown": "Required(必须的) + Reserves(准备金)",
+        "meaning_en": "the minimum amount of reserves that depository institutions are legally required to hold, determined by the required reserve ratio",
+        "meaning_zh": "法定准备金：银行依法必须留存的最低准备金金额 = 存款 × 法定准备金率。和「超额准备金」配对——准备金 = 法定 + 超额",
+        "derivation": "存款 × 准备金率 = 法定准备金 → 这是「死线」，不能动用于放贷",
+        "mnemonic": "「法定准备金 = 银行账户里被央行「锁定」的那部分——碰一下就违规」",
+        "example": "With a 10% ratio and $1 million in deposits, required reserves equal $100,000.",
+        "example_zh": "在 10% 的准备金率和 100 万美元存款下，法定准备金为 10 万美元。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "The Money Market",
+    "type": "root",
+    "meaning_en": "how money supply and money demand interact to determine the equilibrium nominal interest rate",
+    "meaning_zh": "货币市场：央行控制的货币供给（垂直线）与公众的货币需求（向下倾斜的曲线）相交，决定均衡的名义利率。这是 AP 宏观最重要的图之一——理解它才能理解央行为什么「调利率」其实是「调货币量」",
+    "origin": "Unit 4: 4.5 The Money Market",
+    "related": [
+      "Banking and the Expansion of the Money Supply",
+      "Monetary Policy",
+      "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"
+    ],
+    "words": [
+      {
+        "word": "central bank",
+        "breakdown": "Central(中央的) + Bank(银行)",
+        "meaning_en": "a financial institution responsible for implementing monetary policy and managing a country's money supply and banking system",
+        "meaning_zh": "中央银行：负责执行货币政策、管理国家货币供给和银行体系的金融机构。美国的央行是 Federal Reserve（美联储），是整个货币市场供给曲线的唯一决定者",
+        "derivation": "Central(中央) + Bank → 「银行中的银行」→ 不对普通人开户，只和政府和商业银行打交道",
+        "mnemonic": "「央行 = 经济体的「货币阀门」——它一动，全社会的利率、物价、就业都跟着变」",
+        "example": "The central bank adjusts the money supply to keep inflation near its target.",
+        "example_zh": "中央银行调整货币供给以使通胀接近目标。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "demand for money",
+        "breakdown": "Demand(需求) + for Money(货币)",
+        "meaning_en": "the quantity of money that individuals and businesses want to hold at different interest rates and price levels",
+        "meaning_zh": "货币需求：在不同名义利率下，个人和企业愿意持有的货币量。利率越高，持有现金的机会成本越大，所以货币需求曲线向下倾斜",
+        "derivation": "利率 ↑ → 存款/债券更香 → 持现金的代价更高 → 货币需求 ↓",
+        "mnemonic": "「利率高时你不愿意钱包里放太多现金——你想把钱存进去吃利息」",
+        "example": "The demand for money rises when people need more cash for daily transactions.",
+        "example_zh": "当人们需要更多现金用于日常交易时，货币需求会上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "disequilibrium",
+        "breakdown": "Dis(不) + equilibrium(均衡)",
+        "meaning_en": "a market condition in which the quantity supplied does not equal the quantity demanded, causing surpluses or shortages",
+        "meaning_zh": "不均衡：数量供给与数量需求不相等的状态。在货币市场里，当前利率偏离均衡时会出现货币过剩或短缺，市场力量推动利率回到均衡",
+        "derivation": "Dis(不) + equilibrium → 供需不相等 → 必然产生过剩或短缺",
+        "mnemonic": "「不均衡就像一根没压下去的翘翘板——市场力量会自动把它压回水平」",
+        "example": "If the nominal interest rate is above equilibrium, the money market is in disequilibrium with a surplus.",
+        "example_zh": "如果名义利率高于均衡，货币市场就处于不均衡，出现货币过剩。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "equilibrium",
+        "breakdown": "Equi(相等) + librium(平衡)",
+        "meaning_en": "a market condition in which the quantity supplied equals the quantity demanded at a particular price, with no tendency for change",
+        "meaning_zh": "均衡：数量供给与数量需求在某价格（或利率）上相等的状态，市场没有改变的趋势。在货币市场里，均衡由 MS 垂直线和 MD 曲线相交决定",
+        "derivation": "Equi(相等) + librium(平衡) → 供需相等 → 市场静止",
+        "mnemonic": "「均衡 = 供需「握手言和」的那一点——没人想动」",
+        "example": "At equilibrium, there is no tendency for the nominal interest rate to change.",
+        "example_zh": "在均衡状态下，名义利率没有变动的趋势。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equilibrium nominal interest rate",
+        "breakdown": "Equilibrium + Nominal(名义的) + Interest Rate(利率)",
+        "meaning_en": "the interest rate at which the quantity of money demanded equals the quantity of money supplied in the money market",
+        "meaning_zh": "均衡名义利率：货币市场 MS 与 MD 的交点所对应的名义利率。这是 4.5 的核心结论——它告诉你「货币供给变动会怎样改变利率」，4.6 的货币政策正是建立在这个结论上",
+        "derivation": "MS 曲线（垂直）× MD 曲线（向下）→ 交点 → 均衡 i",
+        "mnemonic": "「央行把 MS 曲线往右推 → 交点沿 MD 向下滑 → 均衡利率下降——一张图看懂降息」",
+        "example": "An increase in money supply lowers the equilibrium nominal interest rate.",
+        "example_zh": "货币供给增加会降低均衡名义利率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "market forces",
+        "breakdown": "Market(市场) + Forces(力量)",
+        "meaning_en": "the supply and demand pressures that drive prices toward equilibrium in response to surpluses and shortages",
+        "meaning_zh": "市场力量：供求共同作用、推动价格（或利率）回到均衡的力量。在货币市场里，过剩让利率下降，短缺让利率上升——自动调整",
+        "derivation": "过剩 → 价格/利率 ↓；短缺 → 价格/利率 ↑ → 回到均衡",
+        "mnemonic": "「市场力量像看不见的手——你不用指挥，供需自己会把价格推回均衡」",
+        "example": "Market forces push the nominal interest rate back to equilibrium when there is a money surplus.",
+        "example_zh": "当出现货币过剩时，市场力量会把名义利率推回均衡。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "monetary base",
+        "breakdown": "Monetary(货币的) + Base(基础)",
+        "meaning_en": "the total amount of money created by a central bank, consisting of currency in circulation and bank reserves",
+        "meaning_zh": "基础货币：在 4.5 里，央行通过改变基础货币来移动货币市场的 MS 垂直线——基础货币增加 → MS 右移 → 均衡利率下降",
+        "derivation": "央行调整基础货币 → 银行准备金变 → 货币乘数放大 → MS 曲线移动",
+        "mnemonic": "「央行不直接「定利率」——它先动基础货币，利率是货币市场图自动推出来的结果」",
+        "example": "When the central bank expands the monetary base, the money market's supply curve shifts right.",
+        "example_zh": "当央行扩张基础货币时，货币市场的供给曲线向右移动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "monetary policy",
+        "breakdown": "Monetary(货币的) + Policy(政策)",
+        "meaning_en": "central bank actions that influence the money supply, interest rates, aggregate demand, real output, price level, and exchange rates",
+        "meaning_zh": "货币政策：央行通过改变货币供给来影响利率、总需求、实际产出、价格水平和汇率的行为。在 4.5 里货币政策通过移动 MS 曲线发挥作用",
+        "derivation": "货币政策 → 改变 MS → 改变均衡 i → 改变投资/消费 → 改变 AD → 改变产出和物价",
+        "mnemonic": "「货币政策链条：MS → i → I → AD → Y → P——这条链是 AP 宏观 Unit 4 的主线」",
+        "example": "Monetary policy works by shifting the money supply curve in the money market diagram.",
+        "example_zh": "货币政策通过在货币市场图上移动货币供给曲线起作用。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "money market",
+        "breakdown": "Money(货币) + Market(市场)",
+        "meaning_en": "the market where money supply and money demand interact to determine the equilibrium nominal interest rate",
+        "meaning_zh": "货币市场：货币供给和货币需求相互作用、决定均衡名义利率的市场。注意：这里的「货币市场」是宏观模型，不是金融里买卖短期债券的那个「货币市场」",
+        "derivation": "MS 垂直 × MD 向下 → 交点 → 均衡 i → 这就是「货币市场图」",
+        "mnemonic": "「货币市场图 = Unit 4 的招牌图——横轴是 M（货币量），纵轴是 i（名义利率）」",
+        "example": "The money market model is the key tool for analyzing monetary policy effects.",
+        "example_zh": "货币市场模型是分析货币政策效应的关键工具。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "money supply",
+        "breakdown": "Money(货币) + Supply(供给)",
+        "meaning_en": "the total amount of money available in an economy at a given time, including currency in circulation and deposits in financial institutions",
+        "meaning_zh": "货币供给：在 4.5 里，货币供给在货币市场图中表现为一条「垂直线」——因为它由央行决定，不随利率变化。央行一动 MS，整条线就整体左移或右移",
+        "derivation": "央行决定 → MS 和利率无关 → 图上是垂直线 → 央行调整 = 整条线平移",
+        "mnemonic": "「MS 垂直 = 央行说了算，利率再诱人也变不出更多钱——只有央行按开关」",
+        "example": "In the money market diagram, the money supply is drawn as a vertical line.",
+        "example_zh": "在货币市场图中，货币供给被画成一条垂直线。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "nominal interest rate",
+        "breakdown": "Nominal(名义的) + Interest Rate(利率)",
+        "meaning_en": "the stated interest rate on a loan or investment, not adjusted for inflation",
+        "meaning_zh": "名义利率：合同上写的、没有扣除通胀的利率。费雪方程式：名义利率 = 实际利率 + 预期通胀。货币市场决定的是「名义」利率，可贷资金市场决定的才是「实际」利率",
+        "derivation": "合同上的数字 → 没扣通胀 → 名义利率 → 减去通胀 = 实际利率",
+        "mnemonic": "「银行牌上写的那个数字就是名义利率——但通胀 3%，名义 5% 实际只有 2%」",
+        "example": "The money market determines the equilibrium nominal interest rate, not the real rate.",
+        "example_zh": "货币市场决定的是均衡名义利率，而不是实际利率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：经济中所有商品和服务价格的平均水平，通常用 CPI 或 GDP 平减指数衡量。在 4.5 里，价格水平上升会让人需要更多名义货币 → 货币需求曲线右移",
+        "derivation": "价格水平 ↑ → 买同样东西要更多钱 → 持现金需求 ↑ → MD 右移",
+        "mnemonic": "「汉堡从 5 块涨到 7 块 → 你钱包里得多装现金 → 整个经济的货币需求都往右推」",
+        "example": "A higher price level shifts the money demand curve to the right.",
+        "example_zh": "更高的价格水平会使货币需求曲线向右移动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity demanded of money",
+        "breakdown": "Quantity Demanded(需求量) + of Money(货币)",
+        "meaning_en": "the amount of money that individuals and businesses wish to hold at a given nominal interest rate",
+        "meaning_zh": "货币需求量：在某个特定名义利率下，人们愿意持有的货币数量。注意「需求量」是曲线上的一点，「需求」是整条曲线——利率变化改变需求量（沿曲线移动）",
+        "derivation": "沿 MD 曲线上下滑动 → 不同 i 对应不同需求量 → 和「需求整条曲线平移」区分",
+        "mnemonic": "「需求量沿曲线走，需求整条曲线搬——微观里同样的区分，到了货币市场一样适用」",
+        "example": "At a lower nominal interest rate, the quantity demanded of money is higher.",
+        "example_zh": "在较低的名义利率下，货币需求量更大。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "supply of money",
+        "breakdown": "Supply(供给) + of Money(货币)",
+        "meaning_en": "the total quantity of money available in an economy, controlled by the central bank through monetary policy",
+        "meaning_zh": "货币供给量：经济中可用的货币总量，由央行通过货币政策控制。和 demand for money 一样，在 4.5 的模型里是决定均衡利率的两条曲线之一",
+        "derivation": "央行工具（OMO、rrr、IOR）→ 改变基础货币 → 改变货币供给 → 改变均衡利率",
+        "mnemonic": "「货币供给不是你挣多少钱——是整个经济里有多少钱在流通，央行说了算」",
+        "example": "The supply of money is fully controlled by the central bank.",
+        "example_zh": "货币供给完全由中央银行控制。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "surpluses",
+        "breakdown": "Sur(在...之上) + plus(多余) → 过剩",
+        "meaning_en": "a situation in the money market where the quantity of money supplied exceeds the quantity of money demanded at a given nominal interest rate",
+        "meaning_zh": "货币过剩：在某利率下货币供给大于货币需求的情况。出现在当前利率高于均衡利率时——人们不想持那么多现金，会去买债券，推高债券价格 → 利率下降 → 回到均衡",
+        "derivation": "利率过高 → 大家想少持现金 → 拿去买债券 → 债券价格 ↑ → 利率 ↓ → 均衡",
+        "mnemonic": "「货币过剩 → 大家把多余的钱扔进债券市场 → 债券涨价利率就跌——债券价格和利率永远反方向」",
+        "example": "A nominal interest rate above equilibrium creates a surplus in the money market.",
+        "example_zh": "高于均衡的名义利率会在货币市场造成货币过剩。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Monetary Policy",
+    "type": "root",
+    "meaning_en": "central bank actions that change the money supply to influence interest rates, aggregate demand, real output, and price level",
+    "meaning_zh": "货币政策：央行通过改变货币供给（主要用公开市场操作、贴现率、法定准备金率和准备金利率这四大工具）影响利率、总需求、实际产出和物价的政策。分为扩张性（经济衰退时用）和紧缩性（通胀过热时用）两大方向，但政策有时滞，效果不会立刻显现",
+    "origin": "Unit 4: 4.6 Monetary Policy",
+    "related": [
+      "The Money Market",
+      "Banking and the Expansion of the Money Supply",
+      "Business Cycles",
+      "Unemployment"
+    ],
+    "words": [
+      {
+        "word": "AD-AS model",
+        "breakdown": "AD(总需求) + AS(总供给) + Model(模型)",
+        "meaning_en": "an economic model that shows the relationship between aggregate demand and aggregate supply to illustrate macroeconomic equilibrium and the effects of policy changes",
+        "meaning_zh": "AD-AS 模型：展示总需求和总供给关系、描绘宏观均衡和政策效果的模型。在 4.6 里，货币政策通过改变利率 → 改变投资和消费 → 移动 AD 曲线 → 改变 AD-AS 图上的均衡产出和价格水平",
+        "derivation": "货币市场 → 利率 → 投资/消费 → AD 曲线移动 → AD-AS 新均衡",
+        "mnemonic": "「AD-AS 是宏观的「主战场」——所有政策最终都要在这张图上证明有没有用」",
+        "example": "In the AD-AS model, expansionary monetary policy shifts AD to the right.",
+        "example_zh": "在 AD-AS 模型中，扩张性货币政策使 AD 向右移动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "adjustment lag",
+        "breakdown": "Adjustment(调整) + Lag(时滞)",
+        "meaning_en": "the time it takes for the economy to respond and adjust to a monetary policy action after it has been implemented",
+        "meaning_zh": "调整时滞：政策已经落地后，经济真正做出反应、全面调整所需要的时间。比如美联储降息后，企业要几个月到一年才会决定投资扩产——这段时间就是 adjustment lag",
+        "derivation": "政策实施 → 企业/消费者慢慢反应 → 投资和消费调整 → AD 移动 → 产出变化",
+        "mnemonic": "「调整时滞 = 政策已经开枪，但子弹还在飞——等命中目标可能几个月过去了」",
+        "example": "Adjustment lag is one reason why monetary policy may not produce immediate results.",
+        "example_zh": "调整时滞是货币政策不能立竿见影的原因之一。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "aggregate demand",
+        "breakdown": "Aggregate(总的) + Demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求：在 4.6 里，货币政策的最终作用对象就是 AD——扩张性政策让 AD 右移（刺激经济），紧缩性政策让 AD 左移（抑制通胀）",
+        "derivation": "货币政策 → i → C + I → AD 曲线移动 → 产出和物价变化",
+        "mnemonic": "「AD = C + I + G + NX——货币政策主要通过 I（投资）和 C（耐用消费品）拉动 AD」",
+        "example": "Expansionary monetary policy increases aggregate demand through lower interest rates.",
+        "example_zh": "扩张性货币政策通过降低利率来增加总需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "central bank",
+        "breakdown": "Central(中央的) + Bank(银行)",
+        "meaning_en": "a financial institution responsible for implementing monetary policy and managing a country's money supply and banking system",
+        "meaning_zh": "中央银行：在 4.6 里是货币政策的唯一执行者。美联储的双重使命是「价格稳定 + 最大就业」——所有货币政策工具都是为这两个目标服务的",
+        "derivation": "央行 → 观察经济 → 选择工具（OMO/rrr/discount rate/IOR）→ 改变 MS → 改变利率",
+        "mnemonic": "「央行不是政府——它有独立性，这样才能不被政客逼着乱印钱」",
+        "example": "The central bank uses monetary policy to pursue price stability and full employment.",
+        "example_zh": "中央银行运用货币政策追求价格稳定和充分就业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "contractionary monetary policy",
+        "breakdown": "Contract(收缩) + ionary + Monetary Policy",
+        "meaning_en": "central bank actions that decrease the money supply and raise interest rates to reduce inflation and cool down an overheating economy",
+        "meaning_zh": "紧缩性货币政策：央行减少货币供给、提高利率，以抑制通胀、给过热经济降温的政策。典型动作：卖国债、提高 rrr、提高贴现率、提高准备金利率。目标是关掉「通胀缺口」",
+        "derivation": "卖国债 → MS 左移 → 利率 ↑ → 投资和消费 ↓ → AD 左移 → 通胀降温",
+        "mnemonic": "「紧缩 = Paul Volcker 1980 年把联邦基金利率抬到 20%，硬把美国通胀打下来——也把经济打进了衰退」",
+        "example": "The Fed used contractionary monetary policy to fight inflation in the early 1980s.",
+        "example_zh": "美联储在 1980 年代初用紧缩性货币政策对抗通胀。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "discount rate",
+        "breakdown": "Discount(贴现) + Rate(利率)",
+        "meaning_en": "the interest rate at which a central bank lends to commercial banks, used as a tool of monetary policy",
+        "meaning_zh": "贴现率：央行直接贷给商业银行时收取的利率。央行降低贴现率 → 银行更愿意向央行借钱补充准备金 → 放贷更积极 → 货币供给上升",
+        "derivation": "央行降贴现率 → 银行借钱成本 ↓ → 银行准备金 ↑ → 贷款和 MS ↑",
+        "mnemonic": "「贴现率 = 央行给银行的「批发价」——便宜了银行就会多进货（多借钱）」",
+        "example": "Lowering the discount rate encourages banks to borrow from the central bank.",
+        "example_zh": "降低贴现率会鼓励银行向央行借款。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expansionary monetary policy",
+        "breakdown": "Expand(扩张) + ionary + Monetary Policy",
+        "meaning_en": "central bank actions that increase the money supply and lower interest rates to stimulate economic growth and reduce unemployment",
+        "meaning_zh": "扩张性货币政策：央行增加货币供给、降低利率，以刺激增长、降低失业的政策。典型动作：买国债、降低 rrr、降贴现率、降准备金利率。目标是关掉「衰退缺口」",
+        "derivation": "买国债 → MS 右移 → 利率 ↓ → 投资和消费 ↑ → AD 右移 → 产出 ↑ 失业 ↓",
+        "mnemonic": "「美联储 2008 年 QE → 公开市场操作买国债 → 准备金暴涨 → 利率近零——扩张政策的教科书案例」",
+        "example": "The Fed pursued expansionary monetary policy during the 2008 financial crisis.",
+        "example_zh": "美联储在 2008 年金融危机期间实施扩张性货币政策。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "federal funds rate",
+        "breakdown": "Federal Funds(联邦基金) + Rate(利率)",
+        "meaning_en": "the interest rate at which commercial banks lend reserve balances to each other overnight, targeted by the Federal Reserve as its primary policy rate",
+        "meaning_zh": "联邦基金利率：美国商业银行之间相互拆借准备金过夜所用的利率。美联储的「政策利率」——新闻里说「美联储加息 25 个基点」指的就是它",
+        "derivation": "银行间拆借 → 准备金市场供求 → 联邦基金利率 → 美联储设定目标区间 → 市场围绕目标运行",
+        "mnemonic": "「你在新闻里听到的「美联储加息 0.25%」= 调整联邦基金利率目标——这是美国所有其他利率的锚点」",
+        "example": "The Federal Reserve raised the federal funds rate to combat inflation.",
+        "example_zh": "美联储提高联邦基金利率以对抗通胀。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "full employment",
+        "breakdown": "Full(充分) + Employment(就业)",
+        "meaning_en": "an economic condition where all available labor resources are being used efficiently and unemployment is at its natural rate",
+        "meaning_zh": "充分就业：失业率等于「自然失业率」（摩擦性 + 结构性失业）的状态。不是「零失业」——经济健康运行时总有人在换工作。货币政策的目标之一就是让经济回到这个水平",
+        "derivation": "实际 GDP = 潜在 GDP → 失业率 = 自然失业率 → 没有 output gap → 充分就业",
+        "mnemonic": "「充分就业 ≠ 零失业——就像停车场 100% 满是异常状态，总留一点空位才正常」",
+        "example": "Expansionary monetary policy aims to move the economy back to full employment.",
+        "example_zh": "扩张性货币政策旨在让经济回到充分就业水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflationary output gap",
+        "breakdown": "Inflationary(通胀的) + Output Gap(产出缺口)",
+        "meaning_en": "a positive output gap occurring when actual real output exceeds the full-employment level of output, putting upward pressure on prices",
+        "meaning_zh": "通胀性产出缺口（正缺口）：实际产出超过充分就业产出的情况，经济「过热」，物价承受上涨压力。此时央行通常实施紧缩性货币政策降温",
+        "derivation": "Y 实际 > Y 潜在 → 失业率 < 自然失业率 → 工资和物价上涨 → 通胀压力 → 央行紧缩",
+        "mnemonic": "「正缺口 = 经济超速行驶——央行踩刹车（加息）把它拉回限速线」",
+        "example": "An inflationary output gap typically prompts contractionary monetary policy.",
+        "example_zh": "通胀性产出缺口通常会促使央行采取紧缩性货币政策。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "interest on reserves",
+        "breakdown": "Interest(利息) + on Reserves(准备金)",
+        "meaning_en": "the interest rate paid by a central bank to commercial banks on the reserves they hold, used as a monetary policy tool",
+        "meaning_zh": "准备金利率（IOR / IORB）：央行为商业银行存在央行的准备金支付的利率。2008 年后美联储的主要政策工具之一——提高 IOR 让银行更愿意把钱留作准备金，少放贷 → MS 收缩",
+        "derivation": "IOR ↑ → 银行持准备金更赚 → 贷款减少 → MS ↓ → 利率 ↑",
+        "mnemonic": "「IOR = 央行「给银行发利息」诱导它们不要放贷——2008 年后美联储的「新王牌工具」」",
+        "example": "Raising interest on reserves is a key tool in modern monetary policy.",
+        "example_zh": "提高准备金利率是现代货币政策的关键工具。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "lags",
+        "breakdown": "Lag(滞后)",
+        "meaning_en": "delays between the time a policy action is taken and when its effects are fully realized in the economy",
+        "meaning_zh": "时滞：从政策制定到政策效果完全显现之间的时间差。货币政策的时滞包括识别时滞（recognition lag）、决策时滞、执行时滞和调整时滞——这也是货币政策难以精准调控的原因",
+        "derivation": "问题发生 → 识别 → 决策 → 执行 → 经济调整 → 效果显现 → 每一步都有时滞",
+        "mnemonic": "「货币政策像开航母——从打方向盘到船真的转弯，中间过了好几海里」",
+        "example": "Lags make it difficult to time monetary policy perfectly.",
+        "example_zh": "时滞使货币政策难以做到完美的时机把握。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "monetary base",
+        "breakdown": "Monetary(货币的) + Base(基础)",
+        "meaning_en": "the total amount of money created by a central bank, consisting of currency in circulation and bank reserves",
+        "meaning_zh": "基础货币：在 4.6 里，公开市场操作、贴现窗口和准备金工具直接改变的就是它。基础货币变化通过货币乘数放大成货币供给变化",
+        "derivation": "央行工具 → 基础货币变 → 乘数放大 → 货币供给变 → 利率变",
+        "mnemonic": "「货币政策的第一张多米诺骨牌就是基础货币——央行唯一能直接控制的货币量」",
+        "example": "Open market operations change the monetary base by adding or draining bank reserves.",
+        "example_zh": "公开市场操作通过增减银行准备金来改变基础货币。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "monetary policy",
+        "breakdown": "Monetary(货币的) + Policy(政策)",
+        "meaning_en": "central bank actions that influence the money supply, interest rates, aggregate demand, real output, price level, and exchange rates",
+        "meaning_zh": "货币政策：Unit 4 的核心主题。央行用四大工具（OMO、rrr、discount rate、IOR）改变货币供给，从而影响利率 → 投资消费 → 总需求 → 产出和物价。和财政政策并列，是宏观调控的两大支柱",
+        "derivation": "四大工具 → MS → i → C + I → AD → Y + P → 就业和通胀目标",
+        "mnemonic": "「货币政策 vs 财政政策：前者是央行印钱调利率，后者是政府收税花钱——Unit 4 和 Unit 5 的主角」",
+        "example": "Monetary policy is typically more flexible than fiscal policy because it can be adjusted quickly.",
+        "example_zh": "货币政策通常比财政政策更灵活，因为它可以快速调整。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "money market model",
+        "breakdown": "Money Market(货币市场) + Model(模型)",
+        "meaning_en": "an economic model that shows the relationship between the money supply, money demand, and interest rates",
+        "meaning_zh": "货币市场模型：展示 MS（垂直）、MD（向下）和均衡名义利率的模型。在 4.6 里它是分析货币政策的主要工具——央行移动 MS 线，均衡利率随 MD 曲线上下滑动",
+        "derivation": "MS（垂直）+ MD（向下）→ 交点 → 均衡 i → 央行动 MS → 新均衡 i",
+        "mnemonic": "「货币市场模型 = FRQ 必考图——画不出这张图就不可能拿到货币政策的分」",
+        "example": "The money market model shows how a decrease in money supply raises the nominal interest rate.",
+        "example_zh": "货币市场模型展示了货币供给减少如何提高名义利率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "money multiplier",
+        "breakdown": "Money(货币) + Multiplier(乘数)",
+        "meaning_en": "the factor by which the money supply increases relative to an increase in the monetary base through the lending activities of commercial banks",
+        "meaning_zh": "货币乘数：在 4.6 里它决定了货币政策的「杠杆力度」——央行注入 1 美元基础货币，最终能变成乘数倍的货币供给。乘数越大，货币政策的威力越强",
+        "derivation": "ΔMS = 货币乘数 × Δ基础货币 → 乘数越大 → 政策效果越猛",
+        "mnemonic": "「乘数 10 时，美联储买 100 亿国债，最终货币供给能多出 1000 亿——四两拨千斤」",
+        "example": "A larger money multiplier magnifies the effect of open market operations.",
+        "example_zh": "更大的货币乘数会放大公开市场操作的效果。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "nominal interest rate",
+        "breakdown": "Nominal(名义的) + Interest Rate(利率)",
+        "meaning_en": "the stated interest rate on a loan or investment, not adjusted for inflation",
+        "meaning_zh": "名义利率：在 4.6 里它是货币政策的「即时效果」——央行一动 MS，货币市场的均衡名义利率立刻变化，然后通过影响 I 和 C 传导到 AD",
+        "derivation": "MS 变 → 货币市场均衡 i 变 → 投资和耐用消费变 → AD 变",
+        "mnemonic": "「货币政策的「第一张多米诺」是基础货币，「第一张可见效果」是名义利率——新闻里说的就是它」",
+        "example": "A monetary expansion immediately lowers the equilibrium nominal interest rate.",
+        "example_zh": "货币扩张会立刻降低均衡名义利率。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "open market operations",
+        "breakdown": "Open(公开) + Market(市场) + Operations(操作)",
+        "meaning_en": "the buying and selling of government securities by a central bank to influence the money supply and monetary base",
+        "meaning_zh": "公开市场操作（OMO）：央行在公开市场买卖政府债券来改变基础货币的行为。买国债 → 注入准备金 → MS 上升；卖国债 → 抽走准备金 → MS 下降。美联储最常用的工具",
+        "derivation": "买国债 → 付钱给卖家 → 卖家存银行 → 银行准备金 ↑ → MS ↑ → 利率 ↓",
+        "mnemonic": "「美联储 2008 年 QE → 公开市场操作买国债 → 准备金暴涨 → 利率近零」",
+        "example": "Open market operations are the Fed's most frequently used monetary policy tool.",
+        "example_zh": "公开市场操作是美联储最常使用的货币政策工具。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "policy rate",
+        "breakdown": "Policy(政策) + Rate(利率)",
+        "meaning_en": "the target interest rate set by a central bank for overnight interbank lending to influence overall monetary conditions",
+        "meaning_zh": "政策利率：央行设定的隔夜银行间拆借目标利率。在美国就是联邦基金利率目标区间——央行所有其他工具都是为了让市场利率围着这个「政策利率」运行",
+        "derivation": "央行宣布目标 → 用工具把实际市场利率推到目标 → 政策利率 = 央行的操作瞄准点",
+        "mnemonic": "「政策利率 = 央行的「官宣数字」——工具是手段，政策利率是最终目标」",
+        "example": "The central bank adjusts its policy rate to guide the entire interest rate structure.",
+        "example_zh": "中央银行通过调整政策利率来引导整个利率结构。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：在 4.6 里，货币政策的最终作用之一就是影响价格水平——扩张政策长期推高 P，紧缩政策压低 P。价格稳定是央行两大目标之一",
+        "derivation": "货币政策 → AD 移动 → AD-AS 新均衡 → 新的价格水平",
+        "mnemonic": "「价格稳定 = 央行不让 P 大涨也不让它崩盘——两端都危险」",
+        "example": "Contractionary monetary policy puts downward pressure on the price level.",
+        "example_zh": "紧缩性货币政策会对价格水平产生下行压力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price stability",
+        "breakdown": "Price(价格) + Stability(稳定)",
+        "meaning_en": "a macroeconomic goal in which the general price level of goods and services remains relatively constant over time",
+        "meaning_zh": "价格稳定：宏观经济目标之一，指总体物价水平在一段时间内相对平稳。美联储的具体目标是 2% 的长期通胀率——这被认为是「稳定但不零通胀」的最佳平衡",
+        "derivation": "目标：通胀率温和且可预期 → 央行调 MS → 保持 2% 左右",
+        "mnemonic": "「美联储通胀目标 = 2%——不是 0%，因为一点点通胀反而比零通胀更健康」",
+        "example": "The Federal Reserve's dual mandate includes price stability and maximum employment.",
+        "example_zh": "美联储的双重使命包括价格稳定和最大就业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "real output",
+        "breakdown": "Real(实际的) + Output(产出)",
+        "meaning_en": "the total production of goods and services in an economy adjusted for inflation, measured in constant dollars",
+        "meaning_zh": "实际产出：扣除通胀因素后的经济总产出，用「不变价」衡量，等同于实际 GDP。货币政策通过 AD 影响实际产出——特别是在短期（SRAS 未完全调整时）",
+        "derivation": "名义 GDP / 价格水平 → 实际 GDP → 去掉通胀水分后的「真产量」",
+        "mnemonic": "「实际产出 = 真东西的数量，不被通胀欺骗——衡量经济「真的好不好」的硬指标」",
+        "example": "Monetary policy affects real output in the short run through changes in aggregate demand.",
+        "example_zh": "货币政策通过改变总需求在短期影响实际产出。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "recognition lag",
+        "breakdown": "Recognition(识别) + Lag(时滞)",
+        "meaning_en": "the time it takes for policymakers to identify and recognize that a problem exists in the economy",
+        "meaning_zh": "识别时滞：从经济问题实际发生到政策制定者意识到它存在所需要的时间。因为经济数据（GDP、失业率）发布有延迟——衰退已经开始几个月了，数据才会确认",
+        "derivation": "问题发生 → 数据收集 → 数据公布 → 政策制定者识别 → 识别时滞结束",
+        "mnemonic": "「2008 年金融危机 12 月才正式被 NBER 认定开始于 2007 年 12 月——识别时滞整整一年」",
+        "example": "Recognition lag delayed the Fed's response to the 2007 recession.",
+        "example_zh": "识别时滞延误了美联储对 2007 年衰退的应对。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "required reserve ratio",
+        "breakdown": "Required + Reserve + Ratio",
+        "meaning_en": "the percentage of deposits that commercial banks are required to hold in reserve rather than lend out, used as a monetary policy tool",
+        "meaning_zh": "法定准备金率：在 4.6 里它是货币政策工具之一——降低 rrr 让银行能贷更多钱（扩张），提高 rrr 让银行必须留更多钱（紧缩）。但美联储很少动它，因为冲击太大",
+        "derivation": "央行降 rrr → 货币乘数 ↑ → 同样基础货币可以创造更多 MS → 扩张",
+        "mnemonic": "「动 rrr 就像开核弹——美联储几十年才动一次，2020 年 3 月才把它降到 0%」",
+        "example": "Lowering the required reserve ratio is a rarely used expansionary tool.",
+        "example_zh": "降低法定准备金率是一种很少使用的扩张性工具。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "reserve market model",
+        "breakdown": "Reserve(准备金) + Market(市场) + Model(模型)",
+        "meaning_en": "an economic model that illustrates the relationship between the supply and demand for bank reserves and the federal funds rate",
+        "meaning_zh": "准备金市场模型：展示银行准备金供求与联邦基金利率关系的模型。2008 年后的「新操作框架」下，美联储主要通过改变准备金供给和 IOR 来控制联邦基金利率——这是现代货币政策的核心图",
+        "derivation": "准备金供给（央行决定）× 准备金需求 → 均衡 → 联邦基金利率",
+        "mnemonic": "「准备金市场模型 = 美联储 2008 年后「新打法」的教材图——懂了它才懂现代美联储怎么操作」",
+        "example": "The reserve market model shows how interest on reserves sets a floor for the federal funds rate.",
+        "example_zh": "准备金市场模型展示了准备金利率如何为联邦基金利率设定下限。",
+        "toefl_frequency": "medium"
+      }
+    ]
   }
 ]

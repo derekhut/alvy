@@ -2,7 +2,7 @@
 
 Last updated: 2026-04-09
 Branch: update_version
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE | AP WHAP COMPLETE (19 concepts / 255 terms) | Update checker LIVE | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE (34 concepts / 445 terms, batches 1–3 done) | AP CSP LIVE | AP WHAP COMPLETE (19 concepts / 255 terms) | Update checker LIVE | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score) | v1.6.5 — "mastered" concept removed + rotation bug fixed
 
 ## V1 Summary
 
@@ -29,8 +29,8 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 - Extracted shared state machine from `daily-session.tsx` and `review-session.tsx` into `src/hooks/useSessionFlow.ts`
 - Hook owns: data state, phase transitions, morphemeIdx/wordIdx, XP tracking, SIGINT save, quit with save
 - Both session components are now thin wrappers (~100 lines each vs ~180 before)
-- **daily-session**: `markSeen: true, checkCelebration: true`, starts at `"dashboard"` phase
-- **review-session**: `markSeen: false, checkCelebration: false`, starts at `"intro"` or `"empty"`
+- **daily-session**: `markSeen: true, showContinuePrompt: true`, starts at `"dashboard"` phase
+- **review-session**: `markSeen: false, showContinuePrompt: false`, starts at `"intro"` or `"empty"`
 
 ### Step 3: Readability fix
 - Chinese definitions, translations, examples, section labels → regular white text (not dimmed)
@@ -76,7 +76,7 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 
 ### Step 9: Subject picker at launch
 - `alvy` (no args) now shows arrow-key subject picker instead of going straight to TOEFL daily session
-- Two subjects: TOEFL 词根 (30 roots) and AP 心理学 (16 concepts) with mastered/total progress
+- Two subjects initially: TOEFL 词根 (30 roots) and AP 心理学 (16 concepts); later expanded to AP CSP (20 concepts) and AP WHAP (19 concepts / 255 terms). Per-subject rows now show per-subject XP/studied counts (no mastered counter after v1.6.5).
 - Remember-last: `settings.lastSubject` persisted, cursor pre-highlights previous choice
 - Direct commands still work: `alvy psych`, `alvy review`, etc. (no picker shown)
 - **types.ts**: Added `Subject` type, `"pick"` to `Command` union, `lastSubject?` to settings
@@ -122,7 +122,11 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 
 2. **Quiz direction was initially wrong**: Original design doc said "Chinese meaning prominently, English choices". User corrected: English word is the question (you see the word, recall the meaning), Chinese meanings are the choices. This is standard vocabulary testing.
 
-3. **`selectNextMorphemes` picked mastered short concepts over partially-studied longer ones** (fixed 2026-04-09): The old "all seen" branch sorted by absolute `wordsStudied` ascending. For TOEFL (5 words per root, uniform) this was fine, but for CSP (1–6 terms per concept, uneven) a 1/1-mastered `Collaboration` always beat a 4/6-partial `The Internet`. Fix: three-tier selection in `progress.ts`. Tier 1 unseen (unchanged), Tier 2 seen-but-not-mastered sorted by **completion ratio** (`wordsStudied / words.length`) with lastStudied tie-break, Tier 3 all-mastered falls through to pure lastStudied review mode. Mastered concepts are filtered out of Tier 2 entirely. Added 3 regression tests.
+3. **`selectNextMorphemes` picked mastered short concepts over partially-studied longer ones** (fixed 2026-04-09): The old "all seen" branch sorted by absolute `wordsStudied` ascending. For TOEFL (5 words per root, uniform) this was fine, but for CSP (1–6 terms per concept, uneven) a 1/1-mastered `Collaboration` always beat a 4/6-partial `The Internet`. Fix: three-tier selection in `progress.ts`. Tier 1 unseen (unchanged), Tier 2 seen-but-not-mastered sorted by **completion ratio** (`wordsStudied / words.length`) with lastStudied tie-break, Tier 3 all-mastered falls through to pure lastStudied review mode. Mastered concepts are filtered out of Tier 2 entirely. Added 3 regression tests. **Obsoleted by gotcha #4 (mastered removal).**
+
+4. **"Mastered" concept removed entirely** (2026-04-09, v1.6.5): After the tier-ratio fix above, the fundamental premise of "mastery" was still wrong for uneven-length concepts and created a forced "全部词根学习完成" celebration page that users didn't want. Removed: `masteredCount()`, `seenCount()`, the `celebration` phase, dashboard's progress row, streak-header's 📚 column, subject-picker's mastered counter, `generateStatsSummary`'s 已掌握/已学习 lines, and `celebration.tsx` itself. Renamed `checkCelebration → showContinuePrompt` in `useSessionFlow`. `selectNextMorphemes` collapsed to a single-tier `lastStudied`-only sort. Users can now study indefinitely — rotation runs forever. `RootProgress.seen`/`wordsStudied` are kept (internal-only) because `needsReview`/`selectReviewMorphemes` still read them for the review mode.
+
+5. **Stale-closure bug in `advanceWord → finishRoot`** (fixed 2026-04-09, v1.6.5): In `useSessionFlow.ts`, `advanceWord` cloned `data`, called `markWordStudied(newData, ...)` (writing a fresh ISO `lastStudied`), then synchronously called `finishRoot()` from the same render's closure. `finishRoot` cloned `data` *again* from its own stale closure, overwriting the just-written `lastStudied`. Disk state persisted the old timestamp → all concepts stayed at the same day-precision seed → `localeCompare`'s stable sort returned the first N concepts in JSON order forever. **Symptom:** in a CSP session users would never reach "The Internet" (#14) and beyond — they'd cycle through the first 3 concepts on every batch. **Fix:** `finishRoot` now accepts an optional `draft?: UserData` parameter; `advanceWord` threads its `newData` through. `advanceAfterFeedback` passes a fresh `{ ...data }` for calling-convention consistency (its quiz path is async, so it wasn't technically affected). Added a `selectNextMorphemes rotation` regression test that simulates 4 batches of 3 picks across 10 concepts and asserts all 10 get seen. Also fixed a stale assertion in `markWordStudied` test that expected day-only `YYYY-MM-DD` (it's now full ISO).
 
 ## V2 Plan Overview
 
@@ -235,16 +239,17 @@ V2:  dashboard → root-intro → word-detail(x5) → quiz-intro → quiz(x5) �
 
 | File | Tests | Coverage |
 |------|-------|----------|
-| `progress.test.ts` | 49 cases | All 11 functions: masteredCount, seenCount, updateStreak, addXP, markRootSeen, markWordStudied, selectNextMorphemes (incl. 3 regression tests for mastered-short-concept bug), generateStatsSummary, recordQuizResult, needsReview, selectReviewMorphemes |
+| `progress.test.ts` | 41 cases | All 9 functions after "mastered" removal: updateStreak, addXP, markRootSeen, markWordStudied (full ISO timestamp), selectNextMorphemes (incl. rotation regression covering 10 concepts × 4 batches), generateStatsSummary, recordQuizResult, needsReview, selectReviewMorphemes |
 | `store.test.ts` | 9 cases | Path migration, V1→V3 backfill, V2→V3 migration, V3 no re-migration, XP→level computation, old avatar ID remap, corrupt data, fresh start |
 | `levels.test.ts` | 20 cases | xpForLevel boundaries, computeLevel edges, xpToNextLevel progress, compositeScore blending, checkLevelUp detection |
-| **Total** | **78 pass** | |
+| **Total** | **70 pass** | |
 
 Tests NOT yet written (from test plan):
 - Quiz distractor edge cases
-- Continue session / celebration mid-batch (component-level, needs Ink test renderer)
+- Continue session mid-batch transition (component-level, needs Ink test renderer)
 - Custom goal validation (CLI flag parsing, needs integration test)
 - Bonus XP (sessionBatch) (component-level)
+- Hook-level stale-closure regression for `advanceWord → finishRoot` (covered at pure-function level by `selectNextMorphemes rotation`, but a hook-level test would need `ink-testing-library`)
 
 ## Implementation Sequence
 
@@ -321,11 +326,11 @@ alvy/
       import.tsx           # Phase 2: JSON content importer (fail-fast)
       tree.tsx             # Phase 4: root family tree ASCII diagram
       config.tsx           # Step 8: persistent settings (goal, sound)
-      dashboard.tsx        # X/30 mastered + progress bar + streak
+      dashboard.tsx        # Avatar + level + streak + continue CTA (no mastered row after v1.6.5)
       root-lesson.tsx      # ✅ Root intro card (content text white)
       word-detail.tsx      # ✅ Single word display (content text white)
       session-summary.tsx  # XP earned, streak, words studied
-      celebration.tsx      # All roots mastered
+      # celebration.tsx removed in v1.6.5 (no more "全部词根学习完成" page)
       streak-header.tsx    # Streak counter + daily progress bar
       stats.tsx            # Export markdown progress summary
       doctor.tsx           # Environment checks

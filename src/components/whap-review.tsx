@@ -38,7 +38,7 @@ export default function WhapReview() {
       getDistractors: getDistractorMeaning,
       getNextBatch,
       markSeen: false,
-      checkCelebration: false,
+      showContinuePrompt: false,
     },
     reviewMorphemes.length === 0 ? "empty" : "intro",
   );

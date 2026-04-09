@@ -27,12 +27,12 @@ index.tsx          CLI entry point (meow parses args, default → "pick")
        ├─ subject-picker.tsx    Arrow-key subject menu (TOEFL/AP Psych/AP CSP/AP WHAP, remember-last)
        ├─ profile-view.tsx      `alvy profile` — avatar, level, composite score, stats
        ├─ daily-session.tsx     TOEFL learning flow (state machine)
-       │    ├─ dashboard.tsx        Launch screen (mastered count, streak, XP)
+       │    ├─ dashboard.tsx        Launch screen (avatar + level + streak + XP)
        │    ├─ streak-header.tsx    Reusable progress bar
        │    ├─ root-lesson.tsx      Root intro card (meaning, origin, related roots)
        │    ├─ word-detail.tsx      Single word (breakdown, derivation chain, example)
-       │    ├─ session-summary.tsx  End-of-session stats
-       │    └─ celebration.tsx      All 30 roots mastered
+       │    └─ session-summary.tsx  End-of-session stats
+       │    # celebration.tsx deleted in v1.6.5 (mastered concept removed)
        ├─ psych-session.tsx     AP Psychology learning flow (same state machine)
        ├─ psych-review.tsx      AP Psychology review
        ├─ csp-session.tsx       AP CSP learning flow (same state machine)
@@ -91,15 +91,15 @@ roots.json ──(import at startup)──> roots-db.ts (in-memory array, query 
                                              │
                                       (session complete)
                                              │
-                                ┌────────────┼────────────┐
-                                ▼                          ▼
-                       ┌──────────────┐          ┌──────────────┐
-                       │   summary    │          │ celebration  │
-                       │  (XP, streak)│          │ (all 30 done)│
-                       └──────────────┘          └──────────────┘
+                                ┌────────────┼───────────────┐
+                                ▼                             ▼
+                       ┌──────────────┐          ┌────────────────────┐
+                       │   summary    │          │  continue-prompt   │
+                       │  (XP, streak)│          │ (next batch or q?) │
+                       └──────────────┘          └────────────────────┘
 ```
 
-Phase type: `"dashboard" | "root-intro" | "word-detail" | "quiz-intro" | "quiz" | "quiz-feedback" | "continue-prompt" | "summary" | "celebration" | "empty"`
+Phase type: `"dashboard" | "intro" | "root-intro" | "word-detail" | "quiz-intro" | "quiz" | "quiz-feedback" | "continue-prompt" | "summary" | "empty"` (celebration phase removed in v1.6.5)
 
 Navigation: **→** advances forward, **←** goes back (word→word, word→root-intro, root-intro→prev root, root-intro→dashboard), **Esc** quits and saves. Quiz uses **1**/**2** keys. Each daily session presents 3 roots (configurable via `dailyGoal`). Each root has 5 words.
 
@@ -108,7 +108,7 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | Decision | Detail |
 |----------|--------|
 | No quiz/drill | Learning IS the derivation chain walkthrough. No multiple choice, no right/wrong. |
-| Mastery = 5 words studied | A root is "mastered" when `wordsStudied >= 5` (all its words seen). No accuracy metric. |
+| No mastery concept (v1.6.5+) | Mastery counter removed entirely. Users rotate through concepts indefinitely by oldest `lastStudied`. Review mode still uses internal `wordsStudied`/`quizAccuracy` to select weak roots. |
 | XP = +10 per word, unconditional | Every word studied earns 10 XP. No penalty, no bonus. `addXP(data, 10)` per word. |
 | Sequential root discovery | Unseen roots are served in `roots.json` order. After all seen, pick least-studied. |
 | Atomic writes | `saveData()` writes to `.tmp` then `rename()`. Prevents corruption on crash. |
@@ -126,18 +126,17 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/components/subject-picker.tsx` | Arrow-key subject menu. Shows full ASCII art avatar + name/level, per-subject progress, remembers last choice. |
 | `src/components/daily-session.tsx` | State machine for the main learning flow. Manages phases, word/root indices, XP tracking. |
 | `src/components/review-session.tsx` | Like daily-session but selects weak roots (fewest `wordsStudied`, already `seen`). |
-| `src/components/dashboard.tsx` | Shows full ASCII art avatar + name/level, mastered count, streak, XP. Entry point to a session. |
+| `src/components/dashboard.tsx` | Shows full ASCII art avatar + name/level, streak, XP. Entry point to a session. (Mastered count row removed in v1.6.5.) |
 | `src/components/root-lesson.tsx` | Displays root card: root, meaning (EN + ZH), origin, related roots. |
 | `src/components/word-detail.tsx` | Displays one word: breakdown, derivation chain, meaning, example sentence. |
 | `src/components/session-summary.tsx` | End-of-session: words studied, XP earned, streak status. |
-| `src/components/celebration.tsx` | Graduation screen when all 30 roots are mastered. |
 | `src/components/streak-header.tsx` | Reusable streak counter + daily progress bar. |
 | `src/components/stats.tsx` | `alvy stats` — generates markdown progress summary. |
 | `src/components/doctor.tsx` | `alvy doctor` — checks Node.js version, npm, UTF-8 locale, disk permissions. Imports `DATA_DIR` from store.ts. |
 | `src/components/explore.tsx` | V2 stub. Shows "Coming in V2" message. |
 | `src/lib/types.ts` | TypeScript interfaces: `UserData` (V3), `RootProgress`, `RootEntry`, `RootWord`, `UserProfile`, `LevelProgress`, `AvatarId`, `Command`, `Subject`. |
 | `src/lib/store.ts` | Read/write `~/.alvy/data.json`. Auto-migrates from `~/.toefl-roots/`. V1→V2→V3 migration chain. Exports `DATA_DIR`, `DATA_FILE`. First-run init, corrupt-file backup, atomic writes. |
-| `src/lib/progress.ts` | Business logic: `masteredCount()`, `addXP()`, `updateStreak()`, `markRootSeen()`, `markWordStudied()`, `selectNextMorphemes()`. |
+| `src/lib/progress.ts` | Business logic: `addXP()`, `updateStreak()`, `markRootSeen()`, `markWordStudied()` (full ISO timestamp), `selectNextMorphemes()` (single-tier oldest-first), `recordQuizResult()`, `needsReview()`, `selectReviewMorphemes()`, `generateStatsSummary()`. `masteredCount`/`seenCount` removed in v1.6.5. |
 | `src/lib/levels.ts` | Level system: `xpForLevel()`, `computeLevel()`, `xpToNextLevel()`, `computeCompositeScore()`, `checkLevelUp()`. |
 | `src/lib/avatars.ts` | 18 ASCII art avatar constants (duck, goose, blob, cat, dragon, octopus, owl, penguin, turtle, snail, ghost, axolotl, robot, cactus, rabbit, mushroom, bear, alien). |
 | `src/components/profile-setup.tsx` | First-launch profile setup (name input → avatar picker). |

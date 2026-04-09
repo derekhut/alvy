@@ -1,18 +1,11 @@
 import React, { useState } from "react";
 import { Box, Text, useInput, useApp } from "ink";
 import type { UserData, Subject } from "../lib/types.js";
-import { masteredCount } from "../lib/progress.js";
-import { getAllRoots, getRootCount } from "../lib/roots-db.js";
-import { getAllConcepts, getConceptCount } from "../lib/psych-db.js";
-import { getAllTopics, getTopicCount } from "../lib/csp-db.js";
-import { getAllTopics as getAllWhapTopics, getTopicCount as getWhapTopicCount } from "../lib/whap-db.js";
 import { AVATARS } from "../lib/avatars.js";
 
 interface SubjectOption {
   key: Subject;
   label: string;
-  mastered: number;
-  total: number;
 }
 
 interface SubjectPickerProps {
@@ -25,30 +18,10 @@ export default function SubjectPicker({ data, onSelect, onEditProfile }: Subject
   const { exit } = useApp();
 
   const subjects: SubjectOption[] = [
-    {
-      key: "toefl",
-      label: "TOEFL 词根",
-      mastered: masteredCount(data, getAllRoots()),
-      total: getRootCount(),
-    },
-    {
-      key: "psych",
-      label: "AP 心理学",
-      mastered: masteredCount(data, getAllConcepts()),
-      total: getConceptCount(),
-    },
-    {
-      key: "csp",
-      label: "AP 计算机科学原理",
-      mastered: masteredCount(data, getAllTopics()),
-      total: getTopicCount(),
-    },
-    {
-      key: "whap",
-      label: "AP 世界历史",
-      mastered: masteredCount(data, getAllWhapTopics()),
-      total: getWhapTopicCount(),
-    },
+    { key: "toefl", label: "TOEFL 词根" },
+    { key: "psych", label: "AP 心理学" },
+    { key: "csp", label: "AP 计算机科学原理" },
+    { key: "whap", label: "AP 世界历史" },
   ];
 
   const lastSubject = data.settings?.lastSubject;
@@ -106,9 +79,6 @@ export default function SubjectPicker({ data, onSelect, onEditProfile }: Subject
               <Text color={i === cursor ? "#AF5FFF" : undefined}>
                 {s.label}
               </Text>
-              <Text>{"  "}</Text>
-              <Text bold color="#FFAF00">{s.mastered}</Text>
-              <Text>/{s.total} 已掌握</Text>
             </Box>
           ))}
         </Box>

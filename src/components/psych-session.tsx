@@ -11,7 +11,6 @@ import QuizIntro from "./quiz-intro.js";
 import Quiz from "./quiz.js";
 import ContinuePrompt from "./continue-prompt.js";
 import SessionSummary from "./session-summary.js";
-import Celebration from "./celebration.js";
 import StreakHeader from "./streak-header.js";
 import type { RootLessonLabels } from "./root-lesson.js";
 
@@ -41,7 +40,6 @@ export default function PsychSession() {
       getDistractors: getDistractorMeaning,
       getNextBatch,
       markSeen: true,
-      checkCelebration: true,
     },
     "dashboard",
   );
@@ -98,7 +96,6 @@ export default function PsychSession() {
           actions.continueSession();
           break;
         case "summary":
-        case "celebration":
           actions.quit();
           break;
       }
@@ -190,9 +187,6 @@ export default function PsychSession() {
           levelUp={state.levelUp}
         />
       );
-
-    case "celebration":
-      return <Celebration data={state.data} totalRoots={state.totalRoots} />;
 
     default:
       return null;

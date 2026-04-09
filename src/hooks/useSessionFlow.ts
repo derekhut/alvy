@@ -7,7 +7,6 @@ import {
   markWordStudied,
   addXP,
   updateStreak,
-  masteredCount,
   recordQuizResult,
 } from "../lib/progress.js";
 import { checkLevelUp } from "../lib/levels.js";
@@ -22,7 +21,6 @@ export type SessionPhase =
   | "quiz-feedback"
   | "continue-prompt"
   | "summary"
-  | "celebration"
   | "empty";
 
 export interface QuizQuestion {
@@ -38,7 +36,7 @@ export interface SessionFlowOptions {
   getDistractors: (word: RootWord, currentEntry: RootEntry) => string;
   getNextBatch: (data: UserData) => RootEntry[];
   markSeen?: boolean;
-  checkCelebration?: boolean;
+  showContinuePrompt?: boolean;
 }
 
 export interface SessionFlowState {
@@ -108,7 +106,7 @@ export function useSessionFlow(
   const [levelUp, setLevelUp] = useState<{ newLevel: number; oldLevel: number } | null>(null);
 
   const totalRoots = opts.totalUnits;
-  const { markSeen = true, checkCelebration = true } = opts;
+  const { markSeen = true, showContinuePrompt = true } = opts;
 
   // Save on unmount / SIGINT
   useEffect(() => {
@@ -124,13 +122,15 @@ export function useSessionFlow(
     };
   }, [data]);
 
-  const finishRoot = useCallback(() => {
+  const finishRoot = useCallback((draft?: UserData) => {
     const nextMorpheme = morphemeIdx + 1;
     if (nextMorpheme < morphemes.length) {
       setMorphemeIdx(nextMorpheme);
       setPhase("root-intro");
     } else {
-      const newData = { ...data };
+      // Use caller's draft if provided — avoids stale-closure { ...data }
+      // overwriting a just-applied markWordStudied update.
+      const newData = draft ?? { ...data };
       updateStreak(newData);
 
       // Update level progress
@@ -144,25 +144,22 @@ export function useSessionFlow(
       setData(newData);
       saveData(newData);
 
-      if (checkCelebration && masteredCount(newData, opts.getAllUnits()) >= totalRoots) {
-        setPhase("celebration");
-      } else if (checkCelebration) {
-        // Daily session: offer to continue
+      if (showContinuePrompt) {
         setPhase("continue-prompt");
       } else {
         setPhase("summary");
       }
     }
-  }, [morphemeIdx, morphemes, data, totalRoots, checkCelebration, opts]);
+  }, [morphemeIdx, morphemes, data, showContinuePrompt]);
 
   const startSession = useCallback(() => {
     if (morphemes.length === 0) {
-      setPhase(checkCelebration ? "celebration" : "empty");
+      setPhase("summary");
       return;
     }
     setMorphemeIdx(0);
     setPhase("root-intro");
-  }, [morphemes, checkCelebration]);
+  }, [morphemes]);
 
   const startWordWalkthrough = useCallback(() => {
     if (markSeen) {
@@ -190,10 +187,12 @@ export function useSessionFlow(
     if (nextWord < entry.words.length) {
       setWordIdx(nextWord);
     } else {
-      // All words done for this root → skip quiz, go to next root
-      finishRoot();
+      // All words done for this root → skip quiz, go to next root.
+      // Pass newData so finishRoot keeps the lastStudied timestamp we just
+      // wrote — instead of cloning a stale `data` from its own closure.
+      finishRoot(newData);
     }
-  }, [morphemes, morphemeIdx, wordIdx, data, sessionBatch]);
+  }, [morphemes, morphemeIdx, wordIdx, data, sessionBatch, finishRoot]);
 
   const startQuiz = useCallback(() => {
     const entry = morphemes[morphemeIdx]!;
@@ -238,10 +237,11 @@ export function useSessionFlow(
       setPhase("quiz");
     } else {
       // Quiz done for this root → next root or summary
-      // Keep quizQuestion/quizResult until phase changes to avoid null render
-      finishRoot();
+      // Keep quizQuestion/quizResult until phase changes to avoid null render.
+      // Pass fresh draft for consistency with advanceWord (same calling convention).
+      finishRoot({ ...data });
     }
-  }, [morphemes, morphemeIdx, quizIdx, finishRoot, opts]);
+  }, [morphemes, morphemeIdx, quizIdx, finishRoot, opts, data]);
 
   const continueSession = useCallback(() => {
     const nextBatch = opts.getNextBatch(data);

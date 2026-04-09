@@ -1,8 +1,6 @@
-import { describe, it, expect, beforeEach, vi } from "vitest";
+import { describe, it, expect } from "vitest";
 import type { UserData, RootEntry } from "../types.js";
 import {
-  masteredCount,
-  seenCount,
   updateStreak,
   addXP,
   markRootSeen,
@@ -47,69 +45,6 @@ function makeRoot(root: string, wordCount = 5): RootEntry {
     })),
   };
 }
-
-// --- masteredCount ---
-
-describe("masteredCount", () => {
-  it("returns 0 for empty progress", () => {
-    const data = makeData();
-    expect(masteredCount(data)).toBe(0);
-  });
-
-  it("counts roots with all words studied and seen=true", () => {
-    const roots = [makeRoot("bene-", 5), makeRoot("mal-", 3), makeRoot("pre-", 5)];
-    const data = makeData({
-      rootProgress: {
-        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
-        "mal-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-01" },
-        "pre-": { seen: true, wordsStudied: 4, lastStudied: "2026-04-01" },
-      },
-    });
-    expect(masteredCount(data, roots)).toBe(2); // bene (5/5) and mal (3/3)
-  });
-
-  it("does not count unseen roots even with all words studied", () => {
-    const roots = [makeRoot("bene-", 5)];
-    const data = makeData({
-      rootProgress: {
-        "bene-": { seen: false, wordsStudied: 5, lastStudied: "2026-04-01" },
-      },
-    });
-    expect(masteredCount(data, roots)).toBe(0);
-  });
-
-  it("handles variable word counts per root", () => {
-    const roots = [makeRoot("bene-", 3), makeRoot("mal-", 7), makeRoot("pre-", 2)];
-    const data = makeData({
-      rootProgress: {
-        "bene-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-01" },
-        "mal-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
-        "pre-": { seen: true, wordsStudied: 2, lastStudied: "2026-04-01" },
-      },
-    });
-    expect(masteredCount(data, roots)).toBe(2); // bene (3/3) and pre (2/2), not mal (5/7)
-  });
-});
-
-// --- seenCount ---
-
-describe("seenCount", () => {
-  it("returns 0 for empty progress", () => {
-    const data = makeData();
-    expect(seenCount(data)).toBe(0);
-  });
-
-  it("counts only roots with seen=true", () => {
-    const data = makeData({
-      rootProgress: {
-        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
-        "mal-": { seen: false, wordsStudied: 0, lastStudied: null },
-        "pre-": { seen: true, wordsStudied: 1, lastStudied: "2026-04-01" },
-      },
-    });
-    expect(seenCount(data)).toBe(2);
-  });
-});
 
 // --- updateStreak ---
 
@@ -254,8 +189,11 @@ describe("markWordStudied", () => {
     markWordStudied(data, "bene-", "benefit");
     expect(data.wordsStudied).toContain("benefit");
     expect(data.rootProgress["bene-"]!.wordsStudied).toBe(1);
-    expect(data.rootProgress["bene-"]!.lastStudied).toBe(
-      new Date().toISOString().slice(0, 10)
+    // lastStudied is a full ISO timestamp starting with today's date,
+    // so same-day concepts can be ordered by recency.
+    const today = new Date().toISOString().slice(0, 10);
+    expect(data.rootProgress["bene-"]!.lastStudied).toMatch(
+      new RegExp(`^${today}T`)
     );
   });
 
@@ -296,7 +234,7 @@ describe("markWordStudied", () => {
 describe("selectNextMorphemes", () => {
   const roots = [makeRoot("bene-"), makeRoot("mal-"), makeRoot("pre-"), makeRoot("post-")];
 
-  it("picks unseen roots first in order", () => {
+  it("picks roots in order for fresh user (empty progress)", () => {
     const data = makeData();
     const selected = selectNextMorphemes(data, roots, 2);
     expect(selected.map((r) => r.root)).toEqual(["bene-", "mal-"]);
@@ -315,20 +253,7 @@ describe("selectNextMorphemes", () => {
     expect(selected).toHaveLength(3);
   });
 
-  it("when all seen, picks least studied first", () => {
-    const data = makeData({
-      rootProgress: {
-        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
-        "mal-": { seen: true, wordsStudied: 2, lastStudied: "2026-04-01" },
-        "pre-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-01" },
-        "post-": { seen: true, wordsStudied: 1, lastStudied: "2026-04-01" },
-      },
-    });
-    const selected = selectNextMorphemes(data, roots, 2);
-    expect(selected.map((r) => r.root)).toEqual(["post-", "mal-"]);
-  });
-
-  it("tie-breaks by oldest lastStudied", () => {
+  it("sorts by oldest lastStudied first", () => {
     const data = makeData({
       rootProgress: {
         "bene-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-02" },
@@ -341,65 +266,64 @@ describe("selectNextMorphemes", () => {
     expect(selected.map((r) => r.root)).toEqual(["post-", "mal-"]);
   });
 
-  it("skips already-seen roots when unseen exist", () => {
+  it("treats never-studied (null/missing) as oldest", () => {
     const data = makeData({
       rootProgress: {
-        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
-        "mal-": { seen: true, wordsStudied: 2, lastStudied: "2026-04-01" },
+        "bene-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-02" },
+        "mal-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-01" },
       },
     });
+    // pre- and post- have no progress → empty string sorts before any date
     const selected = selectNextMorphemes(data, roots, 2);
     expect(selected.map((r) => r.root)).toEqual(["pre-", "post-"]);
   });
 
-  it("skips mastered short concepts in favor of partially-studied longer ones", () => {
-    // Regression test for CSP bug: short concepts (1-2 words) that are 100%
-    // mastered should NOT be re-selected just because their absolute
-    // wordsStudied count is low.
-    const mixedRoots = [
-      makeRoot("short-a", 1),   // 1 word total
-      makeRoot("short-b", 2),   // 2 words total
-      makeRoot("long-a", 6),    // 6 words total
-      makeRoot("long-b", 5),    // 5 words total
-    ];
+  it("does not skip mastered roots (all-seen behavior: pure rotation)", () => {
+    // Previously mastered short concepts would be skipped. Now the concept
+    // of "mastered" is removed — roots rotate by lastStudied only.
     const data = makeData({
       rootProgress: {
-        "short-a": { seen: true, wordsStudied: 1, lastStudied: "2026-04-09" }, // 100% mastered
-        "short-b": { seen: true, wordsStudied: 2, lastStudied: "2026-04-09" }, // 100% mastered
-        "long-a":  { seen: true, wordsStudied: 4, lastStudied: "2026-04-09" }, // 67% partial
-        "long-b":  { seen: true, wordsStudied: 4, lastStudied: "2026-04-09" }, // 80% partial
+        "bene-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
+        "mal-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-02" },
+        "pre-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-03" },
+        "post-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-04" },
       },
     });
-    const selected = selectNextMorphemes(data, mixedRoots, 2);
-    expect(selected.map((r) => r.root)).toEqual(["long-a", "long-b"]);
+    const selected = selectNextMorphemes(data, roots, 2);
+    expect(selected.map((r) => r.root)).toEqual(["bene-", "mal-"]);
   });
+});
 
-  it("uses completion ratio, not absolute count, for partial concepts", () => {
-    // A 2/10 root (20%) should be picked before a 4/5 root (80%)
-    // even though 4 > 2 in absolute terms.
-    const ratioRoots = [makeRoot("big-", 10), makeRoot("small-", 5)];
-    const data = makeData({
-      rootProgress: {
-        "big-":   { seen: true, wordsStudied: 2, lastStudied: "2026-04-01" },
-        "small-": { seen: true, wordsStudied: 4, lastStudied: "2026-04-01" },
-      },
-    });
-    const selected = selectNextMorphemes(data, ratioRoots, 2);
-    expect(selected.map((r) => r.root)).toEqual(["big-", "small-"]);
-  });
+// --- selectNextMorphemes rotation (regression) ---
 
-  it("enters pure review mode when all roots are mastered", () => {
-    // Tier 3: all 100% mastered → sort by oldest lastStudied
-    const reviewRoots = [makeRoot("a-", 3), makeRoot("b-", 5), makeRoot("c-", 2)];
-    const data = makeData({
-      rootProgress: {
-        "a-": { seen: true, wordsStudied: 3, lastStudied: "2026-04-05" },
-        "b-": { seen: true, wordsStudied: 5, lastStudied: "2026-04-01" },
-        "c-": { seen: true, wordsStudied: 2, lastStudied: "2026-04-03" },
-      },
-    });
-    const selected = selectNextMorphemes(data, reviewRoots, 2);
-    expect(selected.map((r) => r.root)).toEqual(["b-", "c-"]);
+describe("selectNextMorphemes rotation", () => {
+  it("rotates through all concepts across multiple batches", () => {
+    // Regression test for CSP session rotation bug: if lastStudied updates
+    // are persisted correctly between batches, selectNextMorphemes should
+    // eventually cover every concept rather than getting stuck on the first
+    // few in JSON order.
+    const roots = Array.from({ length: 10 }, (_, i) => makeRoot(`r${i}`, 1));
+    const data = makeData();
+    const seen = new Set<string>();
+
+    // Simulate 4 batches of 3 — 12 picks should cover all 10 concepts.
+    for (let batch = 0; batch < 4; batch++) {
+      const picks = selectNextMorphemes(data, roots, 3);
+      for (let i = 0; i < picks.length; i++) {
+        const pick = picks[i]!;
+        seen.add(pick.root);
+        // Simulate markWordStudied writing a unique, monotonically
+        // increasing ISO timestamp so sorts produce a stable order.
+        data.rootProgress[pick.root] = {
+          seen: true,
+          wordsStudied: 1,
+          lastStudied: new Date(
+            Date.parse("2026-01-01") + batch * 10000 + i
+          ).toISOString(),
+        };
+      }
+    }
+    expect(seen.size).toBe(10);
   });
 });
 
@@ -418,21 +342,22 @@ describe("generateStatsSummary", () => {
       wordsStudied: ["benefit", "benevolent", "malice"],
     });
     const summary = generateStatsSummary(data, 30, roots);
-    expect(summary).toContain("1/30 个词根");
-    expect(summary).toContain("2/30 个词根");
     expect(summary).toContain("150 XP");
     expect(summary).toContain("3 天");
     expect(summary).toContain("7 天");
     expect(summary).toContain("3 个");
+    expect(summary).not.toContain("已掌握");
+    expect(summary).not.toContain("已学习");
   });
 
   it("handles empty data", () => {
     const data = makeData();
     const summary = generateStatsSummary(data, 30);
-    expect(summary).toContain("0/30 个词根");
     expect(summary).toContain("0 XP");
     expect(summary).toContain("0 天");
     expect(summary).toContain("0 个");
+    expect(summary).not.toContain("已掌握");
+    expect(summary).not.toContain("已学习");
   });
 });
 

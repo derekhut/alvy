@@ -30,18 +30,17 @@
 
 ## Borders
 - **Round corners** `╭╮╰╯` for content cards (lessons, words, results) — modern, soft
-- **Double borders** `╔╗╚╝` ONLY for celebrations/milestones — makes them feel special
 - **Dim single lines** `───` for section dividers
+- Double borders `╔╗╚╝` are unused after v1.6.5 (celebration screen removed)
 
 ## Emoji Strategy
 Emojis are punctuation, not decoration. One emoji per context, never two in a row.
 - 🔥 streak
 - ⭐ XP
-- 📚 mastered count
-- 🌱 mastered root (celebration)
 - 🌙 daily goal complete
 - No emoji on wrong answers (silence is more powerful)
 - No emoji in menus
+- 📚 and 🌱 (mastered count / celebration) retired in v1.6.5 with the mastered concept
 
 ## Spacing
 - Dense but rhythmic
@@ -67,7 +66,8 @@ All UI text in Chinese. English only for vocabulary content itself.
 | 2026-04-01 | No quiz/multiple choice | Learning is the derivation, not guessing from options. |
 | 2026-04-01 | Chinese UI text | Product is for Chinese students. |
 | 2026-04-01 | Dusty rose for errors | "Not quite." reframes wrong answers as teaching moments. |
-| 2026-04-01 | Amber border on celebration card | Exception to slate border rule. Double border + amber = trophy moment. Only celebration screen uses this. |
+| 2026-04-01 | Amber border on celebration card | Exception to slate border rule. Double border + amber = trophy moment. Only celebration screen used this. **Retired 2026-04-09** when the celebration/mastered concept was removed in v1.6.5. |
 | 2026-04-02 | Content text white, dim nav only | Chinese definitions/examples were unreadable on dark terminals. Dim reserved for navigation hints. |
 | 2026-04-09 | ASCII art avatars in profile/dashboard | 18 ASCII art avatars, full 3-line art in profile, dashboard, and subject picker. |
 | 2026-04-09 | Level badge format `Lv.N` | Compact format with amber number, no titles. Progress bar in violet. |
+| 2026-04-09 | Remove "mastered" concept (v1.6.5) | Mastery counter and celebration page were wrong for uneven-length concept sets (e.g. CSP 1–6 terms). Users now rotate indefinitely by oldest `lastStudied`. Dashboard, streak-header, subject-picker, stats summary, and `celebration.tsx` all simplified. |

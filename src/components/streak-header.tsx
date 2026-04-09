@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Text } from "ink";
 import type { UserData, RootEntry } from "../lib/types.js";
-import { masteredCount } from "../lib/progress.js";
-import { getAllRoots } from "../lib/roots-db.js";
 
 interface StreakHeaderProps {
   data: UserData;
@@ -10,10 +8,7 @@ interface StreakHeaderProps {
   getAllUnits?: () => RootEntry[];
 }
 
-export default function StreakHeader({ data, totalRoots, getAllUnits }: StreakHeaderProps) {
-  const units = getAllUnits ?? getAllRoots;
-  const mastered = masteredCount(data, units());
-
+export default function StreakHeader({ data }: StreakHeaderProps) {
   return (
     <Box paddingLeft={2} paddingTop={1} gap={3}>
       <Text>
@@ -21,9 +16,6 @@ export default function StreakHeader({ data, totalRoots, getAllUnits }: StreakHe
       </Text>
       <Text>
         ⭐ <Text bold color="#FFAF00">{data.xp.total}</Text> XP
-      </Text>
-      <Text>
-        📚 <Text bold color="#FFAF00">{mastered}/{totalRoots}</Text>
       </Text>
       <Text dimColor>
         Lv.{data.levelProgress.level}

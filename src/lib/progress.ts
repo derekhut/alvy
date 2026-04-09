@@ -1,24 +1,5 @@
 import type { UserData, RootEntry } from "./types.js";
 
-/** Count fully studied roots (all words seen) */
-export function masteredCount(data: UserData, allRoots?: RootEntry[]): number {
-  if (allRoots) {
-    return allRoots.filter((r) => {
-      const p = data.rootProgress[r.root];
-      return p?.seen && p.wordsStudied >= r.words.length;
-    }).length;
-  }
-  // Fallback: no root data available, check wordsStudied > 0 and seen
-  return Object.values(data.rootProgress).filter(
-    (p) => p.seen && p.wordsStudied >= 5
-  ).length;
-}
-
-/** Count roots that have been started */
-export function seenCount(data: UserData): number {
-  return Object.values(data.rootProgress).filter((p) => p.seen).length;
-}
-
 /** Update streak based on today's date */
 export function updateStreak(data: UserData): void {
   const today = new Date().toISOString().slice(0, 10);
@@ -80,43 +61,19 @@ export function markWordStudied(
     if (isNew) {
       progress.wordsStudied = (progress.wordsStudied || 0) + 1;
     }
-    progress.lastStudied = new Date().toISOString().slice(0, 10);
+    // Full ISO timestamp so same-day concepts can be ordered by recency.
+    // Legacy YYYY-MM-DD values still sort correctly as string prefixes.
+    progress.lastStudied = new Date().toISOString();
   }
 }
 
-/** Select next morphemes for a daily session */
+/** Select next morphemes for a daily session — oldest studied first (JSON order for fresh user) */
 export function selectNextMorphemes(
   data: UserData,
   allRoots: RootEntry[],
   count: number = 3
 ): RootEntry[] {
-  // Tier 1: Unseen morphemes first (sequential order, preserves current behavior)
-  const unseen = allRoots.filter((r) => !data.rootProgress[r.root]?.seen);
-  if (unseen.length > 0) {
-    return unseen.slice(0, count);
-  }
-
-  // Tier 2: Seen but not yet mastered — sort by completion ratio ascending
-  // (least-complete first), tie-break by oldest lastStudied
-  const notMastered = allRoots.filter((r) => {
-    const p = data.rootProgress[r.root];
-    return (p?.wordsStudied ?? 0) < r.words.length;
-  });
-  if (notMastered.length > 0) {
-    const sorted = [...notMastered].sort((a, b) => {
-      const pA = data.rootProgress[a.root];
-      const pB = data.rootProgress[b.root];
-      const ratioA = (pA?.wordsStudied ?? 0) / a.words.length;
-      const ratioB = (pB?.wordsStudied ?? 0) / b.words.length;
-      if (ratioA !== ratioB) return ratioA - ratioB;
-      const dateA = pA?.lastStudied ?? "";
-      const dateB = pB?.lastStudied ?? "";
-      return dateA.localeCompare(dateB);
-    });
-    return sorted.slice(0, count);
-  }
-
-  // Tier 3: All mastered — pure review mode, oldest lastStudied first
+  // Sort by oldest lastStudied (fresh users get JSON order via stable sort on empty strings)
   const sorted = [...allRoots].sort((a, b) => {
     const dateA = data.rootProgress[a.root]?.lastStudied ?? "";
     const dateB = data.rootProgress[b.root]?.lastStudied ?? "";
@@ -199,22 +156,17 @@ export function selectReviewMorphemes(
 /** Generate stats summary as markdown */
 export function generateStatsSummary(
   data: UserData,
-  totalRoots: number,
-  allRoots?: RootEntry[],
+  _totalRoots: number,
+  _allRoots?: RootEntry[],
   subject?: "toefl" | "psych",
 ): string {
-  const mastered = masteredCount(data, allRoots);
-  const seen = seenCount(data);
   const totalWords = data.wordsStudied.length;
 
   const subjectLabel = subject === "psych" ? "AP 心理学" : "词根学习";
-  const unitLabel = subject === "psych" ? "概念" : "词根";
   const wordLabel = subject === "psych" ? "术语" : "单词";
 
   return `# ${subjectLabel}进度
 
-- **已掌握:** ${mastered}/${totalRoots} 个${unitLabel}
-- **已学习:** ${seen}/${totalRoots} 个${unitLabel}
 - **总经验值:** ${data.xp.total} XP
 - **当前连续天数:** ${data.streak.current} 天
 - **最长连续天数:** ${data.streak.longest} 天

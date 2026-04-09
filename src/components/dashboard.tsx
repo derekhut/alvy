@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Text } from "ink";
 import type { UserData, RootEntry } from "../lib/types.js";
-import { masteredCount, seenCount } from "../lib/progress.js";
-import { getAllRoots } from "../lib/roots-db.js";
 import { xpToNextLevel } from "../lib/levels.js";
 import { AVATARS } from "../lib/avatars.js";
 
@@ -13,17 +11,7 @@ interface DashboardProps {
   getAllUnits?: () => RootEntry[];
 }
 
-export default function Dashboard({ data, totalRoots, subject, getAllUnits }: DashboardProps) {
-  const units = getAllUnits ?? getAllRoots;
-  const mastered = masteredCount(data, units());
-  const seen = seenCount(data);
-
-  const barWidth = 30;
-  const filled = Math.round((mastered / totalRoots) * barWidth);
-  const empty = barWidth - filled;
-  const bar = "█".repeat(filled) + "░".repeat(empty);
-  const pct = totalRoots > 0 ? Math.round((mastered / totalRoots) * 100) : 0;
-
+export default function Dashboard({ data, subject }: DashboardProps) {
   const profile = data.profile;
   const avatar = profile ? AVATARS[profile.avatar] : null;
   const displayName = profile?.displayName;
@@ -75,16 +63,6 @@ export default function Dashboard({ data, totalRoots, subject, getAllUnits }: Da
           <Text>
             Lv.<Text bold color="#FFAF00">{lp.level}</Text> <Text color="#AF5FFF">{lvlBar}</Text> {lvlPct}%
           </Text>
-        </Box>
-
-        <Box marginTop={1} flexDirection="column">
-          <Text>
-            进度: <Text bold color="#FFAF00">{mastered}/{totalRoots}</Text> 已掌握（{seen} 已学习）
-          </Text>
-          <Box>
-            <Text color="#AF5FFF">{bar}</Text>
-            <Text> {pct}%</Text>
-          </Box>
         </Box>
 
         {data.streak.longest > 1 && (

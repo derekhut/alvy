@@ -1,6 +1,6 @@
 # TODOS — alvy
 
-Last updated: 2026-04-08 by /plan-eng-review
+Last updated: 2026-04-09 — v1.6.5 mastered removal + rotation fix
 
 ## P0: BLOCKER
 
@@ -13,11 +13,8 @@ Last updated: 2026-04-08 by /plan-eng-review
 
 ## P1: Pre-AP-Psych
 
-### Fix markWordStudied counter inflation
-**What:** `markWordStudied()` in `progress.ts:79` increments `rootProgress.wordsStudied` counter even when re-studying an already-known word. Should only increment for new words.
-**Why:** Counter inflation can trigger premature mastery (masteredCount checks `wordsStudied >= totalWords`). Currently hidden because TOEFL has only 5 words per root, but will matter more with AP Psych's 4-5 terms per concept.
-**Fix:** One-line conditional: only increment if `!data.wordsStudied.includes(word)`. Update existing test at `progress.test.ts:274` which documents this as "known V1 behavior."
-**Depends on:** Nothing. Can be done standalone.
+### ~~Fix markWordStudied counter inflation~~ — DONE
+**What:** `markWordStudied()` only increments `rootProgress.wordsStudied` counter for new words now (guarded by `!data.wordsStudied.includes(word)`). Mastery concept was later removed entirely in v1.6.5, so counter inflation no longer gates any user-visible behavior — but the fix is still live for review-mode's internal `wordsStudied` bookkeeping.
 **Source:** Eng review issue 9 (2026-04-08)
 
 ## P2: Product Questions

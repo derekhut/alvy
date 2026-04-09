@@ -38,7 +38,7 @@ export default function PsychReview() {
       getDistractors: getDistractorMeaning,
       getNextBatch,
       markSeen: false,
-      checkCelebration: false,
+      showContinuePrompt: false,
     },
     reviewMorphemes.length === 0 ? "empty" : "intro",
   );

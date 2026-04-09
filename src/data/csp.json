@@ -6,7 +6,9 @@
     "meaning_zh": "大概念1导论：计算创新由协作和多元视角塑造——优秀的程序员需要沟通、协商和与不同背景的人合作。例如为全球用户设计App时，团队的多样性能帮助发现盲点",
     "origin": "Unit 1: 1.1 Intro to Big Idea 1",
     "related": [
-      "Program Function and Purpose"
+      "Program Function and Purpose",
+      "Program Design and Development",
+      "Identifying and Correcting Errors"
     ],
     "words": [
       {
@@ -150,7 +152,9 @@
     "meaning_zh": "程序功能与目的：程序被设计用来做什么——它的目的、输入、输出、事件以及运行时的行为。例如一个天气App的目的是告知天气，输入是位置，输出是视觉化的温度图",
     "origin": "Unit 1: 1.2 Program Function and Purpose",
     "related": [
-      "Intro to Big Idea 1"
+      "Intro to Big Idea 1",
+      "Program Design and Development",
+      "Identifying and Correcting Errors"
     ],
     "words": [
       {
@@ -339,6 +343,485 @@
         "example": "The game's visual output includes colorful animations and character sprites.",
         "example_zh": "这款游戏的视觉输出包括彩色动画和角色精灵图。",
         "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Program Design and Development",
+    "type": "root",
+    "meaning_en": "phases of building a program: investigating, designing, prototyping, testing, and refining",
+    "meaning_zh": "程序设计与开发：构建程序的各个阶段——调研、设计、原型、测试和迭代改进。开发可以是有序的（瀑布式）也可以是探索式的（迭代式），但都需要文档和明确的需求",
+    "origin": "Unit 1: 1.3 Program Design and Development",
+    "related": [
+      "Intro to Big Idea 1",
+      "Program Function and Purpose",
+      "Identifying and Correcting Errors"
+    ],
+    "words": [
+      {
+        "word": "acknowledge",
+        "breakdown": "Acknowledge(承认/致谢)",
+        "meaning_en": "to formally recognize and credit the source or author of code segments used in a program",
+        "meaning_zh": "致谢/署名：正式承认并标注程序中所用代码段的来源或作者。例如在 README 里写「本项目使用了 Smith 的排序库」——尊重他人的劳动成果",
+        "derivation": "Ac(向) + knowledge(知道) → 让大家知道 → 公开承认是谁做的",
+        "mnemonic": "用了别人的代码不署名 = 抄袭；署名了 = 致谢，光明正大",
+        "example": "Always acknowledge external libraries used in your final project.",
+        "example_zh": "在最终项目中务必致谢使用的外部库。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "code segment",
+        "breakdown": "Code(代码) + Segment(片段)",
+        "meaning_en": "a portion of a program consisting of one or more lines of code that performs a specific function",
+        "meaning_zh": "代码段：程序中的一小段语句集合，完成某个特定子任务。在设计阶段，开发者把大问题拆成多个代码段分别处理",
+        "derivation": "Segment(段落) → 程序的一个片段 → 像文章的段落一样组织代码",
+        "mnemonic": "代码段就像一段话：一段话说清一件事，一个代码段做好一件事",
+        "example": "The login code segment was reused across multiple pages.",
+        "example_zh": "登录代码段在多个页面之间被重复使用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "collaborative",
+        "breakdown": "Co(共同) + labor(劳动) + ative(形容词后缀)",
+        "meaning_en": "developed or created jointly with other programmers or sources",
+        "meaning_zh": "协作的：与其他程序员或来源共同开发或创建的。例如 Linux 内核就是全球数千名开发者协作的成果",
+        "derivation": "Co(共同) + labor(劳动) + ative → 共同劳动的 → 形容词，描述「一起做出来的」",
+        "example": "GitHub makes collaborative development easier with pull requests.",
+        "example_zh": "GitHub 通过 pull request 让协作式开发更加容易。",
+        "toefl_frequency": "medium",
+        "mnemonic": "Wikipedia 是 collaborative 编辑的产物——人人都能改一笔"
+      },
+      {
+        "word": "comments",
+        "breakdown": "Comment(注释)",
+        "meaning_en": "a form of program documentation written into the program to be read by people that does not affect how a program runs",
+        "meaning_zh": "注释：直接写在程序代码中的说明文字，不会被执行，只供人阅读",
+        "derivation": "Comment(评论/注解) → 给代码加旁注 → 解释这段代码在干什么",
+        "mnemonic": "注释就像课本旁边的铅笔批注：考试不考但帮你理解",
+        "example": "// This function calculates the total price — is a comment.",
+        "example_zh": "// 这个函数计算总价 —— 这就是一条注释。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "design phase",
+        "breakdown": "Design(设计) + Phase(阶段)",
+        "meaning_en": "the stage in program development where the approach to accomplishing a program specification is outlined and planned",
+        "meaning_zh": "设计阶段：程序开发中规划如何实现需求的阶段——画流程图、分模块、定义接口。这一步偷懒，后面写代码就要返工",
+        "derivation": "Design(设计) + Phase(阶段) → 设计的那一段时期 → 想清楚再动手",
+        "mnemonic": "盖楼前先画图纸——design phase = 编程的图纸阶段",
+        "example": "During the design phase, the team sketched the app's screens on paper.",
+        "example_zh": "在设计阶段，团队在纸上勾画了应用的界面。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "designing",
+        "breakdown": "Design(设计) + ing",
+        "meaning_en": "a phase of program development where developers plan the structure and approach for solving the problem",
+        "meaning_zh": "设计中：开发的一个阶段，开发者规划程序结构和解决方案的总体思路。和「设计阶段」是同一件事的动名词形式",
+        "derivation": "Design(设计) + ing → 正在设计 → 还没动手写代码，先想方案",
+        "example": "While designing the app, the team considered accessibility from the start.",
+        "example_zh": "在设计应用时，团队从一开始就考虑了无障碍设计。",
+        "toefl_frequency": "medium",
+        "mnemonic": "设计是动词也是阶段：你正在「designing」就是在画蓝图"
+      },
+      {
+        "word": "development process",
+        "breakdown": "Development(开发) + Process(过程)",
+        "meaning_en": "a systematic approach to creating a program that may be ordered and intentional or exploratory in nature",
+        "meaning_zh": "开发过程：创建程序的系统性方法。可以是有序计划的（瀑布式），也可以是探索性的（敏捷/试错）——没有唯一正确答案",
+        "derivation": "Development(开发) + Process(过程) → 怎么把程序做出来的整套流程",
+        "example": "The team's development process includes daily standups and weekly reviews.",
+        "example_zh": "团队的开发过程包括每日站会和每周评审。",
+        "toefl_frequency": "medium",
+        "mnemonic": "每个团队都有自己的开发过程，就像每家厨房都有自己的做菜流程"
+      },
+      {
+        "word": "functional components",
+        "breakdown": "Functional(功能的) + Components(组件)",
+        "meaning_en": "individual parts of a program designed to perform specific functions or operations",
+        "meaning_zh": "功能组件：程序中负责执行特定功能的独立部分。例如登录组件、支付组件、通知组件——各司其职便于维护",
+        "derivation": "Functional(功能的) + Component(组件) → 一个个独立的功能块",
+        "example": "The shopping app has separate functional components for cart, search, and checkout.",
+        "example_zh": "购物应用有独立的购物车、搜索和结账功能组件。",
+        "toefl_frequency": "medium",
+        "mnemonic": "电脑由 CPU、内存、硬盘等功能组件组成 → 程序也一样"
+      },
+      {
+        "word": "incremental development process",
+        "breakdown": "Incremental(增量的) + Development(开发) + Process(过程)",
+        "meaning_en": "a development process that breaks a problem into smaller pieces and ensures each piece works before integrating it into the whole program",
+        "meaning_zh": "增量开发过程：将大问题拆成小块，每块单独解决并验证后再组装成完整解决方案",
+        "derivation": "Increment(增加一点) → 一块一块地加 → 像搭积木一样逐步构建",
+        "mnemonic": "像拼拼图：先完成各个小区域，最后拼成完整图片",
+        "example": "The team used incremental development to build the app feature by feature.",
+        "example_zh": "团队用增量开发方式逐功能构建应用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "investigating and reflecting",
+        "breakdown": "Investigate(调查) + Reflect(反思)",
+        "meaning_en": "a phase of program development where developers examine the problem, gather information, and think critically about requirements and solutions",
+        "meaning_zh": "调研与反思：开发阶段之一，开发者深入研究问题、收集信息并对需求和方案进行批判性思考。这是写代码之前最重要的一步",
+        "derivation": "Investigate(调查) + Reflect(反思) → 先查清楚 + 再想清楚 → 不打无准备之仗",
+        "example": "Investigating and reflecting helped the team avoid building the wrong feature.",
+        "example_zh": "调研与反思帮助团队避免了做错功能。",
+        "toefl_frequency": "low",
+        "mnemonic": "侦探破案前先收集证据 + 思考动机——开发者也一样"
+      },
+      {
+        "word": "investigation",
+        "breakdown": "Investigate(调查) + ion(名词后缀)",
+        "meaning_en": "the process of gathering information to understand program requirements, constraints, and the needs of users",
+        "meaning_zh": "调研：收集信息以理解程序需求、约束条件和用户需要的过程。例如开发学习App前先调查学生最常遇到的学习困难",
+        "derivation": "Investigate(调查) → 像侦探一样收集线索 → 弄清问题真正是什么",
+        "example": "Thorough investigation revealed that students wanted offline access.",
+        "example_zh": "深入调研揭示了学生希望能离线访问。",
+        "toefl_frequency": "medium",
+        "mnemonic": "没有调研就开发 = 没看菜单就点菜，很容易点错"
+      },
+      {
+        "word": "iterative development process",
+        "breakdown": "Iterative(迭代的) + Development(开发) + Process(过程)",
+        "meaning_en": "a development process that involves repeated cycles of refinement and revision based on feedback, testing, or reflection, which may require revisiting earlier phases",
+        "meaning_zh": "迭代开发过程：基于反馈、测试或反思反复循环改进的过程，可能需要回到之前的阶段重新做。每轮都比上轮更好",
+        "derivation": "Iterate(重复) → 做一版 → 测试 → 发现问题 → 改进 → 再做一版",
+        "mnemonic": "像揉面团：揉一次不够好就再揉，越揉越光滑",
+        "example": "Using iterative development, the team released three versions before launch.",
+        "example_zh": "通过迭代开发，团队在上线前发布了三个版本。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "module",
+        "breakdown": "Module(模块)",
+        "meaning_en": "distinct, self-contained components of a program that can be organized and developed separately",
+        "meaning_zh": "模块：程序中独立、自包含的组件，可以单独组织和开发。例如「数据库模块」「用户界面模块」——每个都能单独修改而不影响其他",
+        "derivation": "Module(模块) → 自成一体的小单元 → 像乐高积木一块块拼起来",
+        "mnemonic": "宇宙飞船的舱段就是 module——出问题了换一个舱就行",
+        "example": "The authentication module can be updated without touching the rest of the app.",
+        "example_zh": "认证模块可以独立更新而无需改动应用的其他部分。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "origin",
+        "breakdown": "Origin(起源)",
+        "meaning_en": "the source or starting point of code, including where it came from or who originally created it",
+        "meaning_zh": "代码起源：代码的来源或起始点，包括它从哪里来、最初是谁写的。在协作和开源中尤其重要——你必须知道用的是别人的代码",
+        "derivation": "Origin(起源) → 哪里来的 → 追溯代码的「家谱」",
+        "example": "The comment notes that the algorithm's origin is a 1962 research paper.",
+        "example_zh": "注释指出该算法起源于一篇 1962 年的研究论文。",
+        "toefl_frequency": "medium",
+        "mnemonic": "知道代码 origin 才能正确署名 → 才不会被指控抄袭"
+      },
+      {
+        "word": "program constraints",
+        "breakdown": "Program(程序) + Constraints(约束)",
+        "meaning_en": "limitations or restrictions that affect how a program can be designed and developed",
+        "meaning_zh": "程序约束：影响程序设计和开发方式的限制条件。例如硬件限制（手机内存小）、时间限制（必须3秒内返回）、法律限制（数据不能出境）",
+        "derivation": "Constraint(约束) → 戴着镣铐跳舞 → 设计时必须避开的坑",
+        "mnemonic": "约束像跑步穿鞋：限制了步伐，但也保护了脚",
+        "example": "Memory program constraints forced the team to compress images aggressively.",
+        "example_zh": "内存约束迫使团队大幅压缩图像。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "program documentation",
+        "breakdown": "Program(程序) + Documentation(文档)",
+        "meaning_en": "a written description of the function of a code segment, event, procedure, or program and how it was developed",
+        "meaning_zh": "程序文档：描述程序各部分如何工作的说明文字，帮助自己和他人理解代码",
+        "derivation": "Document(记录) → 把「怎么做的」和「为什么这么做」写下来",
+        "example": "Good program documentation helps new developers understand the codebase.",
+        "example_zh": "好的程序文档帮助新开发者理解代码库。",
+        "toefl_frequency": "medium",
+        "mnemonic": "三个月后再看自己的代码 = 看陌生人的代码，没文档就抓瞎"
+      },
+      {
+        "word": "program requirements",
+        "breakdown": "Program(程序) + Requirements(需求)",
+        "meaning_en": "the specifications and conditions that define what a program must accomplish and how it should behave",
+        "meaning_zh": "程序需求：定义程序必须完成什么以及如何表现的规格和条件。例如「用户输入邮箱后5秒内收到验证邮件」就是一条需求",
+        "derivation": "Require(要求) + ment → 必须满足的条件 → 程序的「考试题目」",
+        "example": "The program requirements specified that the app must work offline.",
+        "example_zh": "程序需求规定该应用必须能离线工作。",
+        "toefl_frequency": "high",
+        "mnemonic": "需求 = 客户给程序员出的题目，答对了才算交付"
+      },
+      {
+        "word": "program specification",
+        "breakdown": "Program(程序) + Specification(规格说明)",
+        "meaning_en": "a detailed definition of the requirements that a program must meet",
+        "meaning_zh": "程序规格说明：对程序必须满足的需求的详细定义。比 requirements 更具体——包括输入格式、输出格式、性能指标等",
+        "derivation": "Specify(明确指出) + ation → 把要求写得明明白白的文档",
+        "example": "The program specification listed every function and its expected output.",
+        "example_zh": "程序规格说明列出了每个函数及其预期输出。",
+        "toefl_frequency": "medium",
+        "mnemonic": "规格说明像菜谱：不只是「做意面」，而是「煮 8 分钟、加 2 克盐」"
+      },
+      {
+        "word": "prototyping",
+        "breakdown": "Proto(原始) + type(类型) + ing",
+        "meaning_en": "a phase of program development where developers create a preliminary version of the program to test ideas and concepts",
+        "meaning_zh": "原型设计：开发阶段之一，开发者创建程序的初步版本来测试想法和概念。原型不需要完美，能跑起来证明可行性就行",
+        "derivation": "Proto(最初的) + Type(模型) → 最初的模型 → 「试验品」",
+        "mnemonic": "汽车厂会先做原型车测试性能——程序也一样先做能跑的草稿",
+        "example": "Prototyping the app on paper saved weeks of coding time.",
+        "example_zh": "在纸上做原型节省了数周的编码时间。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "storyboarding",
+        "breakdown": "Story(故事) + Board(板) + ing",
+        "meaning_en": "a planning technique used during the design phase to visualize the sequence of user interactions and program flow",
+        "meaning_zh": "故事板：设计阶段使用的规划技术，用一系列画面可视化用户交互和程序流程。源自电影行业——把每个画面画出来再拍",
+        "derivation": "Story(故事) + Board(板) → 故事板 → 像漫画一样把流程画出来",
+        "mnemonic": "迪士尼动画师用 storyboard 设计每一帧——程序员用它设计每个屏幕",
+        "example": "Storyboarding revealed that users would need three taps to find the menu.",
+        "example_zh": "故事板揭示了用户需要点击三次才能找到菜单。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "testing",
+        "breakdown": "Test(测试) + ing",
+        "meaning_en": "a phase of program development where developers verify that the program works correctly and meets requirements",
+        "meaning_zh": "测试：开发阶段之一，开发者验证程序运行正确并满足需求。包括单元测试、集成测试、用户测试等多种方式",
+        "derivation": "Test(测验) → 给程序出考题 → 看它能不能答对",
+        "example": "Thorough testing caught a critical bug before launch.",
+        "example_zh": "全面的测试在发布前发现了一个严重 bug。",
+        "toefl_frequency": "high",
+        "mnemonic": "代码没测试就上线 = 没体检就跑马拉松，可能突然出事"
+      },
+      {
+        "word": "testing strategy",
+        "breakdown": "Testing(测试) + Strategy(策略)",
+        "meaning_en": "a plan developed during the design phase that outlines how a program will be tested to ensure it meets its requirements",
+        "meaning_zh": "测试策略：设计阶段制定的计划，规定程序将如何被测试以确保满足需求。在写代码前就想好怎么测才不会漏",
+        "derivation": "Testing(测试) + Strategy(策略) → 测试的总方案 → 测什么、怎么测、谁来测",
+        "example": "The testing strategy included edge cases like empty inputs and huge files.",
+        "example_zh": "测试策略包括了空输入和超大文件等边界情况。",
+        "toefl_frequency": "medium",
+        "mnemonic": "测试策略 = 考前复习计划，盲目刷题不如有计划地刷"
+      },
+      {
+        "word": "user interface",
+        "breakdown": "User(用户) + Interface(界面)",
+        "meaning_en": "the visual and interactive elements of a program that allow users to interact with and control the application",
+        "meaning_zh": "用户界面（UI）：程序中允许用户与之交互和控制的视觉与交互元素。按钮、菜单、表单、图标都属于UI。好的UI让人一看就会用",
+        "derivation": "Interface(界面/接口) → 用户和程序的「接触面」 → 你看见和点击的部分",
+        "mnemonic": "UI 就像汽车的方向盘和仪表盘——发动机再强大，操作不直观也开不好",
+        "example": "The user interface was redesigned to make navigation easier.",
+        "example_zh": "用户界面被重新设计以让导航更简单。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "user testing",
+        "breakdown": "User(用户) + Testing(测试)",
+        "meaning_en": "a method of investigation where actual or potential users interact with a program to provide feedback on its functionality and design",
+        "meaning_zh": "用户测试：让真实或潜在用户与程序交互，收集对功能和设计的反馈。开发者认为「显然」的东西，用户可能完全找不到",
+        "derivation": "User(用户) + Testing(测试) → 让真用户来用 → 比开发者自己测更真实",
+        "example": "User testing showed that the signup button was too small on phones.",
+        "example_zh": "用户测试发现注册按钮在手机上太小了。",
+        "toefl_frequency": "medium",
+        "mnemonic": "开发者眼里的「显而易见」=用户眼里的「我去哪儿点」——所以要 user testing"
+      }
+    ]
+  },
+  {
+    "root": "Identifying and Correcting Errors",
+    "type": "root",
+    "meaning_en": "types of programming errors and the techniques used to find and fix them",
+    "meaning_zh": "识别与纠正错误：程序中常见的错误类型（逻辑/语法/运行时/溢出）以及调试方法（手动追踪、调试器、可视化）。debug 是程序员日常工作的核心",
+    "origin": "Unit 1: 1.4 Identifying and Correcting Errors",
+    "related": [
+      "Intro to Big Idea 1",
+      "Program Function and Purpose",
+      "Program Design and Development"
+    ],
+    "words": [
+      {
+        "word": "algorithm",
+        "breakdown": "Algorithm(算法) — 源自波斯数学家 Al-Khwarizmi",
+        "meaning_en": "step-by-step procedures or sets of rules designed to solve a problem or accomplish a task",
+        "meaning_zh": "算法：完成任务或解决问题的分步指令或规则集合。debug 算法时要确认每一步都符合预期",
+        "derivation": "源自波斯数学家 Al-Khwarizmi 的名字 → 解决问题的步骤化方法",
+        "mnemonic": "做菜的菜谱就是算法：第一步放油，第二步加蒜，第三步炒菜...",
+        "example": "A sorting algorithm arranges data in a specific order.",
+        "example_zh": "排序算法按特定顺序排列数据。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "debuggers",
+        "breakdown": "De(去除) + bug(虫) + ger(工具)",
+        "meaning_en": "software tools that help programmers find and correct errors by allowing them to step through code execution and inspect variables",
+        "meaning_zh": "调试器：帮助程序员逐步执行代码、检查变量值的软件工具。能让你「按暂停键」看程序某一刻的状态——比加 print 语句强大得多",
+        "derivation": "De(去除) + bug(虫) + er → 「除虫工具」 → 1947 年第一个「bug」是真的飞蛾",
+        "mnemonic": "debugger 就像手电筒：在代码的黑屋子里照亮每一行 + 每一个变量",
+        "example": "Using a debugger, the team paused execution at the suspicious line.",
+        "example_zh": "团队使用调试器在可疑代码行处暂停了执行。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "defined inputs",
+        "breakdown": "Defined(定义好的) + Inputs(输入)",
+        "meaning_en": "specific, predetermined data values used to test an algorithm or program",
+        "meaning_zh": "定义输入：用于测试算法或程序的特定、预先确定的数据值。例如测试加法函数时用 (2,3) → 期望 5——输入是已知的",
+        "derivation": "Defined(确定的) + Input(输入) → 提前准备好的测试数据",
+        "example": "The team used defined inputs like 0, -1, and 999 to test the function.",
+        "example_zh": "团队使用 0、-1 和 999 等定义输入来测试该函数。",
+        "toefl_frequency": "low",
+        "mnemonic": "defined inputs = 老师出好的考题，考的是程序而不是程序员"
+      },
+      {
+        "word": "expected behaviors",
+        "breakdown": "Expected(预期的) + Behaviors(行为)",
+        "meaning_en": "the correct or anticipated actions and responses that an algorithm or program should exhibit when executed",
+        "meaning_zh": "预期行为：算法或程序在执行时应该展现的正确或预期的动作和响应。和实际行为对比，差异就是 bug 的来源",
+        "derivation": "Expected(预期的) + Behavior(行为) → 程序「应该」做的事",
+        "example": "The expected behavior is that clicking the button shows a confirmation dialog.",
+        "example_zh": "预期行为是点击按钮后显示确认对话框。",
+        "toefl_frequency": "medium",
+        "mnemonic": "预期行为 = 程序的「人设」，跑偏了就是 bug"
+      },
+      {
+        "word": "expected outputs",
+        "breakdown": "Expected(预期的) + Outputs(输出)",
+        "meaning_en": "the correct or anticipated results that an algorithm or program should produce for given inputs",
+        "meaning_zh": "预期输出：算法或程序对给定输入应该产生的正确或预期的结果。例如输入 (2,3) 给加法函数，预期输出是 5",
+        "derivation": "Expected(预期的) + Output(输出) → 程序「应该」吐出的答案",
+        "example": "If the input is 2 and 3, the expected output is 5.",
+        "example_zh": "如果输入是 2 和 3，预期输出是 5。",
+        "toefl_frequency": "medium",
+        "mnemonic": "实际输出 ≠ 预期输出 → 一定有 bug，开始查"
+      },
+      {
+        "word": "extremes",
+        "breakdown": "Extreme(极端) + s",
+        "meaning_en": "the minimum and maximum boundary values of input data used in testing to verify program behavior at limits",
+        "meaning_zh": "极端值：测试中使用的最小和最大边界输入，用于验证程序在极限情况下的行为。bug 经常藏在边界——空列表、最大整数、负零",
+        "derivation": "Extreme(极端) → 最小值和最大值 → 测试的「边角料」",
+        "mnemonic": "测试极端值就像试婴儿车的承重：50 公斤压一下，看会不会塌",
+        "example": "Testing with extremes like 0 and 1000000 caught an overflow bug.",
+        "example_zh": "用 0 和 1000000 等极端值测试发现了一个溢出 bug。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "hand tracing",
+        "breakdown": "Hand(手动) + Tracing(追踪)",
+        "meaning_en": "a debugging technique where a programmer manually follows the execution of a program step-by-step to identify errors",
+        "meaning_zh": "手动追踪：用纸笔逐步记录程序中变量的值变化，排查逻辑错误",
+        "derivation": "Hand(手) + Trace(追踪) → 用手（纸笔）一步步跟踪程序执行过程",
+        "mnemonic": "像侦探一样用笔记本记录每一步，看哪步出了问题",
+        "example": "Hand tracing revealed that the loop ran one extra time.",
+        "example_zh": "手动追踪发现循环多执行了一次。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "logic error",
+        "breakdown": "Logic(逻辑) + Error(错误)",
+        "meaning_en": "a mistake in an algorithm or program that causes it to behave incorrectly or unexpectedly",
+        "meaning_zh": "逻辑错误：程序能运行但输出结果不对——代码没写错，但思路错了",
+        "derivation": "Logic(逻辑) + Error(错误) → 程序员的思路出了问题 → 代码按写的跑了，但写错了",
+        "mnemonic": "想算加法写成了减法——程序不报错，但答案不对",
+        "example": "The program displayed the wrong total due to a logic error in the formula.",
+        "example_zh": "由于公式中的逻辑错误，程序显示了错误的总计。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "overflow error",
+        "breakdown": "Overflow(溢出) + Error(错误)",
+        "meaning_en": "an error that occurs when a computer attempts to handle a number that is outside of the defined range of values",
+        "meaning_zh": "溢出错误：数字太大或太小超出计算机能表示的范围——每种数据类型都有最大值最小值限制",
+        "derivation": "Overflow(溢出) → 水杯满了再倒水就溢出来 → 数字大到装不下",
+        "mnemonic": "像计数器翻到 99999 再加 1 就归零了——装不下了",
+        "example": "An overflow error occurred when the counter exceeded its maximum value.",
+        "example_zh": "当计数器超过最大值时发生了溢出错误。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "program",
+        "breakdown": "Pro(向前) + gram(写)",
+        "meaning_en": "a collection of program statements that performs a specific task when run by a computer; also referred to as software",
+        "meaning_zh": "程序：一组程序语句的集合，由计算机运行时完成特定任务，也称为软件",
+        "derivation": "Pro(预先) + gram(写) → 预先写好的指令 → 计算机照着做",
+        "mnemonic": "程序 = 给计算机的菜谱：它照着做，就有成品",
+        "example": "Debugging the program revealed three separate issues.",
+        "example_zh": "调试程序发现了三个独立的问题。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "program input",
+        "breakdown": "Program(程序) + Input(输入)",
+        "meaning_en": "data in various forms (tactile, audio, visual, or text) that is sent to a program for processing",
+        "meaning_zh": "程序输入：计算机接收的数据，包括触觉、听觉、视觉、文本等形式。debug 时要注意各种异常输入也是「输入」",
+        "derivation": "Input(输入) → 你给程序的东西 → 键盘打字、鼠标点击、语音命令都是输入",
+        "mnemonic": "输入是「喂」给程序的食物——没有输入程序没东西吃就做不了饭",
+        "example": "Unexpected program input caused the function to crash.",
+        "example_zh": "意外的程序输入导致函数崩溃。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "program requirements",
+        "breakdown": "Program(程序) + Requirements(需求)",
+        "meaning_en": "the specifications and conditions that define what a program must accomplish and how it should behave",
+        "meaning_zh": "程序需求：定义程序必须完成什么以及如何表现的规格条件。debug 的标准就是「是否符合需求」",
+        "derivation": "Require(要求) + ment → 必须满足的条件 → 程序的「考试题目」",
+        "example": "The bug violated the program requirements that all data be validated.",
+        "example_zh": "这个 bug 违反了所有数据都必须验证的程序需求。",
+        "toefl_frequency": "high",
+        "mnemonic": "没需求就没 bug —— 不符合需求才叫 bug"
+      },
+      {
+        "word": "run-time error",
+        "breakdown": "Run-time(运行时) + Error(错误)",
+        "meaning_en": "a mistake in a program that occurs during the execution of a program",
+        "meaning_zh": "运行时错误：代码语法正确但运行时崩溃——如除以零、访问不存在的文件",
+        "derivation": "Run(运行) + Time(时间) → 运行的时候才出现的错误 → 语法没问题但做不到的操作",
+        "mnemonic": "走路姿势没错(语法对)，但撞墙了(运行时遇到无法执行的操作)",
+        "example": "Dividing by zero caused a run-time error.",
+        "example_zh": "除以零导致了运行时错误。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "syntax error",
+        "breakdown": "Syntax(语法) + Error(错误)",
+        "meaning_en": "a mistake in a program where the rules of the programming language are not followed",
+        "meaning_zh": "语法错误：代码拼写或格式不对，不符合编程语言的语法规则，程序无法运行",
+        "derivation": "Syntax(语法) + Error(错误) → 写了编程语言「看不懂」的东西 → 少了分号、括号不配对",
+        "mnemonic": "像英语作文语法错——老师看不懂就给你打回来(程序拒绝运行)",
+        "example": "Missing a semicolon caused a syntax error.",
+        "example_zh": "少了一个分号导致了语法错误。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "test cases",
+        "breakdown": "Test(测试) + Cases(案例)",
+        "meaning_en": "specific inputs and expected outputs used to verify that a program behaves correctly",
+        "meaning_zh": "测试用例：用于验证程序行为是否正确的特定输入和预期输出。一个用例 = 一组「输入 → 期望输出」的搭配",
+        "derivation": "Test(测试) + Case(案例) → 一个测试的具体场景 → 「如果输入X，应该输出Y」",
+        "example": "The team wrote 50 test cases covering normal and edge inputs.",
+        "example_zh": "团队编写了 50 个覆盖普通和边界输入的测试用例。",
+        "toefl_frequency": "high",
+        "mnemonic": "测试用例 = 给程序出的考题集，考过才能交付"
+      },
+      {
+        "word": "testing",
+        "breakdown": "Test(测试) + ing",
+        "meaning_en": "a phase of program development where developers verify that the program works correctly and meets requirements",
+        "meaning_zh": "测试：开发阶段之一，开发者验证程序运行正确并满足需求。在 1.4 中专指识别和纠正错误的环节",
+        "derivation": "Test(测验) → 给程序出考题 → 看它能不能答对",
+        "example": "Testing exposed a runtime error that only appeared with empty input.",
+        "example_zh": "测试暴露了一个只在空输入时才出现的运行时错误。",
+        "toefl_frequency": "high",
+        "mnemonic": "代码没测试就上线 = 没体检就跑马拉松，可能突然出事"
+      },
+      {
+        "word": "visualizations",
+        "breakdown": "Visual(视觉的) + ize(动词后缀) + ation + s",
+        "meaning_en": "graphical representations of program execution or data structures used to identify and understand errors",
+        "meaning_zh": "可视化：程序执行过程或数据结构的图形化表示，用于识别和理解错误。例如把链表画成图、把变量变化画成时间线",
+        "derivation": "Visual(视觉) + ize(化) → 「视觉化」 → 看不见的代码逻辑变成看得见的图",
+        "mnemonic": "用图看 bug 比读代码快 10 倍——一图胜千行代码",
+        "example": "Visualizations of the call stack helped the team locate the recursion bug.",
+        "example_zh": "调用栈的可视化帮助团队定位了递归 bug。",
+        "toefl_frequency": "low"
       }
     ]
   }

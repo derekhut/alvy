@@ -2980,5 +2980,366 @@
         "toefl_frequency": "high"
       }
     ]
+  },
+  {
+    "root": "Financial Assets",
+    "type": "root",
+    "meaning_en": "claims on future income or assets (cash, bonds, stocks) that savers hold as stores of value, each balancing risk, return, and liquidity",
+    "meaning_zh": "金融资产：对未来现金流或所有权的索取权，包括现金、债券、股票。每种资产都在「风险、回报、流动性」三者之间做权衡——现金最灵活但没回报，股票回报最高但风险最大",
+    "origin": "Unit 4: 4.1 Financial Assets",
+    "related": [
+      "Nominal vs. Real Interest Rates",
+      "Definition, Measurement, and Functions of Money",
+      "Costs of Inflation"
+    ],
+    "words": [
+      {
+        "word": "bond price",
+        "breakdown": "Bond(债券) + price(价格) → 债券的市场价",
+        "meaning_en": "the market value of a bond at any given time, which fluctuates inversely with changes in interest rates",
+        "meaning_zh": "债券价格：债券在二级市场上随时能卖出的价格，与市场利率反向变动。例如新债券利率涨到 6%，旧的 4% 债券就没人要，价格只能跌",
+        "derivation": "Bond price vs interest rate → 反向关系 → 利率涨则旧债券跌价",
+        "mnemonic": "「利率跷跷板」：市场利率一头上去，旧债券价格另一头就下来——永远反向",
+        "example": "When the Fed raised interest rates, existing bond prices fell sharply in the secondary market.",
+        "example_zh": "当美联储加息时，二级市场上现有债券的价格大幅下跌。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "bonds",
+        "breakdown": "Bond(债券) — 借条类金融资产",
+        "meaning_en": "interest-bearing financial assets that represent a loan to a borrower, typically a government or corporation",
+        "meaning_zh": "债券：本质上是一张借条，买债券等于把钱借给政府或公司，对方承诺按期付利息、到期还本金。例如美国国债就是借给美国政府的钱",
+        "derivation": "Bond(契约/借条) → 政府或公司向你借钱 → 承诺利息+本金",
+        "mnemonic": "「债券=借条」：你是债主，发行方是债务人，到期还本付息",
+        "example": "Retirees often hold bonds because they provide steady interest payments with lower risk than stocks.",
+        "example_zh": "退休人士常持有债券，因为债券提供稳定的利息收入，风险低于股票。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "cash",
+        "breakdown": "Cash(现金) — 最具流动性的资产",
+        "meaning_en": "physical currency in the form of bills and coins, representing the most liquid form of money",
+        "meaning_zh": "现金：物理形态的纸币和硬币，是流动性最高的资产——随时可以付款，不需要任何转换。代价是几乎没有利息回报",
+        "derivation": "Cash(现钱) → 流动性满格 → 但回报为零",
+        "mnemonic": "「现金=即用即付」：流动性 100 分, 回报 0 分, 风险接近 0",
+        "example": "Holding too much cash means losing purchasing power to inflation over time.",
+        "example_zh": "持有过多现金意味着购买力会随时间被通胀侵蚀。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "demand deposits",
+        "breakdown": "Demand(按要求) + deposit(存款) → 活期存款",
+        "meaning_en": "bank deposits that can be withdrawn on demand without penalty, such as checking accounts",
+        "meaning_zh": "活期存款：随时可以取、可以刷卡、可以开支票的银行存款，最典型的就是支票账户。流动性仅次于现金，被算作 M1 的一部分",
+        "derivation": "Demand(要求) + deposit(存款) → 你一要就能取 → 相当于现金",
+        "mnemonic": "「活期=随叫随到」：支票账户 = demand deposit, 定期存款则要等到期",
+        "example": "Demand deposits are included in M1 because they function almost like cash for daily spending.",
+        "example_zh": "活期存款被纳入 M1，因为在日常消费中它几乎等同于现金。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "financial assets",
+        "breakdown": "Financial(金融的) + assets(资产) → 金融资产",
+        "meaning_en": "claims on future income or assets that can be held as stores of value, including money, bonds, and stocks",
+        "meaning_zh": "金融资产：代表对未来收入或所有权的索取权的资产，包括货币、债券、股票。与房子、机器这类「实物资产」相对",
+        "derivation": "Financial(金钱的) + asset(资产) → 纸面财富 → 索取未来现金流",
+        "mnemonic": "「金融资产=一张纸/一条数据」：本身不能吃不能穿, 但能换成别的东西",
+        "example": "A diversified portfolio of financial assets typically includes cash, bonds, and stocks.",
+        "example_zh": "一个多元化的金融资产组合通常包括现金、债券和股票。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "interest rates",
+        "breakdown": "Interest(利息) + rate(利率) → 借钱的价格",
+        "meaning_en": "the cost of borrowing money, expressed as a percentage, which is influenced by monetary policy and determines the return on financial assets",
+        "meaning_zh": "利率：借钱的价格，也是存钱的回报率，用百分比表示。既是储户的收益，也是借款人的成本，是宏观经济中最关键的变量之一",
+        "derivation": "Interest(利息) + rate(比率) → 借钱要付的百分比 → 钱的「租金」",
+        "mnemonic": "「利率=钱的租金」：借车要付租金, 借钱也要付租金, 这个租金就是利率",
+        "example": "When interest rates rise, borrowing becomes more expensive and consumer spending typically slows.",
+        "example_zh": "当利率上升时，借贷成本变高，消费支出通常会放缓。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "liquidity",
+        "breakdown": "Liquid(液体的) + ity(名词) → 流动性",
+        "meaning_en": "the ease with which a financial asset can be quickly converted into cash without significant loss of value",
+        "meaning_zh": "流动性：一项资产能多快换成现金而不损失价值的程度。现金自己就是现金，所以流动性最高；房子要挂牌好几个月才能卖出，流动性最低",
+        "derivation": "Liquidity(流动性) → 多快能换成现金 → 现金最高, 房子最低",
+        "mnemonic": "「流动性排行榜」：现金 > 活期存款 > 股票 > 债券 > 房子 > 古董",
+        "example": "Stocks have higher liquidity than real estate because they can be sold within seconds on an exchange.",
+        "example_zh": "股票的流动性高于房地产，因为股票可以在交易所几秒钟内卖出。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "opportunity cost",
+        "breakdown": "Opportunity(机会) + cost(成本) → 机会成本",
+        "meaning_en": "the value of the next best alternative that must be given up when choosing how to allocate a financial asset",
+        "meaning_zh": "机会成本：选择持有一种金融资产时，放弃的下一个最好选择的回报。例如把钱放在活期账户就放弃了买债券能拿到的利息",
+        "derivation": "Opportunity(机会) + cost(成本) → 选 A 就要放弃 B → 放弃的那个就是成本",
+        "mnemonic": "「持有现金的机会成本=本可以拿到的利息」——所以利率越高, 持现越亏",
+        "example": "The opportunity cost of holding cash rises when interest rates increase, since savers give up more interest income.",
+        "example_zh": "当利率上升时，持有现金的机会成本也上升，因为储户放弃了更多利息收入。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "previously issued bonds",
+        "breakdown": "Previously issued(之前发行的) + bonds(债券) → 旧债券",
+        "meaning_en": "bonds that were sold in the past and are now trading in the secondary market at prices that may differ from their original issue price",
+        "meaning_zh": "旧债券（存量债券）：已经发行、现在在二级市场上流通的债券，其成交价会随市场利率波动而与发行价不同。这是债券价格与利率反向关系的关键载体",
+        "derivation": "Previously issued(已发行) + bonds → 二手债券市场 → 价格随市场利率重新定价",
+        "mnemonic": "「旧债券=二手车」：原价一样, 但今天能卖多少看市场行情——市场利率就是行情",
+        "example": "When market rates rise, previously issued bonds with lower coupon rates must sell at a discount.",
+        "example_zh": "当市场利率上升时，票面利率较低的旧债券只能以折价出售。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "rate of return",
+        "breakdown": "Rate(比率) + of return(回报的) → 回报率",
+        "meaning_en": "the gain or loss on a financial asset, typically expressed as a percentage of the initial investment over a specific time period",
+        "meaning_zh": "回报率：持有金融资产获得的收益或亏损，通常以占初始投资的百分比表示。例如花 100 元买股票, 一年后卖了 108 元, 回报率就是 8%",
+        "derivation": "Rate(比率) + return(回报) → 每 100 块本金赚了多少 → 用百分比衡量",
+        "mnemonic": "「回报率是拿来比较的」：不比较就不知道贵贱——8% vs 3% 才知道哪个划算",
+        "example": "Stocks historically offer a higher average rate of return than bonds, but with greater volatility.",
+        "example_zh": "历史上股票的平均回报率高于债券，但波动性也更大。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "risk",
+        "breakdown": "Risk(风险) — 资产的不确定性",
+        "meaning_en": "the uncertainty or potential for loss associated with holding a financial asset",
+        "meaning_zh": "风险：持有某项金融资产可能面临的损失或不确定性。风险越高, 投资者要求的回报也越高, 这叫「风险溢价」",
+        "derivation": "Risk(风险) → 不确定 → 可能赚也可能亏 → 所以要补偿",
+        "mnemonic": "「风险-回报权衡」：想睡得安稳买国债, 想发大财买股票, 没有又安全又暴利的资产",
+        "example": "Government bonds carry less risk than corporate stocks, but also offer lower expected returns.",
+        "example_zh": "政府债券的风险低于公司股票，但预期回报也较低。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "stocks",
+        "breakdown": "Stock(股票) — 股权类金融资产",
+        "meaning_en": "equity financial assets that represent ownership shares in a corporation",
+        "meaning_zh": "股票：代表对一家公司部分所有权的金融资产。买股票就是成为公司小股东, 分享利润也承担亏损。回报潜力最大, 风险也最高",
+        "derivation": "Stock(存货/股份) → 公司所有权的一份 → 你也是「老板」的一小块",
+        "mnemonic": "「股票=当小股东」：债券是借钱给公司, 股票是跟公司一起做生意",
+        "example": "Unlike bondholders, stockholders benefit directly when a company's profits rise.",
+        "example_zh": "与债券持有人不同，当公司利润上升时，股东可以直接受益。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Nominal vs. Real Interest Rates",
+    "type": "root",
+    "meaning_en": "the distinction between the stated interest rate on a loan and its inflation-adjusted value, summarized by the Fisher equation: real = nominal − inflation",
+    "meaning_zh": "名义利率 vs 真实利率：名义利率是合同上写的数字, 真实利率是扣掉通胀后的实际购买力回报。Fisher 方程：真实利率 ≈ 名义利率 − 通胀率。通胀越高, 借贷双方的真实得失差距越大",
+    "origin": "Unit 4: 4.2 Nominal vs. Real Interest Rates",
+    "related": [
+      "Financial Assets",
+      "Price Indices and Inflation",
+      "Costs of Inflation"
+    ],
+    "words": [
+      {
+        "word": "expected inflation",
+        "breakdown": "Expected(预期的) + inflation(通胀) → 预期通胀率",
+        "meaning_en": "the anticipated rate of increase in the general price level that lenders and borrowers use when determining nominal interest rates",
+        "meaning_zh": "预期通胀：借贷双方签合同时心里估算的未来通胀率。银行定名义利率时会「预先加上」这个预期, 以保住真实回报。如果预期 3% 通胀, 想要 2% 真实回报, 就会开 5% 的名义利率",
+        "derivation": "Expected(预期) + inflation(通胀) → 合同前对未来通胀的猜测 → 决定名义利率的起点",
+        "mnemonic": "「银行不是慈善家」：预期通胀 3%, 名义利率就先加 3% 保底——否则真实回报会被物价吃掉",
+        "example": "When expected inflation rises, lenders demand higher nominal interest rates to protect their real returns.",
+        "example_zh": "当预期通胀上升时，放贷人会要求更高的名义利率以保护其真实回报。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "expected real interest rate",
+        "breakdown": "Expected(预期) + real(真实) + interest rate(利率)",
+        "meaning_en": "the anticipated return on a loan adjusted for expected inflation, used by lenders and borrowers to establish nominal interest rates",
+        "meaning_zh": "预期真实利率：签合同时借贷双方心里想要的「扣掉通胀后」的回报率。名义利率 = 预期真实利率 + 预期通胀, 这就是事前 Fisher 方程",
+        "derivation": "Expected real rate → 合同前想要的真实回报 → 名义利率 = 它 + 预期通胀",
+        "mnemonic": "「事前 Fisher」：先想我要赚 2% 真实 → 加上预期 3% 通胀 → 开 5% 名义——这就是银行定价逻辑",
+        "example": "If a lender wants a 2% expected real interest rate and expects 3% inflation, they will charge a 5% nominal rate.",
+        "example_zh": "如果放贷人希望 2% 的预期真实利率, 并预期 3% 的通胀, 他们会收取 5% 的名义利率。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "inflation",
+        "breakdown": "In(内) + flat(吹胀) + ion(名词) → 物价膨胀",
+        "meaning_en": "a sustained increase in the general price level of goods and services in an economy over time",
+        "meaning_zh": "通货膨胀：整体物价水平持续上涨, 相同的钱能买的东西变少。通胀直接侵蚀名义利率的价值, 所以必须区分名义与真实",
+        "derivation": "Inflation(膨胀) → 物价吹大 → 钱缩水 → 真实利率=名义-通胀",
+        "mnemonic": "「通胀是隐形小偷」：你的 5% 利息看起来多, 通胀 3% 一偷, 真正到手只剩 2%",
+        "example": "High inflation erodes the purchasing power of fixed-rate bond payments.",
+        "example_zh": "高通胀会侵蚀固定利率债券利息的购买力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "nominal interest rate",
+        "breakdown": "Nominal(名义的) + interest rate(利率)",
+        "meaning_en": "the stated interest rate on a loan or investment, not adjusted for inflation",
+        "meaning_zh": "名义利率：合同上白纸黑字写的利率, 未扣除通胀。你在银行看到的「年利率 5%」就是名义利率, 它并不等于你真实变富的速度",
+        "derivation": "Nominal(名义) + interest rate → 合同上的数字 → 没除通胀的「毛利率」",
+        "mnemonic": "「名义=Sticker price」：标签上的数字, 看着爽, 但得减去通胀才知道真值",
+        "example": "The bank advertises a nominal interest rate of 4% on its savings account.",
+        "example_zh": "银行宣传其储蓄账户的名义利率为 4%。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "real interest rate",
+        "breakdown": "Real(真实的) + interest rate(利率)",
+        "meaning_en": "the interest rate adjusted for inflation, reflecting the true purchasing power gained or lost from lending or borrowing",
+        "meaning_zh": "真实利率：名义利率扣除通胀后的数字, 反映真实购买力的变化。Fisher 方程：真实利率 ≈ 名义利率 − 通胀率。这才是借贷双方真正的得失",
+        "derivation": "Real interest rate → nominal − inflation → Fisher 方程",
+        "mnemonic": "「Fisher 方程」：名义 8% - 通胀 3% = 真实 5%——你贷款的真实成本, 你存款的真实收益",
+        "example": "If the nominal rate is 6% and inflation is 4%, the real interest rate is only about 2%.",
+        "example_zh": "如果名义利率是 6%, 通胀是 4%, 那么真实利率只有约 2%。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Definition, Measurement, and Functions of Money",
+    "type": "root",
+    "meaning_en": "how economists define money (anything accepted for payment), measure it (M1 and M2 aggregates), and describe its three functions (medium of exchange, store of value, unit of account)",
+    "meaning_zh": "货币的定义、衡量与职能：货币是任何被接受作为支付手段的东西, 用 M1/M2 等货币总量来衡量, 承担三大职能——交易媒介、价值储藏、记账单位。从现金到活期再到储蓄存款, 流动性越来越低",
+    "origin": "Unit 4: 4.3 Definition, Measurement, and Functions of Money",
+    "related": [
+      "Financial Assets",
+      "Nominal vs. Real Interest Rates",
+      "Price Indices and Inflation"
+    ],
+    "words": [
+      {
+        "word": "bank reserves",
+        "breakdown": "Bank(银行) + reserves(准备金) → 银行准备金",
+        "meaning_en": "money held by banks that is not loaned out, including reserves required by the Federal Reserve and excess reserves",
+        "meaning_zh": "银行准备金：银行没有贷出去而是留在手边或存在美联储的钱, 包括「法定准备金」和「超额准备金」。这是央行控制货币供给的关键抓手",
+        "derivation": "Bank reserves → 银行没贷出的钱 → 法定+超额 → 基础货币的一部分",
+        "mnemonic": "「准备金=银行的防火墙」：防挤兑也防监管, 不能全部贷出去",
+        "example": "When banks hold more excess reserves, they lend less and the money supply grows more slowly.",
+        "example_zh": "当银行持有更多超额准备金时, 它们贷出的钱更少, 货币供给增长也更慢。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "currency in circulation",
+        "breakdown": "Currency(通货) + in circulation(流通中) → 流通中的现金",
+        "meaning_en": "physical money (coins and paper bills) that is in use by the public and businesses",
+        "meaning_zh": "流通中的通货：在公众和企业手里真实使用的纸币和硬币, 不包括银行金库里的钱。是 M1 和基础货币的共同组成部分",
+        "derivation": "Currency(货币) + in circulation(在流通) → 不在银行金库里 → 在钱包、收银台里",
+        "mnemonic": "「流通中=在外面跑的钱」：你钱包里的 100 元算, 银行金库里的不算",
+        "example": "Currency in circulation makes up a large share of M1 in most economies.",
+        "example_zh": "在大多数经济体中, 流通中的通货占 M1 相当大的比例。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "M1",
+        "breakdown": "M1(狭义货币) — 最liquid的货币总量",
+        "meaning_en": "a monetary aggregate that includes the most liquid forms of money, such as currency in circulation and checking accounts",
+        "meaning_zh": "M1（狭义货币）：最容易花出去的钱——流通中的通货加上活期存款（支票账户）。是衡量日常交易购买力的主要指标",
+        "derivation": "M1(狭义货币) → 现金 + 活期存款 → 最容易花的钱",
+        "mnemonic": "「M1 = 能立刻刷卡的钱」：钱包里的钞票 + 支票账户, 一秒能用",
+        "example": "An increase in M1 signals that households have more spending power readily available.",
+        "example_zh": "M1 的增加意味着家庭有更多随时可用的支付能力。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "M2",
+        "breakdown": "M2(广义货币) — 包含 M1 的更大口径",
+        "meaning_en": "a monetary aggregate that includes M1 plus less liquid assets such as savings accounts and money market accounts",
+        "meaning_zh": "M2（广义货币）：M1 再加上储蓄账户、货币市场账户、小额定期存款等流动性稍差的资产。比 M1 大, 但不能直接刷卡支付",
+        "derivation": "M2(广义货币) → M1 + 储蓄/货币市场账户 → 流动性低一档",
+        "mnemonic": "「M1 vs M2」：M1=现钱, M2=M1+储蓄. 储蓄不能直接刷卡, 所以流动性低一档",
+        "example": "Economists often watch M2 for signs of longer-term changes in household saving behavior.",
+        "example_zh": "经济学家常通过观察 M2 来判断家庭储蓄行为的长期变化。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "measures of money",
+        "breakdown": "Measures(衡量) + of money(货币的) → 货币衡量口径",
+        "meaning_en": "quantitative calculations used to determine the money supply, including monetary aggregates such as M1 and M2",
+        "meaning_zh": "货币衡量：按流动性分类计算货币供给的方法, 主要指 M1 和 M2 等货币总量口径。不同口径回答不同问题——M1 看消费, M2 看储蓄",
+        "derivation": "Measures of money → 货币的衡量工具 → M1/M2 等不同口径",
+        "mnemonic": "「货币不是只有一种数法」：M1、M2 像大中小号鞋, 看你要量哪只脚",
+        "example": "Different measures of money give central banks different views of how much liquidity is in the economy.",
+        "example_zh": "不同的货币衡量口径让央行从不同角度看到经济中的流动性有多少。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "medium of exchange",
+        "breakdown": "Medium(媒介) + of exchange(交换的) → 交易媒介",
+        "meaning_en": "a function of money that allows it to be used to purchase goods and services",
+        "meaning_zh": "交易媒介：货币的第一大职能——充当买卖双方之间的中间物, 不再需要物物交换。没有这个职能, 你就得拿鸡蛋换鞋, 交易成本巨大",
+        "derivation": "Medium(中间物) + exchange(交换) → 买卖之间的桥梁 → 终结物物交换",
+        "mnemonic": "「货币三职能之一」：交易媒介 = 买菜不用再拎着一只鸡去换",
+        "example": "Money serves as a medium of exchange whenever you tap a card to pay for coffee.",
+        "example_zh": "每当你刷卡买咖啡时, 货币就在充当交易媒介。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "monetary aggregates",
+        "breakdown": "Monetary(货币的) + aggregates(总量) → 货币总量",
+        "meaning_en": "different measures of the money supply, including M1 and M2, that categorize money based on liquidity",
+        "meaning_zh": "货币总量：按流动性把货币分成不同层次的统计口径, 典型就是 M1 和 M2。越狭义的口径流动性越高, 越广义的包含范围越大",
+        "derivation": "Monetary(货币) + aggregates(合计) → 不同层次的货币总和 → M1 ⊂ M2",
+        "mnemonic": "「嵌套的同心圆」：M1 在里, M2 在外, M2 = M1 + 低流动性那一层",
+        "example": "The Federal Reserve publishes monetary aggregates like M1 and M2 on a weekly basis.",
+        "example_zh": "美联储每周发布 M1、M2 等货币总量数据。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "monetary base",
+        "breakdown": "Monetary(货币的) + base(基础) → 基础货币",
+        "meaning_en": "the total amount of money created by a central bank, consisting of currency in circulation and bank reserves",
+        "meaning_zh": "基础货币（高能货币）：央行直接创造的那部分货币, 等于流通中的通货加上银行准备金。它是整个货币体系的「种子」, 通过银行贷款放大成更大的 M1/M2",
+        "derivation": "Monetary base → 央行直接创造的钱 → 通货 + 银行准备金 → 货币金字塔的底座",
+        "mnemonic": "「基础货币=种子」：央行印的种子钱, 银行贷款把它放大成 M1/M2 的大树",
+        "example": "When the Fed buys bonds, it pays with newly created monetary base, expanding bank reserves.",
+        "example_zh": "当美联储购买债券时, 它用新创造的基础货币支付, 从而扩大银行准备金。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "money",
+        "breakdown": "Money(货币) — 被接受为支付手段的一切",
+        "meaning_en": "any asset that is widely accepted as a means of payment for goods and services",
+        "meaning_zh": "货币：任何被社会广泛接受作为支付手段的资产。不一定要是纸币——历史上贝壳、黄金、香烟都曾充当过货币, 关键是「大家都愿意收」",
+        "derivation": "Money(货币) → 被大家接受的支付手段 → 形态可以变, 接受度是核心",
+        "mnemonic": "「货币的本质是共识」：只要大家都信, 一张纸也能换来真东西",
+        "example": "In wartime prison camps, cigarettes often functioned as money because inmates accepted them in trade.",
+        "example_zh": "在战俘营里, 香烟常充当货币, 因为囚犯愿意用它进行交易。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "money supply",
+        "breakdown": "Money(货币) + supply(供给) → 货币供给",
+        "meaning_en": "the total amount of money available in an economy at a given time, including currency in circulation and deposits in financial institutions",
+        "meaning_zh": "货币供给：一国在某一时点上可用的货币总量, 包括流通中的通货和银行存款。货币供给的变化直接影响利率、物价和产出, 是宏观政策的核心变量",
+        "derivation": "Money supply → 市场上的总货币量 → 通货 + 存款 → 央行政策的靶子",
+        "mnemonic": "「供给多=水龙头开大」：钱多了, 利率降, 物价涨, 总需求上升",
+        "example": "When the central bank expands the money supply, interest rates generally fall in the short run.",
+        "example_zh": "当央行扩大货币供给时, 短期内利率通常会下降。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "store of value",
+        "breakdown": "Store(储存) + of value(价值的) → 价值储藏",
+        "meaning_en": "a function of money that allows it to be saved and used to purchase goods and services in the future",
+        "meaning_zh": "价值储藏：货币的第二大职能——今天赚的钱明天后天还能花。要求货币的购买力相对稳定, 所以高通胀会严重削弱这个职能",
+        "derivation": "Store(存) + of value(价值) → 把购买力留到未来 → 通胀会让它漏水",
+        "mnemonic": "「价值储藏=把购买力装进瓶子」：通胀 = 瓶子底下漏洞, 漏得越快这个职能越弱",
+        "example": "During hyperinflation, money loses its function as a store of value and people rush to spend it immediately.",
+        "example_zh": "在恶性通胀期间, 货币失去价值储藏的职能, 人们会赶紧把钱花掉。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "unit of account",
+        "breakdown": "Unit(单位) + of account(记账的) → 记账单位",
+        "meaning_en": "a function of money that provides a standard measure for comparing the value of different goods and services",
+        "meaning_zh": "记账单位：货币的第三大职能——给所有商品一个共同的「尺子」来标价。有了它, 你就能直接比较一杯咖啡和一本书的价值, 而不需要换算一堆比率",
+        "derivation": "Unit(单位) + account(账目) → 标价与记账的统一尺子 → 让比较变简单",
+        "mnemonic": "「记账单位=经济的尺子」：没了它, 你得记住鸡换米、米换鞋、鞋换书的所有比率——头都大了",
+        "example": "Because the dollar serves as a unit of account, a store can simply label every item with a single price.",
+        "example_zh": "因为美元充当记账单位, 商店可以用一个价格标签标注每件商品。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import type { Command, Subject, UserProfile } from "./lib/types.js";
 import { loadData, saveData } from "./lib/store.js";
 import { checkForUpdate } from "./lib/update-check.js";
@@ -30,8 +30,9 @@ export default function App({ command }: AppProps) {
   const [updateChecked, setUpdateChecked] = useState(command !== "pick");
   const [updateSkipped, setUpdateSkipped] = useState(false);
   const [profileDone, setProfileDone] = useState(false);
+  const [editingProfile, setEditingProfile] = useState(false);
 
-  const data = useMemo(() => (command === "pick" ? loadData() : null), [command]);
+  const [data, setData] = useState(() => (command === "pick" ? loadData() : null));
 
   useEffect(() => {
     if (command !== "pick") return;
@@ -45,8 +46,19 @@ export default function App({ command }: AppProps) {
     if (data) {
       data.profile = profile;
       saveData(data);
+      setData(loadData());
     }
     setProfileDone(true);
+  }, [data]);
+
+  const handleEditProfileComplete = useCallback((profile: UserProfile) => {
+    if (data && data.profile) {
+      const updated = { ...profile, createdAt: data.profile.createdAt };
+      data.profile = updated;
+      saveData(data);
+      setData(loadData());
+    }
+    setEditingProfile(false);
   }, [data]);
 
   const handleSelect = useCallback((subject: Subject) => {
@@ -73,7 +85,22 @@ export default function App({ command }: AppProps) {
     if (!data.profile && !profileDone) {
       return <ProfileSetup onComplete={handleProfileComplete} />;
     }
-    return <SubjectPicker data={data} onSelect={handleSelect} />;
+    if (editingProfile && data.profile) {
+      return (
+        <ProfileSetup
+          onComplete={handleEditProfileComplete}
+          initialName={data.profile.displayName}
+          initialAvatar={data.profile.avatar}
+        />
+      );
+    }
+    return (
+      <SubjectPicker
+        data={data}
+        onSelect={handleSelect}
+        onEditProfile={() => setEditingProfile(true)}
+      />
+    );
   }
 
   switch (resolved) {

@@ -1,6 +1,8 @@
-import React, { useState, useMemo, useCallback } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import type { Command, Subject } from "./lib/types.js";
 import { loadData, saveData } from "./lib/store.js";
+import { checkForUpdate } from "./lib/update-check.js";
+import type { UpdateInfo } from "./lib/update-check.js";
 import Doctor from "./components/doctor.js";
 import DailySession from "./components/daily-session.js";
 import ReviewSession from "./components/review-session.js";
@@ -10,6 +12,7 @@ import CspSession from "./components/csp-session.js";
 import CspReview from "./components/csp-review.js";
 import Stats from "./components/stats.js";
 import SubjectPicker from "./components/subject-picker.js";
+import UpdatePrompt from "./components/update-prompt.js";
 
 interface AppProps {
   command: Command;
@@ -19,8 +22,19 @@ export default function App({ command }: AppProps) {
   const [resolved, setResolved] = useState<Command | null>(
     command === "pick" ? null : command,
   );
+  const [updateInfo, setUpdateInfo] = useState<UpdateInfo | null>(null);
+  const [updateChecked, setUpdateChecked] = useState(command !== "pick");
+  const [updateSkipped, setUpdateSkipped] = useState(false);
 
   const data = useMemo(() => (command === "pick" ? loadData() : null), [command]);
+
+  useEffect(() => {
+    if (command !== "pick") return;
+    checkForUpdate().then((info) => {
+      if (info) setUpdateInfo(info);
+      setUpdateChecked(true);
+    });
+  }, [command]);
 
   const handleSelect = useCallback((subject: Subject) => {
     if (data) {
@@ -33,7 +47,15 @@ export default function App({ command }: AppProps) {
     setResolved(subject === "psych" ? "psych" : subject === "csp" ? "csp" : "daily");
   }, [data]);
 
-  if (resolved === null && data) {
+  if (resolved === null && data && updateChecked) {
+    if (updateInfo && !updateSkipped) {
+      return (
+        <UpdatePrompt
+          info={updateInfo}
+          onSkip={() => setUpdateSkipped(true)}
+        />
+      );
+    }
     return <SubjectPicker data={data} onSelect={handleSelect} />;
   }
 

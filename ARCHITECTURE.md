@@ -20,7 +20,8 @@ See `handoff.md` "AP Subject Expansion" section for full decision log.
 
 ```
 index.tsx          CLI entry point (meow parses args, default → "pick")
-  └─ app.tsx       Command router (state-based: "pick" → SubjectPicker, then resolved command)
+  └─ app.tsx       Command router (state-based: "pick" → UpdatePrompt? → SubjectPicker, then resolved command)
+       ├─ update-prompt.tsx     Update available prompt (checks npm registry, skip or update)
        ├─ subject-picker.tsx    Arrow-key subject menu (TOEFL/AP Psych/AP CSP, remember-last)
        ├─ daily-session.tsx     TOEFL learning flow (state machine)
        │    ├─ dashboard.tsx        Launch screen (mastered count, streak, XP)
@@ -114,7 +115,7 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | File | Purpose |
 |------|---------|
 | `src/index.tsx` | CLI entry point. Parses commands with `meow`, defaults to `"pick"`, renders `<App>`. |
-| `src/app.tsx` | Routes command to the correct top-level component. `"pick"` → SubjectPicker → resolved command. |
+| `src/app.tsx` | Routes command to the correct top-level component. `"pick"` → UpdatePrompt (if update available) → SubjectPicker → resolved command. |
 | `src/components/subject-picker.tsx` | Arrow-key subject menu. Shows per-subject progress, remembers last choice. |
 | `src/components/daily-session.tsx` | State machine for the main learning flow. Manages phases, word/root indices, XP tracking. |
 | `src/components/review-session.tsx` | Like daily-session but selects weak roots (fewest `wordsStudied`, already `seen`). |
@@ -133,6 +134,8 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/lib/roots-db.ts` | Query layer over `roots.json`: `getAllRoots()`, `getRootByKey()`, `getRelatedMeanings()`. |
 | `src/lib/psych-db.ts` | Query layer over `psych.json`: `getAllConcepts()`, `getConceptByKey()`, etc. |
 | `src/lib/csp-db.ts` | Query layer over `csp.json`: `getAllTopics()`, `getTopicByKey()`, etc. |
+| `src/lib/update-check.ts` | Version check against npm registry (2s timeout) + `runUpdate()` via `npm install -g`. |
+| `src/components/update-prompt.tsx` | Update available prompt: arrow-key menu (立即更新/跳过), three phases (prompt/updating/done). |
 | `src/lib/ai.ts` | V2 stub (OpenAI client placeholder). |
 | `src/lib/__tests__/store.test.ts` | Vitest migration tests (4 cases: migrate, already migrated, fresh start, corrupt source). |
 | `src/data/roots.json` | 20 roots + 10 affixes = 30 entries × 5 words = 150 words. |

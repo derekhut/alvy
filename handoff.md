@@ -1,8 +1,8 @@
 # alvy — Implementation Handoff
 
-Last updated: 2026-04-08
-Branch: main
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE (3 subjects in picker)
+Last updated: 2026-04-09
+Branch: update_version
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych LIVE | AP CSP LIVE (3 subjects in picker) | Update checker LIVE
 
 ## V1 Summary
 
@@ -95,6 +95,12 @@ V1 pending: verify on clean machine, test install.sh e2e, test data migration.
 - **useSessionFlow.ts**: Added `goBack()` action with full back-navigation logic
 - **All 4 session components**: Replaced `key.return` → `key.rightArrow`, `input === "q"` → `key.escape`, added `key.leftArrow` → `goBack()`
 - **All card components**: Replaced old hint text below cards with `justifyContent="space-between"` hint rows
+
+### Step 11: Auto-update checker
+- **update-check.ts**: `checkForUpdate()` fetches latest version from npm registry (2s timeout), compares with local `package.json` version using semver. `runUpdate()` runs `npm install -g @derekhut/alvy@latest`.
+- **update-prompt.tsx**: Shows update prompt when newer version available. Arrow-key menu: "立即更新" / "跳过". Three phases: prompt → updating → done. Esc to skip.
+- **app.tsx**: Runs `checkForUpdate()` on mount (only in picker mode). Shows `UpdatePrompt` before `SubjectPicker` if update available. `onSkip` dismisses and continues to picker.
+- Non-blocking: 2s timeout, failures silently ignored (returns null). Direct commands (`alvy psych`, etc.) skip the check entirely.
 
 ### Gotchas / bugs caught during implementation
 
@@ -227,6 +233,7 @@ Phase 1 (Foundation + Quiz):
   9. ✅ Subject picker at launch (arrow-key menu, remember-last, "pick" command)
 
   10. ✅ Arrow-key navigation (← → replaces Enter, Esc replaces q, goBack() action)
+  11. ✅ Auto-update checker (npm registry check, update prompt before subject picker)
 
 Phase 2 (Content):
   11. Richer word format (phonetic, mnemonic fields in types + word-detail)
@@ -263,8 +270,9 @@ Execute: A first (foundation). Then B + C in parallel. Phase 4 after merge.
 alvy/
   src/
     index.tsx              # Entry point, CLI routing, default → "pick", --goal N
-    app.tsx                # Routes command: "pick" → SubjectPicker → resolved command
+    app.tsx                # Routes command: "pick" → UpdatePrompt? → SubjectPicker → resolved command
     components/
+      update-prompt.tsx    # ✅ NEW: update available prompt (立即更新/跳过)
       subject-picker.tsx   # ✅ Arrow-key subject menu (TOEFL/AP Psych/AP CSP, remember-last)
       daily-session.tsx    # ✅ Thin wrapper → useSessionFlow()
       review-session.tsx   # ✅ Thin wrapper → useSessionFlow() (filtered selection)
@@ -272,6 +280,7 @@ alvy/
       quiz.tsx             # ✅ NEW: English word → two Chinese choices
       continue-prompt.tsx  # ✅ NEW: continue-or-quit after daily goal
       welcome.tsx          # Phase 4: first-run ASCII welcome ceremony
+      update-prompt.tsx     # ✅ NEW: update available prompt (立即更新/跳过)
       speed-round.tsx      # Phase 3: timed quiz from all studied words
       share.tsx            # Phase 3: plain text progress card to stdout
       import.tsx           # Phase 2: JSON content importer (fail-fast)
@@ -296,6 +305,7 @@ alvy/
       store.ts             # ✅ JSON persistence, V1→V2 migration, backup
       progress.ts          # ✅ Business logic (Set branch cleaned)
       types.ts             # ✅ TypeScript interfaces (V2 fields)
+      update-check.ts      # ✅ NEW: npm registry version check + runUpdate()
     data/
       roots.json           # 30 roots × 5 words = 150 words (V1, expand in Phase 2)
   install.sh               # One-line installer for macOS/Linux

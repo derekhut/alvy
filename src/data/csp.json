@@ -2052,5 +2052,386 @@
         "toefl_frequency": "medium"
       }
     ]
+  },
+  {
+    "root": "Conditionals",
+    "type": "root",
+    "meaning_en": "control structures that execute different code blocks based on Boolean conditions",
+    "meaning_zh": "条件结构：根据布尔条件执行不同代码块的控制结构。让程序能「做决定」，例如根据成绩判断是否及格——是程序拥有「智能」的关键",
+    "origin": "Unit 3: 3.6 Conditionals",
+    "related": ["Boolean Expressions", "Nested Conditionals", "Iteration", "Developing Algorithms"],
+    "words": [
+      {
+        "word": "algorithm",
+        "breakdown": "Algorithm(算法) — from al-Khwarizmi (波斯数学家)",
+        "meaning_en": "step-by-step procedures or sets of rules designed to solve a problem or accomplish a task",
+        "meaning_zh": "算法：解决问题的有限步骤集合。条件语句是构建算法的基础积木——「如果...就...」让算法能根据情况做出不同响应",
+        "derivation": "al-Khwarizmi(9世纪波斯数学家) → Algorithm(算法) → 解题步骤",
+        "mnemonic": "判断闰年的算法：能被4整除 AND（不能被100整除 OR 能被400整除）——一连串条件的组合",
+        "example": "The algorithm uses an if-statement to check if the input is positive.",
+        "example_zh": "算法使用 if 语句检查输入是否为正数。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Boolean expression",
+        "breakdown": "Boolean(布尔) + Expression(表达式)",
+        "meaning_en": "an expression that evaluates to either true or false, often composed of conditions combined with logical operators",
+        "meaning_zh": "布尔表达式：求值结果为 true 或 false 的表达式，是条件语句的「问题」部分。例如 `IF (age >= 18)` 中的 `age >= 18` 就是布尔表达式",
+        "derivation": "Boolean(布尔) + Expression(表达式) → 条件语句的判断依据",
+        "mnemonic": "布尔表达式 = 条件语句的「门票检查员」：通过（true）就让进，不通过（false）就拦下",
+        "example": "The Boolean expression score >= 60 controls whether the student passes.",
+        "example_zh": "布尔表达式 score >= 60 决定学生是否及格。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "condition",
+        "breakdown": "Con(共同) + dit(给) + ion(名词后缀)",
+        "meaning_en": "a statement that evaluates to either true or false, used to determine the flow of execution in a selection structure",
+        "meaning_zh": "条件：求值为 true 或 false 的语句，用来决定选择结构的执行路径。例如 `temperature > 30` 是一个条件，结果决定是否「开空调」",
+        "derivation": "Con(共同) + dition(给定) → 给程序的「前提」",
+        "mnemonic": "条件像红绿灯：绿（true）走，红（false）停",
+        "example": "If the condition is true, the program executes the then-block.",
+        "example_zh": "如果条件为真，程序执行 then 代码块。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "conditional statement",
+        "breakdown": "Conditional(条件的) + Statement(语句)",
+        "meaning_en": "a programming construct that executes different code blocks based on whether a specified condition is true or false",
+        "meaning_zh": "条件语句：根据条件真假执行不同代码块的程序构造。最常见的形式是 `IF (condition) {...} ELSE {...}`，让程序能「分叉」",
+        "derivation": "Conditional(条件的) + Statement(语句) → 「带条件的指令」",
+        "mnemonic": "条件语句 = 程序的岔路口：IF 是路标，THEN 是左路，ELSE 是右路",
+        "example": "The conditional statement displays \"pass\" if the score is at least 60.",
+        "example_zh": "如果分数至少为 60，条件语句显示「pass」。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "ELSE",
+        "breakdown": "ELSE(否则) — keyword",
+        "meaning_en": "a keyword used in conditional statements to specify a block of code that executes when the Boolean condition is false",
+        "meaning_zh": "ELSE 关键字：在条件语句中指定条件为 false 时执行的代码块。例如 `IF (rain) THEN bring umbrella ELSE wear sunglasses`",
+        "derivation": "ELSE(否则) → 条件不成立时的「备用方案」",
+        "mnemonic": "ELSE 是 IF 的「另一面」：IF 走正面，ELSE 走反面",
+        "example": "If the user is logged in, show the dashboard; ELSE show the login page.",
+        "example_zh": "如果用户已登录，显示仪表板；否则显示登录页面。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "if-statements",
+        "breakdown": "If(如果) + Statement(语句)",
+        "meaning_en": "a type of conditional statement that executes a block of code only if a specified Boolean condition is true",
+        "meaning_zh": "if 语句：只有当布尔条件为真时才执行代码块的条件语句。是最简单的选择结构，例如 `IF (x > 0) DISPLAY(\"正数\")`",
+        "derivation": "If(如果) + Statement(语句) → 「如果」开头的指令",
+        "mnemonic": "if 语句 = 单选门：满足条件就开门，不满足就跳过",
+        "example": "The if-statement displays a message only when the user is an admin.",
+        "example_zh": "if 语句仅在用户是管理员时显示消息。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "selection",
+        "breakdown": "Select(选择) + ion(名词后缀)",
+        "meaning_en": "a control structure that determines which parts of an algorithm are executed based on whether a condition is true or false",
+        "meaning_zh": "选择结构：根据条件真假决定执行算法哪部分的控制结构。是程序三大基本结构之一（顺序、选择、循环），让算法具有「判断力」",
+        "derivation": "Select(选择) + ion(名词) → 让程序能「做选择」的能力",
+        "mnemonic": "选择结构 = 餐厅的菜单：根据你饿不饿、有没有钱，选不同的菜",
+        "example": "Selection allows the algorithm to skip steps when they are not needed.",
+        "example_zh": "选择结构允许算法在不需要时跳过某些步骤。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "sequential flow of control",
+        "breakdown": "Sequential(顺序的) + Flow(流) + Control(控制)",
+        "meaning_en": "the order in which statements are executed in a program; conditional statements can alter this flow by executing different code based on conditions",
+        "meaning_zh": "顺序控制流：程序中语句执行的默认顺序——从上到下一行行执行。条件语句可以「打断」这种流，让程序跳到不同的分支",
+        "derivation": "Sequential(顺序的) + Flow(流) + Control(控制) → 程序的「默认行进方向」",
+        "mnemonic": "顺序控制流像河水：默认从上游流向下游，IF 语句是分流堰",
+        "example": "Conditional statements interrupt the sequential flow of control to choose a path.",
+        "example_zh": "条件语句中断顺序控制流以选择路径。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Nested Conditionals",
+    "type": "root",
+    "meaning_en": "conditional statements placed inside other conditional statements for multi-level decision-making",
+    "meaning_zh": "嵌套条件：把一个条件语句放在另一个条件语句里面，实现多层判断。例如先判断是否成年，再判断成年人是否有驾照——形成决策树",
+    "origin": "Unit 3: 3.7 Nested Conditionals",
+    "related": ["Conditionals", "Boolean Expressions", "Iteration"],
+    "words": [
+      {
+        "word": "conditional statement",
+        "breakdown": "Conditional(条件的) + Statement(语句)",
+        "meaning_en": "a programming construct that executes different code blocks based on whether a specified condition is true or false",
+        "meaning_zh": "条件语句：在嵌套条件中，外层和内层都是条件语句。外层先判断一个大问题，内层再判断细节问题，层层细化",
+        "derivation": "Conditional(条件的) + Statement(语句) → 嵌套时一个套一个",
+        "mnemonic": "嵌套条件像俄罗斯套娃：打开一个，里面还有一个",
+        "example": "A conditional statement can contain another conditional statement inside its then-block.",
+        "example_zh": "条件语句可以在其 then 块内包含另一个条件语句。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "nested conditional statements",
+        "breakdown": "Nested(嵌套的) + Conditional(条件的) + Statements(语句)",
+        "meaning_en": "conditional statements that are placed within other conditional statements, allowing for more complex decision-making logic based on multiple conditions",
+        "meaning_zh": "嵌套条件语句：把条件语句放在其他条件语句内部，实现更复杂的决策逻辑。例如先判断是工作日，再判断是上午还是下午，决定该做什么",
+        "derivation": "Nest(巢) + ed(过去分词) → 像鸟巢一样层层嵌套",
+        "mnemonic": "嵌套条件 = 决策树：每个分支可能还有更多分支，越往下越细",
+        "example": "Nested conditional statements check the user's age and then their account type.",
+        "example_zh": "嵌套条件语句先检查用户年龄，再检查账户类型。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Iteration",
+    "type": "root",
+    "meaning_en": "control structures that repeat a block of code based on a count or condition",
+    "meaning_zh": "迭代（循环）：根据次数或条件重复执行代码块的控制结构。让程序能「批量处理」，例如对列表中100个学生分别打分——这就是循环的威力",
+    "origin": "Unit 3: 3.8 Iteration",
+    "related": ["Conditionals", "Nested Conditionals", "Boolean Expressions", "Developing Algorithms"],
+    "words": [
+      {
+        "word": "algorithm",
+        "breakdown": "Algorithm(算法) — from al-Khwarizmi",
+        "meaning_en": "step-by-step procedures or sets of rules designed to solve a problem or accomplish a task",
+        "meaning_zh": "算法：在迭代的语境下，算法常常用循环来「重复一类操作」。例如计算列表的总和：循环遍历每个元素并累加",
+        "derivation": "al-Khwarizmi → Algorithm → 用循环简化重复操作的步骤集",
+        "mnemonic": "迭代算法的精髓：「重复做同样的事，但每次稍有不同」",
+        "example": "The algorithm uses iteration to compute the average of all values in a list.",
+        "example_zh": "算法使用迭代来计算列表中所有值的平均数。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Boolean expression",
+        "breakdown": "Boolean(布尔) + Expression(表达式)",
+        "meaning_en": "an expression that evaluates to either true or false, often composed of conditions combined with logical operators",
+        "meaning_zh": "布尔表达式：在迭代中，布尔表达式是循环的「停止信号」。例如 `REPEAT UNTIL (count > 10)` 中的 `count > 10` 就是停止条件的布尔表达式",
+        "derivation": "Boolean(布尔) + Expression(表达式) → 决定循环是否继续的判断式",
+        "mnemonic": "迭代中的布尔表达式像跑步机的紧急停止键——一旦为 true，循环立刻停",
+        "example": "The Boolean expression i < 10 keeps the loop running until i reaches 10.",
+        "example_zh": "布尔表达式 i < 10 让循环一直运行到 i 达到 10 为止。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "condition",
+        "breakdown": "Condition(条件)",
+        "meaning_en": "a statement that evaluates to either true or false, used to determine the flow of execution in a selection structure",
+        "meaning_zh": "条件：在迭代中，条件决定循环是否继续。例如 `WHILE (x > 0)` 中，每次循环开始前都会检查 `x > 0` 这个条件",
+        "derivation": "Condition(条件) → 循环的「继续/停止」开关",
+        "mnemonic": "循环条件像门禁卡：每圈开始前刷一次，刷过才能进下一圈",
+        "example": "The loop continues as long as the condition is true.",
+        "example_zh": "只要条件为真，循环就继续。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "infinite loop",
+        "breakdown": "Infinite(无限的) + Loop(循环)",
+        "meaning_en": "a loop that never terminates because the ending condition will never evaluate to true",
+        "meaning_zh": "无限循环：永远不会结束的循环，因为停止条件永远不会为真。常见的 bug——例如忘记在循环里更新计数器，导致条件永远不变",
+        "derivation": "Infinite(无限的) + Loop(循环) → 「跑不完的圈」",
+        "mnemonic": "无限循环 = 程序版的「永动机」：电脑会卡死，CPU 会发烫，最终被强制结束",
+        "example": "Forgetting to update the counter creates an infinite loop.",
+        "example_zh": "忘记更新计数器会造成无限循环。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "iteration",
+        "breakdown": "Iter(再次) + ation(名词后缀)",
+        "meaning_en": "a repeating portion of an algorithm that executes a specified number of times or until a given condition is met",
+        "meaning_zh": "迭代：算法中重复执行的部分，要么固定次数（REPEAT n TIMES），要么直到满足某条件（REPEAT UNTIL）。是程序处理大量数据的关键",
+        "derivation": "Iter(再次) + ation(名词) → 一次又一次地做",
+        "mnemonic": "iteration 是程序的「循环往复」：像跑圈，每圈都做同样的动作",
+        "example": "Iteration allows the program to print every name in a long list.",
+        "example_zh": "迭代允许程序打印长列表中的每个名字。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "iteration statements",
+        "breakdown": "Iteration(迭代) + Statements(语句)",
+        "meaning_en": "programming statements that repeat a block of code zero or more times until a stopping condition is met",
+        "meaning_zh": "迭代语句：把一段代码重复执行 0 次或多次的语句，直到达到停止条件。CSP 伪代码主要有 `REPEAT n TIMES` 和 `REPEAT UNTIL`",
+        "derivation": "Iteration(迭代) + Statements(语句) → 写在代码里的「重复指令」",
+        "mnemonic": "迭代语句 = 程序的「复读机」：一段话，重复 N 遍",
+        "example": "Iteration statements like REPEAT UNTIL run until the condition is met.",
+        "example_zh": "像 REPEAT UNTIL 这样的迭代语句一直运行直到条件满足。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "loop body",
+        "breakdown": "Loop(循环) + Body(身体)",
+        "meaning_en": "the block of statements that is repeated within an iteration statement",
+        "meaning_zh": "循环体：迭代语句中被重复执行的代码块。例如 `REPEAT 5 TIMES { DISPLAY(\"Hi\") }` 中，`DISPLAY(\"Hi\")` 就是循环体",
+        "derivation": "Loop(循环) + Body(身体) → 循环的「内容」部分",
+        "mnemonic": "循环体是「被复印的原稿」：原稿写一次，复印 N 次",
+        "example": "The loop body executes once per iteration of the loop.",
+        "example_zh": "循环体每次迭代执行一次。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "REPEAT n TIMES",
+        "breakdown": "Repeat(重复) + n(次数) + Times(次)",
+        "meaning_en": "an iteration statement that executes a block of statements exactly n times",
+        "meaning_zh": "REPEAT n TIMES：精确重复 n 次的循环语句。例如 `REPEAT 5 TIMES { ... }` 把里面的代码执行 5 次。计数循环的最简形式",
+        "derivation": "Repeat(重复) + n + Times(次数) → 「重复 n 次」的字面表达",
+        "mnemonic": "REPEAT 5 TIMES = 罚抄5遍：抄完 5 次，自动停",
+        "example": "REPEAT 10 TIMES will run the block exactly ten times.",
+        "example_zh": "REPEAT 10 TIMES 将块精确运行十次。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "REPEAT UNTIL(condition)",
+        "breakdown": "Repeat(重复) + Until(直到) + Condition(条件)",
+        "meaning_en": "an iteration statement that repeats a block of statements until a Boolean condition evaluates to true",
+        "meaning_zh": "REPEAT UNTIL(condition)：重复执行直到条件为真的循环语句。次数不固定，例如「不停掷骰子，直到掷出 6 为止」",
+        "derivation": "Repeat(重复) + Until(直到) → 「重复，直到...」",
+        "mnemonic": "REPEAT UNTIL = 「试到成功为止」：不知道要试几次，但试中就停",
+        "example": "REPEAT UNTIL(found) keeps searching until the item is found.",
+        "example_zh": "REPEAT UNTIL(found) 一直搜索直到找到该项目。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "sequential flow of control",
+        "breakdown": "Sequential(顺序的) + Flow(流) + Control(控制)",
+        "meaning_en": "the order in which statements are executed in a program; conditional statements can alter this flow by executing different code based on conditions",
+        "meaning_zh": "顺序控制流：在迭代的语境下，循环会暂时「打断」顺序控制流——从循环底部跳回顶部，多次执行同一段代码",
+        "derivation": "Sequential(顺序的) + Flow Control(流控制) → 程序的「默认前进方向」",
+        "mnemonic": "循环像河流的回旋：水流一次次回到上游，而不是直接奔向下游",
+        "example": "Iteration statements interrupt the sequential flow of control by jumping back to the start of the loop.",
+        "example_zh": "迭代语句通过跳回循环开始来中断顺序控制流。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "stopping condition",
+        "breakdown": "Stopping(停止的) + Condition(条件)",
+        "meaning_en": "a Boolean expression that, when true, causes an iteration loop to terminate",
+        "meaning_zh": "停止条件：当为真时让循环结束的布尔表达式。每个循环都必须有明确的停止条件，否则就成了无限循环",
+        "derivation": "Stopping(停止) + Condition(条件) → 循环的「下车站」",
+        "mnemonic": "停止条件 = 循环的「闹钟」：响了就醒，否则一直睡（循环）",
+        "example": "Without a clear stopping condition, the loop becomes infinite.",
+        "example_zh": "没有明确的停止条件，循环就变成无限的。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Developing Algorithms",
+    "type": "root",
+    "meaning_en": "designing algorithms by combining sequencing, selection, and iteration",
+    "meaning_zh": "开发算法：通过组合顺序、选择、迭代三大基本结构来设计算法。例如「找出列表中的最大值」就用迭代遍历 + 条件判断组合而成",
+    "origin": "Unit 3: 3.9 Developing Algorithms",
+    "related": ["Conditionals", "Iteration", "Mathematical Expressions"],
+    "words": [
+      {
+        "word": "algorithm",
+        "breakdown": "Algorithm(算法) — from al-Khwarizmi",
+        "meaning_en": "step-by-step procedures or sets of rules designed to solve a problem or accomplish a task",
+        "meaning_zh": "算法：开发算法的过程就是「把问题拆解成有限的步骤」。好的算法既正确又高效，例如二分查找比线性查找快得多",
+        "derivation": "al-Khwarizmi → Algorithm → 解决问题的明确步骤",
+        "mnemonic": "算法是「写给电脑的菜谱」：步骤要清晰、不能含糊",
+        "example": "The algorithm to find the maximum value uses iteration and selection.",
+        "example_zh": "找最大值的算法使用迭代和选择结构。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "average",
+        "breakdown": "Average(平均)",
+        "meaning_en": "the mean value of a list of numbers, calculated by dividing the sum of all elements by the number of elements",
+        "meaning_zh": "平均值：列表所有元素之和除以元素个数。计算平均值的算法是 CSP 经典例题：用迭代累加 + 一次除法",
+        "derivation": "Average(平均) → 一组数的「中间水平」",
+        "mnemonic": "average = 总分 ÷ 人数：考试出成绩时全班最关心的数字",
+        "example": "The algorithm computes the average by dividing the sum by the count.",
+        "example_zh": "算法通过将总和除以数量来计算平均值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Boolean expression",
+        "breakdown": "Boolean(布尔) + Expression(表达式)",
+        "meaning_en": "an expression that evaluates to either true or false, often composed of conditions combined with logical operators",
+        "meaning_zh": "布尔表达式：开发算法时用于在循环和条件中做判断。例如「找最大值」的算法里，`current > max` 是核心的布尔表达式",
+        "derivation": "Boolean(布尔) + Expression(表达式) → 算法的「判断逻辑」",
+        "mnemonic": "好算法离不开好布尔表达式——一行错的判断，整个算法就崩",
+        "example": "The Boolean expression item > maxSoFar updates the running maximum.",
+        "example_zh": "布尔表达式 item > maxSoFar 更新当前的最大值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "conditional statement",
+        "breakdown": "Conditional(条件的) + Statement(语句)",
+        "meaning_en": "a programming construct that executes different code blocks based on whether a specified condition is true or false",
+        "meaning_zh": "条件语句：开发算法的「决策点」。例如在求最大值的算法中，每次比较都用 if 语句决定是否更新当前最大值",
+        "derivation": "Conditional(条件的) + Statement(语句) → 算法中的「分叉口」",
+        "mnemonic": "条件语句 = 算法的方向盘：根据情况决定往哪开",
+        "example": "The conditional statement updates the maximum when a larger value is found.",
+        "example_zh": "条件语句在找到更大值时更新最大值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "equivalent",
+        "breakdown": "Equi(相等) + valent(价值的)",
+        "meaning_en": "having the same value, result, or effect; in algorithms, producing identical outcomes or side effects",
+        "meaning_zh": "等价的：产生相同结果或效果的。在算法中，两个写法不同但结果一样的算法是 equivalent，例如递归和迭代版本的求和算法",
+        "derivation": "Equi(相等) + valent(价值) → 「价值相同」",
+        "mnemonic": "equivalent 像两条不同的路通向同一个目的地——走法不同，结果相同",
+        "example": "Two algorithms are equivalent if they produce the same output for all inputs.",
+        "example_zh": "如果两个算法对所有输入都产生相同输出，则它们是等价的。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "evenly divisible",
+        "breakdown": "Evenly(平均地) + Divisible(可除的)",
+        "meaning_en": "a condition where one integer divides another integer with no remainder",
+        "meaning_zh": "整除：一个整数除以另一个整数没有余数的情况。例如 10 evenly divisible by 5（余数为 0），但 10 不能被 3 整除（余数为 1）",
+        "derivation": "Evenly(平均) + Divisible(可除) → 「能平均分完，没有零头」",
+        "mnemonic": "判断整除常用 `n MOD divisor == 0`——找闰年、判奇偶都靠它",
+        "example": "A number is evenly divisible by 2 if it has no remainder.",
+        "example_zh": "如果一个数除以 2 没有余数，它就能被 2 整除。",
+        "toefl_frequency": "low"
+      },
+      {
+        "word": "maximum value",
+        "breakdown": "Maximum(最大) + Value(值)",
+        "meaning_en": "the largest element in a list, which can be determined using an iteration algorithm",
+        "meaning_zh": "最大值：列表中最大的元素。经典算法：先假设第一个是最大，然后遍历其余元素，遇到更大的就更新。CSP 必考题之一",
+        "derivation": "Maximum(最大) + Value(值) → 「列表里的冠军」",
+        "mnemonic": "找最大值像选拔比赛：第一个选手暂时领先，每来一个新选手就比一下，更强的就替换",
+        "example": "The algorithm scans the list to find the maximum value.",
+        "example_zh": "算法扫描列表以找出最大值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "minimum value",
+        "breakdown": "Minimum(最小) + Value(值)",
+        "meaning_en": "the smallest element in a list, which can be determined using an iteration algorithm",
+        "meaning_zh": "最小值：列表中最小的元素。算法和找最大值类似——假设第一个是最小，遍历比较，遇到更小的就更新",
+        "derivation": "Minimum(最小) + Value(值) → 「列表里的最矮」",
+        "mnemonic": "找最小值是找最大值的「镜像版」——只是把 `>` 换成 `<`",
+        "example": "The algorithm finds the minimum value by tracking the smallest element seen so far.",
+        "example_zh": "算法通过跟踪迄今为止看到的最小元素来找出最小值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "side effect",
+        "breakdown": "Side(旁边) + Effect(效果)",
+        "meaning_en": "any change in state or output that occurs as a result of executing an algorithm, beyond its primary return value",
+        "meaning_zh": "副作用：算法执行时除了返回值之外引起的状态变化或输出。例如修改全局变量、写文件、打印消息——这些都是 side effects",
+        "derivation": "Side(旁边) + Effect(效果) → 「正事之外的影响」",
+        "mnemonic": "side effect 像吃药：治了头疼（主要效果），但让你犯困（副作用）",
+        "example": "Printing to the screen is a side effect of the algorithm.",
+        "example_zh": "打印到屏幕是算法的一个副作用。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "sum",
+        "breakdown": "Sum(总和)",
+        "meaning_en": "the total obtained by adding all elements in a list of numbers, which can be computed using iteration",
+        "meaning_zh": "总和：列表所有数字相加的结果。求和算法是迭代的入门例题：初始化 sum 为 0，循环遍历每个元素并累加",
+        "derivation": "Sum(总和) → 一堆数字的「合计」",
+        "mnemonic": "求和算法的核心：`sum ← sum + item`——这一行代码是 CSP 学生最先掌握的咒语",
+        "example": "The algorithm computes the sum by adding each element to a running total.",
+        "example_zh": "算法通过将每个元素加到累计总和中来计算总和。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

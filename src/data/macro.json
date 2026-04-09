@@ -2506,5 +2506,479 @@
         "toefl_frequency": "high"
       }
     ]
+  },
+  {
+    "root": "Long-Run Self-Adjustment",
+    "type": "root",
+    "meaning_en": "how the economy returns to full employment in the long run as wages and prices fully adjust",
+    "meaning_zh": "长期自我调整：古典学派的核心观点——在长期，工资和价格完全灵活，经济会自动回到充分就业水平（LRAS 垂直线）。例如衰退中工资最终会下降，企业恢复雇佣，产出回到潜在水平",
+    "origin": "Unit 3: 3.7 Long-Run Self-Adjustment",
+    "related": [
+      "Business Cycles",
+      "Unemployment",
+      "Real vs Nominal GDP",
+      "Fiscal Policy"
+    ],
+    "words": [
+      {
+        "word": "aggregate demand",
+        "breakdown": "Aggregate(总的) + Demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求：在 3.7 中，AD 曲线和短期总供给 SRAS 的交点决定当下的产出和价格；而长期，AD 的位置决定经济回到充分就业时的价格水平，不影响长期产出",
+        "derivation": "AD(总需求) → 与 SRAS 相交得当期均衡 → 与 LRAS 相交得长期价格水平",
+        "mnemonic": "AD 在长期「只决定价格」——长期产出由 LRAS 单独决定，这就是古典学派的核心",
+        "example": "In the long run, a rise in aggregate demand raises the price level but leaves real output unchanged.",
+        "example_zh": "在长期，总需求上升只会抬高价格水平，实际产出保持不变。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "aggregate output",
+        "breakdown": "Aggregate(总的) + Output(产出)",
+        "meaning_en": "the total quantity of goods and services produced in an economy, typically measured as real GDP",
+        "meaning_zh": "总产出：在 3.7 中，长期总产出等于潜在产出（LRAS 对应的 GDP）。无论需求怎么波动，灵活工资和价格会把总产出拉回这个水平",
+        "derivation": "总产出 → 长期被 LRAS 锁定在潜在产出 → 波动是短期现象",
+        "mnemonic": "长期里总产出是「铁板一块」——它等于潜在产出，不受 AD 影响",
+        "example": "In the long run, aggregate output returns to its potential level.",
+        "example_zh": "在长期，总产出会回到其潜在水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "aggregate supply shock",
+        "breakdown": "Aggregate(总的) + Supply(供给) + Shock(冲击)",
+        "meaning_en": "an unexpected event that causes a sudden shift in the aggregate supply curve, affecting the economy's ability to produce goods and services",
+        "meaning_zh": "总供给冲击：突发事件让 SRAS 突然移动。负向冲击（如油价暴涨、疫情）让 SRAS 左移，造成「滞胀」——产出下降同时通胀上升；正向冲击（如技术突破）让 SRAS 右移",
+        "derivation": "突发事件 → 生产成本或能力改变 → SRAS 曲线移动 → 产出和价格同时变化",
+        "mnemonic": "1970 年代石油危机就是典型的负向供给冲击——油贵了，什么都贵，但经济却在衰退",
+        "example": "The 1973 oil crisis was a classic aggregate supply shock.",
+        "example_zh": "1973 年的石油危机是典型的总供给冲击。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "economic growth",
+        "breakdown": "Economic(经济的) + Growth(增长)",
+        "meaning_en": "an increase in the production of goods and services in an economy over time, measured by the growth rate of real GDP per capita",
+        "meaning_zh": "经济增长：经济长期生产能力的提升，用人均实际 GDP 增长率衡量。在 AD-AS 模型中表现为 LRAS 曲线向右移动——潜在产出增加",
+        "derivation": "资本积累/技术进步/劳动力增长 → LRAS 右移 → 潜在产出上升 → 长期增长",
+        "mnemonic": "长期自我调整只让你回到原来的 LRAS；真正的增长是把 LRAS 整条曲线「推」得更靠右",
+        "example": "Sustainable economic growth shifts the LRAS curve to the right over time.",
+        "example_zh": "可持续的经济增长随时间推移使 LRAS 曲线向右移动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "employment",
+        "breakdown": "Employ(雇佣) + ment(名词后缀)",
+        "meaning_en": "the state of having a paid job or being engaged in work for compensation",
+        "meaning_zh": "就业：有偿工作的状态。在 3.7 长期自我调整中，劳动市场通过工资调整最终回到「充分就业」——只剩下摩擦性和结构性失业",
+        "derivation": "Employ(雇佣) → 就业岗位 → 长期会调整到充分就业水平",
+        "mnemonic": "长期看就业一定会回到「自然水平」——这是古典学派对劳动市场的基本信念",
+        "example": "In the long run, employment returns to its natural level.",
+        "example_zh": "长期中，就业会回到其自然水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "flexible wages and prices",
+        "breakdown": "Flexible(灵活的) + Wages(工资) + Prices(价格)",
+        "meaning_en": "the ability of wages and prices to adjust upward or downward in response to changes in supply and demand",
+        "meaning_zh": "灵活的工资与价格：工资和价格可以随供求变化而自由上下调整。这是长期自我调整机制的关键假设——衰退中工资能降、产品能降价，企业才会恢复雇佣和生产",
+        "derivation": "工资、价格能上能下 → 市场出清 → 经济回到充分就业",
+        "mnemonic": "灵活 = 「能降能升」——短期工资黏性（sticky）但长期灵活，是古典与凯恩斯学派的分水岭",
+        "example": "Flexible wages and prices allow the economy to self-correct in the long run.",
+        "example_zh": "灵活的工资和价格让经济在长期能自我纠偏。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "full employment",
+        "breakdown": "Full(完全的) + Employment(就业)",
+        "meaning_en": "an economic condition where all available labor resources are being used efficiently and unemployment is at its natural rate",
+        "meaning_zh": "充分就业：在 3.7 中，充分就业是长期自我调整的「终点站」——无论经济先偏向衰退还是过热，灵活工资和价格最终会把它拉回充分就业水平",
+        "derivation": "充分就业 → 长期均衡点 → LRAS 曲线对应的唯一就业水平",
+        "mnemonic": "古典学派的信条：长期一定回到充分就业，所以政府不用瞎折腾",
+        "example": "At full employment, the economy operates along the long-run aggregate supply curve.",
+        "example_zh": "在充分就业下，经济沿长期总供给曲线运行。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "long run",
+        "breakdown": "Long(长的) + Run(时段)",
+        "meaning_en": "a time period in macroeconomics where all factors of production are variable and prices fully adjust to changes in supply and demand",
+        "meaning_zh": "长期：在宏观经济学中，指所有生产要素都可变、工资和价格完全调整的时间段。注意「长期」不是以日历时间衡量，而是以「调整是否完成」来定义",
+        "derivation": "Long(长) + Run(时段) → 足够长以致调整完成 → 通常几年以上",
+        "mnemonic": "凯恩斯的名言：「长期里我们都死了」——他想强调短期问题也重要，不能只等长期调整",
+        "example": "In the long run, the economy operates at its potential output level.",
+        "example_zh": "在长期中，经济运行在其潜在产出水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Long-Run Aggregate Supply curve",
+        "breakdown": "Long-Run(长期) + Aggregate Supply(总供给) + Curve(曲线)",
+        "meaning_en": "a vertical line on a graph representing the maximum sustainable output an economy can produce when all resources are fully employed and wages and prices have fully adjusted",
+        "meaning_zh": "长期总供给曲线（LRAS）：在 AD-AS 图上的一条垂直线，位于潜在产出水平。它是垂直的意味着「长期产出不依赖价格水平」——经济无论物价高低，产能就只有这么多",
+        "derivation": "LRAS → 完全灵活的工资和价格 → 产出固定在潜在水平 → 曲线垂直",
+        "mnemonic": "LRAS 像一堵「垂直的墙」——AD 可以上下推动价格，但推不动产出",
+        "example": "The Long-Run Aggregate Supply curve is vertical at the potential output level.",
+        "example_zh": "长期总供给曲线在潜在产出水平上呈垂直状。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "natural rate of unemployment",
+        "breakdown": "Natural(自然的) + Rate(率) + Unemployment(失业)",
+        "meaning_en": "the unemployment rate that exists when the economy produces full-employment real output, equal to the sum of frictional and structural unemployment",
+        "meaning_zh": "自然失业率：在 3.7 中，是长期自我调整后劳动市场稳定的失业率——等于摩擦性 + 结构性失业之和。此时没有周期性失业，经济在 LRAS 上",
+        "derivation": "自然失业率 = 摩擦性 + 结构性 → 无周期性失业 → 长期均衡",
+        "mnemonic": "「自然」= 连最好的经济也消不掉的那部分失业——它是 LRAS 对应的失业水平",
+        "example": "At the natural rate of unemployment, cyclical unemployment is zero.",
+        "example_zh": "在自然失业率下，周期性失业为零。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：在 3.7 中，价格水平是 AD-AS 图的纵轴——短期它可能卡住（sticky），但长期完全灵活。AD 变动在长期中只改变价格水平，不改变实际产出",
+        "derivation": "价格水平 → AD-AS 图纵轴 → 长期随 AD 变动调整",
+        "mnemonic": "长期里 AD 的变化「全部被价格水平吸收」——这就是货币中性的直观体现",
+        "example": "Long-run self-adjustment shifts the price level but not real output.",
+        "example_zh": "长期自我调整改变的是价格水平而非实际产出。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "short-run aggregate supply",
+        "breakdown": "Short-Run(短期) + Aggregate Supply(总供给)",
+        "meaning_en": "the total quantity of goods and services that firms are willing to produce at different price levels in the short run, when some prices are sticky",
+        "meaning_zh": "短期总供给（SRAS）：短期内工资黏性（sticky wages），企业面对价格上涨会扩大生产——SRAS 曲线向右上倾斜。它是短期波动的载体，长期会被 LRAS 替代",
+        "derivation": "工资短期黏性 → 价格上涨利润增加 → 企业扩产 → SRAS 向上倾斜",
+        "mnemonic": "SRAS 向上倾斜而 LRAS 垂直——差别就在于「工资调整够不够快」",
+        "example": "The short-run aggregate supply curve slopes upward because wages are sticky.",
+        "example_zh": "短期总供给曲线向右上倾斜是因为工资有黏性。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Fiscal Policy",
+    "type": "root",
+    "meaning_en": "government spending and taxation decisions used to influence aggregate demand and the economy",
+    "meaning_zh": "财政政策：政府通过调整支出和税收来影响总需求的宏观政策工具。扩张性财政政策（减税或增支）用于对抗衰退；紧缩性财政政策（加税或减支）用于对抗过热和通胀",
+    "origin": "Unit 3: 3.8 Fiscal Policy",
+    "related": [
+      "Long-Run Self-Adjustment",
+      "Business Cycles",
+      "Circular Flow and GDP",
+      "Automatic Stabilizers"
+    ],
+    "words": [
+      {
+        "word": "AD-AS model",
+        "breakdown": "AD(总需求) + AS(总供给) + Model(模型)",
+        "meaning_en": "an economic model that shows the relationship between aggregate demand and aggregate supply to illustrate macroeconomic equilibrium and the effects of policy changes",
+        "meaning_zh": "AD-AS 模型：宏观经济的「主图」——纵轴价格水平、横轴实际 GDP，用 AD 曲线和 SRAS/LRAS 曲线的交点决定均衡。财政政策通过推动 AD 左右移动来改变均衡",
+        "derivation": "AD(总需求) × AS(总供给) → 交点 = 均衡产出和价格水平",
+        "mnemonic": "AD-AS 模型是宏观的「万能图」——AP 考试几乎所有政策分析都用它来画",
+        "example": "The AD-AS model shows how fiscal policy shifts aggregate demand.",
+        "example_zh": "AD-AS 模型展示了财政政策如何推动总需求变化。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "aggregate demand",
+        "breakdown": "Aggregate(总的) + Demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求：在 3.8 财政政策中，AD 是政府的主要调控对象——扩张性政策把 AD 曲线右推，紧缩性政策把 AD 曲线左推。记住 AD = C + I + G + NX",
+        "derivation": "AD = C + I + G + NX → 政府动 G 和 T（通过 C）→ AD 曲线移动",
+        "mnemonic": "财政政策就是「推 AD 曲线」——G 上升或 T 下降都会让 AD 右移",
+        "example": "Expansionary fiscal policy shifts aggregate demand to the right.",
+        "example_zh": "扩张性财政政策使总需求曲线向右移动。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "contractionary fiscal policy",
+        "breakdown": "Contractionary(紧缩的) + Fiscal(财政的) + Policy(政策)",
+        "meaning_en": "government spending decreases or tax increases designed to decrease aggregate demand and reduce inflation",
+        "meaning_zh": "紧缩性财政政策：政府减少支出或提高税收，让 AD 曲线左移——用于应对通胀和经济过热。好比经济过热时「踩刹车」",
+        "derivation": "G ↓ 或 T ↑ → C 和 G 下降 → AD 左移 → 产出和价格下降",
+        "mnemonic": "紧缩 = 「收紧钱包」——政府少花钱多收税，给过热的经济降温",
+        "example": "To fight inflation, the government used contractionary fiscal policy by raising taxes.",
+        "example_zh": "为对抗通胀，政府通过加税实施紧缩性财政政策。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "discretionary fiscal policy",
+        "breakdown": "Discretionary(自由裁量的) + Fiscal + Policy",
+        "meaning_en": "government spending and taxation decisions made by policymakers to influence economic activity, as opposed to automatic stabilizers",
+        "meaning_zh": "自由裁量型财政政策：政策制定者主动决定的支出和税收变化——例如国会通过一个新的刺激法案或加税法案。和自动稳定器相对，后者不需要新决定就能自动发挥作用",
+        "derivation": "Discretionary(酌情) → 主动决策 → 要经过立法过程 → 反应慢",
+        "mnemonic": "2020 年美国 CARES 法案就是自由裁量型财政政策的典型——国会通过、总统签字，才能动",
+        "example": "Passing a new stimulus bill is an example of discretionary fiscal policy.",
+        "example_zh": "通过一项新的刺激法案是自由裁量型财政政策的例子。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expansionary fiscal policy",
+        "breakdown": "Expansionary(扩张的) + Fiscal + Policy",
+        "meaning_en": "government spending increases or tax decreases designed to increase aggregate demand and stimulate economic growth",
+        "meaning_zh": "扩张性财政政策：政府增加支出或减税，让 AD 曲线右移——用于对抗衰退、刺激经济增长。好比给低迷经济「踩油门」",
+        "derivation": "G ↑ 或 T ↓ → 可支配收入上升 → C 上升 → AD 右移 → 产出和就业增加",
+        "mnemonic": "扩张 = 「大手大脚」——政府多花钱少收税，把经济从衰退里拉出来",
+        "example": "During a recession, governments often use expansionary fiscal policy to boost employment.",
+        "example_zh": "在衰退期间，政府常用扩张性财政政策来促进就业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "fiscal policy",
+        "breakdown": "Fiscal(财政的) + Policy(政策)",
+        "meaning_en": "government spending and taxation decisions that influence aggregate demand, real output, price level, and exchange rates",
+        "meaning_zh": "财政政策：政府通过改变支出和税收来影响宏观经济的政策工具。和货币政策（央行调利率）是宏观调控的两大支柱——一个管「钱袋子」，一个管「水龙头」",
+        "derivation": "Fiscal(来自 fisc = 国库) → 和政府钱袋有关 → 支出和税收政策",
+        "mnemonic": "财政政策 vs 货币政策：前者是政府管预算，后者是央行管利率——AP 宏观必分清",
+        "example": "Fiscal policy is one of the main tools governments use to manage the economy.",
+        "example_zh": "财政政策是政府管理经济的主要工具之一。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "full employment",
+        "breakdown": "Full(完全的) + Employment(就业)",
+        "meaning_en": "an economic condition where all available labor resources are being used efficiently and unemployment is at its natural rate",
+        "meaning_zh": "充分就业：在 3.8 中，是财政政策的核心目标之一。当经济有衰退缺口时，扩张性财政政策把 AD 右推，目标就是回到充分就业水平",
+        "derivation": "充分就业 → 财政政策的目标 → 实际 GDP = 潜在 GDP",
+        "mnemonic": "衰退时政府「开支」的目的就是把经济拉回充分就业——这就是凯恩斯式财政政策",
+        "example": "The goal of expansionary fiscal policy is to return the economy to full employment.",
+        "example_zh": "扩张性财政政策的目标是让经济回到充分就业。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "government spending",
+        "breakdown": "Government(政府) + Spending(支出)",
+        "meaning_en": "government expenditures that can affect the demand for loanable funds and interest rates",
+        "meaning_zh": "政府支出（G）：政府购买商品和服务的总和，是 GDP 支出法（C + I + G + NX）中的一项。政府增加 G 会直接推动 AD 右移，是财政政策最直接的工具",
+        "derivation": "政府买东西 → G ↑ → AD 右移 → 产出和就业增加",
+        "mnemonic": "美国修高速公路、造航母、发工资给公务员——都算进 G",
+        "example": "Increased government spending on infrastructure stimulates aggregate demand.",
+        "example_zh": "政府增加基础设施支出会刺激总需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "government spending multiplier",
+        "breakdown": "Government Spending(政府支出) + Multiplier(乘数)",
+        "meaning_en": "the ratio of the change in real output to an initial change in government spending, indicating how much aggregate demand increases from each dollar of government spending",
+        "meaning_zh": "政府支出乘数：每 1 美元政府支出能带来的总产出变化。公式是 1 / (1 - MPC)——例如 MPC = 0.8 时乘数 = 5，意味着政府花 1 美元可让 GDP 增加 5 美元",
+        "derivation": "G ↑ → 收入 ↑ → 消费 ↑ → 又增加收入 → 无穷级数 → 乘数 = 1/(1-MPC)",
+        "mnemonic": "乘数效应像「涟漪」——政府扔石头，产生一圈又一圈的支出涟漪",
+        "example": "If the MPC is 0.75, the government spending multiplier is 4.",
+        "example_zh": "若边际消费倾向为 0.75，政府支出乘数为 4。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflationary output gap",
+        "breakdown": "Inflationary(通胀的) + Output(产出) + Gap(缺口)",
+        "meaning_en": "a positive output gap occurring when actual real output exceeds the full-employment level of output, putting upward pressure on prices",
+        "meaning_zh": "通胀性产出缺口：实际产出超过潜在产出时形成的正向缺口。经济「过热」——失业率低于自然率，价格加速上升。这时政府应使用紧缩性财政政策",
+        "derivation": "实际 GDP > 潜在 GDP → 产出正缺口 → 通胀压力 → 需要紧缩",
+        "mnemonic": "过热就像跑车超速——再爽也得踩刹车，否则车毁人亡（恶性通胀）",
+        "example": "An inflationary output gap calls for contractionary fiscal policy.",
+        "example_zh": "通胀性产出缺口需要紧缩性财政政策来应对。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "lags",
+        "breakdown": "Lag(延迟) + s",
+        "meaning_en": "delays between the time a policy action is taken and when its effects are fully realized in the economy",
+        "meaning_zh": "时滞：政策制定到产生效果之间的延迟。财政政策有三大时滞——识别时滞（看出问题）、决策时滞（立法过程）、影响时滞（政策起效）。这是财政政策的主要短板",
+        "derivation": "Lag(滞后) → 发现问题 → 决策 → 执行 → 见效，每一步都要时间",
+        "mnemonic": "财政政策的时滞长到「刺激法案落地时经济已自行恢复」——常常做好事反而做砸",
+        "example": "Fiscal policy often suffers from long recognition, decision, and impact lags.",
+        "example_zh": "财政政策常常面临识别、决策和影响三方面的长时滞。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "macroeconomic goals",
+        "breakdown": "Macro(宏观的) + economic(经济的) + Goals(目标)",
+        "meaning_en": "broad economic objectives that governments aim to achieve, such as full employment, price stability, and economic growth",
+        "meaning_zh": "宏观经济目标：政府宏观调控追求的三大核心目标——充分就业、价格稳定、经济增长。有时还加上国际收支平衡。财政政策就是为这些目标服务的工具",
+        "derivation": "Macro(宏观) + 目标 → 充分就业 + 价格稳定 + 经济增长",
+        "mnemonic": "宏观三大目标 = 「就业、物价、增长」——所有财政货币政策都绕着这三个转",
+        "example": "Fiscal policy is designed to achieve key macroeconomic goals.",
+        "example_zh": "财政政策旨在实现关键的宏观经济目标。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services produced in an economy, typically measured by price indices like the CPI",
+        "meaning_zh": "价格水平：在 3.8 财政政策中，价格水平是政策的重要结果之一——扩张性政策会推高价格（通胀压力），紧缩性政策会压低价格。AP 图示中要同时画出产出和价格两方向的变化",
+        "derivation": "AD 右移 → 价格水平上升 → 通胀风险",
+        "mnemonic": "扩张政策「既拉产出也推物价」——这就是凯恩斯政策的代价",
+        "example": "Expansionary fiscal policy tends to raise the price level.",
+        "example_zh": "扩张性财政政策往往会推高价格水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "real output",
+        "breakdown": "Real(实际的) + Output(产出)",
+        "meaning_en": "the total production of goods and services in an economy adjusted for inflation, measured in constant dollars",
+        "meaning_zh": "实际产出：按不变价格（剔除通胀后）衡量的总产出，即实际 GDP。财政政策的一个关键目标就是在短期内提升实际产出，把经济拉回充分就业",
+        "derivation": "名义 GDP / 价格指数 → 实际产出 → 不受通胀干扰的真实产能",
+        "mnemonic": "讨论财政政策效果时，要看「实际产出」而不是名义——否则政府可能只是把物价推上去",
+        "example": "Expansionary fiscal policy increases real output in the short run.",
+        "example_zh": "扩张性财政政策在短期内增加实际产出。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "short-run effects",
+        "breakdown": "Short-Run(短期) + Effects(效应)",
+        "meaning_en": "the immediate economic impacts of a policy action on output, employment, and prices in the near term",
+        "meaning_zh": "短期效应：政策在短期内对产出、就业和价格的直接影响。财政政策的「见效期」——通常是几个季度到一两年。和长期自我调整对比，短期效应才是凯恩斯政策的主战场",
+        "derivation": "政策出台 → 乘数效应 → 短期内产出和就业变化",
+        "mnemonic": "凯恩斯学派重视「短期效应」——因为「长期里我们都死了」",
+        "example": "The short-run effects of expansionary policy are higher output and employment.",
+        "example_zh": "扩张性政策的短期效应是更高的产出和就业。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "tax multiplier",
+        "breakdown": "Tax(税) + Multiplier(乘数)",
+        "meaning_en": "the ratio of the change in real output to an initial change in taxes, indicating how much aggregate demand changes from each dollar of tax change",
+        "meaning_zh": "税收乘数：每 1 美元税收变动带来的 AD 变化。公式是 -MPC / (1 - MPC)——注意是负号（加税减 AD，减税增 AD），而且绝对值比政府支出乘数小 1",
+        "derivation": "T ↓ → 可支配收入 ↑ → 只有 MPC 部分被消费 → 乘数 = -MPC/(1-MPC)",
+        "mnemonic": "税收乘数比 G 乘数「小一号」——因为减税的钱有一部分被存起来而不是花掉",
+        "example": "If the MPC is 0.8, the tax multiplier is -4 while the government spending multiplier is 5.",
+        "example_zh": "若边际消费倾向为 0.8，税收乘数为 -4，而政府支出乘数为 5。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "taxes",
+        "breakdown": "Tax(税) + es",
+        "meaning_en": "government revenues that affect disposable income and the supply of loanable funds available for borrowing",
+        "meaning_zh": "税收（T）：政府的主要收入来源，也是财政政策的重要工具。提高税收会减少可支配收入、压低消费；减税则相反。财政政策中 T 和 G 一起调整",
+        "derivation": "税收 → 影响可支配收入 → 影响消费 → 影响 AD",
+        "mnemonic": "减税 = 「给老百姓发红包」→ 他们花一部分 → AD 被间接推高",
+        "example": "Lower taxes leave households with more disposable income to spend.",
+        "example_zh": "更低的税收让家庭有更多可支配收入用于消费。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "transfers",
+        "breakdown": "Trans(跨) + fer(携带) → transfer",
+        "meaning_en": "government payments to individuals or groups that do not represent payment for current goods or services, such as social security or unemployment benefits",
+        "meaning_zh": "转移支付：政府给个人或群体的付款，但不换取商品或服务——典型例子是社保、失业救济、退伍军人补贴。它不算进 G，但会通过增加可支配收入来影响消费",
+        "derivation": "Trans(跨) + fer(携带) → 把钱从政府转给个人 → 不涉及交换",
+        "mnemonic": "转移支付不是「买东西」而是「送钱」——所以不计入 GDP 的 G，但会进入家庭消费",
+        "example": "Unemployment benefits are a key form of government transfers.",
+        "example_zh": "失业救济是政府转移支付的一种重要形式。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Automatic Stabilizers",
+    "type": "root",
+    "meaning_en": "government programs that automatically dampen economic fluctuations without new policy decisions",
+    "meaning_zh": "自动稳定器：不需要新立法就能在经济波动中自动发挥反周期作用的政府项目——例如累进所得税和失业救济。衰退时自动减轻负担、扩张期自动降温，是财政政策的「自动驾驶」",
+    "origin": "Unit 3: 3.9 Automatic Stabilizers",
+    "related": [
+      "Fiscal Policy",
+      "Business Cycles",
+      "Unemployment",
+      "Circular Flow and GDP"
+    ],
+    "words": [
+      {
+        "word": "automatic stabilizers",
+        "breakdown": "Automatic(自动的) + Stabilizers(稳定器)",
+        "meaning_en": "government policies and programs that automatically adjust to support the economy during recessions and prevent overheating during expansionary periods without requiring deliberate policy changes",
+        "meaning_zh": "自动稳定器：无需国会新决议就能自动对经济波动做出反应的项目——衰退时自动注入支持（失业救济自动增加），过热时自动降温（累进税自动加重）。避开了自由裁量型财政政策的时滞问题",
+        "derivation": "衰退 → 税收自动下降 + 转移支付自动上升 → 不用立法就能稳定经济",
+        "mnemonic": "自动稳定器是财政政策的「定速巡航」——不用踩油门刹车，它自己调节",
+        "example": "Unemployment insurance is a classic automatic stabilizer.",
+        "example_zh": "失业保险是典型的自动稳定器。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "business cycle",
+        "breakdown": "Business(商业) + Cycle(周期)",
+        "meaning_en": "fluctuations in aggregate output and employment caused by changes in aggregate supply and/or aggregate demand",
+        "meaning_zh": "经济周期：在 3.9 中，自动稳定器的主要作用就是「削峰填谷」——让经济周期的波动幅度变小。衰退没那么深、扩张没那么疯，经济更平稳",
+        "derivation": "经济周期 → 自动稳定器作为缓冲 → 波动幅度减小",
+        "mnemonic": "自动稳定器像汽车的「减震器」——路再颠簸，车内也没那么抖",
+        "example": "Automatic stabilizers smooth out the business cycle.",
+        "example_zh": "自动稳定器能平滑经济周期。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "consumption",
+        "breakdown": "Con(一起) + sume(拿走) + tion → 消费",
+        "meaning_en": "spending by households on goods and services, which is affected by changes in tax revenues and disposable income",
+        "meaning_zh": "消费（C）：在 3.9 中，自动稳定器通过影响可支配收入来稳定消费——衰退时税收自动减少、转移支付自动增加，家庭可支配收入下降没那么剧烈，消费也更稳定",
+        "derivation": "衰退 → 税收↓、转移支付↑ → 可支配收入稳定 → 消费稳定",
+        "mnemonic": "自动稳定器让家庭「省点事」——不用等政府救济金的新法案，老项目自动启动",
+        "example": "Automatic stabilizers help keep consumption from falling too sharply in a recession.",
+        "example_zh": "自动稳定器能防止消费在衰退中急剧下滑。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expansionary periods",
+        "breakdown": "Expansionary(扩张的) + Periods(时期)",
+        "meaning_en": "periods of economic growth when GDP is rising and the economy is expanding",
+        "meaning_zh": "扩张期：GDP 持续上升、经济增长的时段。在 3.9 中，扩张期自动稳定器「自动降温」——人们收入提高后落入更高税档，累进税自动加重；同时领救济的人变少，政府支出自动减少",
+        "derivation": "扩张期 → 收入上升 → 累进税自动加重 → AD 被自动压低",
+        "mnemonic": "扩张期自动稳定器像「隐形刹车」——经济越热它踩得越重",
+        "example": "During expansionary periods, automatic stabilizers slow growth to prevent overheating.",
+        "example_zh": "在扩张期，自动稳定器会减缓增长以防止经济过热。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Gross Domestic Product",
+        "breakdown": "Gross(总的) + Domestic(国内的) + Product(产品)",
+        "meaning_en": "the total monetary value of all final goods and services produced within a country during a specific period",
+        "meaning_zh": "国内生产总值（GDP）：在 3.9 中，自动稳定器的作用就是让 GDP 的波动更平缓——衰退时少跌一点，过热时少涨一点。经济学家用 GDP 波动率来衡量稳定器的效果",
+        "derivation": "GDP → 经济规模的核心指标 → 自动稳定器作用的对象",
+        "mnemonic": "自动稳定器让 GDP 曲线「变平一点」——不至于像过山车",
+        "example": "Automatic stabilizers reduce the volatility of GDP over the business cycle.",
+        "example_zh": "自动稳定器能降低 GDP 在经济周期中的波动性。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "overheating",
+        "breakdown": "Over(过度) + heat(热) + ing",
+        "meaning_en": "a condition where the economy grows too rapidly, leading to inflation and unsustainable economic expansion",
+        "meaning_zh": "过热：经济增长过快、超过潜在产出，产生通胀压力的状态。自动稳定器在过热时自动发挥紧缩作用——累进税档位上升、转移支付减少，相当于自动给经济「降温」",
+        "derivation": "实际 GDP > 潜在 GDP → 通胀压力 → 自动稳定器启动",
+        "mnemonic": "过热 = 跑得太快开始冒烟——自动稳定器是内置的「散热器」",
+        "example": "Automatic stabilizers help prevent the economy from overheating.",
+        "example_zh": "自动稳定器有助于防止经济过热。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "recession",
+        "breakdown": "Re(向后) + cess(走) + ion → 衰退",
+        "meaning_en": "a period of economic contraction characterized by declining GDP and reduced economic activity",
+        "meaning_zh": "衰退：在 3.9 中，衰退是自动稳定器发挥最大作用的时候——收入下降使税收自动减少，失业增加使救济金自动上升，家庭可支配收入的下降幅度小于 GDP 下降幅度",
+        "derivation": "衰退 → 自动稳定器反向发力 → 减轻衰退深度",
+        "mnemonic": "衰退里自动稳定器「雪中送炭」——不用等国会批准，救济金自动打到账上",
+        "example": "During a recession, automatic stabilizers automatically increase transfer payments.",
+        "example_zh": "在衰退期间，自动稳定器会自动增加转移支付。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "tax revenues",
+        "breakdown": "Tax(税) + Revenues(收入)",
+        "meaning_en": "income collected by the government through taxation",
+        "meaning_zh": "税收收入：政府通过征税获得的收入。在 3.9 中，累进所得税是最典型的自动稳定器——衰退时人们收入下降、掉进低税档，税收自动减少，等于政府在自动「减税救市」",
+        "derivation": "累进税 → 收入波动 → 税档自动变化 → 税收自动调整",
+        "mnemonic": "累进税 = 「自动减税机」——经济差你少交点，经济好你多交点",
+        "example": "In a recession, tax revenues fall automatically as incomes decline.",
+        "example_zh": "在衰退中，收入下降使税收自动减少。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "transfer payments",
+        "breakdown": "Transfer(转移) + Payments(支付)",
+        "meaning_en": "government payments to individuals or groups that are not in exchange for goods or services, such as social security or welfare benefits",
+        "meaning_zh": "转移支付：在 3.9 中，转移支付（失业救济、食品券、社保等）是自动稳定器的「另一条腿」——衰退时失业人数增加、救济金自动上升，为家庭收入兜底，支撑消费",
+        "derivation": "失业上升 → 救济申请上升 → 转移支付自动增加 → 消费稳定",
+        "mnemonic": "转移支付不是施舍——它是写在法律里的「自动开关」，衰退一来就自动触发",
+        "example": "Unemployment benefits are transfer payments that act as automatic stabilizers.",
+        "example_zh": "失业救济是作为自动稳定器的转移支付。",
+        "toefl_frequency": "high"
+      }
+    ]
   }
 ]

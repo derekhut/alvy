@@ -103,7 +103,10 @@
     "meaning_en": "how the PPC graphically represents scarcity, opportunity cost, efficiency, and growth",
     "meaning_zh": "机会成本与生产可能性曲线：用一条曲线把\"鱼与熊掌不可兼得\"画出来。曲线上的点是高效，曲线内的点是浪费，曲线外的点是\"暂时做不到\"。每移动一步都付出机会成本",
     "origin": "Unit 1: 1.2 Opportunity Cost and the Production Possibilities Curve (PPC)",
-    "related": ["Scarcity", "Comparative Advantage and Trade"],
+    "related": [
+      "Scarcity",
+      "Comparative Advantage and Trade"
+    ],
     "words": [
       {
         "word": "constant opportunity costs",
@@ -278,7 +281,10 @@
     "meaning_en": "how comparative advantage and specialization create gains from trade",
     "meaning_zh": "比较优势与贸易：即使一国在所有商品上都不如对方，只要在某种商品上的机会成本更低，双方专业化分工再交易就能双赢。这是国际贸易最强有力的论证",
     "origin": "Unit 1: 1.3 Comparative Advantage and Trade",
-    "related": ["Opportunity Cost and the Production Possibilities Curve (PPC)", "Scarcity"],
+    "related": [
+      "Opportunity Cost and the Production Possibilities Curve (PPC)",
+      "Scarcity"
+    ],
     "words": [
       {
         "word": "absolute advantage",
@@ -387,7 +393,10 @@
     "meaning_en": "the law of demand and the factors that shift the demand curve",
     "meaning_zh": "需求：在其他条件不变时，价格和消费者愿意购买的数量呈反向关系。价格变 → 沿曲线移动；其他因素变（收入、偏好、相关品价格）→ 整条曲线平移",
     "origin": "Unit 1: 1.4 Demand",
-    "related": ["Supply", "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"],
+    "related": [
+      "Supply",
+      "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"
+    ],
     "words": [
       {
         "word": "consumer income",
@@ -529,7 +538,10 @@
     "meaning_en": "the law of supply and the factors that shift the supply curve",
     "meaning_zh": "供给：在其他条件不变时，价格越高，生产者愿意生产并销售的数量越多。供给曲线向上倾斜。投入价格、技术、政策等改变会让整条曲线平移",
     "origin": "Unit 1: 1.5 Supply",
-    "related": ["Demand", "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"],
+    "related": [
+      "Demand",
+      "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"
+    ],
     "words": [
       {
         "word": "determinants of supply",
@@ -660,7 +672,10 @@
     "meaning_en": "how market forces drive prices toward equilibrium and how shifts in supply or demand change it",
     "meaning_zh": "市场均衡、失衡与均衡变化：当供给曲线和需求曲线相交时，市场达到均衡——此时供求相等，没有过剩也没有短缺。当任一曲线移动，均衡价格和数量都会变",
     "origin": "Unit 1: 1.6 Market Equilibrium, Disequilibrium, and Changes in Equilibrium",
-    "related": ["Demand", "Supply"],
+    "related": [
+      "Demand",
+      "Supply"
+    ],
     "words": [
       {
         "word": "demand",
@@ -824,7 +839,10 @@
     "meaning_en": "the circular flow of income/spending and the three approaches to measuring GDP",
     "meaning_zh": "循环流量与 GDP：经济中钱和资源在家庭、企业和政府之间循环流动。GDP 是这种流动的总价值，可以用三种等价方法计算：支出法、收入法、价值增值法",
     "origin": "Unit 2: 2.1 Circular Flow and GDP",
-    "related": ["Limitations of GDP", "Real vs Nominal GDP"],
+    "related": [
+      "Limitations of GDP",
+      "Real vs Nominal GDP"
+    ],
     "words": [
       {
         "word": "circular flow diagram",
@@ -911,7 +929,9 @@
     "meaning_en": "what GDP fails to capture about welfare and economic activity",
     "meaning_zh": "GDP 的局限性：GDP 是衡量产出最常用的指标，但它忽略了非市场活动（家务、志愿者）、地下经济、收入分配、环境成本和幸福感。一个国家 GDP 高不代表生活就好",
     "origin": "Unit 2: 2.2 Limitations of GDP",
-    "related": ["Circular Flow and GDP"],
+    "related": [
+      "Circular Flow and GDP"
+    ],
     "words": [
       {
         "word": "economic performance",
@@ -976,7 +996,10 @@
     "meaning_en": "how unemployment is measured and the three types (frictional, structural, cyclical)",
     "meaning_zh": "失业：通过劳动力调查衡量。失业分三类：摩擦性（在找工作之间）、结构性（技能不匹配）、周期性（经济衰退引起）。前两类的总和叫\"自然失业率\"",
     "origin": "Unit 2: 2.3 Unemployment",
-    "related": ["Limitations of GDP", "Business Cycles"],
+    "related": [
+      "Limitations of GDP",
+      "Business Cycles"
+    ],
     "words": [
       {
         "word": "cyclical unemployment",
@@ -1140,7 +1163,10 @@
     "meaning_en": "how price indices like CPI measure inflation",
     "meaning_zh": "价格指数与通胀：通胀通过价格指数衡量。最常见的是 CPI（消费者价格指数），记录一篮子商品价格随时间的变化。CPI 把名义变量变成可比较的真实变量",
     "origin": "Unit 2: 2.4 Price Indices and Inflation",
-    "related": ["Real vs Nominal GDP", "Costs of Inflation"],
+    "related": [
+      "Real vs Nominal GDP",
+      "Costs of Inflation"
+    ],
     "words": [
       {
         "word": "base year",
@@ -1282,7 +1308,9 @@
     "meaning_en": "who wins and who loses from unexpected inflation",
     "meaning_zh": "通胀的成本：通胀本身不可怕，可怕的是「未预期」的通胀——它会随机重新分配财富。借款人在意外通胀中得利，贷款人受损；持现金的人受损，持实物资产的人获益",
     "origin": "Unit 2: 2.5 Costs of Inflation",
-    "related": ["Price Indices and Inflation"],
+    "related": [
+      "Price Indices and Inflation"
+    ],
     "words": [
       {
         "word": "borrowers",
@@ -1347,7 +1375,10 @@
     "meaning_en": "how real GDP strips out inflation to allow comparison across years",
     "meaning_zh": "实际 GDP vs 名义 GDP：名义 GDP 用当年价格算，含通胀水分；实际 GDP 用基年价格算，剔除通胀。只有实际 GDP 才能告诉你产出是不是真的增加了",
     "origin": "Unit 2: 2.6 Real vs Nominal GDP",
-    "related": ["Circular Flow and GDP", "Price Indices and Inflation"],
+    "related": [
+      "Circular Flow and GDP",
+      "Price Indices and Inflation"
+    ],
     "words": [
       {
         "word": "aggregate output",
@@ -1456,7 +1487,10 @@
     "meaning_en": "the four phases of the business cycle and the role of output gaps",
     "meaning_zh": "经济周期：经济围绕长期增长趋势上下波动，分为扩张、顶点、衰退、谷底四个阶段。当实际产出偏离潜在产出时形成「产出缺口」，这是政策干预的依据",
     "origin": "Unit 2: 2.7 Business Cycles",
-    "related": ["Unemployment", "Real vs Nominal GDP"],
+    "related": [
+      "Unemployment",
+      "Real vs Nominal GDP"
+    ],
     "words": [
       {
         "word": "aggregate demand",
@@ -1599,6 +1633,457 @@
         "mnemonic": "转折点很难提前预测——经济学家事后才能确认「啊，那时候是顶点」",
         "example": "Identifying turning points is one of the hardest tasks in economic forecasting.",
         "example_zh": "识别转折点是经济预测中最难的任务之一。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Aggregate Demand",
+    "type": "root",
+    "meaning_en": "the total demand for all final goods and services in an economy at different price levels",
+    "meaning_zh": "总需求（AD）：展示整个经济在不同价格水平下所需求的最终商品与服务总量。例如当物价整体下跌，人们实际购买力上升，消费和投资都会增加——这就是 AD 曲线向下倾斜的原因",
+    "origin": "Unit 3: 3.1 Aggregate Demand",
+    "related": [
+      "Circular Flow and GDP",
+      "Business Cycles",
+      "Spending and Tax Multipliers",
+      "Short-Run Aggregate Supply (SRAS)"
+    ],
+    "words": [
+      {
+        "word": "aggregate demand",
+        "breakdown": "Aggregate(总的) + Demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求：在不同价格水平下，整个经济对所有最终商品和服务的需求总量。公式是 AD = C + I + G + NX——和支出法 GDP 的四大组成完全一致",
+        "derivation": "Aggregate(全部) + Demand(需求) → 不是单一市场 → 整个经济的总需求",
+        "mnemonic": "「消费 C + 投资 I + 政府 G + 净出口 NX」——AP 宏观第一个必背公式",
+        "example": "A decrease in consumer confidence will lower aggregate demand.",
+        "example_zh": "消费者信心下降会拉低总需求。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "Aggregate Demand curve",
+        "breakdown": "Aggregate Demand(总需求) + curve(曲线)",
+        "meaning_en": "a graph showing the relationship between the price level and the quantity of real output demanded at all price levels",
+        "meaning_zh": "总需求曲线：纵轴为物价水平（PL），横轴为实际产出（real GDP），向右下方倾斜。注意它向下倾斜不是因为「替代效应」，而是因为财富效应、利率效应和汇率效应三个原因",
+        "derivation": "AD 曲线 → 三大效应（财富、利率、汇率）共同决定 → 向右下方倾斜",
+        "mnemonic": "「AD 曲线三招向下：钱包效应、利率效应、汇率效应」——少一个都站不住",
+        "example": "The aggregate demand curve slopes downward due to the wealth, interest rate, and exchange rate effects.",
+        "example_zh": "总需求曲线向下倾斜是由于财富效应、利率效应和汇率效应。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "aggregate output",
+        "breakdown": "Aggregate(总的) + Output(产出)",
+        "meaning_en": "the total quantity of goods and services produced in an economy, typically measured as real GDP",
+        "meaning_zh": "总产出：经济中所有最终商品和服务的总量，通常用实际 GDP 衡量。在 AD-AS 图中，它是横轴——物价和总产出的交点决定了经济当前的宏观状态",
+        "derivation": "Aggregate(总) + Output(产出) → 整个经济的产量 → 实际 GDP",
+        "mnemonic": "总产出 = 实际 GDP = AD-AS 图的横轴——宏观图表的统一横坐标",
+        "example": "Aggregate output typically falls during a recession.",
+        "example_zh": "在衰退期总产出通常下降。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "aggregate supply",
+        "breakdown": "Aggregate(总的) + Supply(供给)",
+        "meaning_en": "the total quantity of goods and services producers are willing and able to supply at various price levels",
+        "meaning_zh": "总供给：在不同价格水平下，全经济生产者愿意且能够供给的商品和服务总量。和总需求配对——两条曲线的交点决定均衡价格水平和均衡产出",
+        "derivation": "Aggregate(总) + Supply(供给) → 整个经济的生产能力 → 分短期 SRAS 和长期 LRAS",
+        "mnemonic": "AD 和 AS 是宏观的两条「主心骨」：一个代表买方总愿望，一个代表卖方总能力",
+        "example": "Aggregate supply and aggregate demand together determine the price level.",
+        "example_zh": "总供给和总需求共同决定价格水平。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "consumption",
+        "breakdown": "Consume(消耗) + tion → 消费",
+        "meaning_en": "household spending on goods and services; affected by disposable income and taxes",
+        "meaning_zh": "消费（C）：家庭部门在商品和服务上的支出，是 AD 中最大的组成部分（美国约占 GDP 的 68%）。受可支配收入、税收、消费者信心影响",
+        "derivation": "Consume(消耗) → 家庭买东西花钱 → AD 的 C 分量",
+        "mnemonic": "「C 最大块」——AD 公式里的 C 占美国 GDP 近 7 成，一感冒全经济都咳嗽",
+        "example": "Consumption rises when households have more disposable income.",
+        "example_zh": "当家庭拥有更多可支配收入时，消费上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "exchange rate effect",
+        "breakdown": "Exchange rate(汇率) + effect(效应)",
+        "meaning_en": "the change in net exports due to exchange rate movements caused by changes in the price level",
+        "meaning_zh": "汇率效应：当国内物价下降时，本币实际上更便宜，外国人发现本国商品更划算，出口上升；同时本国人觉得进口变贵，进口下降——净出口增加，AD 曲线沿着向下倾斜的方向延伸",
+        "derivation": "国内物价降 → 本币相对贬值 → 出口增、进口减 → 净出口升 → AD 量增",
+        "mnemonic": "「物价跌 → 中国货便宜 → 美国人抢购 → 出口爆单」——汇率效应的一句话",
+        "example": "The exchange rate effect helps explain the downward slope of the AD curve.",
+        "example_zh": "汇率效应是总需求曲线向下倾斜的原因之一。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "government spending",
+        "breakdown": "Government(政府) + spending(支出)",
+        "meaning_en": "expenditures by the government on goods, services, and infrastructure; a component of aggregate demand",
+        "meaning_zh": "政府支出（G）：政府购买商品和服务的支出，如修路、军费、公务员工资。注意不包括转移支付（如社保、失业金），因为那不是「购买」",
+        "derivation": "Government(政府) + Spending(支出) → AD 的 G 分量 → 不含转移支付",
+        "mnemonic": "「G 不含转移支付」——考试陷阱常考：发救济金不算 G，政府买坦克才算",
+        "example": "An increase in government spending shifts the AD curve to the right.",
+        "example_zh": "政府支出增加会使总需求曲线右移。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "interest rate effect",
+        "breakdown": "Interest rate(利率) + effect(效应)",
+        "meaning_en": "the change in investment and consumption caused by interest rate movements triggered by changes in the price level",
+        "meaning_zh": "利率效应：物价下降时，人们持有的货币实际购买力上升，对贷款的需求减少，利率下降，企业更愿意借钱投资，家庭也更愿意贷款买房买车——投资和消费都增加，AD 量上升",
+        "derivation": "物价跌 → 货币需求降 → 利率降 → 投资和耐用品消费升 → AD 量升",
+        "mnemonic": "「2008 金融危机美联储降息救市」——就是用利率效应把 AD 往右推",
+        "example": "The interest rate effect causes investment to rise when the price level falls.",
+        "example_zh": "物价水平下降时，利率效应会使投资上升。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "investment",
+        "breakdown": "In(向内) + vest(衣着/放置) → 投入",
+        "meaning_en": "spending by firms on capital goods and equipment; a component of aggregate demand",
+        "meaning_zh": "投资（I）：企业购买资本品（厂房、机器、软件）和住宅建筑的支出。宏观里的「投资」不是买股票——买股票只是换手，没有新增生产能力",
+        "derivation": "In(进) + vest(放置) → 把资源「放」进生产环节 → AD 的 I 分量",
+        "mnemonic": "「买股票不算 I」——考试最爱的陷阱；只有新建厂房、买新机器才算 I",
+        "example": "Higher interest rates typically reduce business investment.",
+        "example_zh": "较高的利率通常会减少企业投资。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "macroeconomic shocks",
+        "breakdown": "Macro(宏观) + economic(经济) + shocks(冲击)",
+        "meaning_en": "unexpected events that significantly impact output, employment, and price levels",
+        "meaning_zh": "宏观经济冲击：意外事件对整个经济造成的显著影响，例如 2020 年新冠疫情、1973 年石油危机、2008 年金融危机。可能使 AD 或 AS 突然平移",
+        "derivation": "Macro(宏观) + Shock(冲击) → 全经济级别的「地震」 → AD 或 AS 曲线平移",
+        "mnemonic": "「COVID-19 = 需求冲击 + 供给冲击 = 两条曲线同时左移」——教科书级案例",
+        "example": "The 1973 oil crisis was a major macroeconomic shock.",
+        "example_zh": "1973 年石油危机是一次重大的宏观经济冲击。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "net exports",
+        "breakdown": "Net(净) + Exports(出口)",
+        "meaning_en": "total exports minus total imports; a component of aggregate demand",
+        "meaning_zh": "净出口（NX）：出口减去进口的差额。当 NX 为正时表示贸易顺差，为负表示贸易逆差。美国长期为负——进口远多于出口",
+        "derivation": "Net(净) = Exports(出口) - Imports(进口) → AD 的 NX 分量",
+        "mnemonic": "「NX = X - M」——出口减进口；美国 NX 常年为负，中国常年为正",
+        "example": "A stronger dollar tends to reduce net exports.",
+        "example_zh": "美元走强往往会减少净出口。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices of goods and services in an economy, often measured by CPI or GDP deflator",
+        "meaning_zh": "价格水平（PL）：整个经济所有商品和服务价格的平均值，常用 CPI 或 GDP 平减指数衡量。在 AD-AS 图中作为纵轴，代替单一市场图里的「价格 P」",
+        "derivation": "Price(价格) + Level(水平) → 一揽子价格的平均 → AD-AS 图的纵轴",
+        "mnemonic": "宏观图纵轴永远是 PL 不是 P——这是宏观和微观画图的第一区别",
+        "example": "A rising price level signals inflation.",
+        "example_zh": "价格水平上升意味着通货膨胀。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity of goods and services demanded",
+        "breakdown": "Quantity(数量) + demanded(被需求的)",
+        "meaning_en": "the total amount of final goods and services buyers are willing and able to purchase at a given price level",
+        "meaning_zh": "总需求量：在某一特定价格水平下，所有买方愿意且能够购买的最终商品与服务总量。和「总需求」不同——这是曲线上的一个点，总需求是整条曲线",
+        "derivation": "Quantity demanded(需求量) → 曲线上的一个点 → 价格水平变 → 沿 AD 曲线移动",
+        "mnemonic": "「量变沿曲线走，需求变整条曲线平移」——和微观里一模一样的区分",
+        "example": "When the price level falls, the quantity of goods and services demanded rises.",
+        "example_zh": "当价格水平下降时，需求的商品和服务量上升。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "real wealth effect",
+        "breakdown": "Real(实际) + Wealth(财富) + effect(效应)",
+        "meaning_en": "the change in consumer spending caused by changes in the real value of wealth as the price level changes",
+        "meaning_zh": "实际财富效应：物价下降时，人们手中的现金、存款、债券的实际购买力上升，感觉自己「更富有」，就更愿意消费——因此 AD 量增加。这是 AD 曲线向下倾斜的第一个原因",
+        "derivation": "物价跌 → 手上钱的实际价值升 → 觉得更有钱 → 消费升 → AD 量升",
+        "mnemonic": "「通缩让你钱包变胖」——实际财富效应的直观理解",
+        "example": "The real wealth effect helps explain why lower price levels boost consumption.",
+        "example_zh": "实际财富效应解释了为什么较低的价格水平会刺激消费。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "shift of the AD curve",
+        "breakdown": "Shift(移动) + AD curve(总需求曲线)",
+        "meaning_en": "a change in aggregate demand at every price level, caused by changes in C, I, G, or NX independent of price level changes",
+        "meaning_zh": "总需求曲线平移：AD 整条曲线左移或右移，由 C、I、G、NX 四大组成部分的独立变化引起。例如减税使 C 增加、AD 右移；油价暴涨让进口支出增加、NX 减少、AD 左移",
+        "derivation": "AD 平移 → 非价格因素（C/I/G/NX）变化 → 整条曲线位移，不是沿曲线移动",
+        "mnemonic": "「C I G NX 变 → 曲线平移；PL 变 → 沿曲线动」——考 AP 宏观画图的第一条铁律",
+        "example": "A tax cut causes a rightward shift of the AD curve.",
+        "example_zh": "减税会使总需求曲线右移。",
+        "toefl_frequency": "medium"
+      }
+    ]
+  },
+  {
+    "root": "Spending and Tax Multipliers",
+    "type": "root",
+    "meaning_en": "how an initial change in spending or taxes produces a larger change in aggregate demand",
+    "meaning_zh": "支出与税收乘数：一笔初始的支出或税收变化，通过一轮又一轮的「再花费」，最终放大成更大的总需求变化。例如政府多花 1 亿元，通过多轮循环最终可能让 GDP 增长 4 亿元——这就是乘数效应",
+    "origin": "Unit 3: 3.2 Spending and Tax Multipliers",
+    "related": [
+      "Aggregate Demand",
+      "Circular Flow and GDP",
+      "Real vs Nominal GDP"
+    ],
+    "words": [
+      {
+        "word": "aggregate demand",
+        "breakdown": "Aggregate(总的) + Demand(需求)",
+        "meaning_en": "the total quantity of goods and services demanded across an entire economy at different price levels",
+        "meaning_zh": "总需求：在 3.2 乘数讨论中，是乘数效应的「作用对象」——一笔初始支出最终会让 AD 放大几倍。乘数大小由 MPC 决定",
+        "derivation": "AD → 在 3.2 中是乘数放大的目标 → C+I+G+NX",
+        "mnemonic": "乘数的终点永远是 AD——初始花钱 × 乘数 = 最终 AD 变化",
+        "example": "The spending multiplier magnifies how much aggregate demand rises from an initial injection.",
+        "example_zh": "支出乘数会放大初始注入对总需求的拉动效果。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "autonomous expenditures",
+        "breakdown": "Autonomous(自主的) + Expenditures(支出)",
+        "meaning_en": "spending that is independent of current income and triggers changes in total output",
+        "meaning_zh": "自主性支出：不依赖于当前收入水平的支出，常作为乘数效应的「起点」。例如政府基建、企业投资，无论收入高低都会发生。「自主」= 外生给定",
+        "derivation": "Autonomous(自主) → 不跟着收入变 → 外生注入 → 触发乘数",
+        "mnemonic": "「自主支出 = 乘数的导火索」——它变一下，整个经济开始多轮循环",
+        "example": "Government infrastructure spending is a classic autonomous expenditure.",
+        "example_zh": "政府基建支出是典型的自主性支出。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "disposable income",
+        "breakdown": "Disposable(可支配的) + Income(收入)",
+        "meaning_en": "income remaining after taxes that households can spend or save",
+        "meaning_zh": "可支配收入：税后收入，是家庭真正可以自由支配、用于消费或储蓄的部分。公式：可支配收入 = 总收入 - 税 + 转移支付",
+        "derivation": "Dispose(处置) + able → 可以被处置的钱 → 税后自己说了算",
+        "mnemonic": "「到手工资 = 可支配收入」——决定你这个月能消费和储蓄多少的那个数字",
+        "example": "A tax cut increases disposable income and boosts consumption.",
+        "example_zh": "减税会增加可支配收入并刺激消费。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "expenditure multiplier",
+        "breakdown": "Expenditure(支出) + Multiplier(乘数)",
+        "meaning_en": "a measure of how much aggregate demand changes from an initial change in any component of spending",
+        "meaning_zh": "支出乘数：衡量一笔初始支出变化最终会让总需求放大多少倍。公式：乘数 = 1 / (1 - MPC) = 1 / MPS。例如 MPC=0.75 时，乘数 = 4——初始 1 元最终变成 4 元 AD",
+        "derivation": "初始支出 → 部分被再消费 → 再创造收入 → 再消费…… → 无限几何级数求和 = 1/(1-MPC)",
+        "mnemonic": "「乘数 = 1/(1-MPC)」——AP 宏观必背第二公式；MPC 越大，乘数越大",
+        "example": "If MPC equals 0.8, the expenditure multiplier is 5.",
+        "example_zh": "如果 MPC 等于 0.8，支出乘数就是 5。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "marginal propensity to consume",
+        "breakdown": "Marginal(边际的) + Propensity(倾向) + Consume(消费)",
+        "meaning_en": "the fraction of each additional dollar of disposable income that households spend",
+        "meaning_zh": "边际消费倾向（MPC）：每多一块钱可支配收入中，有多少会被花掉。例如 MPC=0.8 意味着额外拿到 100 元会消费 80 元、存 20 元。MPC + MPS = 1 总成立",
+        "derivation": "Marginal(边际) = 多一单位 → 多一元收入花掉的比例 → 0 到 1 之间",
+        "mnemonic": "「MPC 越高乘数越大」——穷人 MPC 高，所以给穷人减税对 AD 拉动更大",
+        "example": "Low-income households typically have a higher marginal propensity to consume.",
+        "example_zh": "低收入家庭通常有较高的边际消费倾向。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "marginal propensity to save",
+        "breakdown": "Marginal(边际的) + Propensity(倾向) + Save(储蓄)",
+        "meaning_en": "the fraction of additional disposable income that households save; equals 1 minus MPC",
+        "meaning_zh": "边际储蓄倾向（MPS）：每多一块钱可支配收入中，有多少会被存起来。MPS = 1 - MPC。例如 MPC=0.8，则 MPS=0.2。MPS 越大说明钱「漏出」循环越快，乘数越小",
+        "derivation": "Marginal(边际) + Save(存) → 每增加收入中存的比例 → MPS = 1 - MPC",
+        "mnemonic": "「MPS 是漏勺」——MPS 越大，循环中漏出的钱越多，乘数越小",
+        "example": "If the MPC is 0.75, then the marginal propensity to save is 0.25.",
+        "example_zh": "如果 MPC 是 0.75，那么边际储蓄倾向是 0.25。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "real GDP",
+        "breakdown": "Real(实际的) + GDP(国内生产总值)",
+        "meaning_en": "the total value of all final goods and services produced, adjusted for inflation",
+        "meaning_zh": "实际 GDP：在 3.2 乘数分析中，乘数效应最终表现为实际 GDP 的变化。计算乘数对 GDP 的影响时，用的是实际 GDP 而不是名义 GDP——因为我们关心的是真正的产出变化",
+        "derivation": "Real GDP → 扣除物价影响 → 在乘数公式里是最终的放大目标",
+        "mnemonic": "「乘数乘出来的是 real GDP」——扣除通胀后的真实产出变化",
+        "example": "A $100 billion increase in government spending raised real GDP by $400 billion with a multiplier of 4.",
+        "example_zh": "在乘数为 4 时，政府支出增加 1000 亿美元使实际 GDP 上升了 4000 亿美元。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "spending",
+        "breakdown": "Spend(花) + ing → 支出",
+        "meaning_en": "the total amount of money spent on goods and services, including C, I, G, and NX",
+        "meaning_zh": "支出：一国经济中用于购买商品和服务的钱，涵盖消费、投资、政府支出和净出口。在 3.2 中它是乘数效应的起点——任何一个分量的初始变化都会触发一轮放大",
+        "derivation": "Spend(花) → 四大支出分量 → C + I + G + NX",
+        "mnemonic": "「一人的支出 = 另一人的收入」——这就是乘数循环能开始运转的根本",
+        "example": "Any change in autonomous spending triggers the multiplier process.",
+        "example_zh": "自主性支出的任何变化都会触发乘数过程。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "tax multiplier",
+        "breakdown": "Tax(税) + Multiplier(乘数)",
+        "meaning_en": "the ratio of the change in real output to an initial change in taxes",
+        "meaning_zh": "税收乘数：一笔初始减税或加税最终对总需求放大或压缩的倍数。公式：税收乘数 = -MPC / (1 - MPC) = -MPC × 支出乘数。比支出乘数小 1（绝对值），因为减税的第一轮中有一部分被储蓄掉了",
+        "derivation": "减税 → 可支配收入升 → 只有 MPC 那部分被花掉 → 第一轮少了 (1-MPC) 部分 → 所以 |税收乘数| < |支出乘数|",
+        "mnemonic": "「花钱 > 减税」——政府 1 元支出比 1 元减税对 AD 的推动更大",
+        "example": "If the MPC is 0.8, the tax multiplier is -4 while the spending multiplier is 5.",
+        "example_zh": "如果 MPC 为 0.8，税收乘数为 -4，而支出乘数为 5。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "taxes",
+        "breakdown": "Tax(税)",
+        "meaning_en": "government revenues that reduce disposable income and feed into the tax multiplier",
+        "meaning_zh": "税收：政府从家庭和企业征收的收入。在 3.2 中是税收乘数的「起点」——税收变动会通过可支配收入影响消费，进而放大为 AD 的变化",
+        "derivation": "Taxes(税) → 减少可支配收入 → 通过 MPC 影响消费 → 进入乘数循环",
+        "mnemonic": "「减税是间接推 AD，加支出是直接推 AD」——所以同样金额下加支出更有力",
+        "example": "Cutting taxes raises disposable income and triggers the tax multiplier.",
+        "example_zh": "减税会提高可支配收入并触发税收乘数。",
+        "toefl_frequency": "high"
+      }
+    ]
+  },
+  {
+    "root": "Short-Run Aggregate Supply (SRAS)",
+    "type": "root",
+    "meaning_en": "the upward-sloping relationship between the price level and real output in the short run when some input prices are sticky",
+    "meaning_zh": "短期总供给（SRAS）：在短期内，某些投入品价格（尤其是工资）是「粘性」的——不能立刻调整。于是当物价上升时，企业成本还没跟上，利润空间变大，愿意生产更多，所以 SRAS 曲线向右上方倾斜",
+    "origin": "Unit 3: 3.3 Short-Run Aggregate Supply (SRAS)",
+    "related": [
+      "Aggregate Demand",
+      "Unemployment",
+      "Price Indices and Inflation",
+      "Business Cycles"
+    ],
+    "words": [
+      {
+        "word": "aggregate output",
+        "breakdown": "Aggregate(总的) + Output(产出)",
+        "meaning_en": "the total quantity of goods and services produced in an economy, typically measured as real GDP",
+        "meaning_zh": "总产出：在 3.3 SRAS 讨论中，总产出是 SRAS 曲线的横轴变量。当 PL 上升时，企业因为工资粘性暂时享有更高利润率，就会增加总产出——这正是 SRAS 向上倾斜的机制",
+        "derivation": "Aggregate Output(总产出) → 在 SRAS 图中的横轴 → PL 上升会拉动它增加",
+        "mnemonic": "SRAS 横轴依然是总产出——AD-AS 图的横轴从头到尾都是同一个",
+        "example": "A rising price level induces firms to increase aggregate output in the short run.",
+        "example_zh": "物价水平上升会促使企业在短期内增加总产出。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "employment",
+        "breakdown": "Employ(雇用) + ment → 就业",
+        "meaning_en": "the state of having a paid job; tied to the level of aggregate output",
+        "meaning_zh": "就业：拥有有偿工作的状态。在 3.3 中，就业与总产出正相关——SRAS 上总产出增加时，企业需要更多工人，就业随之上升，失业率下降",
+        "derivation": "Employment(就业) → 产出升 → 需要更多工人 → 就业升",
+        "mnemonic": "「SRAS 移动 = 就业同步移动」——这就是为什么 SRAS 还能解释失业率变动",
+        "example": "Employment tends to rise when the SRAS curve shifts to the right.",
+        "example_zh": "当短期总供给曲线右移时，就业往往上升。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflation",
+        "breakdown": "Inflate(膨胀) + ion → 通货膨胀",
+        "meaning_en": "a sustained rise in the general price level over time",
+        "meaning_zh": "通货膨胀：物价总水平的持续上涨。在 3.3 中，SRAS 左移（例如油价暴涨）会引发「成本推动型通胀」——物价上升的同时产出下降",
+        "derivation": "Inflate(膨胀) → 物价水平整体变高 → SRAS 左移时的典型结果",
+        "mnemonic": "「SRAS 左移 = 滞胀」——物价涨 + 产出降，最难处理的通胀类型",
+        "example": "A sudden rise in oil prices can cause cost-push inflation by shifting SRAS left.",
+        "example_zh": "油价突涨可以通过使 SRAS 左移引发成本推动型通胀。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "inflation-unemployment trade-off",
+        "breakdown": "Inflation(通胀) + Unemployment(失业) + trade-off(权衡)",
+        "meaning_en": "the short-run inverse relationship between inflation and unemployment",
+        "meaning_zh": "通胀-失业权衡：短期内通胀和失业呈反向关系——失业率低时通胀压力大，失业率高时通胀压力小。这就是短期 Phillips 曲线的核心，和 SRAS 曲线是一体两面的表达",
+        "derivation": "SRAS 右移 → 产出升、失业降、物价升 → 失业低 vs 通胀高 → 二者反向",
+        "mnemonic": "「SRAS 的翻版就是 Phillips 曲线」——一个画价格，一个画通胀率，但故事完全一样",
+        "example": "The short-run inflation-unemployment trade-off disappears in the long run.",
+        "example_zh": "短期的通胀-失业权衡关系在长期会消失。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "inflationary expectations",
+        "breakdown": "Inflationary(通胀的) + Expectations(预期)",
+        "meaning_en": "the rate of future inflation that consumers and firms anticipate",
+        "meaning_zh": "通胀预期：消费者和企业对未来通胀率的预期。当大家预期通胀上升时，工人会要求更高工资，企业会提前涨价——这会让 SRAS 左移，预期本身就会造成真正的通胀",
+        "derivation": "Expected inflation(预期通胀) → 工资要求升 → 企业成本升 → SRAS 左移 → 实际通胀升",
+        "mnemonic": "「预期自我实现」——央行最怕通胀预期失控，因为它会真的变成通胀",
+        "example": "Rising inflationary expectations can shift the SRAS curve to the left.",
+        "example_zh": "通胀预期上升会使短期总供给曲线左移。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "labor force",
+        "breakdown": "Labor(劳动) + Force(队伍)",
+        "meaning_en": "all people who are either employed or actively seeking employment",
+        "meaning_zh": "劳动力：经济中所有有工作或正在积极找工作的人口总和（16 岁以上）。不含全职学生、退休人员、家庭主妇。在 SRAS 分析中是潜在产出的关键决定因素",
+        "derivation": "Labor(劳动) + Force(队伍) → 就业 + 失业（但不含不找工作的人）",
+        "mnemonic": "「劳动力 = 有工作的 + 正找的」——家里带娃不算；退休的也不算",
+        "example": "Immigration expands the labor force and can shift SRAS to the right.",
+        "example_zh": "移民会扩大劳动力并使短期总供给曲线右移。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "price level",
+        "breakdown": "Price(价格) + Level(水平)",
+        "meaning_en": "the average of all prices in an economy, usually measured by CPI or the GDP deflator",
+        "meaning_zh": "价格水平（PL）：在 3.3 中，价格水平是 SRAS 的纵轴。PL 上升时，由于工资粘性，企业实际利润变大，愿意雇人生产——这就是 SRAS 向右上方倾斜的机制",
+        "derivation": "PL(价格水平) → SRAS 图的纵轴 → PL 升 → 名义利润升 → 企业增产",
+        "mnemonic": "「物价升、工资没升 → 老板赚疯 → 加班生产」——SRAS 向上的一句话解释",
+        "example": "Firms expand output when the price level rises faster than wages.",
+        "example_zh": "当价格水平上升快于工资时，企业会扩大产量。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "production costs",
+        "breakdown": "Production(生产) + Costs(成本)",
+        "meaning_en": "expenses firms incur in producing goods and services, including wages, materials, and energy",
+        "meaning_zh": "生产成本：企业生产商品和服务时的支出，包括工资、原材料、能源、租金等。生产成本是 SRAS 的关键决定因素——成本上升 SRAS 左移，成本下降 SRAS 右移",
+        "derivation": "Production(生产) + Costs(成本) → 工资 + 原料 + 能源 → SRAS 平移的关键按钮",
+        "mnemonic": "「油价是 SRAS 的开关」——1973 年、2022 年都因油价暴涨让 SRAS 左移",
+        "example": "A rise in oil prices increases production costs and shifts SRAS to the left.",
+        "example_zh": "油价上升会提高生产成本并使短期总供给曲线左移。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "quantity of goods and services supplied",
+        "breakdown": "Quantity(数量) + supplied(被供给的)",
+        "meaning_en": "the total amount of real output producers are willing to supply at different price levels",
+        "meaning_zh": "总供给量：在某一特定价格水平下，所有生产者愿意且能够供给的最终商品与服务总量。和「总供给」不同——这是 SRAS 曲线上的一个点，是价格水平的函数",
+        "derivation": "Quantity supplied(供给量) → SRAS 曲线上的一个点 → PL 变 → 沿 SRAS 移动",
+        "mnemonic": "「量变沿曲线走」——和 AD 的区分方式完全一致，宏观画图统一规则",
+        "example": "When the price level rises, the quantity of goods and services supplied increases in the short run.",
+        "example_zh": "当价格水平上升时，短期内供给的商品和服务量会增加。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "Short-Run Aggregate Supply curve",
+        "breakdown": "Short-Run(短期) + Aggregate Supply(总供给) + curve(曲线)",
+        "meaning_en": "a graph showing the relationship between the price level and real output in the short run",
+        "meaning_zh": "短期总供给曲线（SRAS）：向右上方倾斜的曲线，横轴是实际 GDP，纵轴是价格水平。向上倾斜的原因是短期内工资和某些投入品价格「粘性」——物价上升而成本滞后调整，企业利润扩大，增产",
+        "derivation": "SRAS 曲线 → 短期工资粘性 → PL 升、成本未跟上 → 利润升 → 产量升 → 曲线上行",
+        "mnemonic": "「粘性工资 = SRAS 向上倾斜的唯一原因」——LRAS 垂直就是因为长期不粘了",
+        "example": "The Short-Run Aggregate Supply curve slopes upward because wages are sticky.",
+        "example_zh": "短期总供给曲线向上倾斜是因为工资具有粘性。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "sticky prices",
+        "breakdown": "Sticky(黏的) + Prices(价格)",
+        "meaning_en": "prices that adjust slowly to changes in economic conditions in the short run",
+        "meaning_zh": "粘性价格：在短期内不能迅速调整的价格。例如餐厅菜单、合同报价、杂志订阅费都不会每天变——这种迟滞让 SRAS 在短期保持向上倾斜的形状",
+        "derivation": "Sticky(粘) → 价格像黏住了一样不马上变 → 菜单成本 + 合同约束",
+        "mnemonic": "「菜单成本」——改价格要重印菜单，所以餐厅不会每天调价",
+        "example": "Menu costs and long-term contracts are sources of sticky prices.",
+        "example_zh": "菜单成本和长期合同是价格粘性的来源。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "sticky wages",
+        "breakdown": "Sticky(黏的) + Wages(工资)",
+        "meaning_en": "wages that adjust slowly to changes in economic conditions in the short run",
+        "meaning_zh": "粘性工资：短期内不能迅速下调或上调的工资，主要因为劳动合同、最低工资法、工会谈判、员工士气等因素。粘性工资是 SRAS 向上倾斜的最重要原因——物价涨而工资暂时不涨，企业加产",
+        "derivation": "Sticky wages(粘性工资) → 合同 + 最低工资 + 工会 → 不能立刻调整 → SRAS 向上倾斜的核心",
+        "mnemonic": "「工资是下不去的」——老板想降薪？合同、工会、士气都让你降不动",
+        "example": "Sticky wages are the main reason the SRAS curve slopes upward.",
+        "example_zh": "粘性工资是短期总供给曲线向上倾斜的主要原因。",
         "toefl_frequency": "medium"
       }
     ]

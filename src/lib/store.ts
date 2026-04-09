@@ -30,7 +30,7 @@ interface PersistedData {
     quizAccuracy?: { correct: number; total: number };
   }>;
   wordsStudied: string[];
-  settings?: { sound: boolean; dailyGoal: number; lastSubject?: "toefl" | "psych" | "csp" | "whap" };
+  settings?: { sound: boolean; dailyGoal: number; lastSubject?: "toefl" | "psych" | "csp" | "whap" | "micro" };
   profile?: UserProfile;
   levelProgress?: LevelProgress;
 }

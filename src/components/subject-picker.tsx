@@ -31,6 +31,7 @@ export default function SubjectPicker({
     { key: "psych", label: "AP 心理学" },
     { key: "csp", label: "AP 计算机科学原理" },
     { key: "whap", label: "AP 世界历史" },
+    { key: "micro", label: "AP 微观经济学" },
   ];
 
   const lastSubject = data.settings?.lastSubject;

@@ -12,6 +12,8 @@ import CspSession from "./components/csp-session.js";
 import CspReview from "./components/csp-review.js";
 import WhapSession from "./components/whap-session.js";
 import WhapReview from "./components/whap-review.js";
+import MicroSession from "./components/micro-session.js";
+import MicroReview from "./components/micro-review.js";
 import Stats from "./components/stats.js";
 import SubjectPicker from "./components/subject-picker.js";
 import UpdatePrompt from "./components/update-prompt.js";
@@ -68,7 +70,7 @@ export default function App({ command }: AppProps) {
       data.settings.lastSubject = subject;
       saveData(data);
     }
-    setResolved(subject === "psych" ? "psych" : subject === "csp" ? "csp" : subject === "whap" ? "whap" : "daily");
+    setResolved(subject === "psych" ? "psych" : subject === "csp" ? "csp" : subject === "whap" ? "whap" : subject === "micro" ? "micro" : "daily");
   }, [data]);
 
   if (resolved === null && data) {
@@ -124,6 +126,10 @@ export default function App({ command }: AppProps) {
       return <WhapSession />;
     case "whap-review":
       return <WhapReview />;
+    case "micro":
+      return <MicroSession />;
+    case "micro-review":
+      return <MicroReview />;
     case "stats":
       return <Stats />;
     case "doctor":

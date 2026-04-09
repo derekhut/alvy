@@ -158,12 +158,15 @@ export function generateStatsSummary(
   data: UserData,
   _totalRoots: number,
   _allRoots?: RootEntry[],
-  subject?: "toefl" | "psych",
+  subject?: "toefl" | "psych" | "micro",
 ): string {
   const totalWords = data.wordsStudied.length;
 
-  const subjectLabel = subject === "psych" ? "AP 心理学" : "词根学习";
-  const wordLabel = subject === "psych" ? "术语" : "单词";
+  const subjectLabel =
+    subject === "psych" ? "AP 心理学" :
+    subject === "micro" ? "AP 微观经济学" :
+    "词根学习";
+  const wordLabel = subject === "psych" || subject === "micro" ? "术语" : "单词";
 
   return `# ${subjectLabel}进度
 

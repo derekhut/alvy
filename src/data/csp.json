@@ -1,47 +1,140 @@
 [
   {
-    "root": "Computing Innovation",
+    "root": "Intro to Big Idea 1",
     "type": "root",
-    "meaning_en": "an innovation that uses a program as a key part of its function",
-    "meaning_zh": "计算创新：以程序为核心功能的创新，分为物理（机器人、平板）和非物理（社交媒体、游戏）两类",
-    "origin": "Unit 1: Creative Development",
-    "related": ["Collaboration", "Program Function & Purpose"],
+    "meaning_en": "how collaboration and diverse perspectives shape computing innovations",
+    "meaning_zh": "大概念1导论：计算创新由协作和多元视角塑造——优秀的程序员需要沟通、协商和与不同背景的人合作。例如为全球用户设计App时，团队的多样性能帮助发现盲点",
+    "origin": "Unit 1: 1.1 Intro to Big Idea 1",
+    "related": [
+      "Program Function and Purpose"
+    ],
     "words": [
       {
-        "word": "Physical Computing Innovation",
-        "breakdown": "Physical(物理的) + Computing(计算) + Innovation(创新)",
-        "meaning_en": "tangible innovations: robots, tablets, smart devices",
-        "meaning_zh": "物理计算创新：有实体形态的计算创新，如机器人、平板电脑、智能家居设备",
-        "derivation": "Physical(物理的) + Computing(计算) → 看得见摸得着的智能设备",
-        "example": "A self-driving car is a physical computing innovation.",
-        "example_zh": "自动驾驶汽车是一种物理计算创新。",
+        "word": "bias",
+        "breakdown": "Bias(偏见) — 系统性偏差",
+        "meaning_en": "prejudice or systematic error in computing innovations that can result from algorithms or data, reflecting existing human prejudices",
+        "meaning_zh": "偏见：计算创新中的成见或系统性错误，可能源于算法或数据，反映了既有的人类偏见。例如招聘算法因历史数据偏向男性，结果自动筛掉女性候选人",
+        "derivation": "Bias(倾斜) → 计算机学习历史数据 → 历史有偏见 → 算法也有偏见",
+        "mnemonic": "垃圾进垃圾出(GIGO)：用有偏见的数据训练，AI 就学会了偏见",
+        "example": "A recruiting algorithm showed bias by favoring male candidates.",
+        "example_zh": "一个招聘算法因偏向男性候选人而表现出偏见。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "collaboration",
+        "breakdown": "Co(共同) + labor(劳动) + ation(名词后缀)",
+        "meaning_en": "the process of working together with others to develop computing innovations that benefit from diverse talents and perspectives",
+        "meaning_zh": "协作：与他人合作开发计算创新的过程，借助不同的才能和视角让产品更好。例如全球团队开发翻译App时，每位成员的母语知识都是资源",
+        "derivation": "Co(共同) + labor(劳动) → 一起工作 → 分工+交流 → 成果大于各自单干",
+        "mnemonic": "想象四个厨师做一桌菜：一人切菜、一人炒菜、一人摆盘、一人调味——这就是协作",
+        "example": "Effective collaboration helped the team release the app on schedule.",
+        "example_zh": "有效的协作帮助团队按时发布了应用。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "communication",
+        "breakdown": "Commun(共同) + ic + ation(名词后缀)",
+        "meaning_en": "the exchange of information between developers and users to understand needs and incorporate diverse perspectives into computing innovations",
+        "meaning_zh": "沟通：开发者与用户之间交换信息的过程，用来理解需求并把多元视角融入产品。例如开发者通过用户访谈发现老年人看不清按钮，于是加大字号",
+        "derivation": "Commun(共同) + icate(表达) → 共同表达 → 把想法互相传递出去",
+        "example": "Clear communication between designers and engineers prevents costly rework.",
+        "example_zh": "设计师和工程师之间清晰的沟通避免了代价高昂的返工。",
+        "toefl_frequency": "high",
+        "mnemonic": "开发就像传话游戏：一句话传错一个词，产品就跑偏——所以要反复确认"
+      },
+      {
+        "word": "computing innovation",
+        "breakdown": "Computing(计算) + Innovation(创新)",
+        "meaning_en": "a new or improved computer-based product, service, or concept that includes a program as an integral part of its function",
+        "meaning_zh": "计算创新：以程序为核心功能的新产品、服务或概念。可以是物理的（如自动驾驶汽车）、非物理的软件（如 Instagram），也可以是非物理的概念（如云存储）",
+        "derivation": "Computing(计算) + Innovation(创新) → 靠程序驱动的新东西 → 从扫地机器人到 ChatGPT 都算",
+        "mnemonic": "一个东西是不是计算创新？问自己：「拿掉里面的程序它还能用吗？」不能就是",
+        "example": "A self-driving car is a computing innovation that relies on machine learning.",
+        "example_zh": "自动驾驶汽车是依赖机器学习的一种计算创新。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "conflict resolution",
+        "breakdown": "Conflict(冲突) + Resolution(解决)",
+        "meaning_en": "the process of addressing and resolving disagreements or disputes that arise during collaboration",
+        "meaning_zh": "冲突解决：在协作中处理并化解分歧的过程。例如团队成员对数据库选型意见不同，通过列出优劣对比、投票来达成决定",
+        "derivation": "Conflict(冲突) + Resolve(解决) → 有分歧 → 谈出共识 → 继续前进",
+        "mnemonic": "冲突像路堵车：不是谁绕路，而是找一条大家都能走的新路",
+        "example": "Good conflict resolution keeps a team productive even when members disagree.",
+        "example_zh": "良好的冲突解决能让团队即使在意见不合时也保持高效。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Non-physical Computing Innovation",
-        "breakdown": "Non-physical(非物理的) + Computing(计算) + Innovation(创新)",
-        "meaning_en": "intangible innovations: social media, video games, apps",
-        "meaning_zh": "非物理计算创新：没有实体形态的软件创新，如社交媒体、视频游戏、手机应用",
-        "derivation": "Non-physical(非物理的) + Computing(计算) → 摸不到但天天用的软件产品",
-        "example": "Instagram is a non-physical computing innovation.",
-        "example_zh": "Instagram 是一种非物理计算创新。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Collaboration",
-    "type": "root",
-    "meaning_en": "working together to produce diverse ideas that cater to different people",
-    "meaning_zh": "协作：多人合作开发程序，汇集不同视角和想法，使产品服务更多人群",
-    "origin": "Unit 1: Creative Development",
-    "related": ["Computing Innovation", "Development Processes"],
-    "words": [
+        "word": "consensus building",
+        "breakdown": "Consensus(共识) + Building(建立)",
+        "meaning_en": "the process of working toward agreement among team members on decisions and goals",
+        "meaning_zh": "建立共识：让团队成员在决策和目标上逐步达成一致的过程。不是一人拍板，也不是多数暴力，而是互相让步找到大家都能接受的方案",
+        "derivation": "Consensus(共同的感受) + Build(建造) → 一点点搭建大家都同意的基础",
+        "example": "Consensus building ensured everyone supported the final design choice.",
+        "example_zh": "建立共识确保了每个人都支持最终的设计选择。",
+        "toefl_frequency": "medium",
+        "mnemonic": "像点披萨：四个人四种口味 → 讨论 → 选半夏威夷半意式 → 皆大欢喜"
+      },
       {
-        "word": "Pair Programming",
+        "word": "consultation",
+        "breakdown": "Consult(咨询) + ation(名词后缀)",
+        "meaning_en": "the process of seeking input and advice from users and stakeholders during the development of computing innovations",
+        "meaning_zh": "咨询：在开发过程中向用户和相关方征询意见和建议。例如开发学生App前，先访谈20位学生了解他们真实的使用场景",
+        "derivation": "Consult(请教) + ation → 请教的过程 → 决定前先问问别人",
+        "mnemonic": "医生开药前要先问诊——开发者写代码前要先咨询用户",
+        "example": "Regular consultation with teachers shaped the educational app's features.",
+        "example_zh": "与教师的定期咨询塑造了这款教育App的功能。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "diversity of talents and perspectives",
+        "breakdown": "Diversity(多样性) + Talents(才能) + Perspectives(视角)",
+        "meaning_en": "the range of different skills, experiences, and viewpoints that team members bring to the development of a computing innovation",
+        "meaning_zh": "才能与视角的多样性：团队成员带来的不同技能、经验和观点的总和。多样性越高，产品越能服务不同人群——如色盲工程师会提醒团队用颜色+符号双重提示",
+        "derivation": "Diversity(多样) → 每个人都不一样 → 不同背景发现不同问题",
+        "mnemonic": "像一支乐队：光有十把吉他不行，要吉他+鼓+贝斯+键盘才热闹",
+        "example": "A diversity of talents and perspectives helped the team design an accessible website.",
+        "example_zh": "才能和视角的多样性帮助团队设计出了无障碍网站。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "feedback",
+        "breakdown": "Feed(反馈) + back(回)",
+        "meaning_en": "information or comments provided by others to evaluate, critique, or improve ideas, code, or documents",
+        "meaning_zh": "反馈：他人对想法、代码或文档进行评估、批评或改进的信息。好的反馈既指出问题也给出建议——「这段代码太慢」不如「这段代码太慢，试试用字典代替列表查找」",
+        "derivation": "Feed(喂) + back(回) → 把结果喂回给你 → 让你知道好坏",
+        "example": "User feedback helped the team fix bugs in the beta version.",
+        "example_zh": "用户反馈帮助团队修复了测试版中的错误。",
+        "toefl_frequency": "high",
+        "mnemonic": "反馈像镜子：你看不到自己后脑勺，别人能告诉你头发乱了"
+      },
+      {
+        "word": "interpersonal skills",
+        "breakdown": "Inter(之间) + personal(个人的) + skills(技能)",
+        "meaning_en": "abilities used to interact effectively with others, including communication, consensus building, conflict resolution, and negotiation",
+        "meaning_zh": "人际交往技能：与他人有效互动的能力，包括沟通、建立共识、冲突解决和协商。程序员不是独行侠——技术再好也要能和队友相处",
+        "derivation": "Inter(之间) + personal(个人) → 人与人之间 → 打交道的本事",
+        "mnemonic": "代码能力让你写出程序，人际能力让你写出团队愿意用的程序",
+        "example": "Strong interpersonal skills make junior engineers stand out during internships.",
+        "example_zh": "优秀的人际交往技能让初级工程师在实习期间脱颖而出。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "negotiation",
+        "breakdown": "Negotiate(协商) + ion(名词后缀)",
+        "meaning_en": "the process of discussing and reaching agreement on terms, decisions, or compromises within a collaborative team",
+        "meaning_zh": "协商：在协作团队中就条款、决策或妥协进行讨论并达成一致的过程。例如前端和后端协商API格式，双方各让一步定好字段名",
+        "derivation": "Negotiate(谈判) → 你有你的要求，我有我的要求 → 谈出双方都能接受的方案",
+        "mnemonic": "协商像两个人合分蛋糕：你切我先选 → 切的人不敢偏，因为另一人会挑大的",
+        "example": "Negotiation between the design and engineering teams produced a realistic timeline.",
+        "example_zh": "设计和工程团队之间的协商产生了一个现实可行的时间表。",
+        "toefl_frequency": "medium"
+      },
+      {
+        "word": "pair programming",
         "breakdown": "Pair(配对) + Programming(编程)",
-        "meaning_en": "two people share one computer and take turns coding",
-        "meaning_zh": "结对编程：两人共享一台电脑轮流编写代码，一人写(Driver)一人审(Navigator)",
+        "meaning_en": "a collaborative development practice where two programmers work together at the same workstation, with one writing code and the other reviewing it in real-time",
+        "meaning_zh": "结对编程：两人共享一台电脑轮流编写代码，一人写（Driver）一人审（Navigator），实时发现错误并交流思路",
         "derivation": "Pair(一对) + Program(编程) → 两人搭档编程 → 一人开车一人导航",
         "mnemonic": "想象两个飞行员：一个操作，一个看仪表盘导航",
         "example": "Pair programming helps catch bugs early since two sets of eyes review the code.",
@@ -51,922 +144,200 @@
     ]
   },
   {
-    "root": "Program Function & Purpose",
+    "root": "Program Function and Purpose",
     "type": "root",
-    "meaning_en": "what a program is designed to do: inputs, outputs, events, behavior",
-    "meaning_zh": "程序功能与目的：程序被设计用来做什么——接收输入、处理数据、产生输出、响应事件",
-    "origin": "Unit 1: Creative Development",
-    "related": ["Computing Innovation", "Development Processes"],
+    "meaning_en": "what a program is designed to do: its purpose, inputs, outputs, events, and behavior",
+    "meaning_zh": "程序功能与目的：程序被设计用来做什么——它的目的、输入、输出、事件以及运行时的行为。例如一个天气App的目的是告知天气，输入是位置，输出是视觉化的温度图",
+    "origin": "Unit 1: 1.2 Program Function and Purpose",
+    "related": [
+      "Intro to Big Idea 1"
+    ],
     "words": [
       {
-        "word": "Program Purpose",
-        "breakdown": "Program(程序) + Purpose(目的)",
-        "meaning_en": "what a program is designed to do, such as solving problems or creative expression",
-        "meaning_zh": "程序目的：程序被设计来完成的任务，如解决问题、创意表达、信息处理",
-        "derivation": "Purpose(目的) → 每个程序都有一个「为什么要做」的理由",
-        "example": "The purpose of a calculator app is to solve math problems.",
-        "example_zh": "计算器应用的目的是解决数学问题。",
-        "toefl_frequency": "medium"
+        "word": "audio output",
+        "breakdown": "Audio(音频) + Output(输出)",
+        "meaning_en": "program output in the form of sound or music produced by a device",
+        "meaning_zh": "音频输出：程序以声音或音乐形式产生的输出。例如闹钟App到点播放铃声，或语音助手朗读天气",
+        "derivation": "Audio(听的) + Output(输出) → 从喇叭里出来的东西",
+        "example": "The alarm app produces an audio output at the scheduled time.",
+        "example_zh": "闹钟应用在预定时间产生音频输出。",
+        "toefl_frequency": "medium",
+        "mnemonic": "耳机里的音乐、Siri 的回答、游戏音效——都是 audio output"
       },
       {
-        "word": "Code Segment",
+        "word": "code segment",
         "breakdown": "Code(代码) + Segment(片段)",
-        "meaning_en": "a smaller collection of statements that are part of a program",
+        "meaning_en": "a portion of a program consisting of one or more lines of code that performs a specific function",
         "meaning_zh": "代码段：程序中的一小段语句集合，完成某个特定子任务",
         "derivation": "Segment(段落) → 程序的一个片段 → 像文章的段落一样组织代码",
         "example": "This code segment handles user login.",
         "example_zh": "这个代码段处理用户登录。",
+        "toefl_frequency": "medium",
+        "mnemonic": "代码段就像一段话：一段话说清一件事，一个代码段做好一件事"
+      },
+      {
+        "word": "computing innovation",
+        "breakdown": "Computing(计算) + Innovation(创新)",
+        "meaning_en": "a new or improved computer-based product, service, or concept that includes a program as an integral part of its function",
+        "meaning_zh": "计算创新：以程序为核心功能的新产品、服务或概念。可以是物理的（如无人机）、非物理软件（如Spotify）或非物理概念（如电子货币）",
+        "derivation": "Computing(计算) + Innovation(创新) → 靠程序驱动的新东西 → 拿掉程序就不成立",
+        "mnemonic": "计算创新 = 核心是「程序」的创新，所以老式咖啡壶不算，但智能咖啡壶算",
+        "example": "Instagram is a computing innovation that changed how people share photos.",
+        "example_zh": "Instagram 是一项改变了人们分享照片方式的计算创新。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "creative expression",
+        "breakdown": "Creative(创意的) + Expression(表达)",
+        "meaning_en": "the use of computing innovations to create, communicate, or share ideas, art, or other forms of human expression",
+        "meaning_zh": "创意表达：利用计算创新来创作、交流或分享想法、艺术或其他形式的人类表达。例如用 Procreate 画画、用 GarageBand 做音乐——程序是新时代的画笔",
+        "derivation": "Creative(创造) + Express(表达) → 把脑子里的想法变成外面的作品",
+        "mnemonic": "代码不只是解决问题，也可以是艺术——创意表达让程序有温度",
+        "example": "Digital art apps enable creative expression for people without traditional tools.",
+        "example_zh": "数字艺术应用让没有传统工具的人也能进行创意表达。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Program Input",
-        "breakdown": "Program(程序) + Input(输入)",
-        "meaning_en": "data the computer takes in: visual, auditory, touch, text, etc.",
-        "meaning_zh": "程序输入：计算机接收的数据，包括视觉、听觉、触摸、文本等多种形式",
-        "derivation": "Input(输入) → 你给程序的东西 → 键盘打字、鼠标点击、语音命令都是输入",
-        "example": "A voice assistant takes audio as program input.",
-        "example_zh": "语音助手将音频作为程序输入。",
-        "toefl_frequency": "medium"
+        "word": "event",
+        "breakdown": "Event(事件)",
+        "meaning_en": "an action associated with input data that is supplied to a program, such as a key press or mouse click",
+        "meaning_zh": "事件：与输入数据相关联的动作，例如按下键盘、点击鼠标、触摸屏幕。程序等待事件发生后做出反应",
+        "derivation": "Event(事件) → 某件事发生了 → 程序被唤醒做事",
+        "mnemonic": "事件像门铃：没人按时你在客厅休息，一响就起来开门",
+        "example": "A mouse click is an event that triggers a button's action.",
+        "example_zh": "鼠标点击是一个触发按钮动作的事件。",
+        "toefl_frequency": "high"
       },
       {
-        "word": "Program Output",
-        "breakdown": "Program(程序) + Output(输出)",
-        "meaning_en": "data the computer returns: display, sound, haptic feedback, etc.",
-        "meaning_zh": "程序输出：计算机返回的数据，包括屏幕显示、声音播放、触觉反馈等",
-        "derivation": "Output(输出) → 程序给你的东西 → 屏幕上的文字、扬声器的声音都是输出",
-        "example": "The program output is a chart displayed on screen.",
-        "example_zh": "程序输出是屏幕上显示的图表。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Event-driven Programming",
+        "word": "event-driven programming",
         "breakdown": "Event(事件) + Driven(驱动的) + Programming(编程)",
-        "meaning_en": "program responds to actions (clicks, key presses) that supply data",
-        "meaning_zh": "事件驱动编程：程序通过响应用户动作（点击、按键）来运行，事件触发对应行为",
+        "meaning_en": "a programming approach where program statements are executed when triggered by events rather than through sequential flow of control",
+        "meaning_zh": "事件驱动编程：程序通过响应用户动作（点击、按键）来运行，事件触发对应代码——而不是从头到尾一步步执行",
         "derivation": "Event(事件) + Driven(驱动) → 事件发生才执行 → 像按门铃才开门",
         "mnemonic": "手机 App 等你点才动，没人点就安静待着——这就是事件驱动",
         "example": "A button click is an event that triggers the program to respond.",
         "example_zh": "按钮点击是一个事件，触发程序做出响应。",
         "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Development Processes",
-    "type": "root",
-    "meaning_en": "methods for building software: iterative, incremental, with documentation",
-    "meaning_zh": "开发过程：构建软件的方法论——迭代开发（反复改进原型）和增量开发（分块解决再组装）",
-    "origin": "Unit 1: Creative Development",
-    "related": ["Collaboration", "Common Errors & Fixing"],
-    "words": [
+      },
       {
-        "word": "Iterative Development",
-        "breakdown": "Iterative(迭代的) + Development(开发)",
-        "meaning_en": "develop working prototypes and cycle back to redevelop",
-        "meaning_zh": "迭代开发：先做出可用的原型，然后反复循环改进，每轮都比上轮更好",
-        "derivation": "Iterate(重复) → 做一版 → 测试 → 发现问题 → 改进 → 再做一版",
-        "mnemonic": "像揉面团：揉一次不够好就再揉，越揉越光滑",
-        "example": "Using iterative development, the team released three versions before launch.",
-        "example_zh": "通过迭代开发，团队在上线前发布了三个版本。",
+        "word": "execution",
+        "breakdown": "Execute(执行) + ion(名词后缀)",
+        "meaning_en": "the process of running a program or code segment on a computer",
+        "meaning_zh": "执行：计算机运行程序或代码段的过程。点击 \"Run\" 按钮后发生的事就是执行",
+        "derivation": "Execute(执行) → 把写好的指令一条条真正做出来",
+        "example": "Execution of the program begins at the main function.",
+        "example_zh": "程序的执行从 main 函数开始。",
+        "toefl_frequency": "medium",
+        "mnemonic": "写代码 = 写菜谱；执行 = 真正下厨做菜"
+      },
+      {
+        "word": "program",
+        "breakdown": "Pro(向前) + gram(写)",
+        "meaning_en": "a collection of program statements that performs a specific task when run by a computer; also referred to as software",
+        "meaning_zh": "程序：一组程序语句的集合，由计算机运行时完成特定任务，也称为软件。例如微信、Chrome、Python 脚本都是程序",
+        "derivation": "Pro(预先) + gram(写) → 预先写好的指令 → 计算机照着做",
+        "mnemonic": "程序 = 给计算机的菜谱：它照着做，就有成品",
+        "example": "This program calculates the average of a list of numbers.",
+        "example_zh": "这个程序计算一组数字的平均值。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "program behavior",
+        "breakdown": "Program(程序) + Behavior(行为)",
+        "meaning_en": "how a program functions during execution, often described by how a user interacts with it",
+        "meaning_zh": "程序行为：程序在执行时的表现方式，通常用用户如何与之交互来描述。例如「点击按钮后弹出菜单」就是一种程序行为",
+        "derivation": "Program(程序) + Behavior(行为) → 程序运行时「做了什么」",
+        "example": "The app's program behavior changed after the latest update.",
+        "example_zh": "这款应用的程序行为在最新更新后发生了变化。",
+        "toefl_frequency": "medium",
+        "mnemonic": "程序行为 = 程序的「性格」：你对它做 A，它就回应 B"
+      },
+      {
+        "word": "program input",
+        "breakdown": "Program(程序) + Input(输入)",
+        "meaning_en": "data in various forms (tactile, audio, visual, or text) that is sent to a program for processing",
+        "meaning_zh": "程序输入：计算机接收的数据，包括触觉、听觉、视觉、文本等多种形式。键盘打字、语音命令、触屏滑动都算",
+        "derivation": "Input(输入) → 你给程序的东西 → 键盘打字、鼠标点击、语音命令都是输入",
+        "mnemonic": "输入是「喂」给程序的食物——没有输入程序没东西吃就做不了饭",
+        "example": "A voice assistant takes audio as program input.",
+        "example_zh": "语音助手将音频作为程序输入。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "program output",
+        "breakdown": "Program(程序) + Output(输出)",
+        "meaning_en": "any data sent from a program to a device, which can take various forms such as tactile, audio, visual, or text",
+        "meaning_zh": "程序输出：计算机返回的数据，包括屏幕显示、声音播放、触觉反馈等",
+        "derivation": "Output(输出) → 程序给你的东西 → 屏幕上的文字、扬声器的声音都是输出",
+        "mnemonic": "输入是饭，输出是做好的菜——厨师（程序）负责转换",
+        "example": "The program output is a chart displayed on screen.",
+        "example_zh": "程序输出是屏幕上显示的图表。",
+        "toefl_frequency": "high"
+      },
+      {
+        "word": "program state",
+        "breakdown": "Program(程序) + State(状态)",
+        "meaning_en": "the current values and conditions of a program's internal variables and data at any given time",
+        "meaning_zh": "程序状态：程序在某个时刻所有内部变量和数据的当前值。例如游戏在第3关、血量还剩50、背包里有5件物品——这些一起构成程序状态",
+        "derivation": "State(状态) → 此时此刻程序「长什么样」 → 所有变量的快照",
+        "mnemonic": "程序状态像游戏存档：存下的就是那一刻所有数据的值",
+        "example": "Saving the game captures the current program state.",
+        "example_zh": "保存游戏会记录当前的程序状态。",
         "toefl_frequency": "medium"
       },
       {
-        "word": "Incremental Development",
-        "breakdown": "Incremental(增量的) + Development(开发)",
-        "meaning_en": "break a problem into small parts and reassemble when each is fixed",
-        "meaning_zh": "增量开发：将大问题拆成小块，每块单独解决，最后组装成完整解决方案",
-        "derivation": "Increment(增加一点) → 一块一块地加 → 像搭积木一样逐步构建",
-        "mnemonic": "像拼拼图：先完成各个小区域，最后拼成完整图片",
-        "example": "The team used incremental development to build the app feature by feature.",
-        "example_zh": "团队用增量开发方式逐功能构建应用。",
-        "toefl_frequency": "medium"
+        "word": "program statements",
+        "breakdown": "Program(程序) + Statements(语句)",
+        "meaning_en": "individual instructions or commands that make up a program or code segment",
+        "meaning_zh": "程序语句：构成程序或代码段的单个指令或命令。一行一行的代码，每一行都告诉计算机做一件事",
+        "derivation": "Statement(陈述) → 一句话告诉计算机「做这件事」",
+        "example": "Each program statement performs one specific operation.",
+        "example_zh": "每条程序语句执行一个特定的操作。",
+        "toefl_frequency": "medium",
+        "mnemonic": "程序语句就像食谱里的一步：「倒入两杯面粉」——明确可执行"
       },
       {
-        "word": "Program Documentation",
-        "breakdown": "Program(程序) + Documentation(文档)",
-        "meaning_en": "a description of how something in your program works",
-        "meaning_zh": "程序文档：描述程序各部分如何工作的说明文字，帮助自己和他人理解代码",
-        "derivation": "Document(记录) → 把「怎么做的」和「为什么这么做」写下来",
-        "example": "Good program documentation helps new developers understand the codebase.",
-        "example_zh": "好的程序文档帮助新开发者理解代码库。",
-        "toefl_frequency": "medium"
+        "word": "purpose",
+        "breakdown": "Purpose(目的)",
+        "meaning_en": "the intended goal or function of a computing innovation, such as solving a problem or enabling creative expression",
+        "meaning_zh": "目的：计算创新的预期目标或功能，例如解决问题、实现创意表达。每个程序都有一个「为什么要做它」的理由",
+        "derivation": "Purpose(目的) → 每个程序都有一个「为什么要做」的理由",
+        "example": "The purpose of a calculator app is to solve math problems.",
+        "example_zh": "计算器应用的目的是解决数学问题。",
+        "toefl_frequency": "high",
+        "mnemonic": "没有目的的程序 = 没有方向的船，写代码前先问「为啥要做这个？」"
       },
       {
-        "word": "Comments",
-        "breakdown": "Comment(注释)",
-        "meaning_en": "documentation written directly into the program code itself",
-        "meaning_zh": "注释：直接写在程序代码中的说明文字，不会被执行，只供人阅读",
-        "derivation": "Comment(评论/注解) → 给代码加旁注 → 解释这段代码在干什么",
-        "example": "// This function calculates the total price — is a comment.",
-        "example_zh": "// 这个函数计算总价 —— 这就是一条注释。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Common Errors & Fixing",
-    "type": "root",
-    "meaning_en": "types of programming errors and debugging methods",
-    "meaning_zh": "常见错误与调试：编程中的四种错误（逻辑/语法/运行时/溢出）及调试方法（手动追踪/打印语句）",
-    "origin": "Unit 1: Creative Development",
-    "related": ["Development Processes", "Pseudocode & Data Types"],
-    "words": [
-      {
-        "word": "Logic Error",
-        "breakdown": "Logic(逻辑) + Error(错误)",
-        "meaning_en": "unexpected behavior in program output; code runs but gives wrong results",
-        "meaning_zh": "逻辑错误：程序能运行但输出结果不对——代码没写错，但思路错了",
-        "derivation": "Logic(逻辑) + Error(错误) → 程序员的思路出了问题 → 代码按写的跑了，但写错了",
-        "mnemonic": "想算加法写成了减法——程序不报错，但答案不对",
-        "example": "The program displayed the wrong total due to a logic error in the formula.",
-        "example_zh": "由于公式中的逻辑错误，程序显示了错误的总计。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Syntax Error",
-        "breakdown": "Syntax(语法) + Error(错误)",
-        "meaning_en": "code doesn't work because it is typed or written incorrectly",
-        "meaning_zh": "语法错误：代码拼写或格式不对，不符合编程语言的语法规则，程序无法运行",
-        "derivation": "Syntax(语法) + Error(错误) → 写了编程语言「看不懂」的东西 → 少了分号、括号不配对",
-        "mnemonic": "像英语作文语法错——老师看不懂就给你打回来(程序拒绝运行)",
-        "example": "Missing a semicolon caused a syntax error.",
-        "example_zh": "少了一个分号导致了语法错误。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Runtime Error",
-        "breakdown": "Runtime(运行时) + Error(错误)",
-        "meaning_en": "error that occurs while the code is running",
-        "meaning_zh": "运行时错误：代码语法正确但运行时崩溃——如除以零、访问不存在的文件",
-        "derivation": "Run(运行) + Time(时间) → 运行的时候才出现的错误 → 语法没问题但做不到的操作",
-        "mnemonic": "走路姿势没错(语法对)，但撞墙了(运行时遇到无法执行的操作)",
-        "example": "Dividing by zero caused a runtime error.",
-        "example_zh": "除以零导致了运行时错误。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Overflow Error",
-        "breakdown": "Overflow(溢出) + Error(错误)",
-        "meaning_en": "the number is too large for the computer to represent",
-        "meaning_zh": "溢出错误：数字太大超出计算机能表示的范围——每种数据类型有最大值限制",
-        "derivation": "Overflow(溢出) → 水杯满了再倒水就溢出来 → 数字大到装不下",
-        "mnemonic": "像计数器翻到 99999 再加 1 就归零了——装不下了",
-        "example": "An overflow error occurred when the counter exceeded its maximum value.",
-        "example_zh": "当计数器超过最大值时发生了溢出错误。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Hand Tracing",
-        "breakdown": "Hand(手动) + Tracing(追踪)",
-        "meaning_en": "manually tracking variables' values as the program runs step by step",
-        "meaning_zh": "手动追踪：用纸笔逐步记录程序中变量的值变化，排查逻辑错误",
-        "derivation": "Hand(手) + Trace(追踪) → 用手（纸笔）一步步跟踪程序执行过程",
-        "mnemonic": "像侦探一样用笔记本记录每一步，看哪步出了问题",
-        "example": "Hand tracing revealed that the loop ran one extra time.",
-        "example_zh": "手动追踪发现循环多执行了一次。",
+        "word": "tactile output",
+        "breakdown": "Tactile(触觉的) + Output(输出)",
+        "meaning_en": "program output that can be felt or perceived through touch, such as vibrations or haptic feedback",
+        "meaning_zh": "触觉输出：能通过触摸感知的程序输出，例如手机的震动、游戏手柄的震感反馈。收到消息时的震动就是触觉输出",
+        "derivation": "Tactile(触觉的) → 能摸到、感觉到的 → 震动、敲击感",
+        "mnemonic": "Apple Watch 轻敲你的手腕提醒喝水——这就是 tactile output",
+        "example": "The phone uses tactile output to alert the user of a new message.",
+        "example_zh": "手机使用触觉输出来提醒用户有新消息。",
         "toefl_frequency": "low"
-      }
-    ]
-  },
-  {
-    "root": "Abstraction & Binary",
-    "type": "root",
-    "meaning_en": "reducing complexity by hiding details; binary and hexadecimal number systems",
-    "meaning_zh": "抽象与二进制：隐藏复杂细节只关注重要部分(抽象)；用0和1表示所有数据(二进制)",
-    "origin": "Unit 2: Data",
-    "related": ["Data Representation", "Data Compression"],
-    "words": [
-      {
-        "word": "Abstraction",
-        "breakdown": "Abstract(抽象的) + -tion(名词后缀)",
-        "meaning_en": "reducing complexity by focusing on important parts and hiding irrelevant details",
-        "meaning_zh": "抽象：只关注最重要的部分，隐藏无关细节——AP CSP 核心概念！",
-        "derivation": "Abstract(抽离) → 把复杂的东西简化 → 开车不需要懂发动机原理",
-        "mnemonic": "地铁线路图就是抽象：隐藏了真实地理位置，只显示站点和连接关系",
-        "example": "Abstraction allows programmers to use functions without knowing their implementation.",
-        "example_zh": "抽象让程序员可以使用函数而不需要知道其实现细节。",
-        "toefl_frequency": "high"
       },
       {
-        "word": "Bit & Byte",
-        "breakdown": "Bit(位) + Byte(字节)",
-        "meaning_en": "bit is the smallest unit (0 or 1); 8 bits = 1 byte",
-        "meaning_zh": "位与字节：位(bit)是最小数据单位(0或1)；8位=1字节(byte)，可表示256种可能",
-        "derivation": "Bit = Binary Digit(二进制数字) → 最小的信息单元 → 8个组成1 Byte",
-        "mnemonic": "1 bit = 1个开关(开/关)；1 byte = 8个开关 = 2⁸ = 256种组合",
-        "example": "A single character in ASCII takes 1 byte (8 bits) of storage.",
-        "example_zh": "ASCII 中的一个字符占用 1 字节（8 位）的存储空间。",
-        "toefl_frequency": "medium"
+        "word": "text output",
+        "breakdown": "Text(文本) + Output(输出)",
+        "meaning_en": "program output in the form of written characters or strings displayed to the user",
+        "meaning_zh": "文本输出：以书面字符或字符串形式呈现给用户的程序输出。例如命令行打印的结果、聊天窗口里的回复",
+        "derivation": "Text(文本) + Output(输出) → 写出来给你看的文字",
+        "example": "The program produces text output listing all the student names.",
+        "example_zh": "程序产生的文本输出列出了所有学生的姓名。",
+        "toefl_frequency": "medium",
+        "mnemonic": "print(\"Hello\") 打印的 Hello 就是 text output 的最简例子"
       },
       {
-        "word": "Binary System",
-        "breakdown": "Binary(二进制) + System(系统)",
-        "meaning_en": "base-2 number system using only 0 and 1; how computers store all data",
-        "meaning_zh": "二进制系统：只用0和1的计数系统(基数2)，计算机用它存储和处理所有数据",
-        "derivation": "Bi(二) + -nary(进制) → 逢二进一 → 每一位只能是0或1",
-        "mnemonic": "电灯泡只有开(1)和关(0)两种状态，计算机就是用无数个「开关」工作",
-        "example": "The binary number 1010 equals 10 in decimal.",
-        "example_zh": "二进制数 1010 等于十进制的 10。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Hexadecimal",
-        "breakdown": "Hexa(六) + Decimal(十进制)",
-        "meaning_en": "base-16 number system using 0-9 and A-F; used for RGB color codes",
-        "meaning_zh": "十六进制：使用0-9和A-F的计数系统(基数16)，常用于表示颜色代码(如#FF5733)",
-        "derivation": "Hexa(六) + Decimal(十) → 6+10=16 → 逢十六进一 → 用字母A-F补充10-15",
-        "mnemonic": "#FF0000 = 纯红色，每两位十六进制 = 1字节 = 8位二进制",
-        "example": "The color white in hexadecimal is #FFFFFF.",
-        "example_zh": "白色的十六进制颜色代码是 #FFFFFF。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Data Representation",
-    "type": "root",
-    "meaning_en": "how data is encoded: ASCII for text, analog vs digital signals",
-    "meaning_zh": "数据表示：数据的编码方式——ASCII将文字转为二进制，模拟数据连续变化，数字数据离散采样",
-    "origin": "Unit 2: Data",
-    "related": ["Abstraction & Binary", "Data Compression"],
-    "words": [
-      {
-        "word": "ASCII Code",
-        "breakdown": "American Standard Code for Information Interchange",
-        "meaning_en": "converts text characters to binary format; each character maps to a number",
-        "meaning_zh": "ASCII码：将文本字符转换为二进制数字的标准编码——如 A=65, a=97",
-        "derivation": "American Standard Code → 美国信息交换标准代码 → 给每个字符编号",
-        "mnemonic": "A=65 → 大写字母从65开始；a=97 → 小写字母从97开始",
-        "example": "In ASCII, the letter 'A' is represented as 01000001.",
-        "example_zh": "在 ASCII 中，字母 'A' 表示为 01000001。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Analog Data",
-        "breakdown": "Analog(模拟的) + Data(数据)",
-        "meaning_en": "data measured continuously; changes smoothly over time",
-        "meaning_zh": "模拟数据：连续测量的数据，随时间平滑变化——如温度计的水银柱、唱片的音轨",
-        "derivation": "Analog(类比/模拟) → 像现实世界一样连续变化 → 无限精度",
-        "mnemonic": "时钟指针平滑转动 = 模拟；数字时钟跳动显示 = 数字",
-        "example": "Sound waves in nature are analog data.",
-        "example_zh": "自然界中的声波是模拟数据。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Digital Data",
-        "breakdown": "Digital(数字的) + Data(数据)",
-        "meaning_en": "data measured in discrete values; simplifies collected data (a form of abstraction)",
-        "meaning_zh": "数字数据：用离散值表示的数据，通过简化采样来近似原始信息——是一种抽象",
-        "derivation": "Digital(数字的) → 用数字离散地表示 → 采样量化 → 丢掉一些细节但更容易处理",
-        "mnemonic": "数字照片是由像素点组成的——放大看就是一个个小方块(离散的)",
-        "example": "A digital thermometer shows temperature as discrete numbers.",
-        "example_zh": "数字温度计将温度显示为离散的数字。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Data Compression",
-    "type": "root",
-    "meaning_en": "reducing file size; lossless preserves all data, lossy sacrifices some quality",
-    "meaning_zh": "数据压缩：减小文件体积的技术——无损压缩保留全部数据(如ZIP)，有损压缩牺牲质量换体积(如JPEG)",
-    "origin": "Unit 2: Data",
-    "related": ["Data Representation", "Abstraction & Binary"],
-    "words": [
-      {
-        "word": "Lossless Compression",
-        "breakdown": "Lossless(无损的) + Compression(压缩)",
-        "meaning_en": "less compression but perfect file quality; original data can be fully restored",
-        "meaning_zh": "无损压缩：压缩率较低但文件质量完美，可以完全还原原始数据——如ZIP、PNG",
-        "derivation": "Loss(损失) + less(没有) → 没有损失 → 数据一点不丢 → 像把衣服叠好放行李箱",
-        "mnemonic": "ZIP文件解压后和原文件一模一样——无损 = 完美还原",
-        "example": "PNG uses lossless compression to preserve image quality.",
-        "example_zh": "PNG 使用无损压缩来保持图片质量。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Lossy Compression",
-        "breakdown": "Lossy(有损的) + Compression(压缩)",
-        "meaning_en": "more compression but worse file quality; some data is permanently lost",
-        "meaning_zh": "有损压缩：压缩率高但质量下降，部分数据永久丢失——如JPEG、MP3",
-        "derivation": "Loss(损失) + -y(有的) → 有损失 → 丢掉不重要的数据换更小体积",
-        "mnemonic": "MP3音乐听起来差不多但文件小很多——因为扔掉了人耳听不到的频率",
-        "example": "JPEG uses lossy compression, which is why images may look blurry.",
-        "example_zh": "JPEG 使用有损压缩，所以图片可能看起来模糊。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Extracting Information",
-    "type": "root",
-    "meaning_en": "working with data: metadata, mining, transforming, and cleaning",
-    "meaning_zh": "信息提取：处理数据的四种操作——元数据(描述数据的数据)、数据挖掘、数据转换、数据清洗",
-    "origin": "Unit 2: Data",
-    "related": ["Data Representation", "Data Compression"],
-    "words": [
-      {
-        "word": "Metadata",
-        "breakdown": "Meta(关于) + Data(数据)",
-        "meaning_en": "data about data; describes properties of other data",
-        "meaning_zh": "元数据：描述数据的数据——如照片的拍摄时间、地点、相机型号都是元数据",
-        "derivation": "Meta(关于/超越) + Data(数据) → 关于数据的数据 → 数据的「身份证」",
-        "mnemonic": "图书馆的索引卡就是元数据：记录书名、作者、位置，但不是书的内容本身",
-        "example": "The metadata of a photo includes the date, location, and camera model.",
-        "example_zh": "照片的元数据包括日期、位置和相机型号。",
-        "toefl_frequency": "high"
-      },
-      {
-        "word": "Data Mining",
-        "breakdown": "Data(数据) + Mining(挖掘)",
-        "meaning_en": "examining very large data sets to find patterns and information",
-        "meaning_zh": "数据挖掘：在海量数据集中寻找有价值的模式和信息——如发现购买习惯",
-        "derivation": "Mining(采矿) → 像矿工在矿山里找金子一样 → 在数据山中找有价值的信息",
-        "mnemonic": "淘金：翻遍沙子找金子 = 数据挖掘：翻遍数据找规律",
-        "example": "Netflix uses data mining to recommend shows based on viewing history.",
-        "example_zh": "Netflix 通过数据挖掘根据观看历史推荐节目。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Transforming Data",
-        "breakdown": "Transform(转换) + Data(数据)",
-        "meaning_en": "editing or modifying data, such as graphing data points or doubling values",
-        "meaning_zh": "数据转换：对数据进行编辑或修改——如将数字绘成图表、把单位从英里转为公里",
-        "derivation": "Transform(变形) → 改变数据的呈现方式 → 让数据更有用",
-        "example": "Transforming temperature data from Fahrenheit to Celsius.",
-        "example_zh": "将温度数据从华氏度转换为摄氏度。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Cleaning Data",
-        "breakdown": "Cleaning(清洗) + Data(数据)",
-        "meaning_en": "making data uniform without changing meaning, such as fixing misspelled words",
-        "meaning_zh": "数据清洗：统一数据格式但不改变含义——如纠正拼写错误、统一日期格式",
-        "derivation": "Clean(清洁) → 清理数据中的「脏东西」 → 统一格式让数据干净整齐",
-        "mnemonic": "像整理书架：把倒着的书摆正、把错位的书归位，但不增减书",
-        "example": "Cleaning data might involve fixing 'NY' and 'New York' to a single format.",
-        "example_zh": "数据清洗可能包括将 'NY' 和 'New York' 统一为一种格式。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Pseudocode & Data Types",
-    "type": "root",
-    "meaning_en": "data types (strings, lists, booleans) and loops in AP pseudocode",
-    "meaning_zh": "伪代码与数据类型：AP考试中使用的伪代码语法，以及字符串、列表、布尔值等数据类型",
-    "origin": "Unit 3: Algorithms & Programming",
-    "related": ["Algorithms", "Procedures & Functions"],
-    "words": [
-      {
-        "word": "String",
-        "breakdown": "String(串/字符串)",
-        "meaning_en": "an ordered list of characters, e.g. \"hello world\"",
-        "meaning_zh": "字符串：有序的字符序列，用引号括起来——如 \"hello world\"",
-        "derivation": "String(串) → 像珠子串成一串 → 字符一个接一个排列",
-        "example": "The string \"CSP\" has 3 characters.",
-        "example_zh": "字符串 \"CSP\" 有 3 个字符。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Substring",
-        "breakdown": "Sub(子) + String(字符串)",
-        "meaning_en": "part of a string, e.g. \"ello\" is a substring of \"hello\"",
-        "meaning_zh": "子字符串：字符串的一部分——如 \"ello\" 是 \"hello\" 的子串",
-        "derivation": "Sub(下面/部分) + String(串) → 字符串的一个片段",
-        "example": "\"ello\" is a substring of \"hello\".",
-        "example_zh": "\"ello\" 是 \"hello\" 的子字符串。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "String Concatenation",
-        "breakdown": "String(字符串) + Concatenation(连接)",
-        "meaning_en": "connecting two or more strings with \"+\"",
-        "meaning_zh": "字符串拼接：用 \"+\" 号把两个或多个字符串连接起来——\"hello\" + \" world\" = \"hello world\"",
-        "derivation": "Concatenate(连接) → 把字符串首尾相连 → 像把两根绳子系在一起",
-        "example": "\"Hello\" + \" \" + \"World\" results in \"Hello World\".",
-        "example_zh": "\"Hello\" + \" \" + \"World\" 的结果是 \"Hello World\"。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "List",
-        "breakdown": "List(列表)",
-        "meaning_en": "an ordered sequence of elements; AP pseudocode index starts at 1",
-        "meaning_zh": "列表：有序的元素序列——AP伪代码中索引从1开始！如 [5,6,7] 中 5 的索引是 1",
-        "derivation": "List(列表) → 有序排列的数据集合 → 像购物清单一样按顺序排列",
-        "mnemonic": "AP CSP 特别注意：索引从 1 开始，不是从 0！",
-        "example": "In the list [5, 6, 7], the element at index 1 is 5.",
-        "example_zh": "在列表 [5, 6, 7] 中，索引 1 处的元素是 5。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Boolean",
-        "breakdown": "Boolean(布尔) — named after George Boole",
-        "meaning_en": "a data type with only two values: True or False; used with NOT, AND, OR",
-        "meaning_zh": "布尔值：只有 True(真) 和 False(假) 两个值的数据类型，配合 NOT、AND、OR 使用",
-        "derivation": "以数学家 George Boole 命名 → 真/假二元逻辑 → 计算机判断的基础",
-        "mnemonic": "布尔值像法官判决：有罪(True)或无罪(False)，没有「可能有罪」",
-        "example": "The boolean expression (5 > 3) evaluates to True.",
-        "example_zh": "布尔表达式 (5 > 3) 的值为 True。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Algorithms",
-    "type": "root",
-    "meaning_en": "step-by-step instructions using sequencing, selection, and iteration",
-    "meaning_zh": "算法：用顺序(sequencing)、选择(selection)和迭代(iteration)三种结构完成任务的分步指令",
-    "origin": "Unit 3: Algorithms & Programming",
-    "related": ["Pseudocode & Data Types", "Binary Search", "Procedures & Functions"],
-    "words": [
-      {
-        "word": "Algorithm",
-        "breakdown": "Al-Khwarizmi(算法之父的名字)",
-        "meaning_en": "a set of instructions that accomplish a task or solve a problem",
-        "meaning_zh": "算法：完成任务或解决问题的一组指令——由顺序、选择、迭代三种结构组成",
-        "derivation": "源自波斯数学家 Al-Khwarizmi 的名字 → 解决问题的步骤化方法",
-        "mnemonic": "做菜的菜谱就是算法：第一步放油，第二步加蒜，第三步炒菜...",
-        "example": "A sorting algorithm arranges data in a specific order.",
-        "example_zh": "排序算法按特定顺序排列数据。",
-        "toefl_frequency": "high"
-      },
-      {
-        "word": "Sequencing",
-        "breakdown": "Sequence(顺序) + -ing",
-        "meaning_en": "all code is executed in the order it is written",
-        "meaning_zh": "顺序执行：代码按照书写的顺序从上到下依次执行——最基本的控制结构",
-        "derivation": "Sequence(序列) → 按顺序一步步执行 → 从第一行到最后一行",
-        "example": "In sequencing, line 1 runs before line 2.",
-        "example_zh": "在顺序执行中，第 1 行在第 2 行之前运行。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Selection (if/else)",
-        "breakdown": "Selection(选择) = if/else statements",
-        "meaning_en": "conditional statements: if a condition is met, run this code; else, run other code",
-        "meaning_zh": "选择结构：根据条件决定执行哪段代码——如果(if)条件为真执行A，否则(else)执行B",
-        "derivation": "Selection(选择) → 走到岔路口选择走哪条路 → 条件为真走一条，为假走另一条",
-        "mnemonic": "像交通灯：绿灯(条件真)→走；红灯(条件假)→停",
-        "example": "IF score >= 60 THEN display 'Pass' ELSE display 'Fail'.",
-        "example_zh": "如果分数 >= 60 则显示「通过」，否则显示「不通过」。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Nested Conditionals",
-        "breakdown": "Nested(嵌套的) + Conditionals(条件语句)",
-        "meaning_en": "conditional statements inside other conditional statements",
-        "meaning_zh": "嵌套条件：条件语句里面再套条件语句——如先判断是否及格，及格后再判断等级",
-        "derivation": "Nest(巢/嵌套) → 俄罗斯套娃 → if 里面再套 if",
-        "mnemonic": "像分拣快递：先按省份分，再按城市分，再按街道分——层层嵌套",
-        "example": "IF age >= 18 THEN { IF hasLicense THEN 'can drive' ELSE 'get license' }.",
-        "example_zh": "如果年龄>=18 则 { 如果有驾照则「可以开车」否则「去考驾照」}。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Iteration (Loops)",
-        "breakdown": "Iteration(迭代) = repeat/loop",
-        "meaning_en": "repeating code: \"repeat n times\" or \"repeat until\"; uses NOT, AND, OR",
-        "meaning_zh": "迭代/循环：重复执行代码——「重复n次」或「重复直到条件满足」",
-        "derivation": "Iterate(重复) → 同一段代码执行多次 → 避免写重复代码",
-        "mnemonic": "洗头说明：涂洗发水→揉搓→冲洗→重复(这就是循环！)",
-        "example": "REPEAT 5 TIMES { display 'Hello' } prints Hello five times.",
-        "example_zh": "重复5次 { 显示 'Hello' } 会打印五次 Hello。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Binary Search",
-    "type": "root",
-    "meaning_en": "an efficient search algorithm that halves the data set with each step",
-    "meaning_zh": "二分查找：高效的搜索算法，每次将数据集一分为二并淘汰一半——前提是数据必须已排序",
-    "origin": "Unit 3: Algorithms & Programming",
-    "related": ["Algorithms", "Pseudocode & Data Types"],
-    "words": [
-      {
-        "word": "Binary Search Algorithm",
-        "breakdown": "Binary(二分) + Search(搜索) + Algorithm(算法)",
-        "meaning_en": "splits a sorted data set in half repeatedly; eliminates half the data each round",
-        "meaning_zh": "二分查找算法：在已排序的数据中，每次取中间值比较并淘汰一半，直到找到目标",
-        "derivation": "Binary(二分) + Search(搜索) → 每次切一半 → 1000个数据最多10次就能找到",
-        "mnemonic": "猜数字游戏：1-100猜一个数，每次猜中间值，最多7次必中",
-        "example": "Binary search on a sorted list of 1000 items needs at most 10 comparisons.",
-        "example_zh": "对 1000 个元素的有序列表进行二分查找最多需要 10 次比较。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Linear Search",
-        "breakdown": "Linear(线性的) + Search(搜索)",
-        "meaning_en": "checking each element one by one from start to end",
-        "meaning_zh": "线性查找：从头到尾逐个检查每个元素——简单但效率低，适用于未排序数据",
-        "derivation": "Linear(线性的) → 一条线从头走到尾 → 一个一个看",
-        "mnemonic": "在一排人中找某人：从第一个开始一个个看——这就是线性查找",
-        "example": "Linear search checks every element, so it can be slow for large lists.",
-        "example_zh": "线性查找检查每个元素，对于大列表可能很慢。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Procedures & Functions",
-    "type": "root",
-    "meaning_en": "reusable blocks of code with parameters and arguments; a form of abstraction",
-    "meaning_zh": "过程与函数：可重复使用的代码块，接受参数执行任务——调用函数不需要知道内部实现(抽象)",
-    "origin": "Unit 3: Algorithms & Programming",
-    "related": ["Algorithms", "Abstraction & Binary"],
-    "words": [
-      {
-        "word": "Procedure",
-        "breakdown": "Procedure(过程/程序)",
-        "meaning_en": "a named group of programming instructions; also called method or function",
-        "meaning_zh": "过程：一组被命名的编程指令，也叫方法(method)或函数(function)——可重复调用",
-        "derivation": "Procedure(过程) → 把一组步骤打包命名 → 需要时直接调用名字",
-        "mnemonic": "像快捷键：Ctrl+C = 复制 → 一个名字代替一堆操作",
-        "example": "The procedure calculateTotal() adds up all items in the cart.",
-        "example_zh": "过程 calculateTotal() 将购物车中的所有商品加总。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Parameter",
-        "breakdown": "Parameter(参数/形参)",
-        "meaning_en": "input variables defined in a procedure's declaration",
-        "meaning_zh": "参数(形参)：定义过程时声明的输入变量——占位符，等调用时被实际值替代",
-        "derivation": "Parameter(参数) → 函数定义中的「坑位」 → 调用时填入实际值",
-        "mnemonic": "菜谱里写「适量盐」——「适量盐」就是参数，做菜时你决定放多少",
-        "example": "In PROCEDURE greet(name), 'name' is a parameter.",
-        "example_zh": "在 PROCEDURE greet(name) 中，'name' 是一个参数。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Argument",
-        "breakdown": "Argument(实参)",
-        "meaning_en": "the actual values passed when calling a procedure",
-        "meaning_zh": "实参：调用过程时传入的实际值——填入参数坑位的具体数据",
-        "derivation": "Argument(实际参数) → 调用函数时传入的真实值 → 把「坑」填上",
-        "mnemonic": "参数是信封上的「收件人」栏，实参是你填进去的具体名字",
-        "example": "In greet(\"Alice\"), \"Alice\" is the argument.",
-        "example_zh": "在 greet(\"Alice\") 中，\"Alice\" 是实参。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Procedural Abstraction",
-        "breakdown": "Procedural(过程的) + Abstraction(抽象)",
-        "meaning_en": "calling a procedure without knowing how it works internally",
-        "meaning_zh": "过程抽象：调用函数时不需要知道它内部怎么实现——只需要知道输入什么、输出什么",
-        "derivation": "Procedural(过程的) + Abstraction(抽象) → 用函数名隐藏复杂实现",
-        "mnemonic": "用微波炉不需要懂电磁波原理——按按钮就行，这就是抽象",
-        "example": "You can call sort() without knowing which sorting algorithm it uses.",
-        "example_zh": "你可以调用 sort() 而不需要知道它使用了哪种排序算法。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "The Internet",
-    "type": "root",
-    "meaning_en": "a global network connecting computing devices via packets, protocols, and routing",
-    "meaning_zh": "互联网：连接全球计算设备的网络——数据被拆成数据包，通过路由器按协议传输",
-    "origin": "Unit 4: Computer Systems & Networks",
-    "related": ["Fault Tolerance", "Parallel & Distributed Computing"],
-    "words": [
-      {
-        "word": "Computer Network",
-        "breakdown": "Computer(计算机) + Network(网络)",
-        "meaning_en": "multiple computing devices communicating with each other",
-        "meaning_zh": "计算机网络：多台计算设备（电脑、平板等）相互通信的系统",
-        "derivation": "Network(网络) → 设备之间的连接 → 像蜘蛛网一样互相连通",
-        "example": "A school's computers are connected through a local computer network.",
-        "example_zh": "学校的电脑通过本地计算机网络连接。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Data Packet",
-        "breakdown": "Data(数据) + Packet(包)",
-        "meaning_en": "a small chunk of data sent over the internet with metadata attached",
-        "meaning_zh": "数据包：互联网上传输的数据小块，每个包附带元数据告诉路由器如何传送",
-        "derivation": "Packet(小包) → 把大数据拆成小包裹 → 像把信拆成明信片分批寄出",
-        "mnemonic": "寄一本书太重，拆成一页页寄出去，每页标上顺序——这就是数据包",
-        "example": "An email is split into data packets before being sent across the internet.",
-        "example_zh": "电子邮件在通过互联网发送前会被拆分成数据包。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Routing",
-        "breakdown": "Route(路线) + -ing",
-        "meaning_en": "the process of finding the best path to deliver information",
-        "meaning_zh": "路由：寻找最佳路径将信息从发送方传递到接收方的过程",
-        "derivation": "Route(路线) → 找最优路线 → 像GPS导航选择最快的路",
-        "example": "Routing determines the most efficient path for data to travel.",
-        "example_zh": "路由确定数据传输的最高效路径。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Bandwidth",
-        "breakdown": "Band(频带) + Width(宽度)",
-        "meaning_en": "the rate of data transfer; measured in megabits per second",
-        "meaning_zh": "带宽：数据传输速率，以兆比特/秒(Mbps)为单位——带宽越大，传输越快",
-        "derivation": "Band(频带) + Width(宽度) → 数据通道的宽度 → 水管越粗水流越大",
-        "mnemonic": "高速公路车道越多(带宽越大)，通过的车(数据)就越多",
-        "example": "Higher bandwidth allows faster video streaming.",
-        "example_zh": "更高的带宽允许更快的视频流播放。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Protocol (TCP/IP, UDP)",
-        "breakdown": "Protocol(协议)",
-        "meaning_en": "a set of rules for communication; the internet uses TCP/IP and UDP",
-        "meaning_zh": "协议：通信规则的集合——互联网使用TCP/IP(可靠传输)和UDP(快速传输)协议",
-        "derivation": "Protocol(协议) → 大家约定好的规则 → 像外交礼仪确保沟通顺畅",
-        "mnemonic": "TCP = 挂号信(确认收到) vs UDP = 传单(撒出去不管)",
-        "example": "TCP/IP ensures reliable data delivery across the internet.",
-        "example_zh": "TCP/IP 确保数据在互联网上可靠传输。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Scalability",
-        "breakdown": "Scale(规模) + -ability(能力)",
-        "meaning_en": "the capacity to change in size and scale to meet new demands",
-        "meaning_zh": "可扩展性：系统随需求增长而扩大规模的能力——互联网就是高度可扩展的",
-        "derivation": "Scale(规模) + -able(能够) → 能伸能缩 → 用户从100到100万都能正常运行",
-        "mnemonic": "自助餐厅：来10人加一桌，来100人加十桌——这就是可扩展性",
-        "example": "The internet is scalable because new devices can join without redesign.",
-        "example_zh": "互联网具有可扩展性，因为新设备可以加入而无需重新设计。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Fault Tolerance",
-    "type": "root",
-    "meaning_en": "ability to function even with partial failures; achieved through redundancy",
-    "meaning_zh": "容错性：即使部分故障也能继续运行的能力——通过冗余(备份)来实现",
-    "origin": "Unit 4: Computer Systems & Networks",
-    "related": ["The Internet", "Parallel & Distributed Computing"],
-    "words": [
-      {
-        "word": "Fault Tolerant System",
-        "breakdown": "Fault(故障) + Tolerant(容忍的) + System(系统)",
-        "meaning_en": "a system that can still function even with a partial malfunction",
-        "meaning_zh": "容错系统：即使部分组件出故障也能继续正常工作的系统——互联网就是容错的",
-        "derivation": "Fault(故障) + Tolerant(容忍) → 容忍故障 → 坏了一部分还能用",
-        "mnemonic": "一条路堵了还能绕路走——多条路径就是容错",
-        "example": "The internet is fault tolerant: if one route fails, data finds another path.",
-        "example_zh": "互联网是容错的：如果一条路径失败，数据会找到另一条路径。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Redundancy",
-        "breakdown": "Redundant(多余的/冗余的) + -cy(名词后缀)",
-        "meaning_en": "duplication of components or pathways; makes systems fault tolerant",
-        "meaning_zh": "冗余：对组件或路径进行备份复制——使系统在部分故障时仍能运行",
-        "derivation": "Redundant(多余的) → 「多余」的备份 → 平时看似浪费，故障时就是救命稻草",
-        "mnemonic": "飞机有两个引擎：一个坏了另一个还能飞——这就是冗余设计",
-        "example": "Network redundancy ensures connectivity even if a router goes down.",
-        "example_zh": "网络冗余确保即使一个路由器宕机也能保持连接。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Parallel & Distributed Computing",
-    "type": "root",
-    "meaning_en": "running programs on multiple processors or devices simultaneously for speed",
-    "meaning_zh": "并行与分布式计算：将程序拆分到多个处理器(并行)或多台设备(分布式)上同时运行以提高速度",
-    "origin": "Unit 4: Computer Systems & Networks",
-    "related": ["The Internet", "Fault Tolerance"],
-    "words": [
-      {
-        "word": "Sequential Computing",
-        "breakdown": "Sequential(顺序的) + Computing(计算)",
-        "meaning_en": "traditional programming where each operation is processed one at a time",
-        "meaning_zh": "顺序计算：传统编程方式，每次只处理一个操作——一个接一个执行",
-        "derivation": "Sequential(按顺序的) → 排队一个个来 → 前一个没做完后一个等着",
-        "example": "Sequential computing processes step A, then B, then C in order.",
-        "example_zh": "顺序计算按顺序处理步骤 A，然后 B，然后 C。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Parallel Computing",
-        "breakdown": "Parallel(并行的) + Computing(计算)",
-        "meaning_en": "breaking a program into smaller operations processed simultaneously on multiple processors",
-        "meaning_zh": "并行计算：将程序拆成小操作，在多个处理器上同时执行——比顺序计算快",
-        "derivation": "Parallel(平行的) → 多条线同时工作 → 像多条收银台同时结账",
-        "mnemonic": "一个人洗碗要1小时，4个人同时洗只要15分钟——这就是并行",
-        "example": "Parallel computing uses multiple cores to process data faster.",
-        "example_zh": "并行计算使用多个核心更快地处理数据。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Distributed Computing",
-        "breakdown": "Distributed(分布式的) + Computing(计算)",
-        "meaning_en": "multiple devices communicate together to run a program",
-        "meaning_zh": "分布式计算：多台设备通过网络协作共同运行一个程序——如Bitcoin挖矿、SETI@home",
-        "derivation": "Distribute(分配) → 把任务分配给不同设备 → 像外包给全球各地的团队",
-        "example": "Distributed computing allows thousands of computers to work on one problem.",
-        "example_zh": "分布式计算允许数千台计算机共同处理一个问题。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Speedup",
-        "breakdown": "Speed(速度) + Up(提升)",
-        "meaning_en": "ratio of sequential time to parallel time; measures efficiency gain",
-        "meaning_zh": "加速比：顺序执行时间÷并行执行时间——衡量并行计算的效率提升",
-        "derivation": "Speedup = 顺序时间/并行时间 → 如果顺序要12秒,并行要4秒,加速比=3",
-        "mnemonic": "加速比=3 意味着并行比顺序快3倍",
-        "example": "A speedup of 4 means the parallel solution is 4 times faster.",
-        "example_zh": "加速比为 4 意味着并行方案快了 4 倍。",
-        "toefl_frequency": "low"
-      }
-    ]
-  },
-  {
-    "root": "Digital Divide & Bias",
-    "type": "root",
-    "meaning_en": "gaps in internet access and biases reflected in computing innovations",
-    "meaning_zh": "数字鸿沟与偏见：互联网接入的不平等(受经济/地理影响)以及计算创新中反映的社会偏见",
-    "origin": "Unit 5: Impact of Computing",
-    "related": ["Intellectual Property & Open Source", "Digital Security"],
-    "words": [
-      {
-        "word": "Digital Divide",
-        "breakdown": "Digital(数字的) + Divide(鸿沟)",
-        "meaning_en": "gaps between those who have internet access and those who do not",
-        "meaning_zh": "数字鸿沟：有互联网接入的人群与没有的人群之间的差距——受收入、地理位置、教育影响",
-        "derivation": "Digital(数字的) + Divide(分隔) → 科技世界的贫富差距 → 有网vs没网",
-        "mnemonic": "城市有5G，山区没信号——这就是数字鸿沟",
-        "example": "The digital divide affects students in rural areas who lack internet access.",
-        "example_zh": "数字鸿沟影响着缺乏互联网接入的农村地区学生。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Computing Bias",
-        "breakdown": "Computing(计算) + Bias(偏见)",
-        "meaning_en": "innovations that reflect existing racial, gender, or other biases from historical data",
-        "meaning_zh": "计算偏见：计算创新反映了历史数据中的种族/性别等偏见——如招聘算法偏向某个群体",
-        "derivation": "Bias(偏见) → 计算机学习历史数据 → 历史有偏见 → 算法也有偏见",
-        "mnemonic": "垃圾进垃圾出(GIGO)：用有偏见的数据训练，AI就学会了偏见",
-        "example": "A recruiting algorithm showed computing bias by favoring male candidates.",
-        "example_zh": "一个招聘算法因偏向男性候选人而表现出计算偏见。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Intellectual Property & Open Source",
-    "type": "root",
-    "meaning_en": "ownership rights, Creative Commons licensing, and open collaboration models",
-    "meaning_zh": "知识产权与开源：创作者的作品所有权(版权)、Creative Commons许可、开源共享与众包协作",
-    "origin": "Unit 5: Impact of Computing",
-    "related": ["Digital Divide & Bias", "Digital Security"],
-    "words": [
-      {
-        "word": "Intellectual Property",
-        "breakdown": "Intellectual(智力的) + Property(财产)",
-        "meaning_en": "the work that people consider \"theirs\"; creations of the mind",
-        "meaning_zh": "知识产权：人们视为「属于自己」的智力创作成果——包括发明、文学作品、代码等",
-        "derivation": "Intellectual(智力的) + Property(财产) → 脑力劳动的成果也是财产",
-        "example": "Software code is a form of intellectual property.",
-        "example_zh": "软件代码是知识产权的一种形式。",
-        "toefl_frequency": "high"
-      },
-      {
-        "word": "Copyright",
-        "breakdown": "Copy(复制) + Right(权利)",
-        "meaning_en": "the creator determines who can use their creation",
-        "meaning_zh": "版权：创作者决定谁可以使用其作品——未经许可使用即为侵权",
-        "derivation": "Copy(复制) + Right(权利) → 复制的权利归创作者 → 你不能随便复制别人的东西",
-        "example": "Copying someone's code without permission violates their copyright.",
-        "example_zh": "未经许可复制他人代码侵犯了版权。",
-        "toefl_frequency": "high"
-      },
-      {
-        "word": "Creative Commons",
-        "breakdown": "Creative(创意的) + Commons(公共领域)",
-        "meaning_en": "a license that lets creators give others permission to use their work",
-        "meaning_zh": "知识共享许可：创作者通过CC许可授权他人使用其作品——比版权更灵活开放",
-        "derivation": "Creative(创意) + Commons(共享) → 创意的共享 → 创作者主动分享权利",
-        "mnemonic": "CC许可像自助餐许可证：创作者说「随便吃」但可能有条件（署名/非商用）",
-        "example": "Photos with Creative Commons licenses can be freely shared.",
-        "example_zh": "带有知识共享许可的照片可以自由分享。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Open Source",
-        "breakdown": "Open(开放的) + Source(源代码)",
-        "meaning_en": "work freely shared, distributed, and modified by anyone",
-        "meaning_zh": "开源：作品被自由共享、分发和修改——任何人都可以查看和改进源代码",
-        "derivation": "Open(打开) + Source(源代码) → 源代码打开给所有人看 → 全世界一起改进",
-        "mnemonic": "Linux、Wikipedia 都是开源的——全球志愿者共同创作",
-        "example": "Linux is a popular open-source operating system.",
-        "example_zh": "Linux 是一个流行的开源操作系统。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Crowdsourcing",
-        "breakdown": "Crowd(人群) + Sourcing(获取)",
-        "meaning_en": "getting large amounts of input or information from people on the internet",
-        "meaning_zh": "众包：通过互联网从大量人群获取信息或劳动——如Wikipedia、Waze交通数据",
-        "derivation": "Crowd(人群) + Source(来源) → 从人群中获取资源 → 大家一起出力",
-        "mnemonic": "众人拾柴火焰高：一个人写不了百科全书，但百万人可以(Wikipedia)",
-        "example": "Wikipedia relies on crowdsourcing for its content.",
-        "example_zh": "维基百科依靠众包来获取内容。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Digital Security",
-    "type": "root",
-    "meaning_en": "threats to personal data: malware, phishing, and authentication methods",
-    "meaning_zh": "数字安全：个人数据面临的威胁(恶意软件/钓鱼攻击)及防护措施(多因素认证)",
-    "origin": "Unit 5: Impact of Computing",
-    "related": ["Encryption", "Digital Divide & Bias"],
-    "words": [
-      {
-        "word": "PII",
-        "breakdown": "Personally Identifiable Information",
-        "meaning_en": "information that can be used to identify a specific person",
-        "meaning_zh": "个人身份信息：可用于识别特定个人的信息——如姓名、社保号、地址、生物特征",
-        "derivation": "Personally(个人地) + Identifiable(可识别的) + Information(信息) → 能找到你是谁的信息",
-        "mnemonic": "PII = 你的「数字指纹」——泄露了别人就能冒充你",
-        "example": "Your social security number is a form of PII.",
-        "example_zh": "你的社会保障号码是一种个人身份信息。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Virus vs Worm",
-        "breakdown": "Virus(病毒) vs Worm(蠕虫)",
-        "meaning_en": "viruses attach to files and need user activation; worms spread independently",
-        "meaning_zh": "病毒vs蠕虫：病毒附在文件上需要用户激活才能传播；蠕虫可以独立运行自动传播",
-        "derivation": "Virus(病毒) → 需要宿主(文件) + 用户操作；Worm(蠕虫) → 自己爬自己传播",
-        "mnemonic": "病毒像地雷(你踩了才炸)，蠕虫像蚂蚁(自己到处爬)",
-        "example": "Unlike a virus, a worm can spread without any user interaction.",
-        "example_zh": "与病毒不同，蠕虫可以在没有用户交互的情况下传播。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Phishing",
-        "breakdown": "Phishing(钓鱼) — fishing的变体拼写",
-        "meaning_en": "tricking people into giving personal information by pretending to be trustworthy",
-        "meaning_zh": "网络钓鱼：冒充可信机构(银行/学校)骗取个人信息——通过虚假邮件或网站",
-        "derivation": "Fishing(钓鱼) → 用假饵「钓」你的信息 → Ph是黑客的拼写风格",
-        "mnemonic": "收到「您的银行账户异常」邮件要求点链接——这就是钓鱼！",
-        "example": "A phishing email pretended to be from the bank to steal login credentials.",
-        "example_zh": "一封钓鱼邮件冒充银行来窃取登录凭据。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Multi-factor Authentication",
-        "breakdown": "Multi(多) + Factor(因素) + Authentication(认证)",
-        "meaning_en": "requiring multiple methods of verification to prove identity",
-        "meaning_zh": "多因素认证：使用多种方式验证身份——如密码+短信验证码+指纹，比单一密码更安全",
-        "derivation": "Multi(多) + Factor(因素) → 多重验证 → 一把锁不够就加两把三把",
-        "mnemonic": "银行取大额现金：输密码+刷身份证+人脸识别——三重验证",
-        "example": "Multi-factor authentication adds a text code on top of your password.",
-        "example_zh": "多因素认证在密码之上添加短信验证码。",
-        "toefl_frequency": "medium"
-      }
-    ]
-  },
-  {
-    "root": "Encryption",
-    "type": "root",
-    "meaning_en": "encoding data to prevent unauthorized access using symmetric or public key methods",
-    "meaning_zh": "加密：将数据编码防止未授权访问——对称加密(一把钥匙)和公钥加密(两把钥匙配合)",
-    "origin": "Unit 5: Impact of Computing",
-    "related": ["Digital Security", "The Internet"],
-    "words": [
-      {
-        "word": "Encryption",
-        "breakdown": "En(使) + Crypt(隐藏) + -ion(名词后缀)",
-        "meaning_en": "encoding data to prevent others from accessing it",
-        "meaning_zh": "加密：将数据转换为密文，防止未授权的人读取——需要密钥才能解密还原",
-        "derivation": "En(进入) + Crypt(密室) → 把数据锁进密室 → 有钥匙才能打开",
-        "example": "Encryption protects your messages from being read by hackers.",
-        "example_zh": "加密保护你的消息不被黑客读取。",
-        "toefl_frequency": "high"
-      },
-      {
-        "word": "Symmetric Key Encryption",
-        "breakdown": "Symmetric(对称的) + Key(密钥) + Encryption(加密)",
-        "meaning_en": "one key for both encrypting and decrypting; sender and receiver share same key",
-        "meaning_zh": "对称密钥加密：加密和解密使用同一把密钥——双方必须共享这把密钥",
-        "derivation": "Symmetric(对称) → 两边一样 → 加密解密用同一把钥匙",
-        "mnemonic": "像普通门锁：一把钥匙既能锁门也能开门，你和室友各有一把一样的",
-        "example": "Symmetric encryption is fast but requires sharing the key securely.",
-        "example_zh": "对称加密速度快但需要安全地共享密钥。",
-        "toefl_frequency": "medium"
-      },
-      {
-        "word": "Public Key Encryption",
-        "breakdown": "Public(公开的) + Key(密钥) + Encryption(加密)",
-        "meaning_en": "uses a public key to encrypt and a private key to decrypt",
-        "meaning_zh": "公钥加密：用公钥加密、用私钥解密——公钥公开给所有人，私钥自己保管",
-        "derivation": "Public Key(公钥) = 锁 → 任何人都能锁；Private Key(私钥) = 钥匙 → 只有你能开",
-        "mnemonic": "邮箱比喻：任何人都能往邮箱里投信(公钥加密)，只有你有钥匙打开(私钥解密)",
-        "example": "HTTPS uses public key encryption to secure web browsing.",
-        "example_zh": "HTTPS 使用公钥加密来保护网页浏览安全。",
+        "word": "visual output",
+        "breakdown": "Visual(视觉的) + Output(输出)",
+        "meaning_en": "program output displayed on a screen or device that can be seen, such as images, graphics, or animations",
+        "meaning_zh": "视觉输出：屏幕上能看到的程序输出，例如图像、图形、动画。游戏画面、图表、按钮都是视觉输出",
+        "derivation": "Visual(视觉的) + Output(输出) → 屏幕上显示给你看的东西",
+        "mnemonic": "你现在读的这段文字就是 visual output——屏幕上的像素是程序画出来的",
+        "example": "The game's visual output includes colorful animations and character sprites.",
+        "example_zh": "这款游戏的视觉输出包括彩色动画和角色精灵图。",
         "toefl_frequency": "medium"
       }
     ]

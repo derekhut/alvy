@@ -156,21 +156,16 @@ export function selectReviewMorphemes(
 /** Generate stats summary as markdown */
 export function generateStatsSummary(
   data: UserData,
-  subject?: "toefl" | "psych" | "micro",
+  title: string = "词根学习",
+  wordNoun: string = "单词",
 ): string {
   const totalWords = data.wordsStudied.length;
 
-  const subjectLabel =
-    subject === "psych" ? "AP 心理学" :
-    subject === "micro" ? "AP 微观经济学" :
-    "词根学习";
-  const wordLabel = subject === "psych" || subject === "micro" ? "术语" : "单词";
-
-  return `# ${subjectLabel}进度
+  return `# ${title}进度
 
 - **总经验值:** ${data.xp.total} XP
 - **当前连续天数:** ${data.streak.current} 天
 - **最长连续天数:** ${data.streak.longest} 天
-- **已学${wordLabel}:** ${totalWords} 个
+- **已学${wordNoun}:** ${totalWords} 个
 `;
 }

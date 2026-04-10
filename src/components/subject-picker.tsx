@@ -3,11 +3,7 @@ import { Box, Text, useInput, useApp } from "ink";
 import type { UserData, Subject } from "../lib/types.js";
 import type { UpdateInfo } from "../lib/update-check.js";
 import { AVATARS } from "../lib/avatars.js";
-
-interface SubjectOption {
-  key: Subject;
-  label: string;
-}
+import { SUBJECT_LIST } from "../lib/subjects.js";
 
 interface SubjectPickerProps {
   data: UserData;
@@ -26,13 +22,7 @@ export default function SubjectPicker({
 }: SubjectPickerProps) {
   const { exit } = useApp();
 
-  const subjects: SubjectOption[] = [
-    { key: "toefl", label: "TOEFL 词根" },
-    { key: "psych", label: "AP 心理学" },
-    { key: "csp", label: "AP 计算机科学原理" },
-    { key: "whap", label: "AP 世界历史" },
-    { key: "micro", label: "AP 微观经济学" },
-  ];
+  const subjects = SUBJECT_LIST.map((s) => ({ key: s.id, label: s.pickerLabel }));
 
   const lastSubject = data.settings?.lastSubject;
   const initialIndex = lastSubject

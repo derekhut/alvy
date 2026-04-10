@@ -5,6 +5,7 @@ import meow from "meow";
 import App from "./app.js";
 import type { Command } from "./lib/types.js";
 import { loadData, saveData } from "./lib/store.js";
+import { SUBJECT_LIST } from "./lib/subjects.js";
 
 const cli = meow(
   `
@@ -57,17 +58,23 @@ if (cli.flags.goal !== undefined) {
   process.exit(0);
 }
 
-const validCommands = new Set<Command>(["daily", "review", "stats", "doctor", "psych", "psych-review", "csp", "csp-review", "whap", "whap-review", "micro", "micro-review", "pick", "profile"]);
+const validCommands = new Set<Command>([
+  "stats",
+  "doctor",
+  "profile",
+  "pick",
+  ...SUBJECT_LIST.flatMap((s) => [s.sessionCommand, s.reviewCommand] as Command[]),
+]);
+
 const input = cli.input[0] as string | undefined;
 const input2 = cli.input[1] as string | undefined;
 
-// Handle "alvy psych review" / "alvy csp review" as compound commands
-const resolvedInput =
-  input === "psych" && input2 === "review" ? "psych-review" :
-  input === "csp" && input2 === "review" ? "csp-review" :
-  input === "whap" && input2 === "review" ? "whap-review" :
-  input === "micro" && input2 === "review" ? "micro-review" :
-  input;
+// Resolve compound commands like "alvy psych review" → "psych-review".
+// Subjects with cliToken === "" (TOEFL) short-circuit and fall through.
+const compoundMatch = SUBJECT_LIST.find(
+  (s) => s.cliToken && s.cliToken === input && input2 === "review",
+);
+const resolvedInput = compoundMatch ? compoundMatch.reviewCommand : input;
 
 const command: Command = resolvedInput && validCommands.has(resolvedInput as Command)
   ? (resolvedInput as Command)

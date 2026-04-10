@@ -3,17 +3,10 @@ import type { Command, Subject, UserProfile } from "./lib/types.js";
 import { loadData, saveData } from "./lib/store.js";
 import { checkForUpdate } from "./lib/update-check.js";
 import type { UpdateInfo } from "./lib/update-check.js";
+import { SUBJECT_LIST, SUBJECT_TO_SESSION_COMMAND } from "./lib/subjects.js";
 import Doctor from "./components/doctor.js";
-import DailySession from "./components/daily-session.js";
-import ReviewSession from "./components/review-session.js";
-import PsychSession from "./components/psych-session.js";
-import PsychReview from "./components/psych-review.js";
-import CspSession from "./components/csp-session.js";
-import CspReview from "./components/csp-review.js";
-import WhapSession from "./components/whap-session.js";
-import WhapReview from "./components/whap-review.js";
-import MicroSession from "./components/micro-session.js";
-import MicroReview from "./components/micro-review.js";
+import SubjectSession from "./components/subject-session.js";
+import SubjectReview from "./components/subject-review.js";
 import Stats from "./components/stats.js";
 import SubjectPicker from "./components/subject-picker.js";
 import UpdatePrompt from "./components/update-prompt.js";
@@ -23,6 +16,20 @@ import ProfileView from "./components/profile-view.js";
 interface AppProps {
   command: Command;
 }
+
+// Build a renderer map for every Command, sourced from the registry.
+const COMMAND_RENDERERS: Record<Command, () => React.ReactElement> = (() => {
+  const map: Partial<Record<Command, () => React.ReactElement>> = {
+    stats: () => <Stats />,
+    doctor: () => <Doctor />,
+    profile: () => <ProfileView />,
+  };
+  for (const cfg of SUBJECT_LIST) {
+    map[cfg.sessionCommand] = () => <SubjectSession subject={cfg.id} />;
+    map[cfg.reviewCommand] = () => <SubjectReview subject={cfg.id} />;
+  }
+  return map as Record<Command, () => React.ReactElement>;
+})();
 
 export default function App({ command }: AppProps) {
   const [resolved, setResolved] = useState<Command | null>(
@@ -70,7 +77,7 @@ export default function App({ command }: AppProps) {
       data.settings.lastSubject = subject;
       saveData(data);
     }
-    setResolved(subject === "psych" ? "psych" : subject === "csp" ? "csp" : subject === "whap" ? "whap" : subject === "micro" ? "micro" : "daily");
+    setResolved(SUBJECT_TO_SESSION_COMMAND[subject]);
   }, [data]);
 
   if (resolved === null && data) {
@@ -109,34 +116,8 @@ export default function App({ command }: AppProps) {
     );
   }
 
-  switch (resolved) {
-    case "daily":
-      return <DailySession />;
-    case "review":
-      return <ReviewSession />;
-    case "psych":
-      return <PsychSession />;
-    case "psych-review":
-      return <PsychReview />;
-    case "csp":
-      return <CspSession />;
-    case "csp-review":
-      return <CspReview />;
-    case "whap":
-      return <WhapSession />;
-    case "whap-review":
-      return <WhapReview />;
-    case "micro":
-      return <MicroSession />;
-    case "micro-review":
-      return <MicroReview />;
-    case "stats":
-      return <Stats />;
-    case "doctor":
-      return <Doctor />;
-    case "profile":
-      return <ProfileView />;
-    default:
-      return null;
+  if (resolved && COMMAND_RENDERERS[resolved]) {
+    return COMMAND_RENDERERS[resolved]();
   }
+  return null;
 }

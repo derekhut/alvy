@@ -1,6 +1,6 @@
 # alvy Refactor — SubjectRegistry + Generic Sessions + Macro Wiring
 
-**Plan status:** Verified against `update_version` branch on 2026-04-10. Baseline `npm test` = **81 passing**. Ready for execution.
+**Plan status:** ✅ COMPLETE 2026-04-10. All 9 commits landed on `update_version`. Final `npm test` = **92 passing**. AP Macro is the 6th wired subject, the 15 per-subject session/review/db files are deleted, and the SubjectRegistry is the single source of truth for adding new subjects.
 
 ## Step 0 — Snapshot this plan to the repo (BEFORE Commit 1)
 

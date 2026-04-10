@@ -9,10 +9,10 @@ This is the process used to ship:
 - **AP CSP** — 20/72 → 35 concepts / 385 terms (10 batches)
 - **AP World History** — 0 → 19 concepts / 255 terms (4 batches)
 - **AP Microeconomics** — 0 → 36 concepts / 499 terms (6 parallel batches, one per Unit)
+- **AP Macroeconomics** — 0 → 42 concepts / 492 terms (10 batches, 8 in parallel) — wired via SubjectRegistry
 
 It is designed for the next subjects already queued in the repo:
 - `ap_environment.md` (AP Environmental Science, 186 lines)
-- `ap_macro.md` (AP Macroeconomics, 492 terms)
 
 ---
 
@@ -180,7 +180,7 @@ Run `node scripts/expand-ced/plan.mjs` (with no args) to see the current list.
 | File | Format | Status | Notes |
 |---|---|---|---|
 | `ap_csp.md` | Pipe table with `<code> <title>` citations | ✅ Working | 35 topics / 385 terms — used to ship full csp.json |
-| `ap_macro.md` | Pipe table with `<code> <title>` citations | ✅ Working | 42 topics / 492 terms — ready for batch authoring |
+| `ap_macro.md` | Pipe table with `<code> <title>` citations | ✅ Complete | 42 topics / 492 terms — full macro.json shipped via 10 batches (8 in parallel) |
 | `ap_psyc.md` | 3-line groups (Unit/Topic/Terms-csv) | ❌ Wrong format | Predates the pipe-table convention. psych.json was already shipped from this file by hand. To re-extract or expand, convert to pipe-table format first. |
 | `ap_world_history.md` | Pipe table missing the Citation column | ❌ Wrong format | Same situation as psych — whap.json shipped by hand. Add a Citation column to use this workflow. |
 | `ap_environment.md` | Pipe table with `[1]`, `[2]` citations | ❌ Wrong citations | Citations are bracketed numbers instead of `<code> <title>`. Re-extract from the official CED docx. |
@@ -235,6 +235,7 @@ Cluster(簇) → 自然形成的小群 → 把相似数据自动归为一团
 | `src/data/csp.json` | ✅ 0 problems | 35 concepts / 385 terms, full schema |
 | `src/data/psych.json` | ✅ 0 problems | 36 concepts / 607 terms, full schema |
 | `src/data/micro.json` | ✅ 0 problems | 36 concepts / 499 terms, full schema |
+| `src/data/macro.json` | ✅ 0 problems | 42 concepts / 492 terms, full schema — wired via SubjectRegistry (`alvy macro` / `alvy macro review`) |
 | `src/data/whap.json` | ⚠️ 255 missing `mnemonic` | 19 concepts / 255 terms — shipped before mnemonic was added to the standard. Runtime is fine (mnemonic is opt-in at runtime), but the integrity check flags every entry. To fix: backfill mnemonic on each WHAP word. |
 
 The check is intentionally strict: it enforces all 9 word fields. If you ship a

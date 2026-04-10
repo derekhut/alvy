@@ -3,14 +3,15 @@ import { SUBJECTS, SUBJECT_LIST, SUBJECT_TO_SESSION_COMMAND } from "../subjects.
 import type { Subject } from "../types.js";
 
 describe("SUBJECT_LIST", () => {
-  it("contains 5 subjects in display order", () => {
-    expect(SUBJECT_LIST).toHaveLength(5);
+  it("contains 6 subjects in display order", () => {
+    expect(SUBJECT_LIST).toHaveLength(6);
     expect(SUBJECT_LIST.map((s) => s.id)).toEqual([
       "toefl",
       "psych",
       "csp",
       "whap",
       "micro",
+      "macro",
     ]);
   });
 });
@@ -66,7 +67,7 @@ describe("SUBJECTS map", () => {
 
 describe("SUBJECT_TO_SESSION_COMMAND", () => {
   it("maps every Subject to a Command", () => {
-    const subjects: Subject[] = ["toefl", "psych", "csp", "whap", "micro"];
+    const subjects: Subject[] = ["toefl", "psych", "csp", "whap", "micro", "macro"];
     for (const s of subjects) {
       expect(SUBJECT_TO_SESSION_COMMAND[s]).toBeTruthy();
     }

@@ -20,6 +20,8 @@ const cli = meow(
     $ alvy whap review  AP 世界历史复习
     $ alvy micro        AP 微观经济学每日学习
     $ alvy micro review AP 微观经济学复习
+    $ alvy macro        AP 宏观经济学每日学习
+    $ alvy macro review AP 宏观经济学复习
     $ alvy profile      查看个人资料
     $ alvy stats        导出学习进度
     $ alvy doctor       检查运行环境

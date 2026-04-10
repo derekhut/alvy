@@ -8,6 +8,7 @@ import psychData from "../data/psych.json" with { type: "json" };
 import cspData from "../data/csp.json" with { type: "json" };
 import whapData from "../data/whap.json" with { type: "json" };
 import microData from "../data/micro.json" with { type: "json" };
+import macroData from "../data/macro.json" with { type: "json" };
 
 export interface SubjectConfig {
   /** Subject identifier (also the key into SUBJECTS) */
@@ -144,6 +145,23 @@ export const SUBJECTS: Record<Subject, SubjectConfig> = {
     reviewCommand: "micro-review",
     db: createSubjectDB(microData as RootEntry[]),
   },
+  macro: {
+    id: "macro",
+    pickerLabel: "AP 宏观经济学",
+    dashboardTitle: "AP 宏观经济学",
+    reviewIntroTitle: "复习模式 — AP 宏观经济学",
+    emptyHintCmd: "alvy macro",
+    unitNoun: "概念",
+    wordNoun: "术语",
+    emptyNoun: "概念",
+    rootLessonLabels: apRootLessonLabels,
+    ...apWordDetailKnobs,
+    reviewMeaningSummary: beforeColon,
+    cliToken: "macro",
+    sessionCommand: "macro",
+    reviewCommand: "macro-review",
+    db: createSubjectDB(macroData as RootEntry[]),
+  },
 };
 
 /** Display order for picker, stats, etc. */
@@ -153,6 +171,7 @@ export const SUBJECT_LIST: SubjectConfig[] = [
   SUBJECTS.csp,
   SUBJECTS.whap,
   SUBJECTS.micro,
+  SUBJECTS.macro,
 ];
 
 /** Map a Subject id to the Command its session uses. */
@@ -162,4 +181,5 @@ export const SUBJECT_TO_SESSION_COMMAND: Record<Subject, Command> = {
   csp: "csp",
   whap: "whap",
   micro: "micro",
+  macro: "macro",
 };

@@ -75,6 +75,6 @@ export interface UserData {
   levelProgress: LevelProgress;
 }
 
-export type Subject = "toefl" | "psych" | "csp" | "whap" | "micro";
+export type Subject = "toefl" | "psych" | "csp" | "whap" | "micro" | "macro";
 
-export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review" | "csp" | "csp-review" | "whap" | "whap-review" | "micro" | "micro-review" | "pick" | "profile";
+export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review" | "csp" | "csp-review" | "whap" | "whap-review" | "micro" | "micro-review" | "macro" | "macro-review" | "pick" | "profile";

@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
-import type { UserData, UserProfile, LevelProgress, AvatarId } from "./types.js";
+import type { UserData, UserProfile, LevelProgress, AvatarId, Subject } from "./types.js";
 import { computeLevel, computeCompositeScore } from "./levels.js";
 import { AVATAR_IDS } from "./avatars.js";
 
@@ -30,7 +30,7 @@ interface PersistedData {
     quizAccuracy?: { correct: number; total: number };
   }>;
   wordsStudied: string[];
-  settings?: { sound: boolean; dailyGoal: number; lastSubject?: "toefl" | "psych" | "csp" | "whap" | "micro" };
+  settings?: { sound: boolean; dailyGoal: number; lastSubject?: Subject };
   profile?: UserProfile;
   levelProgress?: LevelProgress;
 }

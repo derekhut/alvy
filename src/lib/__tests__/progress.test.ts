@@ -340,7 +340,7 @@ describe("generateStatsSummary", () => {
       },
       wordsStudied: ["benefit", "benevolent", "malice"],
     });
-    const summary = generateStatsSummary(data);
+    const summary = generateStatsSummary(data, "词根学习", "单词");
     expect(summary).toContain("150 XP");
     expect(summary).toContain("3 天");
     expect(summary).toContain("7 天");
@@ -351,7 +351,7 @@ describe("generateStatsSummary", () => {
 
   it("handles empty data", () => {
     const data = makeData();
-    const summary = generateStatsSummary(data);
+    const summary = generateStatsSummary(data, "词根学习", "单词");
     expect(summary).toContain("0 XP");
     expect(summary).toContain("0 天");
     expect(summary).toContain("0 个");

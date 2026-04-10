@@ -156,8 +156,8 @@ export function selectReviewMorphemes(
 /** Generate stats summary as markdown */
 export function generateStatsSummary(
   data: UserData,
-  title: string = "词根学习",
-  wordNoun: string = "单词",
+  title: string,
+  wordNoun: string,
 ): string {
   const totalWords = data.wordsStudied.length;
 

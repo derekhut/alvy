@@ -1,14 +1,12 @@
 import React from "react";
 import { Box, Text } from "ink";
-import type { UserData, RootEntry } from "../lib/types.js";
+import type { UserData } from "../lib/types.js";
 import { xpToNextLevel } from "../lib/levels.js";
 import { AVATARS } from "../lib/avatars.js";
 
 interface DashboardProps {
   data: UserData;
-  totalRoots: number;
   subject?: "toefl" | "psych" | "csp" | "whap" | "micro";
-  getAllUnits?: () => RootEntry[];
 }
 
 export default function Dashboard({ data, subject }: DashboardProps) {

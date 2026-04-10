@@ -28,7 +28,6 @@ export default function ReviewSession() {
     {
       morphemes: reviewMorphemes,
       totalUnits: getRootCount(),
-      getAllUnits: getAllRoots,
       getDistractors: getDistractorMeaning,
       getNextBatch,
       markSeen: false,
@@ -142,7 +141,7 @@ export default function ReviewSession() {
     case "root-intro":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} />
+          <StreakHeader data={state.data} />
           <RootLesson
             entry={entry!}
             index={state.morphemeIdx}
@@ -155,7 +154,7 @@ export default function ReviewSession() {
     case "word-detail":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} />
+          <StreakHeader data={state.data} />
           <WordDetail
             word={entry!.words[state.wordIdx]!}
             wordNum={state.wordIdx + 1}

@@ -32,7 +32,6 @@ export interface QuizQuestion {
 export interface SessionFlowOptions {
   morphemes: RootEntry[];
   totalUnits: number;
-  getAllUnits: () => RootEntry[];
   getDistractors: (word: RootWord, currentEntry: RootEntry) => string;
   getNextBatch: (data: UserData) => RootEntry[];
   markSeen?: boolean;
@@ -47,7 +46,6 @@ export interface SessionFlowState {
   wordIdx: number;
   sessionXP: number;
   sessionWords: number;
-  totalRoots: number;
   quizIdx: number;
   quizQuestion: QuizQuestion | null;
   quizResult: { correct: boolean; correctAnswer: string } | null;
@@ -105,7 +103,6 @@ export function useSessionFlow(
   } | null>(null);
   const [levelUp, setLevelUp] = useState<{ newLevel: number; oldLevel: number } | null>(null);
 
-  const totalRoots = opts.totalUnits;
   const { markSeen = true, showContinuePrompt = true } = opts;
 
   // Save on unmount / SIGINT
@@ -295,7 +292,6 @@ export function useSessionFlow(
     wordIdx,
     sessionXP,
     sessionWords,
-    totalRoots,
     quizIdx,
     quizQuestion,
     quizResult,

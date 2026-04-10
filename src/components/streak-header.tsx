@@ -1,11 +1,9 @@
 import React from "react";
 import { Box, Text } from "ink";
-import type { UserData, RootEntry } from "../lib/types.js";
+import type { UserData } from "../lib/types.js";
 
 interface StreakHeaderProps {
   data: UserData;
-  totalRoots: number;
-  getAllUnits?: () => RootEntry[];
 }
 
 export default function StreakHeader({ data }: StreakHeaderProps) {

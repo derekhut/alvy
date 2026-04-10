@@ -30,7 +30,6 @@ export default function DailySession() {
     {
       morphemes,
       totalUnits: getRootCount(),
-      getAllUnits: getAllRoots,
       getDistractors: getDistractorMeaning,
       getNextBatch,
       markSeen: true,
@@ -102,12 +101,12 @@ export default function DailySession() {
 
   switch (state.phase) {
     case "dashboard":
-      return <Dashboard data={state.data} totalRoots={state.totalRoots} />;
+      return <Dashboard data={state.data} />;
 
     case "root-intro":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} />
+          <StreakHeader data={state.data} />
           <RootLesson
             entry={entry!}
             index={state.morphemeIdx}
@@ -120,7 +119,7 @@ export default function DailySession() {
     case "word-detail":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} />
+          <StreakHeader data={state.data} />
           <WordDetail
             word={entry!.words[state.wordIdx]!}
             wordNum={state.wordIdx + 1}

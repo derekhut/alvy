@@ -178,7 +178,3 @@ export function saveData(data: UserData): void {
   fs.writeFileSync(tmpFile, json, "utf-8");
   fs.renameSync(tmpFile, DATA_FILE);
 }
-
-export function getDataPath(): string {
-  return DATA_FILE;
-}

@@ -331,7 +331,6 @@ describe("selectNextMorphemes rotation", () => {
 
 describe("generateStatsSummary", () => {
   it("produces correct markdown with array wordsStudied", () => {
-    const roots = [makeRoot("bene-", 5), makeRoot("mal-", 5)];
     const data = makeData({
       streak: { current: 3, longest: 7, lastDate: "2026-04-01", freezeAvailable: true },
       xp: { total: 150, today: 30 },
@@ -341,7 +340,7 @@ describe("generateStatsSummary", () => {
       },
       wordsStudied: ["benefit", "benevolent", "malice"],
     });
-    const summary = generateStatsSummary(data, 30, roots);
+    const summary = generateStatsSummary(data);
     expect(summary).toContain("150 XP");
     expect(summary).toContain("3 天");
     expect(summary).toContain("7 天");
@@ -352,7 +351,7 @@ describe("generateStatsSummary", () => {
 
   it("handles empty data", () => {
     const data = makeData();
-    const summary = generateStatsSummary(data, 30);
+    const summary = generateStatsSummary(data);
     expect(summary).toContain("0 XP");
     expect(summary).toContain("0 天");
     expect(summary).toContain("0 个");

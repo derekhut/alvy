@@ -34,7 +34,6 @@ export default function WhapReview() {
     {
       morphemes: reviewMorphemes,
       totalUnits: getTopicCount(),
-      getAllUnits: getAllTopics,
       getDistractors: getDistractorMeaning,
       getNextBatch,
       markSeen: false,
@@ -146,7 +145,7 @@ export default function WhapReview() {
     case "root-intro":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} getAllUnits={getAllTopics} />
+          <StreakHeader data={state.data} />
           <RootLesson
             entry={entry!}
             index={state.morphemeIdx}
@@ -160,7 +159,7 @@ export default function WhapReview() {
     case "word-detail":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} getAllUnits={getAllTopics} />
+          <StreakHeader data={state.data} />
           <WordDetail
             word={entry!.words[state.wordIdx]!}
             wordNum={state.wordIdx + 1}

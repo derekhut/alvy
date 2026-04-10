@@ -34,7 +34,6 @@ export default function PsychReview() {
     {
       morphemes: reviewMorphemes,
       totalUnits: getConceptCount(),
-      getAllUnits: getAllConcepts,
       getDistractors: getDistractorMeaning,
       getNextBatch,
       markSeen: false,
@@ -146,7 +145,7 @@ export default function PsychReview() {
     case "root-intro":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} getAllUnits={getAllConcepts} />
+          <StreakHeader data={state.data} />
           <RootLesson
             entry={entry!}
             index={state.morphemeIdx}
@@ -160,7 +159,7 @@ export default function PsychReview() {
     case "word-detail":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} getAllUnits={getAllConcepts} />
+          <StreakHeader data={state.data} />
           <WordDetail
             word={entry!.words[state.wordIdx]!}
             wordNum={state.wordIdx + 1}

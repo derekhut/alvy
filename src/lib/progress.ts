@@ -156,8 +156,6 @@ export function selectReviewMorphemes(
 /** Generate stats summary as markdown */
 export function generateStatsSummary(
   data: UserData,
-  _totalRoots: number,
-  _allRoots?: RootEntry[],
   subject?: "toefl" | "psych" | "micro",
 ): string {
   const totalWords = data.wordsStudied.length;

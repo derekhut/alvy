@@ -36,7 +36,6 @@ export default function MicroSession() {
     {
       morphemes,
       totalUnits: getTopicCount(),
-      getAllUnits: getAllTopics,
       getDistractors: getDistractorMeaning,
       getNextBatch,
       markSeen: true,
@@ -109,16 +108,14 @@ export default function MicroSession() {
       return (
         <Dashboard
           data={state.data}
-          totalRoots={state.totalRoots}
           subject="micro"
-          getAllUnits={getAllTopics}
         />
       );
 
     case "root-intro":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} getAllUnits={getAllTopics} />
+          <StreakHeader data={state.data} />
           <RootLesson
             entry={entry!}
             index={state.morphemeIdx}
@@ -132,7 +129,7 @@ export default function MicroSession() {
     case "word-detail":
       return (
         <Box flexDirection="column">
-          <StreakHeader data={state.data} totalRoots={state.totalRoots} getAllUnits={getAllTopics} />
+          <StreakHeader data={state.data} />
           <WordDetail
             word={entry!.words[state.wordIdx]!}
             wordNum={state.wordIdx + 1}

@@ -5,7 +5,7 @@ import meow from "meow";
 import App from "./app.js";
 import type { Command } from "./lib/types.js";
 import { loadData, saveData } from "./lib/store.js";
-import { SUBJECT_LIST } from "./lib/subjects.js";
+import { resolveCommand } from "./lib/cli-parse.js";
 
 const cli = meow(
   `
@@ -60,31 +60,10 @@ if (cli.flags.goal !== undefined) {
   process.exit(0);
 }
 
-const validCommands = new Set<Command>([
-  "stats",
-  "doctor",
-  "profile",
-  "pick",
-  ...SUBJECT_LIST.flatMap((s) => [s.sessionCommand, s.reviewCommand] as Command[]),
-]);
-
-const input = cli.input[0] as string | undefined;
-const input2 = cli.input[1] as string | undefined;
-
-// Resolve compound commands like "alvy psych review" → "psych-review".
-// Subjects with cliToken === "" (TOEFL) short-circuit and fall through.
-const compoundMatch = SUBJECT_LIST.find(
-  (s) => s.cliToken && s.cliToken === input && input2 === "review",
-);
-const resolvedInput = compoundMatch ? compoundMatch.reviewCommand : input;
-
-const command: Command = resolvedInput && validCommands.has(resolvedInput as Command)
-  ? (resolvedInput as Command)
-  : resolvedInput
-    ? (() => {
-        console.error(`Unknown command: ${resolvedInput}. Run alvy --help for usage.`);
-        process.exit(1);
-      })()
-    : "pick";
+const command = resolveCommand(cli.input[0], cli.input[1]);
+if (command === null) {
+  console.error(`Unknown command: ${cli.input[0]}. Run alvy --help for usage.`);
+  process.exit(1);
+}
 
 render(<App command={command as Command} />);

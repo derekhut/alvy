@@ -10,6 +10,17 @@ import whapData from "../data/whap.json" with { type: "json" };
 import microData from "../data/micro.json" with { type: "json" };
 import macroData from "../data/macro.json" with { type: "json" };
 
+/** Single source of truth for the set of subjects. The Subject type derives
+ *  from this in types.ts via a type-only import (no runtime cycle). */
+export const SUBJECT_IDS = [
+  "toefl",
+  "psych",
+  "csp",
+  "whap",
+  "micro",
+  "macro",
+] as const;
+
 export interface SubjectConfig {
   /** Subject identifier (also the key into SUBJECTS) */
   id: Subject;
@@ -173,13 +184,3 @@ export const SUBJECT_LIST: SubjectConfig[] = [
   SUBJECTS.micro,
   SUBJECTS.macro,
 ];
-
-/** Map a Subject id to the Command its session uses. */
-export const SUBJECT_TO_SESSION_COMMAND: Record<Subject, Command> = {
-  toefl: "daily",
-  psych: "psych",
-  csp: "csp",
-  whap: "whap",
-  micro: "micro",
-  macro: "macro",
-};

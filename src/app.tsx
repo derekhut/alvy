@@ -3,7 +3,7 @@ import type { Command, Subject, UserProfile } from "./lib/types.js";
 import { loadData, saveData } from "./lib/store.js";
 import { checkForUpdate } from "./lib/update-check.js";
 import type { UpdateInfo } from "./lib/update-check.js";
-import { SUBJECT_LIST, SUBJECT_TO_SESSION_COMMAND } from "./lib/subjects.js";
+import { SUBJECTS, SUBJECT_LIST } from "./lib/subjects.js";
 import Doctor from "./components/doctor.js";
 import SubjectSession from "./components/subject-session.js";
 import SubjectReview from "./components/subject-review.js";
@@ -77,7 +77,7 @@ export default function App({ command }: AppProps) {
       data.settings.lastSubject = subject;
       saveData(data);
     }
-    setResolved(SUBJECT_TO_SESSION_COMMAND[subject]);
+    setResolved(SUBJECTS[subject].sessionCommand);
   }, [data]);
 
   if (resolved === null && data) {

@@ -1,6 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { SUBJECTS, SUBJECT_LIST, SUBJECT_TO_SESSION_COMMAND } from "../subjects.js";
-import type { Subject } from "../types.js";
+import { SUBJECTS, SUBJECT_LIST, SUBJECT_IDS } from "../subjects.js";
 
 describe("SUBJECT_LIST", () => {
   it("contains 6 subjects in display order", () => {
@@ -65,11 +64,15 @@ describe("SUBJECTS map", () => {
   });
 });
 
-describe("SUBJECT_TO_SESSION_COMMAND", () => {
-  it("maps every Subject to a Command", () => {
-    const subjects: Subject[] = ["toefl", "psych", "csp", "whap", "micro", "macro"];
-    for (const s of subjects) {
-      expect(SUBJECT_TO_SESSION_COMMAND[s]).toBeTruthy();
+describe("SUBJECT_IDS", () => {
+  it("matches SUBJECT_LIST ordering exactly", () => {
+    expect(SUBJECT_IDS).toEqual(SUBJECT_LIST.map((s) => s.id));
+  });
+
+  it("every id has a corresponding config in SUBJECTS", () => {
+    for (const id of SUBJECT_IDS) {
+      expect(SUBJECTS[id]).toBeTruthy();
+      expect(SUBJECTS[id].id).toBe(id);
     }
   });
 });

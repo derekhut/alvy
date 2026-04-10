@@ -75,6 +75,26 @@ export interface UserData {
   levelProgress: LevelProgress;
 }
 
-export type Subject = "toefl" | "psych" | "csp" | "whap" | "micro" | "macro";
+import type { SUBJECT_IDS } from "./subjects.js";
 
-export type Command = "daily" | "review" | "stats" | "doctor" | "psych" | "psych-review" | "csp" | "csp-review" | "whap" | "whap-review" | "micro" | "micro-review" | "macro" | "macro-review" | "pick" | "profile";
+export type Subject = (typeof SUBJECT_IDS)[number];
+
+// Command is the union of every subject's session/review commands,
+// plus the fixed set of global commands. We derive session/review commands
+// from Subject using template literal types where possible.
+//
+// Pattern: most subjects use `${id}` and `${id}-review` as their commands.
+// TOEFL is the exception: its sessionCommand is "daily" and reviewCommand is
+// "review" (so bare `alvy review` works). We encode TOEFL as a special case
+// and derive the AP commands from `Exclude<Subject, "toefl">`.
+type APSubject = Exclude<Subject, "toefl">;
+
+export type Command =
+  | "daily"             // TOEFL session
+  | "review"            // TOEFL review (bare)
+  | APSubject           // psych | csp | whap | micro | macro
+  | `${APSubject}-review`
+  | "stats"
+  | "doctor"
+  | "profile"
+  | "pick";

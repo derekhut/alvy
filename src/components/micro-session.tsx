@@ -108,7 +108,7 @@ export default function MicroSession() {
       return (
         <Dashboard
           data={state.data}
-          subject="micro"
+          title="AP 微观经济学"
         />
       );
 

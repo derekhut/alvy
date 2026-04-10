@@ -6,10 +6,10 @@ import { AVATARS } from "../lib/avatars.js";
 
 interface DashboardProps {
   data: UserData;
-  subject?: "toefl" | "psych" | "csp" | "whap" | "micro";
+  title: string;
 }
 
-export default function Dashboard({ data, subject }: DashboardProps) {
+export default function Dashboard({ data, title }: DashboardProps) {
   const profile = data.profile;
   const avatar = profile ? AVATARS[profile.avatar] : null;
   const displayName = profile?.displayName;
@@ -45,7 +45,7 @@ export default function Dashboard({ data, subject }: DashboardProps) {
         ) : null}
         <Text>
           <Text bold color="#AF5FFF">alvy</Text>
-          <Text color="#AF5FFF"> {subject === "psych" ? "AP 心理学" : subject === "csp" ? "AP 计算机科学原理" : subject === "whap" ? "AP 世界历史" : subject === "micro" ? "AP 微观经济学" : "词根学习"}</Text>
+          <Text color="#AF5FFF"> {title}</Text>
         </Text>
 
         <Box marginTop={1} gap={3}>

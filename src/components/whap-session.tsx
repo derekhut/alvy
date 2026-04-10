@@ -108,7 +108,7 @@ export default function WhapSession() {
       return (
         <Dashboard
           data={state.data}
-          subject="whap"
+          title="AP 世界历史"
         />
       );
 

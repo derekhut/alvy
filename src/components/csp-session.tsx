@@ -108,7 +108,7 @@ export default function CspSession() {
       return (
         <Dashboard
           data={state.data}
-          subject="csp"
+          title="AP 计算机科学原理"
         />
       );
 

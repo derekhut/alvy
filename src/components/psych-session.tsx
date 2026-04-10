@@ -108,7 +108,7 @@ export default function PsychSession() {
       return (
         <Dashboard
           data={state.data}
-          subject="psych"
+          title="AP 心理学"
         />
       );
 

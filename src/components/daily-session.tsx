@@ -101,7 +101,7 @@ export default function DailySession() {
 
   switch (state.phase) {
     case "dashboard":
-      return <Dashboard data={state.data} />;
+      return <Dashboard data={state.data} title="词根学习" />;
 
     case "root-intro":
       return (

@@ -10,7 +10,7 @@ alvy supports multiple subjects. `alvy` (no args) shows a subject picker with ar
 
 - **Subject picker at launch** with remember-last (`settings.lastSubject` persisted)
 - **Shared streak and XP** across all subjects (study any subject, streak continues)
-- **SubjectRegistry**: every subject is one row in `src/lib/subjects.ts`. The CLI parser, picker, app dispatch, and stats all read from `SUBJECT_LIST` — adding a new subject is a 3-file change (`src/data/<sub>.json` + one row in `subjects.ts` + one literal in `types.ts`).
+- **SubjectRegistry**: every subject is one row in `src/lib/subjects.ts`. The CLI parser, picker, app dispatch, and stats all read from `SUBJECT_LIST` — adding a new subject is a **2-file change** (`src/data/<sub>.json` + one row in `subjects.ts`, including its id in `SUBJECT_IDS`). The `Subject` and `Command` type unions in `types.ts` derive from `SUBJECT_IDS` automatically.
 - **Current subjects:**
   - TOEFL word roots — 30 roots × 5 words = 150 vocabulary items
   - AP Psychology — 36 concepts / 607 terms (full CED, Units 1-5)
@@ -27,7 +27,7 @@ See `handoff.md` "AP Subject Expansion" section for full decision log.
 ## Component Dependency Tree
 
 ```
-index.tsx          CLI entry point (meow parses args, default → "pick"; validCommands and the compound parser fold over SUBJECT_LIST)
+index.tsx          CLI entry point (meow parses args; delegates to resolveCommand from src/lib/cli-parse.ts — pure function with 9 unit tests)
   └─ app.tsx       Command router (COMMAND_RENDERERS map sourced from SUBJECT_LIST: "pick" → ProfileSetup? → SubjectPicker, with opt-in UpdatePrompt overlay)
        ├─ update-prompt.tsx     Update prompt — opt-in (user presses `u` from picker). Async spawn() update with cancel + watchdog. No auto-relaunch (v1.6.9): user re-runs `alvy` manually after success.
        ├─ profile-setup.tsx     First-launch profile setup (name input + avatar picker)
@@ -143,22 +143,24 @@ Navigation: **→** advances forward, **←** goes back (word→word, word→roo
 | `src/components/streak-header.tsx` | Reusable streak counter + daily progress bar. |
 | `src/components/stats.tsx` | `alvy stats` — loops over `SUBJECT_LIST` and prints one markdown summary per subject. |
 | `src/components/doctor.tsx` | `alvy doctor` — checks Node.js version, npm, UTF-8 locale, disk permissions. Imports `DATA_DIR` from store.ts. |
-| `src/lib/types.ts` | TypeScript interfaces: `UserData` (V3), `RootProgress`, `RootEntry`, `RootWord`, `UserProfile`, `LevelProgress`, `AvatarId`, `Command`, `Subject` (the only literal union sites for adding a new subject). |
+| `src/lib/types.ts` | TypeScript interfaces: `UserData` (V3), `RootProgress`, `RootEntry`, `RootWord`, `UserProfile`, `LevelProgress`, `AvatarId`. **`Subject` is derived** from `SUBJECT_IDS` in `subjects.ts` via a type-only import; `Command` is derived from `Subject` via template literal types (`${APSubject}-review`) plus the TOEFL `"daily"`/`"review"` literals and the global commands. No hand-edits required when adding a subject. |
 | `src/lib/store.ts` | Read/write `~/.alvy/data.json`. Auto-migrates from `~/.toefl-roots/`. V1→V2→V3 migration chain. Exports `DATA_DIR`, `DATA_FILE`. First-run init, corrupt-file backup, atomic writes. `lastSubject` typed as `Subject` (not an inline literal). |
-| `src/lib/progress.ts` | Business logic: `addXP()`, `updateStreak()`, `markRootSeen()`, `markWordStudied()` (full ISO timestamp), `selectNextMorphemes()` (single-tier oldest-first), `recordQuizResult()`, `needsReview()`, `selectReviewMorphemes()`, `generateStatsSummary(data, title, wordNoun)`. `masteredCount`/`seenCount` removed in v1.6.5. |
+| `src/lib/progress.ts` | Business logic: `addXP()`, `updateStreak()`, `markRootSeen()`, `markWordStudied()` (full ISO timestamp), `selectNextMorphemes()` (single-tier oldest-first), `recordQuizResult()`, `needsReview()`, `selectReviewMorphemes()`, `generateStatsSummary(data, title, wordNoun)` — `title` and `wordNoun` are required (no defaults; the only caller is `stats.tsx` which always passes `cfg.dashboardTitle` and `cfg.wordNoun` from the registry). `masteredCount`/`seenCount` removed in v1.6.5. |
 | `src/lib/levels.ts` | Level system: `xpForLevel()`, `computeLevel()`, `xpToNextLevel()`, `computeCompositeScore()`, `checkLevelUp()`. |
 | `src/lib/avatars.ts` | 18 ASCII art avatar constants (duck, goose, blob, cat, dragon, octopus, owl, penguin, turtle, snail, ghost, axolotl, robot, cactus, rabbit, mushroom, bear, alien). |
 | `src/components/profile-setup.tsx` | First-launch profile setup (name input → avatar picker). |
 | `src/components/avatar-picker.tsx` | 3×6 grid arrow-key ASCII art avatar selector (18 avatars). |
 | `src/components/profile-view.tsx` | `alvy profile` — shows full ASCII art, name, level, composite score, stats. |
-| `src/lib/subjects.ts` | **SubjectRegistry**. `Record<Subject, SubjectConfig>` with one row per subject + `SUBJECT_LIST` (display order) + `SUBJECT_TO_SESSION_COMMAND`. The single source of truth for every subject. Adding a new subject is one row here + one literal in `types.ts` + one JSON file in `data/`. |
+| `src/lib/subjects.ts` | **SubjectRegistry**. `SUBJECT_IDS` (the literal id list — single source of truth for the `Subject` type), `SUBJECTS: Record<Subject, SubjectConfig>` (one row per subject), and `SUBJECT_LIST` (display order). Adding a new subject is one row here (including its id in `SUBJECT_IDS`) plus one JSON file in `data/`. |
 | `src/lib/subject-db.ts` | `createSubjectDB(data)` factory. Returns a `SubjectDB` with `getAll`/`getCount`/`getByKey`/`getRelatedMeanings`/`getDistractorMeaning`. Replaces 5 per-subject db files. |
+| `src/lib/cli-parse.ts` | `resolveCommand(input1, input2)` — pure CLI parser. Returns `Command \| null`. Handles `pick`, bare TOEFL `review`, compound `<sub> review`, and globals (`stats`, `doctor`, `profile`). Folds over `SUBJECT_LIST` so it auto-extends to new subjects. Caller (`index.tsx`) prints usage + exits on `null`. |
 | `src/lib/update-check.ts` | Version check against npm registry (2s timeout) + async `runUpdate()` via `spawn("npm install -g")`. Returns a `ChildProcess` handle for cancellation. 60s SIGTERM/5s SIGKILL watchdog, line-buffered stdout, stderr ring buffer. `onDone` fires exactly once. Covered by 11 vitest tests. |
 | `src/components/update-prompt.tsx` | Opt-in update prompt: arrow-key menu (立即更新/跳过), three phases (prompt/updating/done). User can press esc/q/ctrl+c to cancel mid-update. After success, instructs user to re-run `alvy` manually (no auto-relaunch — see Gotcha #6). |
 | `src/lib/__tests__/levels.test.ts` | Vitest level system tests (20 cases: xpForLevel, computeLevel, xpToNextLevel, compositeScore, checkLevelUp). |
 | `src/lib/__tests__/store.test.ts` | Vitest migration tests (9 cases: migrate, already migrated, fresh start, V1→V3, V2→V3, V3 no re-migration, XP→level, old avatar ID remap, corrupt source). |
 | `src/lib/__tests__/subject-db.test.ts` | Vitest factory tests (4 cases: round-trip, related-meanings filter, distractor never-same, "未知" fallback). |
-| `src/lib/__tests__/subjects.test.ts` | Vitest registry tests (7 cases: list length=6 ordering, id/key match, db.getCount > 0, cliToken uniqueness, command uniqueness, AP/TOEFL reviewMeaningSummary divergence, SUBJECT_TO_SESSION_COMMAND completeness). |
+| `src/lib/__tests__/subjects.test.ts` | Vitest registry tests (8 cases: list length=6 ordering, id/key match, db.getCount > 0, cliToken uniqueness, command uniqueness, AP/TOEFL reviewMeaningSummary divergence, `SUBJECT_IDS` matches `SUBJECT_LIST` ordering, every `SUBJECT_IDS` entry resolves in `SUBJECTS`). |
+| `src/lib/__tests__/cli-parse.test.ts` | Vitest CLI parser tests (9 cases: bare → `pick`, bare `review` → TOEFL review, single subject token, compound `<sub> review`, 6th-subject compound, `toefl` token rejected, garbage rejected, `<sub> garbage` falls through to session, globals pass through). |
 | `src/data/roots.json` | 20 roots + 10 affixes = 30 entries × 5 words = 150 words. |
 | `src/data/psych.json` | AP Psychology: 36 concepts / 607 terms (full CED coverage, Units 1-5). |
 | `src/data/csp.json` | AP CSP: 35 concepts / 385 terms (full CED coverage, all 5 Big Ideas). |
@@ -176,4 +178,4 @@ Planned but not yet built:
 | `concept-intro.tsx` | Planned for AP Psych. Like `root-lesson.tsx` for concepts. Currently `root-lesson.tsx` is reused via the registry's `rootLessonLabels` knob. |
 | `term-detail.tsx` | Planned for AP Psych. Like `word-detail.tsx` for terms. Currently `word-detail.tsx` is reused via `wordDetailDerivationLabel` + `hideFrequency` knobs. |
 | `mnemonicCache` | No AI mnemonics. V2 Phase 2 feature (phonetic/mnemonic fields exist in types). |
-| AP Environmental Science | Source draft at `ap_environment.md` queued for next subject. Adding it via the SubjectRegistry is a 3-file change. |
+| AP Environmental Science | Source draft at `ap_environment.md` queued for next subject. Adding it via the SubjectRegistry is a **2-file change** (`src/data/env.json` + one row in `subjects.ts`). |

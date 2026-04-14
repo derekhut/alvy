@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback, useEffect } from "react";
+import React, { useMemo, useCallback } from "react";
 import { Box, useInput } from "ink";
 import type { Subject, UserData } from "../lib/types.js";
 import { SUBJECTS } from "../lib/subjects.js";
@@ -44,13 +44,6 @@ export default function SubjectSession({ subject }: SubjectSessionProps) {
     "dashboard",
   );
 
-  useEffect(() => {
-    if (state.phase !== "quiz-feedback" || !state.quizResult) return;
-    const delay = state.quizResult.correct ? 500 : 1000;
-    const timer = setTimeout(() => actions.advanceAfterFeedback(), delay);
-    return () => clearTimeout(timer);
-  }, [state.phase, state.quizResult, actions]);
-
   useInput((input, key) => {
     if (key.escape || input === "q") {
       if (state.phase === "continue-prompt") {
@@ -91,6 +84,9 @@ export default function SubjectSession({ subject }: SubjectSessionProps) {
           break;
         case "quiz-intro":
           actions.startQuiz();
+          break;
+        case "quiz-feedback":
+          actions.advanceAfterFeedback();
           break;
         case "continue-prompt":
           actions.continueSession();

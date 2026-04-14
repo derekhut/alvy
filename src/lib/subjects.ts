@@ -51,6 +51,7 @@ export interface SubjectConfig {
   cliToken: string;
   sessionCommand: Command;
   reviewCommand: Command;
+  testCommand: Command;
 
   // ── Data ──
   db: SubjectDB;
@@ -86,6 +87,7 @@ export const SUBJECTS: Record<Subject, SubjectConfig> = {
     cliToken: "",
     sessionCommand: "daily",
     reviewCommand: "review",
+    testCommand: "test",
     db: createSubjectDB(roots as RootEntry[]),
   },
   psych: {
@@ -103,6 +105,7 @@ export const SUBJECTS: Record<Subject, SubjectConfig> = {
     cliToken: "psych",
     sessionCommand: "psych",
     reviewCommand: "psych-review",
+    testCommand: "psych-test",
     db: createSubjectDB(psychData as RootEntry[]),
   },
   csp: {
@@ -120,6 +123,7 @@ export const SUBJECTS: Record<Subject, SubjectConfig> = {
     cliToken: "csp",
     sessionCommand: "csp",
     reviewCommand: "csp-review",
+    testCommand: "csp-test",
     db: createSubjectDB(cspData as RootEntry[]),
   },
   whap: {
@@ -137,6 +141,7 @@ export const SUBJECTS: Record<Subject, SubjectConfig> = {
     cliToken: "whap",
     sessionCommand: "whap",
     reviewCommand: "whap-review",
+    testCommand: "whap-test",
     db: createSubjectDB(whapData as RootEntry[]),
   },
   micro: {
@@ -154,6 +159,7 @@ export const SUBJECTS: Record<Subject, SubjectConfig> = {
     cliToken: "micro",
     sessionCommand: "micro",
     reviewCommand: "micro-review",
+    testCommand: "micro-test",
     db: createSubjectDB(microData as RootEntry[]),
   },
   macro: {
@@ -171,6 +177,7 @@ export const SUBJECTS: Record<Subject, SubjectConfig> = {
     cliToken: "macro",
     sessionCommand: "macro",
     reviewCommand: "macro-review",
+    testCommand: "macro-test",
     db: createSubjectDB(macroData as RootEntry[]),
   },
 };

@@ -1,8 +1,8 @@
 # alvy — Implementation Handoff
 
-Last updated: 2026-04-10
+Last updated: 2026-04-14
 Branch: update_version
-Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych COMPLETE (36 concepts / 607 terms) | AP CSP COMPLETE (35 concepts / 385 terms, full CED coverage of Big Ideas 1-5) | AP WHAP COMPLETE (19 concepts / 255 terms) | AP Micro COMPLETE (36 concepts / 499 terms, all 6 Units, authored in 6 parallel batches) | **AP Macro COMPLETE (42 concepts / 492 terms, all 6 Units, fully wired via SubjectRegistry)** | Update flow REWRITTEN (no auto-relaunch) | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score) | **SubjectRegistry refactor LANDED** (v1.7.0 LOCAL — 15 per-subject files collapsed into 1 SubjectDB factory + 2 generic components + 1 registry) | **CEO-review follow-ups LANDED** (`resolveCommand` extracted with 9 unit tests, `Subject`/`Command` derived from `SUBJECT_IDS`, `SUBJECT_TO_SESSION_COMMAND` deleted, `generateStatsSummary` defaults removed; 102 tests passing)
+Status: V1 SHIPPED as `@derekhut/alvy@1.0.0` | V2 IN PROGRESS (Phase 1 COMPLETE, Phase 2 next) | AP Psych COMPLETE (36 concepts / 607 terms) | AP CSP COMPLETE (35 concepts / 385 terms, full CED coverage of Big Ideas 1-5) | AP WHAP COMPLETE (19 concepts / 255 terms) | AP Micro COMPLETE (36 concepts / 499 terms, all 6 Units, authored in 6 parallel batches) | **AP Macro COMPLETE (42 concepts / 492 terms, all 6 Units, fully wired via SubjectRegistry)** | Update flow REWRITTEN (no auto-relaunch) | Gamification Phase A LIVE (levels, ASCII art avatars, profile, composite score) | **SubjectRegistry refactor LANDED** (v1.7.0 LOCAL — 15 per-subject files collapsed into 1 SubjectDB factory + 2 generic components + 1 registry) | **CEO-review follow-ups LANDED** (`resolveCommand` extracted with 9 unit tests, `Subject`/`Command` derived from `SUBJECT_IDS`, `SUBJECT_TO_SESSION_COMMAND` deleted, `generateStatsSummary` defaults removed) | **Quiz mode LANDED** (刷卡片/刷题 mode picker after subject selection, 20 random questions per session, `alvy test`/`alvy <sub> test` CLI support)
 
 ## V1 Summary
 
@@ -473,6 +473,17 @@ node dist/index.js doctor   # Environment check
 - `Subject` type (`"toefl" | "psych" | "csp" | "whap" | "micro" | "macro"`), `"pick"` command, `lastSubject` in settings
 - **SubjectRegistry refactor** (v1.7.0 LOCAL): every subject now lives as one row in `src/lib/subjects.ts`. The 5 per-subject db files and 10 per-subject session/review components were collapsed into one `createSubjectDB()` factory + one `<SubjectSession>` and one `<SubjectReview>` component. The CLI parser, picker, app router, and stats loop all read from `SUBJECT_LIST`.
 - **CEO-review follow-ups** (after the 9-commit refactor): three small commits on `update_version` tightened the registry's "single source of truth" claim. (1) The inline CLI parser was extracted to `src/lib/cli-parse.ts` as a pure `resolveCommand(input1, input2)` function with 9 unit tests covering every branch including the `cliToken: ""` TOEFL short-circuit. (2) The `Subject` type is now derived from `SUBJECT_IDS as const` in `subjects.ts` (type-only import, no runtime cycle); `Command` is derived from `Subject` via template literal types. The dead `SUBJECT_TO_SESSION_COMMAND` map was deleted — its one production caller now reads `SUBJECTS[subject].sessionCommand` directly. (3) `generateStatsSummary`'s `"词根学习"`/`"单词"` default args were removed (the only real caller in `stats.tsx` always passes them from the registry). Net: adding a new AP subject is now a **2-file change** (`src/data/<sub>.json` + one row in `subjects.ts`, including its id in `SUBJECT_IDS`). Tests: 92 → **102**.
+
+### Quiz mode (刷题模式) — v1.7.1
+
+- **Mode picker** after subject selection: 刷卡片 (existing session flow) or 刷题 (standalone quiz)
+- **Quiz flow**: 20 random two-choice questions from all words in the subject, +15 XP per correct answer, streak + level-up at end
+- **Quiz summary**: shows correct/total (green ≥80%, red <80%), XP earned, streak, level-up. Arrow-key selection list at bottom: 再刷一轮 (restart with new questions) / 回到主界面 (back to subject picker). Test commands rendered inline in `app.tsx` (not via `COMMAND_RENDERERS`) so `onBack` can reset `resolved` state.
+- **CLI**: `alvy test` (TOEFL), `alvy psych test`, `alvy csp test`, etc.
+- **Design change**: quiz feedback colors changed from cyan/dusty-rose to green `#00D26A` / red `#FF4444`
+- **New files**: `src/hooks/useQuizFlow.ts`, `src/components/quiz-summary.tsx`, `src/components/subject-test.tsx`, `src/components/mode-picker.tsx`
+- **Modified**: `types.ts` (QuizQuestion extracted, Command extended with test commands), `subjects.ts` (testCommand field), `cli-parse.ts` (test command matching), `quiz.tsx` (new colors), `app.tsx` (mode picker flow + test command routing), `index.tsx` (help text), `DESIGN.md` (color update + decision log)
+- **Tests**: `cli-parse.test.ts` expanded (9→12 cases), new `quiz-flow.test.ts` (4 cases)
 
 ### What's still open
 

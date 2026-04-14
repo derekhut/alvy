@@ -12,16 +12,22 @@ const cli = meow(
   用法
     $ alvy              选择科目开始学习
     $ alvy review       复习已学词根
+    $ alvy test         TOEFL 刷题模式
     $ alvy psych        AP 心理学每日学习
     $ alvy psych review AP 心理学复习
+    $ alvy psych test   AP 心理学刷题
     $ alvy csp          AP 计算机科学原理每日学习
     $ alvy csp review   AP 计算机科学原理复习
+    $ alvy csp test     AP 计算机科学原理刷题
     $ alvy whap         AP 世界历史每日学习
     $ alvy whap review  AP 世界历史复习
+    $ alvy whap test    AP 世界历史刷题
     $ alvy micro        AP 微观经济学每日学习
     $ alvy micro review AP 微观经济学复习
+    $ alvy micro test   AP 微观经济学刷题
     $ alvy macro        AP 宏观经济学每日学习
     $ alvy macro review AP 宏观经济学复习
+    $ alvy macro test   AP 宏观经济学刷题
     $ alvy profile      查看个人资料
     $ alvy stats        导出学习进度
     $ alvy doctor       检查运行环境

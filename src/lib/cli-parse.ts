@@ -9,8 +9,10 @@ import { SUBJECT_LIST } from "./subjects.js";
  * Rules:
  *   []                        → "pick"
  *   ["review"]                → "review"          (bare TOEFL review)
+ *   ["test"]                  → "test"            (bare TOEFL quiz)
  *   ["psych"]                 → "psych"           (any subject session)
  *   ["psych", "review"]       → "psych-review"    (any compound AP review)
+ *   ["psych", "test"]         → "psych-test"      (any compound AP test)
  *   ["stats" | "doctor" | "profile" | "pick"] → itself
  *   anything else             → null
  *
@@ -23,17 +25,20 @@ export function resolveCommand(
 ): Command | null {
   if (!input) return "pick";
 
+  // Compound commands: "psych review" → "psych-review", "psych test" → "psych-test"
   const compoundMatch = SUBJECT_LIST.find(
-    (s) => s.cliToken && s.cliToken === input && input2 === "review",
+    (s) => s.cliToken && s.cliToken === input && (input2 === "review" || input2 === "test"),
   );
-  const resolved = compoundMatch ? compoundMatch.reviewCommand : input;
+  const resolved = compoundMatch
+    ? (input2 === "test" ? compoundMatch.testCommand : compoundMatch.reviewCommand)
+    : input;
 
   const validCommands = new Set<Command>([
     "stats",
     "doctor",
     "profile",
     "pick",
-    ...SUBJECT_LIST.flatMap((s) => [s.sessionCommand, s.reviewCommand] as Command[]),
+    ...SUBJECT_LIST.flatMap((s) => [s.sessionCommand, s.reviewCommand, s.testCommand] as Command[]),
   ]);
 
   return validCommands.has(resolved as Command) ? (resolved as Command) : null;

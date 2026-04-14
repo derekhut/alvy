@@ -15,8 +15,8 @@
 - **Approach:** Expressive — violet/amber as identity colors
 - **Primary accent:** `#AF5FFF` (ANSI 135) — electric violet. Root highlights, active items, titles.
 - **Reward/XP:** `#FFAF00` (ANSI 214) — warm amber. Streaks, XP, earned progress numbers.
-- **Success:** `#5FD7FF` (ANSI 81) — soft cyan. Correct answers, positive feedback.
-- **Error:** `#FF5F87` (ANSI 204) — dusty rose. Wrong answers, gentle not punishing.
+- **Success:** `#00D26A` — bright green. Correct answers ✓, positive feedback.
+- **Error:** `#FF4444` — bright red. Wrong answers ✗, clear signal.
 - **Dimmed:** `#6C6C6C` (ANSI 242) — warm gray. Navigation hints and progress indicators only.
 - **Borders:** `#4E4E4E` (ANSI 239) — cool slate. Structural, recedes.
 
@@ -65,7 +65,8 @@ All UI text in Chinese. English only for vocabulary content itself.
 | 2026-04-01 | 新东方 derivation chains | Core learning mechanism — students see HOW parts create meaning. |
 | 2026-04-01 | No quiz/multiple choice | Learning is the derivation, not guessing from options. |
 | 2026-04-01 | Chinese UI text | Product is for Chinese students. |
-| 2026-04-01 | Dusty rose for errors | "Not quite." reframes wrong answers as teaching moments. |
+| 2026-04-01 | Dusty rose for errors | "Not quite." reframes wrong answers as teaching moments. **Superseded 2026-04-14** — see below. |
+| 2026-04-14 | Green ✓ / Red ✗ quiz feedback | `#00D26A` correct, `#FF4444` wrong. Chinese students expect intuitive green/red signal — dusty rose was too subtle. Quiz summary also uses green (≥80%) / red (<80%). |
 | 2026-04-01 | Amber border on celebration card | Exception to slate border rule. Double border + amber = trophy moment. Only celebration screen used this. **Retired 2026-04-09** when the celebration/mastered concept was removed in v1.6.5. |
 | 2026-04-02 | Content text white, dim nav only | Chinese definitions/examples were unreadable on dark terminals. Dim reserved for navigation hints. |
 | 2026-04-09 | ASCII art avatars in profile/dashboard | 18 ASCII art avatars, full 3-line art in profile, dashboard, and subject picker. |

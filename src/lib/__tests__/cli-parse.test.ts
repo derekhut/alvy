@@ -10,6 +10,10 @@ describe("resolveCommand", () => {
     expect(resolveCommand("review", undefined)).toBe("review");
   });
 
+  it("returns 'test' for bare 'alvy test' (TOEFL)", () => {
+    expect(resolveCommand("test", undefined)).toBe("test");
+  });
+
   it("returns 'psych' for 'alvy psych'", () => {
     expect(resolveCommand("psych", undefined)).toBe("psych");
   });
@@ -18,8 +22,16 @@ describe("resolveCommand", () => {
     expect(resolveCommand("psych", "review")).toBe("psych-review");
   });
 
+  it("returns 'psych-test' for 'alvy psych test' (compound)", () => {
+    expect(resolveCommand("psych", "test")).toBe("psych-test");
+  });
+
   it("returns 'macro-review' for 'alvy macro review' (6th subject compound)", () => {
     expect(resolveCommand("macro", "review")).toBe("macro-review");
+  });
+
+  it("returns 'macro-test' for 'alvy macro test' (6th subject compound)", () => {
+    expect(resolveCommand("macro", "test")).toBe("macro-test");
   });
 
   it("returns null for 'alvy toefl' (toefl is not a cliToken)", () => {
@@ -31,9 +43,7 @@ describe("resolveCommand", () => {
     expect(resolveCommand("garbage", undefined)).toBeNull();
   });
 
-  it("'alvy psych garbage' falls through to 'psych' (input2 ignored unless 'review')", () => {
-    // Pins existing behavior. The current parser only treats input2 specially
-    // when it equals "review"; otherwise it falls through to input1's session command.
+  it("'alvy psych garbage' falls through to 'psych' (input2 ignored unless 'review'/'test')", () => {
     expect(resolveCommand("psych", "garbage")).toBe("psych");
   });
 

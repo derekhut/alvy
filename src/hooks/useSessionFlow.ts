@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useApp } from "ink";
-import type { RootEntry, RootWord, UserData } from "../lib/types.js";
+import type { RootEntry, RootWord, UserData, QuizQuestion } from "../lib/types.js";
 import { loadData, saveData } from "../lib/store.js";
 import {
   markRootSeen,
@@ -23,11 +23,7 @@ export type SessionPhase =
   | "summary"
   | "empty";
 
-export interface QuizQuestion {
-  word: RootWord;
-  correctIdx: number; // 0 or 1
-  choices: [string, string]; // two Chinese meanings
-}
+export type { QuizQuestion } from "../lib/types.js";
 
 export interface SessionFlowOptions {
   morphemes: RootEntry[];

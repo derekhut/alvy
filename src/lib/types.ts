@@ -15,6 +15,12 @@ export interface LevelProgress {
   totalWordsStudied: number;
 }
 
+export interface QuizQuestion {
+  word: RootWord;
+  correctIdx: number; // 0 or 1
+  choices: [string, string]; // two Chinese meanings
+}
+
 // Root/affix entry in roots.json
 export interface RootWord {
   word: string;
@@ -92,8 +98,10 @@ type APSubject = Exclude<Subject, "toefl">;
 export type Command =
   | "daily"             // TOEFL session
   | "review"            // TOEFL review (bare)
+  | "test"              // TOEFL quiz (bare)
   | APSubject           // psych | csp | whap | micro | macro
   | `${APSubject}-review`
+  | `${APSubject}-test`
   | "stats"
   | "doctor"
   | "profile"

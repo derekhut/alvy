@@ -7,18 +7,21 @@ import { SUBJECTS, SUBJECT_LIST } from "./lib/subjects.js";
 import Doctor from "./components/doctor.js";
 import SubjectSession from "./components/subject-session.js";
 import SubjectReview from "./components/subject-review.js";
+import SubjectTest from "./components/subject-test.js";
 import Stats from "./components/stats.js";
 import SubjectPicker from "./components/subject-picker.js";
 import UpdatePrompt from "./components/update-prompt.js";
 import ProfileSetup from "./components/profile-setup.js";
 import ProfileView from "./components/profile-view.js";
+import ModePicker from "./components/mode-picker.js";
+import type { StudyMode } from "./components/mode-picker.js";
 
 interface AppProps {
   command: Command;
 }
 
-// Build a renderer map for every Command, sourced from the registry.
-const COMMAND_RENDERERS: Record<Command, () => React.ReactElement> = (() => {
+// Build a renderer map for every Command except test commands (handled separately for onBack).
+const COMMAND_RENDERERS: Partial<Record<Command, () => React.ReactElement>> = (() => {
   const map: Partial<Record<Command, () => React.ReactElement>> = {
     stats: () => <Stats />,
     doctor: () => <Doctor />,
@@ -27,14 +30,16 @@ const COMMAND_RENDERERS: Record<Command, () => React.ReactElement> = (() => {
   for (const cfg of SUBJECT_LIST) {
     map[cfg.sessionCommand] = () => <SubjectSession subject={cfg.id} />;
     map[cfg.reviewCommand] = () => <SubjectReview subject={cfg.id} />;
+    // test commands rendered inline in App for onBack support
   }
-  return map as Record<Command, () => React.ReactElement>;
+  return map;
 })();
 
 export default function App({ command }: AppProps) {
   const [resolved, setResolved] = useState<Command | null>(
     command === "pick" ? null : command,
   );
+  const [pendingSubject, setPendingSubject] = useState<Subject | null>(null);
   const [updateInfo, setUpdateInfo] = useState<UpdateInfo | null>(null);
   const [updateSkipped, setUpdateSkipped] = useState(false);
   const [showUpdatePrompt, setShowUpdatePrompt] = useState(false);
@@ -77,10 +82,28 @@ export default function App({ command }: AppProps) {
       data.settings.lastSubject = subject;
       saveData(data);
     }
-    setResolved(SUBJECTS[subject].sessionCommand);
+    setPendingSubject(subject);
   }, [data]);
 
+  const handleModeSelect = useCallback((mode: StudyMode) => {
+    if (!pendingSubject) return;
+    const cfg = SUBJECTS[pendingSubject];
+    setResolved(mode === "quiz" ? cfg.testCommand : cfg.sessionCommand);
+  }, [pendingSubject]);
+
   if (resolved === null && data) {
+    // Mode picker: show after subject is selected but before session starts
+    if (pendingSubject) {
+      const cfg = SUBJECTS[pendingSubject];
+      return (
+        <ModePicker
+          subjectLabel={cfg.pickerLabel}
+          onSelect={handleModeSelect}
+          onBack={() => setPendingSubject(null)}
+        />
+      );
+    }
+
     if (showUpdatePrompt && updateInfo && !updateSkipped) {
       return (
         <UpdatePrompt
@@ -116,8 +139,22 @@ export default function App({ command }: AppProps) {
     );
   }
 
-  if (resolved && COMMAND_RENDERERS[resolved]) {
-    return COMMAND_RENDERERS[resolved]();
+  // Test commands rendered with onBack so user can return to subject picker
+  if (resolved) {
+    const testCfg = SUBJECT_LIST.find((cfg) => cfg.testCommand === resolved);
+    if (testCfg) {
+      return (
+        <SubjectTest
+          subject={testCfg.id}
+          onBack={() => {
+            setResolved(null);
+            setPendingSubject(null);
+          }}
+        />
+      );
+    }
+    const renderer = COMMAND_RENDERERS[resolved];
+    if (renderer) return renderer();
   }
   return null;
 }
